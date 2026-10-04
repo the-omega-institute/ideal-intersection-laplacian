@@ -110,6 +110,50 @@ extraction are cross-checked against the independent divisor certificate.
 The empty lists settle this pair range; they do not prove either
 endpoint surface globally empty.
 
+\begin{theorem}
+\label{thm:modulo-three-endpoints}
+Every positive three-prime exponent triple congruent to $(2,2,2)$,
+or to a permutation of $(1,2,2)$, modulo three gives a nonintegral
+ideal intersection graph.
+\end{theorem}
+
+\begin{proof}
+For these two residue patterns, reduction of the general complement
+quintic gives, respectively,
+\[
+h_C(x)\equiv x^5,\qquad
+h_C(x)\equiv(x^2+1)(x^3+x^2-x+1)\pmod3.
+\]
+The corresponding pairs $(h_C(1),h_C(2))$ are $(1,2)$ and $(1,1)$
+modulo three, so neither integer endpoint is a root. Minimum exponents
+at most three are already covered. Otherwise
+Theorem~\ref{thm:uniform-low-root} supplies a positive root in $(0,3)$,
+which cannot be an integer. Its graph lift is noninteger as well.
+For the second pattern, the irreducible factor $x^2+1$ also directly
+rules out a completely integral quotient spectrum.
+\end{proof}
+
+For example, $(8,17,22)$ and $(8,17,23)$ satisfy the new conditions
+with gcd one and unequal $2$-adic valuations. Complete endpoint tables
+modulo two and three, checked against independent integer determinants,
+are given in the \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/2df3cffd062ce0b28fc2040a6203fd4e7282a725/results/endpoint-residues.json}{residue certificate}.
+Every pair $(a,b)$ modulo either prime has at least one $c$ root on
+each surface; retaining the full root sets, rather than only root-free
+pairs, is necessary to detect these exclusions.
+
+\begin{remark}
+Endpoint tests at a fixed finite set of moduli cannot by themselves
+prove either surface empty on all fully distinct positive triples.
+Let $M$ be their least common multiple. Since $(9,9,136)$ has
+$h_C(1)=0$, the strictly ordered triples
+$(9+kM,9+(k+1)M,136+(k+2)M)$ pass every selected endpoint-one test.
+The known endpoint-two zero $(10,10,12)$ similarly gives survivors
+$(10+kM,10+(k+1)M,12+(k+2)M)$. For large $k$ their middle exponents
+exceed fifteen. These are congruence survivors, not asserted integer
+zeros. Congruences can still be combined with the earlier interval
+restrictions or an obstruction from another quotient root.
+\end{remark}
+
 The remaining all-even triples have gcd two,
 $8\leq a<b<c<R(a)$ and $b\geq16$, outside the preceding proved regions.
 The mixed-parity surface $h_C(1)=0$ still needs another obstruction.

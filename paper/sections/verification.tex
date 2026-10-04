@@ -180,6 +180,18 @@ and match full quotient factorizations. This complete finite certificate,
 combined with the uniform low-root theorem and earlier cases, proves
 Corollary~\ref{cor:middle-fifteen}. There is no upper cutoff on $c$ or
 extension beyond the requested pair range.
+\item \path{scripts/check_endpoint_residues.py} reconstructs the general
+endpoint cubics and records all $26$ pair/endpoint rows for primes two
+and three, including zero residues and zero polynomials. At all $35$
+positive residue representatives, a separate $720$-term integer
+determinant expansion checks both endpoint values, for $70$ checks.
+The eight parity reductions and five simultaneous modulo-three exclusions
+are verified against direct quotient characteristic polynomials.
+Two selected fully distinct triples have independent endpoint determinants
+and exact Sturm counts; two known repeated-exponent controls retain their
+endpoint zeros. The infinite classes in
+Theorem~\ref{thm:modulo-three-endpoints} use the written low-root proof.
+This is a residue enumeration, not an exponent search.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;
