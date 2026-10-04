@@ -168,3 +168,77 @@ The new bound is strictly smaller than $R(a)$ for all $a\geq2$, since
 R(a)-S(a)=\frac{2a^3-a^2-a-6}{(a+2)(2a+3)}>0.
 \]
 Writing $z=a-2\geq0$, its numerator is $2z^3+11z^2+19z+4$.
+
+\subsection{A finite reduction for each factor index}
+
+For a nonboundary square-discriminant pair, write $d=1+hj$, $j\geq1$.
+The following criterion fixes $j$ instead of $a$.
+
+\begin{proposition}
+\label{prop:index}
+Fix $j\geq1$ and set $K_j=(j+1)^3(j+2)$.
+Every admissible square-discriminant pair of index $j$ is obtained from
+a positive divisor $d$ of $K_j$ with
+$a=(d-1)/j-1\in\mathbb Z_{\geq2}$.
+Set $e=M/d$, $v=(e-1)/(a+1)$, and retain exactly those candidates with
+$d\leq e$ and $b=C-jv\geq1$. Then $e,v,b$ are integers and
+$D=(v-j)^2$. Conversely every retained candidate is admissible.
+\end{proposition}
+\begin{proof}
+Modulo $d=j(a+1)+1$ we have $ja\equiv-(j+1)$, whence
+\[
+j^4M=(ja)^3j(2a+1)\equiv(j+1)^3(j+2)=K_j\pmod d.
+\]
+Since $\gcd(d,j)=1$, we have $d\mid M$ if and only if $d\mid K_j$.
+Thus $e$ is integral. Since $M\equiv d\equiv1\pmod h$, also
+$e\equiv1\pmod h$, so $v$ is integral. The identity
+\[
+M=1+h(3a-2)+h^2C=(1+hj)(1+hv)
+\]
+gives $j+v+h jv=3a-2+hC$. Defining $b=C-jv$, we obtain
+$d+e=h^2b+a(3a+1)$ and $e-d=h(v-j)$.
+The ordering condition gives $v-j\geq0$; Proposition~\ref{prop:divisors}
+now proves admissibility and $D=(v-j)^2$. The reverse direction follows
+by applying these identities to any admissible index-$j$ pair.
+\end{proof}
+
+This is a complete finite problem for each fixed $j$, without a
+truncation in $a$. It leaves the family over arbitrary $j$ open.
+For $j=2$, $K_2=108$ and $d=2a+3$ is an odd divisor of $108$ with
+$d\geq7$. The only candidates are $d=9,27$, giving $a=3,12$.
+The first has $e=21,v=5,b=0$ and is excluded. The second has
+$e=1600,v=123,b=7$ and $\sqrt D=121$.
+Thus $(12,7)$ is the only positive-$b$ case with $j=2$.
+
+Its symmetric cubic is $f_{12,7}(x)=x^3-751x^2+180348x-13829760$.
+Its values at all residues modulo $13$ are
+$4,7,9,3,8,4,10,6,11,5,7,10,7$.
+As a monic cubic with no root modulo $13$, it is irreducible over
+$\mathbb Q$. Its real nonzero roots lift to noninteger graph eigenvalues,
+settling the entire index-$2$ case.
+
+\begin{theorem}[Third linear cutoff]
+\label{thm:third}
+For every $a\geq2$, put $T(a)=2(a-4)(a-2)/(3a+4)$.
+If $b\geq1$ and $b>T(a)$, then $G_{p^a q^a r^b}$ is not Laplacian
+integral. Every unresolved square-discriminant pair has $j\geq3$,
+$d\geq3a+4$, and $b\leq\lfloor T(a)\rfloor$.
+\end{theorem}
+\begin{proof}
+Nonsquare $D$ gives irrational antisymmetric eigenvalues.
+For square $D$, the cases $j=0,1,2$ are all settled above.
+Every other pair has $d\geq Q=3a+4$, and $e\geq d\geq Q$ gives
+\[
+b\leq\frac{M/Q+Q-a(3a+1)}{(a+1)^2}
+=\frac{2(a-4)(a-2)}{3a+4}=T(a).
+\]
+This proves the claimed implication.
+\end{proof}
+
+For $a\geq3$ the new bound is strictly below $S(a)$, since
+\[
+S(a)-T(a)=\frac{2a^3-a^2-5a-12}{(2a+3)(3a+4)}>0.
+\]
+With $z=a-3\geq0$, the numerator is $2z^3+17z^2+43z+18$.
+The exact expression
+$T(a)=2a/3-44/9+320/(9(3a+4))$ shows its leading term.

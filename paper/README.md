@@ -17,8 +17,8 @@ sections and their shared graph/lifting definitions.
 | [squarefree.tex](sections/squarefree.tex) | Complete squarefree composite classification, with odd and even tensor arguments |
 | [pqrk.tex](sections/pqrk.tex) | Explicit irrational eigenvalues for `(1,1,k)` |
 | [aa-family.tex](sections/aa-family.tex) | Reza's public boundary-family proof |
-| [aa-bounds.tex](sections/aa-bounds.tex) | Exact divisor criterion, quadratic bound, two linear cutoffs and complete first-factor certificates |
-| [aa-small.tex](sections/aa-small.tex) | All-b theorem for a=2,3,4,5,6, divisor/modular certificates and cubic-test scope |
+| [aa-bounds.tex](sections/aa-bounds.tex) | Exact fixed-a and fixed-index criteria, successive cutoffs and complete smaller-factor certificates |
+| [aa-small.tex](sections/aa-small.tex) | All-b theorem for a=2 through9, divisor/modular certificates and cubic-test scope |
 | [verification.tex](sections/verification.tex) | Actual scope of the exact checkers |
 | [open.tex](sections/open.tex) | Remaining square-discriminant and unequal-exponent cases |
 
@@ -49,6 +49,7 @@ python3 scripts/check_repeated_exponent_family.py
 python3 scripts/check_aa_b.py --json
 python3 scripts/check_fixed_repeated_exponents.py
 python3 scripts/check_second_cutoff.py
+python3 scripts/check_factor_index_reduction.py
 ```
 
 Compare with the corresponding JSON files under `results/`. The full text

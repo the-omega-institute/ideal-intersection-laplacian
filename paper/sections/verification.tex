@@ -53,6 +53,12 @@ the four root-free cubic reductions settling all $d=a+2$ cases.
 It also checks the second-cutoff identities and the two nonsquare
 discriminants completing $a=5,6$. This finite certificate follows the
 proved divisor reduction; it is not a parameter-range search.
+\item \path{scripts/check_factor_index_reduction.py} verifies the general
+fixed-index divisibility and reconstruction identities, exhausts the
+divisors of $K_2=108$, and certifies the unique positive-$b$ index-$2$
+cubic modulo $13$. It checks the third-cutoff identities and the four
+remaining discriminants for $a=7,8,9$. These finite checks exhaust the
+proved candidate sets, with no arbitrary parameter cutoff.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

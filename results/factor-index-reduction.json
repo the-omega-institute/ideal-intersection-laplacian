@@ -1,0 +1,153 @@
+{
+  "symbolic_identities": "passed",
+  "fixed_index": 2,
+  "index_constant": 108,
+  "all_divisor_candidates": [
+    {
+      "divisor": 1,
+      "admissible": false,
+      "repeated_exponent": -1,
+      "reason": "a below2"
+    },
+    {
+      "divisor": 2,
+      "admissible": false,
+      "reason": "Wrong residue for j(a+1)+1"
+    },
+    {
+      "divisor": 3,
+      "admissible": false,
+      "repeated_exponent": 0,
+      "reason": "a below2"
+    },
+    {
+      "divisor": 4,
+      "admissible": false,
+      "reason": "Wrong residue for j(a+1)+1"
+    },
+    {
+      "divisor": 6,
+      "admissible": false,
+      "reason": "Wrong residue for j(a+1)+1"
+    },
+    {
+      "divisor": 9,
+      "admissible": false,
+      "repeated_exponent": 3,
+      "factor_pair": [
+        9,
+        21
+      ],
+      "second_index": 5,
+      "third_exponent": 0,
+      "reason": "b not positive"
+    },
+    {
+      "divisor": 12,
+      "admissible": false,
+      "reason": "Wrong residue for j(a+1)+1"
+    },
+    {
+      "divisor": 18,
+      "admissible": false,
+      "reason": "Wrong residue for j(a+1)+1"
+    },
+    {
+      "divisor": 27,
+      "admissible": true,
+      "repeated_exponent": 12,
+      "factor_pair": [
+        27,
+        1600
+      ],
+      "second_index": 123,
+      "third_exponent": 7,
+      "square_root_discriminant": 121,
+      "polynomial": "x**3 - 751*x**2 + 180348*x - 13829760",
+      "prime": 13,
+      "values_modulo_prime": [
+        4,
+        7,
+        9,
+        3,
+        8,
+        4,
+        10,
+        6,
+        11,
+        5,
+        7,
+        10,
+        7
+      ]
+    },
+    {
+      "divisor": 36,
+      "admissible": false,
+      "reason": "Wrong residue for j(a+1)+1"
+    },
+    {
+      "divisor": 54,
+      "admissible": false,
+      "reason": "Wrong residue for j(a+1)+1"
+    },
+    {
+      "divisor": 108,
+      "admissible": false,
+      "reason": "Wrong residue for j(a+1)+1"
+    }
+  ],
+  "complete_positive_exponent_pairs": [
+    [
+      12,
+      7
+    ]
+  ],
+  "additional_complete_fixed_exponents": [
+    {
+      "repeated_exponent": 7,
+      "third_exponent": 1,
+      "third_bound": "6/5",
+      "discriminant": 421,
+      "consecutive_square_roots": [
+        20,
+        21
+      ]
+    },
+    {
+      "repeated_exponent": 8,
+      "third_exponent": 1,
+      "third_bound": "12/7",
+      "discriminant": 545,
+      "consecutive_square_roots": [
+        23,
+        24
+      ]
+    },
+    {
+      "repeated_exponent": 9,
+      "third_exponent": 1,
+      "third_bound": "70/31",
+      "discriminant": 685,
+      "consecutive_square_roots": [
+        26,
+        27
+      ]
+    },
+    {
+      "repeated_exponent": 9,
+      "third_exponent": 2,
+      "third_bound": "70/31",
+      "discriminant": 1489,
+      "consecutive_square_roots": [
+        38,
+        39
+      ]
+    }
+  ],
+  "third_cutoff": "(a - 2)*(2*a - 8)/(3*a + 4)",
+  "sympy": "1.14.0",
+  "script_sha256": "f6f8fa341b8232cff0e37d26b434853286655b6978e3ab9507e2c02ec6bf7d8d",
+  "cubic_source_sha256": "0877fc7fb32b0ffb696ea62fb86022d7090b71bd0f507c5b5ed9e66edfb39452",
+  "scope": "General fixed-index divisibility identity; complete j2 candidates via divisors108; one cubic modulo13; four remaining discriminants under proved bound for a7,8,9. No unbounded scan or Lean; arbitrary j and fullQ3 remain open."
+}

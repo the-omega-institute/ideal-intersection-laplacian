@@ -1,5 +1,9 @@
 # A second linear cutoff from the first nonboundary factor
 
+The [fixed-index reduction](factor-index-reduction.md) advances this argument
+to the next factor level and the current third cutoff. This note retains
+the second-cutoff proof and its four complete modular certificates.
+
 For distinct primes and exponents `(a,a,b)`, with `a>=2`, we prove
 nonintegrality whenever
 
@@ -70,5 +74,5 @@ Together with the earlier theorem, this covers $a=2,3,4,5,6$.
 identities, every divisor of24, the four modular residue lists, and these
 two remaining discriminants. [The saved certificate](../results/second-cutoff.json)
 records its source hashes. No larger parameter scan or Lean run is used.
-Next: control the symmetric cubic on admissible square-discriminant pairs
-with $d\geq2a+3$ and $b\leq\lfloor S(a)\rfloor$; full Q3 remains open.
+The next question now concerns index $j\geq3$ and $b\leq\lfloor T(a)\rfloor$,
+using the fixed-index reduction linked above; full Q3 remains open.

@@ -2,7 +2,7 @@
 
 **Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
 consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
-the two linear cutoffs and all `(a,a,b)` with `a=2,3,4,5,6`, `b>=1`.
+the successive linear cutoffs and all `(a,a,b)` with `a=2,...,9`, `b>=1`.
 The corrected repeated-exponent diagnostic and exact certificates remain
 available. Full Q3 remains open.
 
@@ -14,13 +14,16 @@ python3 scripts/check_aa_b.py
 python3 scripts/check_aa_b.py --json
 python3 scripts/check_fixed_repeated_exponents.py
 python3 scripts/check_second_cutoff.py
+python3 scripts/check_factor_index_reduction.py
 ```
 
 The next focused question is the symmetric cubic on admissible factor pairs
-with `d>=2a+3` and `b <= floor(S(a))` for arbitrary repeated exponent `a`,
-using [the second cutoff](notes/second-linear-cutoff.md),
-`S(a)=(a-3)(2a-3)/(2a+3)`. Avoid an unbounded scan in `b`: the discriminant
-identity and congruence reduce each fixed `a` to a finite divisor problem.
+with `j>=3`, `d>=3a+4` and `b <= floor(T(a))`, using
+[the fixed-index reduction](notes/factor-index-reduction.md),
+`T(a)=2(a-4)(a-2)/(3a+4)`. The exact criterion for fixed index `j` uses
+divisors of `(j+1)^3(j+2)` across all `a`; fixed `a` instead uses divisors
+of `a^3(2a+1)`. Study a uniform cubic obstruction or a stated factor level,
+without replacing the open all-parameter problem by a finite range scan.
 
 Reza proposes the Laplacian integrality question, Q3 in his privately shared
 preprint on ideal intersection graphs of `Z_n`, as the first follow-on task.
