@@ -8,11 +8,25 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+## First results
+
+We prove nonintegrality for every squarefree integer with at least three
+distinct prime factors and for every exponent vector that is a permutation
+of `(1,1,k)`, `k >= 1`. This completes the squarefree composite classification:
+the integral case is exactly two prime factors, including the edgeless graph.
+Read [the proofs and exact verification scope](notes/integrality-obstructions.md).
+Reza's [further infinite family](notes/repeated-exponent-family.md) covers
+`(a,a,(a-1)(2a-1))`, `a >= 2`, including `(2,2,3)`. Its antisymmetric block
+has integer eigenvalues; a symmetric cubic proves nonintegrality.
+The full characterization for arbitrary exponent vectors remains open.
+
 ## Start here
 
 | What you want | Where to go |
 | --- | --- |
 | Understand the first task and current status | [Research plan](RESEARCH-PLAN.md) |
+| Read the first checked contributions | [Nonintegrality proofs](notes/integrality-obstructions.md) |
+| Read Reza's extension of the (2,2,3) case | [Repeated-exponent family](notes/repeated-exponent-family.md) |
 | Discuss a conjecture or share a checked argument | [Project issues](https://github.com/the-omega-institute/ideal-intersection-laplacian/issues) |
 | Review proposed additions | [Pull requests](https://github.com/the-omega-institute/ideal-intersection-laplacian/pulls) |
 | Read the previous joint paper | [Binary subspace orthogonality project](https://github.com/the-omega-institute/binary-subspace-orthogonality) |
@@ -20,12 +34,12 @@ This is a new research track; no complete characterization is claimed here.
 ## Current status
 
 We have agreed to start with Q3, the integrality question proposed by Reza.
-Wenlin confirms receipt of the privately shared preprint. The working
-definitions and previously established cases still need to be reviewed against
-that manuscript before being used in new proofs.
+The privately shared preprint has been received and reviewed for the graph
+definition and Q3 scope. The first follow-on proofs and independent exact
+checks are now available above for coauthor review.
 
 The original preprint is awaiting public announcement. This repository begins
-with public project navigation and the agreed research plan. Its confidential
+with the agreed research plan and our follow-on contributions. Its confidential
 PDF, correspondence and unannounced manuscript content are kept outside the
 public repository. A public source link can be added when available.
 
