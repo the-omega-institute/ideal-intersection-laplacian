@@ -12,25 +12,28 @@ with
          + 3a b^2 + 2ab 
     E3 = 2a^2 b (a+b+1)(a^2 + 2ab + 2a + b)
 
-The graph is non-Laplacian-integral iff this cubic has a
+The graph is non-Laplacian-integral if this cubic has a
 non-integer root, which is equivalent to: the cubic has an
 irreducible factor of degree >= 2 over Q.
+The antisymmetric block must also be checked for a full integrality decision.
 
 This script is a DIAGNOSTIC, not a proof. It reports, for each (a,b):
 
   - integer roots of f_{a,b}
   - whether f_{a,b} has an irreducible factor of degree >= 2 over Q
-  - the numerical location of any real root strictly between two
+  - an exact isolating interval for a real root strictly between two
     consecutive integers
-  - the smallest prime p such that f_{a,b} mod p is irreducible
+  - the smallest tested prime p such that f_{a,b} mod p is irreducible
 
 Requires: sympy (pip install sympy).
 """
 
 import sys
+import argparse
+import json
 
 try:
-    from sympy import symbols, Poly, factor_list, nroots, divisors, Integer, GF
+    from sympy import symbols, Poly, factor_list, divisors, Integer, GF, Rational, floor
 except ImportError:
     print("ERROR: sympy is required. Install with: pip install sympy")
     sys.exit(1)
@@ -81,14 +84,11 @@ def integer_roots(poly):
 # ----------------------------------------------------------------------
 
 def factorization_info(poly):
-    factors, _ = factor_list(poly, x)
+    _, factors = factor_list(poly)
     out = []
     has_irr = False
     for f, m in factors:
-        try:
-            deg = int(f.degree()) if hasattr(f, 'degree') else 1
-        except Exception:
-            deg = 1
+        deg = int(f.degree())
         out.append((f, m, deg))
         if deg >= 2:
             has_irr = True
@@ -100,17 +100,14 @@ def factorization_info(poly):
 # ----------------------------------------------------------------------
 
 def trapped_root_info(poly):
-    roots = nroots(poly.as_expr(), n=30)
-    best = None
-    for r in roots:
-        rc = complex(r)
-        if abs(rc.imag) < 1e-12:
-            val = rc.real
-            nearest = round(val)
-            if abs(val - nearest) > 1e-15:
-                if best is None or abs(val - nearest) < abs(best - round(best)):
-                    best = val
-    return (best is not None, best)
+    for bounds, multiplicity in poly.intervals(eps=Rational(1, 1000)):
+        lower, upper = bounds
+        if lower == upper:
+            continue
+        while not (floor(lower) == floor(upper) and lower > floor(lower)):
+            lower, upper = poly.refine_root(lower, upper, eps=(upper - lower) / 10)
+        return True, (lower, upper)
+    return False, None
 
 
 # ----------------------------------------------------------------------
@@ -165,7 +162,7 @@ def analyze(a, b):
 def fmt_trap(val):
     if val is None:
         return "-"
-    return f"{val:.6f}"
+    return f"({floor(val[0])},{floor(val[0]) + 1})"
 
 
 def print_header(title):
@@ -196,6 +193,29 @@ def print_table(rows):
 # ----------------------------------------------------------------------
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--json', action='store_true')
+    arguments = parser.parse_args()
+    if arguments.json:
+        rows = [analyze(first_exponent, third_exponent)
+                for first_exponent in (2, 3, 4) for third_exponent in range(1, 31)]
+        serializable = []
+        for row in rows:
+            bounds = row['trap_val']
+            serializable.append({
+                'a': row['a'], 'b': row['b'], 'polynomial': str(row['poly'].as_expr()),
+                'integer_roots': [int(root) for root in row['int_roots']],
+                'factor_degrees': row['factor_degrees'],
+                'has_noninteger_root': row['has_irrational'],
+                'has_trapped_root': row['has_trapped'],
+                'consecutive_integer_interval': [int(floor(bounds[0])), int(floor(bounds[0])) + 1] if bounds else None,
+                'exact_isolating_interval': [str(value) for value in bounds] if bounds else None,
+                'smallest_tested_irreducible_prime': row['p_irr'],
+            })
+        print(json.dumps({'tested_primes': [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31],
+                          'scope': 'Exact finite cubic diagnostic for a=2,3,4 and b=1..30; no all-parameter theorem or full graph-integrality classification.',
+                          'cases': serializable}, indent=2))
+        return
     print_header("Family (a,a,b): diagnostic for Laplacian non-integrality")
     print("Cubic: f(x) = x^3 - E1 x^2 + E2 x - E3, with")
     print("  E1 = 2a^2 + 5ab + 3a + b")
@@ -210,17 +230,17 @@ def main():
     print("  factor deg   : degrees of the irreducible factors")
     print("  trapped?     : True iff some real root lies strictly")
     print("                 between two consecutive integers")
-    print("  trap value   : numerical value of a trapped root")
-    print("  p_irr        : smallest prime p with f_{a,b} mod p irreducible")
+    print("  trap value   : consecutive integer endpoints, certified by exact root isolation")
+    print("  p_irr        : smallest tested prime (among 2..31) with f mod p irreducible")
 
     print_header("Part 1: a = 2, b = 1..30")
     print_table([analyze(2, b) for b in range(1, 31)])
 
-    print_header("Part 2: a = 3, b = 1..25")
-    print_table([analyze(3, b) for b in range(1, 26)])
+    print_header("Part 2: a = 3, b = 1..30")
+    print_table([analyze(3, b) for b in range(1, 31)])
 
-    print_header("Part 3: a = 4, b = 1..20")
-    print_table([analyze(4, b) for b in range(1, 21)])
+    print_header("Part 3: a = 4, b = 1..30")
+    print_table([analyze(4, b) for b in range(1, 31)])
 
     print_header("Part 4: special parametric sub-families")
 
@@ -241,17 +261,17 @@ def main():
     print(f"a = 2, b = 1..30: irrational in {n_irr_2}/30, "
           f"trapped in {n_trap_2}/30")
 
-    a3 = [analyze(3, b) for b in range(1, 26)]
+    a3 = [analyze(3, b) for b in range(1, 31)]
     n_irr_3 = sum(1 for r in a3 if r['has_irrational'])
     n_trap_3 = sum(1 for r in a3 if r['has_trapped'])
-    print(f"a = 3, b = 1..25: irrational in {n_irr_3}/25, "
-          f"trapped in {n_trap_3}/25")
+    print(f"a = 3, b = 1..30: irrational in {n_irr_3}/30, "
+          f"trapped in {n_trap_3}/30")
 
-    a4 = [analyze(4, b) for b in range(1, 21)]
+    a4 = [analyze(4, b) for b in range(1, 31)]
     n_irr_4 = sum(1 for r in a4 if r['has_irrational'])
     n_trap_4 = sum(1 for r in a4 if r['has_trapped'])
-    print(f"a = 4, b = 1..20: irrational in {n_irr_4}/20, "
-          f"trapped in {n_trap_4}/20")
+    print(f"a = 4, b = 1..30: irrational in {n_irr_4}/30, "
+          f"trapped in {n_trap_4}/30")
 
     print()
     print("Interpretation:")

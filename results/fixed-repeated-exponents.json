@@ -1,0 +1,323 @@
+{
+  "symbolic_identities": "passed",
+  "fixed_exponents": [
+    {
+      "repeated_exponent": 2,
+      "constant": 160,
+      "all_factor_pairs": [
+        {
+          "lower": 1,
+          "upper": 160,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 2,
+          "upper": 80,
+          "admissible": true,
+          "third_exponent_if_integral": 3,
+          "square_root_if_integral": 13
+        },
+        {
+          "lower": 4,
+          "upper": 40,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 5,
+          "upper": 32,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 8,
+          "upper": 20,
+          "admissible": false,
+          "third_exponent_if_integral": 0,
+          "square_root_if_integral": 2
+        },
+        {
+          "lower": 10,
+          "upper": 16,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        }
+      ],
+      "exceptional_third_exponents": [
+        3
+      ],
+      "exceptional_cubic_witnesses": [
+        {
+          "third_exponent": 3,
+          "polynomial": "x**3 - 47*x**2 + 702*x - 3312",
+          "prime": 5,
+          "values_modulo_prime": [
+            3,
+            4,
+            2,
+            3,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "repeated_exponent": 3,
+      "constant": 756,
+      "all_factor_pairs": [
+        {
+          "lower": 1,
+          "upper": 756,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 2,
+          "upper": 378,
+          "admissible": true,
+          "third_exponent_if_integral": 10,
+          "square_root_if_integral": 47
+        },
+        {
+          "lower": 3,
+          "upper": 252,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 4,
+          "upper": 189,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 6,
+          "upper": 126,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 7,
+          "upper": 108,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 9,
+          "upper": 84,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 12,
+          "upper": 63,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 14,
+          "upper": 54,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 18,
+          "upper": 42,
+          "admissible": false,
+          "third_exponent_if_integral": 0,
+          "square_root_if_integral": 3
+        },
+        {
+          "lower": 21,
+          "upper": 36,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 27,
+          "upper": 28,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        }
+      ],
+      "exceptional_third_exponents": [
+        10
+      ],
+      "exceptional_cubic_witnesses": [
+        {
+          "third_exponent": 10,
+          "polynomial": "x**3 - 187*x**2 + 11220*x - 214200",
+          "prime": 13,
+          "values_modulo_prime": [
+            1,
+            11,
+            4,
+            12,
+            2,
+            6,
+            4,
+            2,
+            6,
+            9,
+            4,
+            10,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "repeated_exponent": 4,
+      "constant": 2304,
+      "all_factor_pairs": [
+        {
+          "lower": 1,
+          "upper": 2304,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 2,
+          "upper": 1152,
+          "admissible": true,
+          "third_exponent_if_integral": 21,
+          "square_root_if_integral": 115
+        },
+        {
+          "lower": 3,
+          "upper": 768,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 4,
+          "upper": 576,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 6,
+          "upper": 384,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 8,
+          "upper": 288,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 9,
+          "upper": 256,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 12,
+          "upper": 192,
+          "admissible": true,
+          "third_exponent_if_integral": 2,
+          "square_root_if_integral": 18
+        },
+        {
+          "lower": 16,
+          "upper": 144,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 18,
+          "upper": 128,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 24,
+          "upper": 96,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 32,
+          "upper": 72,
+          "admissible": false,
+          "third_exponent_if_integral": 0,
+          "square_root_if_integral": 4
+        },
+        {
+          "lower": 36,
+          "upper": 64,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        },
+        {
+          "lower": 48,
+          "upper": 48,
+          "admissible": false,
+          "third_exponent_if_integral": null,
+          "square_root_if_integral": null
+        }
+      ],
+      "exceptional_third_exponents": [
+        2,
+        21
+      ],
+      "exceptional_cubic_witnesses": [
+        {
+          "third_exponent": 2,
+          "polynomial": "x**3 - 86*x**2 + 2304*x - 18816",
+          "prime": 5,
+          "values_modulo_prime": [
+            4,
+            3,
+            1,
+            4,
+            3
+          ]
+        },
+        {
+          "third_exponent": 21,
+          "polynomial": "x**3 - 485*x**2 + 75492*x - 3721536",
+          "prime": 5,
+          "values_modulo_prime": [
+            4,
+            2,
+            1,
+            2,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "sympy": "1.14.0",
+  "script_sha256": "a928b0cc58c508b5f015861338527384d67b34cfbcfda09bd83f374360721e79",
+  "diagnostic_sha256": "0877fc7fb32b0ffb696ea62fb86022d7090b71bd0f507c5b5ed9e66edfb39452",
+  "scope": "Complete finite factor-pair certificates for a=2,3,4 plus written reduction for all b>=1; arbitrary a and fullQ3 remain open; no Lean."
+}

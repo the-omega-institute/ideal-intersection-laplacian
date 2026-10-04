@@ -1,7 +1,21 @@
 # First task: Laplacian integrality
 
-**Status:** agreed starting problem; manuscript review and precise formulation
-are pending. No new theorem, certificate or Lean verification is reported.
+**Status:** graph convention reviewed; first proofs are in PR #2. PR #3
+contains the corrected repeated-exponent diagnostic and a proof covering
+all `(a,a,b)` with `a=2,3,4`, `b>=1`. Full Q3 remains open.
+
+Read [the exact diagnostic and finite-reduction proof](notes/aa-b-diagnostic.md).
+With SymPy 1.14.0, reproduce the requested output using:
+
+```sh
+python3 scripts/check_aa_b.py
+python3 scripts/check_aa_b.py --json
+python3 scripts/check_fixed_repeated_exponents.py
+```
+
+The next focused question is the symmetric cubic on admissible factor pairs
+for arbitrary repeated exponent `a`. Avoid an unbounded scan in `b`: the
+discriminant identity reduces each fixed `a` to a finite divisor problem.
 
 Reza proposes the Laplacian integrality question, Q3 in his privately shared
 preprint on ideal intersection graphs of `Z_n`, as the first follow-on task.

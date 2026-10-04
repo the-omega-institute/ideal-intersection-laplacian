@@ -13,6 +13,8 @@ This is a new research track; no complete characterization is claimed here.
 | What you want | Where to go |
 | --- | --- |
 | Understand the first task and current status | [Research plan](RESEARCH-PLAN.md) |
+| Read the requested (a,a,b) diagnostic and fixed-a theorem | [Exact diagnostic and proof](notes/aa-b-diagnostic.md) |
+| Read the earlier squarefree and infinite-family contributions | [PR #2](https://github.com/the-omega-institute/ideal-intersection-laplacian/pull/2) |
 | Discuss a conjecture or share a checked argument | [Project issues](https://github.com/the-omega-institute/ideal-intersection-laplacian/issues) |
 | Review proposed additions | [Pull requests](https://github.com/the-omega-institute/ideal-intersection-laplacian/pulls) |
 | Read the previous joint paper | [Binary subspace orthogonality project](https://github.com/the-omega-institute/binary-subspace-orthogonality) |
@@ -20,9 +22,10 @@ This is a new research track; no complete characterization is claimed here.
 ## Current status
 
 We have agreed to start with Q3, the integrality question proposed by Reza.
-Wenlin confirms receipt of the privately shared preprint. The working
-definitions and previously established cases still need to be reviewed against
-that manuscript before being used in new proofs.
+The graph convention has been reviewed, and the first proofs are in PR #2.
+Reza's diagnostic request now has exact output for all 90 requested pairs.
+A factor-pair argument proves nonintegrality for every `(a,a,b)` with
+`a=2,3,4` and `b>=1`; the full characterization remains open.
 
 The original preprint is awaiting public announcement. This repository begins
 with public project navigation and the agreed research plan. Its confidential
