@@ -23,7 +23,10 @@ read [the complete repeated-exponent proof](notes/repeated-exponent-completion.m
 We also prove nonintegrality for **every `(1,b,c)`, b,c >= 1** using the
 general six-support complement quotient:
 [read the proof and exact diagnostic](notes/one-unit-exponent.md).
-Pairwise unequal exponents all at least2 and the full characterization remain open.
+The same quotient now settles **every `(2,b,c)`, b,c >= 1**:
+[read the minimum-two proof](notes/minimum-two.md). Thus every triple
+with minimum exponent at most2 is nonintegral. Pairwise unequal exponents
+all at least3 and the full characterization remain open.
 
 ## Start here
 
@@ -33,6 +36,7 @@ Pairwise unequal exponents all at least2 and the full characterization remain op
 | Read the consolidated working manuscript | [PDF](paper/paper.pdf) · [LaTeX source](paper/paper.tex) · [Build and section guide](paper/README.md) |
 | Read the complete repeated-exponent theorem | [All (a,a,b) proof](notes/repeated-exponent-completion.md) · [Exact certificate](results/repeated-exponent-completion.json) |
 | Read the unit-exponent theorem and unequal-triple diagnostic | [All (1,b,c) proof](notes/one-unit-exponent.md) · [Requested 35-case output](results/fully-distinct-diagnostic.txt) |
+| Read the minimum-two theorem | [All (2,b,c) proof](notes/minimum-two.md) · [Exact certificate](results/minimum-two.json) |
 | Read the source preprint and original Q3 | [Zenodo DOI10.5281/zenodo.23134979](https://doi.org/10.5281/zenodo.23134979) |
 | Read the requested (a,a,b) diagnostic and fixed-a theorem | [Exact diagnostic and proof](notes/aa-b-diagnostic.md) |
 | Read the sharper cutoff and complete a=5,6 families | [Second linear cutoff](notes/second-linear-cutoff.md) |
@@ -59,7 +63,9 @@ a root lies between the consecutive integers `2ab-1` and `2ab`.
 The earlier cutoffs and fixed-a checks remain as intermediate results.
 The complement quotient now also settles every triple with a unit exponent.
 Reza has hand-checked the repeated-exponent completion identities and gap.
-The next mathematical question is three pairwise distinct exponents all at least2;
+Two positive-coefficient expansions and a single rational interval now
+settle every triple with an exponent of two, as well.
+The next mathematical question is three pairwise distinct exponents all at least3;
 nonsquarefree vectors with more than three prime factors also remain open.
 
 The source preprint is public on

@@ -1,5 +1,10 @@
 # Every three-prime graph with a unit exponent is nonintegral
 
+**Update:** the subsequent [minimum-two proof](minimum-two.md) also settles
+every triple with an exponent of two. The current remaining fully distinct
+domain has all exponents at least3; the original diagnostic outputs below
+retain their recorded scope.
+
 **Theorem.** For distinct primes p,q,r and every b,c≥1, the ideal
 intersection graph of `Z_(p q^b r^c)` is not Laplacian integral.
 The prime factors may be permuted. This includes all fully distinct

@@ -77,6 +77,12 @@ Direct ideal adjacency verifies the quotient for
 $(1,2,3)$ and $(2,3,4)$, using $22$ and $58$ vertices and $312$
 representative-to-vertex pairs. The infinite unit-exponent conclusion
 uses the written endpoint proof.
+\item \path{scripts/check_minimum_two.py} verifies the complement
+endpoint identities at $a=2$, the symmetric expression in $b+c$ and $bc$,
+and both positive-coefficient expansions that exhaust the infinite range.
+It reconstructs the single exceptional quintic at $(2,3,4)$ and checks
+its rational endpoint values with separate Horner evaluation and a Sturm
+count. No new parameter range is enumerated.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

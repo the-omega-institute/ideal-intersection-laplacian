@@ -1,0 +1,48 @@
+\section{A minimum exponent of two}
+\label{sec:minimum-two}
+
+\begin{theorem}
+\label{thm:minimum-two}
+For distinct primes $p,q,r$ and all $b,c\geq1$, the graph
+$G_{p^2q^br^c}$ is not Laplacian integral. Consequently every
+three-prime exponent vector with minimum entry at most two gives a
+nonintegral graph.
+\end{theorem}
+
+\begin{proof}
+Use the complement quotient and quintic from Section~\ref{sec:unit}.
+For $a=2$, $h_{2,b,c}(0)<0$. Putting $s=b+c$ and $t=bc$ gives
+\[
+h_{2,b,c}(1)=(s-13)t^2-(2s+6)t+3s^3+s^2-3s-1.
+\]
+By symmetry order $b\leq c$. A unit exponent is covered by
+Theorem~\ref{thm:unit}; if $b=2$ or $b=c$, use
+Theorem~\ref{thm:repeated}. It remains to consider $3\leq b<c$.
+
+When $b=3$ and $c=5+v$, $v\geq0$, the exact expansion is
+\[
+h_{2,3,5+v}(1)=12v^3+112v^2+268v+120>0.
+\]
+When $b\geq4$ and $c>b$, write $b=4+u$ and $c=5+u+v$, with
+$u,v\geq0$. Then
+\begin{align*}
+h_{2,4+u,5+u+v}(1)
+={}&(u^2+8u+19)v^3\\
+&+(4u^3+38u^2+128u+170)v^2\\
+&+(5u^4+62u^3+271u^2+502u+368)v\\
+&+2u^5+32u^4+190u^3+504u^2+552u+160>0.
+\end{align*}
+All coefficients are positive. In either region the opposite signs at
+$0$ and $1$ give a root $\mu\in(0,1)$ and, by~\eqref{eq:complement}
+and the universal-vertex lift, a noninteger graph eigenvalue in $(V-1,V)$.
+
+The only remaining pair is $(b,c)=(3,4)$. Here
+\[
+h_{2,3,4}(x)=x^5-53x^4+953x^3-6523x^2+13134x-7560,
+\]
+and $h_{2,3,4}(1)=-48$ while
+$h_{2,3,4}(3/2)=13437/32>0$. A root lies in $(1,3/2)$.
+Since $V=58$, its lifted graph eigenvalue lies in $(113/2,57)$,
+an interval containing no integer. This exhausts all positive $b,c$.
+Combining with Theorem~\ref{thm:unit} proves the minimum-entry assertion.
+\end{proof}
