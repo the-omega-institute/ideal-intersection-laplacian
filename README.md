@@ -75,6 +75,9 @@ permutations of (1,2,2) modulo three**:
 A stronger divisibility argument also settles **six mixed-parity exponent
 classes modulo eight**, without bounds on sizes or ratios:
 [read the three-odd-root proof](notes/mixed-parity-congruence.md).
+The shifted quintic and its derivative now settle **every permutation
+of (3,3,2) modulo four**, including odd exponents equal modulo eight:
+[read the uniform root-distribution proof](notes/odd-root-distribution.md).
 
 ## Start here
 
@@ -91,6 +94,7 @@ classes modulo eight**, without bounds on sizes or ratios:
 | Read the common-divisor, all-odd and congruence-class theorems | [Proof](notes/arithmetic-obstructions.md) · [Exact checks](results/arithmetic-obstructions.json) |
 | Read the all-two-modulo-four and common-valuation theorems | [Proof](notes/even-exponent-congruence.md) · [Exact checks](results/even-exponent-congruence.json) |
 | Read the six mixed-parity modulo-eight classes | [Proof](notes/mixed-parity-congruence.md) · [Exact checks](results/mixed-parity-congruence.json) |
+| Read the uniform (3,3,2) modulo-four family | [Proof](notes/odd-root-distribution.md) · [Exact checks](results/odd-root-distribution.json) |
 | Read the linear endpoint-two bound and all-even tail | [Proof](notes/endpoint-reduction.md) · [Exact checks](results/endpoint-reduction.json) |
 | Read the modulo-three endpoint classes and complete parity table | [Proof and covering limitation](notes/endpoint-residues.md) · [Exact residue tables](results/endpoint-residues.json) |
 | Read Reza's requested finite-region run and minimum-through-seven result | [Report and proof](notes/open-region-diagnostic.md) · [Complete CSV](results/open-region-discriminants.csv) · [Independent verification](results/open-region-certificate-check.json) |

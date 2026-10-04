@@ -57,3 +57,58 @@ bound in the argument. The weaker divisibilities $4\mid h_C(2t)$
 and $8\mid h_C(2t+1)$ hold identically for both mixed exponent parities;
 they alone do not supply the contradiction. The distribution of the
 three odd roots modulo four is the additional constraint.
+
+\begin{lemma}
+\label{lem:odd-root-distribution}
+Let $f\in\mathbb Z[x]$ be monic of degree five with
+$f(x)\equiv x^2(x+1)^3\pmod2$. Suppose
+$F(y)=f(2y+1)/8$ belongs to $\mathbb Z[y]$ and
+$F(y)\equiv y^3\pmod2$. If all roots of $f$ are integers,
+then its three odd roots are congruent to one modulo four,
+$64\mid f(1)$ and $16\mid f'(1)$.
+\end{lemma}
+
+\begin{proof}
+Write the two even roots as $\eta_1,\eta_2$ and the three odd
+roots as $2r_1+1,2r_2+1,2r_3+1$, with multiplicities. Then
+\[
+ F(y)=\prod_{j=1}^2(2y+1-\eta_j)\prod_{i=1}^3(y-r_i).
+\]
+The first two factors reduce to one modulo two. Hence
+$\prod_i(y-r_i)\equiv y^3\pmod2$, which forces every $r_i$ to be even.
+Each odd-root factor in $f(1)$ is therefore divisible by four,
+giving $64\mid f(1)$. Every term in the product-rule expansion of
+$f'(1)$ retains at least two such factors, giving $16\mid f'(1)$.
+The argument includes coincident roots and zero factors.
+\end{proof}
+
+\begin{theorem}
+\label{thm:odd-root-distribution}
+Every positive three-prime exponent triple that is a permutation of
+$(3,3,2)$ modulo four has a nonintegral ideal intersection graph.
+\end{theorem}
+
+\begin{proof}
+Relabel the odd exponents as $a=4u+3$, $b=4v+3$ and the even
+exponent as $c=4w+2$, where $u,v,w\geq0$. Expansion of the
+general complement quintic gives the coefficientwise identities
+\begin{align*}
+ h_C(2y+1)/8&\in\mathbb Z[u,v,w,y], &
+ h_C(2y+1)/8&\equiv y^3\pmod2,\\
+ h_C(1)&\equiv16(u+v)\pmod{32}, &
+ h_C'(1)&\equiv8(u+v+1)\pmod{16}.
+\end{align*}
+Its binary reduction is $x^2(x+1)^3$. If all five roots were integers,
+Lemma~\ref{lem:odd-root-distribution} would give $64\mid h_C(1)$,
+so the endpoint congruence would require $u+v$ even. The derivative
+divisibility $16\mid h_C'(1)$ would require $u+v$ odd, a contradiction.
+Thus there is a noninteger real complement eigenvalue, whose graph
+lift is noninteger.
+\end{proof}
+
+This theorem contains the two rows $(3,7,2)$ and $(3,7,6)$ of
+Theorem~\ref{thm:mixed-parity-congruence} and also covers odd exponents
+sharing the same residue modulo eight. For example, $(10,19,27)$ and
+$(14,23,39)$ have odd residues $(3,3)$ and $(7,7)$ modulo eight,
+respectively. Neither theorem requires a low-root interval or an
+exponent-size bound.

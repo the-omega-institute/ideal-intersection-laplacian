@@ -25,7 +25,7 @@ sections and their shared graph/lifting definitions.
 | [low-spectrum.tex](sections/low-spectrum.tex) | General inertia criterion, four complete bounded-gap families, every exponent span at most3, and complete finite minimum-through-seven certificate |
 | [mixed-inertia.tex](sections/mixed-inertia.tex) | Uniform positive root below3 for every minimum at least4; root in(2,3) under the lower inequality; growing balanced region a>=3span+8 |
 | [arithmetic-obstructions.tex](sections/arithmetic-obstructions.tex) | Every gcd>=3 triple, all-odd and prime-residue classes, all-two-modulo-four triples and every common 2-adic valuation |
-| [mixed-parity-congruence.tex](sections/mixed-parity-congruence.tex) | Three-odd-root divisor32 lemma and six infinite mixed-parity exponent classes modulo eight |
+| [mixed-parity-congruence.tex](sections/mixed-parity-congruence.tex) | Three-odd-root divisor32 lemma, six modulo-eight classes, and all (3,3,2) modulo-four permutations by endpoint/derivative contradiction |
 | [endpoint-reduction.tex](sections/endpoint-reduction.tex) | Linear endpoint-two bound, all-even tail, divisor candidates, second-smallest<=15 certificate, modulo-three classes and finite-covering limitation |
 | [aa-small.tex](sections/aa-small.tex) | All-b theorem for a=2 through9, divisor/modular certificates and cubic-test scope |
 | [verification.tex](sections/verification.tex) | Actual scope of the exact checkers |
@@ -73,6 +73,7 @@ python3 scripts/check_endpoint_surfaces.py
 python3 scripts/verify_endpoint_surfaces.py
 python3 scripts/check_endpoint_residues.py
 python3 scripts/check_mixed_parity_congruence.py
+python3 scripts/check_odd_root_distribution.py
 python3 scripts/check_open_region2.py
 python3 scripts/check_open_region2.py --json --certificate-csv results/open-region-discriminants.csv
 python3 scripts/check_open_region_certificate.py

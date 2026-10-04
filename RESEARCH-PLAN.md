@@ -33,6 +33,10 @@ The [mixed-parity proof](notes/mixed-parity-congruence.md) adds six exponent
 classes modulo eight. Three hypothetical odd quotient roots force either
 32|h_C(1) or32|h_C(3), contradicted by explicit polynomial congruences.
 This tests the whole quotient spectrum and requires no exponent-size bound.
+The [root-distribution proof](notes/odd-root-distribution.md) now also
+settles every permutation of (3,3,2) modulo four. The shifted quintic
+forces all three odd roots to be one modulo four; endpoint and derivative
+divisibilities give contradictory parity requirements on the shifts.
 The [requested endpoint diagnostic](notes/endpoint-surfaces-diagnostic.md)
 exhausts all66pairs `4<=a<b<=15` and all integer `c>b` by exact divisor
 reduction, finding neither endpoint zero. With the low-root theorem and

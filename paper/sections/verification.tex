@@ -204,6 +204,17 @@ root multisets for all $12$ and $80$ unordered mixed-parity exponent
 classes modulo four and eight, respectively; this compatibility is not
 an integrality claim. The infinite theorem follows from the written
 three-odd-root divisibility lemma.
+\item \path{scripts/check_odd_root_distribution.py} verifies the generic
+quintic's six exponent permutations and the coefficientwise identities
+in Theorem~\ref{thm:odd-root-distribution}: $160$ coefficients for the
+shifted polynomial's divisibility by eight, $160$ for its reduction
+modulo two, $42$ endpoint coefficients modulo thirty-two and $51$
+derivative coefficients modulo sixteen. Four selected fixtures have
+$28$ independently expanded integer six-by-six determinants, including
+six interpolation points and the zero-root check per fixture. A further
+$24$ five-by-five principal cofactors independently reconstruct the
+derivative at one. The reconstructed quintics and derivatives agree;
+the infinite theorem uses the written odd-root distribution argument.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;
