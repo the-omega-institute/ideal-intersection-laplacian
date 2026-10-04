@@ -47,6 +47,13 @@ family. The complete domain has a written coefficient-positivity proof,
 with no finite base required. Nonintegrality follows in the all-even and
 stated mixed classes; general endpoint-two feasibility remains open.
 
+The [small-middle-gap theorem](notes/endpoint-two-small-middle-gaps.md) now
+excludes endpoint two for every integer `(a,a+d,c)` with a>=8,1<=d<=4,c>a+d.
+Gaps1,3,4 use written infinite tails and a complete76pair finite base;
+gap2 uses its preserved theorem. With the growing-gap result, every fully
+distinct integer endpoint-two zero at minimum>=8 must have **d=b-a>=5 and
+a<2d^2+20**. General feasibility in this remaining region stays open.
+
 ## First results
 
 We prove nonintegrality for every squarefree integer with at least three

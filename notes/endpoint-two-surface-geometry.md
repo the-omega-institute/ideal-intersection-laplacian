@@ -153,7 +153,10 @@ Its uniform written bracket at a>=20 is supplemented by a complete finite
 base for a=8,...,19. The [growing-gap proof](endpoint-two-growing-gap.md)
 also excludes integer solutions for d=b-a>=5,a>=2d^2+20, using a written
 unit-width bracket throughout that domain, with no finite base.
-General integer feasibility outside these hypotheses stays open.
+The [small-middle-gap theorem](endpoint-two-small-middle-gaps.md) excludes
+all integer a>=8,1<=b-a<=4,c>b, combining written tails with complete finite
+bases. Every fully distinct integer endpoint-two zero at minimum>=8 now
+requires d=b-a>=5 and a<2d^2+20. General feasibility remains open there.
 
 Run with SymPy 1.14.0:
 

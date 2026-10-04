@@ -57,6 +57,14 @@ other endpoint-one cases remain open. Further work should address a specified
 remaining structural case or the other quotient roots; manuscript integration
 of the standalone results awaits review.
 
+The [small-middle-gap exclusion](notes/endpoint-two-small-middle-gaps.md)
+now covers all integer a>=8,1<=b-a<=4,c>b. New gaps1,3,4 use written tails
+and a complete76pair finite base; gap2 uses the earlier preserved result.
+Combining this with the growing-gap theorem, every fully distinct integer
+endpoint-two zero at minimum>=8 requires d=b-a>=5 and a<2d^2+20, in addition
+to b<beta(a),c<3a-4. Focus any next structural work inside this remaining
+region or on the other quotient roots; other endpoint-one cases remain open.
+
 **Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
 consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
 the successive linear cutoffs, all `(a,a,b)` with `a,b>=1`, and all
