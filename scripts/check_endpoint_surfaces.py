@@ -4,10 +4,11 @@ Diophantine reduction for the open fully-distinct region.
 For a fixed pair (a, b), we compute h_C(1) and h_C(2) as
 polynomials in c, and find their integer roots c > b.
 
-If no such roots exist (up to some bound B_max on a, b), this
-suggests the open region has no integral triples. If roots do
-exist, they are the only candidate integral triples in the
-region and can be analyzed individually.
+The bound B_max is inclusive in b. All integer c > b are found
+exactly from the rational linear factors of each endpoint cubic;
+there is no imposed bound on c. An empty list settles this finite
+pair range, not the unbounded three-prime problem. Endpoint zeros
+outside the remaining region may also be reported.
 
 Uses only sympy. The quotient matrix is built symbolically in c
 with a, b fixed integers.
@@ -54,12 +55,12 @@ def h_C_at_x(a_val, b_val, x_val):
     Return h_C(x_val) as a polynomial in c for fixed a, b.
 
     We use the identity h_C(x) = -g_B(N - x), where
-    g_B(y) = det(yI - B)/y and N = (a+1)(b+1)(c+1) - 2.
+    g_B(y) = det(yI - B)/y and N = a+b+c+ab+ac+bc is |V(H)|.
     """
     B = quotient_matrix_H(a_val, b_val)
     char_expr = sp.expand(B.charpoly(x).as_expr())
     g_B = sp.cancel(char_expr / x)
-    N = (a_val + 1) * (b_val + 1) * (c + 1) - 2
+    N = a_val + b_val + c + a_val * b_val + a_val * c + b_val * c
     val = -g_B.subs(x, N - x_val)
     return sp.expand(val)
 
@@ -69,11 +70,11 @@ def integer_roots_in_c(poly_in_c, c_min):
     p = sp.Poly(poly_in_c, c, domain='ZZ')
     if p.degree() < 1:
         return []
-    roots = sp.roots(p, c)
+    roots = p.ground_roots()
     result = []
-    for r, m in roots.items():
-        if r.is_integer and int(r) >= c_min:
-            result.append(int(r))
+    for root in roots:
+        if root.is_Integer and int(root) >= c_min:
+            result.append(int(root))
     return sorted(result)
 
 
@@ -85,10 +86,11 @@ def factor_check(a_val, b_val, c_val):
     B = quotient_matrix_H(a_val, b_val).subs(c, c_val)
     char_expr = sp.expand(B.charpoly(x).as_expr())
     g_B = sp.cancel(char_expr / x)
-    N = (a_val + 1) * (b_val + 1) * (c_val + 1) - 2
+    N = a_val + b_val + c_val + a_val * b_val + a_val * c_val + b_val * c_val
     # h_C(x) = -g_B(N - x)
     h_C_expr = sp.expand(-g_B.subs(x, N - x))
     h_C_poly = sp.Poly(h_C_expr, x, domain='ZZ')
+    assert h_C_poly.degree() == 5 and h_C_poly.LC() == 1
 
     # Factor over Z
     factors = sp.factor_list(h_C_poly, x)
@@ -110,7 +112,7 @@ def main():
         print(f"\n=== Surface h_C({x_val}) = 0 ===")
         total = 0
         for a_val in range(4, B_max):
-            for b_val in range(a_val + 1, B_max):
+            for b_val in range(a_val + 1, B_max + 1):
                 poly = h_C_at_x(a_val, b_val, x_val)
                 roots = integer_roots_in_c(poly, c_min=b_val + 1)
                 for c_val in roots:
