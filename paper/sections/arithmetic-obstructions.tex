@@ -1,0 +1,82 @@
+\section{Arithmetic obstructions from the complement quotient}
+\label{sec:arithmetic}
+
+The uniform low-root bound rules out common exponent divisors greater
+than two. Reduction of the characteristic polynomial gives further
+infinite congruence classes, even when another quotient root is an integer.
+
+\begin{theorem}
+\label{thm:common-divisor}
+Every positive three-prime exponent triple with $\gcd(a,b,c)\geq3$
+gives a nonintegral ideal intersection graph.
+\end{theorem}
+
+\begin{proof}
+Put $d=\gcd(a,b,c)$. All entries of the six-support complement quotient
+$C$ are integer combinations of the exponents and their pairwise
+products, so $C/d$ is an integer matrix. Every rational eigenvalue of
+an integer matrix is an integer, by the rational-root theorem for its
+monic characteristic polynomial. Therefore every integer eigenvalue
+of $C$ is a multiple of $d$.
+
+Order $a\leq b\leq c$. If $a=3$, Theorem~\ref{thm:minimum-three}
+applies. Otherwise $a\geq4$, and Theorem~\ref{thm:uniform-low-root}
+supplies an eigenvalue $0<\mu<3$. No positive multiple of $d\geq3$
+lies in this interval. Hence $\mu$ and its graph lift $V-\mu$ are
+noninteger.
+\end{proof}
+
+In particular, if $m$ has exactly three distinct prime factors, then
+$G_{m^d}$ is not Laplacian integral for every $d\geq3$.
+
+\begin{theorem}
+\label{thm:congruence}
+A positive three-prime exponent triple gives a nonintegral ideal
+intersection graph under either of the following conditions:
+\begin{enumerate}
+\item all three exponents are odd;
+\item there is an odd prime $\ell$ and a nonzero residue $t$ such that
+$a\equiv b\equiv c\equiv t\pmod\ell$ and $t^2+8t+4$ is a quadratic
+nonresidue modulo $\ell$.
+\end{enumerate}
+In particular, common residues $1,3,4$ modulo $5$, or $1,2,4,5$ modulo
+$7$, imply nonintegrality.
+\end{theorem}
+
+\begin{proof}
+The monic integer quintic $h_C(x)=\det(xI-C)/x$ would split into
+linear factors modulo every prime if all its roots were integers.
+A nonlinear irreducible factor in one reduction therefore supplies a
+noninteger real complement root and a noninteger graph lift.
+
+If the exponents are odd, reduce the general quotient modulo two:
+\[
+h_C(x)\equiv x(x^2+x+1)^2\pmod2.
+\]
+The quadratic has no root in $\mathbb F_2$, proving the first assertion.
+For a common residue $t$, the equal-exponent identity gives
+\[
+h_C(x)\equiv(x-t^2-t)
+\bigl(x^2-(t^2+4t)x+3t^2\bigr)^2\pmod\ell.
+\]
+The quadratic discriminant is $t^2(t^2+8t+4)$. For odd $\ell$ and
+nonzero $t$, the assumed nonresidue makes the quadratic irreducible.
+Modulo five the discriminant factors for $t=1,3,4$ are $3,2,2$,
+respectively; the squares are $0,1,4$. Modulo seven the corresponding
+values for $t=1,2,4,5$ are $6,3,3,6$, outside the square residues.
+\end{proof}
+
+These conditions allow unequal exponents with arbitrarily large ratios
+or differences. For example, $(11,16,21)$, $(13,18,23)$ and $(14,19,24)$
+have gcd one and mixed parity, but meet the modulo-five criterion.
+The other parity reductions are $x^5$ for three even exponents and
+$x^2(x+1)^3$ for one or two odd exponents. Their complete splitting
+does not establish integrality.
+
+The arithmetic arguments do not assume that the smallest positive
+quotient root is noninteger. The necessary endpoint-zero condition of
+Corollary~\ref{cor:balanced-interval} remains insufficient: the already
+settled boundary triple $(9,9,136)$ has $h_C(1)=0$ and other noninteger
+quotient roots. The remaining three-prime problem has gcd at most two,
+at least one even exponent, and lies outside the congruence classes
+above as well as the earlier proved regions.

@@ -47,6 +47,11 @@ complement quotient eigenvalue in `(0,3)`. If
 In particular, **minimum exponent `a>=3r+8`, with span `r=c-a`, suffices**:
 [read the uniform comparison and balanced-region proof](notes/mixed-inertia.md).
 This written argument allows unbounded spans and does not enlarge any scan.
+Arithmetic arguments now also settle **every triple with gcd at least3**,
+**every all-odd triple**, and explicit common-residue classes, including
+**common residues1,3,4 modulo5**:
+[read the divisibility and congruence proofs](notes/arithmetic-obstructions.md).
+These results allow arbitrarily large exponent ratios and differences.
 The remaining triples lie within `8 <= a < b < c < 4a^2 - 2a`, outside
 these families and the general inertia criterion;
 the full characterization remains open.
@@ -63,6 +68,7 @@ the full characterization remains open.
 | Read the uniform cutoff and minimum-three theorem | [Proof](notes/distinct-tail.md) · [Complete 325-case certificate](results/distinct-tail.json) |
 | Read the inertia criterion and bounded-gap families | [Proof](notes/low-spectrum.md) · [Exact modular certificate](results/low-spectrum.json) |
 | Read the uniform low-root bound and growing balanced region | [Proof](notes/mixed-inertia.md) · [Exact checks](results/mixed-inertia.json) |
+| Read the common-divisor, all-odd and congruence-class theorems | [Proof](notes/arithmetic-obstructions.md) · [Exact checks](results/arithmetic-obstructions.json) |
 | Read Reza's requested finite-region run and minimum-through-seven result | [Report and proof](notes/open-region-diagnostic.md) · [Complete CSV](results/open-region-discriminants.csv) · [Independent verification](results/open-region-certificate-check.json) |
 | Read the source preprint and original Q3 | [Zenodo DOI10.5281/zenodo.23134979](https://doi.org/10.5281/zenodo.23134979) |
 | Read the requested (a,a,b) diagnostic and fixed-a theorem | [Exact diagnostic and proof](notes/aa-b-diagnostic.md) |
@@ -111,6 +117,8 @@ balanced region, including every minimum `a>=3(c-a)+8`.
 In the remaining region `8 <= a < b < c < 4a^2 - 2a`, any integral graph
 must satisfy `h_C(1)h_C(2)=0`. These two endpoint-zero surfaces are the
 next mathematical question; the necessary condition does not classify them.
+The new arithmetic theorems restrict the remaining triples to gcd1or2,
+at least one even exponent, and residues outside the proved congruence classes.
 nonsquarefree vectors with more than three prime factors also remain open.
 
 The source preprint is public on

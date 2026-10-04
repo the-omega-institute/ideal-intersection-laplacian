@@ -18,6 +18,10 @@ in `(0,3)` for every minimum exponent at least4. The sufficient inequality
 `(a-2)(a+b+c-2)>2bc` places a root in `(2,3)` and proves nonintegrality;
 in particular, every minimum `a>=3(c-a)+8` is covered. Read
 [the mixed-sign comparison and balanced-region proof](notes/mixed-inertia.md).
+The [arithmetic obstructions](notes/arithmetic-obstructions.md) additionally
+settle every gcd>=3 triple, every all-odd triple and general common-residue
+classes with a quadratic nonresidue criterion. This includes residues1,3,4
+modulo5 and1,2,4,5 modulo7, with arbitrarily large unequal exponents.
 Full Q3 remains open.
 
 Read [the exact diagnostic and finite-reduction proof](notes/aa-b-diagnostic.md).
@@ -36,6 +40,7 @@ python3 scripts/check_minimum_two.py
 python3 scripts/check_distinct_tail.py
 python3 scripts/check_low_spectrum.py
 python3 scripts/check_mixed_inertia.py
+python3 scripts/check_arithmetic_obstructions.py
 python3 scripts/check_open_region2.py
 python3 scripts/check_open_region_certificate.py
 ```
@@ -56,7 +61,9 @@ low-eigenvalue bound and an exact inertia formula for nonsingular diagonals.
 After the new balanced-region obstruction, focus on the necessary condition
 `h_C(1)h_C(2)=0`: either exclude integer triples on these endpoint-zero
 surfaces or find a different noninteger quotient root there. Do not infer
-integrality from this necessary condition.
+integrality from this necessary condition. The arithmetic restrictions
+leave gcd1or2, at least one even exponent, and residue classes outside
+the proved modular obstruction. Focus any endpoint-zero analysis there.
 The [requested open-region diagnostic](notes/open-region-diagnostic.md)
 records its exact bounds and keeps H/complement endpoint patterns separate.
 It exhausts the remaining pairs for minimum4,5,6,7 under the written cutoff,

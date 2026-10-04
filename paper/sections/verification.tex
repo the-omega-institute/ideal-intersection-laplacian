@@ -137,6 +137,16 @@ and chosen spans up to $1000$. The finite fixtures validate formulas;
 Theorem~\ref{thm:uniform-low-root} and
 Corollaries~\ref{cor:balanced-interval}--\ref{cor:balanced-span}
 use the written comparison and positivity proofs, with no parameter scan.
+\item \path{scripts/check_arithmetic_obstructions.py} verifies symbolic
+integer quotient scaling, the equal-exponent quintic factorization and
+its quadratic discriminant. It checks all eight parity patterns and
+every nonzero common residue for primes $3,5,7$, with all $70$ quadratic
+residue evaluations, including the binary factor, cross-checked by
+integer Horner arithmetic. Six direct quotient fixtures verify scaling,
+low-root and modular witnesses, and the existing boundary triple
+$(9,9,136)$ checks that an integer endpoint is compatible with other
+noninteger roots. The infinite conclusions use the written divisibility
+and finite-field proofs, with no exponent scan.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;
