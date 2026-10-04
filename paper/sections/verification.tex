@@ -3,7 +3,7 @@
 
 The infinite-family conclusions follow from the proofs above, including
 the explicitly exhausted finite certificates in the repeated-exponent and
-minimum-three arguments.
+minimum-three and minimum-seven arguments.
 The accompanying computations use integer or rational arithmetic to
 verify embeddings, identities and finite certificates. In particular,
 the all-$b$ result for $a=2,3,4$ uses the exhaustive divisor criterion,
@@ -98,6 +98,34 @@ $68$ negative and no zero. The $(3,4,5)$ rational exception also has a
 Sturm count of one in $(1,3/2)$. The minimum-three theorem uses this
 complete finite certificate; the general cutoff uses the written
 positive-coefficient argument.
+\item \path{scripts/check_low_spectrum.py} reconstructs the weighted
+symmetric complement quotient and checks its block form, Schur complement,
+determinant identity and ordered-parameter derivative. For the four
+bounded-gap families it verifies the upper-inertia expressions and both
+endpoint factorizations, positive shifted first-endpoint coefficients,
+and all $38$ root-free modular residues with separate integer Horner
+arithmetic. Eight chosen representatives, the four families at $a=4,20$,
+have independently reconstructed integer quotient quintics and Sturm
+counts of two roots in $(0,3)$; at $a=20$ both lie in $(2,3)$.
+These examples check the formulas. The infinite families use the written
+inertia proof and the complete modular exclusions, with no parameter scan.
+\item \path{scripts/check_open_region2.py} runs the coauthor-requested
+domain $4\leq a\leq7$, $a<b<c<4a^2-2a$. It constructs the generic
+$H$ quotient determinant once and specializes its integer coefficients
+for every one of the $27\,562$ triples. Every discriminant is nonsquare.
+Original-quotient and complement endpoint signs are reported separately;
+the general reflection identity is checked symbolically. Sixteen
+representatives, including every first complement sign-pattern witness,
+have separately reconstructed integer matrix characteristic polynomials,
+complement endpoints and exact rational factorizations. The compatibility
+entrypoint \path{scripts/check_open_region.py} runs the same corrected code.
+\item \path{scripts/check_open_region_certificate.py} independently
+reconstructs every one of the $27\,562$ discriminants as a $9\times9$
+integer Sylvester determinant, using a separate fraction-free Bareiss
+implementation. It checks every exact division, every strict consecutive-square
+bracket and the complete ordered domain. This is the exhaustive finite
+certificate used in Corollary~\ref{cor:minimum-seven}, combined with the
+written cutoff, rather than extrapolation to arbitrary minimum exponent.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

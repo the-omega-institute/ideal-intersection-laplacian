@@ -1,0 +1,412 @@
+{
+  "requested_a_max": 7,
+  "total_pairs": 27562,
+  "total_with_noninteger_root": 27562,
+  "general_matrix_and_complement_reflection_identities": "passed",
+  "exact_specialization": "Generic H quotient determinant once; integer coefficient specialization for every requested triple; discriminant nonsquare or exact rational factorization witness.",
+  "cases": [
+    {
+      "a": 4,
+      "c_cutoff_exclusive": 56,
+      "pairs": 1275,
+      "with_noninteger_root": 1275,
+      "witness_counts": {
+        "nonsquare_discriminant": 1275
+      },
+      "sign_patterns": {
+        "g_B": {
+          "---": {
+            "count": 1275,
+            "first_example": [
+              4,
+              5,
+              6
+            ],
+            "endpoint_values": [
+              -872233608,
+              -800393616,
+              -733266720
+            ]
+          }
+        },
+        "h_C": {
+          "-+-": {
+            "count": 14,
+            "first_example": [
+              4,
+              5,
+              6
+            ],
+            "endpoint_values": [
+              -23520,
+              1656,
+              -60192
+            ]
+          },
+          "-++": {
+            "count": 367,
+            "first_example": [
+              4,
+              5,
+              12
+            ],
+            "endpoint_values": [
+              -76800,
+              163620,
+              34776
+            ]
+          },
+          "+++": {
+            "count": 894,
+            "first_example": [
+              4,
+              5,
+              27
+            ],
+            "endpoint_values": [
+              11760,
+              3150900,
+              3846816
+            ]
+          }
+        }
+      }
+    },
+    {
+      "a": 5,
+      "c_cutoff_exclusive": 90,
+      "pairs": 3486,
+      "with_noninteger_root": 3486,
+      "witness_counts": {
+        "nonsquare_discriminant": 3486
+      },
+      "sign_patterns": {
+        "g_B": {
+          "---": {
+            "count": 3486,
+            "first_example": [
+              5,
+              6,
+              7
+            ],
+            "endpoint_values": [
+              -5342373036,
+              -5034672720,
+              -4741053840
+            ]
+          }
+        },
+        "h_C": {
+          "-+-": {
+            "count": 13,
+            "first_example": [
+              5,
+              6,
+              7
+            ],
+            "endpoint_values": [
+              -89160,
+              7920,
+              -134640
+            ]
+          },
+          "-++": {
+            "count": 1189,
+            "first_example": [
+              5,
+              6,
+              12
+            ],
+            "endpoint_values": [
+              -249760,
+              230040,
+              4320
+            ]
+          },
+          "+++": {
+            "count": 2284,
+            "first_example": [
+              5,
+              6,
+              44
+            ],
+            "endpoint_values": [
+              48480,
+              26671896,
+              39368928
+            ]
+          }
+        }
+      }
+    },
+    {
+      "a": 6,
+      "c_cutoff_exclusive": 132,
+      "pairs": 7750,
+      "with_noninteger_root": 7750,
+      "witness_counts": {
+        "nonsquare_discriminant": 7750
+      },
+      "sign_patterns": {
+        "g_B": {
+          "---": {
+            "count": 7750,
+            "first_example": [
+              6,
+              7,
+              8
+            ],
+            "endpoint_values": [
+              -24614089152,
+              -23566927968,
+              -22555115640
+            ]
+          }
+        },
+        "h_C": {
+          "-+-": {
+            "count": 13,
+            "first_example": [
+              6,
+              7,
+              8
+            ],
+            "endpoint_values": [
+              -259728,
+              18936,
+              -261792
+            ]
+          },
+          "-++": {
+            "count": 2890,
+            "first_example": [
+              6,
+              7,
+              13
+            ],
+            "endpoint_values": [
+              -676008,
+              405936,
+              35568
+            ]
+          },
+          "+++": {
+            "count": 4847,
+            "first_example": [
+              6,
+              7,
+              65
+            ],
+            "endpoint_values": [
+              152040,
+              146275920,
+              235067040
+            ]
+          }
+        }
+      }
+    },
+    {
+      "a": 7,
+      "c_cutoff_exclusive": 182,
+      "pairs": 15051,
+      "with_noninteger_root": 15051,
+      "witness_counts": {
+        "nonsquare_discriminant": 15051
+      },
+      "sign_patterns": {
+        "g_B": {
+          "---": {
+            "count": 15051,
+            "first_example": [
+              7,
+              8,
+              9
+            ],
+            "endpoint_values": [
+              -92287710036,
+              -89268960816,
+              -86328499824
+            ]
+          }
+        },
+        "h_C": {
+          "-+-": {
+            "count": 13,
+            "first_example": [
+              7,
+              8,
+              9
+            ],
+            "endpoint_values": [
+              -637728,
+              32004,
+              -461664
+            ]
+          },
+          "-++": {
+            "count": 5925,
+            "first_example": [
+              7,
+              8,
+              14
+            ],
+            "endpoint_values": [
+              -1542128,
+              645544,
+              89056
+            ]
+          },
+          "+++": {
+            "count": 9113,
+            "first_example": [
+              7,
+              8,
+              90
+            ],
+            "endpoint_values": [
+              396480,
+              605736720,
+              1021491360
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "independent_matrix_cases": [
+    {
+      "exponents": [
+        4,
+        5,
+        6
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        5,
+        12
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        5,
+        27
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        54,
+        55
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        5,
+        6,
+        7
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        5,
+        6,
+        12
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        5,
+        6,
+        44
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        5,
+        88,
+        89
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        6,
+        7,
+        8
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        6,
+        7,
+        13
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        6,
+        7,
+        65
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        6,
+        130,
+        131
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        7,
+        8,
+        9
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        7,
+        8,
+        14
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        7,
+        8,
+        90
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    },
+    {
+      "exponents": [
+        7,
+        180,
+        181
+      ],
+      "matrix_charpoly_reflection_and_factorization": "passed"
+    }
+  ],
+  "ordered_case_records_sha256": "35cb1eb564fd6e9ea7ad30d63acd2db5b25db970a3a055d152cda1817bf618f5",
+  "script_sha256": "3cc669990967dc63fc5b3b65eb4398368c5cbd91141600ed69d69bbf800a6c80",
+  "scope": "Finite diagnostic in the stated requested region only. H and complement signs are distinct. Different endpoint patterns do not preclude a uniform proof. No floating-point spectra or Lean.",
+  "discriminant_certificate": "results/open-region-discriminants.csv",
+  "discriminant_certificate_sha256": "64b2173e944761a31ff8e51cbdb9634a3c545d5cf189f153c3c97580c5af9ecb"
+}

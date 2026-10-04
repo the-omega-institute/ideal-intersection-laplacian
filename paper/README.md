@@ -22,9 +22,10 @@ sections and their shared graph/lifting definitions.
 | [unit-exponent.tex](sections/unit-exponent.tex) | General six-support complement quotient and all (1,b,c) theorem |
 | [minimum-two.tex](sections/minimum-two.tex) | All (2,b,c) theorem from two positive expansions and one rational interval |
 | [distinct-tail.tex](sections/distinct-tail.tex) | Uniform c>=4a^2-2a cutoff and all (3,b,c) theorem with the complete derived 325-case endpoint certificate |
+| [low-spectrum.tex](sections/low-spectrum.tex) | General inertia criterion, four complete bounded-gap families, every exponent span at most3, and complete finite minimum-through-seven certificate |
 | [aa-small.tex](sections/aa-small.tex) | All-b theorem for a=2 through9, divisor/modular certificates and cubic-test scope |
 | [verification.tex](sections/verification.tex) | Actual scope of the exact checkers |
-| [open.tex](sections/open.tex) | Ordered 4<=a<b<c<4a^2-2a, and nonsquarefree higher-prime vectors |
+| [open.tex](sections/open.tex) | Ordered 8<=a<b<c<4a^2-2a outside the new families/inertia criterion, and nonsquarefree higher-prime vectors |
 
 ## Build
 
@@ -59,6 +60,10 @@ python3 scripts/check_six_support_quotient.py --json
 python3 scripts/check_fully_distinct.py
 python3 scripts/check_minimum_two.py
 python3 scripts/check_distinct_tail.py
+python3 scripts/check_low_spectrum.py
+python3 scripts/check_open_region2.py
+python3 scripts/check_open_region2.py --json --certificate-csv results/open-region-discriminants.csv
+python3 scripts/check_open_region_certificate.py
 ```
 
 Compare with the corresponding JSON files under `results/`. The full text

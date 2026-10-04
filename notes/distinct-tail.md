@@ -1,5 +1,10 @@
 # A uniform unequal-exponent cutoff and every minimum exponent of three
 
+**Update:** the subsequent [inertia proof](low-spectrum.md) also settles
+every exponent triple whose maximum minus minimum is at most3 and the
+family `(a,a+3,a+4)` for every a>=1. The finite certificate below keeps its
+original minimum-three scope.
+
 For three distinct primes, the ideal intersection graph is nonintegral
 whenever its positive exponents, ordered as `a <= b <= c`, satisfy
 `a >= 2` and **`c >= 4a^2 - 2a`**. This is a written infinite-family proof.

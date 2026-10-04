@@ -5,6 +5,13 @@ consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
 the successive linear cutoffs, all `(a,a,b)` with `a,b>=1`, and all
 `(1,b,c)`, `(2,b,c)` and `(3,b,c)` with `b,c>=1`, plus the uniform
 cutoff `c >= 4a^2 - 2a` for ordered `2 <= a <= b <= c`.
+The general Schur-complement inertia criterion also proves the four families
+with gaps `(1,2),(1,3),(2,3),(3,4)`, for every positive minimum exponent.
+Thus all triples with maximum minus minimum at most3 are settled.
+The coauthor-requested complete finite region at minima4through7 has
+27,562nonsquare discriminants, all independently reconstructed by integer
+Sylvester determinants. With the cutoff, every minimum-entry<=7 triple
+has a complete certificate. This extension depends on the finite computation.
 The corrected repeated-exponent diagnostic and exact certificates remain
 available. Full Q3 remains open.
 
@@ -22,20 +29,31 @@ python3 scripts/check_six_support_quotient.py
 python3 scripts/check_fully_distinct.py
 python3 scripts/check_minimum_two.py
 python3 scripts/check_distinct_tail.py
+python3 scripts/check_low_spectrum.py
+python3 scripts/check_open_region2.py
+python3 scripts/check_open_region_certificate.py
 ```
 
 The [completion proof](notes/repeated-exponent-completion.md) settles the
 remaining factor indices using a uniform cubic sign interval. The next
 focused question is the six-support quotient for the remaining ordered region
-`4 <= a < b < c < 4a^2 - 2a`. The [complement interval proof](notes/one-unit-exponent.md)
+`8 <= a < b < c < 4a^2 - 2a`. The [complement interval proof](notes/one-unit-exponent.md)
 and [positive expansions](notes/minimum-two.md) now settle every triple
 with minimum exponent at most2. The [uniform cutoff](notes/distinct-tail.md)
 reduces each fixed minimum exponent to finitely many pairs; the complete
 325-case integer endpoint certificate at minimum3 closes that entire family.
-Next seek a uniform nonvanishing/sign argument for the remaining region,
-or a sharper cutoff using the full endpoint cubic. Derive an exact
-obstruction for a stated subfamily;
-the coordinate-swap decomposition is specific to repeated exponents.
+The [inertia criterion](notes/low-spectrum.md) handles two roots in one
+interval, which endpoint signs can miss. Four bounded-gap families are now
+settled using38root-free modular residues, without an exponent scan.
+Next study the diagonal-minus-rank-one Schur complement outside those families:
+seek a uniform low-eigenvalue bound with integer-endpoint exclusions, or
+conditions on its full inertia when its diagonal has mixed signs. Derive an exact
+obstruction for a stated subfamily.
+The [requested open-region diagnostic](notes/open-region-diagnostic.md)
+records its exact bounds and keeps H/complement endpoint patterns separate.
+It exhausts the remaining pairs for minimum4,5,6,7 under the written cutoff,
+but does not bound the minimum exponent in general.
+The coordinate-swap decomposition is specific to repeated exponents.
 Do not replace the open classification by an arbitrary finite scan.
 
 Reza proposes the Laplacian integrality question, Q3 in his
