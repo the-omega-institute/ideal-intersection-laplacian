@@ -150,7 +150,10 @@ remaining root. The minimum exponent remains unbounded.
 The subsequent [gap-two argument](endpoint-two-gap-two.md) excludes every
 integer endpoint-two solution for ordered `(a,a+2,c)` with a>=8,c>a+2.
 Its uniform written bracket at a>=20 is supplemented by a complete finite
-base for a=8,...,19. Integer feasibility at arbitrary middle gaps stays open.
+base for a=8,...,19. The [growing-gap proof](endpoint-two-growing-gap.md)
+also excludes integer solutions for d=b-a>=5,a>=2d^2+20, using a written
+unit-width bracket throughout that domain, with no finite base.
+General integer feasibility outside these hypotheses stays open.
 
 Run with SymPy 1.14.0:
 

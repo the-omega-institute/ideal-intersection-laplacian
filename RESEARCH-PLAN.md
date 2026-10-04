@@ -48,6 +48,15 @@ Further work should address a different specified structural subfamily or
 the other quotient roots, retaining the general integer-feasibility and
 endpoint-one problems as open rather than enlarging an arbitrary scan.
 
+The [growing-gap proof](notes/endpoint-two-growing-gap.md) now brackets the
+unique real endpoint-two root for `d=b-a>=5,a>=2d^2+20` between consecutive
+integers `2a+d-11` and `2a+d-10`. Integer endpoint-two solutions are excluded
+throughout this unbounded family by a written proof with no finite base.
+The general integer-feasibility problem outside the stated hypotheses and
+other endpoint-one cases remain open. Further work should address a specified
+remaining structural case or the other quotient roots; manuscript integration
+of the standalone results awaits review.
+
 **Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
 consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
 the successive linear cutoffs, all `(a,a,b)` with `a,b>=1`, and all

@@ -1,0 +1,473 @@
+{
+  "written_result": "For real d>=5,a>=2d^2+20,b=a+d, the unique real endpoint-two solution c>b lies strictly in(2a+d-11,2a+d-10). Thus no integer endpoint-two solution for integer a,d and c>b.",
+  "endpoint_values_coefficients_descending_in_a": {
+    "lower": [
+      "-6",
+      "8*d**2 - 15*d - 65",
+      "16*d**3 - 78*d**2 - 130*d + 2052",
+      "10*d**4 - 102*d**3 - 285*d**2 + 3078*d - 8203",
+      "2*d**5 - 25*d**4 - 220*d**3 + 3458*d**2 - 8203*d - 676",
+      "4*d**5 - 122*d**4 + 1216*d**3 - 4004*d**2 - 338*d + 8788"
+    ],
+    "upper": [
+      "8*d**2 - 144",
+      "16*d**3 - 56*d**2 - 288*d + 2016",
+      "10*d**4 - 84*d**3 - 392*d**2 + 3024*d - 6336",
+      "2*d**5 - 20*d**4 - 248*d**3 + 3056*d**2 - 6336*d - 1152",
+      "4*d**5 - 112*d**4 + 1024*d**3 - 3072*d**2 - 576*d + 6912"
+    ]
+  },
+  "positive_expansions_at_d_5_plus_r_a_2d_squared_20_plus_u": {
+    "negative_lower": {
+      "nonzero_terms": 36,
+      "constant": 8176563072,
+      "vectors_ascending_in_r_by_u_power": [
+        [
+          8176563072,
+          10702072308,
+          6533887336,
+          2441182410,
+          617575888,
+          110647964,
+          14260434,
+          1312164,
+          83144,
+          3312,
+          64
+        ],
+        [
+          617529036,
+          647593173,
+          312876344,
+          90388708,
+          17077611,
+          2166606,
+          181376,
+          9248,
+          224
+        ],
+        [
+          18517518,
+          14575402,
+          5172183,
+          1044682,
+          127178,
+          8904,
+          288
+        ],
+        [
+          275748,
+          144710,
+          32718,
+          3624,
+          176
+        ],
+        [
+          2040,
+          535,
+          52
+        ],
+        [
+          6
+        ]
+      ]
+    },
+    "positive_upper": {
+      "nonzero_terms": 35,
+      "constant": 1722564592,
+      "vectors_ascending_in_r_by_u_power": [
+        [
+          1722564592,
+          3898674344,
+          3488957044,
+          1763855732,
+          574749536,
+          127937904,
+          19858260,
+          2132724,
+          152168,
+          6528,
+          128
+        ],
+        [
+          93388278,
+          190152594,
+          138386892,
+          54033548,
+          12904374,
+          1966050,
+          188360,
+          10432,
+          256
+        ],
+        [
+          1888094,
+          3435084,
+          1874344,
+          504308,
+          74458,
+          5856,
+          192
+        ],
+        [
+          16856,
+          27232,
+          9272,
+          1296,
+          64
+        ],
+        [
+          56,
+          80,
+          8
+        ],
+        [
+          0
+        ]
+      ]
+    }
+  },
+  "nonintegrality_consequence": "All-even triples and permutations(1,3,2)/(3,3,0)mod4 satisfying the size-ordered hypotheses, using the uniform low root and prior conditional exclusion of1.",
+  "fixed_pair_fixtures": [
+    {
+      "pair": [
+        70,
+        75
+      ],
+      "gap": 5,
+      "unique_exponent_root_bracket": [
+        134,
+        135
+      ],
+      "exponent_cubic_coefficients": [
+        776756,
+        -134745256,
+        3990276652,
+        7656463672
+      ],
+      "direct_quotients": [
+        {
+          "exponents": [
+            70,
+            75,
+            134
+          ],
+          "quintic_coefficients": [
+            1,
+            -25517,
+            210306143,
+            -552239804359,
+            3548982888480,
+            -4898865163500
+          ],
+          "integer_Horner_at_0_1_2": [
+            -4898865163500,
+            -1901911798752,
+            -8176563072
+          ],
+          "positive_roots_strictly_between_0_and_3": 1
+        },
+        {
+          "exponents": [
+            70,
+            75,
+            135
+          ],
+          "quintic_coefficients": [
+            1,
+            -25665,
+            212612025,
+            -560491685875,
+            3612038036250,
+            -4982087250000
+          ],
+          "integer_Horner_at_0_1_2": [
+            -4982087250000,
+            -1930328313264,
+            1722564592
+          ],
+          "positive_roots_strictly_between_0_and_3": 1
+        }
+      ]
+    },
+    {
+      "pair": [
+        92,
+        98
+      ],
+      "gap": 6,
+      "unique_exponent_root_bracket": [
+        179,
+        180
+      ],
+      "exponent_cubic_coefficients": [
+        1739776,
+        -399450240,
+        15430625280,
+        29900482560
+      ],
+      "direct_quotients": [
+        {
+          "exponents": [
+            92,
+            98,
+            179
+          ],
+          "quintic_coefficients": [
+            1,
+            -44133,
+            627720513,
+            -2832095656923,
+            18568586408454,
+            -25842408835320
+          ],
+          "integer_Horner_at_0_1_2": [
+            -25842408835320,
+            -10105290407408,
+            -28597588096
+          ],
+          "positive_roots_strictly_between_0_and_3": 1
+        },
+        {
+          "exponents": [
+            92,
+            98,
+            180
+          ],
+          "quintic_coefficients": [
+            1,
+            -44326,
+            632899356,
+            -2863779915176,
+            18816774852800,
+            -26171893641600
+          ],
+          "integer_Horner_at_0_1_2": [
+            -26171893641600,
+            -10218265848945,
+            11598888960
+          ],
+          "positive_roots_strictly_between_0_and_3": 1
+        }
+      ]
+    },
+    {
+      "pair": [
+        148,
+        156
+      ],
+      "gap": 8,
+      "unique_exponent_root_bracket": [
+        293,
+        294
+      ],
+      "exponent_cubic_coefficients": [
+        7087532,
+        -2636196808,
+        161991014416,
+        317644059040
+      ],
+      "direct_quotients": [
+        {
+          "exponents": [
+            148,
+            156,
+            293
+          ],
+          "quintic_coefficients": [
+            1,
+            -113951,
+            4173676475,
+            -48226240626349,
+            323996751765888,
+            -455377719444336
+          ],
+          "integer_Horner_at_0_1_2": [
+            -455377719444336,
+            -179603034742272,
+            -255790829340
+          ],
+          "positive_roots_strictly_between_0_and_3": 1
+        },
+        {
+          "exponents": [
+            148,
+            156,
+            294
+          ],
+          "quintic_coefficients": [
+            1,
+            -114258,
+            4194839676,
+            -48555797336632,
+            326657662209216,
+            -458935329670272
+          ],
+          "integer_Horner_at_0_1_2": [
+            -458935329670272,
+            -180829270072269,
+            190362290944
+          ],
+          "positive_roots_strictly_between_0_and_3": 1
+        }
+      ]
+    },
+    {
+      "pair": [
+        100,
+        105
+      ],
+      "gap": 5,
+      "unique_exponent_root_bracket": [
+        194,
+        195
+      ],
+      "exponent_cubic_coefficients": [
+        2183636,
+        -542599246,
+        22583639302,
+        43862649292
+      ],
+      "direct_quotients": [
+        {
+          "exponents": [
+            100,
+            105,
+            194
+          ],
+          "quintic_coefficients": [
+            1,
+            -51467,
+            853406333,
+            -4484297217829,
+            29529819647370,
+            -41181888447000
+          ],
+          "integer_Horner_at_0_1_2": [
+            -41181888447000,
+            -16135512662592,
+            -52611596352
+          ],
+          "positive_roots_strictly_between_0_and_3": 1
+        },
+        {
+          "exponents": [
+            100,
+            105,
+            195
+          ],
+          "quintic_coefficients": [
+            1,
+            -51675,
+            859910475,
+            -4530586403125,
+            29894408062500,
+            -41666625000000
+          ],
+          "integer_Horner_at_0_1_2": [
+            -41666625000000,
+            -16301943481824,
+            6723969532
+          ],
+          "positive_roots_strictly_between_0_and_3": 1
+        }
+      ]
+    },
+    {
+      "pair": [
+        182,
+        191
+      ],
+      "gap": 9,
+      "unique_exponent_root_bracket": [
+        362,
+        363
+      ],
+      "exponent_cubic_coefficients": [
+        13069924,
+        -5988009048,
+        450624939660,
+        886856697720
+      ],
+      "direct_quotients": [
+        {
+          "exponents": [
+            182,
+            191,
+            362
+          ],
+          "quintic_coefficients": [
+            1,
+            -171993,
+            9500504163,
+            -165272447866059,
+            1118766465690804,
+            -1577188600352820
+          ],
+          "integer_Horner_at_0_1_2": [
+            -1577188600352820,
+            -623685082195904,
+            -669459154000
+          ],
+          "positive_roots_strictly_between_0_and_3": 1
+        },
+        {
+          "exponents": [
+            182,
+            191,
+            363
+          ],
+          "quintic_coefficients": [
+            1,
+            -172369,
+            9539566257,
+            -166186457861843,
+            1126216237361378,
+            -1587170685452352
+          ],
+          "integer_Horner_at_0_1_2": [
+            -1587170685452352,
+            -627131366558928,
+            592271595216
+          ],
+          "positive_roots_strictly_between_0_and_3": 1
+        }
+      ]
+    }
+  ],
+  "outside_hypothesis_controls": [
+    {
+      "exponents": [
+        20,
+        22,
+        32
+      ],
+      "h_C_at_two": -8192000,
+      "growing_gap_hypotheses_hold": false
+    },
+    {
+      "exponents": [
+        20,
+        22,
+        33
+      ],
+      "h_C_at_two": 3658680,
+      "growing_gap_hypotheses_hold": false
+    },
+    {
+      "exponents": [
+        10,
+        10,
+        12
+      ],
+      "h_C_at_two": 0,
+      "growing_gap_hypotheses_hold": false
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_two_growing_gap.py": "ce64b4e8d2e0a39719680ca4136eaa84abb19f74cb9c9ab4b2184c232d81d19e",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Unbounded written proof from complete positive coefficient identities and prior real-root uniqueness. No finite base or exponent scan needed. Five selected exponent cubics: exact Sturm counts in bracket and entire c>b tail. Ten direct6x6quotient/Horner/Sturm fixtures and three outside-hypothesis controls. No floats or Lean. General integer endpoint-two feasibility, other endpoint-one cases, fullQ3 and higher-prime nonsquarefree vectors remain open. Manuscript unchanged."
+}

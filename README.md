@@ -39,6 +39,14 @@ the infinite tail a>=20; a complete twelve-pair exact computation covers
 8<=a<=19. Nonintegrality follows in the all-even and stated mixed classes;
 other endpoint-one cases and arbitrary middle gaps remain open.
 
+The [growing-gap integer exclusion](notes/endpoint-two-growing-gap.md) now
+allows an unbounded middle difference d: for real `d>=5,a>=2d^2+20,b=a+d`,
+the unique endpoint-two solution c>b lies in `(2a+d-11,2a+d-10)`.
+For integer exponents this excludes endpoint two throughout the stated
+family. The complete domain has a written coefficient-positivity proof,
+with no finite base required. Nonintegrality follows in the all-even and
+stated mixed classes; general endpoint-two feasibility remains open.
+
 ## First results
 
 We prove nonintegrality for every squarefree integer with at least three
