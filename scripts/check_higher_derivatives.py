@@ -1,10 +1,10 @@
 """
 Higher-derivative 2-adic diagnostic for mixed-parity triples.
 
-For each mixed-parity class (a, b, c) mod 8, this script
-computes the first few derivatives of h_C at x = 1, reduces them
-modulo suitable powers of two, and reports the 2-adic valuation
-distribution.
+For each canonical mixed-parity representative (a, b, c) in 0..7,
+this script computes exact values and the first few derivatives of h_C
+at x = 1 and reports their 2-adic valuations. These full valuations
+are not generally constant on a residue class. Zero has valuation infinity.
 
 The idea is to extend the argument of Theorem 13.6 / 13.8: if
 h_C has all integer roots in a mixed-parity triple, then the
@@ -79,9 +79,9 @@ def is_mixed_parity(a_r, b_r, c_r):
 
 
 def v2(n):
-    """2-adic valuation of a nonzero integer."""
+    """2-adic valuation, with infinity for zero."""
     if n == 0:
-        return 99
+        return float('inf')
     n = abs(n)
     v = 0
     while n % 2 == 0:
@@ -112,7 +112,7 @@ def main():
     print()
 
     M = 8
-    print(f"Enumerating mixed-parity classes mod {M} ...")
+    print(f"Evaluating canonical mixed-parity representatives mod {M} ...")
     rows = []
     for a_r in range(M):
         for b_r in range(M):
@@ -126,7 +126,7 @@ def main():
                 v3v = int(sp.Integer(h_C_3.subs(subs)))
                 rows.append(((a_r, b_r, c_r), v0, v1, v2v, v3v))
 
-    print(f"  total mixed-parity classes: {len(rows)}")
+    print(f"  total mixed-parity representatives: {len(rows)}")
     print()
 
     # Distribution of 2-adic valuations
@@ -158,7 +158,7 @@ def main():
     print("Distinct joint v2-patterns "
           "(h_C(1), h_C'(1), h_C''(1), h_C'''(1)):")
     for p, cnt in sorted(patterns.items(), key=lambda kv: -kv[1]):
-        print(f"  {p}: {cnt} classes")
+        print(f"  {p}: {cnt} representatives")
     print()
 
     # Consistency: for a triple with all integer roots, the
@@ -166,8 +166,8 @@ def main():
     # v2(h_C(1)) >= 6 and v2(h_C'(1)) >= 4.
     # We list classes with v2(h_C(1)) < 6.
     print("=" * 78)
-    print("Classes with v2(h_C(1)) < 6 (candidates for exclusion")
-    print("by the higher-derivative argument):")
+    print("Representatives with v2(h_C(1)) < 6:")
+    print("This is not a list of uniform residue-class exclusions.")
     print("=" * 78)
     low = [(pat, v0, v1, v2v, v3v) for (pat, v0, v1, v2v, v3v) in rows
            if v2(v0) < 6]
