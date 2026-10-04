@@ -1,5 +1,9 @@
 # A finite divisor reduction for each factor index
 
+**Update:** the subsequent [uniform cubic proof](repeated-exponent-completion.md)
+settles every repeated-exponent pair. The third cutoff below is an
+intermediate result; its earlier remaining range is now covered.
+
 The square-discriminant condition admits a second exact finite reduction:
 instead of fixing the repeated exponent a, fix the index j in
 $d=1+(a+1)j$. Then d must divide the constant $(j+1)^3(j+2)$,

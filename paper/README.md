@@ -18,9 +18,10 @@ sections and their shared graph/lifting definitions.
 | [pqrk.tex](sections/pqrk.tex) | Explicit irrational eigenvalues for `(1,1,k)` |
 | [aa-family.tex](sections/aa-family.tex) | Reza's public boundary-family proof |
 | [aa-bounds.tex](sections/aa-bounds.tex) | Exact fixed-a and fixed-index criteria, successive cutoffs and complete smaller-factor certificates |
+| [aa-completion.tex](sections/aa-completion.tex) | All-positive-a,b theorem: third-index certificates and uniform cubic sign obstruction |
 | [aa-small.tex](sections/aa-small.tex) | All-b theorem for a=2 through9, divisor/modular certificates and cubic-test scope |
 | [verification.tex](sections/verification.tex) | Actual scope of the exact checkers |
-| [open.tex](sections/open.tex) | Remaining square-discriminant and unequal-exponent cases |
+| [open.tex](sections/open.tex) | Pairwise unequal triples and nonsquarefree vectors with more prime factors |
 
 ## Build
 
@@ -50,6 +51,7 @@ python3 scripts/check_aa_b.py --json
 python3 scripts/check_fixed_repeated_exponents.py
 python3 scripts/check_second_cutoff.py
 python3 scripts/check_factor_index_reduction.py
+python3 scripts/check_repeated_exponent_completion.py
 ```
 
 Compare with the corresponding JSON files under `results/`. The full text

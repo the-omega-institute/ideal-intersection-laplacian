@@ -18,7 +18,9 @@ Read [the proofs and exact verification scope](notes/integrality-obstructions.md
 Reza's [further infinite family](notes/repeated-exponent-family.md) covers
 `(a,a,(a-1)(2a-1))`, `a >= 2`, including `(2,2,3)`. Its antisymmetric block
 has integer eigenvalues; a symmetric cubic proves nonintegrality.
-The full characterization for arbitrary exponent vectors remains open.
+We now prove nonintegrality for **every `(a,a,b)`, a,b >= 1**:
+read [the complete repeated-exponent proof](notes/repeated-exponent-completion.md).
+Three pairwise unequal exponents and the full characterization remain open.
 
 ## Start here
 
@@ -26,6 +28,7 @@ The full characterization for arbitrary exponent vectors remains open.
 | --- | --- |
 | Understand the first task and current status | [Research plan](RESEARCH-PLAN.md) |
 | Read the consolidated working manuscript | [PDF](paper/paper.pdf) · [LaTeX source](paper/paper.tex) · [Build and section guide](paper/README.md) |
+| Read the complete repeated-exponent theorem | [All (a,a,b) proof](notes/repeated-exponent-completion.md) · [Exact certificate](results/repeated-exponent-completion.json) |
 | Read the requested (a,a,b) diagnostic and fixed-a theorem | [Exact diagnostic and proof](notes/aa-b-diagnostic.md) |
 | Read the sharper cutoff and complete a=5,6 families | [Second linear cutoff](notes/second-linear-cutoff.md) |
 | Read the fixed-index divisor criterion and current cutoff | [Factor-index reduction](notes/factor-index-reduction.md) |
@@ -42,19 +45,15 @@ The graph convention has been reviewed. The working manuscript consolidates
 the squarefree classification, the `(1,1,k)` family, Reza's boundary family,
 the successive linear cutoffs, and the complete fixed-exponent families.
 Reza's diagnostic request now has exact output for all 90 requested pairs.
-A factor-pair argument proves nonintegrality for every `(a,a,b)` with
-`a=2,...,9` and `b>=1`; the full characterization remains open.
-For every `a>=1`, all `b>(a-1)(2a-1)` are also covered by the general
-discriminant bound; Reza's earlier theorem covers equality for `a>=2`.
-A congruence sharpens the remaining range to `b <= floor(R(a))`, with
-`R(a)=2(a-1)(a-2)/(a+2)` for every `a>=2`. Every larger `b` is nonintegral;
-read the linear cutoff proof in the note above.
-Settling the first nonboundary factor gives the strictly sharper
-`S(a)=(a-3)(2a-3)/(2a+3)`. Every `b>S(a)` is nonintegral;
-the remaining pairs have `b<=floor(S(a))` and smaller factor `d>=2a+3`.
-The fixed-index criterion settles the next factor level and improves the
-current cutoff to `T(a)=2(a-4)(a-2)/(3a+4)`. Remaining pairs have
-`b<=floor(T(a))`, smaller factor `d>=3a+4`, and index `j>=3`.
+The repeated-exponent family is now completely settled: every `(a,a,b)`
+with positive exponents is nonintegral. For square antisymmetric
+discriminant, the boundary and factor indices 1,2,3 have complete proofs
+and finite modular certificates. Every later index forces
+`b <= (a-5)(2a-5)/(4a+5)`, strictly below a uniform cubic sign threshold;
+a root lies between the consecutive integers `2ab-1` and `2ab`.
+The earlier cutoffs and fixed-a checks remain as intermediate results.
+The next mathematical question is three pairwise distinct exponents;
+nonsquarefree vectors with more than three prime factors also remain open.
 
 The original preprint is awaiting public announcement. This repository begins
 with the agreed research plan and our follow-on contributions. Its confidential

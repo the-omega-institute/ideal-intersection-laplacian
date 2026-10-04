@@ -59,6 +59,13 @@ divisors of $K_2=108$, and certifies the unique positive-$b$ index-$2$
 cubic modulo $13$. It checks the third-cutoff identities and the four
 remaining discriminants for $a=7,8,9$. These finite checks exhaust the
 proved candidate sets, with no arbitrary parameter cutoff.
+\item \path{scripts/check_repeated_exponent_completion.py} reconstructs
+the general cubic from the $4\times4$ quotient, checks both sign-interval
+identities, and verifies the fourth-cutoff and strictly positive gap
+identities. It exhausts every divisor of $24,108,320$ for indices
+$1,2,3$, reproducing all eight positive-$b$ modular cubic certificates
+with separate integer Horner arithmetic. The infinite remaining range is
+settled by the sign proof of Theorem~\ref{thm:repeated}, not by a scan.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

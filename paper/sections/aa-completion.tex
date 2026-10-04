@@ -1,0 +1,99 @@
+\section{Completion of the repeated-exponent family}
+\label{sec:completion}
+
+\begin{theorem}
+\label{thm:repeated}
+For distinct primes $p,q,r$ and all integers $a,b\geq1$, the graph
+$G_{p^a q^a r^b}$ is not Laplacian integral. The same conclusion holds
+for every permutation of the exponent vector $(a,a,b)$.
+\end{theorem}
+
+The arithmetic reduction and a uniform sign obstruction for the cubic
+combine to exhaust the family. We first settle one last finite factor level.
+
+\begin{lemma}
+\label{lem:third-index}
+Every square-discriminant pair with index $j=3$ gives a nonintegral
+Laplacian spectrum.
+\end{lemma}
+\begin{proof}
+Proposition~\ref{prop:index} gives $d\mid K_3=320$ and $d=3a+4$.
+For $a\geq2$, the complete divisor list of this shape is
+$10,16,40,64,160$. The resulting values are
+\begin{center}
+\begin{tabular}{rrrrrl}
+\toprule
+$d$ & $a$ & $e$ & $v$ & $b$ & Outcome\\
+\midrule
+10 & 2 & 4 & 1 & 0 & $d>e$\\
+16 & 4 & 36 & 7 & 0 & $b=0$\\
+40 & 12 & 1080 & 83 & 4 & Root-free modulo $5$\\
+64 & 20 & 5125 & 244 & 9 & Root-free modulo $7$\\
+160 & 52 & 92274 & 1741 & 30 & Root-free modulo $7$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The three positive-$b$ cubics are
+\begin{align*}
+f_{12,4}(x)&=x^3-568x^2+100032x-5248512,\\
+f_{20,9}(x)&=x^3-1769x^2+992820x-174744000,\\
+f_{52,30}(x)&=x^3-13394x^2+57771168x-80229951360.
+\end{align*}
+Their values at all residues of the indicated primes are, respectively,
+$(3,3,3,4,2)$, $(3,2,4,1,6,4,1)$ and $(1,6,4,1,3,2,4)$.
+Each monic cubic is therefore irreducible over $\mathbb Q$ and has
+noninteger real roots. Section~\ref{sec:graph} supplies the lift to
+noninteger graph eigenvalues.
+\end{proof}
+
+\begin{lemma}[A uniform consecutive-integer interval]
+\label{lem:sign}
+For $a,b\geq1$, put
+\[
+L(a)=\frac{a^3+2a^2+2a+1}{a(2a+1)}.
+\]
+If $b<L(a)$, then $f_{a,b}$ has a root strictly between $2ab-1$ and $2ab$.
+\end{lemma}
+\begin{proof}
+Substitution in~\eqref{eq:cubic} gives
+\begin{align*}
+f_{a,b}(2ab)&=2a^2b^2>0,\\
+f_{a,b}(2ab-1)&=-(a+b+1)
+\bigl(a^3+2a^2+2a+1-a(2a+1)b\bigr).
+\end{align*}
+The second value is strictly negative when $b<L(a)$. The intermediate
+value theorem gives the asserted noninteger, nonzero root.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:repeated}]
+For $a=1$, Corollary~\ref{cor:quadratic} settles every positive $b$.
+For $a\geq2$, nonsquare $D$ gives irrational antisymmetric eigenvalues.
+When $D$ is square, index $j=0$ is Theorem~\ref{thm:boundary},
+and indices $j=1,2$ are settled in Section~\ref{sec:bounds}.
+Lemma~\ref{lem:third-index} settles $j=3$.
+
+It remains to consider $j\geq4$. Then $d\geq Q=4a+5$, and
+$e\geq d\geq Q$ implies
+\[
+\frac MQ+Q-(d+e)=(d-Q)\left(\frac eQ-1\right)\geq0.
+\]
+Since $d+e=(a+1)^2b+a(3a+1)$, we obtain
+\[
+b\leq B_4(a)=\frac{M/Q+Q-a(3a+1)}{(a+1)^2}
+=\frac{(a-5)(2a-5)}{4a+5}.
+\]
+For every $a\geq2$,
+\[
+L(a)-B_4(a)=
+\frac{41a^3-17a^2-11a+5}{a(2a+1)(4a+5)}>0.
+\]
+Indeed, with $z=a-2\geq0$, the numerator becomes
+$41z^3+229z^2+413z+243$. Thus $b\leq B_4(a)<L(a)$, and
+Lemma~\ref{lem:sign} gives a noninteger cubic root, which lifts across
+the universal vertices. These cases exhaust all positive $a,b$.
+Permuting the prime factors preserves the graph's isomorphism type.
+\end{proof}
+
+The preceding cutoffs and fixed-exponent theorems are intermediate
+consequences of the arithmetic reduction. The uniform interval now
+settles the infinite range left by those cutoffs, without a parameter scan.

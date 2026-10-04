@@ -1,0 +1,445 @@
+{
+  "symbolic_quotient_and_endpoint_identities": "passed",
+  "fourth_cutoff_identity": "passed",
+  "strict_gap_identity": "passed",
+  "positive_gap_in_a_minus_2": "41*offset**3 + 229*offset**2 + 413*offset + 243",
+  "complete_fixed_index_certificates": [
+    {
+      "index": 1,
+      "index_constant": 24,
+      "all_divisors": [
+        {
+          "divisor": 1,
+          "admissible": false,
+          "repeated_exponent": -1,
+          "reason": "a below2"
+        },
+        {
+          "divisor": 2,
+          "admissible": false,
+          "repeated_exponent": 0,
+          "reason": "a below2"
+        },
+        {
+          "divisor": 3,
+          "admissible": false,
+          "repeated_exponent": 1,
+          "reason": "a below2"
+        },
+        {
+          "divisor": 4,
+          "admissible": false,
+          "repeated_exponent": 2,
+          "factor_pair": [
+            4,
+            10
+          ],
+          "second_index": 3,
+          "third_exponent": 0,
+          "reason": "b not positive"
+        },
+        {
+          "divisor": 6,
+          "admissible": true,
+          "repeated_exponent": 4,
+          "factor_pair": [
+            6,
+            96
+          ],
+          "second_index": 19,
+          "third_exponent": 2,
+          "square_root_discriminant": 18,
+          "polynomial": "x**3 - 86*x**2 + 2304*x - 18816",
+          "prime": 5,
+          "values_modulo_prime": [
+            4,
+            3,
+            1,
+            4,
+            3
+          ],
+          "independent_horner": "passed"
+        },
+        {
+          "divisor": 8,
+          "admissible": true,
+          "repeated_exponent": 6,
+          "factor_pair": [
+            8,
+            351
+          ],
+          "second_index": 50,
+          "third_exponent": 5,
+          "square_root_discriminant": 49,
+          "polynomial": "x**3 - 245*x**2 + 19266*x - 488160",
+          "prime": 7,
+          "values_modulo_prime": [
+            6,
+            2,
+            4,
+            4,
+            1,
+            1,
+            3
+          ],
+          "independent_horner": "passed"
+        },
+        {
+          "divisor": 12,
+          "admissible": true,
+          "repeated_exponent": 10,
+          "factor_pair": [
+            12,
+            1750
+          ],
+          "second_index": 159,
+          "third_exponent": 12,
+          "square_root_discriminant": 158,
+          "polynomial": "x**3 - 842*x**2 + 230160*x - 20534400",
+          "prime": 13,
+          "values_modulo_prime": [
+            10,
+            9,
+            7,
+            10,
+            11,
+            3,
+            5,
+            10,
+            11,
+            1,
+            12,
+            11,
+            4
+          ],
+          "independent_horner": "passed"
+        },
+        {
+          "divisor": 24,
+          "admissible": true,
+          "repeated_exponent": 22,
+          "factor_pair": [
+            24,
+            19965
+          ],
+          "second_index": 868,
+          "third_exponent": 35,
+          "square_root_discriminant": 867,
+          "polynomial": "x**3 - 4919*x**2 + 7887858*x - 4132479120",
+          "prime": 17,
+          "values_modulo_prime": [
+            16,
+            5,
+            5,
+            5,
+            11,
+            12,
+            14,
+            6,
+            11,
+            1,
+            16,
+            11,
+            9,
+            16,
+            4,
+            13,
+            15
+          ],
+          "independent_horner": "passed"
+        }
+      ],
+      "complete_positive_pairs": [
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          22,
+          35
+        ]
+      ]
+    },
+    {
+      "index": 2,
+      "index_constant": 108,
+      "all_divisors": [
+        {
+          "divisor": 1,
+          "admissible": false,
+          "repeated_exponent": -1,
+          "reason": "a below2"
+        },
+        {
+          "divisor": 2,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        },
+        {
+          "divisor": 3,
+          "admissible": false,
+          "repeated_exponent": 0,
+          "reason": "a below2"
+        },
+        {
+          "divisor": 4,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        },
+        {
+          "divisor": 6,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        },
+        {
+          "divisor": 9,
+          "admissible": false,
+          "repeated_exponent": 3,
+          "factor_pair": [
+            9,
+            21
+          ],
+          "second_index": 5,
+          "third_exponent": 0,
+          "reason": "b not positive"
+        },
+        {
+          "divisor": 12,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        },
+        {
+          "divisor": 18,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        },
+        {
+          "divisor": 27,
+          "admissible": true,
+          "repeated_exponent": 12,
+          "factor_pair": [
+            27,
+            1600
+          ],
+          "second_index": 123,
+          "third_exponent": 7,
+          "square_root_discriminant": 121,
+          "polynomial": "x**3 - 751*x**2 + 180348*x - 13829760",
+          "prime": 13,
+          "values_modulo_prime": [
+            4,
+            7,
+            9,
+            3,
+            8,
+            4,
+            10,
+            6,
+            11,
+            5,
+            7,
+            10,
+            7
+          ],
+          "independent_horner": "passed"
+        },
+        {
+          "divisor": 36,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        },
+        {
+          "divisor": 54,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        },
+        {
+          "divisor": 108,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        }
+      ],
+      "complete_positive_pairs": [
+        [
+          12,
+          7
+        ]
+      ]
+    },
+    {
+      "index": 3,
+      "index_constant": 320,
+      "all_divisors": [
+        {
+          "divisor": 1,
+          "admissible": false,
+          "repeated_exponent": -1,
+          "reason": "a below2"
+        },
+        {
+          "divisor": 2,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        },
+        {
+          "divisor": 4,
+          "admissible": false,
+          "repeated_exponent": 0,
+          "reason": "a below2"
+        },
+        {
+          "divisor": 5,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        },
+        {
+          "divisor": 8,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        },
+        {
+          "divisor": 10,
+          "admissible": false,
+          "repeated_exponent": 2,
+          "factor_pair": [
+            10,
+            4
+          ],
+          "second_index": 1,
+          "third_exponent": 0,
+          "reason": "Not the smaller factor"
+        },
+        {
+          "divisor": 16,
+          "admissible": false,
+          "repeated_exponent": 4,
+          "factor_pair": [
+            16,
+            36
+          ],
+          "second_index": 7,
+          "third_exponent": 0,
+          "reason": "b not positive"
+        },
+        {
+          "divisor": 20,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        },
+        {
+          "divisor": 32,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        },
+        {
+          "divisor": 40,
+          "admissible": true,
+          "repeated_exponent": 12,
+          "factor_pair": [
+            40,
+            1080
+          ],
+          "second_index": 83,
+          "third_exponent": 4,
+          "square_root_discriminant": 80,
+          "polynomial": "x**3 - 568*x**2 + 100032*x - 5248512",
+          "prime": 5,
+          "values_modulo_prime": [
+            3,
+            3,
+            3,
+            4,
+            2
+          ],
+          "independent_horner": "passed"
+        },
+        {
+          "divisor": 64,
+          "admissible": true,
+          "repeated_exponent": 20,
+          "factor_pair": [
+            64,
+            5125
+          ],
+          "second_index": 244,
+          "third_exponent": 9,
+          "square_root_discriminant": 241,
+          "polynomial": "x**3 - 1769*x**2 + 992820*x - 174744000",
+          "prime": 7,
+          "values_modulo_prime": [
+            3,
+            2,
+            4,
+            1,
+            6,
+            4,
+            1
+          ],
+          "independent_horner": "passed"
+        },
+        {
+          "divisor": 80,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        },
+        {
+          "divisor": 160,
+          "admissible": true,
+          "repeated_exponent": 52,
+          "factor_pair": [
+            160,
+            92274
+          ],
+          "second_index": 1741,
+          "third_exponent": 30,
+          "square_root_discriminant": 1738,
+          "polynomial": "x**3 - 13394*x**2 + 57771168*x - 80229951360",
+          "prime": 7,
+          "values_modulo_prime": [
+            1,
+            6,
+            4,
+            1,
+            3,
+            2,
+            4
+          ],
+          "independent_horner": "passed"
+        },
+        {
+          "divisor": 320,
+          "admissible": false,
+          "reason": "Wrong factor-index residue"
+        }
+      ],
+      "complete_positive_pairs": [
+        [
+          12,
+          4
+        ],
+        [
+          20,
+          9
+        ],
+        [
+          52,
+          30
+        ]
+      ]
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_repeated_exponent_completion.py": "ba1a324ce71b47d731c07d1932a7f06e7bd1472582ec6de5f20bd0a1c77967c7",
+    "check_aa_b.py": "0877fc7fb32b0ffb696ea62fb86022d7090b71bd0f507c5b5ed9e66edfb39452"
+  },
+  "scope": "General quotient, endpoint, cutoff and positive-gap identities; complete divisors24,108,320 for indices1,2,3; eight root-free modular cubic certificates checked by independent Horner arithmetic. Infinite-family conclusion uses the written proof and prior boundary proof. No parameter-range scan or Lean; fully unequal triples and fullQ3 remain open."
+}
