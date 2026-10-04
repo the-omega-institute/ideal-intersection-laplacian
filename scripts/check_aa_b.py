@@ -261,7 +261,7 @@ def main():
     print("    is always located between two consecutive integers.")
     print("  - If 'p_irr' is a small prime for all (a,b), a modular")
     print("    irreducibility argument may close the family.")
-
+ 
 
 if __name__ == "__main__":
     main()
