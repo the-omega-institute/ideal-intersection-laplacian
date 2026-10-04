@@ -2,7 +2,7 @@
 
 **Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
 consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
-the unified cutoff and all `(a,a,b)` with `a=2,3,4`, `b>=1`.
+the two linear cutoffs and all `(a,a,b)` with `a=2,3,4,5,6`, `b>=1`.
 The corrected repeated-exponent diagnostic and exact certificates remain
 available. Full Q3 remains open.
 
@@ -13,11 +13,13 @@ With SymPy 1.14.0, reproduce the requested output using:
 python3 scripts/check_aa_b.py
 python3 scripts/check_aa_b.py --json
 python3 scripts/check_fixed_repeated_exponents.py
+python3 scripts/check_second_cutoff.py
 ```
 
 The next focused question is the symmetric cubic on admissible factor pairs
-with `b <= floor(R(a))` for arbitrary repeated exponent `a`, using the
-linear cutoff in the note. Avoid an unbounded scan in `b`: the discriminant
+with `d>=2a+3` and `b <= floor(S(a))` for arbitrary repeated exponent `a`,
+using [the second cutoff](notes/second-linear-cutoff.md),
+`S(a)=(a-3)(2a-3)/(2a+3)`. Avoid an unbounded scan in `b`: the discriminant
 identity and congruence reduce each fixed `a` to a finite divisor problem.
 
 Reza proposes the Laplacian integrality question, Q3 in his privately shared

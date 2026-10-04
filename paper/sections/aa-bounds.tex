@@ -111,3 +111,60 @@ settled boundary case.
 At $(a,b)=(4,2)$ the square-discriminant pair has $d=6=a+2$,
 so equality in the factor estimate is attained. The graph is still
 nonintegral, as shown in the next section.
+
+\subsection{Settling the first nonboundary factor}
+
+The first possible value after $d=1$ is $d=a+2$.
+Since $d$ divides $M$, the identity
+\[
+M=(a+2)(2a^3-3a^2+6a-12)+24
+\]
+forces $a+2\mid24$. With $a\geq2$ this leaves
+$a=2,4,6,10,22$. Substitution into~\eqref{eq:divisor-conditions}
+gives $b=0,2,5,12,35$, respectively. Excluding $b=0$, the complete
+positive-$b$ list and its cubic certificates are:
+\begin{center}
+\begin{tabular}{clc}
+\toprule
+$(a,b)$ & $f_{a,b}(x)$ & Root-free prime\\
+\midrule
+$(4,2)$ & $x^3-86x^2+2304x-18816$ & 5\\
+$(6,5)$ & $x^3-245x^2+19266x-488160$ & 7\\
+$(10,12)$ & $x^3-842x^2+230160x-20534400$ & 13\\
+$(22,35)$ & $x^3-4919x^2+7887858x-4132479120$ & 17\\
+\bottomrule
+\end{tabular}
+\end{center}
+Each polynomial has no root modulo its indicated prime. Its monic cubic
+is therefore irreducible over $\mathbb Q$, and its real nonzero roots
+lift to noninteger graph eigenvalues. Thus every possible $d=a+2$ pair
+is settled, over all $a$, by this finite divisor argument.
+
+\begin{theorem}[Second linear cutoff]
+\label{thm:second}
+For $a\geq2$ put
+\[
+S(a)=\frac{(a-3)(2a-3)}{2a+3}=a-6+\frac{27}{2a+3}.
+\]
+For every positive integer $b>S(a)$ and distinct primes $p,q,r$,
+$G_{p^a q^a r^b}$ is not Laplacian integral.
+Every remaining square-discriminant case has $d\geq2a+3$ and
+$b\leq\lfloor S(a)\rfloor$.
+\end{theorem}
+\begin{proof}
+Nonsquare $D$ is covered by the antisymmetric block. If $D$ is square,
+the cases $d=1$ and $d=a+2$ are already settled. Every other admissible
+factor satisfies $d\geq T=2a+3$ by Lemma~\ref{lem:congruence}.
+Since $e\geq d\geq T$, the same factor inequality gives
+\[
+b\leq\frac{M/T+T-a(3a+1)}{(a+1)^2}
+=\frac{(a-3)(2a-3)}{2a+3}=S(a).
+\]
+This proves the claim for $b>S(a)$.
+\end{proof}
+
+The new bound is strictly smaller than $R(a)$ for all $a\geq2$, since
+\[
+R(a)-S(a)=\frac{2a^3-a^2-a-6}{(a+2)(2a+3)}>0.
+\]
+Writing $z=a-2\geq0$, its numerator is $2z^3+11z^2+19z+4$.

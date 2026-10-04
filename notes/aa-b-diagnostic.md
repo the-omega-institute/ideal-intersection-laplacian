@@ -1,5 +1,9 @@
 # Repeated exponents: exact diagnostics and three complete fixed-exponent families
 
+The [second linear cutoff](second-linear-cutoff.md) strengthens the bound
+below to $S(a)=(a-3)(2a-3)/(2a+3)$ and extends the complete fixed-exponent
+families to $a=5,6$. This note retains the earlier diagnostic and certificates.
+
 **General bound.** For every $a\geq1$ and
 $b>(a-1)(2a-1)$, the graph of $p^a q^a r^b$ is not Laplacian integral.
 
@@ -215,6 +219,7 @@ These are exact algebraic and arithmetic checks, with no numerical spectrum
 or Lean verification.
 
 The next focused task is to control the symmetric cubic on admissible factor
-pairs with $b\leq\lfloor R(a)\rfloor$ for arbitrary $a$. The general linear
-cutoff and Reza's boundary theorem cover larger $b$. The remaining cases
+pairs with $d\geq2a+3$ and $b\leq\lfloor S(a)\rfloor$ for arbitrary $a$.
+The second cutoff and the settled smaller-factor cases cover larger $b$.
+The remaining cases
 also include triples with three distinct exponents.

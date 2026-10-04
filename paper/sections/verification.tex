@@ -47,6 +47,12 @@ factor identities, and enumerates every factor pair for $a=2,3,4$.
 It verifies the admissibility conditions and all modular witnesses in
 Tables~\ref{tab:divisors} and~\ref{tab:cubics}. The general congruence
 and factor inequality are proved in Section~\ref{sec:bounds}.
+\item \path{scripts/check_second_cutoff.py} checks the polynomial
+remainder modulo $a+2$, enumerates every divisor of $24$, and verifies
+the four root-free cubic reductions settling all $d=a+2$ cases.
+It also checks the second-cutoff identities and the two nonsquare
+discriminants completing $a=5,6$. This finite certificate follows the
+proved divisor reduction; it is not a parameter-range search.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;
