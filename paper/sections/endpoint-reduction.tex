@@ -74,6 +74,42 @@ the displayed nonzero products. Reduce each endpoint equation modulo $c$.
 \end{proof}
 
 For a fixed pair this gives finite divisor candidates, which must still
-satisfy the endpoint equation. The remaining all-even triples have
-gcd two and $8\leq a<b<c<R(a)$, outside the preceding proved regions.
+satisfy the endpoint equation. Reza's requested diagnostic for middle
+exponents through fifteen now has a complete independent certificate.
+
+\begin{corollary}
+\label{cor:middle-fifteen}
+Every positive ordered three-prime exponent triple $a\leq b\leq c$
+with $b\leq15$ gives a nonintegral ideal intersection graph.
+This conclusion uses the complete finite endpoint certificate below.
+\end{corollary}
+
+\begin{proof}
+Repeated exponents are covered by Theorem~\ref{thm:repeated}, and
+minimum exponents one, two and three by Theorems~\ref{thm:unit},
+\ref{thm:minimum-two} and~\ref{thm:minimum-three}, respectively.
+It remains to consider $4\leq a<b\leq15$ and $c>b$.
+
+For each of these $66$ pairs, both endpoint polynomials are integer
+cubics in $c$ with the positive constant terms in
+Proposition~\ref{prop:endpoint-divisors}. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/10ff01f0625c7264b8bc5bb33b1a9d7dcb88a93c/results/endpoint-surfaces-verification.json}{complete endpoint certificate}
+records all $132$
+coefficient lists and exhausts their $8\,527$ positive divisors using
+integer trial division. Independent integer Horner evaluation at every
+one of the $7\,585$ divisors above $b$ gives no zero. Thus neither
+endpoint vanishes for any integer $c>b$, with no imposed upper bound
+on $c$. Theorem~\ref{thm:uniform-low-root} supplies a positive root
+in $(0,3)$; it can equal neither one nor two, proving nonintegrality.
+\end{proof}
+
+The reflected quotient in this diagnostic uses
+$N=|V(H)|=a+b+c+ab+ac+bc$, not the full graph vertex count.
+The inclusive requested bound $b\leq15$ and exact rational linear-factor
+extraction are cross-checked against the independent divisor certificate.
+The empty lists settle this pair range; they do not prove either
+endpoint surface globally empty.
+
+The remaining all-even triples have gcd two,
+$8\leq a<b<c<R(a)$ and $b\geq16$, outside the preceding proved regions.
 The mixed-parity surface $h_C(1)=0$ still needs another obstruction.

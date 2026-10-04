@@ -56,13 +56,19 @@ Scaling now also settles **every triple whose exponents are all congruent
 to two modulo four**, and hence **every triple with equal 2-adic valuations**:
 [read the parity and divisibility contradiction](notes/even-exponent-congruence.md).
 This includes gcd-two triples inside the remaining even region.
+Reza's requested endpoint diagnostic now has a complete independent
+certificate for **all66pairs `4<=a<b<=15`, with every integer `c>b`**.
+Neither endpoint vanishes. With the low-root theorem and earlier cases,
+**every triple whose second-smallest exponent is at most15 is nonintegral**:
+[read the corrected diagnostic and exact scope](notes/endpoint-surfaces-diagnostic.md).
 An integer complement root at two now forces the linear bound
 **`c<7a-16+40/(a+2)`** for ordered `4<=a<=b<=c`. Every all-even triple
 beyond this bound is nonintegral; **`c>=7a-12` suffices at minimum>=8**:
 [read the endpoint reduction and divisor constraints](notes/endpoint-reduction.md).
 The remaining triples lie within `8 <= a < b < c < 4a^2 - 2a`, outside
 these families and the general inertia criterion;
-the full characterization remains open.
+the complete endpoint certificate additionally requires `b>=16`.
+The full characterization remains open.
 
 ## Start here
 
@@ -137,6 +143,9 @@ for a fixed pair `(a,b)`; the candidate still has to satisfy the equation.
 Every possible integral triple also has unequal 2-adic valuations. In
 the remaining all-even region, at least one exponent is divisible by four
 and at least one is congruent to two modulo four.
+The requested endpoint certificate excludes every middle exponent through15;
+remaining triples have `b>=16`. The absence of roots in the66pair domain
+does not establish a global absence of integer points on either surface.
 nonsquarefree vectors with more than three prime factors also remain open.
 
 The source preprint is public on

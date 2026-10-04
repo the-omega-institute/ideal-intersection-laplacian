@@ -166,6 +166,20 @@ linear bound have separately reconstructed integer quotients, rational
 factorizations and independent integer Horner values at one and three.
 The infinite congruence-family theorem follows from the written divisibility
 contradiction, without an exponent scan.
+\item \path{scripts/check_endpoint_surfaces.py} is Reza's requested
+diagnostic, corrected to use $|V(H)|$ in the complement reflection and
+to include $b=15$. Exact rational linear-factor extraction finds no
+endpoint roots for $4\leq a<b\leq15$, $c>b$.
+\path{scripts/verify_endpoint_surfaces.py} independently reconstructs
+the direct disjoint-support complement matrix and all $132$ endpoint
+cubics over the $66$ pairs. It exhausts $8\,527$ positive constant-term
+divisors by integer trial division and checks all $7\,585$ divisors
+above $b$ with separate integer Horner arithmetic. Two previously
+settled repeated-exponent positive controls recover their endpoint roots
+and match full quotient factorizations. This complete finite certificate,
+combined with the uniform low-root theorem and earlier cases, proves
+Corollary~\ref{cor:middle-fifteen}. There is no upper cutoff on $c$ or
+extension beyond the requested pair range.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

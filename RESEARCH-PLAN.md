@@ -23,6 +23,12 @@ settle every gcd>=3 triple, every all-odd triple and general common-residue
 classes with a quadratic nonresidue criterion. This includes residues1,3,4
 modulo5 and1,2,4,5 modulo7, with arbitrarily large unequal exponents.
 Full Q3 remains open.
+The [requested endpoint diagnostic](notes/endpoint-surfaces-diagnostic.md)
+exhausts all66pairs `4<=a<b<=15` and all integer `c>b` by exact divisor
+reduction, finding neither endpoint zero. With the low-root theorem and
+earlier cases, every triple whose second-smallest exponent is at most15
+is now nonintegral. The remaining region has `b>=16`; there is no new
+arbitrary bound on c or extension of the requested pair range.
 The [scaled parity obstruction](notes/even-exponent-congruence.md) settles
 every triple all congruent to two modulo four, with no minimum or ratio
 bound. Together with the earlier all-odd and gcd arguments, every common
@@ -53,6 +59,8 @@ python3 scripts/check_mixed_inertia.py
 python3 scripts/check_arithmetic_obstructions.py
 python3 scripts/check_endpoint_reduction.py
 python3 scripts/check_even_exponent_congruence.py
+python3 scripts/check_endpoint_surfaces.py
+python3 scripts/verify_endpoint_surfaces.py
 python3 scripts/check_open_region2.py
 python3 scripts/check_open_region_certificate.py
 ```
