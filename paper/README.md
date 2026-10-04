@@ -25,6 +25,7 @@ sections and their shared graph/lifting definitions.
 | [low-spectrum.tex](sections/low-spectrum.tex) | General inertia criterion, four complete bounded-gap families, every exponent span at most3, and complete finite minimum-through-seven certificate |
 | [mixed-inertia.tex](sections/mixed-inertia.tex) | Uniform positive root below3 for every minimum at least4; root in(2,3) under the lower inequality; growing balanced region a>=3span+8 |
 | [arithmetic-obstructions.tex](sections/arithmetic-obstructions.tex) | Every gcd>=3 triple, every all-odd triple, and general common-residue classes with a quadratic nonresidue criterion |
+| [endpoint-reduction.tex](sections/endpoint-reduction.tex) | Linear upper bound for endpoint two, all-even nonintegral tail, and exact divisor candidates for both endpoints |
 | [aa-small.tex](sections/aa-small.tex) | All-b theorem for a=2 through9, divisor/modular certificates and cubic-test scope |
 | [verification.tex](sections/verification.tex) | Actual scope of the exact checkers |
 | [open.tex](sections/open.tex) | Ordered 8<=a<b<c<4a^2-2a outside the proved criteria; endpoint-zero necessary condition and nonsquarefree higher-prime vectors |
@@ -65,6 +66,7 @@ python3 scripts/check_distinct_tail.py
 python3 scripts/check_low_spectrum.py
 python3 scripts/check_mixed_inertia.py
 python3 scripts/check_arithmetic_obstructions.py
+python3 scripts/check_endpoint_reduction.py
 python3 scripts/check_open_region2.py
 python3 scripts/check_open_region2.py --json --certificate-csv results/open-region-discriminants.csv
 python3 scripts/check_open_region_certificate.py

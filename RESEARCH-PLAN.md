@@ -23,6 +23,11 @@ settle every gcd>=3 triple, every all-odd triple and general common-residue
 classes with a quadratic nonresidue criterion. This includes residues1,3,4
 modulo5 and1,2,4,5 modulo7, with arbitrarily large unequal exponents.
 Full Q3 remains open.
+The [endpoint-two reduction](notes/endpoint-reduction.md) proves
+`h_C(2)=0 => c<7a-16+40/(a+2)` for ordered minimum>=4, and settles
+every all-even triple beyond that linear bound. At minimum>=8,
+`c>=7a-12` suffices. The remaining all-even region has gcd2 and this
+linear upper bound; the mixed-parity endpoint-one surface stays open.
 
 Read [the exact diagnostic and finite-reduction proof](notes/aa-b-diagnostic.md).
 With SymPy 1.14.0, reproduce the requested output using:
@@ -41,6 +46,7 @@ python3 scripts/check_distinct_tail.py
 python3 scripts/check_low_spectrum.py
 python3 scripts/check_mixed_inertia.py
 python3 scripts/check_arithmetic_obstructions.py
+python3 scripts/check_endpoint_reduction.py
 python3 scripts/check_open_region2.py
 python3 scripts/check_open_region_certificate.py
 ```
@@ -64,6 +70,10 @@ surfaces or find a different noninteger quotient root there. Do not infer
 integrality from this necessary condition. The arithmetic restrictions
 leave gcd1or2, at least one even exponent, and residue classes outside
 the proved modular obstruction. Focus any endpoint-zero analysis there.
+Use the new linear bound on the second surface and the exact constant-term
+divisor constraints for both surfaces. The next question is whether an
+endpoint-zero triple in the remaining region necessarily has a different
+noninteger root; divisor membership alone does not answer it.
 The [requested open-region diagnostic](notes/open-region-diagnostic.md)
 records its exact bounds and keeps H/complement endpoint patterns separate.
 It exhausts the remaining pairs for minimum4,5,6,7 under the written cutoff,

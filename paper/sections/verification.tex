@@ -147,6 +147,17 @@ low-root and modular witnesses, and the existing boundary triple
 $(9,9,136)$ checks that an integer endpoint is compatible with other
 noninteger roots. The infinite conclusions use the written divisibility
 and finite-field proofs, with no exponent scan.
+\item \path{scripts/check_endpoint_reduction.py} reconstructs the general
+endpoint-two cubic in the middle exponent and the two endpoint constant
+terms in the largest exponent. It verifies both rational-cutoff identities
+and five positive shifted-coefficient expressions. Three chosen even
+gcd-two fixtures below the earlier quadratic cutoff have direct integer
+quotient, independent Horner and exact Sturm checks. The existing repeated
+triples $(9,9,136)$ and $(10,10,12)$ check the endpoint divisibility
+conditions and retain nonlinear rational factors; the latter checks the
+strict linear bound. The infinite bound and even-tail corollary use written
+positivity and divisibility proofs, without an exponent scan or divisor-set
+enumeration.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

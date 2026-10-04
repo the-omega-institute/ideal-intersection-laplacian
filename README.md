@@ -52,6 +52,10 @@ Arithmetic arguments now also settle **every triple with gcd at least3**,
 **common residues1,3,4 modulo5**:
 [read the divisibility and congruence proofs](notes/arithmetic-obstructions.md).
 These results allow arbitrarily large exponent ratios and differences.
+An integer complement root at two now forces the linear bound
+**`c<7a-16+40/(a+2)`** for ordered `4<=a<=b<=c`. Every all-even triple
+beyond this bound is nonintegral; **`c>=7a-12` suffices at minimum>=8**:
+[read the endpoint reduction and divisor constraints](notes/endpoint-reduction.md).
 The remaining triples lie within `8 <= a < b < c < 4a^2 - 2a`, outside
 these families and the general inertia criterion;
 the full characterization remains open.
@@ -69,6 +73,7 @@ the full characterization remains open.
 | Read the inertia criterion and bounded-gap families | [Proof](notes/low-spectrum.md) · [Exact modular certificate](results/low-spectrum.json) |
 | Read the uniform low-root bound and growing balanced region | [Proof](notes/mixed-inertia.md) · [Exact checks](results/mixed-inertia.json) |
 | Read the common-divisor, all-odd and congruence-class theorems | [Proof](notes/arithmetic-obstructions.md) · [Exact checks](results/arithmetic-obstructions.json) |
+| Read the linear endpoint-two bound and all-even tail | [Proof](notes/endpoint-reduction.md) · [Exact checks](results/endpoint-reduction.json) |
 | Read Reza's requested finite-region run and minimum-through-seven result | [Report and proof](notes/open-region-diagnostic.md) · [Complete CSV](results/open-region-discriminants.csv) · [Independent verification](results/open-region-certificate-check.json) |
 | Read the source preprint and original Q3 | [Zenodo DOI10.5281/zenodo.23134979](https://doi.org/10.5281/zenodo.23134979) |
 | Read the requested (a,a,b) diagnostic and fixed-a theorem | [Exact diagnostic and proof](notes/aa-b-diagnostic.md) |
@@ -119,6 +124,10 @@ must satisfy `h_C(1)h_C(2)=0`. These two endpoint-zero surfaces are the
 next mathematical question; the necessary condition does not classify them.
 The new arithmetic theorems restrict the remaining triples to gcd1or2,
 at least one even exponent, and residues outside the proved congruence classes.
+The endpoint-two surface now has the strict linear bound
+`c<7a-16+40/(a+2)`. Every remaining all-even triple has gcd2 and obeys
+this bound. The two endpoint equations also give exact divisor candidates
+for a fixed pair `(a,b)`; the candidate still has to satisfy the equation.
 nonsquarefree vectors with more than three prime factors also remain open.
 
 The source preprint is public on

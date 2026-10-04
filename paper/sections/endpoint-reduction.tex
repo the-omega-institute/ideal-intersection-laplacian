@@ -1,0 +1,79 @@
+\section{A linear bound for the endpoint two}
+\label{sec:endpoint-reduction}
+
+The two possible low integer roots have different arithmetic constraints.
+The endpoint two is confined to a linear region in the minimum exponent;
+this gives a new nonintegral tail for even exponent triples.
+
+\begin{theorem}
+\label{thm:endpoint-two-bound}
+Let $4\leq a\leq b\leq c$, and put
+\[
+R(a)=\frac{7a^2-2a+8}{a+2}=7a-16+\frac{40}{a+2}.
+\]
+If $h_C(2)=0$, then $c<R(a)$. In fact, $c\geq R(a)$ implies
+$h_C(2)>0$.
+\end{theorem}
+
+\begin{proof}
+Fix $a,c$ and expand the symmetric endpoint polynomial in $b$:
+\[
+h_C(2)=A(a,c)b^3+B(a,c)b^2+D(a,c)b+E(a,c),
+\]
+where
+\begin{align*}
+A(a,c)&=ac(a+c-1)+2a(a-1)+2c(c-1)-4,\\
+B(a,c)&=c^2\bigl((a+2)c-(7a^2-2a+8)\bigr)\\
+&\quad +(a^3+2a^2-6a-4)c+2(a-2)(a^2-2a-6),\\
+D(a,c)&=(a-2)(c-2)\bigl(a^2c+a^2+ac^2+6ac+4a+c^2+4c-12\bigr),\\
+E(a,c)&=2(a-2)(c-2)(a+c-2)(ac+a+c-2).
+\end{align*}
+For $a,c\geq4$, the coefficients $A,D,E$ are strictly positive.
+Both $a^3+2a^2-6a-4$ and $a^2-2a-6$ are positive at $a=4$
+and increasing on $[4,\infty)$. Thus $c\geq R(a)$ also gives $B>0$,
+which proves the strict endpoint sign. Conversely, an endpoint zero
+requires $B<0$, so $(a+2)c<7a^2-2a+8$.
+\end{proof}
+
+\begin{corollary}
+\label{cor:even-linear-tail}
+If $4\leq a\leq b\leq c$ are all even and $c\geq R(a)$,
+then $G_{p^a q^b r^c}$ is not Laplacian integral.
+For minimum exponent at least eight, $c\geq7a-12$ suffices.
+\end{corollary}
+
+\begin{proof}
+Every entry of $C$ is even, so every integer eigenvalue of $C$ is even
+by the rational-root theorem applied to $C/2$. In particular, one is
+not an eigenvalue. Theorem~\ref{thm:endpoint-two-bound} excludes two,
+and Theorem~\ref{thm:uniform-low-root} provides a noninteger root in
+$(0,3)$. Equivalently, $h_C(0)<0<h_C(2)$ directly yields a root in
+$(0,2)$, which cannot equal one. Its graph lift is noninteger.
+For $a\geq8$, $40/(a+2)\leq4$ gives $R(a)\leq7a-12$.
+\end{proof}
+
+The triples $(8,10,44)$, $(10,14,58)$ and $(40,42,266)$ meet this
+criterion with gcd two. Their largest exponents are below the earlier
+quadratic cutoff and their spans are outside the earlier balanced region.
+The already settled repeated triple $(10,10,12)$ has $h_C(2)=0$ and
+obeys the strict bound; an integer endpoint does not establish integrality.
+
+\begin{proposition}
+\label{prop:endpoint-divisors}
+For fixed $a,b\geq4$, any positive integer $c$ on an endpoint-zero
+surface satisfies
+\begin{align*}
+h_C(1)=0&\ \Longrightarrow\ c\mid(a-1)(b-1)(a+b-1)(ab+a+b-1),\\
+h_C(2)=0&\ \Longrightarrow\ c\mid2(a-2)(b-2)(a+b-2)(ab+a+b-2).
+\end{align*}
+\end{proposition}
+
+\begin{proof}
+Both endpoints are integer cubics in $c$. Their constant terms are
+the displayed nonzero products. Reduce each endpoint equation modulo $c$.
+\end{proof}
+
+For a fixed pair this gives finite divisor candidates, which must still
+satisfy the endpoint equation. The remaining all-even triples have
+gcd two and $8\leq a<b<c<R(a)$, outside the preceding proved regions.
+The mixed-parity surface $h_C(1)=0$ still needs another obstruction.
