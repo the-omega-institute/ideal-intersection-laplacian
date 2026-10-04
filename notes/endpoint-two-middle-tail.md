@@ -22,6 +22,9 @@ the unresolved endpoint-two candidates satisfy
 
 The subsequent [maximum-tail proof](endpoint-two-maximum-tail.md) strengthens
 the last inequality to `c<3a-4`, using this bounded middle interval.
+For minimum at least eight, the [root-geometry theorem](endpoint-two-surface-geometry.md)
+further replaces the middle upper bound by the exact cubic threshold beta(a),
+and proves uniqueness of a real c>b solution when it exists.
 
 This settles the entire `b>=2a+2` branch left untouched by the preceding
 [principal-block test](endpoint-two-middle-inertia.md), and extends the

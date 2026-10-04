@@ -129,4 +129,9 @@ higher-prime nonsquarefree vectors remain open. The next structural
 question is the endpoint equation and the other quotient roots inside
 `b<2a-2,c<3a-4`, combined with the existing arithmetic restrictions.
 
+The subsequent [root-geometry theorem](endpoint-two-surface-geometry.md)
+gives an exact real-feasibility test for each fixed a>=8,b>=a and a
+unique real c>b solution when feasible. Integer feasibility remains open
+in general; selected pairs can now be excluded by a single root bracket.
+
 [Return to the project entrance](../README.md).

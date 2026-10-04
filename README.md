@@ -25,6 +25,13 @@ The [sharper maximum tail](notes/endpoint-two-maximum-tail.md) now proves
 zero therefore requires both `b<2a-2` and `c<3a-4`, replacing the earlier
 maximum bound `c<7a-16+40/(a+2)`. Full Q3 remains open.
 
+The [endpoint-two root geometry](notes/endpoint-two-surface-geometry.md)
+now gives an exact existence test and a unique real c>b solution for
+each fixed a>=8,b>=a that passes it. The middle threshold is a unique
+cubic root beta(a)<2a-2. Minimum eight has no fully distinct endpoint-two
+solutions; at (a,b)=(20,22) the sole real c lies between32and33, excluding
+every integer endpoint-two solution for that pair.
+
 ## First results
 
 We prove nonintegrality for every squarefree integer with at least three

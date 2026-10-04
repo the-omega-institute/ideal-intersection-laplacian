@@ -31,6 +31,14 @@ positive-coefficient identity, without enlarging any parameter search.
 The next structural target is `h_C(2)=0` and the remaining quotient roots
 inside both new bounds, retaining the independent endpoint-one cases.
 
+The [root-geometry theorem](notes/endpoint-two-surface-geometry.md) now
+characterizes fixed-pair real feasibility: R_a(b)>0 iff there is a c>b
+endpoint-two solution, unique and simple as a polynomial root in c.
+For a>=8, b must lie below the unique threshold beta(a) in(a,2a-2).
+Focus further arithmetic work on integer feasibility of this unique
+real root, or on the other quotient roots there; the general surface
+and other endpoint-one cases remain open.
+
 **Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
 consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
 the successive linear cutoffs, all `(a,a,b)` with `a,b>=1`, and all
