@@ -1,0 +1,58 @@
+\section{Exact verification and reproducibility}
+\label{sec:verification}
+
+The infinite-family conclusions follow from the written proofs above.
+The accompanying computations use integer or rational arithmetic to
+verify embeddings, identities and finite certificates. In particular,
+the all-$b$ result for $a=2,3,4$ uses the exhaustive divisor criterion,
+rather than extrapolation from the $90$ diagnostic cases.
+No Lean formalization is claimed for these Laplacian results.
+
+The code and saved JSON certificates are available in the
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian}{public project repository}.
+The build instructions beside this manuscript give commands and record
+the exact source revisions. The checks have the following scopes.
+
+\begin{enumerate}
+\item \path{scripts/check_integrality_obstructions.py} constructs ideals
+as exponent tuples and tests adjacency by coordinatewise maxima, independently
+of the support description. It verifies $LU=UB$ for the displayed
+invariant embeddings, for squarefree $t=3,\ldots,8$ and $(1,1,k)$ with
+$k=1,\ldots,8$: $14$ cases and $44\,294$ vertex pairs. It also checks
+the square-gap inequalities and principal-minor witnesses.
+
+\item \path{scripts/check_remaining_case.py} constructs all $34$ vertices
+for $(2,2,3)$ and verifies its full characteristic polynomial and the
+class decomposition in exact arithmetic. The shifted symmetric cubic is
+$x^3-80x^2+2099x-18052$; its reduction modulo $5$ has no root.
+
+\item \path{scripts/check_repeated_exponent_family.py} checks the general
+quotient polynomial, both boundary sign identities, the positive-coefficient
+expansion, and the integral antisymmetric eigenvalues symbolically.
+Direct graphs for $(2,2,3),(3,3,10),(4,4,21)$ have $34,174,548$ vertices,
+covering $165\,490$ vertex pairs. Exact neighbor counts verify both blocks
+and their lifting. The check computes the seven-support quotient polynomial;
+it does not compute the full $548\times548$ characteristic polynomial.
+
+\item \path{scripts/check_aa_b.py} factors the $90$ diagnostic cubics
+over $\mathbb Q$ and uses exact rational root isolation for a root between
+consecutive integers. Independent Sturm counts and endpoint signs were
+checked for every saved interval. Its modular search is restricted to
+$2,3,5,7,11,13,17,19,23,29,31$; absence of a listed witness is not a proof
+that no prime works for that cubic.
+
+\item \path{scripts/check_fixed_repeated_exponents.py} reconstructs
+the cubic from $B$, checks the discriminant, product, cutoff and reducible
+factor identities, and enumerates every factor pair for $a=2,3,4$.
+It verifies the admissibility conditions and all modular witnesses in
+Tables~\ref{tab:divisors} and~\ref{tab:cubics}. The general congruence
+and factor inequality are proved in Section~\ref{sec:bounds}.
+\end{enumerate}
+
+The symbolic and characteristic-polynomial checks use SymPy~1.14.0;
+the first checker uses the Python standard library.
+Saved results contain source hashes. The $10$-vertex polynomial in the
+preceding remark was independently checked by a direct ideal-graph
+construction; it is also reproducible by the command in the manuscript
+build guide. No floating-point eigenvalue calculation is used as
+integrality evidence.

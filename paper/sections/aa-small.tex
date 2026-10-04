@@ -1,0 +1,96 @@
+\section{Complete fixed-exponent families and exact diagnostics}
+
+\begin{theorem}
+\label{thm:small}
+For every $a\in\{2,3,4\}$, every $b\geq1$ and distinct primes $p,q,r$,
+the graph $G_{p^a q^a r^b}$ is not Laplacian integral.
+\end{theorem}
+\begin{proof}
+The cutoff values are $R(2)=0$, $R(3)=4/5$, and $R(4)=2$.
+Theorem~\ref{thm:linear} settles all $b$ for $a=2,3$, and all $b>2$
+for $a=4$. At $(a,b)=(4,1)$, $D=145$ is nonsquare.
+At $(4,2)$ the symmetric cubic is
+\[
+f_{4,2}(x)=x^3-86x^2+2304x-18816.
+\]
+Its values at $0,1,2,3,4$ modulo $5$ are $4,3,1,4,3$, so it has
+no root modulo $5$. A cubic over a field without a root is irreducible.
+Since this cubic is monic, reduction modulo $5$ proves irreducibility over
+$\mathbb Q$. Its real nonzero roots lift to noninteger graph eigenvalues.
+\end{proof}
+
+For comparison, the complete divisor certificates before applying the
+linear cutoff are given in Table~\ref{tab:divisors}. The constants factor
+as $M=40=2^3\cdot5$, $189=3^3\cdot7$, and
+$576=2^6\cdot3^2$. Testing every divisor $d\leq\sqrt M$ in
+\eqref{eq:divisor-conditions} gives exactly the displayed admissible pairs.
+The corresponding cubics in Table~\ref{tab:cubics} have no root modulo
+the listed primes. These finite certificates supply a second proof using
+the complete exceptional list. Three pairs are in the boundary family;
+$(4,2)$ is the additional symmetric-block obstruction.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrr}
+\toprule
+$a$ & $M$ & $(d,e)$ & $b$ & $\sqrt D$\\
+\midrule
+2 & 40 & $(1,40)$ & 3 & 13\\
+3 & 189 & $(1,189)$ & 10 & 47\\
+4 & 576 & $(6,96)$ & 2 & 18\\
+4 & 576 & $(1,576)$ & 21 & 115\\
+\bottomrule
+\end{tabular}
+\caption{Every admissible factor pair for $a=2,3,4$.}
+\label{tab:divisors}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{clc}
+\toprule
+$(a,b)$ & $f_{a,b}(x)$ & Witness prime\\
+\midrule
+$(2,3)$ & $x^3-47x^2+702x-3312$ & 5\\
+$(3,10)$ & $x^3-187x^2+11220x-214200$ & 13\\
+$(4,2)$ & $x^3-86x^2+2304x-18816$ & 5\\
+$(4,21)$ & $x^3-485x^2+75492x-3721536$ & 5\\
+\bottomrule
+\end{tabular}
+\caption{Root-free modular reductions for the exceptional cubics.}
+\label{tab:cubics}
+\end{table}
+
+The separate diagnostic range $a=2,3,4$, $1\leq b\leq30$ contains
+$90$ cubics, each with a noninteger root certified in an interval between
+consecutive integers. The reducible cases in that range are $b=2,6$
+for $a=2$, $b=3,12$ for $a=3$, and $b=4,20$ for $a=4$.
+Each has a linear and an irreducible quadratic factor.
+These observations do not require whole-cubic irreducibility.
+Indeed, for every $a\geq1$,
+\begin{align*}
+f_{a,a}(x)&=(x-2a(a+1))
+ \bigl(x^2-(5a^2+2a)x+6a^4+3a^3\bigr),\\
+f_{a,a(a+1)}(x)&=(x-2a(a+1)^2)
+ \bigl(x^2-(3a^3+4a^2+2a)x+2a^6+6a^5+7a^4+3a^3\bigr).
+\end{align*}
+Consequently no prime can make every diagnostic cubic irreducible: the
+monic factors in the diagonal family retain positive degree modulo every
+prime.
+
+For the second family the quadratic discriminant is $a^2(a^4+4a+4)$.
+For $a\geq3$ the radicand is between $a^4$ and $(a^2+1)^2$, since
+$2a^2-4a-3=2(a-3)^2+8(a-3)+3>0$.
+At $a=2$ it is $28$, between $5^2$ and $6^2$.
+Thus the quadratic is irreducible for every $a\geq2$.
+
+\begin{remark}
+At $a=1,b=2$ the cubic is $(x-3)(x-6)(x-8)$, although the full graph
+has irrational antisymmetric eigenvalues $(13\pm\sqrt{33})/2$.
+A direct construction of its $10$ vertices gives
+\[
+\det(xI-L)=x(x-10)(x-9)^3(x-7)^2(x-4)(x^2-13x+34).
+\]
+Thus a noninteger cubic root is a sufficient condition for graph
+nonintegrality; the converse cannot be used without the other blocks.
+\end{remark}

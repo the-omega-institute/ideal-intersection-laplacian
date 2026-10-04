@@ -1,0 +1,33 @@
+\section{The family \texorpdfstring{$pq r^k$}{pq r to the k}}
+
+\begin{theorem}
+\label{thm:pqrk}
+For distinct primes $p,q,r$ and every $k\geq1$, the graph $G_{pq r^k}$
+has the irrational eigenvalues
+\[
+\frac{6k+1\pm\sqrt{(2k+2)^2-3}}2.
+\]
+In particular, every permutation of the exponent vector $(1,1,k)$
+gives a nonintegral Laplacian spectrum.
+\end{theorem}
+\begin{proof}
+The support classes $1,2$ have size $1$, and $13,23$ have size $k$.
+Consider functions with values $s,-s$ on the first two classes,
+$t,-t$ on the latter two, and zero elsewhere.
+A vertex of support $1$ has $2k$ neighbors and Laplacian value
+$2ks-kt$. A vertex of support $13$ has degree $4k$; after subtracting
+the same-class and opposite-class values its Laplacian value is
+$-s+(4k+1)t$. The swapped classes give their negatives, and all other
+classes give zero by cancellation. The restricted matrix of the full
+graph is therefore
+\[
+B_k=\begin{pmatrix}2k&-k\\-1&4k+1\end{pmatrix}.
+\]
+Its characteristic polynomial is $x^2-(6k+1)x+8k^2+k$, with
+discriminant $(2k+2)^2-3$. Since
+\[
+(2k+1)^2<(2k+2)^2-3<(2k+2)^2
+\]
+for $k\geq1$, the two roots are irrational. Relabeling prime coordinates
+preserves the graph.
+\end{proof}

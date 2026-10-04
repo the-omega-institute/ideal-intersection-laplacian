@@ -1,0 +1,37 @@
+\section{A boundary family with integral antisymmetric block}
+
+The following argument was supplied by Reza Nikandish in the public
+collaboration discussion. We include it because it is the boundary case
+needed for the linear cutoff in Section~\ref{sec:bounds}.
+
+\begin{theorem}
+\label{thm:boundary}
+For every $a\geq2$, put $C=(a-1)(2a-1)$. For distinct primes $p,q,r$,
+the graph $G_{p^a q^a r^C}$ is not Laplacian integral, although the
+antisymmetric block~\eqref{eq:antisymmetric} has integer eigenvalues.
+\end{theorem}
+\begin{proof}
+Specialize $f_{a,b}$ from~\eqref{eq:cubic} to $b=C$.
+For $a=2$ it is $x^3-47x^2+702x-3312$. Its values at
+$0,1,2,3,4$ modulo $5$ are $3,4,2,3,3$. Thus it has no root in
+$\mathbb F_5$ and is irreducible over $\mathbb Q$; its real roots
+are noninteger. Lemma~\ref{lem:join} gives noninteger graph eigenvalues.
+
+For $a\geq3$ put $m=2a^3-2a^2+2a-1$. Expansion gives
+\begin{align*}
+f_{a,C}(m)&=2(5a^4-10a^3+7a^2-1),\\
+f_{a,C}(m-1)&=-2(a-1)(a+2)(2a^4-7a^3+7a^2-a-3).
+\end{align*}
+The first value is positive because its parenthesis is
+$5a^3(a-2)+7a^2-1$. Writing $z=a-3\geq0$, the last factor in the
+second value is
+$2z^4+17z^3+52z^2+68z+30>0$.
+Consequently $f_{a,C}(m-1)<0<f_{a,C}(m)$, so a real root lies strictly
+between $m-1$ and $m$. Its integer shift by $u=a^2C-1$ is noninteger.
+
+The characteristic discriminant of $B_-$ is
+$D=(a+1)^2b^2+2a(3a+1)b+a^2$.
+At $b=C$ it equals $(2a^3-a^2+a-1)^2$, and the two eigenvalues are
+$4a^3-3a^2+a$ and $2a^3-2a^2+1$. Thus the obstruction in this family
+comes from the symmetric cubic.
+\end{proof}

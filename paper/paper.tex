@@ -1,0 +1,46 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\title{Nonintegral Laplacian spectra of ideal intersection graphs}
+\author{Working manuscript}
+\date{October 4, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We study Laplacian integrality for the graph of nonzero proper ideals of
+$\mathbb Z_n$, where distinct ideals are adjacent when their intersection
+is nonzero. For squarefree composite $n$, the graph is Laplacian integral
+exactly when $n$ has two prime factors. For three distinct primes we prove
+nonintegrality for exponent vectors $(1,1,k)$, $k\geq1$, and
+$(a,a,b)$ whenever $a\geq2$ and $b>2(a-1)(a-2)/(a+2)$.
+The repeated-exponent problem admits an exact finite divisor reduction for
+each fixed $a$; we settle every $b\geq1$ when $a=2,3,4$.
+The proofs use small invariant subspaces, a cubic obstruction on a boundary
+family, and arithmetic constraints on a quadratic discriminant.
+\end{abstract}
+\input{sections/introduction}
+\input{sections/graph}
+\input{sections/squarefree}
+\input{sections/pqrk}
+\input{sections/aa-family}
+\input{sections/aa-bounds}
+\input{sections/aa-small}
+\input{sections/verification}
+\input{sections/open}
+\begin{thebibliography}{9}
+\bibitem{intersection}
+I. Chakrabarty, S. Ghosh, T. K. Mukherjee and M. K. Sen,
+\emph{Intersection graphs of ideals of rings},
+Discrete Mathematics \textbf{309} (2009), 5381--5392.
+\href{https://doi.org/10.1016/j.disc.2008.11.034}{doi:10.1016/j.disc.2008.11.034}.
+\end{thebibliography}
+\end{document}

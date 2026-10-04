@@ -1,0 +1,113 @@
+\section{Finite reduction and a linear cutoff}
+\label{sec:bounds}
+
+Fix $a,b\geq1$, and put
+\[
+h=a+1,\quad C=(a-1)(2a-1),\quad M=a^3(2a+1),\quad
+A=h^2b+a(3a+1).
+\]
+The characteristic discriminant of~\eqref{eq:antisymmetric} is
+\begin{equation}
+\label{eq:discriminant}
+D=h^2b^2+2a(3a+1)b+a^2.
+\end{equation}
+If $D$ is not a square, this block has irrational eigenvalues, which
+remain irrational after the integer shift $a^2b-1$.
+
+\begin{proposition}[Exact divisor reduction]
+\label{prop:divisors}
+For fixed $a\geq1$, the positive integers $b$ for which $D$ is a square
+are exactly those obtained from positive factor pairs $d\leq e$ of $M$
+such that
+\begin{equation}
+\label{eq:divisor-conditions}
+b=\frac{d+e-a(3a+1)}{h^2}\in\mathbb Z_{\geq1},\qquad
+s=\frac{e-d}{h}\in\mathbb Z_{\geq0}.
+\end{equation}
+In that case $D=s^2$.
+\end{proposition}
+\begin{proof}
+The polynomial identity
+\begin{equation}
+\label{eq:product}
+A^2-h^2D=4M
+\end{equation}
+holds for arbitrary $a,b$. If $D=s^2$ with $s\geq0$, then
+$A-hs$ and $A+hs$ are positive: their product is positive and their sum
+is $2A>0$. They have the same parity; since their product is divisible
+by $4$, both are even. Write $A-hs=2d$ and $A+hs=2e$.
+Then $de=M$, $d+e=A$ and $e-d=hs$, giving~\eqref{eq:divisor-conditions}.
+Conversely those conditions yield $A=d+e$ and $hs=e-d$.
+Using $(d+e)^2-(e-d)^2=4de=4M$ in~\eqref{eq:product} gives $D=s^2$.
+\end{proof}
+
+The divisor set is finite for every fixed $a$; this criterion has no
+truncation in $b$. It gives first a quadratic bound.
+
+\begin{corollary}
+\label{cor:quadratic}
+If $D$ is a square then $b\leq C$. Consequently every $b>C$ gives
+a nonintegral Laplacian spectrum. For $a=1$, every $b\geq1$ is covered.
+\end{corollary}
+\begin{proof}
+Since $(d-1)(e-1)\geq0$, $A=d+e\leq M+1$. The identity
+\[
+M+1-a(3a+1)=h^2C
+\]
+then gives $b\leq C$. The nonsquare case is covered by the antisymmetric
+block. At $a=1$, $C=0$.
+\end{proof}
+
+\begin{lemma}
+\label{lem:congruence}
+Every admissible factor pair in Proposition~\ref{prop:divisors} satisfies
+$d\equiv e\equiv1\pmod h$.
+\end{lemma}
+\begin{proof}
+From $e-d=hs$ and $d+e=A$, reduction modulo $h$ gives
+$e\equiv d$ and $2d\equiv2$, since $a(3a+1)\equiv2\pmod h$.
+Also
+\begin{equation}
+\label{eq:strong-product}
+(d-1)(e-1)=M-A+1=h^2(C-b).
+\end{equation}
+If $h$ is odd, the congruence $2(d-1)\equiv0$ gives the assertion.
+If $h$ is even, the alternative to $d\equiv1$ is
+$d-1\equiv h/2\pmod h$. Then $d-1$ and $e-1$ would both equal
+$h/2$ times an odd integer. Their product divided by $h^2$ would be an
+odd integer divided by $4$, contradicting~\eqref{eq:strong-product}.
+This excludes the alternative for either parity of $a$.
+\end{proof}
+
+\begin{theorem}[Unified linear cutoff]
+\label{thm:linear}
+Let $a\geq2$ and
+\[
+R(a)=\frac{2(a-1)(a-2)}{a+2}=2a-10+\frac{24}{a+2}.
+\]
+For every integer $b>R(a)$ and distinct primes $p,q,r$, the graph
+$G_{p^a q^a r^b}$ is not Laplacian integral. Every unresolved
+repeated-exponent pair therefore has square $D$ and
+$1\leq b\leq\lfloor R(a)\rfloor$.
+\end{theorem}
+\begin{proof}
+If $D$ is nonsquare the antisymmetric block suffices. Otherwise use
+Proposition~\ref{prop:divisors}. When $d=1$, $e=M$ and $b=C$;
+Theorem~\ref{thm:boundary} settles this case.
+If $d>1$, Lemma~\ref{lem:congruence} gives $d\geq T=a+2$.
+Since $e\geq d\geq T$,
+\[
+\frac MT+T-(d+e)=(d-T)\left(\frac eT-1\right)\geq0.
+\]
+Hence
+\[
+b\leq\frac{M/T+T-a(3a+1)}{h^2}
+=\frac{2(a-1)(a-2)}{a+2}=R(a).
+\]
+Thus $b>R(a)$ leaves either a nonsquare discriminant or the already
+settled boundary case.
+\end{proof}
+
+At $(a,b)=(4,2)$ the square-discriminant pair has $d=6=a+2$,
+so equality in the factor estimate is attained. The graph is still
+nonintegral, as shown in the next section.
