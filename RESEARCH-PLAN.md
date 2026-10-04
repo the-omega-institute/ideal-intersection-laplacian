@@ -14,8 +14,9 @@ python3 scripts/check_fixed_repeated_exponents.py
 ```
 
 The next focused question is the symmetric cubic on admissible factor pairs
-for arbitrary repeated exponent `a`. Avoid an unbounded scan in `b`: the
-discriminant identity reduces each fixed `a` to a finite divisor problem.
+with `b <= floor(R(a))` for arbitrary repeated exponent `a`, using the
+linear cutoff in the note. Avoid an unbounded scan in `b`: the discriminant
+identity and congruence reduce each fixed `a` to a finite divisor problem.
 
 Reza proposes the Laplacian integrality question, Q3 in his privately shared
 preprint on ideal intersection graphs of `Z_n`, as the first follow-on task.

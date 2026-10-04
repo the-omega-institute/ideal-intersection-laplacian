@@ -4,6 +4,8 @@
     {
       "repeated_exponent": 2,
       "constant": 160,
+      "factor_congruence_period": 3,
+      "nonboundary_linear_bound": "0",
       "all_factor_pairs": [
         {
           "lower": 1,
@@ -69,6 +71,8 @@
     {
       "repeated_exponent": 3,
       "constant": 756,
+      "factor_congruence_period": 2,
+      "nonboundary_linear_bound": "9/4",
       "all_factor_pairs": [
         {
           "lower": 1,
@@ -184,6 +188,8 @@
     {
       "repeated_exponent": 4,
       "constant": 2304,
+      "factor_congruence_period": 5,
+      "nonboundary_linear_bound": "2",
       "all_factor_pairs": [
         {
           "lower": 1,
@@ -317,7 +323,7 @@
     }
   ],
   "sympy": "1.14.0",
-  "script_sha256": "dadf313b86356c0cc6c309bcadf0356f38f9a8daa405cd34874dc6337a83c812",
+  "script_sha256": "42576cfdbc55336be439a500433c9caadc19a609f6d56f9de99640fea494abbc",
   "diagnostic_sha256": "0877fc7fb32b0ffb696ea62fb86022d7090b71bd0f507c5b5ed9e66edfb39452",
-  "scope": "Complete fixed-a=2,3,4 certificates for all b>=1; exact identity supporting written all-a upper-bound corollary b>(a-1)(2a-1). Below-bound exceptional pairs at arbitrary a and fullQ3 remain open; no Lean."
+  "scope": "Complete fixed-a=2,3,4 certificates for all b>=1; exact algebra for quadratic and sharper linear cutoff. Written congruence and factor inequality prove all-a linear cutoff using Reza boundary theorem. Remaining squareD pairs below linear cutoff and fullQ3 open; no Lean."
 }

@@ -3,6 +3,17 @@
 **General bound.** For every $a\geq1$ and
 $b>(a-1)(2a-1)$, the graph of $p^a q^a r^b$ is not Laplacian integral.
 
+**Sharper bound.** For $a\geq2$, the same conclusion holds whenever $b>R(a)$,
+where
+
+$$R(a)=\begin{cases}
+\dfrac{2(a-1)(a-2)}{a+2},&a\text{ even},\\[4pt]
+\dfrac{(2a-3)(4a-3)}{2(a+3)},&a\text{ odd}.
+\end{cases}$$
+
+Thus any unresolved repeated-exponent pair must have $b\leq\lfloor R(a)\rfloor$
+and a square antisymmetric discriminant. This is a linear bound in $a$.
+
 **Theorem.** For $a\in\{2,3,4\}$, every $b\geq1$, and distinct primes
 $p,q,r$, the ideal intersection graph of $p^a q^a r^b$ is not Laplacian integral.
 
@@ -111,6 +122,44 @@ $(\ell,r)=(2,2a^3(2a+1))$ is admissible for $a\geq2$: this is precisely
 Reza's boundary family, where his symmetric cubic supplies the obstruction.
 For $a=1$, the bound is zero and all $b\geq1$ are covered.
 
+## A congruence gives a linear cutoff
+
+Continue with $a\geq2$, $D=s^2$, $\ell=2d$, $r=2e$, $d\leq e$.
+Then
+
+$$de=M=a^3(2a+1),\qquad d+e=A,\qquad e-d=(a+1)s.$$
+
+Reducing the last two equations modulo $a+1$ gives $e\equiv d$ and
+$d+e\equiv2$. Therefore
+
+$$d\equiv1\pmod{m},\qquad m=\frac{a+1}{\gcd(2,a+1)}.$$
+
+The case $d=1$ is exactly the boundary $b=(a-1)(2a-1)$, already settled
+by Reza's cubic argument. Every other square-discriminant pair has
+$d\geq t=m+1$. Since $e\geq d\geq t$,
+
+$$\frac Mt+t-(d+e)=(d-t)\left(\frac et-1\right)\geq0.$$
+
+Substituting $A=(a+1)^2b+a(3a+1)$ yields
+
+$$b\leq\frac{M/t+t-a(3a+1)}{(a+1)^2}.$$
+
+For even $a$, $t=a+2$ and this expression is $2(a-1)(a-2)/(a+2)$.
+For odd $a$, $t=(a+3)/2$ and it is $(2a-3)(4a-3)/(2(a+3))$.
+Consequently, if $b>R(a)$, either $D$ is nonsquare and the antisymmetric
+block gives irrational eigenvalues, or the pair is the boundary family
+and Reza's theorem applies. This proves the sharper bound.
+
+The exact expressions
+
+$$R(a)=2a-10+\frac{24}{a+2}\quad(a\text{ even}),\qquad
+R(a)=4a-21+\frac{135}{2(a+3)}\quad(a\text{ odd})$$
+
+show the linear scale. At $a=2,3,4$, the unresolved ranges reduce to
+$b\leq0,2,2$ respectively. The only square-discriminant pair in these
+ranges is $(a,b)=(4,2)$, already certified below. In that case $d=6=t$,
+so equality in the even cutoff is attained.
+
 ## The four exceptional cubics
 
 For those four pairs, the symmetric quotient supplies a noninteger root:
@@ -150,7 +199,6 @@ These are exact algebraic and arithmetic checks, with no numerical spectrum
 or Lean verification.
 
 The next focused task is to control the symmetric cubic on admissible factor
-pairs below the boundary for arbitrary $a$. Larger $b$ are covered by the
-general bound, and equality by Reza's theorem. The remaining cases include
-square-discriminant pairs with $1\leq b<(a-1)(2a-1)$ and triples with three
-distinct exponents.
+pairs with $b\leq\lfloor R(a)\rfloor$ for arbitrary $a$. The general linear
+cutoff and Reza's boundary theorem cover larger $b$. The remaining cases
+also include triples with three distinct exponents.
