@@ -8,6 +8,12 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+A standalone [middle-diagonal inertia restriction](notes/endpoint-two-middle-inertia.md)
+narrows the endpoint-two problem without further congruence lifting. For
+`4<=a<b<c`, `(b-2)(a+b+c-2)<=2ac` supplies a positive quotient root in `(0,2)`.
+This proves nonintegrality for all-even triples and the mixed patterns
+`(1,3,2)/(3,3,0)` modulo four. The consolidated manuscript is unchanged.
+
 ## First results
 
 We prove nonintegrality for every squarefree integer with at least three

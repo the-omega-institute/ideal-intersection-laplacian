@@ -6,6 +6,15 @@ Appendices B/C; Appendix A summarizes verification, with the full checker
 catalogue retained in an optional detailed build. No result or certificate
 is removed, and this reorganization introduces no new mathematical claim.
 
+The standalone [middle-diagonal proof](notes/endpoint-two-middle-inertia.md)
+now narrows the structural endpoint-two problem. In size order `4<=a<b<c`,
+a possible integer spectrum in the all-even or `(1,3,2)/(3,3,0)` modulo-four
+classes requires both `(a-2)(a+b+c-2)<2bc` and
+`(b-2)(a+b+c-2)>2ac`, with two the smallest positive quotient root and simple;
+the middle-dependent upper tail is additional to the old minimum-only bound.
+No endpoint-zero enumeration or new two-adic shift is needed. The current
+consolidated manuscript remains unchanged pending the final scope decision.
+
 **Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
 consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
 the successive linear cutoffs, all `(a,a,b)` with `a,b>=1`, and all
