@@ -13,7 +13,16 @@ classes requires both `(a-2)(a+b+c-2)<2bc` and
 `(b-2)(a+b+c-2)>2ac`, with two the smallest positive quotient root and simple;
 the middle-dependent upper tail is additional to the old minimum-only bound.
 No endpoint-zero enumeration or new two-adic shift is needed. The current
-consolidated manuscript remains unchanged pending the final scope decision.
+manuscript files in this PR remain unchanged pending review of the standalone
+deductions; the editorial revision is maintained separately on PR3.
+
+The [full determinant positivity proof](notes/endpoint-two-middle-tail.md)
+settles the previously surviving `b>=2a+2` branch, and more: every ordered
+triple with minimum at least four and `b>=2a-2` has `h_C(2)>0` and a positive
+root in `(0,2)`. Endpoint-two candidates require `b<2a-2` as well as the
+existing maximum bound. The next structural target is the secular equation
+inside this smaller region; the other mixed-parity endpoint-one cases remain
+open. Reza has deferred manuscript closure while structural work is informative.
 
 **Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
 consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,

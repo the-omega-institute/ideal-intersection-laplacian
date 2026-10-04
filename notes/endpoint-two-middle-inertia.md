@@ -151,6 +151,11 @@ reduction of the full secular equation, rather than repeated application
 of this particular principal block, is needed there. These sign conditions
 alone have not been proved contradictory.
 
+The subsequent [full determinant argument](endpoint-two-middle-tail.md)
+now excludes this entire branch, and more: `b>=2a-2` implies `h_C(2)>0`.
+This is a separate positivity argument for the full endpoint polynomial;
+the limitation of the principal a,b test described above remains valid.
+
 The geometric and arithmetic excluded sets overlap. For example,
 `(17,19,50)` is in the excluded modulo-eight row `(1,3,2)` and has
 `k_b(2)=-16`, so both methods apply. The geometric criterion is not
@@ -187,5 +192,7 @@ root in `(0,2)`, so neither test is necessary for that interval. The existing re
 The proof is an unbounded interval argument. The fixtures are finite exact
 checks, not the proof or an enlarged scan. No Lean verification is claimed.
 The surviving endpoint surfaces, full Q3 and higher-prime nonsquarefree
-vectors remain open. This standalone note leaves the consolidated manuscript
-unchanged while its final research scope is awaiting the authors' decision.
+vectors remain open. This standalone note leaves manuscript files unchanged
+pending coauthor review and integration.
+Reza has since deferred manuscript closure while structural work is informative;
+standalone deductions remain separate for review before integration.

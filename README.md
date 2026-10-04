@@ -14,6 +14,12 @@ narrows the endpoint-two problem without further congruence lifting. For
 This proves nonintegrality for all-even triples and the mixed patterns
 `(1,3,2)/(3,3,0)` modulo four. The consolidated manuscript is unchanged.
 
+The [full endpoint-two determinant](notes/endpoint-two-middle-tail.md) now
+excludes every `b>=2a-2` for ordered `4<=a<=b<=c`: its endpoint polynomial
+is strictly positive and gives a root in `(0,2)`. Every endpoint-two zero
+therefore requires `b<2a-2`. Nonintegrality follows in the same three parity
+classes; the other endpoint-one cases remain open.
+
 ## First results
 
 We prove nonintegrality for every squarefree integer with at least three
