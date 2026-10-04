@@ -3,6 +3,10 @@
 Read [the PDF](paper.pdf), or edit [paper.tex](paper.tex) and the section
 files it includes. This is a growing mathematical draft, not a submission
 package. Author metadata and any manuscript disclosure are for joint agreement.
+The main text ends with the remaining questions and references; detailed
+checker scopes and reproduction evidence are collected in Appendix A.
+Further two-adic shifts are paused while the endpoint-two argument inside
+the linear region and consolidation of the existing results are pursued.
 
 The section names follow Reza's proposed layout. At the time of integration,
 his announced `paper/` files were not yet present on any of the three remote
