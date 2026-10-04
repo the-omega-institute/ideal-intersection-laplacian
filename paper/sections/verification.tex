@@ -126,6 +126,17 @@ implementation. It checks every exact division, every strict consecutive-square
 bracket and the complete ordered domain. This is the exhaustive finite
 certificate used in Corollary~\ref{cor:minimum-seven}, combined with the
 written cutoff, rather than extrapolation to arbitrary minimum exponent.
+\item \path{scripts/check_mixed_inertia.py} verifies the comparison
+determinant, negative Rayleigh value, equal-exponent case, positive
+comparison gap and balanced-span identities symbolically in a rational
+$3\times3$ congruence. Six exact secular/Sturm fixtures cover every
+nonsingular diagonal-sign/secular-sign combination possible here.
+Nine separately reconstructed quotient/Sturm fixtures include equal
+exponents, two zero-diagonal boundaries, a strongly unbalanced triple
+and chosen spans up to $1000$. The finite fixtures validate formulas;
+Theorem~\ref{thm:uniform-low-root} and
+Corollaries~\ref{cor:balanced-interval}--\ref{cor:balanced-span}
+use the written comparison and positivity proofs, with no parameter scan.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

@@ -41,6 +41,12 @@ minimum is at most3**, and **every `(a,a+3,a+4)`, a>=1**:
 [read the low-eigenvalue proof](notes/low-spectrum.md).
 It counts two complement eigenvalues below3 and excludes the integers
 1 and2 with positive polynomial factors and four complete modular certificates.
+For **every `4<=a<=b<=c`**, a uniform comparison now places a positive
+complement quotient eigenvalue in `(0,3)`. If
+**`(a-2)(a+b+c-2)>2bc`**, a root lies in `(2,3)`, proving nonintegrality.
+In particular, **minimum exponent `a>=3r+8`, with span `r=c-a`, suffices**:
+[read the uniform comparison and balanced-region proof](notes/mixed-inertia.md).
+This written argument allows unbounded spans and does not enlarge any scan.
 The remaining triples lie within `8 <= a < b < c < 4a^2 - 2a`, outside
 these families and the general inertia criterion;
 the full characterization remains open.
@@ -56,6 +62,7 @@ the full characterization remains open.
 | Read the minimum-two theorem | [All (2,b,c) proof](notes/minimum-two.md) · [Exact certificate](results/minimum-two.json) |
 | Read the uniform cutoff and minimum-three theorem | [Proof](notes/distinct-tail.md) · [Complete 325-case certificate](results/distinct-tail.json) |
 | Read the inertia criterion and bounded-gap families | [Proof](notes/low-spectrum.md) · [Exact modular certificate](results/low-spectrum.json) |
+| Read the uniform low-root bound and growing balanced region | [Proof](notes/mixed-inertia.md) · [Exact checks](results/mixed-inertia.json) |
 | Read Reza's requested finite-region run and minimum-through-seven result | [Report and proof](notes/open-region-diagnostic.md) · [Complete CSV](results/open-region-discriminants.csv) · [Independent verification](results/open-region-certificate-check.json) |
 | Read the source preprint and original Q3 | [Zenodo DOI10.5281/zenodo.23134979](https://doi.org/10.5281/zenodo.23134979) |
 | Read the requested (a,a,b) diagnostic and fixed-a theorem | [Exact diagnostic and proof](notes/aa-b-diagnostic.md) |
@@ -97,8 +104,13 @@ Reza's requested finite range at minima4through7 is now completely certified:
 all27,562discriminants pass independent integer determinant reconstruction
 and strict square brackets. The original and complement quotient signs
 are kept separate. With the cutoff this certifies every minimum-entry<=7 triple.
-The next mathematical question is the region `8 <= a < b < c < 4a^2 - 2a`
-outside the new families and criterion;
+The mixed-sign Schur complement now has a uniform positive root below3
+for every minimum exponent at least4. The lower endpoint inequality
+`(a-2)(a+b+c-2)>2bc` places a root in `(2,3)` and settles a growing
+balanced region, including every minimum `a>=3(c-a)+8`.
+In the remaining region `8 <= a < b < c < 4a^2 - 2a`, any integral graph
+must satisfy `h_C(1)h_C(2)=0`. These two endpoint-zero surfaces are the
+next mathematical question; the necessary condition does not classify them.
 nonsquarefree vectors with more than three prime factors also remain open.
 
 The source preprint is public on

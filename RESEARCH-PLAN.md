@@ -13,7 +13,12 @@ The coauthor-requested complete finite region at minima4through7 has
 Sylvester determinants. With the cutoff, every minimum-entry<=7 triple
 has a complete certificate. This extension depends on the finite computation.
 The corrected repeated-exponent diagnostic and exact certificates remain
-available. Full Q3 remains open.
+available. A uniform comparison now places a positive complement root
+in `(0,3)` for every minimum exponent at least4. The sufficient inequality
+`(a-2)(a+b+c-2)>2bc` places a root in `(2,3)` and proves nonintegrality;
+in particular, every minimum `a>=3(c-a)+8` is covered. Read
+[the mixed-sign comparison and balanced-region proof](notes/mixed-inertia.md).
+Full Q3 remains open.
 
 Read [the exact diagnostic and finite-reduction proof](notes/aa-b-diagnostic.md).
 With SymPy 1.14.0, reproduce the requested output using:
@@ -30,6 +35,7 @@ python3 scripts/check_fully_distinct.py
 python3 scripts/check_minimum_two.py
 python3 scripts/check_distinct_tail.py
 python3 scripts/check_low_spectrum.py
+python3 scripts/check_mixed_inertia.py
 python3 scripts/check_open_region2.py
 python3 scripts/check_open_region_certificate.py
 ```
@@ -45,10 +51,12 @@ reduces each fixed minimum exponent to finitely many pairs; the complete
 The [inertia criterion](notes/low-spectrum.md) handles two roots in one
 interval, which endpoint signs can miss. Four bounded-gap families are now
 settled using38root-free modular residues, without an exponent scan.
-Next study the diagonal-minus-rank-one Schur complement outside those families:
-seek a uniform low-eigenvalue bound with integer-endpoint exclusions, or
-conditions on its full inertia when its diagonal has mixed signs. Derive an exact
-obstruction for a stated subfamily.
+The [mixed-sign comparison](notes/mixed-inertia.md) now gives the uniform
+low-eigenvalue bound and an exact inertia formula for nonsingular diagonals.
+After the new balanced-region obstruction, focus on the necessary condition
+`h_C(1)h_C(2)=0`: either exclude integer triples on these endpoint-zero
+surfaces or find a different noninteger quotient root there. Do not infer
+integrality from this necessary condition.
 The [requested open-region diagnostic](notes/open-region-diagnostic.md)
 records its exact bounds and keeps H/complement endpoint patterns separate.
 It exhausts the remaining pairs for minimum4,5,6,7 under the written cutoff,

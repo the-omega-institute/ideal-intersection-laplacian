@@ -23,9 +23,10 @@ sections and their shared graph/lifting definitions.
 | [minimum-two.tex](sections/minimum-two.tex) | All (2,b,c) theorem from two positive expansions and one rational interval |
 | [distinct-tail.tex](sections/distinct-tail.tex) | Uniform c>=4a^2-2a cutoff and all (3,b,c) theorem with the complete derived 325-case endpoint certificate |
 | [low-spectrum.tex](sections/low-spectrum.tex) | General inertia criterion, four complete bounded-gap families, every exponent span at most3, and complete finite minimum-through-seven certificate |
+| [mixed-inertia.tex](sections/mixed-inertia.tex) | Uniform positive root below3 for every minimum at least4; root in(2,3) under the lower inequality; growing balanced region a>=3span+8 |
 | [aa-small.tex](sections/aa-small.tex) | All-b theorem for a=2 through9, divisor/modular certificates and cubic-test scope |
 | [verification.tex](sections/verification.tex) | Actual scope of the exact checkers |
-| [open.tex](sections/open.tex) | Ordered 8<=a<b<c<4a^2-2a outside the new families/inertia criterion, and nonsquarefree higher-prime vectors |
+| [open.tex](sections/open.tex) | Ordered 8<=a<b<c<4a^2-2a outside the proved criteria; endpoint-zero necessary condition and nonsquarefree higher-prime vectors |
 
 ## Build
 
@@ -61,6 +62,7 @@ python3 scripts/check_fully_distinct.py
 python3 scripts/check_minimum_two.py
 python3 scripts/check_distinct_tail.py
 python3 scripts/check_low_spectrum.py
+python3 scripts/check_mixed_inertia.py
 python3 scripts/check_open_region2.py
 python3 scripts/check_open_region2.py --json --certificate-csv results/open-region-discriminants.csv
 python3 scripts/check_open_region_certificate.py
