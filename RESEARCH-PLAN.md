@@ -23,6 +23,12 @@ settle every gcd>=3 triple, every all-odd triple and general common-residue
 classes with a quadratic nonresidue criterion. This includes residues1,3,4
 modulo5 and1,2,4,5 modulo7, with arbitrarily large unequal exponents.
 Full Q3 remains open.
+The [endpoint residue proof](notes/endpoint-residues.md) also settles
+every residue triple (2,2,2) and permutation of (1,2,2) modulo three.
+Complete modulo-two/three root sets are recorded; no pair is root-free
+on either surface, so retaining only root-free pairs misses these classes.
+A fixed finite set of endpoint congruences alone cannot establish global
+emptiness for fully distinct triples; combine them with further restrictions.
 The [requested endpoint diagnostic](notes/endpoint-surfaces-diagnostic.md)
 exhausts all66pairs `4<=a<b<=15` and all integer `c>b` by exact divisor
 reduction, finding neither endpoint zero. With the low-root theorem and
@@ -61,6 +67,7 @@ python3 scripts/check_endpoint_reduction.py
 python3 scripts/check_even_exponent_congruence.py
 python3 scripts/check_endpoint_surfaces.py
 python3 scripts/verify_endpoint_surfaces.py
+python3 scripts/check_endpoint_residues.py
 python3 scripts/check_open_region2.py
 python3 scripts/check_open_region_certificate.py
 ```
