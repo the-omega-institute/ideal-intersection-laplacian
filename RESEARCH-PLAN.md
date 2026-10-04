@@ -24,6 +24,13 @@ existing maximum bound. The next structural target is the secular equation
 inside this smaller region; the other mixed-parity endpoint-one cases remain
 open. Reza has deferred manuscript closure while structural work is informative.
 
+The [positive interval transformation](notes/endpoint-two-maximum-tail.md)
+now strengthens the maximum bound to `c<3a-4` on the endpoint-two surface.
+It uses the bounded middle interval `a<=b<2a-2` and a single exact
+positive-coefficient identity, without enlarging any parameter search.
+The next structural target is `h_C(2)=0` and the remaining quotient roots
+inside both new bounds, retaining the independent endpoint-one cases.
+
 **Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
 consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
 the successive linear cutoffs, all `(a,a,b)` with `a,b>=1`, and all

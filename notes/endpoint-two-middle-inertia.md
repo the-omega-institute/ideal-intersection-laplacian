@@ -155,6 +155,8 @@ The subsequent [full determinant argument](endpoint-two-middle-tail.md)
 now excludes this entire branch, and more: `b>=2a-2` implies `h_C(2)>0`.
 This is a separate positivity argument for the full endpoint polynomial;
 the limitation of the principal a,b test described above remains valid.
+The [maximum-tail refinement](endpoint-two-maximum-tail.md) further requires
+`c<3a-4` on the remaining endpoint-two zero surface.
 
 The geometric and arithmetic excluded sets overlap. For example,
 `(17,19,50)` is in the excluded modulo-eight row `(1,3,2)` and has

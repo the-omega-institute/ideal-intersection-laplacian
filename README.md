@@ -20,6 +20,11 @@ is strictly positive and gives a root in `(0,2)`. Every endpoint-two zero
 therefore requires `b<2a-2`. Nonintegrality follows in the same three parity
 classes; the other endpoint-one cases remain open.
 
+The [sharper maximum tail](notes/endpoint-two-maximum-tail.md) now proves
+`c>=3a-4 => h_C(2)>0` for ordered minimum at least four. Every endpoint-two
+zero therefore requires both `b<2a-2` and `c<3a-4`, replacing the earlier
+maximum bound `c<7a-16+40/(a+2)`. Full Q3 remains open.
+
 ## First results
 
 We prove nonintegrality for every squarefree integer with at least three

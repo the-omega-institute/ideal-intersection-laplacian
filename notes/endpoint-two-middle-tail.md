@@ -20,6 +20,9 @@ the unresolved endpoint-two candidates satisfy
 4<=a<=b<=c,  b<2a-2,  c<7a-16+40/(a+2).
 ```
 
+The subsequent [maximum-tail proof](endpoint-two-maximum-tail.md) strengthens
+the last inequality to `c<3a-4`, using this bounded middle interval.
+
 This settles the entire `b>=2a+2` branch left untouched by the preceding
 [principal-block test](endpoint-two-middle-inertia.md), and extends the
 exclusion down to `b=2a-2`. It does not close the surviving endpoint-two
