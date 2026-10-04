@@ -91,8 +91,12 @@ For minimum m>=4, it also requires **`h_C(2)=0`** and
 **`M<7m-16+40/(m+2)`**, where M is the maximum exponent.
 The earlier sum congruences follow from these arithmetic conditions.
 [Read the consolidated statement and proof guide](notes/manuscript-consolidation.md).
-The lifting calculations are grouped in Appendix B; the earlier notes
-and exact certificates remain available in the navigation below.
+Theorem 13.5 combines all the mixed-parity exclusions and restrictions,
+with one worked example in the main text. Theorem 14.1 combines the endpoint
+reductions. The complete case calculations are grouped in Appendix B,
+and the endpoint proofs in Appendix C. Appendix A gives grouped verification
+scopes; the full per-checker catalogue remains in the optional detailed build.
+Earlier notes and exact certificates remain available in the navigation below.
 
 ## Start here
 

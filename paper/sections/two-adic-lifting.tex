@@ -1,11 +1,250 @@
-\section{Two-adic lifting for mixed-parity roots}
+\section{Mixed-parity case analyses and two-adic lifting}
 \label{sec:two-adic-lifting}
 
-The arithmetic part of Theorem~\ref{thm:clustered-odd-roots} follows
-from three successive root-distribution steps. The variables $a,b,c$
-identify the residues $(1,3,2)$ modulo four, independently of size order.
-The derivative thresholds also explain the scope of the associated
-diagnostics in Appendix~\ref{sec:verification}.
+Theorem~\ref{thm:mixed-residue-classes} collects the following cases.
+All residue-role permutations are included. Each row records either a
+nonintegral class or a necessary condition for an integer spectrum.
+\begin{center}
+\begin{tabular}{p{3.2cm}p{1.6cm}p{8.8cm}}
+\toprule
+Residue roles & Modulus & Conclusion or necessary condition\\
+\midrule
+Six classes listed in the main theorem & $8$ & Nonintegral by the divisor-$32$ endpoint table below.\\
+$(3,3,2)$ & $4$ & Nonintegral: endpoint and derivative requirements are incompatible.\\
+$(3,0,0)$ & $4$ & Nonintegral: one is excluded by root distribution and $h_C(2)\equiv4\pmod8$.\\
+$(1,3,2)$ & $4$ & $a+c\equiv b(b+2)\pmod{128}$, $b\equiv11,15\pmod{16}$ and the stated binary-cubic parity condition.\\
+$(1,3,2)$, $(3,3,0)$ & $4$ & For minimum $m\geq4$, $h_C(2)=0$ and maximum $M<R(m)$.\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The complete identities, intermediate conditions, examples and diagnostic
+boundaries are retained below. The variables identify residue roles rather
+than size order; no additional refinement or search is introduced.
+
+\subsection{Endpoint divisibility and odd-root distribution}
+
+\begin{lemma}
+\label{lem:three-odd-roots}
+Let $f\in\mathbb Z[x]$ be monic of degree five with
+$f(x)\equiv x^2(x+1)^3\pmod2$. If all its roots are integers,
+then $32\mid f(1)$ or $32\mid f(3)$.
+\end{lemma}
+
+\begin{proof}
+The binary factorization forces precisely three odd roots and two even
+roots, counted with multiplicity. At least two odd roots share a residue
+$r\in\{1,3\}$ modulo four. In $f(r)$, their two factors are divisible
+by four and the third odd-root factor is divisible by two. The even-root
+factors are odd. Therefore $32\mid f(r)$, including when $f(r)=0$.
+\end{proof}
+
+\begin{proposition}
+\label{thm:mixed-parity-congruence}
+Let $a,b$ be the two odd exponents and $c$ the even exponent of a positive
+three-prime exponent triple. Each row in the following table, including
+exchange of $a,b$, implies that its ideal intersection graph is nonintegral.
+\begin{center}
+\begin{tabular}{ccc|cc}
+\toprule
+$a\bmod8$ & $b\bmod8$ & $c\bmod8$ & $h_C(1)\bmod32$ & $h_C(3)\bmod32$\\
+\midrule
+1&3&2&8&16\\
+1&7&2&24&16\\
+3&7&2&16&8\\
+3&5&6&8&16\\
+3&7&6&16&24\\
+5&7&6&24&16\\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{proposition}
+
+\begin{proof}
+For either mixed exponent parity,
+$h_C(x)\equiv x^2(x+1)^3\pmod2$. Substituting
+$(a,b,c)=(8u+r_1,8v+r_2,8w+r_3)$ in the general quotient quintic gives
+the last two columns: every nonconstant coefficient in $u,v,w$ is
+divisible by $32$. Both entries are nonzero modulo $32$, contradicting
+Lemma~\ref{lem:three-odd-roots} if all quotient roots were integers.
+The resulting noninteger real complement eigenvalue has a noninteger
+graph lift.
+\end{proof}
+
+For example, $(10,17,19)$ and $(14,19,21)$ meet these criteria with
+gcd one and unequal $2$-adic valuations. There is no minimum or ratio
+bound in the argument. The weaker divisibilities $4\mid h_C(2t)$
+and $8\mid h_C(2t+1)$ hold identically for both mixed exponent parities;
+they alone do not supply the contradiction. The distribution of the
+three odd roots modulo four is the additional constraint.
+
+\begin{lemma}
+\label{lem:odd-root-distribution}
+Let $f\in\mathbb Z[x]$ be monic of degree five with
+$f(x)\equiv x^2(x+1)^3\pmod2$. Suppose
+$F(y)=f(2y+1)/8$ belongs to $\mathbb Z[y]$ and
+$F(y)\equiv y^3\pmod2$. If all roots of $f$ are integers,
+then its three odd roots are congruent to one modulo four,
+$64\mid f(1)$ and $16\mid f'(1)$.
+\end{lemma}
+
+\begin{proof}
+Write the two even roots as $\eta_1,\eta_2$ and the three odd
+roots as $2r_1+1,2r_2+1,2r_3+1$, with multiplicities. Then
+\[
+ F(y)=\prod_{j=1}^2(2y+1-\eta_j)\prod_{i=1}^3(y-r_i).
+\]
+The first two factors reduce to one modulo two. Hence
+$\prod_i(y-r_i)\equiv y^3\pmod2$, which forces every $r_i$ to be even.
+Each odd-root factor in $f(1)$ is therefore divisible by four,
+giving $64\mid f(1)$. Every term in the product-rule expansion of
+$f'(1)$ retains at least two such factors, giving $16\mid f'(1)$.
+The argument includes coincident roots and zero factors.
+\end{proof}
+
+\begin{proposition}
+\label{thm:odd-root-distribution}
+Every positive three-prime exponent triple that is a permutation of
+$(3,3,2)$ modulo four has a nonintegral ideal intersection graph.
+\end{proposition}
+
+\begin{proof}
+Relabel the odd exponents as $a=4u+3$, $b=4v+3$ and the even
+exponent as $c=4w+2$, where $u,v,w\geq0$. Expansion of the
+general complement quintic gives the coefficientwise identities
+\begin{align*}
+ h_C(2y+1)/8&\in\mathbb Z[u,v,w,y], &
+ h_C(2y+1)/8&\equiv y^3\pmod2,\\
+ h_C(1)&\equiv16(u+v)\pmod{32}, &
+ h_C'(1)&\equiv8(u+v+1)\pmod{16}.
+\end{align*}
+Its binary reduction is $x^2(x+1)^3$. If all five roots were integers,
+Lemma~\ref{lem:odd-root-distribution} would give $64\mid h_C(1)$,
+so the endpoint congruence would require $u+v$ even. The derivative
+divisibility $16\mid h_C'(1)$ would require $u+v$ odd, a contradiction.
+Thus there is a noninteger real complement eigenvalue, whose graph
+lift is noninteger.
+\end{proof}
+
+This theorem contains the two rows $(3,7,2)$ and $(3,7,6)$ of
+Proposition~\ref{thm:mixed-parity-congruence} and also covers odd exponents
+sharing the same residue modulo eight. For example, $(10,19,27)$ and
+$(14,23,39)$ have odd residues $(3,3)$ and $(7,7)$ modulo eight,
+respectively. Neither theorem requires a low-root interval or an
+exponent-size bound.
+
+For the fixed necessary divisor $32$, increasing the exponent modulus
+alone gives no further exclusions. On all mixed-parity triples, the
+values of both $h_C(1)$ and $h_C(3)$ modulo $32$ already have period
+eight in each exponent. This follows coefficientwise by substituting
+the two parity representatives $(2u+1,2v,2w)$ and $(2u+1,2v+1,2w)$
+and shifting one variable by $4z$; symmetry covers their permutations.
+Thus the higher-modulus tables are lifts of the six classes in
+Proposition~\ref{thm:mixed-parity-congruence}. The additional exclusions in
+Proposition~\ref{thm:odd-root-distribution} use the distribution of the roots
+and the derivative, beyond those two endpoint divisibilities.
+
+\begin{proposition}
+\label{thm:clustered-odd-roots}
+Let $a,b,c$ be positive exponent residue roles with
+$a\equiv1$, $b\equiv3$ and $c\equiv2\pmod4$.
+If their ideal intersection graph is Laplacian integral, then
+\[
+ a+c\equiv b(b+2)\pmod{128},\qquad b\equiv11\text{ or }15\pmod{16}.
+\]
+Moreover, put $u=(a-1)/4$ and $t=(a+c-b(b+2))/128$. Then
+\[
+ \begin{cases}
+ t+u+v\equiv1\pmod2,& b=16v+11,\\
+ t+v\equiv1\pmod2,& b=16v+15.
+ \end{cases}
+\]
+If $m=\min\{a,b,c\}\geq4$ and $M=\max\{a,b,c\}$, then also
+\[
+ h_C(2)=0,\qquad M<7m-16+\frac{40}{m+2}.
+\]
+Every violation under the stated hypotheses proves nonintegrality;
+all exponent permutations are included.
+\end{proposition}
+
+\begin{proof}
+Proposition~\ref{thm:odd-root-lift} in Appendix~\ref{sec:two-adic-lifting}
+forces all three hypothetical integer odd quotient roots to be $b$ modulo
+eight. Thus $512\mid h_C(b)$ and $64\mid h_C'(b)$.
+The exact identity
+\[
+ h_C(b)=a^2b^2c^2\bigl(a+c-b(b+2)\bigr)
+\]
+has prefactor of $2$-adic valuation two, giving the sum condition modulo
+$128$, including when $h_C(b)=0$. The derivative congruence and the binary
+cubic calculation in Appendix~\ref{sec:two-adic-lifting} give the restriction
+on $b$ and the two parity conditions.
+
+Since $b\equiv3\pmod4$, one cannot be a quotient root under the
+integer-spectrum assumption. For $m\geq4$, the positive root in $(0,3)$
+from Theorem~\ref{thm:uniform-low-root} must therefore equal two.
+Proposition~\ref{thm:endpoint-two-bound} gives the strict linear upper bound.
+\end{proof}
+
+The arithmetic conditions imply the earlier sum congruences
+$a+c\equiv15\pmod{16}$ and $a+c+4b\equiv27\pmod{32}$.
+Appendix~\ref{sec:two-adic-lifting} gives their staged derivation and the
+supporting derivative thresholds. The theorem collects these arithmetic
+conditions together with the endpoint-two restriction.
+For example, $(29,27,754)$ and $(45,47,2258)$ have $h_C(b)=0$ and
+$64\mid h_C'(b)$ but fail the final parity test. The compatible triples
+$(25,27,758)$ and $(29,27,882)$ instead fail the linear upper bound.
+Satisfying the arithmetic conditions alone does not establish integrality.
+
+\begin{lemma}
+\label{lem:mixed-endpoint-one}
+For positive exponent triples that are permutations of $(3,0,0)$,
+$(1,3,2)$ or $(3,3,0)$ modulo four, an integer complement quotient
+spectrum would force every odd root to be three modulo four.
+Consequently one cannot be a quotient root under this assumption.
+\end{lemma}
+
+\begin{proof}
+For each displayed residue pattern, write
+$(a,b,c)=(4u+r_a,4v+r_b,4w+r_c)$. Coefficientwise expansion gives
+\begin{align*}
+ h_C(x)&\equiv x^2(x+1)^3\pmod2,\\
+ F(y)=h_C(2y+1)/8&\in\mathbb Z[u,v,w,y], &
+ F(y)&\equiv(y+1)^3\pmod2.
+\end{align*}
+If every root were an integer, there would be three odd roots $2r_i+1$
+and two even roots $\eta_j$, counted with multiplicity. In
+\[
+ F(y)=\prod_{j=1}^2(2y+1-\eta_j)\prod_{i=1}^3(y-r_i),
+\]
+the first two factors reduce to one modulo two. Thus every $r_i$ is
+odd, giving the asserted residue and exclusion of one. Symmetry of the
+quintic includes every permutation of the exponents.
+\end{proof}
+
+\begin{proposition}
+\label{thm:one-odd-endpoints}
+Every positive three-prime exponent triple that is a permutation of
+$(3,0,0)$ modulo four gives a nonintegral ideal intersection graph,
+without a size or ratio bound.
+\end{proposition}
+
+\begin{proof}
+For residue roles $(a,b,c)=(4u+3,4v,4w)$, coefficientwise expansion
+gives $h_C(2)\equiv4\pmod8$, so two is not a root.
+If the minimum exponent is at least four, Theorem~\ref{thm:uniform-low-root}
+provides a positive quotient root in $(0,3)$. Under the integer-spectrum
+assumption it must be one or two. Lemma~\ref{lem:mixed-endpoint-one}
+excludes one and the endpoint congruence excludes two, a contradiction.
+The only possible smaller minimum is three, already covered by
+Theorem~\ref{thm:minimum-three}. A noninteger complement root has a
+noninteger graph lift.
+\end{proof}
+
+The triples $(19,36,100)$ and $(35,52,120)$ illustrate this one-odd-exponent
+class beyond the minimum-through-seven and middle-through-fifteen
+certificates. The result uses the uniform low-root theorem together with
+the shifted root distribution, without enlarging either finite certificate.
 
 \subsection{Derivative divisibility}
 
@@ -121,7 +360,7 @@ The surviving congruence classes do not assert integral spectra.
 
 \subsection{Value, derivative and the third shifted cubic}
 
-\begin{proof}[Proof of Theorem~\ref{thm:clustered-odd-roots}, arithmetic conditions]
+\begin{proof}[Proof of Proposition~\ref{thm:clustered-odd-roots}, arithmetic conditions]
 The proof of Proposition~\ref{thm:odd-root-lift} forces the three hypothetical
 integer odd complement roots to be $b$ modulo eight. The two remaining
 roots are even. Thus $512\mid h_C(b)$ and $64\mid h_C'(b)$, since each

@@ -1,79 +1,38 @@
 \section{Remaining questions}
 
-Theorem~\ref{thm:repeated} settles every triple with at least two equal
-exponents, and Corollary~\ref{cor:minimum-seven} settles every triple with
-minimum exponent at most seven. Proposition~\ref{prop:distinct-tail}
-settles every ordered triple with $c\geq4a^2-2a$.
-Theorem~\ref{thm:bounded-gaps} settles four further unequal-exponent
-families, including every triple with maximum minus minimum at most three.
-The remaining three-prime cases therefore lie within
-$8\leq a<b<c<4a^2-2a$, outside those families and the triples meeting
-Proposition~\ref{prop:low-spectrum} or
-Corollary~\ref{cor:balanced-interval}. In particular, they satisfy
- $b\geq16$ by the complete endpoint certificate of
-Corollary~\ref{cor:middle-fifteen}, as well as
-$(a-2)(a+b+c-2)\leq2bc$ and $a<3(c-a)+8$.
-These cases and nonsquarefree
-exponent vectors with more than three prime factors require further
-arguments. The results here therefore do not establish nonintegrality
-for every integer with at least three distinct prime factors.
-Theorems~\ref{thm:common-divisor} and~\ref{thm:congruence} additionally
-restrict the remaining three-prime triples to gcd one or two, at least
-one even exponent, and residues outside the proved congruence classes.
-Theorem~\ref{thm:modulo-three-endpoints} also excludes the residue
-patterns $(2,2,2)$ and all permutations of $(1,2,2)$ modulo three.
-Corollary~\ref{cor:common-valuation} also requires unequal $2$-adic
-valuations. In the remaining all-even region at least one exponent is
-congruent to two modulo four and at least one is divisible by four.
-Theorem~\ref{thm:mixed-parity-congruence} also excludes six mixed-parity
-residue classes modulo eight, without a size bound.
-Theorem~\ref{thm:odd-root-distribution} excludes every permutation of
-$(3,3,2)$ modulo four, including cases with the two odd exponents
-equal modulo eight.
-For exponent residue roles $(1,3,2)$ modulo four,
-Theorem~\ref{thm:clustered-odd-roots} collects the sum condition modulo
-$128$, the derivative restriction on $b$, and the shifted-cubic parity
-condition, together with the endpoint-two equation and linear upper bound.
-Its compatible arithmetic classes do not establish integrality.
-Theorem~\ref{thm:one-odd-endpoints} excludes every permutation of
-$(3,0,0)$ modulo four. Corollary~\ref{cor:mixed-linear-tail} confines
-the patterns $(1,3,2)$ and $(3,3,0)$ modulo four to the linear upper
-bound on the largest exponent, as well as their other applicable restrictions.
+The squarefree composite classification and every repeated-exponent triple
+are settled. For three distinct primes, the remaining ordered cases have
+\[
+ 8\leq a<b<c<4a^2-2a,\qquad b\geq16,\qquad \gcd(a,b,c)\in\{1,2\},
+\]
+unequal $2$-adic valuations and at least one even exponent. They lie outside
+the bounded-gap families and satisfy
+$(a-2)(a+b+c-2)\leq2bc$ and $a<3(c-a)+8$. The common-residue exclusions,
+Theorem~\ref{thm:mixed-residue-classes} and the modulo-three classes in
+Theorem~\ref{thm:endpoint-reduction} impose the additional stated restrictions.
+The following questions remain open.
 
-The remaining three-prime question is whether $G_{p^a q^b r^c}$ is
-always nonintegral in this remaining region. For each fixed minimum
-exponent $a$, the cutoff leaves a finite set of pairs; it does not
-bound $a$ itself. The
-coordinate-swap decomposition used for repeated exponents is unavailable
-there. The full six-support quotient and its diagonal-minus-rank-one
-Schur complement provide exact tools for the remaining argument.
-Theorem~\ref{thm:uniform-low-root} now places a positive quotient
-eigenvalue in $(0,3)$ throughout the remaining region. A possible
-integral graph must therefore satisfy $h_C(1)h_C(2)=0$.
-Theorem~\ref{thm:endpoint-two-bound} confines the second surface to
-$c<7a-16+40/(a+2)$. For all-even triples one is excluded, so the
-remaining gcd-two even region has this linear upper bound as well.
-The same endpoint-two necessity and upper bound apply to the mixed
-patterns of Corollary~\ref{cor:mixed-linear-tail}; other mixed patterns
-may still have an integer root at one.
-Proposition~\ref{prop:endpoint-divisors} gives finite divisor candidates
-for either surface at a fixed pair $(a,b)$.
-Excluding integral triples on these two endpoint-zero surfaces subject
-to the remaining arithmetic restrictions, or
-finding another noninteger quotient root there, is the next focused
-question. The necessary endpoint-zero condition is not itself an
-integrality characterization.
+\begin{enumerate}
+\item Can the fully distinct endpoint-one surface be excluded, or can
+another quotient root be shown noninteger on it? Theorem~\ref{thm:uniform-low-root}
+reduces possible integer spectra to $h_C(1)h_C(2)=0$, but vanishing of
+one endpoint is not an integrality characterization.
+\item Can the endpoint-two surface be excluded inside
+$c<7a-16+40/(a+2)$, subject to the applicable arithmetic restrictions?
+All-even triples and the mixed patterns $(1,3,2)$ and $(3,3,0)$ must lie
+on this surface. For a fixed pair $(a,b)$ the endpoint divisor conditions
+give finitely many candidates; the minimum $a$ remains unbounded.
+\item Can the surviving $(1,3,2)$ arithmetic classes be resolved uniformly
+at the polynomial level? Finite closure by further two-adic shifts is
+not established. The endpoint-congruence limitation in Appendix C concerns
+finite endpoint-value tests with the explicitly listed filters; it does
+not exclude another-root or additional arithmetic obstructions.
+\item Which nonsquarefree exponent vectors with more than three prime
+factors give integral graphs? The present arguments do not supply the full
+general-exponent Q3 characterization.
+\end{enumerate}
 
-The successive $2$-adic conditions are necessary local splitting tests.
-We have not established that a finite number of further shifts closes the
-surviving $(1,3,2)$ residue role. The mixed linear bound now confines that
-role to the endpoint-two surface inside a linear region, providing a
-structural alternative to further modulus refinements. The next step is
-to combine that endpoint equation with its divisor constraints and the
-remaining-root information. The detailed computational scopes are collected
-in Appendix~\ref{sec:verification}.
-
-The distinction between the two repeated-exponent blocks remains essential: an integral
-antisymmetric block occurs on the boundary family, while an integral
-symmetric cubic occurs at $(1,1,2)$. The completion theorem uses both
-blocks, rather than asserting that either alone always obstructs integrality.
+The distinction between the repeated-exponent blocks remains useful for
+these questions. The boundary family has an integral antisymmetric block,
+while $(1,1,2)$ has an integral symmetric cubic and a nonintegral full
+spectrum. The complete repeated-exponent proof uses both blocks.

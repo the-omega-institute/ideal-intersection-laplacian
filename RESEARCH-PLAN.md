@@ -1,5 +1,11 @@
 # First task: Laplacian integrality
 
+The manuscript now combines the mixed-parity restrictions in Theorem 13.5
+and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
+Appendices B/C; Appendix A summarizes verification, with the full checker
+catalogue retained in an optional detailed build. No result or certificate
+is removed, and this reorganization introduces no new mathematical claim.
+
 **Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
 consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
 the successive linear cutoffs, all `(a,a,b)` with `a,b>=1`, and all

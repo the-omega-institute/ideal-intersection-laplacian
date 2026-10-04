@@ -1,296 +1,106 @@
 \section{Exact verification and reproducibility}
 \label{sec:verification}
 
-The infinite-family conclusions follow from the proofs above, including
-the explicitly exhausted finite certificates in the repeated-exponent and
-minimum-three and minimum-seven arguments.
-The accompanying computations use integer or rational arithmetic to
-verify embeddings, identities and finite certificates. In particular,
-the all-$b$ result for $a=2,3,4$ uses the exhaustive divisor criterion,
-rather than extrapolation from the $90$ diagnostic cases.
-No Lean formalization is claimed for these Laplacian results.
+The infinite conclusions use the written proofs and the finite certificates
+to which those proofs reduce the problem. Computations use integer or
+rational arithmetic; no floating-point spectrum or Lean formalization is
+claimed for these Laplacian results. SymPy~1.14.0 and Python~3.10 or later
+are used, with source hashes in the saved results.
 
-The code and saved JSON certificates are available in the
-\href{https://github.com/the-omega-institute/ideal-intersection-laplacian}{public project repository}.
-The build instructions beside this manuscript give commands and record
-the exact source revisions. The checks have the following scopes.
+The \href{https://github.com/the-omega-institute/ideal-intersection-laplacian}{project repository}
+contains every checker, exact certificate and reproduction command.
+The build guide gives the commands by filename. The complete per-checker
+catalogue is retained in \path{paper/sections/verification-details.tex};
+the optional detailed build includes it without changing the proofs or
+saved certificates. The principal verification scopes are as follows.
 
-\begin{enumerate}
-\item \path{scripts/check_integrality_obstructions.py} constructs ideals
-as exponent tuples and tests adjacency by coordinatewise maxima, independently
-of the support description. It verifies $LU=UB$ for the displayed
-invariant embeddings, for squarefree $t=3,\ldots,8$ and $(1,1,k)$ with
-$k=1,\ldots,8$: $14$ cases and $44\,294$ vertex pairs. It also checks
-the square-gap inequalities and principal-minor witnesses.
+\subsection{Graph embeddings and repeated exponents}
 
-\item \path{scripts/check_remaining_case.py} constructs all $34$ vertices
-for $(2,2,3)$ and verifies its full characteristic polynomial and the
-class decomposition in exact arithmetic. The shifted symmetric cubic is
-$x^3-80x^2+2099x-18052$; its reduction modulo $5$ has no root.
+Direct ideal adjacency validates $LU=UB$, independently of the support
+construction, on $14$ squarefree and $(1,1,k)$ cases with $44\,294$
+vertex pairs. The full $34$-vertex polynomial at $(2,2,3)$ is checked.
+Three boundary graphs with $34,174,548$ vertices cover $165\,490$ pairs
+and verify both repeated-exponent embeddings and the quotient lifting.
+The $548$-vertex full characteristic polynomial is not computed.
 
-\item \path{scripts/check_repeated_exponent_family.py} checks the general
-quotient polynomial, both boundary sign identities, the positive-coefficient
-expansion, and the integral antisymmetric eigenvalues symbolically.
-Direct graphs for $(2,2,3),(3,3,10),(4,4,21)$ have $34,174,548$ vertices,
-covering $165\,490$ vertex pairs. Exact neighbor counts verify both blocks
-and their lifting. The check computes the seven-support quotient polynomial;
-it does not compute the full $548\times548$ characteristic polynomial.
+The $90$ cubic diagnostics have exact rational intervals and independent
+Sturm/sign checks. The all-$b$ proofs use the exhaustive divisor reduction,
+not extrapolation from those diagnostics. All divisors of $24,108,320$
+for smaller-factor indices $1,2,3$ are exhausted; eight positive-$b$
+cubics have modular certificates checked by separate integer Horner
+arithmetic. Higher indices use the uniform sign proof.
+The separate ten-vertex graph for $(1,1,2)$ confirms why the symmetric
+cubic alone is not an integrality characterization.
 
-\item \path{scripts/check_aa_b.py} factors the $90$ diagnostic cubics
-over $\mathbb Q$ and uses exact rational root isolation for a root between
-consecutive integers. Independent Sturm counts and endpoint signs were
-checked for every saved interval. Its modular search is restricted to
-$2,3,5,7,11,13,17,19,23,29,31$; absence of a listed witness is not a proof
-that no prime works for that cubic.
+\subsection{Small minima and complete finite domains}
 
-\item \path{scripts/check_fixed_repeated_exponents.py} reconstructs
-the cubic from $B$, checks the discriminant, product, cutoff and reducible
-factor identities, and enumerates every factor pair for $a=2,3,4$.
-It verifies the admissibility conditions and all modular witnesses in
-Tables~\ref{tab:divisors} and~\ref{tab:cubics}. The general congruence
-and factor inequality are proved in Section~\ref{sec:bounds}.
-\item \path{scripts/check_second_cutoff.py} checks the polynomial
-remainder modulo $a+2$, enumerates every divisor of $24$, and verifies
-the four root-free cubic reductions settling all $d=a+2$ cases.
-It also checks the second-cutoff identities and the two nonsquare
-discriminants completing $a=5,6$. This finite certificate follows the
-proved divisor reduction; it is not a parameter-range search.
-\item \path{scripts/check_factor_index_reduction.py} verifies the general
-fixed-index divisibility and reconstruction identities, exhausts the
-divisors of $K_2=108$, and certifies the unique positive-$b$ index-$2$
-cubic modulo $13$. It checks the third-cutoff identities and the four
-remaining discriminants for $a=7,8,9$. These finite checks exhaust the
-proved candidate sets, with no arbitrary parameter cutoff.
-\item \path{scripts/check_repeated_exponent_completion.py} reconstructs
-the general cubic from the $4\times4$ quotient, checks both sign-interval
-identities, and verifies the fourth-cutoff and strictly positive gap
-identities. It exhausts every divisor of $24,108,320$ for indices
-$1,2,3$, reproducing all eight positive-$b$ modular cubic certificates
-with separate integer Horner arithmetic. The infinite remaining range is
-settled by the sign proof of Theorem~\ref{thm:repeated}, not by a scan.
-\item \path{scripts/check_six_support_quotient.py} verifies the general
-six-support and complement quotients, their weighted symmetry and reflected
-quintics, and the two determinant values used in Theorem~\ref{thm:unit}.
-Exact rational factorization covers all thirty-five requested triples
-$1\leq a<b<c\leq7$, with every matrix and quintic cross-checked against
-\path{scripts/check_fully_distinct.py}. All saved rational intervals
-pass independent Sturm counts and endpoint-sign checks.
-Direct ideal adjacency verifies the quotient for
-$(1,2,3)$ and $(2,3,4)$, using $22$ and $58$ vertices and $312$
-representative-to-vertex pairs. The infinite unit-exponent conclusion
-uses the written endpoint proof.
-\item \path{scripts/check_minimum_two.py} verifies the complement
-endpoint identities at $a=2$, the symmetric expression in $b+c$ and $bc$,
-and both positive-coefficient expansions that exhaust the infinite range.
-It reconstructs the single exceptional quintic at $(2,3,4)$ and checks
-its rational endpoint values with separate Horner evaluation and a Sturm
-count. No new parameter range is enumerated.
-\item \path{scripts/check_distinct_tail.py} reconstructs the general
-six-support complement quintic and checks its cubic first endpoint,
-the uniform cutoff identity and positive remainder, and both
-minimum-three second-endpoint expansions. The cutoff itself derives
-the finite domain $4\leq b<c<30$, containing exactly $325$ pairs.
-For every pair the checker reconstructs the integer quotient quintic,
-matches its symbolic specialization, and checks the displayed root
-interval using separate rational Horner arithmetic. Separate cubic
-Horner evaluation confirms all first-endpoint values: $257$ positive,
-$68$ negative and no zero. The $(3,4,5)$ rational exception also has a
-Sturm count of one in $(1,3/2)$. The minimum-three theorem uses this
-complete finite certificate; the general cutoff uses the written
-positive-coefficient argument.
-\item \path{scripts/check_low_spectrum.py} reconstructs the weighted
-symmetric complement quotient and checks its block form, Schur complement,
-determinant identity and ordered-parameter derivative. For the four
-bounded-gap families it verifies the upper-inertia expressions and both
-endpoint factorizations, positive shifted first-endpoint coefficients,
-and all $38$ root-free modular residues with separate integer Horner
-arithmetic. Eight chosen representatives, the four families at $a=4,20$,
-have independently reconstructed integer quotient quintics and Sturm
-counts of two roots in $(0,3)$; at $a=20$ both lie in $(2,3)$.
-These examples check the formulas. The infinite families use the written
-inertia proof and the complete modular exclusions, with no parameter scan.
-\item \path{scripts/check_open_region2.py} runs the coauthor-requested
-domain $4\leq a\leq7$, $a<b<c<4a^2-2a$. It constructs the generic
-$H$ quotient determinant once and specializes its integer coefficients
-for every one of the $27\,562$ triples. Every discriminant is nonsquare.
-Original-quotient and complement endpoint signs are reported separately;
-the general reflection identity is checked symbolically. Sixteen
-representatives, including every first complement sign-pattern witness,
-have separately reconstructed integer matrix characteristic polynomials,
-complement endpoints and exact rational factorizations. The compatibility
-entrypoint \path{scripts/check_open_region.py} runs the same corrected code.
-\item \path{scripts/check_open_region_certificate.py} independently
-reconstructs every one of the $27\,562$ discriminants as a $9\times9$
-integer Sylvester determinant, using a separate fraction-free Bareiss
-implementation. It checks every exact division, every strict consecutive-square
-bracket and the complete ordered domain. This is the exhaustive finite
-certificate used in Corollary~\ref{cor:minimum-seven}, combined with the
-written cutoff, rather than extrapolation to arbitrary minimum exponent.
-\item \path{scripts/check_mixed_inertia.py} verifies the comparison
-determinant, negative Rayleigh value, equal-exponent case, positive
-comparison gap and balanced-span identities symbolically in a rational
-$3\times3$ congruence. Six exact secular/Sturm fixtures cover every
-nonsingular diagonal-sign/secular-sign combination possible here.
-Nine separately reconstructed quotient/Sturm fixtures include equal
-exponents, two zero-diagonal boundaries, a strongly unbalanced triple
-and chosen spans up to $1000$. The finite fixtures validate formulas;
-Theorem~\ref{thm:uniform-low-root} and
-Corollaries~\ref{cor:balanced-interval}--\ref{cor:balanced-span}
-use the written comparison and positivity proofs, with no parameter scan.
-\item \path{scripts/check_arithmetic_obstructions.py} verifies symbolic
-integer quotient scaling, the equal-exponent quintic factorization and
-its quadratic discriminant. It checks all eight parity patterns and
-every nonzero common residue for primes $3,5,7$, with all $70$ quadratic
-residue evaluations, including the binary factor, cross-checked by
-integer Horner arithmetic. Six direct quotient fixtures verify scaling,
-low-root and modular witnesses, and the existing boundary triple
-$(9,9,136)$ checks that an integer endpoint is compatible with other
-noninteger roots. The infinite conclusions use the written divisibility
-and finite-field proofs, with no exponent scan.
-\item \path{scripts/check_endpoint_reduction.py} reconstructs the general
-endpoint-two cubic in the middle exponent and the two endpoint constant
-terms in the largest exponent. It verifies both rational-cutoff identities
-and five positive shifted-coefficient expressions. Three chosen even
-gcd-two fixtures below the earlier quadratic cutoff have direct integer
-quotient, independent Horner and exact Sturm checks. The existing repeated
-triples $(9,9,136)$ and $(10,10,12)$ check the endpoint divisibility
-conditions and retain nonlinear rational factors; the latter checks the
-strict linear bound. The infinite bound and even-tail corollary use written
-positivity and divisibility proofs, without an exponent scan or divisor-set
-enumeration. The companion \path{scripts/check_endpoint_congruence_scope.py}
-checks six substitution identities, two positive boundary shifts and the two
-seed endpoint zeros by integer six-by-six determinants. Its all-moduli
-conclusion uses the written polynomial-congruence argument; it does not
-assert actual zeros or integer spectra for the constructed candidates.
-\item \path{scripts/check_even_exponent_congruence.py} verifies integer
-quotient scaling, the independent binary block characteristic polynomial,
-and the coefficientwise congruences modulo two and thirty-two for the
-scaled quintic. Three chosen gcd-two triples inside the preceding even
-linear bound have separately reconstructed integer quotients, rational
-factorizations and independent integer Horner values at one and three.
-The infinite congruence-family theorem follows from the written divisibility
-contradiction, without an exponent scan.
-\item \path{scripts/check_endpoint_surfaces.py} is Reza's requested
-diagnostic, corrected to use $|V(H)|$ in the complement reflection and
-to include $b=15$. Exact rational linear-factor extraction finds no
-endpoint roots for $4\leq a<b\leq15$, $c>b$.
-\path{scripts/verify_endpoint_surfaces.py} independently reconstructs
-the direct disjoint-support complement matrix and all $132$ endpoint
-cubics over the $66$ pairs. It exhausts $8\,527$ positive constant-term
-divisors by integer trial division and checks all $7\,585$ divisors
-above $b$ with separate integer Horner arithmetic. Two previously
-settled repeated-exponent positive controls recover their endpoint roots
-and match full quotient factorizations. This complete finite certificate,
-combined with the uniform low-root theorem and earlier cases, proves
-Corollary~\ref{cor:middle-fifteen}. There is no upper cutoff on $c$ or
-extension beyond the requested pair range.
-\item \path{scripts/check_endpoint_residues.py} reconstructs the general
-endpoint cubics and records all $26$ pair/endpoint rows for primes two
-and three, including zero residues and zero polynomials. At all $35$
-positive residue representatives, a separate $720$-term integer
-determinant expansion checks both endpoint values, for $70$ checks.
-The eight parity reductions and five simultaneous modulo-three exclusions
-are verified against direct quotient characteristic polynomials.
-Two selected fully distinct triples have independent endpoint determinants
-and exact Sturm counts; two known repeated-exponent controls retain their
-endpoint zeros. The infinite classes in
-Theorem~\ref{thm:modulo-three-endpoints} use the written low-root proof.
-This is a residue enumeration, not an exponent search.
-\item \path{scripts/check_mixed_parity_congruence.py} checks the two
-mixed binary reductions and four initial coefficient-divisibility identities.
-It verifies all $558$ coefficients in twelve substitutions for the six
-rows of Theorem~\ref{thm:mixed-parity-congruence}. Six positive residue
-representatives and two selected fully distinct triples have $16$
-independent $720$-term integer determinant checks at one and three,
-matching separate integer Horner values. The fixtures retain nonlinear
-rational factors. Complete lower-modulus tables give compatible linear
-root multisets for all $12$ and $80$ unordered mixed-parity exponent
-classes modulo four and eight, respectively; this compatibility is not
-an integrality claim. The infinite theorem follows from the written
-three-odd-root divisibility lemma.
-\item \path{scripts/check_odd_root_distribution.py} verifies the generic
-quintic's six exponent permutations and the coefficientwise identities
-in Theorem~\ref{thm:odd-root-distribution}: $160$ coefficients for the
-shifted polynomial's divisibility by eight, $160$ for its reduction
-modulo two, $42$ endpoint coefficients modulo thirty-two and $51$
-derivative coefficients modulo sixteen. Four selected fixtures have
-$28$ independently expanded integer six-by-six determinants, including
-six interpolation points and the zero-root check per fixture. A further
-$24$ five-by-five principal cofactors independently reconstruct the
-derivative at one. The reconstructed quintics and derivatives agree;
-the infinite theorem uses the written odd-root distribution argument.
-\item Reza's \path{scripts/check_2adic_higher_moduli.py} was run unchanged
-at exponent moduli eight, sixteen and thirty-two. The independent
-\path{scripts/verify_2adic_higher_moduli.py} checks all $28{,}032$ ordered
-mixed-parity residue triples using $56{,}064$ integer Bareiss determinants
-for the two endpoints. Twelve coefficientwise identities, with $560$
-coefficients, establish coordinate period eight modulo thirty-two.
-The complete $384$ base rows therefore encode the higher tables.
-The endpoint-divisibility test excludes $36$, $288$ and $2304$ classes,
-respectively. These are finite residue tables, and their survivors
-do not assert integer endpoint zeros or integral spectra.
-\item Reza's \path{scripts/check_higher_derivatives.py} was run unchanged
-on its $384$ canonical representatives. Its interpretation was then
-corrected: zero has valuation infinity, and full valuations need not be
-constant on an exponent residue class. The independent
-\path{scripts/verify_higher_derivatives.py} reconstructs all four values
-at one by principal integer minors. Two new fixtures at three and four
-lift controls at one bring the total to $16{,}380$ minor determinants.
-Twelve coefficientwise identities determine the odd-root distribution
-modulo four; $36$ further identities establish coordinate period eight
-for the derivative residues at one and three modulo $16$, $8$ and $4$.
-The second- and third-derivative thresholds add no exclusions with this
-root information. A coefficientwise identity for $h_C(3)/16$ proves
-Proposition~\ref{thm:odd-root-sum}; its $64$ role-ordered classes modulo
-sixteen display $48$ exclusions, including $16$ beyond the earlier
-divisor-$32$ test. Full joint representative patterns are saved separately.
-\item \path{scripts/check_odd_root_lift.py} matches the direct complement
-quintic to the reflected source and checks all six exponent permutations.
-All $185$ coefficients of the second shifted polynomial are divisible
-by $64$, and $185$ difference coefficients verify its binary cubic
-identity for arbitrary integer shifts. Eight shift-parity patterns show
-the irreducible quadratic in the excluded cases. Four fixtures, two
-new exclusions and two compatible controls, independently reconstruct
-their full quintics by $28$ integer determinant expansions, including
-the zero-root checks. The $64$ additional role-ordered exclusions
-modulo thirty-two follow from the written congruence and its class count;
-no exponent or modulus range scan is needed for
-Proposition~\ref{thm:odd-root-lift}.
-\item \path{scripts/check_clustered_odd_roots.py} matches the direct
-and reflected generic quintics, all exponent permutations, and the
-exact factorization of $h_C(b)$. It checks $84$ difference coefficients
-for the derivative congruence modulo sixty-four, and $249$ scaled
-coefficients and $249$ binary-difference coefficients for each of the
-two third-shift identities. Four derivative residues and sixteen binary
-shift-parity patterns display the resulting necessary conditions.
-Eight fixtures independently reconstruct full quintics with $56$ integer
-six-by-six determinant expansions; another $48$ five-by-five principal
-cofactors reconstruct their derivatives at $b$. Two fixtures have
-$h_C(b)=0$ and satisfy the derivative divisor but fail the third-shift
-condition. Four compatible controls retain nonlinear rational factors.
-The arithmetic conditions in Theorem~\ref{thm:clustered-odd-roots} use
-the root-clustering proof in Appendix~\ref{sec:two-adic-lifting}, with no
-exponent or modulus range scan.
-\item \path{scripts/check_mixed_endpoint_roots.py} matches the direct
-and reflected quintics and all exponent permutations. For the three
-mixed-parity patterns, coefficientwise checks verify the binary quintic,
-divisibility of the shifted polynomial by eight, and its binary reduction
-to $(y+1)^3$. A further $51$ coefficients give $h_C(2)\equiv4\pmod8$
-for residue roles $(3,0,0)$. Eight full quintics are independently
-reconstructed by $56$ integer six-by-six determinant expansions;
-exact Sturm counts check the low-root fixtures. Two previous clustered-root
-controls pass all prior necessary conditions but are excluded by the
-linear tail. Both known endpoint-zero controls are retained.
-Theorem~\ref{thm:one-odd-endpoints} and
-Corollary~\ref{cor:mixed-linear-tail} follow from the written root-distribution
-argument and the preceding low-root and endpoint-two proofs.
-No exponent or modulus range is scanned.
-\end{enumerate}
+The general six-support quintic agrees with the reflected source quotient
+and weighted symmetry. Thirty-five requested fully distinct triples and
+direct ideal graphs with $22,58$ vertices check the construction. Endpoint
+identities and positive shifted coefficients support the written unit,
+minimum-two and uniform-cutoff proofs.
 
-The symbolic and characteristic-polynomial checks use SymPy~1.14.0;
-the first checker uses the Python standard library.
-Saved results contain source hashes. The $10$-vertex polynomial in the
-preceding remark was independently checked by a direct ideal-graph
-construction; it is also reproducible by the command in the manuscript
-build guide. No floating-point eigenvalue calculation is used as
-integrality evidence.
+At minimum three, the proved cutoff leaves precisely $325$ pairs
+$4\leq b<c<30$. All integer quintics, endpoint signs and intervals are
+checked; the first endpoint has $257$ positive and $68$ negative values,
+with no zero. This complete certificate is part of the minimum-three proof.
+At minima four through seven, all $27\,562$ ordered triples in the derived
+region are exhausted. A separate fraction-free Bareiss implementation
+reconstructs every discriminant by a $9\times9$ integer Sylvester
+determinant, checking exact divisions, consecutive-square brackets and
+domain completeness. Together with the written cutoff, this proves
+Corollary~\ref{cor:minimum-seven}; the minimum itself is not extrapolated.
+
+\subsection{Inertia and endpoint surfaces}
+
+Symbolic block, Schur-complement, determinant and positivity identities
+support the uniform low root and balanced region. Six secular/Sturm
+fixtures cover the possible nonsingular sign combinations; nine direct
+quotient/Sturm fixtures include equal exponents and zero-diagonal boundaries.
+The four bounded-gap families also have complete $38$-residue modular
+certificates. These finite fixtures check formulas; the infinite conclusions
+use the written comparison and inertia arguments.
+
+For the middle-exponent bound, all $132$ cubics over $66$ pairs
+$4\leq a<b\leq15$ are independently reconstructed. Integer trial division
+exhausts $8\,527$ positive divisors, and separate Horner evaluation checks
+all $7\,585$ above $b$. No upper bound on $c$ is imposed. This is the
+complete certificate underlying Theorem~\ref{thm:endpoint-reduction}.
+The linear cutoff uses the general endpoint cubic and five positive
+coefficient expressions. Both known repeated-exponent endpoint zeros are
+positive controls. The CRT scope note uses six substitution identities,
+two positive boundary shifts and two integer seed determinants; its
+all-moduli claim is the written polynomial-congruence argument.
+
+\subsection{Arithmetic and shifted-root cases}
+
+Scaling, all parity patterns and common residues for primes $3,5,7$
+are checked coefficientwise, with $70$ quadratic-residue evaluations and
+separate integer Horner arithmetic. The all-even scaling contradiction
+uses the written valuation proof. Complete endpoint tables modulo two
+and three include zero residues and zero polynomials; $70$ independent
+integer determinant evaluations check the endpoint table.
+
+For the cases in Appendix~\ref{sec:two-adic-lifting}, direct and reflected
+quintics and all exponent permutations agree. Every shifted divisibility
+and binary-cubic identity is checked coefficientwise for arbitrary shifts.
+Chosen full quintics and derivatives are independently reconstructed by
+integer determinants and principal cofactors, including compatible controls
+and both known endpoint-zero examples. The finite residue and parity tables
+support the identities; the infinite conclusions use the written root
+factorizations, rather than a scan of exponents.
+
+Reza's higher-modulus script was run unchanged; the independent verifier
+checks all $28\,032$ residue triples with $56\,064$ Bareiss determinants.
+The coefficientwise period-eight proof explains why the fixed divisor-$32$
+tables add no classes at larger exponent moduli. His derivative script's
+$384$ representatives are checked by $16\,380$ principal-minor determinants,
+including the additional controls. Zero has infinite valuation, and full
+valuations need not be constant on an exponent residue class. The complete
+catalogue retains these diagnostic limits, coefficient counts, fixture
+counts and exact source/certificate mappings.
+
+\ifdefined\DetailedVerification
+\subsection{Complete checker catalogue}
+\input{sections/verification-details}
+\fi

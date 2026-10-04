@@ -3,11 +3,15 @@
 Read [the PDF](paper.pdf), or edit [paper.tex](paper.tex) and the section
 files it includes. This is a growing mathematical draft, not a submission
 package. Author metadata and any manuscript disclosure are for joint agreement.
-The main text ends with the remaining questions and references; detailed
-checker scopes and reproduction evidence are collected in Appendix A.
-The successive (1,3,2) arithmetic conditions, endpoint-two equation and
-linear maximum bound form a single main theorem. Supporting lifting proofs
-and derivative thresholds are grouped in Appendix B.
+The main text ends with explicit remaining questions and references.
+Theorem 13.5 combines the mixed-parity classes and their necessary conditions;
+Theorem 14.1 combines the endpoint reductions. The main text gives one worked
+shifted-root example. Appendix A summarizes the actual verification scopes,
+Appendix B retains all mixed-parity case proofs, and Appendix C retains the
+endpoint polynomial, divisor and certificate arguments.
+The complete per-checker catalogue is preserved in
+[verification-details.tex](sections/verification-details.tex) and can be
+included with the optional detailed build below.
 Further two-adic shifts are paused while the endpoint-two argument inside
 the linear region and consolidation of the existing results are pursued.
 
@@ -32,11 +36,13 @@ sections and their shared graph/lifting definitions.
 | [low-spectrum.tex](sections/low-spectrum.tex) | General inertia criterion, four complete bounded-gap families, every exponent span at most3, and complete finite minimum-through-seven certificate |
 | [mixed-inertia.tex](sections/mixed-inertia.tex) | Uniform positive root below3 for every minimum at least4; root in(2,3) under the lower inequality; growing balanced region a>=3span+8 |
 | [arithmetic-obstructions.tex](sections/arithmetic-obstructions.tex) | Every gcd>=3 triple, all-odd and prime-residue classes, all-two-modulo-four triples and every common 2-adic valuation |
-| [mixed-parity-congruence.tex](sections/mixed-parity-congruence.tex) | Divisor32 lemma, six modulo-eight classes, all (3,3,2) and (3,0,0) modulo-four permutations, a single consolidated (1,3,2) necessary-condition theorem and exclusion of endpoint one for three mixed patterns |
-| [endpoint-reduction.tex](sections/endpoint-reduction.tex) | Linear endpoint-two bound, all-even and two mixed-parity tails, divisor candidates, second-smallest<=15 certificate, modulo-three classes and finite-covering limitation |
+| [mixed-parity-congruence.tex](sections/mixed-parity-congruence.tex) | Combined Theorem 13.5 for all mixed-parity exclusions/restrictions, with one worked example |
+| [endpoint-reduction.tex](sections/endpoint-reduction.tex) | Combined Theorem 14.1 for the linear bound, tails, divisor candidates, second-smallest<=15 certificate and modulo-three classes |
 | [aa-small.tex](sections/aa-small.tex) | All-b theorem for a=2 through9, divisor/modular certificates and cubic-test scope |
-| [verification.tex](sections/verification.tex) | Actual scope of the exact checkers |
-| [two-adic-lifting.tex](sections/two-adic-lifting.tex) | Appendix B: derivative thresholds and complete successive lifting proofs for the consolidated main theorem |
+| [verification.tex](sections/verification.tex) | Appendix A: grouped verification scopes, complete finite-domain counts and evidence boundaries |
+| [verification-details.tex](sections/verification-details.tex) | Complete per-checker catalogue, included in the optional detailed build |
+| [two-adic-lifting.tex](sections/two-adic-lifting.tex) | Appendix B: residue/modulus/condition table, complete case proofs, derivative thresholds and successive lifting |
+| [endpoint-details.tex](sections/endpoint-details.tex) | Appendix C: complete endpoint polynomial, positivity, divisor, finite-certificate, modulo-three and CRT-scope proofs |
 | [open.tex](sections/open.tex) | Ordered 8<=a<b<c<4a^2-2a outside the proved criteria; endpoint-zero necessary condition and nonsquarefree higher-prime vectors |
 
 ## Build
@@ -46,6 +52,14 @@ From this directory, with a standard TeX installation:
 ```sh
 pdflatex -interaction=nonstopmode -halt-on-error paper.tex
 pdflatex -interaction=nonstopmode -halt-on-error paper.tex
+```
+
+To include the complete per-checker catalogue while preserving the default
+PDF, use a separate job name and repeat the command for cross-references:
+
+```sh
+pdflatex -interaction=nonstopmode -halt-on-error -jobname=paper-detailed '\def\DetailedVerification{1}\input{paper.tex}'
+pdflatex -interaction=nonstopmode -halt-on-error -jobname=paper-detailed '\def\DetailedVerification{1}\input{paper.tex}'
 ```
 
 ## Evidence
@@ -81,6 +95,7 @@ python3 scripts/check_low_spectrum.py
 python3 scripts/check_mixed_inertia.py
 python3 scripts/check_arithmetic_obstructions.py
 python3 scripts/check_endpoint_reduction.py
+python3 scripts/check_endpoint_congruence_scope.py
 python3 scripts/check_even_exponent_congruence.py
 python3 scripts/check_endpoint_surfaces.py
 python3 scripts/verify_endpoint_surfaces.py
