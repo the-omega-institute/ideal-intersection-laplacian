@@ -26,6 +26,8 @@ The graph convention has been reviewed, and the first proofs are in PR #2.
 Reza's diagnostic request now has exact output for all 90 requested pairs.
 A factor-pair argument proves nonintegrality for every `(a,a,b)` with
 `a=2,3,4` and `b>=1`; the full characterization remains open.
+For every `a>=1`, all `b>(a-1)(2a-1)` are also covered by the general
+discriminant bound; Reza's earlier theorem covers equality for `a>=2`.
 
 The original preprint is awaiting public announcement. This repository begins
 with public project navigation and the agreed research plan. Its confidential

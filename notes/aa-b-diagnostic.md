@@ -1,5 +1,8 @@
 # Repeated exponents: exact diagnostics and three complete fixed-exponent families
 
+**General bound.** For every $a\geq1$ and
+$b>(a-1)(2a-1)$, the graph of $p^a q^a r^b$ is not Laplacian integral.
+
 **Theorem.** For $a\in\{2,3,4\}$, every $b\geq1$, and distinct primes
 $p,q,r$, the ideal intersection graph of $p^a q^a r^b$ is not Laplacian integral.
 
@@ -91,6 +94,23 @@ The [finite-reduction checker](../scripts/check_fixed_repeated_exponents.py)
 records every candidate factor pair and its admissibility, rather than
 sampling a range of $b$.
 
+**Corollary (all $a$, above a quadratic bound).** If $D$ is a square,
+then $b\leq(a-1)(2a-1)$. Indeed, $\ell,r$ have the same parity and their
+product is divisible by 4, so both are even. Write $\ell=2d$, $r=2e$;
+then $de=a^3(2a+1)$ and
+
+$$A=d+e\leq de+1=a^3(2a+1)+1,$$
+
+using $(d-1)(e-1)\geq0$. The exact identity
+
+$$a^3(2a+1)+1-a(3a+1)=(a+1)^2(a-1)(2a-1)$$
+
+gives the bound after substituting $A$. Thus every larger $b$ has nonsquare
+$D$ and an irrational antisymmetric eigenvalue. At equality, the pair
+$(\ell,r)=(2,2a^3(2a+1))$ is admissible for $a\geq2$: this is precisely
+Reza's boundary family, where his symmetric cubic supplies the obstruction.
+For $a=1$, the bound is zero and all $b\geq1$ are covered.
+
 ## The four exceptional cubics
 
 For those four pairs, the symmetric quotient supplies a noninteger root:
@@ -129,7 +149,8 @@ The [result](../results/fixed-repeated-exponents.json) records the source hash.
 These are exact algebraic and arithmetic checks, with no numerical spectrum
 or Lean verification.
 
-The next focused task is to control the symmetric cubic on all admissible
-factor pairs for arbitrary $a$. The factor-pair criterion eliminates an
-unbounded search in $b$ for each fixed $a$, but does not settle arbitrary $a$
-or triples with three distinct exponents.
+The next focused task is to control the symmetric cubic on admissible factor
+pairs below the boundary for arbitrary $a$. Larger $b$ are covered by the
+general bound, and equality by Reza's theorem. The remaining cases include
+square-discriminant pairs with $1\leq b<(a-1)(2a-1)$ and triples with three
+distinct exponents.

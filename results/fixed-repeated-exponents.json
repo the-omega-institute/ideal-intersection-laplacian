@@ -317,7 +317,7 @@
     }
   ],
   "sympy": "1.14.0",
-  "script_sha256": "a928b0cc58c508b5f015861338527384d67b34cfbcfda09bd83f374360721e79",
+  "script_sha256": "dadf313b86356c0cc6c309bcadf0356f38f9a8daa405cd34874dc6337a83c812",
   "diagnostic_sha256": "0877fc7fb32b0ffb696ea62fb86022d7090b71bd0f507c5b5ed9e66edfb39452",
-  "scope": "Complete finite factor-pair certificates for a=2,3,4 plus written reduction for all b>=1; arbitrary a and fullQ3 remain open; no Lean."
+  "scope": "Complete fixed-a=2,3,4 certificates for all b>=1; exact identity supporting written all-a upper-bound corollary b>(a-1)(2a-1). Below-bound exceptional pairs at arbitrary a and fullQ3 remain open; no Lean."
 }

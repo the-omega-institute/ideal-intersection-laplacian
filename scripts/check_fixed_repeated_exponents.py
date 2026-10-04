@@ -29,6 +29,8 @@ def equal(first, second):
 
 equal(quotient.charpoly(variable).as_expr(), variable * cubic)
 equal(center ** 2 - (first_exponent + 1) ** 2 * discriminant, 4 * first_exponent ** 3 * (2 * first_exponent + 1))
+equal(first_exponent ** 3 * (2 * first_exponent + 1) + 1 - first_exponent * (3 * first_exponent + 1),
+      (first_exponent + 1) ** 2 * (first_exponent - 1) * (2 * first_exponent - 1))
 equal(cubic.subs(third_exponent, first_exponent),
       (variable - 2 * first_exponent * (first_exponent + 1))
       * (variable ** 2 - (5 * first_exponent ** 2 + 2 * first_exponent) * variable
@@ -80,4 +82,4 @@ print(json.dumps({"symbolic_identities": "passed", "fixed_exponents": records,
                   "sympy": sympy.__version__,
                   "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                   "diagnostic_sha256": hashlib.sha256(Path(__file__).with_name('check_aa_b.py').read_bytes()).hexdigest(),
-                  "scope": "Complete finite factor-pair certificates for a=2,3,4 plus written reduction for all b>=1; arbitrary a and fullQ3 remain open; no Lean."}, indent=2))
+                  "scope": "Complete fixed-a=2,3,4 certificates for all b>=1; exact identity supporting written all-a upper-bound corollary b>(a-1)(2a-1). Below-bound exceptional pairs at arbitrary a and fullQ3 remain open; no Lean."}, indent=2))
