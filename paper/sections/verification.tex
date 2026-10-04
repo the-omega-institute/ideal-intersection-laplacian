@@ -215,6 +215,16 @@ six interpolation points and the zero-root check per fixture. A further
 $24$ five-by-five principal cofactors independently reconstruct the
 derivative at one. The reconstructed quintics and derivatives agree;
 the infinite theorem uses the written odd-root distribution argument.
+\item Reza's \path{scripts/check_2adic_higher_moduli.py} was run unchanged
+at exponent moduli eight, sixteen and thirty-two. The independent
+\path{scripts/verify_2adic_higher_moduli.py} checks all $28{,}032$ ordered
+mixed-parity residue triples using $56{,}064$ integer Bareiss determinants
+for the two endpoints. Twelve coefficientwise identities, with $560$
+coefficients, establish coordinate period eight modulo thirty-two.
+The complete $384$ base rows therefore encode the higher tables.
+The endpoint-divisibility test excludes $36$, $288$ and $2304$ classes,
+respectively. These are finite residue tables, and their survivors
+do not assert integer endpoint zeros or integral spectra.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

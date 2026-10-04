@@ -74,6 +74,8 @@ python3 scripts/verify_endpoint_surfaces.py
 python3 scripts/check_endpoint_residues.py
 python3 scripts/check_mixed_parity_congruence.py
 python3 scripts/check_odd_root_distribution.py
+python3 scripts/check_2adic_higher_moduli.py
+python3 scripts/verify_2adic_higher_moduli.py
 python3 scripts/check_open_region2.py
 python3 scripts/check_open_region2.py --json --certificate-csv results/open-region-discriminants.csv
 python3 scripts/check_open_region_certificate.py

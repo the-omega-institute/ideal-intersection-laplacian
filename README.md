@@ -106,6 +106,7 @@ of (3,3,2) modulo four**, including odd exponents equal modulo eight:
 | Read Reza's extension of the (2,2,3) case | [Repeated-exponent family](notes/repeated-exponent-family.md) |
 | Read the requested endpoint diagnostic and exact scope | [Report](notes/endpoint-surfaces-diagnostic.md) · [Corrected output](results/endpoint-surfaces-corrected.txt) · [Complete certificate](results/endpoint-surfaces-verification.json) |
 | Read the modular endpoint script review and corrected candidate logic | [Review](notes/modular-endpoints-review.md) · [Full root sets](results/modular-endpoints.json) · [Independent verification](results/modular-endpoints-verification.json) |
+| Read the higher-modulus diagnostic and its period-eight limit | [Review](notes/higher-2adic-moduli-review.md) · [Original output](results/higher-2adic-moduli-original.txt) · [Independent verification](results/higher-2adic-moduli-verification.json) |
 | Discuss a conjecture or share a checked argument | [Project issues](https://github.com/the-omega-institute/ideal-intersection-laplacian/issues) |
 | Review proposed additions | [Pull requests](https://github.com/the-omega-institute/ideal-intersection-laplacian/pulls) |
 | Read the previous joint paper | [Binary subspace orthogonality project](https://github.com/the-omega-institute/binary-subspace-orthogonality) |

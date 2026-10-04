@@ -37,6 +37,10 @@ The [root-distribution proof](notes/odd-root-distribution.md) now also
 settles every permutation of (3,3,2) modulo four. The shifted quintic
 forces all three odd roots to be one modulo four; endpoint and derivative
 divisibilities give contradictory parity requirements on the shifts.
+Reza's [higher-modulus diagnostic](notes/higher-2adic-moduli-review.md)
+has also been checked at his fixed moduli8,16,32. Both endpoint values
+modulo32 already have coordinate period8 for mixed-parity exponents,
+so increasing the exponent modulus alone adds no exclusions.
 The [requested endpoint diagnostic](notes/endpoint-surfaces-diagnostic.md)
 exhausts all66pairs `4<=a<b<=15` and all integer `c>b` by exact divisor
 reduction, finding neither endpoint zero. With the low-root theorem and
