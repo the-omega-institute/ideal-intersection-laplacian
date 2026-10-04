@@ -47,6 +47,13 @@ value obstruction: exponent residues(1,3,2)mod4 require a+c=15mod16
 for an integer spectrum. The second/third thresholds alone add no
 exclusions with the present root information; representative valuations
 must not be treated as uniform class data.
+The [second shifted-root proof](notes/odd-root-lift.md) strengthens the
+sum condition to `a+c+4b=27mod32`, with a,b,c labelled by residues
+(1,3,2)mod4. A binary cubic containing the irreducible quadratic
+z^2+z+1 excludes half the previously remaining sum classes, with no
+size or ratio bound. Compatible hypothetical odd roots would all be
+bmod8. The remaining weighted-sum class and one-odd-exponent patterns
+are focused next cases; congruence compatibility does not imply integrality.
 The [requested endpoint diagnostic](notes/endpoint-surfaces-diagnostic.md)
 exhausts all66pairs `4<=a<b<=15` and all integer `c>b` by exact divisor
 reduction, finding neither endpoint zero. With the low-root theorem and

@@ -94,6 +94,10 @@ surviving sum class. Examples(14,25,27) and(10,29,31) have h(3)=32mod64
 while passing the previous divisor32test; both have gcd one, unequal
 2-adic valuations and middle exponent above fifteen.
 
+The [subsequent second-shift proof](odd-root-lift.md) strengthens the
+necessary sum condition to a+c+4b=27mod32 and excludes half the sum
+classes surviving this value test.
+
 ## Independent verification and scope
 
 ```sh

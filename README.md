@@ -82,6 +82,11 @@ For exponent residues **(1,3,2) modulo four**, integer spectra would also
 force the first and third exponents to sum to **15 modulo sixteen**.
 Every triple violating that sum congruence is nonintegral:
 [read the higher-derivative review and stronger value proof](notes/higher-derivatives-review.md).
+The remaining sum class admits a stronger necessary condition:
+**`a+c+4b=27mod32`**, with the variables still identifying residues
+**(1,3,2)mod4**. Every violation is nonintegral. A second shifted binary
+cubic excludes half of the classes left by the earlier sum condition:
+[read the modulo-eight root proof](notes/odd-root-lift.md).
 
 ## Start here
 
@@ -112,6 +117,7 @@ Every triple violating that sum congruence is nonintegral:
 | Read the modular endpoint script review and corrected candidate logic | [Review](notes/modular-endpoints-review.md) · [Full root sets](results/modular-endpoints.json) · [Independent verification](results/modular-endpoints-verification.json) |
 | Read the higher-modulus diagnostic and its period-eight limit | [Review](notes/higher-2adic-moduli-review.md) · [Original output](results/higher-2adic-moduli-original.txt) · [Independent verification](results/higher-2adic-moduli-verification.json) |
 | Read the conditional derivative thresholds and new sum-congruence family | [Proof and review](notes/higher-derivatives-review.md) · [Requested output](results/higher-derivatives-original.txt) · [Independent verification](results/higher-derivatives-verification.json) |
+| Read the stronger weighted-sum condition for the remaining sum class | [Proof](notes/odd-root-lift.md) · [Exact certificate](results/odd-root-lift.json) |
 | Discuss a conjecture or share a checked argument | [Project issues](https://github.com/the-omega-institute/ideal-intersection-laplacian/issues) |
 | Review proposed additions | [Pull requests](https://github.com/the-omega-institute/ideal-intersection-laplacian/pulls) |
 | Read the previous joint paper | [Binary subspace orthogonality project](https://github.com/the-omega-institute/binary-subspace-orthogonality) |

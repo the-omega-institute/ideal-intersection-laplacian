@@ -182,3 +182,52 @@ In particular $h_C'''(1)\equiv2\pmod4$ for every mixed exponent parity.
 Full valuations at a chosen exponent representative are not generally
 constant throughout its residue class: $h_C(3)=-2592$ at $(1,3,6)$ but
 $h_C(3)=0$ at $(9,3,6)$, although the exponent triples agree modulo eight.
+
+\begin{theorem}
+\label{thm:odd-root-lift}
+Let $a,b,c$ be positive exponents with
+$a\equiv1$, $b\equiv3$ and $c\equiv2\pmod4$.
+If $a+c+4b\not\equiv27\pmod{32}$, their ideal intersection graph is
+nonintegral. All permutations are included, without a size or ratio bound.
+\end{theorem}
+
+\begin{proof}
+Suppose all five complement quotient roots are integers.
+Theorem~\ref{thm:odd-root-sum} requires $a+c\equiv15\pmod{16}$.
+Write
+\[
+ (a,b,c)=(4u+1,4v+3,16t-4u-2).
+\]
+Coefficientwise expansion gives
+\[
+ H(z)=h_C(4z+3)/64\in\mathbb Z[u,v,t,z],\qquad
+ H(z)\equiv z^3+vz^2+vz+t+1\pmod2.
+\]
+The three odd roots are already known to be three modulo four.
+Writing them as $4r_i+3$ and the two even roots as $\eta_j$ gives
+\[
+ H(z)=\prod_{j=1}^2(4z+3-\eta_j)\prod_{i=1}^3(z-r_i).
+\]
+The first two factors reduce to one modulo two, so the displayed cubic
+must split into linear factors over $\mathbb F_2$.
+For even $v$, it splits precisely when $t$ is odd: otherwise it is
+$(z+1)(z^2+z+1)$. For odd $v$, it splits precisely when $t$ is even:
+otherwise it is $z(z^2+z+1)$. The quadratic $z^2+z+1$ is irreducible.
+Thus $t+v$ must be odd. Since
+\[
+ a+c+4b=16(t+v)+11,
+\]
+this forces the asserted congruence. Its failure gives a noninteger
+complement root and graph lift.
+\end{proof}
+
+This excludes half the classes left by Theorem~\ref{thm:odd-root-sum}.
+There are $512$ role-ordered classes modulo thirty-two; the earlier
+condition leaves $128$, and the new one leaves $64$. Thus $64$ classes,
+or $384$ after all permutations, are additionally excluded.
+For example, the ordered triples $(13,18,19)$ and $(9,31,38)$ satisfy
+the old sum condition and $64\mid h_C(3)$, but their residue-role weighted
+sums are eleven modulo thirty-two. The compatible binary cubics are
+$z^3$ and $(z+1)^3$, so hypothetical integer odd roots would all be
+$b$ modulo eight, also requiring $512\mid h_C(b)$.
+The surviving congruence classes do not assert integral spectra.

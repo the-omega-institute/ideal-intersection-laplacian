@@ -240,6 +240,18 @@ root information. A coefficientwise identity for $h_C(3)/16$ proves
 Theorem~\ref{thm:odd-root-sum}; its $64$ role-ordered classes modulo
 sixteen display $48$ exclusions, including $16$ beyond the earlier
 divisor-$32$ test. Full joint representative patterns are saved separately.
+\item \path{scripts/check_odd_root_lift.py} matches the direct complement
+quintic to the reflected source and checks all six exponent permutations.
+All $185$ coefficients of the second shifted polynomial are divisible
+by $64$, and $185$ difference coefficients verify its binary cubic
+identity for arbitrary integer shifts. Eight shift-parity patterns show
+the irreducible quadratic in the excluded cases. Four fixtures, two
+new exclusions and two compatible controls, independently reconstruct
+their full quintics by $28$ integer determinant expansions, including
+the zero-root checks. The $64$ additional role-ordered exclusions
+modulo thirty-two follow from the written congruence and its class count;
+no exponent or modulus range scan is needed for
+Theorem~\ref{thm:odd-root-lift}.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;
