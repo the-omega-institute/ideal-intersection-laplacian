@@ -72,6 +72,9 @@ The full characterization remains open.
 Endpoint congruences also settle **all residue triples (2,2,2) and
 permutations of (1,2,2) modulo three**:
 [read the proof, full parity table and covering limitation](notes/endpoint-residues.md).
+A stronger divisibility argument also settles **six mixed-parity exponent
+classes modulo eight**, without bounds on sizes or ratios:
+[read the three-odd-root proof](notes/mixed-parity-congruence.md).
 
 ## Start here
 
@@ -87,6 +90,7 @@ permutations of (1,2,2) modulo three**:
 | Read the uniform low-root bound and growing balanced region | [Proof](notes/mixed-inertia.md) · [Exact checks](results/mixed-inertia.json) |
 | Read the common-divisor, all-odd and congruence-class theorems | [Proof](notes/arithmetic-obstructions.md) · [Exact checks](results/arithmetic-obstructions.json) |
 | Read the all-two-modulo-four and common-valuation theorems | [Proof](notes/even-exponent-congruence.md) · [Exact checks](results/even-exponent-congruence.json) |
+| Read the six mixed-parity modulo-eight classes | [Proof](notes/mixed-parity-congruence.md) · [Exact checks](results/mixed-parity-congruence.json) |
 | Read the linear endpoint-two bound and all-even tail | [Proof](notes/endpoint-reduction.md) · [Exact checks](results/endpoint-reduction.json) |
 | Read the modulo-three endpoint classes and complete parity table | [Proof and covering limitation](notes/endpoint-residues.md) · [Exact residue tables](results/endpoint-residues.json) |
 | Read Reza's requested finite-region run and minimum-through-seven result | [Report and proof](notes/open-region-diagnostic.md) · [Complete CSV](results/open-region-discriminants.csv) · [Independent verification](results/open-region-certificate-check.json) |

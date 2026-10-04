@@ -29,6 +29,10 @@ Complete modulo-two/three root sets are recorded; no pair is root-free
 on either surface, so retaining only root-free pairs misses these classes.
 A fixed finite set of endpoint congruences alone cannot establish global
 emptiness for fully distinct triples; combine them with further restrictions.
+The [mixed-parity proof](notes/mixed-parity-congruence.md) adds six exponent
+classes modulo eight. Three hypothetical odd quotient roots force either
+32|h_C(1) or32|h_C(3), contradicted by explicit polynomial congruences.
+This tests the whole quotient spectrum and requires no exponent-size bound.
 The [requested endpoint diagnostic](notes/endpoint-surfaces-diagnostic.md)
 exhausts all66pairs `4<=a<b<=15` and all integer `c>b` by exact divisor
 reduction, finding neither endpoint zero. With the low-root theorem and
@@ -68,6 +72,7 @@ python3 scripts/check_even_exponent_congruence.py
 python3 scripts/check_endpoint_surfaces.py
 python3 scripts/verify_endpoint_surfaces.py
 python3 scripts/check_endpoint_residues.py
+python3 scripts/check_mixed_parity_congruence.py
 python3 scripts/check_open_region2.py
 python3 scripts/check_open_region_certificate.py
 ```

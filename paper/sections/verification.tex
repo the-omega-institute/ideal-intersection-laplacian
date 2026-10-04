@@ -192,6 +192,18 @@ and exact Sturm counts; two known repeated-exponent controls retain their
 endpoint zeros. The infinite classes in
 Theorem~\ref{thm:modulo-three-endpoints} use the written low-root proof.
 This is a residue enumeration, not an exponent search.
+\item \path{scripts/check_mixed_parity_congruence.py} checks the two
+mixed binary reductions and four initial coefficient-divisibility identities.
+It verifies all $558$ coefficients in twelve substitutions for the six
+rows of Theorem~\ref{thm:mixed-parity-congruence}. Six positive residue
+representatives and two selected fully distinct triples have $16$
+independent $720$-term integer determinant checks at one and three,
+matching separate integer Horner values. The fixtures retain nonlinear
+rational factors. Complete lower-modulus tables give compatible linear
+root multisets for all $12$ and $80$ unordered mixed-parity exponent
+classes modulo four and eight, respectively; this compatibility is not
+an integrality claim. The infinite theorem follows from the written
+three-odd-root divisibility lemma.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;
