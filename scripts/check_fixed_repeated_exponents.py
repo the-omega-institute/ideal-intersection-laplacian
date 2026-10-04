@@ -1,6 +1,6 @@
 import hashlib
 import json
-from math import gcd, isqrt
+from math import isqrt
 from pathlib import Path
 
 import sympy
@@ -32,18 +32,14 @@ equal(center ** 2 - (first_exponent + 1) ** 2 * discriminant, 4 * first_exponent
 equal(first_exponent ** 3 * (2 * first_exponent + 1) + 1 - first_exponent * (3 * first_exponent + 1),
       (first_exponent + 1) ** 2 * (first_exponent - 1) * (2 * first_exponent - 1))
 product = first_exponent ** 3 * (2 * first_exponent + 1)
-even_threshold = first_exponent + 2
-odd_threshold = (first_exponent + 3) / 2
-even_bound = 2 * (first_exponent - 1) * (first_exponent - 2) / (first_exponent + 2)
-odd_bound = (2 * first_exponent - 3) * (4 * first_exponent - 3) / (2 * (first_exponent + 3))
-equal(product + even_threshold ** 2 - first_exponent * (3 * first_exponent + 1) * even_threshold,
+boundary = (first_exponent - 1) * (2 * first_exponent - 1)
+equal(product - center + 1, (first_exponent + 1) ** 2 * (boundary - third_exponent))
+threshold = first_exponent + 2
+linear_bound = 2 * (first_exponent - 1) * (first_exponent - 2) / (first_exponent + 2)
+equal(product + threshold ** 2 - first_exponent * (3 * first_exponent + 1) * threshold,
       (first_exponent + 1) ** 2 * 2 * (first_exponent - 1) * (first_exponent - 2))
-equal(4 * product + 4 * odd_threshold ** 2 - 4 * first_exponent * (3 * first_exponent + 1) * odd_threshold,
-      (first_exponent + 1) ** 2 * (2 * first_exponent - 3) * (4 * first_exponent - 3))
 equal(2 * (first_exponent - 1) * (first_exponent - 2),
       (2 * first_exponent - 10) * (first_exponent + 2) + 24)
-equal((2 * first_exponent - 3) * (4 * first_exponent - 3),
-      (4 * first_exponent - 21) * 2 * (first_exponent + 3) + 135)
 equal(cubic.subs(third_exponent, first_exponent),
       (variable - 2 * first_exponent * (first_exponent + 1))
       * (variable ** 2 - (5 * first_exponent ** 2 + 2 * first_exponent) * variable
@@ -52,12 +48,22 @@ equal(cubic.subs(third_exponent, first_exponent * (first_exponent + 1)),
       (variable - 2 * first_exponent * (first_exponent + 1) ** 2)
       * (variable ** 2 - (3 * first_exponent ** 3 + 4 * first_exponent ** 2 + 2 * first_exponent) * variable
          + 2 * first_exponent ** 6 + 6 * first_exponent ** 5 + 7 * first_exponent ** 4 + 3 * first_exponent ** 3))
+equal((3 * first_exponent ** 3 + 4 * first_exponent ** 2 + 2 * first_exponent) ** 2
+      - 4 * (2 * first_exponent ** 6 + 6 * first_exponent ** 5 + 7 * first_exponent ** 4 + 3 * first_exponent ** 3),
+      first_exponent ** 2 * (first_exponent ** 4 + 4 * first_exponent + 4))
+offset = sympy.Symbol('offset')
+equal((2 * first_exponent ** 2 - 4 * first_exponent - 3).subs(first_exponent, offset + 3),
+      2 * offset ** 2 + 8 * offset + 3)
+equal(cubic.subs({first_exponent: 1, third_exponent: 2}),
+      (variable - 3) * (variable - 6) * (variable - 8))
+antisymmetric_exception = sympy.Matrix([[3, -2], [-1, 8]]) + sympy.eye(2)
+equal(antisymmetric_exception.charpoly(variable).as_expr(), variable ** 2 - 13 * variable + 34)
 expected = {2: [3], 3: [10], 4: [2, 21]}
 records = []
 for repeated_exponent, exceptional_exponents in expected.items():
     constant = 4 * repeated_exponent ** 3 * (2 * repeated_exponent + 1)
-    congruence_period = (repeated_exponent + 1) // gcd(2, repeated_exponent + 1)
-    bound = (even_bound if repeated_exponent % 2 == 0 else odd_bound).subs(first_exponent, repeated_exponent)
+    congruence_period = repeated_exponent + 1
+    bound = linear_bound.subs(first_exponent, repeated_exponent)
     factors = []
     admissible = []
     for lower in range(1, isqrt(constant) + 1):
@@ -103,4 +109,4 @@ print(json.dumps({"symbolic_identities": "passed", "fixed_exponents": records,
                   "sympy": sympy.__version__,
                   "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
                   "diagnostic_sha256": hashlib.sha256(Path(__file__).with_name('check_aa_b.py').read_bytes()).hexdigest(),
-                  "scope": "Complete fixed-a=2,3,4 certificates for all b>=1; exact algebra for quadratic and sharper linear cutoff. Written congruence and factor inequality prove all-a linear cutoff using Reza boundary theorem. Remaining squareD pairs below linear cutoff and fullQ3 open; no Lean."}, indent=2))
+                  "scope": "Complete fixed-a=2,3,4 certificates; symbolic product identity and unified linear cutoff. Written full-modulus congruence and factor inequality prove all-a cutoff using Reza boundary theorem. Reducible b=a(a+1) quadratic discriminant and integral cubic at(a,b)=(1,2) checked. Remaining squareD pairs below cutoff and fullQ3 open; no Lean."}, indent=2))

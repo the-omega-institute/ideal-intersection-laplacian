@@ -29,8 +29,7 @@ A factor-pair argument proves nonintegrality for every `(a,a,b)` with
 For every `a>=1`, all `b>(a-1)(2a-1)` are also covered by the general
 discriminant bound; Reza's earlier theorem covers equality for `a>=2`.
 A congruence sharpens the remaining range to `b <= floor(R(a))`, with
-`R(a)=2(a-1)(a-2)/(a+2)` for even `a` and
-`R(a)=(2a-3)(4a-3)/(2(a+3))` for odd `a`. Every larger `b` is nonintegral;
+`R(a)=2(a-1)(a-2)/(a+2)` for every `a>=2`. Every larger `b` is nonintegral;
 read the linear cutoff proof in the note above.
 
 The original preprint is awaiting public announcement. This repository begins

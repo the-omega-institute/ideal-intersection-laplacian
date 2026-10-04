@@ -6,10 +6,7 @@ $b>(a-1)(2a-1)$, the graph of $p^a q^a r^b$ is not Laplacian integral.
 **Sharper bound.** For $a\geq2$, the same conclusion holds whenever $b>R(a)$,
 where
 
-$$R(a)=\begin{cases}
-\dfrac{2(a-1)(a-2)}{a+2},&a\text{ even},\\[4pt]
-\dfrac{(2a-3)(4a-3)}{2(a+3)},&a\text{ odd}.
-\end{cases}$$
+$$R(a)=\frac{2(a-1)(a-2)}{a+2}.$$
 
 Thus any unresolved repeated-exponent pair must have $b\leq\lfloor R(a)\rfloor$
 and a square antisymmetric discriminant. This is a linear bound in $a$.
@@ -59,6 +56,17 @@ $$f_{a,a(a+1)}(x)=(x-2a(a+1)^2)
 \bigl(x^2-(3a^3+4a^2+2a)x+2a^6+6a^5+7a^4+3a^3\bigr).$$
 
 A noninteger root does not require the entire cubic to be irreducible.
+For the second reducible family the quadratic discriminant is
+
+$$a^2(a^4+4a+4).$$
+
+For $a\geq3$, $(a^2)^2<a^4+4a+4<(a^2+1)^2$, because
+$2a^2-4a-3=2(a-3)^2+8(a-3)+3>0$. For $a=2$, the radicand is $28$, between
+$5^2$ and $6^2$. Hence this quadratic is irreducible for every $a\geq2$.
+At $a=1,b=2$, however, the entire cubic is
+$(x-3)(x-6)(x-8)$. The graph still has irrational antisymmetric eigenvalues
+$(13\pm\sqrt{33})/2$ after the universal-vertex shift. This explicitly
+illustrates why the cubic test is sufficient rather than necessary.
 
 ## Finite reduction for each fixed repeated exponent
 
@@ -129,14 +137,24 @@ Then
 
 $$de=M=a^3(2a+1),\qquad d+e=A,\qquad e-d=(a+1)s.$$
 
-Reducing the last two equations modulo $a+1$ gives $e\equiv d$ and
-$d+e\equiv2$. Therefore
+Put $h=a+1$ and $C=(a-1)(2a-1)$. Reducing the last two equations modulo $h$
+gives $e\equiv d$ and $d+e\equiv2$, hence $2(d-1)\equiv0\pmod h$.
+There is also the stronger product condition
 
-$$d\equiv1\pmod{m},\qquad m=\frac{a+1}{\gcd(2,a+1)}.$$
+$$(d-1)(e-1)=M-A+1=h^2(C-b).$$
 
-The case $d=1$ is exactly the boundary $b=(a-1)(2a-1)$, already settled
-by Reza's cubic argument. Every other square-discriminant pair has
-$d\geq t=m+1$. Since $e\geq d\geq t$,
+If $h$ is odd, the sum congruence already gives $d\equiv1\pmod h$.
+If $h$ is even, the alternative is $d-1\equiv h/2\pmod h$. Since
+$e\equiv d$, both $d-1$ and $e-1$ would then be $h/2$ times an odd integer.
+Their product would be $h^2/4$ times an odd integer, which cannot be divisible
+by $h^2$. The product identity excludes that alternative. Thus, for both
+parities,
+
+$$d\equiv e\equiv1\pmod{a+1}.$$
+
+The case $d=1$ is exactly the boundary $b=C$, already settled by Reza's
+cubic argument. Every other square-discriminant pair has $d\geq t=a+2$.
+Since $e\geq d\geq t$,
 
 $$\frac Mt+t-(d+e)=(d-t)\left(\frac et-1\right)\geq0.$$
 
@@ -144,21 +162,19 @@ Substituting $A=(a+1)^2b+a(3a+1)$ yields
 
 $$b\leq\frac{M/t+t-a(3a+1)}{(a+1)^2}.$$
 
-For even $a$, $t=a+2$ and this expression is $2(a-1)(a-2)/(a+2)$.
-For odd $a$, $t=(a+3)/2$ and it is $(2a-3)(4a-3)/(2(a+3))$.
+The expression is $R(a)=2(a-1)(a-2)/(a+2)$ for every $a\geq2$.
 Consequently, if $b>R(a)$, either $D$ is nonsquare and the antisymmetric
 block gives irrational eigenvalues, or the pair is the boundary family
 and Reza's theorem applies. This proves the sharper bound.
 
-The exact expressions
+The exact expression
 
-$$R(a)=2a-10+\frac{24}{a+2}\quad(a\text{ even}),\qquad
-R(a)=4a-21+\frac{135}{2(a+3)}\quad(a\text{ odd})$$
+$$R(a)=2a-10+\frac{24}{a+2}$$
 
-show the linear scale. At $a=2,3,4$, the unresolved ranges reduce to
-$b\leq0,2,2$ respectively. The only square-discriminant pair in these
+shows the linear scale. At $a=2,3,4$, the unresolved ranges reduce to
+$b\leq0,0,2$ respectively, since $R(3)=4/5$. The only square-discriminant pair in these
 ranges is $(a,b)=(4,2)$, already certified below. In that case $d=6=t$,
-so equality in the even cutoff is attained.
+so equality in the cutoff is attained.
 
 ## The four exceptional cubics
 
