@@ -60,6 +60,12 @@ parity condition. It uses the exact value factorization at b and a
 derivative identity; a further binary cubic excludes cases passing both.
 The compatible classes, combined with endpoint-zero/interval restrictions,
 remain a focused next problem. No exponent or modulus range is scanned.
+The [mixed endpoint-root proof](notes/mixed-endpoint-roots.md) now settles
+every positive permutation of (3,0,0)mod4 using the uniform low root.
+It also forces the surviving patterns (1,3,2) and (3,3,0)mod4 below
+the linear endpoint-two bound. The next focused step is to combine
+their necessary endpoint-two zero with its divisor constraint inside
+this linear region, or examine the remaining one-odd-exponent patterns.
 The [requested endpoint diagnostic](notes/endpoint-surfaces-diagnostic.md)
 exhausts all66pairs `4<=a<b<=15` and all integer `c>b` by exact divisor
 reduction, finding neither endpoint zero. With the low-root theorem and

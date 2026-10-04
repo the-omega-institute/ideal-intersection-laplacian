@@ -266,6 +266,20 @@ $h_C(b)=0$ and satisfy the derivative divisor but fail the third-shift
 condition. Four compatible controls retain nonlinear rational factors.
 The infinite conditions in Theorem~\ref{thm:clustered-odd-roots} use
 the written root-clustering proof, with no exponent or modulus range scan.
+\item \path{scripts/check_mixed_endpoint_roots.py} matches the direct
+and reflected quintics and all exponent permutations. For the three
+mixed-parity patterns, coefficientwise checks verify the binary quintic,
+divisibility of the shifted polynomial by eight, and its binary reduction
+to $(y+1)^3$. A further $51$ coefficients give $h_C(2)\equiv4\pmod8$
+for residue roles $(3,0,0)$. Eight full quintics are independently
+reconstructed by $56$ integer six-by-six determinant expansions;
+exact Sturm counts check the low-root fixtures. Two previous clustered-root
+controls pass all prior necessary conditions but are excluded by the
+linear tail. Both known endpoint-zero controls are retained.
+Theorem~\ref{thm:one-odd-endpoints} and
+Corollary~\ref{cor:mixed-linear-tail} follow from the written root-distribution
+argument and the preceding low-root and endpoint-two proofs.
+No exponent or modulus range is scanned.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

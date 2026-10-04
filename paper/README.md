@@ -25,8 +25,8 @@ sections and their shared graph/lifting definitions.
 | [low-spectrum.tex](sections/low-spectrum.tex) | General inertia criterion, four complete bounded-gap families, every exponent span at most3, and complete finite minimum-through-seven certificate |
 | [mixed-inertia.tex](sections/mixed-inertia.tex) | Uniform positive root below3 for every minimum at least4; root in(2,3) under the lower inequality; growing balanced region a>=3span+8 |
 | [arithmetic-obstructions.tex](sections/arithmetic-obstructions.tex) | Every gcd>=3 triple, all-odd and prime-residue classes, all-two-modulo-four triples and every common 2-adic valuation |
-| [mixed-parity-congruence.tex](sections/mixed-parity-congruence.tex) | Divisor32 lemma, six modulo-eight classes, all (3,3,2) modulo-four permutations, conditional derivative thresholds and successive (1,3,2) modulo-four value, derivative and shifted-cubic constraints |
-| [endpoint-reduction.tex](sections/endpoint-reduction.tex) | Linear endpoint-two bound, all-even tail, divisor candidates, second-smallest<=15 certificate, modulo-three classes and finite-covering limitation |
+| [mixed-parity-congruence.tex](sections/mixed-parity-congruence.tex) | Divisor32 lemma, six modulo-eight classes, all (3,3,2) and (3,0,0) modulo-four permutations, conditional derivative thresholds, successive (1,3,2) modulo-four constraints, and conditional exclusion of endpoint one for three mixed patterns |
+| [endpoint-reduction.tex](sections/endpoint-reduction.tex) | Linear endpoint-two bound, all-even and two mixed-parity tails, divisor candidates, second-smallest<=15 certificate, modulo-three classes and finite-covering limitation |
 | [aa-small.tex](sections/aa-small.tex) | All-b theorem for a=2 through9, divisor/modular certificates and cubic-test scope |
 | [verification.tex](sections/verification.tex) | Actual scope of the exact checkers |
 | [open.tex](sections/open.tex) | Ordered 8<=a<b<c<4a^2-2a outside the proved criteria; endpoint-zero necessary condition and nonsquarefree higher-prime vectors |
@@ -80,6 +80,7 @@ python3 scripts/check_higher_derivatives.py
 python3 scripts/verify_higher_derivatives.py
 python3 scripts/check_odd_root_lift.py
 python3 scripts/check_clustered_odd_roots.py
+python3 scripts/check_mixed_endpoint_roots.py
 python3 scripts/check_open_region2.py
 python3 scripts/check_open_region2.py --json --certificate-csv results/open-region-discriminants.csv
 python3 scripts/check_open_region_certificate.py

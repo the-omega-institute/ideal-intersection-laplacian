@@ -69,6 +69,12 @@ The remaining triples lie within `8 <= a < b < c < 4a^2 - 2a`, outside
 these families and the general inertia criterion;
 the complete endpoint certificate additionally requires `b>=16`.
 The full characterization remains open.
+The root distributions and low-root theorem now also settle **every
+permutation of (3,0,0) modulo four**, an entire one-odd-exponent class.
+For mixed residue patterns **(1,3,2)** and **(3,3,0) modulo four**, integer
+spectra require the same linear maximum bound as the all-even region:
+**`M<7m-16+40/(m+2)`**, where m and M are the minimum and maximum.
+[Read the proof and independent exact checks](notes/mixed-endpoint-roots.md).
 Endpoint congruences also settle **all residue triples (2,2,2) and
 permutations of (1,2,2) modulo three**:
 [read the proof, full parity table and covering limitation](notes/endpoint-residues.md).

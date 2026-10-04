@@ -298,3 +298,53 @@ $h_C(b)=0$ and $64\mid h_C'(b)$, but their third-shift cubics fail to
 split. They show that the final condition adds exclusions even when
 the value and first-derivative conditions hold. The compatible cases
 still require another nonintegrality argument.
+
+\begin{lemma}
+\label{lem:mixed-endpoint-one}
+For positive exponent triples that are permutations of $(3,0,0)$,
+$(1,3,2)$ or $(3,3,0)$ modulo four, an integer complement quotient
+spectrum would force every odd root to be three modulo four.
+Consequently one cannot be a quotient root under this assumption.
+\end{lemma}
+
+\begin{proof}
+For each displayed residue pattern, write
+$(a,b,c)=(4u+r_a,4v+r_b,4w+r_c)$. Coefficientwise expansion gives
+\begin{align*}
+ h_C(x)&\equiv x^2(x+1)^3\pmod2,\\
+ F(y)=h_C(2y+1)/8&\in\mathbb Z[u,v,w,y], &
+ F(y)&\equiv(y+1)^3\pmod2.
+\end{align*}
+If every root were an integer, there would be three odd roots $2r_i+1$
+and two even roots $\eta_j$, counted with multiplicity. In
+\[
+ F(y)=\prod_{j=1}^2(2y+1-\eta_j)\prod_{i=1}^3(y-r_i),
+\]
+the first two factors reduce to one modulo two. Thus every $r_i$ is
+odd, giving the asserted residue and exclusion of one. Symmetry of the
+quintic includes every permutation of the exponents.
+\end{proof}
+
+\begin{theorem}
+\label{thm:one-odd-endpoints}
+Every positive three-prime exponent triple that is a permutation of
+$(3,0,0)$ modulo four gives a nonintegral ideal intersection graph,
+without a size or ratio bound.
+\end{theorem}
+
+\begin{proof}
+For residue roles $(a,b,c)=(4u+3,4v,4w)$, coefficientwise expansion
+gives $h_C(2)\equiv4\pmod8$, so two is not a root.
+If the minimum exponent is at least four, Theorem~\ref{thm:uniform-low-root}
+provides a positive quotient root in $(0,3)$. Under the integer-spectrum
+assumption it must be one or two. Lemma~\ref{lem:mixed-endpoint-one}
+excludes one and the endpoint congruence excludes two, a contradiction.
+The only possible smaller minimum is three, already covered by
+Theorem~\ref{thm:minimum-three}. A noninteger complement root has a
+noninteger graph lift.
+\end{proof}
+
+The triples $(19,36,100)$ and $(35,52,120)$ illustrate this one-odd-exponent
+class beyond the minimum-through-seven and middle-through-fifteen
+certificates. The result uses the uniform low-root theorem together with
+the shifted root distribution, without enlarging either finite certificate.
