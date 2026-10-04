@@ -78,6 +78,10 @@ classes modulo eight**, without bounds on sizes or ratios:
 The shifted quintic and its derivative now settle **every permutation
 of (3,3,2) modulo four**, including odd exponents equal modulo eight:
 [read the uniform root-distribution proof](notes/odd-root-distribution.md).
+For exponent residues **(1,3,2) modulo four**, integer spectra would also
+force the first and third exponents to sum to **15 modulo sixteen**.
+Every triple violating that sum congruence is nonintegral:
+[read the higher-derivative review and stronger value proof](notes/higher-derivatives-review.md).
 
 ## Start here
 
@@ -107,6 +111,7 @@ of (3,3,2) modulo four**, including odd exponents equal modulo eight:
 | Read the requested endpoint diagnostic and exact scope | [Report](notes/endpoint-surfaces-diagnostic.md) · [Corrected output](results/endpoint-surfaces-corrected.txt) · [Complete certificate](results/endpoint-surfaces-verification.json) |
 | Read the modular endpoint script review and corrected candidate logic | [Review](notes/modular-endpoints-review.md) · [Full root sets](results/modular-endpoints.json) · [Independent verification](results/modular-endpoints-verification.json) |
 | Read the higher-modulus diagnostic and its period-eight limit | [Review](notes/higher-2adic-moduli-review.md) · [Original output](results/higher-2adic-moduli-original.txt) · [Independent verification](results/higher-2adic-moduli-verification.json) |
+| Read the conditional derivative thresholds and new sum-congruence family | [Proof and review](notes/higher-derivatives-review.md) · [Requested output](results/higher-derivatives-original.txt) · [Independent verification](results/higher-derivatives-verification.json) |
 | Discuss a conjecture or share a checked argument | [Project issues](https://github.com/the-omega-institute/ideal-intersection-laplacian/issues) |
 | Review proposed additions | [Pull requests](https://github.com/the-omega-institute/ideal-intersection-laplacian/pulls) |
 | Read the previous joint paper | [Binary subspace orthogonality project](https://github.com/the-omega-institute/binary-subspace-orthogonality) |

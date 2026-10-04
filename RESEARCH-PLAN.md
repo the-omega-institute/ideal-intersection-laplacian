@@ -41,6 +41,12 @@ Reza's [higher-modulus diagnostic](notes/higher-2adic-moduli-review.md)
 has also been checked at his fixed moduli8,16,32. Both endpoint values
 modulo32 already have coordinate period8 for mixed-parity exponents,
 so increasing the exponent modulus alone adds no exclusions.
+The [higher-derivative review](notes/higher-derivatives-review.md) gives
+the conditional first-three-derivative thresholds and proves a stronger
+value obstruction: exponent residues(1,3,2)mod4 require a+c=15mod16
+for an integer spectrum. The second/third thresholds alone add no
+exclusions with the present root information; representative valuations
+must not be treated as uniform class data.
 The [requested endpoint diagnostic](notes/endpoint-surfaces-diagnostic.md)
 exhausts all66pairs `4<=a<b<=15` and all integer `c>b` by exact divisor
 reduction, finding neither endpoint zero. With the low-root theorem and

@@ -225,6 +225,21 @@ The complete $384$ base rows therefore encode the higher tables.
 The endpoint-divisibility test excludes $36$, $288$ and $2304$ classes,
 respectively. These are finite residue tables, and their survivors
 do not assert integer endpoint zeros or integral spectra.
+\item Reza's \path{scripts/check_higher_derivatives.py} was run unchanged
+on its $384$ canonical representatives. Its interpretation was then
+corrected: zero has valuation infinity, and full valuations need not be
+constant on an exponent residue class. The independent
+\path{scripts/verify_higher_derivatives.py} reconstructs all four values
+at one by principal integer minors. Two new fixtures at three and four
+lift controls at one bring the total to $16{,}380$ minor determinants.
+Twelve coefficientwise identities determine the odd-root distribution
+modulo four; $36$ further identities establish coordinate period eight
+for the derivative residues at one and three modulo $16$, $8$ and $4$.
+The second- and third-derivative thresholds add no exclusions with this
+root information. A coefficientwise identity for $h_C(3)/16$ proves
+Theorem~\ref{thm:odd-root-sum}; its $64$ role-ordered classes modulo
+sixteen display $48$ exclusions, including $16$ beyond the earlier
+divisor-$32$ test. Full joint representative patterns are saved separately.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

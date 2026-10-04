@@ -123,3 +123,62 @@ Thus the higher-modulus tables are lifts of the six classes in
 Theorem~\ref{thm:mixed-parity-congruence}. The additional exclusions in
 Theorem~\ref{thm:odd-root-distribution} use the distribution of the roots
 and the derivative, beyond those two endpoint divisibilities.
+
+\begin{lemma}
+\label{lem:derivative-thresholds}
+Let $f\in\mathbb Z[x]$ be monic of degree five with two even and three
+odd integer roots. If exactly $k$ of the odd roots are one modulo four,
+then
+\[
+ 2^{3+k}\mid f(1),\qquad
+ 2^{\max(2,k+1)}\mid f'(1),\qquad
+ 2^{\max(2,k)}\mid f''(1),\qquad 2\mid f'''(1).
+\]
+At three, the same statements hold with $k$ replaced by $3-k$.
+\end{lemma}
+
+\begin{proof}
+At one, the odd-root factors supply $k$ factors divisible by four and
+$3-k$ divisible by two; the even-root factors are odd. Each term of
+the $j$th derivative is $j!$ times a product retaining $5-j$ root factors.
+Removing the odd-root factors with the strongest guaranteed divisibility
+gives the stated bounds, including the factor two from $2!$ and $3!$.
+At three, the roles of the two odd residue classes are exchanged.
+Repeated roots and zero evaluations obey the same divisibilities.
+\end{proof}
+
+\begin{theorem}
+\label{thm:odd-root-sum}
+Let $a,b,c$ be positive exponents with
+$a\equiv1$, $b\equiv3$ and $c\equiv2\pmod4$.
+If $a+c\not\equiv15\pmod{16}$, their ideal intersection graph is
+nonintegral. All permutations are included, without a size or ratio bound.
+\end{theorem}
+
+\begin{proof}
+Write $(a,b,c)=(4u+1,4v+3,4w+2)$. Coefficientwise expansion gives
+\[
+ h_C(2y+1)/8\in\mathbb Z[u,v,w,y],\qquad
+ h_C(2y+1)/8\equiv(y+1)^3\pmod2.
+\]
+As in Lemma~\ref{lem:odd-root-distribution}, integer quotient roots
+would force all three odd roots to be three modulo four. Consequently
+$64\mid h_C(3)$. A further coefficientwise identity is
+\[
+ h_C(3)/16\in\mathbb Z[u,v,w],\qquad
+ h_C(3)/16\equiv(2v+1)(u+w+1)\pmod4.
+\]
+Since $2v+1$ is invertible modulo four, this forces
+$u+w+1\equiv0\pmod4$, equivalently $a+c\equiv15\pmod{16}$.
+Failure of that condition gives a noninteger complement root and graph lift.
+\end{proof}
+
+For example, $(14,25,27)$ and $(10,29,31)$ pass the earlier divisor-$32$
+test but have $h_C(3)\equiv32\pmod{64}$, contradicting the new requirement.
+The sum class $a+c\equiv15\pmod{16}$ remains compatible with this test.
+Complete second- and third-derivative checks at one and three give no
+additional exclusions with the root information modulo four used here.
+In particular $h_C'''(1)\equiv2\pmod4$ for every mixed exponent parity.
+Full valuations at a chosen exponent representative are not generally
+constant throughout its residue class: $h_C(3)=-2592$ at $(1,3,6)$ but
+$h_C(3)=0$ at $(9,3,6)$, although the exponent triples agree modulo eight.
