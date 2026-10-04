@@ -9,7 +9,7 @@ with
 
     E1 = 2a^2 + 5ab + 3a + b
     E2 = a^4 + 7a^3 b + 3a^3 + 8a^2 b^2 + 11a^2 b + 2a^2
-         + 3a b^2 + 2ab
+         + 3a b^2 + 2ab 
     E3 = 2a^2 b (a+b+1)(a^2 + 2ab + 2a + b)
 
 The graph is non-Laplacian-integral iff this cubic has a
