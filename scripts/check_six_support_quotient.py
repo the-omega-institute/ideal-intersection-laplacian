@@ -6,6 +6,8 @@ from pathlib import Path
 
 import sympy
 
+from check_fully_distinct import analyze, quotient_matrix
+
 
 supports = (1, 2, 4, 3, 5, 6)
 first, second, third, variable = sympy.symbols('a b c x')
@@ -90,9 +92,22 @@ def main():
     assert sympy.expand(original_quintic.as_expr() + quintic.as_expr().subs(variable, total - variable)) == 0
 
     cases = []
-    for triple in combinations(range(1, 7), 3):
+    for triple in combinations(range(1, 8), 3):
         evaluated = support_quotient(triple)
+        assert evaluated == quotient_matrix(*triple)
         polynomial = sympy.Poly(sympy.cancel(evaluated.charpoly(variable).as_expr() / variable), variable)
+        collaborator_result = analyze(*triple)
+        assert polynomial == collaborator_result['g']
+        assert collaborator_result['has_irreducible_factor']
+        certified_intervals = []
+        for lower, upper in collaborator_result['noninteger_intervals']:
+            integer_endpoint = int(sympy.floor(lower))
+            assert integer_endpoint < lower < upper < integer_endpoint + 1
+            assert polynomial.count_roots(lower, upper) == 1
+            assert polynomial.eval(lower) * polynomial.eval(upper) < 0
+            certified_intervals.append({'bounds': [str(lower), str(upper)],
+                                       'consecutive_integers': [integer_endpoint, integer_endpoint + 1]})
+        assert certified_intervals
         factors = sympy.factor_list(polynomial)[1]
         noninteger = any(factor.degree() >= 2 for factor, multiplicity in factors)
         assert noninteger
@@ -106,34 +121,36 @@ def main():
                       'factor_degrees': [int(factor.degree()) for factor, multiplicity in factors],
                       'factorization': str(sympy.factor(polynomial.as_expr())),
                       'has_noninteger_root': noninteger,
+                      'exact_root_intervals': certified_intervals,
                       'smallest_tested_prime_for_nonlinear_factor': prime_witness})
-    assert len(cases) == 20
+    assert len(cases) == 35
     direct_checks = [direct_embedding_check(triple) for triple in ((1, 2, 3), (2, 3, 4))]
-    result = {'origin': 'Independent support-derived checker; not Reza announced but unavailable check_fully_distinct.py.',
+    result = {'origin': 'Independent support-derived checker cross-validates the corrected coauthor check_fully_distinct.py from origin/main09be7fe.',
               'support_order': ['1', '2', '3', '12', '13', '23'],
               'general_complement_quotient': str(complement),
               'symbolic_identities': 'passed',
               'complement_quintic_at_0': str(sympy.factor(quintic.eval(0))),
               'complement_quintic_at_a': str(sympy.factor(quintic.eval(first))),
               'complement_quintic_at_1_when_a_is_1': str(sympy.factor(quintic.eval(1).subs(first, 1))),
-              'complete_requested_independent_range': '1 <= a < b < c <= 6; exactly20triples',
+              'complete_requested_range': '1 <= a < b < c <= 7; exactly35triples, matching the coauthor script',
               'cases': cases, 'direct_ideal_embedding_checks': direct_checks,
               'sympy': sympy.__version__,
               'script_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
-              'scope': 'General exact six-support and complement identities; two finite direct ideal-graph embedding checks; rational factorization for twenty fully distinct triples. Infinite (1,b,c) theorem uses written endpoint proof and earlier repeated-exponent exceptions. No claim of fullQ3/fullydistinct closure; no Lean or floating-point spectra.'}
+              'coauthor_script_sha256': hashlib.sha256(Path(__file__).with_name('check_fully_distinct.py').read_bytes()).hexdigest(),
+              'scope': 'General exact six-support and complement identities; two finite direct ideal-graph embedding checks; rational factorization and independent matrix/polynomial/Sturm/sign validation of exact intervals for all35requested fullydistinct triples. Infinite (1,b,c) theorem uses written endpoint proof and earlier repeated-exponent exceptions. No claim of fullQ3/fullydistinct closure; no Lean or floating-point spectra.'}
     if arguments.json:
         print(json.dumps(result, indent=2))
         return
-    print('Independent six-support diagnostic: 1 <= a < b < c <= 6')
+    print('Independent six-support diagnostic: 1 <= a < b < c <= 7')
     print('a b c | factor degrees | noninteger root | first tested factor witness prime')
     for case in cases:
         print('{} {} {} | {} | {} | {}'.format(*case['exponents'],
               ','.join(map(str, case['factor_degrees'])), case['has_noninteger_root'],
               case['smallest_tested_prime_for_nonlinear_factor']))
-    print('20/20 quintics have a nonlinear irreducible factor over Q.')
+    print('35/35 quintics have a nonlinear irreducible factor over Q.')
     print('General complement endpoint identities: passed.')
     print('Direct ideal-graph embeddings: (1,2,3), (2,3,4), passed.')
-    print('This is independent output, not a run of the unavailable coauthor script.')
+    print('Coauthor matrices/quintics match; exact root intervals pass independent Sturm/sign checks.')
     print('All (1,b,c) are covered by the written proof; fully distinct a>=2 and full Q3 remain open.')
 
 

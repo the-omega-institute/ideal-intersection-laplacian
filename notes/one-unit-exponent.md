@@ -68,14 +68,23 @@ This proves the theorem for all b,c≥1.
 ## Requested diagnostic and its exact scope
 
 Reza requested a run of `scripts/check_fully_distinct.py` in his public
-PR3 comment5978978582. At the remote check, that file was absent from
-all three branches. We keep its name available for his source and provide
-an independent [six-support checker](../scripts/check_six_support_quotient.py).
-Its range is explicitly `1 <= a < b < c <= 6`, exactly20triples; it is
-not represented as output from the unavailable script.
+PR3 comment5978978582. Initially that file was absent from
+all three branches; a later fetch found his commit09be7fe on main.
+We merged that commit, retaining his source history, and corrected the
+diagonal quotient entry to degree minus the internal neighbor count.
+Internal neighbors cancel for cell-constant functions. The original matrix
+had row sums equal to class size minus1, so its characteristic polynomial
+did not have the expected zero factor; the original run stopped on a
+`1/x` polynomial error. We also corrected the factor-list return order and
+replaced numerical root rounding with exact rational root intervals.
 
-All20 degree-five factors have an irreducible nonlinear factor over Q.
-Most are irreducible quintics, but (2,3,5) has factor degrees1,4 and
+The [corrected coauthor script](../scripts/check_fully_distinct.py) runs his
+original range `1 <= a < b < c <= 7`, exactly35triples. The independent
+[six-support checker](../scripts/check_six_support_quotient.py) now checks
+every requested matrix, quintic and root interval in that same range.
+
+All35 degree-five factors have an irreducible nonlinear factor over Q.
+Most are irreducible quintics, but (1,2,7) and(2,3,5) have factor degrees1,4 and
 (2,4,6) has factor degrees2,3. Therefore irreducibility of the whole
 quintic cannot be a uniform obstruction, even on this small range.
 The displayed prime field is the first witness among the explicitly
@@ -89,8 +98,11 @@ the quotient at (1,2,3) and(2,3,4), using22 and58vertices and312
 representative-to-vertex pairs in total. These are finite checks; the
 all-b,c conclusion follows from the written endpoint proof.
 
-Read the [saved exact certificate](../results/six-support-quotient.json)
-and [full console output](../results/six-support-quotient.txt).
+Every saved rational interval lies strictly between consecutive integers
+and passes independent Sturm root counts and endpoint signs.
+Read the [saved exact certificate](../results/six-support-quotient.json),
+[coauthor-script console output](../results/fully-distinct-diagnostic.txt)
+and [independent console output](../results/six-support-quotient.txt).
 
 ## Source
 

@@ -20,7 +20,7 @@ from itertools import combinations
 
 try:
     from sympy import (
-        symbols, Matrix, Poly, factor_list, nroots, GF, Integer
+        symbols, Matrix, Poly, factor_list, cancel, Rational, floor
     )
 except ImportError:
     print("ERROR: sympy is required. pip install sympy")
@@ -62,7 +62,7 @@ def quotient_matrix(k1, k2, k3):
     B = [[0] * n for _ in range(n)]
     for i in range(n):
         for j in range(n):
-            B[i][j] = d[i] if i == j else -N[i][j]
+            B[i][j] = d[i] - N[i][i] if i == j else -N[i][j]
 
     return Matrix(B)
 
@@ -71,34 +71,30 @@ def analyze(k1, k2, k3):
     B = quotient_matrix(k1, k2, k3)
     char = B.charpoly(x).as_expr()
     # Factor out x
-    g = char / x
+    g = cancel(char / x)
     g_poly = Poly(g, x, domain='ZZ')
-    factors, _ = factor_list(g_poly, x)
+    _, factors = factor_list(g_poly)
     degrees = []
     has_irr = False
     for f, mult in factors:
-        try:
-            deg = int(f.degree())
-        except Exception:
-            deg = 1
+        deg = int(f.degree())
         degrees.append(deg)
         if deg >= 2:
             has_irr = True
-    # Numerical roots
-    roots = nroots(g, n=20)
-    real_nonint = []
-    for r in roots:
-        rc = complex(r)
-        if abs(rc.imag) < 1e-12:
-            val = rc.real
-            if abs(val - round(val)) > 1e-10:
-                real_nonint.append(val)
+    noninteger_intervals = []
+    for bounds, multiplicity in g_poly.intervals(eps=Rational(1, 1000)):
+        lower, upper = bounds
+        if lower == upper:
+            continue
+        while floor(lower) != floor(upper) or lower <= floor(lower):
+            lower, upper = g_poly.refine_root(lower, upper, eps=(upper - lower) / 10)
+        noninteger_intervals.append((lower, upper))
     return {
         'k': (k1, k2, k3),
         'g': g_poly,
         'factor_degrees': degrees,
         'has_irreducible_factor': has_irr,
-        'noninteger_roots': real_nonint,
+        'noninteger_intervals': noninteger_intervals,
     }
 
 
@@ -116,17 +112,21 @@ def main():
                 triples.append((k1, k2, k3))
 
     print(f"{'k1':>3} {'k2':>3} {'k3':>3} | {'factor degrees':>20} | "
-          f"{'noninteger?':>12} | {'smallest nonint':>18}")
+          f"{'noninteger?':>12} | {'first root interval':>20}")
     print("-" * 90)
 
     results = []
     for (k1, k2, k3) in triples:
         r = analyze(k1, k2, k3)
         deg_str = ",".join(str(d) for d in r['factor_degrees'])
-        nonint = "yes" if r['noninteger_roots'] else "no"
-        smallest = f"{r['noninteger_roots'][0]:.6f}" if r['noninteger_roots'] else "-"
+        nonint = "yes" if r['has_irreducible_factor'] else "no"
+        if r['noninteger_intervals']:
+            lower, upper = r['noninteger_intervals'][0]
+            smallest = f"({floor(lower)},{floor(lower) + 1})"
+        else:
+            smallest = "-"
         print(f"{k1:>3} {k2:>3} {k3:>3} | {deg_str:>20} | "
-              f"{nonint:>12} | {smallest:>18}")
+              f"{nonint:>12} | {smallest:>20}")
         results.append(r)
 
     # Summary
@@ -135,13 +135,13 @@ def main():
     print("Summary")
     print("=" * 90)
     n_total = len(results)
-    n_nonint = sum(1 for r in results if r['noninteger_roots'])
+    n_nonint = sum(1 for r in results if r['has_irreducible_factor'])
     print(f"Total triples: {n_total}")
     print(f"With noninteger root: {n_nonint}")
     print()
-    print("If all triples have a noninteger root, this suggests the")
-    print("fully-distinct case can be attacked uniformly. If some have")
-    print("only integer roots, the problem is genuinely case-by-case.")
+    print("All intervals are exact certificates between consecutive integers.")
+    print("This finite range is not an all-parameter integrality proof.")
+    print("An integer quotient spectrum would require checking the remaining graph modes.")
 
     # Show the smallest example's polynomial
     if results:

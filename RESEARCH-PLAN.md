@@ -18,6 +18,7 @@ python3 scripts/check_second_cutoff.py
 python3 scripts/check_factor_index_reduction.py
 python3 scripts/check_repeated_exponent_completion.py
 python3 scripts/check_six_support_quotient.py
+python3 scripts/check_fully_distinct.py
 ```
 
 The [completion proof](notes/repeated-exponent-completion.md) settles the

@@ -54,6 +54,7 @@ python3 scripts/check_second_cutoff.py
 python3 scripts/check_factor_index_reduction.py
 python3 scripts/check_repeated_exponent_completion.py
 python3 scripts/check_six_support_quotient.py --json
+python3 scripts/check_fully_distinct.py
 ```
 
 Compare with the corresponding JSON files under `results/`. The full text
