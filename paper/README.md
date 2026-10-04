@@ -17,7 +17,7 @@ the linear region and consolidation of the existing results are pursued.
 
 The section names follow Reza's proposed layout. At the time of integration,
 his announced `paper/` files were not yet present on any of the three remote
-branches. The introduction and open section here are short temporary texts;
+branches. The introduction and open section have been developed with the proofs;
 `aa-family.tex` is reconstructed from his already public PR #2 proof. His
 own versions can be integrated when uploaded, preserving the five expanded
 sections and their shared graph/lifting definitions.
@@ -145,8 +145,10 @@ print(sympy.factor(expected))
 PY
 ```
 
-The bibliography contains the original graph reference and Reza's public
-source preprint, [Zenodo DOI10.5281/zenodo.23134979](https://doi.org/10.5281/zenodo.23134979).
+The bibliography places the original graph reference and Reza's source
+preprint alongside verified ring-graph, Laplacian, partition and tensor
+background. Citation checks and omitted ambiguous suggestions are recorded in
+[the bibliography audit](../notes/bibliography-review.md). The source preprint is [Zenodo DOI10.5281/zenodo.23134979](https://doi.org/10.5281/zenodo.23134979).
 Its public PDF has the same SHA256 as the previously supplied source.
 The source PDF is linked rather than copied into this repository.
 
