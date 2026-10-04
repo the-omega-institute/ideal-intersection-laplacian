@@ -1,0 +1,100 @@
+{
+  "exponents": [
+    2,
+    2,
+    3
+  ],
+  "vertices": 34,
+  "quotient": [
+    [
+      21,
+      0,
+      -4,
+      0,
+      -6,
+      0,
+      -11
+    ],
+    [
+      0,
+      21,
+      -4,
+      0,
+      0,
+      -6,
+      -11
+    ],
+    [
+      -2,
+      -2,
+      27,
+      0,
+      -6,
+      -6,
+      -11
+    ],
+    [
+      0,
+      0,
+      0,
+      23,
+      -6,
+      -6,
+      -11
+    ],
+    [
+      -2,
+      0,
+      -4,
+      -3,
+      26,
+      -6,
+      -11
+    ],
+    [
+      0,
+      -2,
+      -4,
+      -3,
+      -6,
+      26,
+      -11
+    ],
+    [
+      -2,
+      -2,
+      -4,
+      -3,
+      -6,
+      -6,
+      23
+    ]
+  ],
+  "quotient_characteristic_polynomial": "x*(x - 34)*(x - 33)*(x - 20)*(x**3 - 80*x**2 + 2099*x - 18052)",
+  "full_characteristic_polynomial": "x*(x - 34)**11*(x - 33)*(x - 32)**10*(x - 31)**3*(x - 26)**2*(x - 23)**2*(x - 20)*(x**3 - 80*x**2 + 2099*x - 18052)",
+  "equal_pair_antisymmetric_block": [
+    [
+      21,
+      -6
+    ],
+    [
+      -2,
+      32
+    ]
+  ],
+  "equal_pair_antisymmetric_eigenvalues": [
+    20,
+    33
+  ],
+  "irreducible_cubic_modulo_5_values": [
+    3,
+    3,
+    4,
+    2,
+    3
+  ],
+  "direct_full_vs_quotient": "passed",
+  "sympy": "1.14.0",
+  "script_sha256": "a88b6d02ca627238d7db72181e9d55f53d8b2bd96145d85e63e0493f1c1176fc",
+  "scope": "Exact finite characteristic-polynomial check for exponent vector (2,2,3); not a general-exponent theorem or Lean verification."
+}

@@ -1,8 +1,10 @@
 # First task: Laplacian integrality
 
-**Status:** graph convention reviewed; first proofs are in PR #2. PR #3
-contains the corrected repeated-exponent diagnostic and a proof covering
-all `(a,a,b)` with `a=2,3,4`, `b>=1`. Full Q3 remains open.
+**Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
+consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
+the unified cutoff and all `(a,a,b)` with `a=2,3,4`, `b>=1`.
+The corrected repeated-exponent diagnostic and exact certificates remain
+available. Full Q3 remains open.
 
 Read [the exact diagnostic and finite-reduction proof](notes/aa-b-diagnostic.md).
 With SymPy 1.14.0, reproduce the requested output using:
@@ -23,15 +25,41 @@ preprint on ideal intersection graphs of `Z_n`, as the first follow-on task.
 
 ## First deliverable
 
-A short mathematical note fixing the precise graph definition, the parameter
-range, the Laplacian convention and the known cases, with attribution to an
-available public source. The note should state the remaining characterization
-question exactly before any computational search begins.
+The first note fixes the graph definition and Laplacian convention, gives
+the squarefree classification and an unequal-exponent infinite family, and
+includes a public reference for the originating graph. Reza's unannounced
+preprint is kept outside the public repository.
 
-Next, examine the generalized join reduction for an obstruction to integrality
-in the remaining cases. Use small, exact checks only to diagnose a concrete
-conjecture or verify a derived identity. Numerical eigenvalue approximations
-alone do not establish integrality or nonintegrality.
+Read [Reza's integrated extension](notes/repeated-exponent-family.md).
+Next, address exponent triples outside the two proved families and nonsquarefree
+vectors with more prime factors. The `(2,2,3)` example has an integral
+antisymmetric block but a nonintegral remaining block, so a general proof
+must handle this distinction. Use small, exact checks to diagnose stated
+conjectures; numerical approximations do not establish integrality.
+
+## Reproduce the checks
+
+The infinite-family block checker uses Python 3.10 or later and its standard
+library:
+
+```sh
+python3 scripts/check_integrality_obstructions.py
+```
+
+For the exact `(2,2,3)` characteristic-polynomial diagnostic, install the
+pinned SymPy dependency in your own environment:
+
+```sh
+python3 -m pip install -r requirements-verification.txt
+python3 scripts/check_remaining_case.py
+python3 scripts/check_repeated_exponent_family.py
+```
+
+Compare outputs with `results/integrality-obstructions.json` and
+`results/remaining-case-2-2-3.json` and `results/repeated-exponent-family.json`.
+The new checker also verifies exact polynomial identities; its direct graph
+checks cover 34, 174 and 548 vertices. These are finite independent checks;
+the infinite-family claims use the written proofs. No Lean run is reported.
 
 ## Contribution checklist
 
