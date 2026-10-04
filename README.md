@@ -25,8 +25,13 @@ general six-support complement quotient:
 [read the proof and exact diagnostic](notes/one-unit-exponent.md).
 The same quotient now settles **every `(2,b,c)`, b,c >= 1**:
 [read the minimum-two proof](notes/minimum-two.md). Thus every triple
-with minimum exponent at most2 is nonintegral. Pairwise unequal exponents
-all at least3 and the full characterization remain open.
+with minimum exponent at most2 is nonintegral.
+We now also settle **every `(3,b,c)`, b,c >= 1**, and prove the uniform
+cutoff **`c >= 4a^2 - 2a`** for ordered `2 <= a <= b <= c`:
+[read the cutoff and minimum-three proof](notes/distinct-tail.md).
+Thus every triple with minimum exponent at most3 is nonintegral.
+The remaining three-prime region is `4 <= a < b < c < 4a^2 - 2a`;
+the full characterization remains open.
 
 ## Start here
 
@@ -37,6 +42,7 @@ all at least3 and the full characterization remain open.
 | Read the complete repeated-exponent theorem | [All (a,a,b) proof](notes/repeated-exponent-completion.md) · [Exact certificate](results/repeated-exponent-completion.json) |
 | Read the unit-exponent theorem and unequal-triple diagnostic | [All (1,b,c) proof](notes/one-unit-exponent.md) · [Requested 35-case output](results/fully-distinct-diagnostic.txt) |
 | Read the minimum-two theorem | [All (2,b,c) proof](notes/minimum-two.md) · [Exact certificate](results/minimum-two.json) |
+| Read the uniform cutoff and minimum-three theorem | [Proof](notes/distinct-tail.md) · [Complete 325-case certificate](results/distinct-tail.json) |
 | Read the source preprint and original Q3 | [Zenodo DOI10.5281/zenodo.23134979](https://doi.org/10.5281/zenodo.23134979) |
 | Read the requested (a,a,b) diagnostic and fixed-a theorem | [Exact diagnostic and proof](notes/aa-b-diagnostic.md) |
 | Read the sharper cutoff and complete a=5,6 families | [Second linear cutoff](notes/second-linear-cutoff.md) |
@@ -65,7 +71,11 @@ The complement quotient now also settles every triple with a unit exponent.
 Reza has hand-checked the repeated-exponent completion identities and gap.
 Two positive-coefficient expansions and a single rational interval now
 settle every triple with an exponent of two, as well.
-The next mathematical question is three pairwise distinct exponents all at least3;
+The uniform endpoint cutoff reduces the remaining pairs for any fixed minimum
+exponent to a finite set. For minimum3, the derived 325 pairs have complete
+integer sign certificates; positive endpoint expansions and one rational
+exception close the whole family. No arbitrary parameter cutoff is used.
+The next mathematical question is the region `4 <= a < b < c < 4a^2 - 2a`;
 nonsquarefree vectors with more than three prime factors also remain open.
 
 The source preprint is public on

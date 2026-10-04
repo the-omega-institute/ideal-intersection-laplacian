@@ -3,7 +3,8 @@
 **Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
 consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
 the successive linear cutoffs, all `(a,a,b)` with `a,b>=1`, and all
-`(1,b,c)` and `(2,b,c)` with `b,c>=1`.
+`(1,b,c)`, `(2,b,c)` and `(3,b,c)` with `b,c>=1`, plus the uniform
+cutoff `c >= 4a^2 - 2a` for ordered `2 <= a <= b <= c`.
 The corrected repeated-exponent diagnostic and exact certificates remain
 available. Full Q3 remains open.
 
@@ -20,14 +21,20 @@ python3 scripts/check_repeated_exponent_completion.py
 python3 scripts/check_six_support_quotient.py
 python3 scripts/check_fully_distinct.py
 python3 scripts/check_minimum_two.py
+python3 scripts/check_distinct_tail.py
 ```
 
 The [completion proof](notes/repeated-exponent-completion.md) settles the
 remaining factor indices using a uniform cubic sign interval. The next
-focused question is the six-support quotient for three pairwise distinct
-exponents all at least3. The [complement interval proof](notes/one-unit-exponent.md)
+focused question is the six-support quotient for the remaining ordered region
+`4 <= a < b < c < 4a^2 - 2a`. The [complement interval proof](notes/one-unit-exponent.md)
 and [positive expansions](notes/minimum-two.md) now settle every triple
-with minimum exponent at most2. Derive an exact obstruction for a stated subfamily;
+with minimum exponent at most2. The [uniform cutoff](notes/distinct-tail.md)
+reduces each fixed minimum exponent to finitely many pairs; the complete
+325-case integer endpoint certificate at minimum3 closes that entire family.
+Next seek a uniform nonvanishing/sign argument for the remaining region,
+or a sharper cutoff using the full endpoint cubic. Derive an exact
+obstruction for a stated subfamily;
 the coordinate-swap decomposition is specific to repeated exponents.
 Do not replace the open classification by an arbitrary finite scan.
 

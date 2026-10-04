@@ -1,7 +1,9 @@
 \section{Exact verification and reproducibility}
 \label{sec:verification}
 
-The infinite-family conclusions follow from the written proofs above.
+The infinite-family conclusions follow from the proofs above, including
+the explicitly exhausted finite certificates in the repeated-exponent and
+minimum-three arguments.
 The accompanying computations use integer or rational arithmetic to
 verify embeddings, identities and finite certificates. In particular,
 the all-$b$ result for $a=2,3,4$ uses the exhaustive divisor criterion,
@@ -83,6 +85,19 @@ and both positive-coefficient expansions that exhaust the infinite range.
 It reconstructs the single exceptional quintic at $(2,3,4)$ and checks
 its rational endpoint values with separate Horner evaluation and a Sturm
 count. No new parameter range is enumerated.
+\item \path{scripts/check_distinct_tail.py} reconstructs the general
+six-support complement quintic and checks its cubic first endpoint,
+the uniform cutoff identity and positive remainder, and both
+minimum-three second-endpoint expansions. The cutoff itself derives
+the finite domain $4\leq b<c<30$, containing exactly $325$ pairs.
+For every pair the checker reconstructs the integer quotient quintic,
+matches its symbolic specialization, and checks the displayed root
+interval using separate rational Horner arithmetic. Separate cubic
+Horner evaluation confirms all first-endpoint values: $257$ positive,
+$68$ negative and no zero. The $(3,4,5)$ rational exception also has a
+Sturm count of one in $(1,3/2)$. The minimum-three theorem uses this
+complete finite certificate; the general cutoff uses the written
+positive-coefficient argument.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

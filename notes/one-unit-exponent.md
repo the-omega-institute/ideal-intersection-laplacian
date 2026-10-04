@@ -1,8 +1,9 @@
 # Every three-prime graph with a unit exponent is nonintegral
 
-**Update:** the subsequent [minimum-two proof](minimum-two.md) also settles
-every triple with an exponent of two. The current remaining fully distinct
-domain has all exponents at least3; the original diagnostic outputs below
+**Update:** the subsequent [minimum-two proof](minimum-two.md) and
+[uniform cutoff/minimum-three proof](distinct-tail.md) settle every triple
+with minimum exponent at most3. The current remaining fully distinct
+domain is `4 <= a < b < c < 4a^2-2a`; the original diagnostic outputs below
 retain their recorded scope.
 
 **Theorem.** For distinct primes p,q,r and every b,c≥1, the ideal
@@ -11,9 +12,9 @@ The prime factors may be permuted. This includes all fully distinct
 triples `(1,b,c)` with `2 <= b < c`, without any bound on b or c.
 
 The proof uses the complement of the six-support quotient and does not
-assume equal exponents. Fully distinct triples whose exponents are all
-at least2, and nonsquarefree vectors with more than three prime factors,
-remain open. No Lean verification is claimed.
+assume equal exponents. The later results linked above narrow the remaining
+three-prime domain; nonsquarefree vectors with more than three prime factors
+also remain open. No Lean verification is claimed.
 
 ## General six-support quotient
 
