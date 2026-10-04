@@ -120,7 +120,7 @@ For `(a,b)=(20,22)`, exact expansion gives
 (a-2)(b-2) Delta_ab = 40(13c^2-414c-720).
 ```
 
-The quadratic is232 at c=34 and increases thereafter. Also `k_a<0`
+The quadratic is 232 at c=34 and increases thereafter. Also `k_a<0`
 for c>=34. Hence every integer c>=34 is excluded in the stated classes;
 in this fixed pair they are all-even triples, so a remaining largest
 exponent must be even and at most32. This improves the preceding c<40
