@@ -13,6 +13,7 @@ This is a new research track; no complete characterization is claimed here.
 | What you want | Where to go |
 | --- | --- |
 | Understand the first task and current status | [Research plan](RESEARCH-PLAN.md) |
+| Read the modular endpoint script review and corrected candidate logic | [Review](notes/modular-endpoints-review.md) · [Full root sets](results/modular-endpoints.json) · [Independent verification](results/modular-endpoints-verification.json) |
 | Discuss a conjecture or share a checked argument | [Project issues](https://github.com/the-omega-institute/ideal-intersection-laplacian/issues) |
 | Review proposed additions | [Pull requests](https://github.com/the-omega-institute/ideal-intersection-laplacian/pulls) |
 | Read the previous joint paper | [Binary subspace orthogonality project](https://github.com/the-omega-institute/binary-subspace-orthogonality) |

@@ -4,11 +4,11 @@ Modular endpoint surface analysis for the fully-distinct region.
 For each prime p and each endpoint x_val in {1, 2}, compute for
 every (a mod p, b mod p) the set of residues c mod p such that
 h_C(x_val) ≡ 0 mod p. From the two endpoint sets, form S_p, the
-set of residue triples (a, b, c) mod p where BOTH endpoints
-vanish.
+set of residue triples (a, b, c) mod p where AT LEAST ONE endpoint
+vanishes. This union is the necessary low-root candidate condition.
 
-If S_p is empty for some prime p, then no integer triple has both
-h_C(1) = 0 and h_C(2) = 0. Combined with the uniform root in
+If S_p is empty for some prime p, then no integer triple has either
+h_C(1) = 0 or h_C(2) = 0. Combined with the uniform root in
 (0,3), the fully-distinct region is settled at that prime.
 
 Uses the corrected reflection N = |V(H)| = a + b + c + ab + ac + bc.
@@ -16,6 +16,8 @@ Uses the corrected reflection N = |V(H)| = a + b + c + ab + ac + bc.
 Requires sympy.
 """
 
+import argparse
+import json
 import sys
 
 try:
@@ -75,42 +77,62 @@ def root_set(h_expr, p):
     return result
 
 
+def modular_analysis(h1, h2, p):
+    roots_1 = root_set(h1, p)
+    roots_2 = root_set(h2, p)
+    surviving = []
+    pairs = []
+    both_zero = 0
+    for a_r in range(p):
+        for b_r in range(p):
+            first_roots = set(roots_1[(a_r, b_r)])
+            second_roots = set(roots_2[(a_r, b_r)])
+            either_roots = sorted(first_roots | second_roots)
+            both_zero += len(first_roots & second_roots)
+            surviving.extend((a_r, b_r, c_r) for c_r in either_roots)
+            pairs.append({'a': a_r, 'b': b_r, 'c_roots_endpoint_one': sorted(first_roots),
+                          'c_roots_endpoint_two': sorted(second_roots), 'c_roots_either_endpoint': either_roots})
+    return {'prime': p, 'surviving_union_count': len(surviving),
+            'excluded_both_nonzero_count': p ** 3 - len(surviving),
+            'both_zero_intersection_count': both_zero, 'sample_union': surviving[:8], 'pairs': pairs}
+
+
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--json', action='store_true')
+    arguments = parser.parse_args()
+    B, N = build_B_and_N()
+    h1 = build_h_C_endpoint(1, B, N)
+    h2 = build_h_C_endpoint(2, B, N)
+    primes = [2, 3, 5, 7, 11, 13]
+    rows = [modular_analysis(h1, h2, prime) for prime in primes]
+    if arguments.json:
+        print(json.dumps({'necessary_condition': 'h_C(1)=0 OR h_C(2)=0; union, not intersection',
+                          'primes': primes, 'prime_tables': rows,
+                          'scope': 'Complete residue-root sets at the six fixed primes proposed by the contributor. Modular survivors are necessary candidates, not asserted integer zeros or integral spectra. Zero/equal coordinate residues are retained. FullQ3 remains open.'}, indent=2))
+        return
     print("=" * 78)
     print("Modular endpoint surface analysis (fully-distinct region)")
     print("=" * 78)
     print()
 
     print("Building B, N, h_C(1), h_C(2) symbolically ...")
-    B, N = build_B_and_N()
     print(f"  N = {N}")
-    h1 = build_h_C_endpoint(1, B, N)
-    h2 = build_h_C_endpoint(2, B, N)
     print("  done.")
     print()
 
-    primes = [2, 3, 5, 7, 11, 13]
-
-    for p in primes:
+    for row in rows:
+        p = row['prime']
         print(f"--- p = {p} ---")
-        roots_1 = root_set(h1, p)
-        roots_2 = root_set(h2, p)
-
-        S_p = []
-        for a_r in range(p):
-            for b_r in range(p):
-                R1 = set(roots_1[(a_r, b_r)])
-                R2 = set(roots_2[(a_r, b_r)])
-                for c_r in sorted(R1 & R2):
-                    S_p.append((a_r, b_r, c_r))
-
-        if not S_p:
+        if not row['surviving_union_count']:
             print(f"  S_p = EMPTY")
-            print(f"  -> no integer triple has both endpoints zero")
+            print(f"  -> no integer triple has either endpoint zero")
             print(f"  -> region settled at prime {p}")
         else:
-            print(f"  |S_p| = {len(S_p)} residue triples survive")
-            print(f"  sample: {S_p[:8]}{' ...' if len(S_p) > 8 else ''}")
+            print(f"  |S_p| = {row['surviving_union_count']} residue triples survive (union)")
+            print(f"  excluded with both endpoints nonzero: {row['excluded_both_nonzero_count']}")
+            print(f"  both endpoints zero: {row['both_zero_intersection_count']} (separate diagnostic)")
+            print(f"  sample: {row['sample_union']}{' ...' if row['surviving_union_count'] > 8 else ''}")
         print()
 
     print("=" * 78)
