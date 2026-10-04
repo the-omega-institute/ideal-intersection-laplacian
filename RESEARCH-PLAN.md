@@ -54,6 +54,12 @@ z^2+z+1 excludes half the previously remaining sum classes, with no
 size or ratio bound. Compatible hypothetical odd roots would all be
 bmod8. The remaining weighted-sum class and one-odd-exponent patterns
 are focused next cases; congruence compatibility does not imply integrality.
+The [clustered-root proof](notes/clustered-odd-roots.md) now requires
+`a+c=b(b+2)mod128` and `b=11or15mod16`, followed by the stated third-shift
+parity condition. It uses the exact value factorization at b and a
+derivative identity; a further binary cubic excludes cases passing both.
+The compatible classes, combined with endpoint-zero/interval restrictions,
+remain a focused next problem. No exponent or modulus range is scanned.
 The [requested endpoint diagnostic](notes/endpoint-surfaces-diagnostic.md)
 exhausts all66pairs `4<=a<b<=15` and all integer `c>b` by exact divisor
 reduction, finding neither endpoint zero. With the low-root theorem and

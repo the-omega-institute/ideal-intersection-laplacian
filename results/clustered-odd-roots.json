@@ -1,0 +1,639 @@
+{
+  "base_commit": "58e9a22c3bcaf7bb2b046c8f3664ca8b7cf48540",
+  "written_theorem": "For positive residue roles (1,3,2)mod4, integer spectrum requires a+c=b(b+2)mod128, b=11or15mod16, and the specified third-shift parity condition. All permutations; no size/ratio bound.",
+  "generic_direct_reflected_quintic_and_six_symmetry_checks": "passed",
+  "exact_value_identity": "a**2*b**2*c**2*(a - b*(b + 2) + c)",
+  "derivative_identity": {
+    "substitution": "(a,b,c)=(4u+1,4v+3,b(b+2)+128t-a)",
+    "expected_modulo_sixty_four": "16*v**2 - 16*v + 32",
+    "difference_coefficients_checked": 84
+  },
+  "derivative_residue_rows": [
+    {
+      "v_modulo_four": 0,
+      "b_modulo_sixteen": 3,
+      "derivative_modulo_sixty_four": 32
+    },
+    {
+      "v_modulo_four": 1,
+      "b_modulo_sixteen": 7,
+      "derivative_modulo_sixty_four": 32
+    },
+    {
+      "v_modulo_four": 2,
+      "b_modulo_sixteen": 11,
+      "derivative_modulo_sixty_four": 0
+    },
+    {
+      "v_modulo_four": 3,
+      "b_modulo_sixteen": 15,
+      "derivative_modulo_sixty_four": 0
+    }
+  ],
+  "third_shift_coefficient_checks": [
+    {
+      "b_residue_modulo_sixteen": 11,
+      "substitution": "(4*u + 1, 16*v + 11, 128*t - 4*u + (16*v + 11)*(16*v + 13) - 1)",
+      "scaled_integer_coefficients_checked": 249,
+      "binary_identity": "t + z**3 + z**2 + z*(u**2 + v + 1)",
+      "binary_difference_coefficients_checked": 249
+    },
+    {
+      "b_residue_modulo_sixteen": 15,
+      "substitution": "(4*u + 1, 16*v + 15, 128*t - 4*u + (16*v + 15)*(16*v + 17) - 1)",
+      "scaled_integer_coefficients_checked": 249,
+      "binary_identity": "t + z**3 + z**2 + z*(v + 1)",
+      "binary_difference_coefficients_checked": 249
+    }
+  ],
+  "binary_patterns": [
+    {
+      "b_residue_modulo_sixteen": 11,
+      "shift_parities_u_v_t": [
+        0,
+        0,
+        0
+      ],
+      "polynomial": "z**3 + z**2 + z",
+      "factorization": "z*(z**2 + z + 1)",
+      "splits_over_binary_field": false
+    },
+    {
+      "b_residue_modulo_sixteen": 11,
+      "shift_parities_u_v_t": [
+        0,
+        0,
+        1
+      ],
+      "polynomial": "z**3 + z**2 + z + 1",
+      "factorization": "(z + 1)**3",
+      "splits_over_binary_field": true
+    },
+    {
+      "b_residue_modulo_sixteen": 11,
+      "shift_parities_u_v_t": [
+        0,
+        1,
+        0
+      ],
+      "polynomial": "z**3 + z**2",
+      "factorization": "z**2*(z + 1)",
+      "splits_over_binary_field": true
+    },
+    {
+      "b_residue_modulo_sixteen": 11,
+      "shift_parities_u_v_t": [
+        0,
+        1,
+        1
+      ],
+      "polynomial": "z**3 + z**2 + 1",
+      "factorization": "z**3 + z**2 + 1",
+      "splits_over_binary_field": false
+    },
+    {
+      "b_residue_modulo_sixteen": 11,
+      "shift_parities_u_v_t": [
+        1,
+        0,
+        0
+      ],
+      "polynomial": "z**3 + z**2",
+      "factorization": "z**2*(z + 1)",
+      "splits_over_binary_field": true
+    },
+    {
+      "b_residue_modulo_sixteen": 11,
+      "shift_parities_u_v_t": [
+        1,
+        0,
+        1
+      ],
+      "polynomial": "z**3 + z**2 + 1",
+      "factorization": "z**3 + z**2 + 1",
+      "splits_over_binary_field": false
+    },
+    {
+      "b_residue_modulo_sixteen": 11,
+      "shift_parities_u_v_t": [
+        1,
+        1,
+        0
+      ],
+      "polynomial": "z**3 + z**2 + z",
+      "factorization": "z*(z**2 + z + 1)",
+      "splits_over_binary_field": false
+    },
+    {
+      "b_residue_modulo_sixteen": 11,
+      "shift_parities_u_v_t": [
+        1,
+        1,
+        1
+      ],
+      "polynomial": "z**3 + z**2 + z + 1",
+      "factorization": "(z + 1)**3",
+      "splits_over_binary_field": true
+    },
+    {
+      "b_residue_modulo_sixteen": 15,
+      "shift_parities_u_v_t": [
+        0,
+        0,
+        0
+      ],
+      "polynomial": "z**3 + z**2 + z",
+      "factorization": "z*(z**2 + z + 1)",
+      "splits_over_binary_field": false
+    },
+    {
+      "b_residue_modulo_sixteen": 15,
+      "shift_parities_u_v_t": [
+        0,
+        0,
+        1
+      ],
+      "polynomial": "z**3 + z**2 + z + 1",
+      "factorization": "(z + 1)**3",
+      "splits_over_binary_field": true
+    },
+    {
+      "b_residue_modulo_sixteen": 15,
+      "shift_parities_u_v_t": [
+        0,
+        1,
+        0
+      ],
+      "polynomial": "z**3 + z**2",
+      "factorization": "z**2*(z + 1)",
+      "splits_over_binary_field": true
+    },
+    {
+      "b_residue_modulo_sixteen": 15,
+      "shift_parities_u_v_t": [
+        0,
+        1,
+        1
+      ],
+      "polynomial": "z**3 + z**2 + 1",
+      "factorization": "z**3 + z**2 + 1",
+      "splits_over_binary_field": false
+    },
+    {
+      "b_residue_modulo_sixteen": 15,
+      "shift_parities_u_v_t": [
+        1,
+        0,
+        0
+      ],
+      "polynomial": "z**3 + z**2 + z",
+      "factorization": "z*(z**2 + z + 1)",
+      "splits_over_binary_field": false
+    },
+    {
+      "b_residue_modulo_sixteen": 15,
+      "shift_parities_u_v_t": [
+        1,
+        0,
+        1
+      ],
+      "polynomial": "z**3 + z**2 + z + 1",
+      "factorization": "(z + 1)**3",
+      "splits_over_binary_field": true
+    },
+    {
+      "b_residue_modulo_sixteen": 15,
+      "shift_parities_u_v_t": [
+        1,
+        1,
+        0
+      ],
+      "polynomial": "z**3 + z**2",
+      "factorization": "z**2*(z + 1)",
+      "splits_over_binary_field": true
+    },
+    {
+      "b_residue_modulo_sixteen": 15,
+      "shift_parities_u_v_t": [
+        1,
+        1,
+        1
+      ],
+      "polynomial": "z**3 + z**2 + 1",
+      "factorization": "z**3 + z**2 + 1",
+      "splits_over_binary_field": false
+    }
+  ],
+  "third_shift_conditions": {
+    "b=16v+11": "t+u+v=1mod2",
+    "b=16v+15": "t+v=1mod2",
+    "parameters": "a=4u+1,t=(a+c-b(b+2))/128"
+  },
+  "fixtures": [
+    {
+      "residue_role_exponents_a_b_c": [
+        13,
+        27,
+        34
+      ],
+      "independent_coefficients": [
+        1,
+        -1933,
+        1154483,
+        -220738283,
+        1331941704,
+        -1576362060
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -464006088
+        ],
+        [
+          2,
+          213773184
+        ],
+        [
+          3,
+          463833216
+        ],
+        [
+          4,
+          292985316
+        ],
+        [
+          5,
+          -292005240
+        ],
+        [
+          6,
+          -1284419088
+        ]
+      ],
+      "h_at_b": -104821382016,
+      "h_prime_at_b": -8212603008,
+      "independent_principal_cofactor_sum": -326561663232,
+      "prior_weighted_sum_modulo_thirty_two": 27,
+      "sum_difference_modulo_one_twenty_eight": 32,
+      "b_modulo_sixteen": 11,
+      "binary_shifted_polynomial": null,
+      "new_obstruction_stage": "value",
+      "nonlinear_rational_factor": true
+    },
+    {
+      "residue_role_exponents_a_b_c": [
+        13,
+        19,
+        386
+      ],
+      "independent_coefficients": [
+        1,
+        -13853,
+        50922491,
+        -28192377787,
+        544670516016,
+        -518765928252
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -2236881384
+        ],
+        [
+          2,
+          458212750944
+        ],
+        [
+          3,
+          862888005120
+        ],
+        [
+          4,
+          1212093585300
+        ],
+        [
+          5,
+          1506133863528
+        ],
+        [
+          6,
+          1745312879856
+        ]
+      ],
+      "h_at_b": 0,
+      "h_prime_at_b": -471870201440,
+      "independent_principal_cofactor_sum": -8965533827360,
+      "prior_weighted_sum_modulo_thirty_two": 27,
+      "sum_difference_modulo_one_twenty_eight": 0,
+      "b_modulo_sixteen": 3,
+      "binary_shifted_polynomial": null,
+      "new_obstruction_stage": "derivative",
+      "nonlinear_rational_factor": true
+    },
+    {
+      "residue_role_exponents_a_b_c": [
+        29,
+        27,
+        754
+      ],
+      "independent_coefficients": [
+        1,
+        -45437,
+        549892067,
+        -766568733595,
+        21073441338072,
+        -20953702156140
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -646279705032
+        ],
+        [
+          2,
+          18131303995200
+        ],
+        [
+          3,
+          35382346661376
+        ],
+        [
+          4,
+          51110144920068
+        ],
+        [
+          5,
+          65317994307720
+        ],
+        [
+          6,
+          78009189270768
+        ]
+      ],
+      "h_at_b": 0,
+      "h_prime_at_b": -19122231014208,
+      "independent_principal_cofactor_sum": -516300237383616,
+      "prior_weighted_sum_modulo_thirty_two": 27,
+      "sum_difference_modulo_one_twenty_eight": 0,
+      "b_modulo_sixteen": 11,
+      "binary_shifted_polynomial": "z**3 + z**2 + z",
+      "new_obstruction_stage": "binary_cubic",
+      "nonlinear_rational_factor": true
+    },
+    {
+      "residue_role_exponents_a_b_c": [
+        45,
+        47,
+        2258
+      ],
+      "independent_coefficients": [
+        1,
+        -216901,
+        12225901551,
+        -50397570063971,
+        2392371388396820,
+        -2381494581724500
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -39508537707000
+        ],
+        [
+          2,
+          2201755718555280
+        ],
+        [
+          3,
+          4342371534663360
+        ],
+        [
+          4,
+          6382412253012876
+        ],
+        [
+          5,
+          8321951210794200
+        ],
+        [
+          6,
+          10161061739992560
+        ]
+      ],
+      "h_at_b": 0,
+      "h_prime_at_b": -2264069200889664,
+      "independent_principal_cofactor_sum": -106411252441814208,
+      "prior_weighted_sum_modulo_thirty_two": 27,
+      "sum_difference_modulo_one_twenty_eight": 0,
+      "b_modulo_sixteen": 15,
+      "binary_shifted_polynomial": "z**3 + z**2 + z",
+      "new_obstruction_stage": "binary_cubic",
+      "nonlinear_rational_factor": true
+    },
+    {
+      "residue_role_exponents_a_b_c": [
+        25,
+        27,
+        758
+      ],
+      "independent_coefficients": [
+        1,
+        -42521,
+        481392311,
+        -625987180951,
+        17179365199860,
+        -16950867286500
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -397007917800
+        ],
+        [
+          2,
+          14907764847600
+        ],
+        [
+          3,
+          28966337832960
+        ],
+        [
+          4,
+          41781596841276
+        ],
+        [
+          5,
+          53356426655400
+        ],
+        [
+          6,
+          63693711038160
+        ]
+      ],
+      "h_at_b": 0,
+      "h_prime_at_b": -15574482693504,
+      "independent_principal_cofactor_sum": -420511032724608,
+      "prior_weighted_sum_modulo_thirty_two": 27,
+      "sum_difference_modulo_one_twenty_eight": 0,
+      "b_modulo_sixteen": 11,
+      "binary_shifted_polynomial": "z**3 + z**2",
+      "new_obstruction_stage": "compatible",
+      "nonlinear_rational_factor": true
+    },
+    {
+      "residue_role_exponents_a_b_c": [
+        29,
+        27,
+        882
+      ],
+      "independent_coefficients": [
+        1,
+        -52989,
+        744606435,
+        -1132146008603,
+        33513511065048,
+        -33110409920364
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -728300310472
+        ],
+        [
+          2,
+          29393984179008
+        ],
+        [
+          3,
+          57260909279232
+        ],
+        [
+          4,
+          82876939449860
+        ],
+        [
+          5,
+          106246537879176
+        ],
+        [
+          6,
+          127374166484208
+        ]
+      ],
+      "h_at_b": 61047890846208,
+      "h_prime_at_b": -25998088398912,
+      "independent_principal_cofactor_sum": -640900495924416,
+      "prior_weighted_sum_modulo_thirty_two": 27,
+      "sum_difference_modulo_one_twenty_eight": 0,
+      "b_modulo_sixteen": 11,
+      "binary_shifted_polynomial": "z**3 + z**2 + z + 1",
+      "new_obstruction_stage": "compatible",
+      "nonlinear_rational_factor": true
+    },
+    {
+      "residue_role_exponents_a_b_c": [
+        29,
+        31,
+        994
+      ],
+      "independent_coefficients": [
+        1,
+        -63701,
+        1072870223,
+        -1863471015859,
+        58609825728468,
+        -58012027573332
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -1264600054200
+        ],
+        [
+          2,
+          51762321762768
+        ],
+        [
+          3,
+          101075172805824
+        ],
+        [
+          4,
+          146680386474636
+        ],
+        [
+          5,
+          188584394640408
+        ],
+        [
+          6,
+          226793627646000
+        ]
+      ],
+      "h_at_b": 0,
+      "h_prime_at_b": -53839878650240,
+      "independent_principal_cofactor_sum": -1669036238157440,
+      "prior_weighted_sum_modulo_thirty_two": 27,
+      "sum_difference_modulo_one_twenty_eight": 0,
+      "b_modulo_sixteen": 15,
+      "binary_shifted_polynomial": "z**3 + z**2",
+      "new_obstruction_stage": "compatible",
+      "nonlinear_rational_factor": true
+    },
+    {
+      "residue_role_exponents_a_b_c": [
+        45,
+        47,
+        2386
+      ],
+      "independent_coefficients": [
+        1,
+        -229061,
+        13621980911,
+        -57879664208611,
+        2819257410603540,
+        -2802422810294100
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -41031442147320
+        ],
+        [
+          2,
+          2604682326260880
+        ],
+        [
+          3,
+          5134800218569920
+        ],
+        [
+          4,
+          7549403952921996
+        ],
+        [
+          5,
+          9848575241962200
+        ],
+        [
+          6,
+          12032395792838640
+        ]
+      ],
+      "h_at_b": 3259654660108800,
+      "h_prime_at_b": -2531253260311104,
+      "independent_principal_cofactor_sum": -115709248574513088,
+      "prior_weighted_sum_modulo_thirty_two": 27,
+      "sum_difference_modulo_one_twenty_eight": 0,
+      "b_modulo_sixteen": 15,
+      "binary_shifted_polynomial": "z**3 + z**2 + z + 1",
+      "new_obstruction_stage": "compatible",
+      "nonlinear_rational_factor": true
+    }
+  ],
+  "independent_six_by_six_integer_determinants": 56,
+  "independent_five_by_five_integer_principal_cofactors": 48,
+  "source_sha256": "b78d0015cd65c5b3f3aa3eaf78afd8ed715370cf73496410e7d5e67506aadf30",
+  "sympy": "1.14.0",
+  "scope": "Written infinite-family necessary conditions from clustered odd roots, exact value identity, derivative and third shifted binary cubic. Arbitrary-shift coefficient identities, four derivative residues, sixteen binary parity patterns and eight independent full-quintic/derivative fixtures. No exponent or modulus range scan, numerical spectrum or Lean. Compatible controls are not integral. FullQ3 and higher-prime nonsquarefree vectors remain open."
+}

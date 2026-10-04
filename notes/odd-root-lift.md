@@ -59,6 +59,10 @@ three odd roots, if integers, would be b modulo eight, and 512 would
 divide h_C(b). This is further root information, not a claim that any
 compatible triple is integral.
 
+The [subsequent clustered-root proof](clustered-odd-roots.md) converts
+this value condition into a+c=b(b+2)mod128, restricts b by its derivative,
+and derives additional exclusions from the third shifted binary cubic.
+
 ## Additional range and exact checks
 
 There are eight residues modulo thirty-two in each of the three roles,

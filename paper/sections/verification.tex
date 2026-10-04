@@ -252,6 +252,20 @@ the zero-root checks. The $64$ additional role-ordered exclusions
 modulo thirty-two follow from the written congruence and its class count;
 no exponent or modulus range scan is needed for
 Theorem~\ref{thm:odd-root-lift}.
+\item \path{scripts/check_clustered_odd_roots.py} matches the direct
+and reflected generic quintics, all exponent permutations, and the
+exact factorization of $h_C(b)$. It checks $84$ difference coefficients
+for the derivative congruence modulo sixty-four, and $249$ scaled
+coefficients and $249$ binary-difference coefficients for each of the
+two third-shift identities. Four derivative residues and sixteen binary
+shift-parity patterns display the resulting necessary conditions.
+Eight fixtures independently reconstruct full quintics with $56$ integer
+six-by-six determinant expansions; another $48$ five-by-five principal
+cofactors reconstruct their derivatives at $b$. Two fixtures have
+$h_C(b)=0$ and satisfy the derivative divisor but fail the third-shift
+condition. Four compatible controls retain nonlinear rational factors.
+The infinite conditions in Theorem~\ref{thm:clustered-odd-roots} use
+the written root-clustering proof, with no exponent or modulus range scan.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

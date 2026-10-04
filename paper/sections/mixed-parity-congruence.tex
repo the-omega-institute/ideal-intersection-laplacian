@@ -231,3 +231,70 @@ sums are eleven modulo thirty-two. The compatible binary cubics are
 $z^3$ and $(z+1)^3$, so hypothetical integer odd roots would all be
 $b$ modulo eight, also requiring $512\mid h_C(b)$.
 The surviving congruence classes do not assert integral spectra.
+
+\begin{theorem}
+\label{thm:clustered-odd-roots}
+Let $a,b,c$ be positive exponent residue roles with
+$a\equiv1$, $b\equiv3$ and $c\equiv2\pmod4$.
+If their ideal intersection graph is Laplacian integral, then
+\[
+ a+c\equiv b(b+2)\pmod{128},\qquad b\equiv11\text{ or }15\pmod{16}.
+\]
+Moreover, put $u=(a-1)/4$ and $t=(a+c-b(b+2))/128$. Then
+\[
+ \begin{cases}
+ t+u+v\equiv1\pmod2,& b=16v+11,\\
+ t+v\equiv1\pmod2,& b=16v+15.
+ \end{cases}
+\]
+Every violation proves nonintegrality, including all exponent permutations
+and without a size or ratio bound.
+\end{theorem}
+
+\begin{proof}
+The proof of Theorem~\ref{thm:odd-root-lift} forces the three hypothetical
+integer odd complement roots to be $b$ modulo eight. The two remaining
+roots are even. Thus $512\mid h_C(b)$ and $64\mid h_C'(b)$, since each
+first-derivative term retains at least two factors divisible by eight.
+The exact quintic identity
+\[
+ h_C(b)=a^2b^2c^2\bigl(a+c-b(b+2)\bigr)
+\]
+has prefactor with $2$-adic valuation exactly two. It follows that
+$128\mid a+c-b(b+2)$, including when the value is zero.
+
+Write $(a,b,c)=(4u+1,4w+3,b(b+2)+128t-a)$.
+Coefficientwise expansion gives
+\[
+ h_C'(b)\equiv16(w^2-w+2)\pmod{64}.
+\]
+For $w\equiv0,1,2,3\pmod4$, the derivative residues are respectively
+$32,32,0,0$. Its required divisibility forces $w\equiv2$ or $3\pmod4$,
+which is the stated restriction on $b$.
+
+For the two remaining residues, put $K(z)=h_C(8z+b)/512$.
+Coefficientwise identities give $K\in\mathbb Z[u,v,t,z]$ and
+\[
+ K(z)\equiv
+ \begin{cases}
+ z^3+z^2+(1+v+u^2)z+t,&b=16v+11,\\
+ z^3+z^2+(1+v)z+t,&b=16v+15
+ \end{cases}\pmod2.
+\]
+Writing the odd roots as $b+8r_i$ and the even roots as $\eta_j$ gives
+\[
+ K(z)=\prod_{j=1}^2(8z+b-\eta_j)\prod_{i=1}^3(z-r_i).
+\]
+The even-root factors reduce to one, so the displayed binary cubic must
+split completely. For $\lambda,t\in\mathbb F_2$, the cubic
+$z^3+z^2+\lambda z+t$ splits precisely when $t=\lambda$: the two
+possibilities are $z^2(z+1)$ and $(z+1)^3$. Otherwise it is
+$z(z^2+z+1)$ or the irreducible cubic $z^3+z^2+1$.
+Using $u^2\equiv u\pmod2$ gives the two stated parity conditions.
+\end{proof}
+
+The residue-role triples $(29,27,754)$ and $(45,47,2258)$ have
+$h_C(b)=0$ and $64\mid h_C'(b)$, but their third-shift cubics fail to
+split. They show that the final condition adds exclusions even when
+the value and first-derivative conditions hold. The compatible cases
+still require another nonintegrality argument.

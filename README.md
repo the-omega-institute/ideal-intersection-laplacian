@@ -87,6 +87,12 @@ The remaining sum class admits a stronger necessary condition:
 **(1,3,2)mod4**. Every violation is nonintegral. A second shifted binary
 cubic excludes half of the classes left by the earlier sum condition:
 [read the modulo-eight root proof](notes/odd-root-lift.md).
+The same root cluster now forces **`a+c=b(b+2)mod128`** and
+**`b=11or15mod16`**, followed by an additional third-shift parity
+condition. These are necessary conditions for residue roles(1,3,2)mod4;
+every violation proves nonintegrality. The final cubic also excludes
+examples with **`h_C(b)=0`** and the required derivative divisibility:
+[read the value, derivative and third-shift proof](notes/clustered-odd-roots.md).
 
 ## Start here
 
@@ -118,6 +124,7 @@ cubic excludes half of the classes left by the earlier sum condition:
 | Read the higher-modulus diagnostic and its period-eight limit | [Review](notes/higher-2adic-moduli-review.md) · [Original output](results/higher-2adic-moduli-original.txt) · [Independent verification](results/higher-2adic-moduli-verification.json) |
 | Read the conditional derivative thresholds and new sum-congruence family | [Proof and review](notes/higher-derivatives-review.md) · [Requested output](results/higher-derivatives-original.txt) · [Independent verification](results/higher-derivatives-verification.json) |
 | Read the stronger weighted-sum condition for the remaining sum class | [Proof](notes/odd-root-lift.md) · [Exact certificate](results/odd-root-lift.json) |
+| Read the clustered-root value, derivative and third-shift conditions | [Proof](notes/clustered-odd-roots.md) · [Exact certificate](results/clustered-odd-roots.json) |
 | Discuss a conjecture or share a checked argument | [Project issues](https://github.com/the-omega-institute/ideal-intersection-laplacian/issues) |
 | Review proposed additions | [Pull requests](https://github.com/the-omega-institute/ideal-intersection-laplacian/pulls) |
 | Read the previous joint paper | [Binary subspace orthogonality project](https://github.com/the-omega-institute/binary-subspace-orthogonality) |
