@@ -52,6 +52,10 @@ Arithmetic arguments now also settle **every triple with gcd at least3**,
 **common residues1,3,4 modulo5**:
 [read the divisibility and congruence proofs](notes/arithmetic-obstructions.md).
 These results allow arbitrarily large exponent ratios and differences.
+Scaling now also settles **every triple whose exponents are all congruent
+to two modulo four**, and hence **every triple with equal 2-adic valuations**:
+[read the parity and divisibility contradiction](notes/even-exponent-congruence.md).
+This includes gcd-two triples inside the remaining even region.
 An integer complement root at two now forces the linear bound
 **`c<7a-16+40/(a+2)`** for ordered `4<=a<=b<=c`. Every all-even triple
 beyond this bound is nonintegral; **`c>=7a-12` suffices at minimum>=8**:
@@ -73,6 +77,7 @@ the full characterization remains open.
 | Read the inertia criterion and bounded-gap families | [Proof](notes/low-spectrum.md) · [Exact modular certificate](results/low-spectrum.json) |
 | Read the uniform low-root bound and growing balanced region | [Proof](notes/mixed-inertia.md) · [Exact checks](results/mixed-inertia.json) |
 | Read the common-divisor, all-odd and congruence-class theorems | [Proof](notes/arithmetic-obstructions.md) · [Exact checks](results/arithmetic-obstructions.json) |
+| Read the all-two-modulo-four and common-valuation theorems | [Proof](notes/even-exponent-congruence.md) · [Exact checks](results/even-exponent-congruence.json) |
 | Read the linear endpoint-two bound and all-even tail | [Proof](notes/endpoint-reduction.md) · [Exact checks](results/endpoint-reduction.json) |
 | Read Reza's requested finite-region run and minimum-through-seven result | [Report and proof](notes/open-region-diagnostic.md) · [Complete CSV](results/open-region-discriminants.csv) · [Independent verification](results/open-region-certificate-check.json) |
 | Read the source preprint and original Q3 | [Zenodo DOI10.5281/zenodo.23134979](https://doi.org/10.5281/zenodo.23134979) |
@@ -128,6 +133,9 @@ The endpoint-two surface now has the strict linear bound
 `c<7a-16+40/(a+2)`. Every remaining all-even triple has gcd2 and obeys
 this bound. The two endpoint equations also give exact divisor candidates
 for a fixed pair `(a,b)`; the candidate still has to satisfy the equation.
+Every possible integral triple also has unequal 2-adic valuations. In
+the remaining all-even region, at least one exponent is divisible by four
+and at least one is congruent to two modulo four.
 nonsquarefree vectors with more than three prime factors also remain open.
 
 The source preprint is public on

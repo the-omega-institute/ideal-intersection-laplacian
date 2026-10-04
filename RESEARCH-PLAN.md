@@ -23,6 +23,11 @@ settle every gcd>=3 triple, every all-odd triple and general common-residue
 classes with a quadratic nonresidue criterion. This includes residues1,3,4
 modulo5 and1,2,4,5 modulo7, with arbitrarily large unequal exponents.
 Full Q3 remains open.
+The [scaled parity obstruction](notes/even-exponent-congruence.md) settles
+every triple all congruent to two modulo four, with no minimum or ratio
+bound. Together with the earlier all-odd and gcd arguments, every common
+2-adic valuation is settled. Remaining even triples have both a multiple
+of four and an exponent congruent to two modulo four.
 The [endpoint-two reduction](notes/endpoint-reduction.md) proves
 `h_C(2)=0 => c<7a-16+40/(a+2)` for ordered minimum>=4, and settles
 every all-even triple beyond that linear bound. At minimum>=8,
@@ -47,6 +52,7 @@ python3 scripts/check_low_spectrum.py
 python3 scripts/check_mixed_inertia.py
 python3 scripts/check_arithmetic_obstructions.py
 python3 scripts/check_endpoint_reduction.py
+python3 scripts/check_even_exponent_congruence.py
 python3 scripts/check_open_region2.py
 python3 scripts/check_open_region_certificate.py
 ```
@@ -74,6 +80,10 @@ Use the new linear bound on the second surface and the exact constant-term
 divisor constraints for both surfaces. The next question is whether an
 endpoint-zero triple in the remaining region necessarily has a different
 noninteger root; divisor membership alone does not answer it.
+Apply the new unequal-valuation restriction as well. For the all-even
+region, the scaled quotient modulo two has two parity classes left:
+exactly one or exactly two odd half-exponents. The first divisibility
+conditions in those classes are compatible and do not settle them.
 The [requested open-region diagnostic](notes/open-region-diagnostic.md)
 records its exact bounds and keeps H/complement endpoint patterns separate.
 It exhausts the remaining pairs for minimum4,5,6,7 under the written cutoff,

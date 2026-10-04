@@ -14,6 +14,9 @@ integer characteristic polynomial give further complete infinite families:
 
 The exponents may be unequal with arbitrarily large ratios or differences.
 These are written arithmetic proofs; they require no exponent scan.
+A further [scaled parity argument](even-exponent-congruence.md) now
+settles every triple all congruent to two modulo four, and hence every
+common 2-adic valuation.
 Read [the manuscript source](../paper/sections/arithmetic-obstructions.tex),
 [the PDF](../paper/paper.pdf), and
 [the exact checks](../results/arithmetic-obstructions.json).

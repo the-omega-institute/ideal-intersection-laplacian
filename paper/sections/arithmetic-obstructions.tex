@@ -74,7 +74,58 @@ $x^2(x+1)^3$ for one or two odd exponents. Their complete splitting
 does not establish integrality.
 
 The arithmetic arguments do not assume that the smallest positive
-quotient root is noninteger. The necessary endpoint-zero condition of
+quotient root is noninteger. Scaling also yields an obstruction for even
+exponents whose binary reductions split completely.
+
+\begin{theorem}
+\label{thm:even-congruence}
+Every positive three-prime exponent triple with
+$a\equiv b\equiv c\equiv2\pmod4$ gives a nonintegral ideal intersection
+graph.
+\end{theorem}
+
+\begin{proof}
+Write $(a,b,c)=(4u+2,4v+2,4w+2)$, set $Q=C/2$, and put
+$f(x)=\det(xI-Q)/x$. The matrix $Q$ is integral. If all eigenvalues
+of $C$ were integers, those of $Q$ would be rational and hence integers
+by the rational-root theorem.
+
+Modulo two, $Q$ is block lower triangular. Its upper block has zero
+diagonal and all off-diagonal entries one, and its lower block is $I_3$.
+Consequently
+\[
+\det(xI-Q)\equiv x(x+1)^5\pmod2,
+\qquad f(x)\equiv(x+1)^5\pmod2.
+\]
+Thus all five hypothetical integer roots of $f$ are odd. For every odd
+integer $t$, their five factors $t-\lambda_i$ would give $32\mid f(t)$.
+On the other hand, expansion of the general scaled quotient gives the
+coefficientwise polynomial congruence
+\[
+f(2y+1)\equiv8(u+v+w+y-1)\pmod{32}.
+\]
+In particular $f(3)-f(1)\equiv8\pmod{32}$, contradicting the required
+divisibility of both values. A noninteger complement eigenvalue and its
+noninteger graph lift follow.
+\end{proof}
+
+\begin{corollary}
+\label{cor:common-valuation}
+If the three positive exponents have the same $2$-adic valuation, their
+ideal intersection graph is not Laplacian integral.
+\end{corollary}
+
+\begin{proof}
+At valuation zero, Theorem~\ref{thm:congruence} applies. At valuation
+one, Theorem~\ref{thm:even-congruence} applies. At valuation at least
+two, their common divisor is at least four, so
+Theorem~\ref{thm:common-divisor} applies.
+\end{proof}
+
+For example, $(10,14,18)$, $(14,22,34)$ and $(18,26,42)$ have gcd two
+and lie below the linear even-tail cutoff of the following section.
+The new obstruction applies regardless of the minimum exponent or ratios.
+The necessary endpoint-zero condition of
 Corollary~\ref{cor:balanced-interval} remains insufficient: the already
 settled boundary triple $(9,9,136)$ has $h_C(1)=0$ and other noninteger
 quotient roots. The remaining three-prime problem has gcd at most two,

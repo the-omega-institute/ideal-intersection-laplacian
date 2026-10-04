@@ -67,6 +67,9 @@ No enumeration of those sets or of new exponent ranges is needed here.
 The remaining all-even triples are confined to gcd two and
 `8<=a<b<c<R(a)`, outside the previously proved regions. Mixed-parity
 triples may still have an endpoint at one when `c>=R(a)`; full Q3 stays open.
+The [scaled parity theorem](even-exponent-congruence.md) additionally
+requires mixed valuations: every remaining all-even triple has at least
+one exponent divisible by four and at least one congruent to two modulo four.
 
 ## Verification
 

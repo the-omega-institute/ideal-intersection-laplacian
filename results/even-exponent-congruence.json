@@ -1,0 +1,89 @@
+{
+  "written_theorem": "Every positive three-prime triple with all exponents congruent2mod4 is nonintegral, regardless of ratios or minimum",
+  "written_corollary": "Every triple whose exponents have the same2adic valuation is nonintegral: valuation0 uses prior all-odd proof, valuation1 the new theorem, valuation>=2 prior common-divisor proof",
+  "symbolic_integer_scaled_quotient": true,
+  "characteristic_scaling": "h_C(x)=32*f(x/2)",
+  "binary_block_matrix": "Matrix([[0, 1, 1, 0, 0, 0], [1, 0, 1, 0, 0, 0], [1, 1, 0, 0, 0, 0], [0, 0, 1, 1, 0, 0], [0, 1, 0, 0, 1, 0], [1, 0, 0, 0, 0, 1]])",
+  "binary_scaled_quintic": "(x+1)^5",
+  "modulo_two_coefficients_checked": 167,
+  "shifted_polynomial_congruence": "f(2y+1)=8*(u+v+w+y-1) mod32 for exponents(4u+2,4v+2,4w+2)",
+  "modulo_32_coefficients_checked": 162,
+  "difference_congruence": "f(3)-f(1)=8 mod32",
+  "direct_integer_quotient_fixtures": [
+    {
+      "exponents": [
+        10,
+        14,
+        18
+      ],
+      "scaled_quintic": "x**5 - 349*x**4 + 39938*x**3 - 1532066*x**2 + 3618321*x - 2030805",
+      "integer_horner_values_at_1_3": [
+        95040,
+        -3914136
+      ],
+      "residues_modulo_32": [
+        0,
+        8
+      ],
+      "difference_modulo_32": 8,
+      "rational_factor_degrees": [
+        5
+      ],
+      "gcd": 2,
+      "inside_previous_even_linear_bound": true,
+      "outside_prior_balanced_region": true
+    },
+    {
+      "exponents": [
+        14,
+        22,
+        34
+      ],
+      "scaled_quintic": "x**5 - 871*x**4 + 240938*x**3 - 21424670*x**2 + 61458537*x - 36697815",
+      "integer_horner_values_at_1_3": [
+        3576120,
+        -38709216
+      ],
+      "residues_modulo_32": [
+        24,
+        0
+      ],
+      "difference_modulo_32": 8,
+      "rational_factor_degrees": [
+        5
+      ],
+      "gcd": 2,
+      "inside_previous_even_linear_bound": true,
+      "outside_prior_balanced_region": true
+    },
+    {
+      "exponents": [
+        18,
+        26,
+        42
+      ],
+      "scaled_quintic": "x**5 - 1287*x**4 + 528318*x**3 - 69410146*x**2 + 205203333*x - 126886851",
+      "integer_horner_values_at_1_3": [
+        9433368,
+        -121807584
+      ],
+      "residues_modulo_32": [
+        24,
+        0
+      ],
+      "difference_modulo_32": 8,
+      "rational_factor_degrees": [
+        5
+      ],
+      "gcd": 2,
+      "inside_previous_even_linear_bound": true,
+      "outside_prior_balanced_region": true
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_even_exponent_congruence.py": "5d6e6088430f4a8ff68c27cb86e7e60c3c98ca0c746630f878bf80e6c20deccf",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Written rational-root/parity/divisibility contradiction and valuation corollary. Exact symbolic integer scaling, binary block/characteristic and coefficientwise modulo2/modulo32 identities; three selected direct quotient/rational factor/integer Horner fixtures. No exponent scan, numerical spectrum or Lean. FullQ3 and mixed-valuation endpoint-zero cases remain open."
+}
