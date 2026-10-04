@@ -1,0 +1,324 @@
+{
+  "origin": "Independent support-derived checker; not Reza announced but unavailable check_fully_distinct.py.",
+  "support_order": [
+    "1",
+    "2",
+    "3",
+    "12",
+    "13",
+    "23"
+  ],
+  "general_complement_quotient": "Matrix([[b*c + b + c, -b, -c, 0, 0, -b*c], [-a, a*c + a + c, -c, 0, -a*c, 0], [-a, -b, a*b + a + b, -a*b, 0, 0], [0, 0, -c, c, 0, 0], [0, -b, 0, 0, b, 0], [-a, 0, 0, 0, 0, a]])",
+  "symbolic_identities": "passed",
+  "complement_quintic_at_0": "-a*b*c*(a + b + c)*(a*b + a*c + a + b*c + b + c)",
+  "complement_quintic_at_a": "-a**2*b**2*c**2*(a**2 + 2*a - b - c)",
+  "complement_quintic_at_1_when_a_is_1": "b**2*c**2*(b + c - 3)",
+  "complete_requested_independent_range": "1 <= a < b < c <= 6; exactly20triples",
+  "cases": [
+    {
+      "exponents": [
+        1,
+        2,
+        3
+      ],
+      "quintic": "x**5 - 56*x**4 + 1205*x**3 - 12358*x**2 + 59892*x - 108936",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 56*x**4 + 1205*x**3 - 12358*x**2 + 59892*x - 108936",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 13
+    },
+    {
+      "exponents": [
+        1,
+        2,
+        4
+      ],
+      "quintic": "x**5 - 70*x**4 + 1883*x**3 - 24134*x**2 + 145968*x - 329952",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 70*x**4 + 1883*x**3 - 24134*x**2 + 145968*x - 329952",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": null
+    },
+    {
+      "exponents": [
+        1,
+        2,
+        5
+      ],
+      "quintic": "x**5 - 84*x**4 + 2711*x**3 - 41664*x**2 + 301740*x - 814000",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 84*x**4 + 2711*x**3 - 41664*x**2 + 301740*x - 814000",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 17
+    },
+    {
+      "exponents": [
+        1,
+        2,
+        6
+      ],
+      "quintic": "x**5 - 98*x**4 + 3689*x**3 - 66088*x**2 + 557244*x - 1745568",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 98*x**4 + 3689*x**3 - 66088*x**2 + 557244*x - 1745568",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 7
+    },
+    {
+      "exponents": [
+        1,
+        3,
+        4
+      ],
+      "quintic": "x**5 - 92*x**4 + 3257*x**3 - 54922*x**2 + 434784*x - 1262304",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 92*x**4 + 3257*x**3 - 54922*x**2 + 434784*x - 1262304",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 7
+    },
+    {
+      "exponents": [
+        1,
+        3,
+        5
+      ],
+      "quintic": "x**5 - 110*x**4 + 4655*x**3 - 93730*x**2 + 883269*x - 3026880",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 110*x**4 + 4655*x**3 - 93730*x**2 + 883269*x - 3026880",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 13
+    },
+    {
+      "exponents": [
+        1,
+        3,
+        6
+      ],
+      "quintic": "x**5 - 128*x**4 + 6301*x**3 - 147438*x**2 + 1610460*x - 6353640",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 128*x**4 + 6301*x**3 - 147438*x**2 + 1610460*x - 6353640",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 7
+    },
+    {
+      "exponents": [
+        1,
+        4,
+        5
+      ],
+      "quintic": "x**5 - 136*x**4 + 7115*x**3 - 176768*x**2 + 2041380*x - 8392800",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 136*x**4 + 7115*x**3 - 176768*x**2 + 2041380*x - 8392800",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 11
+    },
+    {
+      "exponents": [
+        1,
+        4,
+        6
+      ],
+      "quintic": "x**5 - 158*x**4 + 9599*x**3 - 276562*x**2 + 3689952*x - 17336160",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 158*x**4 + 9599*x**3 - 276562*x**2 + 3689952*x - 17336160",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 29
+    },
+    {
+      "exponents": [
+        1,
+        5,
+        6
+      ],
+      "quintic": "x**5 - 188*x**4 + 13583*x**3 - 464368*x**2 + 7302252*x - 39571920",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 188*x**4 + 13583*x**3 - 464368*x**2 + 7302252*x - 39571920",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 11
+    },
+    {
+      "exponents": [
+        2,
+        3,
+        4
+      ],
+      "quintic": "x**5 - 122*x**4 + 5783*x**3 - 132742*x**2 + 1472424*x - 6310080",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 122*x**4 + 5783*x**3 - 132742*x**2 + 1472424*x - 6310080",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": null
+    },
+    {
+      "exponents": [
+        2,
+        3,
+        5
+      ],
+      "quintic": "x**5 - 144*x**4 + 8057*x**3 - 218226*x**2 + 2853612*x - 14391000",
+      "factor_degrees": [
+        1,
+        4
+      ],
+      "factorization": "(x - 39)*(x**4 - 105*x**3 + 3962*x**2 - 63708*x + 369000)",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 7
+    },
+    {
+      "exponents": [
+        2,
+        3,
+        6
+      ],
+      "quintic": "x**5 - 166*x**4 + 10705*x**3 - 334008*x**2 + 5025852*x - 29115936",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 166*x**4 + 10705*x**3 - 334008*x**2 + 5025852*x - 29115936",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 19
+    },
+    {
+      "exponents": [
+        2,
+        4,
+        5
+      ],
+      "quintic": "x**5 - 174*x**4 + 11771*x**3 - 385494*x**2 + 6086400*x - 36887200",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 174*x**4 + 11771*x**3 - 385494*x**2 + 6086400*x - 36887200",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": null
+    },
+    {
+      "exponents": [
+        2,
+        4,
+        6
+      ],
+      "quintic": "x**5 - 200*x**4 + 15548*x**3 - 584704*x**2 + 10582848*x - 73285632",
+      "factor_degrees": [
+        2,
+        3
+      ],
+      "factorization": "(x**2 - 86*x + 1704)*(x**3 - 114*x**2 + 4040*x - 43008)",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 5
+    },
+    {
+      "exponents": [
+        2,
+        5,
+        6
+      ],
+      "quintic": "x**5 - 234*x**4 + 21281*x**3 - 935304*x**2 + 19727100*x - 158090400",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 234*x**4 + 21281*x**3 - 935304*x**2 + 19727100*x - 158090400",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 19
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        5
+      ],
+      "quintic": "x**5 - 212*x**4 + 17549*x**3 - 707998*x**2 + 13914720*x - 106624800",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 212*x**4 + 17549*x**3 - 707998*x**2 + 13914720*x - 106624800",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 19
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        6
+      ],
+      "quintic": "x**5 - 242*x**4 + 22867*x**3 - 1052802*x**2 + 23596344*x - 205965504",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 242*x**4 + 22867*x**3 - 1052802*x**2 + 23596344*x - 205965504",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 7
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        6
+      ],
+      "quintic": "x**5 - 280*x**4 + 30625*x**3 - 1632330*x**2 + 42334884*x - 426860280",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 280*x**4 + 30625*x**3 - 1632330*x**2 + 42334884*x - 426860280",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 17
+    },
+    {
+      "exponents": [
+        4,
+        5,
+        6
+      ],
+      "quintic": "x**5 - 326*x**4 + 41615*x**3 - 2598178*x**2 + 79348080*x - 949024800",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 326*x**4 + 41615*x**3 - 2598178*x**2 + 79348080*x - 949024800",
+      "has_noninteger_root": true,
+      "smallest_tested_prime_for_nonlinear_factor": 17
+    }
+  ],
+  "direct_ideal_embedding_checks": [
+    {
+      "exponents": [
+        1,
+        2,
+        3
+      ],
+      "vertices": 22,
+      "representative_vertex_pairs_checked": 102
+    },
+    {
+      "exponents": [
+        2,
+        3,
+        4
+      ],
+      "vertices": 58,
+      "representative_vertex_pairs_checked": 210
+    }
+  ],
+  "sympy": "1.14.0",
+  "script_sha256": "a4caa430604b5b6c438b0f3a724dcefb88c4d090ceb5540cac34bf26c3b18234",
+  "scope": "General exact six-support and complement identities; two finite direct ideal-graph embedding checks; rational factorization for twenty fully distinct triples. Infinite (1,b,c) theorem uses written endpoint proof and earlier repeated-exponent exceptions. No claim of fullQ3/fullydistinct closure; no Lean or floating-point spectra."
+}

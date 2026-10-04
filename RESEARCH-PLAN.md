@@ -2,7 +2,8 @@
 
 **Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
 consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
-the successive linear cutoffs and all `(a,a,b)` with `a,b>=1`.
+the successive linear cutoffs, all `(a,a,b)` with `a,b>=1`, and all
+`(1,b,c)` with `b,c>=1`.
 The corrected repeated-exponent diagnostic and exact certificates remain
 available. Full Q3 remains open.
 
@@ -16,24 +17,27 @@ python3 scripts/check_fixed_repeated_exponents.py
 python3 scripts/check_second_cutoff.py
 python3 scripts/check_factor_index_reduction.py
 python3 scripts/check_repeated_exponent_completion.py
+python3 scripts/check_six_support_quotient.py
 ```
 
 The [completion proof](notes/repeated-exponent-completion.md) settles the
 remaining factor indices using a uniform cubic sign interval. The next
 focused question is the six-support quotient for three pairwise distinct
-positive exponents. Derive an exact obstruction for a stated subfamily;
+exponents all at least2. The [complement interval proof](notes/one-unit-exponent.md)
+now settles every triple with a unit exponent. Derive an exact obstruction for a stated subfamily;
 the coordinate-swap decomposition is specific to repeated exponents.
 Do not replace the open classification by an arbitrary finite scan.
 
-Reza proposes the Laplacian integrality question, Q3 in his privately shared
-preprint on ideal intersection graphs of `Z_n`, as the first follow-on task.
+Reza proposes the Laplacian integrality question, Q3 in his
+[public source preprint](https://doi.org/10.5281/zenodo.23134979),
+as the first follow-on task.
 
 ## First deliverable
 
 The first note fixes the graph definition and Laplacian convention, gives
 the squarefree classification and an unequal-exponent infinite family, and
-includes a public reference for the originating graph. Reza's unannounced
-preprint is kept outside the public repository.
+includes a public reference for the originating graph. Reza's source
+preprint is now linked via its verified Zenodo DOI.
 
 Read [Reza's integrated extension](notes/repeated-exponent-family.md).
 Next, address exponent triples outside the two proved families and nonsquarefree
@@ -84,8 +88,8 @@ Vertex connectivity may accompany Q3 if the arguments connect naturally.
 Other spectral invariants and the unequal-exponent matrix problem remain
 separate follow-ups.
 
-The confidential source manuscript is not part of this repository. Until a
-public reference is available, do not publish its contents or assert its
-reported partial results as independently verified.
+The source manuscript is linked rather than copied into this repository.
+Attribute its earlier spectral results and keep its reported computations
+separate from our independently checked claims.
 
 [Return to the project entrance](README.md).

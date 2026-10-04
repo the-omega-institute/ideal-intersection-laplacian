@@ -1,0 +1,65 @@
+\section{A unit exponent with two arbitrary exponents}
+\label{sec:unit}
+
+\begin{theorem}
+\label{thm:unit}
+For distinct primes $p,q,r$ and every $b,c\geq1$, the graph
+$G_{p q^b r^c}$ is not Laplacian integral. The same holds for
+permutations of the exponent vector $(1,b,c)$.
+\end{theorem}
+
+The equal-exponent decomposition is replaced by a complement identity
+on all six support classes. For arbitrary $a,b,c\geq1$, remove the
+$u=abc-1$ universal vertices and denote the remaining graph by $H$.
+In the order $1,2,3,12,13,23$, its class-size vector is
+$w=(a,b,c,ab,ac,bc)^T$ and its vertex count is
+$N=a+b+c+ab+ac+bc$. Disjoint supports are adjacent in the complement
+$\overline H$, whose cell-constant Laplacian quotient is
+\[
+C=\begin{pmatrix}
+b+c+bc&-b&-c&0&0&-bc\\
+-a&a+c+ac&-c&0&-ac&0\\
+-a&-b&a+b+ab&-ab&0&0\\
+0&0&-c&c&0&0\\
+0&-b&0&0&b&0\\
+-a&0&0&0&0&a
+\end{pmatrix}.
+\]
+Multiplication on the left by $\operatorname{diag}(w)$ makes $C$
+symmetric. Moreover $C\mathbf1=0$ and $w^TC=0$.
+If $B$ is the quotient of $H$, the complement relation gives
+\begin{equation}
+\label{eq:complement}
+B+C=NI-\mathbf1w^T.
+\end{equation}
+Thus an eigenvector $Cv=\mu v$ with $\mu\ne0$ satisfies $w^Tv=0$
+and $Bv=(N-\mu)v$. When $N-\mu\ne0$, Lemma~\ref{lem:join}
+lifts it to an eigenvalue $N+u-\mu$ of $G_n$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:unit}]
+Write $\det(xI-C)=x h_{a,b,c}(x)$. Direct determinant expansion yields
+\begin{align*}
+h_{a,b,c}(0)&=-abc(a+b+c)N,\\
+h_{a,b,c}(a)&=-a^2b^2c^2(a^2+2a-b-c).
+\end{align*}
+At $a=1$, the first value is strictly negative and
+\[
+h_{1,b,c}(1)=b^2c^2(b+c-3).
+\]
+When $b+c>3$, a real root $\mu$ lies strictly between $0$ and $1$.
+Equation~\eqref{eq:complement} and the universal-vertex lift produce a
+Laplacian eigenvalue $V-\mu\in(V-1,V)$, where $V=N+u$ is the integer
+vertex count. This eigenvalue is noninteger. When $b+c\leq3$, the
+positive pairs are $(1,1),(1,2),(2,1)$; Theorem~\ref{thm:pqrk}
+settles the corresponding permutations of $(1,1,k)$. Permuting the
+prime factors preserves the graph's isomorphism type.
+\end{proof}
+
+The general six-support reduction also gives an exact diagnostic for
+fully distinct triples. For $1\leq a<b<c\leq6$, all twenty quintics
+have a nonlinear irreducible factor over $\mathbb Q$. The quintics
+at $(2,3,5)$ and $(2,4,6)$ have factor degrees $(1,4)$ and $(2,3)$,
+respectively; irreducibility of the entire quintic is therefore not a
+uniform obstruction. Theorem~\ref{thm:unit} covers every triple beginning
+with $1$ without a range restriction; the other diagnostic cases remain
+finite evidence.

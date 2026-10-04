@@ -66,6 +66,14 @@ identities. It exhausts every divisor of $24,108,320$ for indices
 $1,2,3$, reproducing all eight positive-$b$ modular cubic certificates
 with separate integer Horner arithmetic. The infinite remaining range is
 settled by the sign proof of Theorem~\ref{thm:repeated}, not by a scan.
+\item \path{scripts/check_six_support_quotient.py} verifies the general
+six-support and complement quotients, their weighted symmetry and reflected
+quintics, and the two determinant values used in Theorem~\ref{thm:unit}.
+Exact rational factorization covers all twenty triples
+$1\leq a<b<c\leq6$. Direct ideal adjacency verifies the quotient for
+$(1,2,3)$ and $(2,3,4)$, using $22$ and $58$ vertices and $312$
+representative-to-vertex pairs. The infinite unit-exponent conclusion
+uses the written endpoint proof.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

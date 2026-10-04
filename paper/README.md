@@ -19,9 +19,10 @@ sections and their shared graph/lifting definitions.
 | [aa-family.tex](sections/aa-family.tex) | Reza's public boundary-family proof |
 | [aa-bounds.tex](sections/aa-bounds.tex) | Exact fixed-a and fixed-index criteria, successive cutoffs and complete smaller-factor certificates |
 | [aa-completion.tex](sections/aa-completion.tex) | All-positive-a,b theorem: third-index certificates and uniform cubic sign obstruction |
+| [unit-exponent.tex](sections/unit-exponent.tex) | General six-support complement quotient and all (1,b,c) theorem |
 | [aa-small.tex](sections/aa-small.tex) | All-b theorem for a=2 through9, divisor/modular certificates and cubic-test scope |
 | [verification.tex](sections/verification.tex) | Actual scope of the exact checkers |
-| [open.tex](sections/open.tex) | Pairwise unequal triples and nonsquarefree vectors with more prime factors |
+| [open.tex](sections/open.tex) | Pairwise unequal triples with all exponents at least2, and nonsquarefree higher-prime vectors |
 
 ## Build
 
@@ -52,6 +53,7 @@ python3 scripts/check_fixed_repeated_exponents.py
 python3 scripts/check_second_cutoff.py
 python3 scripts/check_factor_index_reduction.py
 python3 scripts/check_repeated_exponent_completion.py
+python3 scripts/check_six_support_quotient.py --json
 ```
 
 Compare with the corresponding JSON files under `results/`. The full text
@@ -85,8 +87,9 @@ print(sympy.factor(expected))
 PY
 ```
 
-The bibliography contains the verified original graph reference. Reza's
-source-preprint citation will be finalized when a public identifier is
-available; its confidential PDF is not included in this repository.
+The bibliography contains the original graph reference and Reza's public
+source preprint, [Zenodo DOI10.5281/zenodo.23134979](https://doi.org/10.5281/zenodo.23134979).
+Its public PDF has the same SHA256 as the previously supplied source.
+The source PDF is linked rather than copied into this repository.
 
 [Return to the project entrance](../README.md).

@@ -20,7 +20,10 @@ Reza's [further infinite family](notes/repeated-exponent-family.md) covers
 has integer eigenvalues; a symmetric cubic proves nonintegrality.
 We now prove nonintegrality for **every `(a,a,b)`, a,b >= 1**:
 read [the complete repeated-exponent proof](notes/repeated-exponent-completion.md).
-Three pairwise unequal exponents and the full characterization remain open.
+We also prove nonintegrality for **every `(1,b,c)`, b,c >= 1** using the
+general six-support complement quotient:
+[read the proof and exact diagnostic](notes/one-unit-exponent.md).
+Pairwise unequal exponents all at least2 and the full characterization remain open.
 
 ## Start here
 
@@ -29,6 +32,8 @@ Three pairwise unequal exponents and the full characterization remain open.
 | Understand the first task and current status | [Research plan](RESEARCH-PLAN.md) |
 | Read the consolidated working manuscript | [PDF](paper/paper.pdf) · [LaTeX source](paper/paper.tex) · [Build and section guide](paper/README.md) |
 | Read the complete repeated-exponent theorem | [All (a,a,b) proof](notes/repeated-exponent-completion.md) · [Exact certificate](results/repeated-exponent-completion.json) |
+| Read the unit-exponent theorem and unequal-triple diagnostic | [All (1,b,c) proof](notes/one-unit-exponent.md) · [Twenty-case output](results/six-support-quotient.txt) |
+| Read the source preprint and original Q3 | [Zenodo DOI10.5281/zenodo.23134979](https://doi.org/10.5281/zenodo.23134979) |
 | Read the requested (a,a,b) diagnostic and fixed-a theorem | [Exact diagnostic and proof](notes/aa-b-diagnostic.md) |
 | Read the sharper cutoff and complete a=5,6 families | [Second linear cutoff](notes/second-linear-cutoff.md) |
 | Read the fixed-index divisor criterion and current cutoff | [Factor-index reduction](notes/factor-index-reduction.md) |
@@ -52,13 +57,15 @@ and finite modular certificates. Every later index forces
 `b <= (a-5)(2a-5)/(4a+5)`, strictly below a uniform cubic sign threshold;
 a root lies between the consecutive integers `2ab-1` and `2ab`.
 The earlier cutoffs and fixed-a checks remain as intermediate results.
-The next mathematical question is three pairwise distinct exponents;
+The complement quotient now also settles every triple with a unit exponent.
+Reza has hand-checked the repeated-exponent completion identities and gap.
+The next mathematical question is three pairwise distinct exponents all at least2;
 nonsquarefree vectors with more than three prime factors also remain open.
 
-The original preprint is awaiting public announcement. This repository begins
-with the agreed research plan and our follow-on contributions. Its confidential
-PDF, correspondence and unannounced manuscript content are kept outside the
-public repository. A public source link can be added when available.
+The source preprint is public on
+[Zenodo](https://doi.org/10.5281/zenodo.23134979). Its general spectral
+reduction and equal-exponent results motivate this follow-on work.
+We link the source PDF; private correspondence remains outside this repository.
 
 ## How we work
 
