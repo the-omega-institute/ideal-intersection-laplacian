@@ -1,0 +1,86 @@
+==============================================================================
+2-adic divisibility at higher moduli (mixed-parity triples)
+==============================================================================
+
+Building h_C(1) and h_C(3) symbolically ...
+  done.
+
+  Sanity: h_C(1) at (9, 9, 136) = 0
+    (matches the known endpoint-one zero)
+
+M = 8: mixed = 384, excluded = 36, survivors = 348
+  sample survivors: [(0, 0, 1, 0, 8), (0, 0, 3, 24, 0), (0, 0, 5, 0, 24), (0, 0, 7, 8, 0), (0, 1, 0, 0, 8)]
+
+M = 16: mixed = 3072, excluded = 288, survivors = 2784
+  sample survivors: [(0, 0, 1, 0, 8), (0, 0, 3, 24, 0), (0, 0, 5, 0, 24), (0, 0, 7, 8, 0), (0, 0, 9, 0, 8)]
+
+M = 32: mixed = 24576, excluded = 2304, survivors = 22272
+  sample survivors: [(0, 0, 1, 0, 8), (0, 0, 3, 24, 0), (0, 0, 5, 0, 24), (0, 0, 7, 8, 0), (0, 0, 9, 0, 8)]
+
+==============================================================================
+Detail at M = 8 for (a odd, b odd, c even)
+==============================================================================
+  (1,1,0): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (1,1,2): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (1,1,4): h1 mod 32 =  0, h3 mod 32 = 16  [SURV]
+  (1,1,6): h1 mod 32 = 16, h3 mod 32 =  0  [SURV]
+  (1,3,0): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (1,3,2): h1 mod 32 =  8, h3 mod 32 = 16  [EXCL]
+  (1,3,4): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (1,3,6): h1 mod 32 = 24, h3 mod 32 =  0  [SURV]
+  (1,5,0): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (1,5,2): h1 mod 32 = 16, h3 mod 32 =  0  [SURV]
+  (1,5,4): h1 mod 32 =  0, h3 mod 32 = 16  [SURV]
+  (1,5,6): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (1,7,0): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (1,7,2): h1 mod 32 = 24, h3 mod 32 = 16  [EXCL]
+  (1,7,4): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (1,7,6): h1 mod 32 =  8, h3 mod 32 =  0  [SURV]
+  (3,1,0): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (3,1,2): h1 mod 32 =  8, h3 mod 32 = 16  [EXCL]
+  (3,1,4): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (3,1,6): h1 mod 32 = 24, h3 mod 32 =  0  [SURV]
+  (3,3,0): h1 mod 32 = 24, h3 mod 32 =  0  [SURV]
+  (3,3,2): h1 mod 32 =  0, h3 mod 32 = 24  [SURV]
+  (3,3,4): h1 mod 32 =  8, h3 mod 32 =  0  [SURV]
+  (3,3,6): h1 mod 32 =  0, h3 mod 32 =  8  [SURV]
+  (3,5,0): h1 mod 32 = 16, h3 mod 32 =  0  [SURV]
+  (3,5,2): h1 mod 32 = 24, h3 mod 32 =  0  [SURV]
+  (3,5,4): h1 mod 32 = 16, h3 mod 32 =  0  [SURV]
+  (3,5,6): h1 mod 32 =  8, h3 mod 32 = 16  [EXCL]
+  (3,7,0): h1 mod 32 =  8, h3 mod 32 =  0  [SURV]
+  (3,7,2): h1 mod 32 = 16, h3 mod 32 =  8  [EXCL]
+  (3,7,4): h1 mod 32 = 24, h3 mod 32 =  0  [SURV]
+  (3,7,6): h1 mod 32 = 16, h3 mod 32 = 24  [EXCL]
+  (5,1,0): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (5,1,2): h1 mod 32 = 16, h3 mod 32 =  0  [SURV]
+  (5,1,4): h1 mod 32 =  0, h3 mod 32 = 16  [SURV]
+  (5,1,6): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (5,3,0): h1 mod 32 = 16, h3 mod 32 =  0  [SURV]
+  (5,3,2): h1 mod 32 = 24, h3 mod 32 =  0  [SURV]
+  (5,3,4): h1 mod 32 = 16, h3 mod 32 =  0  [SURV]
+  (5,3,6): h1 mod 32 =  8, h3 mod 32 = 16  [EXCL]
+  (5,5,0): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (5,5,2): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (5,5,4): h1 mod 32 =  0, h3 mod 32 = 16  [SURV]
+  (5,5,6): h1 mod 32 = 16, h3 mod 32 =  0  [SURV]
+  (5,7,0): h1 mod 32 = 16, h3 mod 32 =  0  [SURV]
+  (5,7,2): h1 mod 32 =  8, h3 mod 32 =  0  [SURV]
+  (5,7,4): h1 mod 32 = 16, h3 mod 32 =  0  [SURV]
+  (5,7,6): h1 mod 32 = 24, h3 mod 32 = 16  [EXCL]
+  (7,1,0): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (7,1,2): h1 mod 32 = 24, h3 mod 32 = 16  [EXCL]
+  (7,1,4): h1 mod 32 =  0, h3 mod 32 =  0  [SURV]
+  (7,1,6): h1 mod 32 =  8, h3 mod 32 =  0  [SURV]
+  (7,3,0): h1 mod 32 =  8, h3 mod 32 =  0  [SURV]
+  (7,3,2): h1 mod 32 = 16, h3 mod 32 =  8  [EXCL]
+  (7,3,4): h1 mod 32 = 24, h3 mod 32 =  0  [SURV]
+  (7,3,6): h1 mod 32 = 16, h3 mod 32 = 24  [EXCL]
+  (7,5,0): h1 mod 32 = 16, h3 mod 32 =  0  [SURV]
+  (7,5,2): h1 mod 32 =  8, h3 mod 32 =  0  [SURV]
+  (7,5,4): h1 mod 32 = 16, h3 mod 32 =  0  [SURV]
+  (7,5,6): h1 mod 32 = 24, h3 mod 32 = 16  [EXCL]
+  (7,7,0): h1 mod 32 = 24, h3 mod 32 =  0  [SURV]
+  (7,7,2): h1 mod 32 =  0, h3 mod 32 = 24  [SURV]
+  (7,7,4): h1 mod 32 =  8, h3 mod 32 =  0  [SURV]
+  (7,7,6): h1 mod 32 =  0, h3 mod 32 =  8  [SURV]
