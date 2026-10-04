@@ -100,6 +100,72 @@ balanced exclusion and beyond the bounded-gap families. They illustrate
 the new inequality; we do not claim that every earlier arithmetic criterion
 fails for these individual examples.
 
+## Strengthening the principal-block test
+
+The same block can remain negative definite when `k_b>0`. Put
+
+```text
+Delta_ab = k_a k_b - a k_b - b k_a.
+```
+
+If `k_a<0` and `Delta_ab>0`, its first diagonal entry `k_a-a` is
+negative and its determinant positive, so it is negative definite.
+The interval and nonintegrality conclusions above still apply. Thus in
+the surviving sign region `k_a<0<k_b`, an integer spectrum in the stated
+classes also requires **`Delta_ab<=0`**.
+
+For `(a,b)=(20,22)`, exact expansion gives
+
+```text
+(a-2)(b-2) Delta_ab = 40(13c^2-414c-720).
+```
+
+The quadratic is232 at c=34 and increases thereafter. Also `k_a<0`
+for c>=34. Hence every integer c>=34 is excluded in the stated classes;
+in this fixed pair they are all-even triples, so a remaining largest
+exponent must be even and at most32. This improves the preceding c<40
+bound without enumerating c. The old outside-criterion example `(20,22,38)`
+is covered by this stronger test, although its middle diagonal is positive.
+
+## The b boundary and the arithmetic overlap
+
+The interval theorem itself has no hypothesis `b<2a+2`. That condition
+arises solely when solving `k_b<=0` for a positive upper tail in c:
+
+```text
+(b-2)k_b = (b-2)(a+b-2)+(b-2-2a)c.
+```
+
+For b>=2a+2 the right side is positive, so this sufficient condition
+cannot hold. Moreover
+
+```text
+k_b-b = a-2+c(1-2a/(b-2)) > 0.
+```
+
+On the remaining branch `k_a<0`, this gives
+`Delta_ab=k_a(k_b-b)-a k_b<0`. Thus the stronger principal a,b block test
+also does not exclude that branch for b>=2a+2. The ordering always gives
+`k_a<k_b`; its difference does not change sign at this boundary. A further
+reduction of the full secular equation, rather than repeated application
+of this particular principal block, is needed there. These sign conditions
+alone have not been proved contradictory.
+
+The geometric and arithmetic excluded sets overlap. For example,
+`(17,19,50)` is in the excluded modulo-eight row `(1,3,2)` and has
+`k_b(2)=-16`, so both methods apply. The geometric criterion is not
+contained in those six modulo-eight rows: it covers all-even examples
+and `(19,23,52)`, whose residues are `(3,7,4)` modulo eight and `(3,3,0)`
+modulo four. Their congruence and geometric restrictions should therefore
+be used together, without treating them as disjoint or claiming that an
+example escapes every earlier arithmetic theorem.
+
+The finite endpoint-congruence limitation concerns selected endpoint-value
+tests and the explicitly listed filters. It does not prove that every
+possible two-adic root-distribution method fails. Closing endpoint two
+would still leave the general mixed-parity endpoint-one problem unless
+that surface is separately excluded.
+
 ## Exact verification and remaining scope
 
 Run `PYTHONDONTWRITEBYTECODE=1 python3 scripts/check_endpoint_two_middle_inertia.py`
@@ -108,11 +174,14 @@ with SymPy1.14.0 and compare the output with
 
 The checker reconstructs the generic complement quotient and its rational
 Schur congruence, verifies the middle-bound and zero-diagonal determinant
-identities, and checks selected strict, equality and outside-criterion
+identities, and checks selected strict, equality, strengthened-principal-block,
+overlap and outside-criterion
 fixtures by exact rational principal minors and integer characteristic
 polynomials with Sturm counts. The outside fixture `(20,22,38)` is
-deliberate: failure of the sufficient inequality does not imply integrality
-or absence of a root in `(0,2)`. The existing repeated endpoint-two control
+deliberate: failure of the first sufficient inequality does not imply integrality
+or absence of a root in `(0,2)`. It is now covered by the stronger principal
+block test. The `(20,22,33)` control is outside both tests but still has a positive
+root in `(0,2)`, so neither test is necessary for that interval. The existing repeated endpoint-two control
 `(10,10,12)` is outside the distinct-exponent hypothesis.
 
 The proof is an unbounded interval argument. The fixtures are finite exact

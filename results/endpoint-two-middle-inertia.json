@@ -14,8 +14,10 @@
     "generic direct quotient/Schur determinant at2",
     "principal2x2determinant",
     "middle-diagonal numerator and tail",
-    "minimum-diagonal-zero determinant"
+    "minimum-diagonal-zero determinant",
+    "20,22stronger principal quadratic and positive shift at34"
   ],
+  "strengthened_fixed_pair": "For a20,b22, all c>=34 have a quotient root in(0,2); even c>=34 nonintegral.",
   "direct_exact_fixtures": [
     {
       "exponents": [
@@ -29,6 +31,8 @@
         "1080/19"
       ],
       "middle_criterion_applies": true,
+      "stronger_principal_block_criterion_applies": true,
+      "covered_nonintegral_class": true,
       "principal_trace": "-26/9",
       "principal_determinant": "8/9",
       "characteristic_quintic_coefficients": [
@@ -61,6 +65,8 @@
         "66"
       ],
       "middle_criterion_applies": true,
+      "stronger_principal_block_criterion_applies": true,
+      "covered_nonintegral_class": true,
       "principal_trace": "-3559/990",
       "principal_determinant": "88/45",
       "characteristic_quintic_coefficients": [
@@ -93,6 +99,8 @@
         "1863/25"
       ],
       "middle_criterion_applies": true,
+      "stronger_principal_block_criterion_applies": true,
+      "covered_nonintegral_class": true,
       "principal_trace": "-726154/156009",
       "principal_determinant": "26504/9177",
       "characteristic_quintic_coefficients": [
@@ -125,6 +133,8 @@
         "482/9"
       ],
       "middle_criterion_applies": false,
+      "stronger_principal_block_criterion_applies": true,
+      "covered_nonintegral_class": true,
       "principal_trace": "-2627/990",
       "principal_determinant": "58/99",
       "characteristic_quintic_coefficients": [
@@ -144,6 +154,108 @@
       "middle_tail": "40",
       "prior_linear_tail": "1384/11",
       "below_prior_linear_tail_and_outside_sufficient_balanced_region": true
+    },
+    {
+      "exponents": [
+        20,
+        22,
+        34
+      ],
+      "schur_diagonal_at_two": [
+        "-82/9",
+        "6",
+        "93/2"
+      ],
+      "middle_criterion_applies": false,
+      "stronger_principal_block_criterion_applies": true,
+      "covered_nonintegral_class": true,
+      "principal_trace": "-2161/990",
+      "principal_determinant": "29/495",
+      "characteristic_quintic_coefficients": [
+        1,
+        -2096,
+        1440092,
+        -325227424,
+        1758641472,
+        -2210250240
+      ],
+      "endpoint_values_at_0_1_2": [
+        -2210250240,
+        -775398195,
+        17610240
+      ],
+      "positive_roots_strictly_between_0_and_2": 1,
+      "middle_tail": "40",
+      "prior_linear_tail": "1384/11",
+      "below_prior_linear_tail_and_outside_sufficient_balanced_region": true
+    },
+    {
+      "exponents": [
+        20,
+        22,
+        33
+      ],
+      "schur_diagonal_at_two": [
+        "-23/3",
+        "7",
+        "1383/31"
+      ],
+      "middle_criterion_applies": false,
+      "stronger_principal_block_criterion_applies": false,
+      "covered_nonintegral_class": false,
+      "principal_trace": "-1363/660",
+      "principal_determinant": "-5/88",
+      "characteristic_quintic_coefficients": [
+        1,
+        -2051,
+        1381601,
+        -306821221,
+        1645056270,
+        -2070189000
+      ],
+      "endpoint_values_at_0_1_2": [
+        -2070189000,
+        -730574400,
+        3658680
+      ],
+      "positive_roots_strictly_between_0_and_2": 1,
+      "middle_tail": "40",
+      "prior_linear_tail": "1384/11",
+      "below_prior_linear_tail_and_outside_sufficient_balanced_region": true
+    },
+    {
+      "exponents": [
+        17,
+        19,
+        50
+      ],
+      "schur_diagonal_at_two": [
+        "-128/3",
+        "-16",
+        "1693/24"
+      ],
+      "middle_criterion_applies": true,
+      "stronger_principal_block_criterion_applies": true,
+      "covered_nonintegral_class": true,
+      "principal_trace": "-5186/969",
+      "principal_determinant": "5296/969",
+      "characteristic_quintic_coefficients": [
+        1,
+        -2381,
+        1778367,
+        -401494099,
+        2606546252,
+        -3068080100
+      ],
+      "endpoint_values_at_0_1_2": [
+        -3068080100,
+        -861251960,
+        553224880
+      ],
+      "positive_roots_strictly_between_0_and_2": 1,
+      "middle_tail": "34",
+      "prior_linear_tail": "1997/19",
+      "below_prior_linear_tail_and_outside_sufficient_balanced_region": true
     }
   ],
   "repeated_endpoint_two_control": {
@@ -157,8 +269,8 @@
   },
   "sympy": "1.14.0",
   "source_sha256": {
-    "check_endpoint_two_middle_inertia.py": "6a335f6e9d857e7616bfefc322a199fe80269f67c0659f42f6aed1f562a4d559",
+    "check_endpoint_two_middle_inertia.py": "07c011d707fc05cca1244b7a4027e2bb8ad658d6fc328362a795bdc5c59d3002",
     "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
   },
-  "scope": "Written Schur/principal-submatrix proof; generic rational identities, four fixed direct integer quotient/Horner/Sturm fixtures and one existing repeated control. No exponent/modulus scan, no floating spectra, no Lean. Consolidated manuscript unchanged; fullQ3 and higher-prime vectors open."
+  "scope": "Written Schur/principal-submatrix proof; generic rational identities, seven fixed direct integer quotient/Horner/Sturm fixtures and one existing repeated control. Includes strengthened boundary at34, outside both tests at33 and explicit modulo8overlap. No exponent/modulus scan, no floating spectra, no Lean. Consolidated manuscript unchanged; fullQ3 and higher-prime vectors open."
 }
