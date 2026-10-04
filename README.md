@@ -15,6 +15,9 @@ distinct prime factors and for every exponent vector that is a permutation
 of `(1,1,k)`, `k >= 1`. This completes the squarefree composite classification:
 the integral case is exactly two prime factors, including the edgeless graph.
 Read [the proofs and exact verification scope](notes/integrality-obstructions.md).
+Reza's [further infinite family](notes/repeated-exponent-family.md) covers
+`(a,a,(a-1)(2a-1))`, `a >= 2`, including `(2,2,3)`. Its antisymmetric block
+has integer eigenvalues; a symmetric cubic proves nonintegrality.
 The full characterization for arbitrary exponent vectors remains open.
 
 ## Start here
@@ -23,6 +26,7 @@ The full characterization for arbitrary exponent vectors remains open.
 | --- | --- |
 | Understand the first task and current status | [Research plan](RESEARCH-PLAN.md) |
 | Read the first checked contributions | [Nonintegrality proofs](notes/integrality-obstructions.md) |
+| Read Reza's extension of the (2,2,3) case | [Repeated-exponent family](notes/repeated-exponent-family.md) |
 | Discuss a conjecture or share a checked argument | [Project issues](https://github.com/the-omega-institute/ideal-intersection-laplacian/issues) |
 | Review proposed additions | [Pull requests](https://github.com/the-omega-institute/ideal-intersection-laplacian/pulls) |
 | Read the previous joint paper | [Binary subspace orthogonality project](https://github.com/the-omega-institute/binary-subspace-orthogonality) |

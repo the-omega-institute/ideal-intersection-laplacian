@@ -1,4 +1,4 @@
-# Two infinite families with nonintegral Laplacian spectrum
+# Infinite families with nonintegral Laplacian spectrum
 
 Let $G_n$ have the nonzero proper ideals of $\mathbb Z_n$ as vertices,
 with distinct ideals adjacent when their intersection is nonzero. Its
@@ -8,6 +8,9 @@ Laplacian is $L=D-A$. We prove:
    Laplacian integral.
 2. If $n=pq r^k$, where $p,q,r$ are distinct primes and $k\geq1$, $G_n$ is
    not Laplacian integral.
+3. Reza Nikandish extends the $(2,2,3)$ obstruction to every
+   $n=p^a q^a r^{(a-1)(2a-1)}$, $a\geq2$; read
+   [the integrated proof](repeated-exponent-family.md).
 
 The first result uses a two- or three-dimensional invariant subspace for
 every $t$; it does not require the complete spectrum. The second supplies
@@ -188,6 +191,10 @@ $\mathbb Q$, establishing nonintegrality for this particular exponent vector.
 The [exact calculation](../scripts/check_remaining_case.py) also checks the
 full characteristic polynomial against the class decomposition.
 
+The [repeated-exponent family](repeated-exponent-family.md) shows that this
+mechanism persists for every $(a,a,(a-1)(2a-1))$, $a\geq2$: the antisymmetric
+block remains integral, while a symmetric cubic forces nonintegrality.
+
 ## Verification and remaining question
 
 [The standard-library checker](../scripts/check_integrality_obstructions.py)
@@ -203,7 +210,8 @@ checks validate their explicit embeddings on representative instances.
 The $(2,2,3)$ characteristic-polynomial check uses SymPy 1.14.0; no numerical
 eigenvalue approximation or Lean run is used.
 
-The remaining classification includes unequal exponent triples outside
-$(1,1,k)$ and higher-dimensional exponent vectors that are not squarefree.
+The remaining classification includes exponent triples outside $(1,1,k)$
+and $(a,a,(a-1)(2a-1))$, including their permutations, and higher-dimensional
+exponent vectors that are not squarefree.
 These results do not establish nonintegrality for all integers with at least
 three distinct prime factors.
