@@ -147,6 +147,11 @@ remaining root. The minimum exponent remains unbounded.
 
 ## Verification
 
+The subsequent [gap-two argument](endpoint-two-gap-two.md) excludes every
+integer endpoint-two solution for ordered `(a,a+2,c)` with a>=8,c>a+2.
+Its uniform written bracket at a>=20 is supplemented by a complete finite
+base for a=8,...,19. Integer feasibility at arbitrary middle gaps stays open.
+
 Run with SymPy 1.14.0:
 
 ```sh

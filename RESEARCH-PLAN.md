@@ -39,6 +39,15 @@ Focus further arithmetic work on integer feasibility of this unique
 real root, or on the other quotient roots there; the general surface
 and other endpoint-one cases remain open.
 
+The [gap-two proof and complete finite base](notes/endpoint-two-gap-two.md)
+now exclude integer endpoint-two solutions for all a>=8,b=a+2,c>b.
+The written tail a>=20 brackets the unique real exponent between2a-8and2a-7;
+the remaining twelve fixed pairs are certified by complete constant-divisor
+checks, independently cross-checked by rational-factor extraction.
+Further work should address a different specified structural subfamily or
+the other quotient roots, retaining the general integer-feasibility and
+endpoint-one problems as open rather than enlarging an arbitrary scan.
+
 **Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
 consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
 the successive linear cutoffs, all `(a,a,b)` with `a,b>=1`, and all

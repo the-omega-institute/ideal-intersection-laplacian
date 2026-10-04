@@ -32,6 +32,13 @@ cubic root beta(a)<2a-2. Minimum eight has no fully distinct endpoint-two
 solutions; at (a,b)=(20,22) the sole real c lies between32and33, excluding
 every integer endpoint-two solution for that pair.
 
+The [gap-two integer-feasibility result](notes/endpoint-two-gap-two.md)
+extends this to every ordered `(a,a+2,c)` with integer a>=8,c>a+2:
+endpoint two never occurs. A uniform unit-width real-root bracket proves
+the infinite tail a>=20; a complete twelve-pair exact computation covers
+8<=a<=19. Nonintegrality follows in the all-even and stated mixed classes;
+other endpoint-one cases and arbitrary middle gaps remain open.
+
 ## First results
 
 We prove nonintegrality for every squarefree integer with at least three
