@@ -84,21 +84,15 @@ classes modulo eight**, without bounds on sizes or ratios:
 The shifted quintic and its derivative now settle **every permutation
 of (3,3,2) modulo four**, including odd exponents equal modulo eight:
 [read the uniform root-distribution proof](notes/odd-root-distribution.md).
-For exponent residues **(1,3,2) modulo four**, integer spectra would also
-force the first and third exponents to sum to **15 modulo sixteen**.
-Every triple violating that sum congruence is nonintegral:
-[read the higher-derivative review and stronger value proof](notes/higher-derivatives-review.md).
-The remaining sum class admits a stronger necessary condition:
-**`a+c+4b=27mod32`**, with the variables still identifying residues
-**(1,3,2)mod4**. Every violation is nonintegral. A second shifted binary
-cubic excludes half of the classes left by the earlier sum condition:
-[read the modulo-eight root proof](notes/odd-root-lift.md).
-The same root cluster now forces **`a+c=b(b+2)mod128`** and
-**`b=11or15mod16`**, followed by an additional third-shift parity
-condition. These are necessary conditions for residue roles(1,3,2)mod4;
-every violation proves nonintegrality. The final cubic also excludes
-examples with **`h_C(b)=0`** and the required derivative divisibility:
-[read the value, derivative and third-shift proof](notes/clustered-odd-roots.md).
+For exponent residue roles **(1,3,2) modulo four**, one main theorem now
+collects the necessary conditions: **`a+c=b(b+2)mod128`**,
+**`b=11or15mod16`**, and the stated binary-cubic parity condition.
+For minimum m>=4, it also requires **`h_C(2)=0`** and
+**`M<7m-16+40/(m+2)`**, where M is the maximum exponent.
+The earlier sum congruences follow from these arithmetic conditions.
+[Read the consolidated statement and proof guide](notes/manuscript-consolidation.md).
+The lifting calculations are grouped in Appendix B; the earlier notes
+and exact certificates remain available in the navigation below.
 
 ## Start here
 

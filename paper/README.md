@@ -5,6 +5,9 @@ files it includes. This is a growing mathematical draft, not a submission
 package. Author metadata and any manuscript disclosure are for joint agreement.
 The main text ends with the remaining questions and references; detailed
 checker scopes and reproduction evidence are collected in Appendix A.
+The successive (1,3,2) arithmetic conditions, endpoint-two equation and
+linear maximum bound form a single main theorem. Supporting lifting proofs
+and derivative thresholds are grouped in Appendix B.
 Further two-adic shifts are paused while the endpoint-two argument inside
 the linear region and consolidation of the existing results are pursued.
 
@@ -29,10 +32,11 @@ sections and their shared graph/lifting definitions.
 | [low-spectrum.tex](sections/low-spectrum.tex) | General inertia criterion, four complete bounded-gap families, every exponent span at most3, and complete finite minimum-through-seven certificate |
 | [mixed-inertia.tex](sections/mixed-inertia.tex) | Uniform positive root below3 for every minimum at least4; root in(2,3) under the lower inequality; growing balanced region a>=3span+8 |
 | [arithmetic-obstructions.tex](sections/arithmetic-obstructions.tex) | Every gcd>=3 triple, all-odd and prime-residue classes, all-two-modulo-four triples and every common 2-adic valuation |
-| [mixed-parity-congruence.tex](sections/mixed-parity-congruence.tex) | Divisor32 lemma, six modulo-eight classes, all (3,3,2) and (3,0,0) modulo-four permutations, conditional derivative thresholds, successive (1,3,2) modulo-four constraints, and conditional exclusion of endpoint one for three mixed patterns |
+| [mixed-parity-congruence.tex](sections/mixed-parity-congruence.tex) | Divisor32 lemma, six modulo-eight classes, all (3,3,2) and (3,0,0) modulo-four permutations, a single consolidated (1,3,2) necessary-condition theorem and exclusion of endpoint one for three mixed patterns |
 | [endpoint-reduction.tex](sections/endpoint-reduction.tex) | Linear endpoint-two bound, all-even and two mixed-parity tails, divisor candidates, second-smallest<=15 certificate, modulo-three classes and finite-covering limitation |
 | [aa-small.tex](sections/aa-small.tex) | All-b theorem for a=2 through9, divisor/modular certificates and cubic-test scope |
 | [verification.tex](sections/verification.tex) | Actual scope of the exact checkers |
+| [two-adic-lifting.tex](sections/two-adic-lifting.tex) | Appendix B: derivative thresholds and complete successive lifting proofs for the consolidated main theorem |
 | [open.tex](sections/open.tex) | Ordered 8<=a<b<c<4a^2-2a outside the proved criteria; endpoint-zero necessary condition and nonsquarefree higher-prime vectors |
 
 ## Build
@@ -45,6 +49,11 @@ pdflatex -interaction=nonstopmode -halt-on-error paper.tex
 ```
 
 ## Evidence
+
+The [consolidation guide](../notes/manuscript-consolidation.md) maps previous
+theorem numbers to the current main statement and appendix propositions.
+The prior checker sources and saved certificates retain their original
+revisions, contents and verification scopes.
 
 The initial notes and checkers are retained from PR #2 at
 `f1284407b418979e8d3973805c85518489cab201`; the strengthened diagnostic,

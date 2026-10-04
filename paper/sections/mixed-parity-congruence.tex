@@ -124,114 +124,6 @@ Theorem~\ref{thm:mixed-parity-congruence}. The additional exclusions in
 Theorem~\ref{thm:odd-root-distribution} use the distribution of the roots
 and the derivative, beyond those two endpoint divisibilities.
 
-\begin{lemma}
-\label{lem:derivative-thresholds}
-Let $f\in\mathbb Z[x]$ be monic of degree five with two even and three
-odd integer roots. If exactly $k$ of the odd roots are one modulo four,
-then
-\[
- 2^{3+k}\mid f(1),\qquad
- 2^{\max(2,k+1)}\mid f'(1),\qquad
- 2^{\max(2,k)}\mid f''(1),\qquad 2\mid f'''(1).
-\]
-At three, the same statements hold with $k$ replaced by $3-k$.
-\end{lemma}
-
-\begin{proof}
-At one, the odd-root factors supply $k$ factors divisible by four and
-$3-k$ divisible by two; the even-root factors are odd. Each term of
-the $j$th derivative is $j!$ times a product retaining $5-j$ root factors.
-Removing the odd-root factors with the strongest guaranteed divisibility
-gives the stated bounds, including the factor two from $2!$ and $3!$.
-At three, the roles of the two odd residue classes are exchanged.
-Repeated roots and zero evaluations obey the same divisibilities.
-\end{proof}
-
-\begin{theorem}
-\label{thm:odd-root-sum}
-Let $a,b,c$ be positive exponents with
-$a\equiv1$, $b\equiv3$ and $c\equiv2\pmod4$.
-If $a+c\not\equiv15\pmod{16}$, their ideal intersection graph is
-nonintegral. All permutations are included, without a size or ratio bound.
-\end{theorem}
-
-\begin{proof}
-Write $(a,b,c)=(4u+1,4v+3,4w+2)$. Coefficientwise expansion gives
-\[
- h_C(2y+1)/8\in\mathbb Z[u,v,w,y],\qquad
- h_C(2y+1)/8\equiv(y+1)^3\pmod2.
-\]
-As in Lemma~\ref{lem:odd-root-distribution}, integer quotient roots
-would force all three odd roots to be three modulo four. Consequently
-$64\mid h_C(3)$. A further coefficientwise identity is
-\[
- h_C(3)/16\in\mathbb Z[u,v,w],\qquad
- h_C(3)/16\equiv(2v+1)(u+w+1)\pmod4.
-\]
-Since $2v+1$ is invertible modulo four, this forces
-$u+w+1\equiv0\pmod4$, equivalently $a+c\equiv15\pmod{16}$.
-Failure of that condition gives a noninteger complement root and graph lift.
-\end{proof}
-
-For example, $(14,25,27)$ and $(10,29,31)$ pass the earlier divisor-$32$
-test but have $h_C(3)\equiv32\pmod{64}$, contradicting the new requirement.
-The sum class $a+c\equiv15\pmod{16}$ remains compatible with this test.
-Complete second- and third-derivative checks at one and three give no
-additional exclusions with the root information modulo four used here.
-In particular $h_C'''(1)\equiv2\pmod4$ for every mixed exponent parity.
-Full valuations at a chosen exponent representative are not generally
-constant throughout its residue class: $h_C(3)=-2592$ at $(1,3,6)$ but
-$h_C(3)=0$ at $(9,3,6)$, although the exponent triples agree modulo eight.
-
-\begin{theorem}
-\label{thm:odd-root-lift}
-Let $a,b,c$ be positive exponents with
-$a\equiv1$, $b\equiv3$ and $c\equiv2\pmod4$.
-If $a+c+4b\not\equiv27\pmod{32}$, their ideal intersection graph is
-nonintegral. All permutations are included, without a size or ratio bound.
-\end{theorem}
-
-\begin{proof}
-Suppose all five complement quotient roots are integers.
-Theorem~\ref{thm:odd-root-sum} requires $a+c\equiv15\pmod{16}$.
-Write
-\[
- (a,b,c)=(4u+1,4v+3,16t-4u-2).
-\]
-Coefficientwise expansion gives
-\[
- H(z)=h_C(4z+3)/64\in\mathbb Z[u,v,t,z],\qquad
- H(z)\equiv z^3+vz^2+vz+t+1\pmod2.
-\]
-The three odd roots are already known to be three modulo four.
-Writing them as $4r_i+3$ and the two even roots as $\eta_j$ gives
-\[
- H(z)=\prod_{j=1}^2(4z+3-\eta_j)\prod_{i=1}^3(z-r_i).
-\]
-The first two factors reduce to one modulo two, so the displayed cubic
-must split into linear factors over $\mathbb F_2$.
-For even $v$, it splits precisely when $t$ is odd: otherwise it is
-$(z+1)(z^2+z+1)$. For odd $v$, it splits precisely when $t$ is even:
-otherwise it is $z(z^2+z+1)$. The quadratic $z^2+z+1$ is irreducible.
-Thus $t+v$ must be odd. Since
-\[
- a+c+4b=16(t+v)+11,
-\]
-this forces the asserted congruence. Its failure gives a noninteger
-complement root and graph lift.
-\end{proof}
-
-This excludes half the classes left by Theorem~\ref{thm:odd-root-sum}.
-There are $512$ role-ordered classes modulo thirty-two; the earlier
-condition leaves $128$, and the new one leaves $64$. Thus $64$ classes,
-or $384$ after all permutations, are additionally excluded.
-For example, the ordered triples $(13,18,19)$ and $(9,31,38)$ satisfy
-the old sum condition and $64\mid h_C(3)$, but their residue-role weighted
-sums are eleven modulo thirty-two. The compatible binary cubics are
-$z^3$ and $(z+1)^3$, so hypothetical integer odd roots would all be
-$b$ modulo eight, also requiring $512\mid h_C(b)$.
-The surviving congruence classes do not assert integral spectra.
-
 \begin{theorem}
 \label{thm:clustered-odd-roots}
 Let $a,b,c$ be positive exponent residue roles with
@@ -247,57 +139,42 @@ Moreover, put $u=(a-1)/4$ and $t=(a+c-b(b+2))/128$. Then
  t+v\equiv1\pmod2,& b=16v+15.
  \end{cases}
 \]
-Every violation proves nonintegrality, including all exponent permutations
-and without a size or ratio bound.
+If $m=\min\{a,b,c\}\geq4$ and $M=\max\{a,b,c\}$, then also
+\[
+ h_C(2)=0,\qquad M<7m-16+\frac{40}{m+2}.
+\]
+Every violation under the stated hypotheses proves nonintegrality;
+all exponent permutations are included.
 \end{theorem}
 
 \begin{proof}
-The proof of Theorem~\ref{thm:odd-root-lift} forces the three hypothetical
-integer odd complement roots to be $b$ modulo eight. The two remaining
-roots are even. Thus $512\mid h_C(b)$ and $64\mid h_C'(b)$, since each
-first-derivative term retains at least two factors divisible by eight.
-The exact quintic identity
+Proposition~\ref{thm:odd-root-lift} in Appendix~\ref{sec:two-adic-lifting}
+forces all three hypothetical integer odd quotient roots to be $b$ modulo
+eight. Thus $512\mid h_C(b)$ and $64\mid h_C'(b)$.
+The exact identity
 \[
  h_C(b)=a^2b^2c^2\bigl(a+c-b(b+2)\bigr)
 \]
-has prefactor with $2$-adic valuation exactly two. It follows that
-$128\mid a+c-b(b+2)$, including when the value is zero.
+has prefactor of $2$-adic valuation two, giving the sum condition modulo
+$128$, including when $h_C(b)=0$. The derivative congruence and the binary
+cubic calculation in Appendix~\ref{sec:two-adic-lifting} give the restriction
+on $b$ and the two parity conditions.
 
-Write $(a,b,c)=(4u+1,4w+3,b(b+2)+128t-a)$.
-Coefficientwise expansion gives
-\[
- h_C'(b)\equiv16(w^2-w+2)\pmod{64}.
-\]
-For $w\equiv0,1,2,3\pmod4$, the derivative residues are respectively
-$32,32,0,0$. Its required divisibility forces $w\equiv2$ or $3\pmod4$,
-which is the stated restriction on $b$.
-
-For the two remaining residues, put $K(z)=h_C(8z+b)/512$.
-Coefficientwise identities give $K\in\mathbb Z[u,v,t,z]$ and
-\[
- K(z)\equiv
- \begin{cases}
- z^3+z^2+(1+v+u^2)z+t,&b=16v+11,\\
- z^3+z^2+(1+v)z+t,&b=16v+15
- \end{cases}\pmod2.
-\]
-Writing the odd roots as $b+8r_i$ and the even roots as $\eta_j$ gives
-\[
- K(z)=\prod_{j=1}^2(8z+b-\eta_j)\prod_{i=1}^3(z-r_i).
-\]
-The even-root factors reduce to one, so the displayed binary cubic must
-split completely. For $\lambda,t\in\mathbb F_2$, the cubic
-$z^3+z^2+\lambda z+t$ splits precisely when $t=\lambda$: the two
-possibilities are $z^2(z+1)$ and $(z+1)^3$. Otherwise it is
-$z(z^2+z+1)$ or the irreducible cubic $z^3+z^2+1$.
-Using $u^2\equiv u\pmod2$ gives the two stated parity conditions.
+Since $b\equiv3\pmod4$, one cannot be a quotient root under the
+integer-spectrum assumption. For $m\geq4$, the positive root in $(0,3)$
+from Theorem~\ref{thm:uniform-low-root} must therefore equal two.
+Theorem~\ref{thm:endpoint-two-bound} gives the strict linear upper bound.
 \end{proof}
 
-The residue-role triples $(29,27,754)$ and $(45,47,2258)$ have
-$h_C(b)=0$ and $64\mid h_C'(b)$, but their third-shift cubics fail to
-split. They show that the final condition adds exclusions even when
-the value and first-derivative conditions hold. The compatible cases
-still require another nonintegrality argument.
+The arithmetic conditions imply the earlier sum congruences
+$a+c\equiv15\pmod{16}$ and $a+c+4b\equiv27\pmod{32}$.
+Appendix~\ref{sec:two-adic-lifting} gives their staged derivation and the
+supporting derivative thresholds. The theorem collects these arithmetic
+conditions together with the endpoint-two restriction.
+For example, $(29,27,754)$ and $(45,47,2258)$ have $h_C(b)=0$ and
+$64\mid h_C'(b)$ but fail the final parity test. The compatible triples
+$(25,27,758)$ and $(29,27,882)$ instead fail the linear upper bound.
+Satisfying the arithmetic conditions alone does not establish integrality.
 
 \begin{lemma}
 \label{lem:mixed-endpoint-one}

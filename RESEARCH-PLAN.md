@@ -70,6 +70,11 @@ Reza's scope and closure questions motivate a stopping point for new
 two-adic shifts: no finite closure has been established. Consolidate the
 existing conditions and pursue the structural endpoint-two problem first.
 Detailed checker scopes now form the manuscript's verification appendix.
+The [consolidation](notes/manuscript-consolidation.md) now places the
+strongest (1,3,2) arithmetic conditions, endpoint-two zero and linear
+maximum bound in one main theorem. Complete lifting proofs form Appendix B.
+The next research question remains the endpoint-two surface inside this
+linear region, using its exact cubic/divisor constraints and other roots.
 The [requested endpoint diagnostic](notes/endpoint-surfaces-diagnostic.md)
 exhausts all66pairs `4<=a<b<=15` and all integer `c>b` by exact divisor
 reduction, finding neither endpoint zero. With the low-root theorem and
