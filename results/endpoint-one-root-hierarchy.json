@@ -1,0 +1,289 @@
+{
+  "written_coefficient_hierarchy": "For integer root d>0, d|N, d^2|N-Dd, d^3|N-Dd+Bd^2 and d^4|N-Dd+Bd^2-Ad^3. Each is a necessary congruence; A/B/D are genuinely used. Even all congruences are only a modular condition, not F(d)=0.",
+  "written_boundary_candidate_exclusion": "For every a=6k,k>=1 on b=a,c=(a-1)(2a-1), d=3a/2 divides N and lies in the refined E>0 window, but fails the linear coefficient test: F(d)/d^2=-(4a^2-2a-1)T(a)/36 with numerator=2 mod3. Therefore d^2 does not divide F(d). Excludes this candidate uniformly, not the family by new means or every divisor.",
+  "endpoint_one_controls": [
+    {
+      "exponents": [
+        8,
+        8,
+        105
+      ],
+      "candidate_count": 5,
+      "prior_combined_survivors": [
+        15
+      ],
+      "quadratic_survivors": [],
+      "anchors_and_quadratic_survivors": [],
+      "candidates": [
+        {
+          "divisor": 10,
+          "exact_F_at_d": -88183900,
+          "linear_remainder_mod_d_squared": 0,
+          "quadratic_remainder_mod_d_cubed": 100,
+          "cubic_remainder_mod_d_fourth": 6100,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 11,
+          "exact_F_at_d": -235065996,
+          "linear_remainder_mod_d_squared": 99,
+          "quadratic_remainder_mod_d_cubed": 583,
+          "cubic_remainder_mod_d_fourth": 9900,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 12,
+          "exact_F_at_d": -379528176,
+          "linear_remainder_mod_d_squared": 96,
+          "quadratic_remainder_mod_d_cubed": 1104,
+          "cubic_remainder_mod_d_fourth": 2832,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 14,
+          "exact_F_at_d": -661242204,
+          "linear_remainder_mod_d_squared": 56,
+          "quadratic_remainder_mod_d_cubed": 1428,
+          "cubic_remainder_mod_d_fourth": 12404,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 15,
+          "exact_F_at_d": -798518700,
+          "linear_remainder_mod_d_squared": 0,
+          "quadratic_remainder_mod_d_cubed": 2925,
+          "cubic_remainder_mod_d_fourth": 40050,
+          "passes_prior_anchor_tests": true
+        }
+      ]
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        136
+      ],
+      "candidate_count": 5,
+      "prior_combined_survivors": [],
+      "quadratic_survivors": [
+        14
+      ],
+      "anchors_and_quadratic_survivors": [],
+      "candidates": [
+        {
+          "divisor": 11,
+          "exact_F_at_d": -103928000,
+          "linear_remainder_mod_d_squared": 110,
+          "quadratic_remainder_mod_d_cubed": 473,
+          "cubic_remainder_mod_d_fourth": 8459,
+          "passes_prior_anchor_tests": true
+        },
+        {
+          "divisor": 12,
+          "exact_F_at_d": -497426472,
+          "linear_remainder_mod_d_squared": 72,
+          "quadratic_remainder_mod_d_cubed": 792,
+          "cubic_remainder_mod_d_fourth": 9432,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 14,
+          "exact_F_at_d": -1269805208,
+          "linear_remainder_mod_d_squared": 0,
+          "quadratic_remainder_mod_d_cubed": 0,
+          "cubic_remainder_mod_d_fourth": 35672,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 16,
+          "exact_F_at_d": -2022810480,
+          "linear_remainder_mod_d_squared": 144,
+          "quadratic_remainder_mod_d_cubed": 3216,
+          "cubic_remainder_mod_d_fourth": 23696,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 17,
+          "exact_F_at_d": -2392092032,
+          "linear_remainder_mod_d_squared": 272,
+          "quadratic_remainder_mod_d_cubed": 3451,
+          "cubic_remainder_mod_d_fourth": 32929,
+          "passes_prior_anchor_tests": false
+        }
+      ]
+    },
+    {
+      "exponents": [
+        20,
+        20,
+        741
+      ],
+      "candidate_count": 13,
+      "prior_combined_survivors": [],
+      "quadratic_survivors": [],
+      "anchors_and_quadratic_survivors": [],
+      "candidates": [
+        {
+          "divisor": 21,
+          "exact_F_at_d": 1207587225600,
+          "linear_remainder_mod_d_squared": 252,
+          "quadratic_remainder_mod_d_cubed": 1134,
+          "cubic_remainder_mod_d_fourth": 47439,
+          "passes_prior_anchor_tests": true
+        },
+        {
+          "divisor": 22,
+          "exact_F_at_d": 931478213204,
+          "linear_remainder_mod_d_squared": 396,
+          "quadratic_remainder_mod_d_cubed": 396,
+          "cubic_remainder_mod_d_fourth": 224004,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 24,
+          "exact_F_at_d": 380928619344,
+          "linear_remainder_mod_d_squared": 336,
+          "quadratic_remainder_mod_d_cubed": 4944,
+          "cubic_remainder_mod_d_fourth": 4944,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 25,
+          "exact_F_at_d": 106487650400,
+          "linear_remainder_mod_d_squared": 400,
+          "quadratic_remainder_mod_d_cubed": 9775,
+          "cubic_remainder_mod_d_fourth": 150400,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 26,
+          "exact_F_at_d": -167397691500,
+          "linear_remainder_mod_d_squared": 572,
+          "quadratic_remainder_mod_d_cubed": 16796,
+          "cubic_remainder_mod_d_fourth": 385892,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 28,
+          "exact_F_at_d": -713502268864,
+          "linear_remainder_mod_d_squared": 336,
+          "quadratic_remainder_mod_d_cubed": 8960,
+          "cubic_remainder_mod_d_fourth": 250432,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 30,
+          "exact_F_at_d": -1257386661900,
+          "linear_remainder_mod_d_squared": 0,
+          "quadratic_remainder_mod_d_cubed": 17100,
+          "cubic_remainder_mod_d_fourth": 638100,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 33,
+          "exact_F_at_d": -2069053793664,
+          "linear_remainder_mod_d_squared": 66,
+          "quadratic_remainder_mod_d_cubed": 6600,
+          "cubic_remainder_mod_d_fourth": 42537,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 34,
+          "exact_F_at_d": -2338501089676,
+          "linear_remainder_mod_d_squared": 1088,
+          "quadratic_remainder_mod_d_cubed": 9180,
+          "cubic_remainder_mod_d_fourth": 48484,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 35,
+          "exact_F_at_d": -2607394500900,
+          "linear_remainder_mod_d_squared": 175,
+          "quadratic_remainder_mod_d_cubed": 3850,
+          "cubic_remainder_mod_d_fourth": 1461600,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 37,
+          "exact_F_at_d": -3143520442816,
+          "linear_remainder_mod_d_squared": 444,
+          "quadratic_remainder_mod_d_cubed": 26455,
+          "cubic_remainder_mod_d_fourth": 431679,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 38,
+          "exact_F_at_d": -3410753360364,
+          "linear_remainder_mod_d_squared": 608,
+          "quadratic_remainder_mod_d_cubed": 4940,
+          "cubic_remainder_mod_d_fourth": 1596228,
+          "passes_prior_anchor_tests": false
+        },
+        {
+          "divisor": 39,
+          "exact_F_at_d": -3677433166836,
+          "linear_remainder_mod_d_squared": 1170,
+          "quadratic_remainder_mod_d_cubed": 11817,
+          "cubic_remainder_mod_d_fourth": 1079559,
+          "passes_prior_anchor_tests": false
+        }
+      ]
+    }
+  ],
+  "equality_G_coefficients_descending_a": [
+    "3*b - 1",
+    "-6*b**3 - 10*b**2 + 4*b",
+    "3*b**5 + 11*b**4 + 7*b**3 - 8*b**2 + b",
+    "b**5 + 6*b**4 + 7*b**3 - 2*b**2",
+    "-b**7 - 8*b**6 - 22*b**5 - 21*b**4 + 7*b**3 + 16*b**2 - 8*b + 1"
+  ],
+  "written_equality_reduction": "For integer4<=a<=b and c=b(b+2)-a, h_C(1)=0 iff G(a,b)=0, with h_C(1)=-(b-1)G. Fully distinct endpoint-one points at minimum>=8 satisfy2a^2-a+1<b^2+3b<4a^2-a, hence a<b<2a. This is an exact Diophantine reduction, not a classification.",
+  "written_unbounded_real_sign_regimes": "For every reala>=9, b=a+3 has unique real endpoint c>b with E>0; b=2a has unique real endpoint c>b with E<0. Existing fixed-pair feasibility/uniqueness plus complete positive shifted coefficients at the E=0 threshold prove both. Thus neither sign eventually dominates the real endpoint surface. No assertion about dominance on integer endpoint triples.",
+  "unbounded_real_regime_certificates": [
+    {
+      "middle_family": "a + 3",
+      "h_C_at_one_at_E_zero": "-2*(a + 2)*(a**7 + 11*a**6 + 7*a**5 - 479*a**4 - 3210*a**3 - 9424*a**2 - 13384*a - 7378)",
+      "sign": -1,
+      "positive_coefficients_at_a9plusm": [
+        2,
+        170,
+        6232,
+        128076,
+        1602214,
+        12344554,
+        55958484,
+        130053564,
+        102699872
+      ],
+      "real_endpoint_regime": "E>0",
+      "integer_c_feasibility_claimed": false
+    },
+    {
+      "middle_family": "2*a",
+      "h_C_at_one_at_E_zero": "(2*a - 1)*(32*a**7 + 352*a**6 + 586*a**5 + 305*a**4 - 50*a**3 - 64*a**2 + 16*a - 1)",
+      "sign": 1,
+      "positive_coefficients_at_a9plusm": [
+        64,
+        5280,
+        188308,
+        3800112,
+        47536335,
+        377906718,
+        1866318180,
+        5238888768,
+        6403637656
+      ],
+      "real_endpoint_regime": "E<0",
+      "integer_c_feasibility_claimed": false
+    }
+  ],
+  "written_real_equality_exists": "For every reala>=9, feasibility holds throughout a+3<=b<=2a and the unique simple c>b root varies continuously. E has opposite signs at the endpoints, so some realb in(a+3,2a) has E=0. No integerb/c feasibility or equality root index classification is inferred.",
+  "generic_symbolic_identities": "passed",
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_one_root_hierarchy.py": "3a474f51472da2c0c7540c3810d282495718ffd84f06d84e918bba3de0929fd7",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "input_certificate_sha256": "d4ccacd3dae8c8c3a95c9b6e141fba040368b8d939050ec9f20257ccb4b0350d",
+  "scope": "Written coefficient congruences, uniform rejection of one infinite repeated-boundary candidate family, and two unbounded real sign regimes; exact equality Diophantine reduction with necessary sum bounds. Same3controls/23divisors only, quadratic stage removes sole prior survivor; no new nonintegrality family or fully distinct/globalQ3closure. Necessary congruences not sufficient. Integer sign dominance/equality feasibility remain open. No range/modulus scan, higher endpoint2adicshift, floats or Lean. Prior manuscript/proofs/finite dependencies and oldn7/four native axioms retained."
+}

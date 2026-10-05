@@ -110,6 +110,16 @@ when studying integer feasibility or splitting. Two selected real algebraic
 endpoint controls show both strict regimes; the written proof needs no
 finite base. No new nonintegrality family or full Q3 closure is claimed.
 
+The [root-hierarchy note](notes/endpoint-one-root-hierarchy.md) adds necessary
+quadratic/cubic coefficient congruences and rejects the sole prior control
+survivor15 at the quadratic stage. It uniformly rejects the earlier boundary
+candidate d=3a/2, while preserving the distinction from all-divisor exclusion.
+Both strict E regimes and equality occur for every real minimum>=9 in
+specified real families. Integer regime dominance is unresolved. Equality
+reduces to G(a,b)=0,c=b(b+2)-a, with necessary a<b<2a and sum bounds at
+minimum>=8. Further work should address this exact integer equation or
+uniform root exclusion in the refined windows; no sufficiency/global closure.
+
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
 Appendices B/C; Appendix A summarizes verification, with the full checker

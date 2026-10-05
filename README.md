@@ -108,6 +108,14 @@ in (b,min(c,a+b)) or (a,b), respectively. At equality b is a residual
 root, without a claim about its position or integer splitting. The proof
 uses determinant sign and principal interlacing, with no finite base.
 
+The [higher-coefficient analysis](notes/endpoint-one-root-hierarchy.md)
+adds necessary tests modulo d^3 and d^4; the quadratic and exponent tests
+reject all23existing candidates. The earlier infinite boundary candidate
+d=3a/2 fails the linear test uniformly. Both E sign regimes and E=0 points
+occur at arbitrarily large real minima, with no integer-feasibility claim.
+The equality subfamily has an explicit Diophantine equation G(a,b)=0.
+These results do not establish sufficiency or close full Q3.
+
 A standalone [middle-diagonal inertia restriction](notes/endpoint-two-middle-inertia.md)
 narrows the endpoint-two problem without further congruence lifting. For
 `4<=a<b<c`, `(b-2)(a+b+c-2)<=2ac` supplies a positive quotient root in `(0,2)`.
