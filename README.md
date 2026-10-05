@@ -37,6 +37,17 @@ Any fully distinct integer spectrum at minimum>=8 would now require
 **d>=3,a<2d^2+20**, in addition to the existing endpoint-one bounds.
 Full Q3 and the remaining endpoint-one region stay open.
 
+The [minimum-eight completion](notes/minimum-eight.md) now certifies
+nonintegrality for **every triple with minimum exactly eight**. Written
+reductions leave precisely108middle exponents11through118on endpoint one.
+The complete fixed-pair certificate brackets each unique real exponent
+between consecutive integers, with216independent6x6Bareiss boundary
+checks and216exact Sturm counts, covering every integer c>b. Endpoint
+two is excluded here by the written maximum cutoff, without its global
+finite base. The theorem requires the108pair finite certificate; the
+cumulative minimum<=8result also retains the earlier27562triple base.
+Full Q3 remains open, with remaining minimum at least nine.
+
 A standalone [middle-diagonal inertia restriction](notes/endpoint-two-middle-inertia.md)
 narrows the endpoint-two problem without further congruence lifting. For
 `4<=a<b<c`, `(b-2)(a+b+c-2)<=2ac` supplies a positive quotient root in `(0,2)`.

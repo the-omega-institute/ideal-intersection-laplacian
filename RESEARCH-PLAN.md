@@ -32,6 +32,17 @@ b<c,b+c<4a^2-2a, on integer feasibility or other quotient roots.
 This is a necessary surviving region; full Q3 remains open. Earlier
 results and manuscript files remain unchanged pending coauthor review.
 
+The [minimum-eight certificate](notes/minimum-eight.md) completes every
+triple with minimum exactlyeight using written reductions and a complete
+108pair endpoint-one unit-bracket base, covering all c>b. Each boundary
+has independent integer-Horner/6x6Bareiss agreement; full-interval and
+unit-interval Sturm counts are1for each pair. The new result requires
+finite computation; its endpoint-two reduction is written and does not
+use the global8658triple base. Cumulative minimum<=8retains the earlier
+27562triple finite certificate. Remaining candidates have minimum>=9.
+Next target a specified structural obstruction or another quotient root;
+do not expand the minimum range without a stated mathematical question.
+
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
 Appendices B/C; Appendix A summarizes verification, with the full checker

@@ -1,0 +1,113 @@
+{
+  "minimum_eight_result": "Every positive integer three-exponent vector with minimum exactly8 is Laplacian nonintegral. Repeated exponents use existing written theorem. Fully distinct vectors use written uniform low root, written endpoint-two maximum cutoff, written endpoint-one geometry/gaps1/2 and complete108pair finite unit-bracket certificate. The result requires finite computation, not a purely written minimum-eight theorem.",
+  "cumulative_consequence": "Together with existing minimum<=7results, every triple with minimum<=8is nonintegral. This cumulative conclusion retains the earlier27562triple finite certificate. The global8658triple endpoint-two completion base is not needed for the new minimum-eight proof.",
+  "complete_finite_base": {
+    "minimum": 8,
+    "middle_minimum": 11,
+    "middle_maximum": 118,
+    "pairs": 108,
+    "all_integer_c_strictly_above_middle_covered": true,
+    "endpoint_one_integer_zeros": 0,
+    "unit_brackets": 108,
+    "independent_Bareiss_boundary_determinants": 216,
+    "exact_Sturm_counts": 216,
+    "csv_file": "minimum-eight-base.csv",
+    "csv_sha256": "fc3177c51a48a4fa8e732c159515b28d9e77ad56f3c2847267572801d59dc152"
+  },
+  "endpoint_two_written_reduction": "Fully distinct ordered minimum8has b>=9,c>=10. Written c>=9a/4-8=10implies h_C(2)>0. No finite endpoint-two base needed here.",
+  "endpoint_one_written_reduction": "Gaps1/2exclude middle9/10. Real feasibility excludes everymiddle>=119. Remainingmiddle11through118have unique real c>middle; the full108pair finite certificate brackets each between consecutive integers.",
+  "generic_endpoint_one_cubic_coefficients": [
+    "b**2 + 63",
+    "b**3 - 241*b**2 + 133*b + 427",
+    "(7*b - 7)*(19*b + 21)",
+    "(b + 7)*(7*b - 7)*(9*b + 7)"
+  ],
+  "selected_base_rows": [
+    {
+      "minimum": 8,
+      "middle": 11,
+      "lower_c": 140,
+      "upper_c": 141,
+      "Horner_lower": -1140440,
+      "Horner_upper": 2483184,
+      "Bareiss_lower": -1140440,
+      "Bareiss_upper": 2483184,
+      "Sturm_roots_above_middle": 1,
+      "Sturm_roots_in_bracket": 1
+    },
+    {
+      "minimum": 8,
+      "middle": 22,
+      "lower_c": 186,
+      "upper_c": 187,
+      "Horner_lower": -18293943,
+      "Horner_upper": 562560,
+      "Bareiss_lower": -18293943,
+      "Bareiss_upper": 562560,
+      "Sturm_roots_above_middle": 1,
+      "Sturm_roots_in_bracket": 1
+    },
+    {
+      "minimum": 8,
+      "middle": 64,
+      "lower_c": 171,
+      "upper_c": 172,
+      "Horner_lower": -30690504,
+      "Horner_upper": 91226517,
+      "Bareiss_lower": -30690504,
+      "Bareiss_upper": 91226517,
+      "Sturm_roots_above_middle": 1,
+      "Sturm_roots_in_bracket": 1
+    },
+    {
+      "minimum": 8,
+      "middle": 118,
+      "lower_c": 119,
+      "upper_c": 120,
+      "Horner_lower": -124263440,
+      "Horner_upper": 71336115,
+      "Bareiss_lower": -124263440,
+      "Bareiss_upper": 71336115,
+      "Sturm_roots_above_middle": 1,
+      "Sturm_roots_in_bracket": 1
+    }
+  ],
+  "preserved_controls": [
+    {
+      "exponents": [
+        8,
+        9,
+        10
+      ],
+      "spectral_point": 2,
+      "endpoint_value": 38160,
+      "Bareiss_determinant": 76320
+    },
+    {
+      "exponents": [
+        8,
+        8,
+        105
+      ],
+      "spectral_point": 1,
+      "endpoint_value": 0,
+      "Bareiss_determinant": 0
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        136
+      ],
+      "spectral_point": 1,
+      "endpoint_value": 0,
+      "Bareiss_determinant": 0
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_minimum_eight.py": "918e482306aa9ac73a7752d508466365fdb5e8cad936e69256e85f9cd4b7c3f2",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Complete minimum-eight necessary fixed-pair base, not an arbitrary exponent range: all108middlevalues11through118with unboundedccoverage from written uniqueness and exact unit brackets; every boundary independently integer-Horner/6x6Bareisschecked and both fullc>b/bracketSturmcounts1. Finite certificate essential. No newdiscriminantcertificate, higherminimumscan, floats or Lean. Oldresults/manuscriptunchanged; repeated endpoint-one zeros preserved. FullQ3/higher-prime nonsquarefreevectorsopen; remainingminimum>=9."
+}
