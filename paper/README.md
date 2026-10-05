@@ -4,6 +4,9 @@ Read [the PDF](paper.pdf), or edit [paper.tex](paper.tex) and the section
 files it includes. This is a growing mathematical draft, not a submission
 package. Author metadata and any manuscript disclosure are for joint agreement.
 The main text ends with explicit remaining questions and references.
+Remark 14.5 records the equality curve's genus ten and Siegel finiteness
+consequence, with a short quotient/ramification argument and a linked detailed
+verification note. It does not supply an effective integer-point list.
 Theorem 13.5 combines the mixed-parity classes and their necessary conditions;
 Theorem 14.1 combines the endpoint reductions. The main text gives one worked
 shifted-root example. Appendix A summarizes the actual verification scopes,
