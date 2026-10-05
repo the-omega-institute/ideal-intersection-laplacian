@@ -11,7 +11,7 @@
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
 \title{Laplacian nonintegrality of three-prime ideal intersection graphs}
-\author{Working manuscript}
+\author{Haobo Ma \and Reza Nikandish\thanks{Corresponding author.} \and Wenlin Zhang}
 \date{October 6, 2026}
 \begin{document}
 \maketitle
@@ -21,25 +21,22 @@ $\mathbb Z_{p^a q^b r^c}$ is Laplacian nonintegral for any three distinct
 primes and every positive exponent triple. Vertices are the nonzero
 proper ideals; adjacency means nonzero intersection.
 
-A six-support complement quotient supplies the spectral obstruction.
-For repeated exponents, exact factor indices and a symmetric cubic
-interval exhaust the exceptional square-discriminant cases. Small minima
-are settled by endpoint identities and complete finite certificates.
-At every remaining minimum, a positive quotient root below three forces
-an integer spectrum onto endpoint one or endpoint two. On endpoint two,
-geometric bounds and complete positive identities give a further root
-in $(4,5)$ at large minima; a complete $8\,658$-triple certificate
-handles the necessary finite base. On endpoint one, an exponent-sum
-bound and two written small-gap brackets reduce the final obstruction
-to a largest-root interval:
+A six-support complement quotient $C$ supplies the spectral obstruction.
+Symmetry and exact factor indices settle repeated exponents. For fully
+distinct exponents beyond the small-minimum cases, a positive quotient
+root below three reduces a hypothetical integer spectrum to endpoint
+one or endpoint two. Endpoint two supplies a further root in $(4,5)$
+at large minima; endpoint one reduces to two small-gap brackets and
+the largest-root interval
 \[
- bc+a+b+c<\lambda_{\max}<bc+a+b+c+1
+ bc+a+b+c<\lambda_{\max}(C)<bc+a+b+c+1
 \]
 for real $3\leq a\leq b\leq c$, $b-a\geq3$ and $c\geq a^2-a$.
-The global classification combines these written unbounded arguments
-with the historical $27\,562$-triple minimum-through-seven certificate
-and the earlier small-minimum inputs. All required coefficient tables
-are included. Exact verification uses integer and rational arithmetic.
+The proof is computer-assisted: unbounded spectral arguments are combined
+with complete exact checks on finite domains of $325$ pairs,
+$27\,562$ triples and $8\,658$ triples. The required coefficient identities
+and certificate specifications are supplied. Verification uses integer
+and rational arithmetic.
 \end{abstract}
 \noindent\textbf{2020 Mathematics Subject Classification.}
 Primary 05C50; Secondary 05C25, 13A15, 11C08, 15A18.
@@ -60,9 +57,10 @@ used here. Laplacian and graph-spectral background is developed
 in~\cite{fiedler,grone,merris,cvetkovic,brouwer}; equitable partitions
 and generalized joins reduce these graphs to small matrices~\cite{godsilroyle,cardoso}.
 
-Nikandish~\cite{nikandish} gives a generalized-join spectrum formula
+Nikandish~\cite[Theorems 13 and 30]{nikandish} gives a generalized-join spectrum formula
 and a Schur--Weyl reduction for equal prime exponents, with representation
-background in~\cite{fultonharris}. His nonintegrality result for $(pqr)^k$
+background in~\cite{fultonharris}. His nonintegrality result for $(pqr)^k$,
+$k\geq1$~\cite[Corollary 31]{nikandish},
 is extended here to every positive three-prime exponent triple
 (Theorem~\ref{thm:three-prime-classification}).
 The support-class graph model makes the prime values irrelevant.
@@ -70,16 +68,23 @@ The main difficulty is therefore the unbounded exponent domain,
 including fully unequal exponents whose complement quotient can have
 integer low roots.
 
-Our proof separates three cases. Coordinate symmetry settles repeated
-entries. Explicit endpoint signs and the uniform cutoff settle minima
-at most seven, with a complete finite discriminant certificate.
-For $8\leq a<b<c$, a symmetric comparison puts a positive quotient root
-in $(0,3)$. Integrality would force that root to be one or two.
-The endpoint-two theorem supplies a second noninteger root, while
-endpoint one forces a large enough maximum exponent for a unit interval
-containing the largest root. Written brackets handle the two smallest
-middle gaps. The final proof assembles these cases without enumerating
-integer points on the endpoint-one surface.
+Our main result is that every graph in this three-prime family is
+Laplacian nonintegral, for all positive integers $a,b,c$
+(Theorem~\ref{thm:three-prime-classification}). The multiplicatively related
+support weights permit symmetry reduction, exact factor arithmetic and
+real-parameter spectral separation across the unbounded exponent domain.
+
+The proof separates three cases. Theorem~\ref{thm:repeated} settles
+repeated entries, and Corollary~\ref{cor:minimum-seven} settles minima at
+most seven using endpoint signs, the uniform cutoff and complete finite
+certificates. For $8\leq a<b<c$, Theorem~\ref{thm:uniform-low-root}
+puts a positive quotient root in $(0,3)$. Integrality forces it to be one
+or two. Theorem~\ref{thm:endpoint-two-completion} excludes two. At one,
+Lemma~\ref{lem:endpoint-one-small-gaps} handles middle gaps one and two;
+for larger gaps, Theorem~\ref{thm:endpoint-one-spectrum} gives the
+exponent-sum bound needed by Theorem~\ref{thm:largest-root-unit-interval}.
+This completes the classification without enumerating integer points on
+the endpoint-one surface.
 
 The computer-assisted dependencies are stated where used and collected
 in Appendix~\ref{sec:verification}. The complete coefficient tables
@@ -103,6 +108,16 @@ for each repeated value. Effective integer-point enumeration on the
 endpoint-one surface is another arithmetic question, independent of the
 nonintegrality theorem proved here.
 
+\section*{Declaration of AI use}
+During this research, DeepSeek was used for diagnostic-script code
+generation, counterexample analysis and language editing. OpenAI Codex
+was used for mathematical exploration and proof development, code
+generation, exact-verification diagnostics and manuscript editing.
+OpenAI ChatGPT (GPT-6 Pro) was used for an additional review of proof
+dependencies and presentation. The authors are responsible for the
+mathematical claims, code and final text; these tools are not authors.
+The verification scope is specified in Appendix~\ref{sec:verification}.
+
 \input{core/bibliography}
 \appendix
 \section{Exact evidence for the classification}
@@ -113,6 +128,13 @@ domains derived by those proofs. The source repository~\cite{repository}
 retains the checker sources, certificates and reproduction instructions.
 Python~3.10 or later and SymPy~1.14.0 use integer and rational arithmetic.
 No Lean formalization is claimed for these Laplacian results.
+The revision-pinned manifest in
+\path{notes/classification-certificate-manifest.md} and
+\path{results/classification-certificate-manifest.json} maps each essential
+input to its source and data revisions, SHA256 hashes, checking command
+and expected result. Historical scope strings in the saved reports describe
+the state when those reports were produced; the dependencies below give
+their role in the completed classification.
 
 \subsection{Repeated entries and small minima}
 The exact divisor reduction exhausts the first three nonboundary

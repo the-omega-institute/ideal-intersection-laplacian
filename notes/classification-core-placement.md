@@ -1,6 +1,6 @@
 # Three-prime classification manuscript and supporting material
 
-The [25-page main manuscript](../paper/classification-core.pdf) makes
+The [26-page main manuscript](../paper/classification-core.pdf) makes
 the completed three-prime classification the central result. It preserves
 the proof chain and its finite dependencies while setting aside the
 auxiliary arithmetic and higher-prime results. Reza Nikandish's
@@ -8,16 +8,20 @@ auxiliary arithmetic and higher-prime results. Reza Nikandish's
 endorses this organization and the retained evidence. The user has delegated
 the structure decision; we select the focused classification as the main-paper
 direction. The full collection is supporting research material, with no second
-submission inferred. Final title, venue, author metadata, disclosure wording,
+submission inferred. The alphabetical author order and Reza Nikandish as
+corresponding author are now agreed; the confirmed tool uses are included
+for a final coauthor wording review. Final title, venue, disclosure wording,
 freeze and submission arrangements still require the coauthors' confirmation.
 
 The existing `paper/paper.tex`, every original section source and
 `paper/paper.pdf` are untouched. The default PDF remains 61 pages and the
 previous optional detailed build remains 67 pages. The new candidate is
-36 pages shorter than the default, with the same 11pt font, one-inch
-margins and article layout. Its main argument ends on page 17; further
-questions and references occupy pages 18–19, the evidence summary is on
-page 19, and the full coefficient/base appendices occupy pages 20–25.
+35 pages shorter than the default, with the same 11pt font, one-inch
+margins and article layout. It revises the earlier 25-page candidate with
+the confirmed author arrangement, tool-use declaration, precise proof
+roadmap, real-weight interpretation and quotient-transfer explanation.
+The essential evidence remains summarized in Appendix A, with complete
+coefficient/base appendices in B and C.
 The page count is a measured consequence of the selected scope, not a journal
 page limit or a substitute for mathematical review.
 
@@ -128,8 +132,8 @@ arguments and final classification have their required definitions,
 hypotheses, finite inputs and coefficient vectors present. No new
 mathematical theorem or certificate-free replacement is claimed.
 
-The candidate builds with pdfTeX/TeX Live 2026 without LaTeX warnings,
-undefined references or overfull/underfull boxes. All 25 pages were
+The manuscript builds with pdfTeX/TeX Live 2026 without LaTeX warnings,
+undefined references or overfull/underfull boxes. All 26 pages were
 rendered and visually inspected, including the classification page and
 dense coefficient tables. The original default PDF retains SHA256
 `f2b3a845f3e04879943471c21eaa556dfddf81dd54e1568db6be09156508aa3f`.
@@ -150,7 +154,16 @@ pdflatex -interaction=nonstopmode -halt-on-error classification-core.tex
 pdflatex -interaction=nonstopmode -halt-on-error classification-core.tex
 ```
 
-The generator's `--emit-patch` mode emits the initial fragment/receipt
-patch when those generated files are absent. Future source revisions
-must update the source selections and receipt together; a mismatching
-committed fragment fails the checker instead of silently being refreshed.
+The generator's `--emit-patch` mode emits an explicit initial or update
+patch for the fragments and receipt. Editorial explanatory paragraphs
+are kept outside the preserved statement and proof bodies. Future source
+revisions must update the source selections and receipt together; the normal
+checking command fails on a mismatch instead of silently refreshing files.
+
+The [certificate manifest](classification-certificate-manifest.md) gives
+the fixed source/data revisions, hashes and expected results. Fresh symbolic
+checks in `scripts/check_classification_transfer.py` verify the weighted
+energy identity, complement identity and both repeated-entry embeddings
+used by the added explanations. No historical finite base was rerun for
+this revision. The external model review's reported recalculations are
+not counted as independently reproduced repository evidence.

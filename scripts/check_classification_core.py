@@ -1,4 +1,5 @@
 import argparse
+import difflib
 import hashlib
 import json
 import re
@@ -83,6 +84,16 @@ identity and the universal-vertex lift.
     fragment("distinct-tail.tex", r"\begin{proposition}")
     heading(r"""\section{Small-minimum certificates and a uniform low root}
 \label{sec:low-spectrum}
+The complement quotient also makes sense for positive real support weights.
+With $W=\operatorname{diag}(w)$ and disjointness edges on the six supports,
+\[
+ z^TWCz=\sum_{\{S,T\}:\,S\cap T=\varnothing}w_Sw_T(z_S-z_T)^2.
+\]
+Thus $W^{1/2}CW^{-1/2}$ is positive semidefinite. The singleton triangle
+and the three complementary-pair edges connect this support graph, so
+its kernel is one-dimensional. This justifies the real-parameter spectral
+arguments below as well as their integer specializations.
+
 The uniform cutoff leaves a complete finite domain at minima four through
 seven. A symmetric Schur complement then supplies a positive root below
 three at every larger minimum, including when an endpoint sign change
@@ -100,7 +111,15 @@ minimum. We retain the full spectral statement and its written proof;
 the sum bound and the symmetric quotient are the inputs used in the
 largest-root completion.""")
     fragment("endpoint-one-spectrum.tex", r"\begin{theorem}", r"\begin{corollary}")
-    heading(r"\section{The endpoint-two alternative}")
+    heading(r"""\section{The endpoint-two alternative}
+For integer exponents, every noninteger quotient root $\mu$ transfers to
+the graph eigenvalue $N+abc-1-\mu$: the exception $N-\mu=0$ in
+Lemma~\ref{lem:join} is impossible because $N$ is an integer. Conversely,
+the earlier repeated-entry and small-minimum proofs exhibit noninteger
+roots in the six-support space itself. The repeated-entry invariant blocks
+lie in that space, and~\eqref{eq:complement} reflects their roots from $B$
+to $C$. These are the quotient obstructions used for the smaller cases
+in the endpoint-two theorem.""")
     fragment("endpoint-two-completion.tex", "The endpoint-two surface admits", r"\begin{corollary}")
     fragment("three-prime-classification.tex")
     return "".join(pieces), selections
@@ -118,7 +137,7 @@ def audit(body, selections, bibliography):
     assert len(labels) == len(set(labels)), "Duplicate labels"
     assert set(references) <= set(labels), sorted(set(references) - set(labels))
     citation_keys = set()
-    for group in re.findall(r"\\cite\{([^}]+)\}", combined):
+    for group in re.findall(r"\\cite(?:\[[^\]]*\])?\{([^}]+)\}", combined):
         citation_keys.update(group.split(","))
     bibliography_keys = set(re.findall(r"\\bibitem\{([^}]+)\}", bibliography))
     assert citation_keys <= bibliography_keys
@@ -179,9 +198,16 @@ def main():
     if arguments.emit_patch:
         print("*** Begin Patch")
         for filename, content in generated.items():
-            assert not (ROOT / filename).exists(), filename
-            print("*** Add File: " + str(ROOT / filename))
-            print("\n".join("+" + line for line in content.splitlines()))
+            path = ROOT / filename
+            if path.exists():
+                if path.read_text() == content:
+                    continue
+                print("*** Update File: " + str(path))
+                for line in list(difflib.unified_diff(path.read_text().splitlines(), content.splitlines(), n=3))[2:]:
+                    print("@@" if line.startswith("@@") else line)
+            else:
+                print("*** Add File: " + str(path))
+                print("\n".join("+" + line for line in content.splitlines()))
         print("*** End Patch")
     else:
         for filename, content in generated.items():

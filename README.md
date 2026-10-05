@@ -1,6 +1,6 @@
 # Laplacian integrality of ideal intersection graphs
 
-The [25-page three-prime classification manuscript](paper/classification-core.pdf)
+The [26-page three-prime classification manuscript](paper/classification-core.pdf)
 is the selected main-paper direction, following coauthor review of the
 focused candidate. It presents the completed three-prime theorem with its
 full proof chain, historical finite certificates and complete coefficient tables. The
@@ -8,8 +8,12 @@ full proof chain, historical finite certificates and complete coefficient tables
 the retained core from auxiliary arithmetic and higher-prime results.
 The original 61-page manuscript remains the supporting research collection;
 the detailed build is 67 pages. This placement does not designate the collection
-as a separate submission. Final title, journal, author metadata, disclosure
-wording and submission arrangements remain to be confirmed with the coauthors.
+as a separate submission. The alphabetical author order and Reza Nikandish
+as corresponding author are agreed. The revised manuscript includes the
+confirmed tool uses; exact disclosure wording, final title, journal and
+submission arrangements remain for coauthor review. The
+[certificate manifest](notes/classification-certificate-manifest.md) supplies
+fixed revisions, hashes and reproduction commands for the core evidence.
 
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new
@@ -18,8 +22,8 @@ and written gap1/2 brackets complete the last alternative. The combined
 classification retains historical27562/8658finite bases. The interval
 itself has a written real proof with36/170complete positive terms.
 Higher-prime nonsquarefree Q3 remains open; effective integer exponent-point
-enumeration is separate. No submission, freeze or authorship/disclosure
-agreement is inferred. Earlier research status paragraphs below describe
+enumeration is separate. Submission and freeze remain pending.
+Earlier research status paragraphs below describe
 prior stages and are superseded by this classification.
 
 

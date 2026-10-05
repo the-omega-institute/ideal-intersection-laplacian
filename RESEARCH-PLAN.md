@@ -7,9 +7,10 @@ appendices remain together. The original 61/67-page collection and the
 higher-prime research branch supply supporting material, without a separate
 submission being inferred. See the [placement decision](notes/classification-core-placement.md).
 Prioritize independent review of this focused proof and concrete corrections
-over additional fixed-value higher-prime expansions. Final author metadata,
-disclosure wording, title, venue, freeze and submission arrangements remain
-with the coauthors.
+over additional fixed-value higher-prime expansions. Author order and Reza
+Nikandish as corresponding author are agreed; the confirmed tool uses are
+included in the revised manuscript. Final disclosure wording, title, venue,
+freeze and submission arrangements remain with the coauthors.
 
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new
@@ -18,8 +19,8 @@ and written gap1/2 brackets complete the last alternative. The combined
 classification retains historical27562/8658finite bases. The interval
 itself has a written real proof with36/170complete positive terms.
 Higher-prime nonsquarefree Q3 remains open; effective integer exponent-point
-enumeration is separate. No submission, freeze or authorship/disclosure
-agreement is inferred. Earlier research status paragraphs below describe
+enumeration is separate. Submission and freeze remain pending.
+Earlier research status paragraphs below describe
 prior stages and are superseded by this classification.
 
 
