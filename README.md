@@ -8,6 +8,15 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+The manuscript now includes the short endpoint-one spectral proof: for
+real 4<=a<=b<=c on h_C(1)=0, root one is simple and smallest positive,
+all four residual roots exceed a, and their smallest lies below
+min(c,a+b). The twelve-term identity is in the main text; the generic
+350termresidual positivity is retained as a verification remark.
+The quartic constant rs(p+s) is positive, and its smallest integer root
+must be a divisor in that window. The other three roots need not be
+below c. Earlier standalone PR9 results still await separate integration.
+
 ## First results
 
 We prove nonintegrality for every squarefree integer with at least three

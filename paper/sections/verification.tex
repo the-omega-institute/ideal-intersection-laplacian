@@ -100,6 +100,25 @@ valuations need not be constant on an exponent residue class. The complete
 catalogue retains these diagnostic limits, coefficient counts, fixture
 counts and exact source/certificate mappings.
 
+\subsection{Endpoint-one spectral location}
+
+Theorem~\ref{thm:endpoint-one-spectrum} and
+Corollary~\ref{cor:endpoint-one-divisor-window} use written proofs without
+a finite base. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/d09cfdcc08f2a0b6c5b3abbd7d7a30bacc9030b4/scripts/check_endpoint_one_minimum_root.py}{minimum-root checker}
+reconstructs the generic endpoint polynomial, comparison and equality
+factorization, all twelve positive terms and the determinant identities.
+The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/fd02ed726d3ada4bbd5e401e8818739f3bddc371/scripts/check_endpoint_one_pair_sum_window.py}{pair-sum checker}
+verifies the four-support block, characteristic factor, discriminant and
+strict sign identity. The established controls $(8,8,105)$, $(9,9,136)$
+and $(20,20,741)$ leave $5,5,13$ divisors in the smallest-root windows;
+all $23$ integer Horner evaluations are nonzero. Rational factorization
+agrees, and exact Sturm counts give one quartic root in each window and
+none on $[0,a]$. These controls already follow from the repeated-exponent
+theorem. The source-hashed certificates reproduce byte-for-byte; their
+finite diagnostics supplement the written bounds.
+
 \ifdefined\DetailedVerification
 \subsection{Complete checker catalogue}
 \input{sections/verification-details}

@@ -1,5 +1,14 @@
 # First task: Laplacian integrality
 
+The endpoint-one spectral theorem is now integrated in the main text:
+root one simple/smallest, all four residual roots>a, smallest in
+(a,min(c,a+b)), at real minimum>=4onh_C(1)=0. The twelve-term proof
+needs no finite base; generic350termoff-surface positivity is a verification
+remark. The nonzero quartic constant gives a necessary divisor test for
+the smallest root, not an upper bound on allfourroots. Seek a uniform
+splitting obstruction; the other standalone PR9 deductions remain queued
+for separate review/integration, and full Q3 remains open.
+
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
 Appendices B/C; Appendix A summarizes verification, with the full checker

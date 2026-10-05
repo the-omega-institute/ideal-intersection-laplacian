@@ -38,6 +38,7 @@ sections and their shared graph/lifting definitions.
 | [arithmetic-obstructions.tex](sections/arithmetic-obstructions.tex) | Every gcd>=3 triple, all-odd and prime-residue classes, all-two-modulo-four triples and every common 2-adic valuation |
 | [mixed-parity-congruence.tex](sections/mixed-parity-congruence.tex) | Combined Theorem 13.5 for all mixed-parity exclusions/restrictions, with one worked example |
 | [endpoint-reduction.tex](sections/endpoint-reduction.tex) | Combined Theorem 14.1 for the linear bound, tails, divisor candidates, second-smallest<=15 certificate and modulo-three classes |
+| [endpoint-one-spectrum.tex](sections/endpoint-one-spectrum.tex) | Main-text twelve-term endpoint-one proof, simple root one, all residual roots>a, smallest root below min(c,a+b), nonzero constant and divisor window; generic350termpositivity retained as a verification remark |
 | [aa-small.tex](sections/aa-small.tex) | All-b theorem for a=2 through9, divisor/modular certificates and cubic-test scope |
 | [verification.tex](sections/verification.tex) | Appendix A: grouped verification scopes, complete finite-domain counts and evidence boundaries |
 | [verification-details.tex](sections/verification-details.tex) | Complete per-checker catalogue, included in the optional detailed build |
