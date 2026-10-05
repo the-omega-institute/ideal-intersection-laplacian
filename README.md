@@ -11,10 +11,18 @@ This is a new research track; no complete characterization is claimed here.
 Proposition13.6 now excludes every permutation of `(1,1,2)` or `(1,4,4)`
 modulo five by a full quadratic/cubic splitting obstruction, without size
 or endpoint hypotheses. On the equality curve, integer spectra require
-one of six explicit (a,b) residue pairs, in particular b!=1mod5.
+one of six initial (a,b) residue pairs, in particular b!=1mod5.
 An irreducible cubic with square discriminant modulo five demonstrates
 the additional force of the root equation. The complete proof is in the
 manuscript; exact supporting sources are pinned to PR9 `7d917aff`.
+
+Proposition13.7 gives a uniform local discriminant obstruction on G=0:
+for an odd prime p|b, a²=1modp and 13 a nonresidue imply nonintegrality.
+In particular neither7nor11may divide b in an integral equality spectrum.
+The identity Delta=13b²modp^(3v_p(b)) excludes the two earlier rows
+(1,0),(4,0)mod5, leaving {(2,0),(3,0),(0,2),(3,2)}. Its written proof
+needs no finite exponent base. Exact identities and the three specified
+prime examples are pinned to PR9 `4878e512`.
 
 The manuscript now completes the endpoint-two nonintegrality alternative.
 Theorem14.8 gives a written further-root interval(4,5) at minimum>=40;

@@ -1,8 +1,15 @@
 # First task: Laplacian integrality
 
+The normalized equality discriminant now gives a uniform written
+obstruction when p|b, a²=1modp and13 is a nonresidue at an odd prime.
+In particular7and11cannot divide b. It refines the necessary equality
+mod5pairs to{(2,0),(3,0),(0,2),(3,2)}. Next target the positive branch
+q=1modp or combine G=0 with the actual integer cubic root equation.
+These necessary restrictions do not enumerate integer equality points.
+
 The modulo-five splitting obstruction now excludes two complete global
-residue classes. Equality candidates must have one of six explicit (a,b)
-residue pairs; b=1mod5 is impossible for integral splitting. Apply these
+residue classes. Its six initial equality pairs are refined above;
+b=1mod5 is impossible for integral splitting. Apply these
 necessary restrictions together with G=0 and the actual cubic root equation.
 The fixed modulo-three comparison adds no equality splitting exclusions.
 Effective equality classification and the full endpoint-one problem stay open.

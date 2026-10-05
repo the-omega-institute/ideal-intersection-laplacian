@@ -178,6 +178,20 @@ are off endpoint one; the repeated endpoint-one zero $(9,9,136)$ is
 preserved. The certificate reproduces byte-for-byte. These are finite-field
 tables and fixed controls, with no exponent-range or integer-point search.
 
+\subsection{Normalized equality discriminant}
+
+Proposition~\ref{prop:equality-local-discriminant} has a written
+valuation argument with no finite exponent base. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4878e51211e2694e40a246759111d55dce070309/scripts/check_endpoint_one_equality_local_discriminant.py}{pinned checker}
+verifies both anchor identities, all $14$ coefficients of $R$, the
+curve difference factor and its unit $2$, and the discriminant's generic
+divisibility by $q-v$. It reruns the direct six-support characteristic
+identity and the independent $5\times5$ Sylvester discriminant check.
+The prime examples are exactly $5,7,11$, and the earlier table gives
+the four remaining modulo-five pairs. The certificate reproduces
+byte-for-byte. No exponent scan, integer-point enumeration or larger
+prime search is used.
+
 \ifdefined\DetailedVerification
 \subsection{Complete checker catalogue}
 \input{sections/verification-details}

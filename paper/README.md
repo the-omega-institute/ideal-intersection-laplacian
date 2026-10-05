@@ -5,8 +5,11 @@ files it includes. This is a growing mathematical draft, not a submission
 package. Author metadata and any manuscript disclosure are for joint agreement.
 The main text ends with explicit remaining questions and references.
 Proposition13.6 excludes all permutations of (1,1,2)/(1,4,4)mod5 by a
-full reduced-quintic splitting proof. The equality problem now has six
-necessary (a,b)mod5 rows, including b!=1mod5. Supporting evidence is pinned
+full reduced-quintic splitting proof. Proposition13.7 adds a uniform local
+discriminant obstruction on G=0 and refines the six initial compatibility
+rows to {(2,0),(3,0),(0,2),(3,2)}mod5. Integral equality spectra require
+7and11not to divide b. Its proof and exact identities are pinned to PR9
+`4878e51211e2694e40a246759111d55dce070309`. The global mod5 evidence is pinned
 to PR9 `7d917afffd7c2616bc052810718dcc720d916a8b`; run
 `python3 scripts/check_endpoint_one_equality_mod_five.py` there and compare
 with `results/endpoint-one-equality-mod-five.json`. This result has no finite
