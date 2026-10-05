@@ -1,5 +1,15 @@
 # First task: Laplacian integrality
 
+The [tensor consolidation review](notes/three-prime-tensor-consolidation.md)
+answers the proposed three-prime replacement question. The present
+repeated-pair block cannot furnish a witness on Nikandish's unbounded
+integral-block boundary family, and the paired space fails invariance
+for unequal exponents even after zero-sum reweighting. The established
+hybrid core uses the minimum-seven cutoff independently of this tensor
+block. A future simplification needs a new restriction or an endpoint-aware
+interval for the fully distinct six-support operator. Presentation can
+separate auxiliary arithmetic while retaining all proof certificates.
+
 The [unit-exponent Rayleigh proof](notes/unit-exponent-any-prime-count.md)
 settles every positive exponent vector with at least three prime factors
 and an exponent one. The explicit complement bound

@@ -1,0 +1,118 @@
+{
+  "manuscript_revision": "7be84599097fdff320b196cb4f84a2dfe505bd77",
+  "classification": "Existing Theorem 16.3; no new classification or certificate-free proof.",
+  "core_inputs": [
+    {
+      "label": "thm:repeated",
+      "number": "7.1",
+      "source": "paper/sections/aa-completion.tex",
+      "source_sha256": "a9555f36f1db4d3602f2354116516ba576161bc696c22702bba0a18281c2f238",
+      "statement_and_proof_sha256": "c772ab8ed0dc6f2d6b37e0c2df51603c36d1bed84f3a6ddc46ac745ec4537924",
+      "explicit_references": [
+        "cor:quadratic",
+        "lem:sign",
+        "lem:third-index",
+        "sec:bounds",
+        "thm:boundary",
+        "thm:repeated"
+      ]
+    },
+    {
+      "label": "cor:minimum-seven",
+      "number": "11.4",
+      "source": "paper/sections/low-spectrum.tex",
+      "source_sha256": "037883d959e6c6fdd7a436d8ebdd368db955dc231a350e9174fa4fd9347cad2b",
+      "statement_and_proof_sha256": "39ea156b5452f546fb487febeedb56a66fe05e6b0081ed3211e94a541aefe8c2",
+      "explicit_references": [
+        "lem:join",
+        "prop:distinct-tail",
+        "tab:open-region",
+        "thm:minimum-three",
+        "thm:repeated"
+      ]
+    },
+    {
+      "label": "thm:uniform-low-root",
+      "number": "12.2",
+      "source": "paper/sections/mixed-inertia.tex",
+      "source_sha256": "8d2f41da15b1cfcc7213a7d4c1e19cff0d2bdfb9a8f9896d22b392be9bf9a8c2",
+      "statement_and_proof_sha256": "f76178bd5aa4449fbe9b2e5ac39ff5508a8174ab4d5b61a0c4ab0776ae87afd1",
+      "explicit_references": [
+        "prop:low-spectrum"
+      ]
+    },
+    {
+      "label": "thm:endpoint-one-spectrum",
+      "number": "14.2",
+      "source": "paper/sections/endpoint-one-spectrum.tex",
+      "source_sha256": "35c740c48ed7c24f82e2383060353f0fd12b531c481f35ea866e093ff455d129",
+      "statement_and_proof_sha256": "3641ed42005bd4bd32ff325ca5a7457b10dcae6250feb8799a835c33d08c2a45",
+      "explicit_references": []
+    },
+    {
+      "label": "thm:endpoint-two-completion",
+      "number": "14.8",
+      "source": "paper/sections/endpoint-two-completion.tex",
+      "source_sha256": "2c15f7a51953f0d06beb730bd32be8edbe7cd0210af72e3c5b4143657571f5e4",
+      "statement_and_proof_sha256": "3ad37ec497c46152a5b4278603afd8b480315e494adc2480565290320ba0d853",
+      "explicit_references": [
+        "cor:minimum-seven",
+        "lem:endpoint-two-rectangle",
+        "sec:endpoint-two-identities",
+        "thm:repeated"
+      ]
+    },
+    {
+      "label": "thm:largest-root-unit-interval",
+      "number": "16.1",
+      "source": "paper/sections/three-prime-classification.tex",
+      "source_sha256": "4e34679c36d51ef44ab37a092593258186b6740d2dec30acc4e1e5b3b6af548c",
+      "statement_and_proof_sha256": "60778ec870ca2f89ea017da01f2048c06b6bdf7196c5c626ef25dc7ef11d31a1",
+      "explicit_references": [
+        "sec:largest-root-identities",
+        "thm:endpoint-one-spectrum"
+      ]
+    },
+    {
+      "label": "lem:endpoint-one-small-gaps",
+      "number": "16.2",
+      "source": "paper/sections/three-prime-classification.tex",
+      "source_sha256": "4e34679c36d51ef44ab37a092593258186b6740d2dec30acc4e1e5b3b6af548c",
+      "statement_and_proof_sha256": "3054eb5c00f26e8cd7155205a5fd204903f806ae5f95df299daf688b75401ea2",
+      "explicit_references": [
+        "sec:largest-root-identities"
+      ]
+    },
+    {
+      "label": "thm:three-prime-classification",
+      "number": "16.3",
+      "source": "paper/sections/three-prime-classification.tex",
+      "source_sha256": "4e34679c36d51ef44ab37a092593258186b6740d2dec30acc4e1e5b3b6af548c",
+      "statement_and_proof_sha256": "89ac9fe2a13d434d5aad55def8be3773416b1a074d18dfd0bd205492fafd1cd5",
+      "explicit_references": [
+        "cor:minimum-seven",
+        "lem:endpoint-one-small-gaps",
+        "thm:endpoint-one-spectrum",
+        "thm:endpoint-two-completion",
+        "thm:largest-root-unit-interval",
+        "thm:repeated",
+        "thm:uniform-low-root"
+      ]
+    }
+  ],
+  "review_method": "Checked actual labeled statements and proof bodies at pinned revision; extracted explicit references. Manual dependency review also retains graph lift, Schur-complement construction, repeated/small-minimum subproofs and complete positive identities. Explicit-reference extraction alone is not a transitive correctness proof.",
+  "auxiliary_sources_not_referenced_by_these_core_proofs": [
+    "arithmetic-obstructions.tex",
+    "mixed-parity-congruence.tex",
+    "mod-five-splitting.tex",
+    "two-adic-lifting.tex"
+  ],
+  "retained_finite_counts": [
+    27562,
+    8658
+  ],
+  "smaller_finite_dependencies": "Unit/minimum-two/minimum-three/repeated-family finite inputs retained; not rerun.",
+  "page_saving_established": false,
+  "scope_freeze_or_supplement_decision": false,
+  "main_pdf_revision_unchanged": "7be84599097fdff320b196cb4f84a2dfe505bd77"
+}

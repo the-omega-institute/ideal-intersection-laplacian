@@ -1,0 +1,90 @@
+{
+  "purpose": "Exact response to three-prime tensor consolidation question; no new classification theorem.",
+  "symbolic": {
+    "full_six_support_tensor_identity": "passed",
+    "weighted_symmetry_constant_kernel": "passed",
+    "generic_repeated_pair_embedding": "passed",
+    "generic_unequal_pair_residuals": "passed",
+    "normalized_characteristic_identity": "passed",
+    "generic_repeated_characteristic": "b*(2*a + 1) + x**2 - x*(a + (a + 1)*(b + 2)) + (a + 1)*(2*a + 1)",
+    "endpoint_two": "-b + (a - 1)*(2*a - 1)",
+    "boundary_K_eigenvalues": [
+      "2",
+      "2*a**3-a**2+a+1"
+    ],
+    "boundary_attribution": "Existing boundary family supplied by Reza Nikandish; manuscript Theorem 5.1.",
+    "balanced_a_at_least_eight": "3<kappa_min<4, equivalently 2<mu_min<3",
+    "balanced_third_endpoint_positive_expansion": "u**2+8*u+4",
+    "balanced_fourth_endpoint": "9-12*a"
+  },
+  "specified_support_controls": [
+    {
+      "exponents": [
+        2,
+        2,
+        3
+      ],
+      "graph_vertices": 34,
+      "embedding_columns_checked": 2,
+      "zero_sum_complement_and_graph_lift": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        3,
+        10
+      ],
+      "graph_vertices": 174,
+      "embedding_columns_checked": 2,
+      "zero_sum_complement_and_graph_lift": "passed"
+    },
+    {
+      "exponents": [
+        8,
+        8,
+        8
+      ],
+      "graph_vertices": 727,
+      "embedding_columns_checked": 2,
+      "zero_sum_complement_and_graph_lift": "passed"
+    },
+    {
+      "exponents": [
+        8,
+        8,
+        105
+      ],
+      "graph_vertices": 8584,
+      "embedding_columns_checked": 2,
+      "zero_sum_complement_and_graph_lift": "passed"
+    },
+    {
+      "exponents": [
+        12,
+        12,
+        253
+      ],
+      "graph_vertices": 42924,
+      "embedding_columns_checked": 2,
+      "zero_sum_complement_and_graph_lift": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        3,
+        7
+      ],
+      "graph_vertices": 126,
+      "embedding_columns_checked": 2,
+      "zero_sum_complement_and_graph_lift": "passed"
+    }
+  ],
+  "script_sha256": "7207db1f4afdb45baabfe262ea75eba904c0190793b1865cb62d7af3a2175af1",
+  "sympy_version": "1.14.0",
+  "classification_source": "7be84599097fdff320b196cb4f84a2dfe505bd77",
+  "retained_finite_dependencies": [
+    27562,
+    8658
+  ],
+  "scope": "Generic symbolic tensor/embedding/endpoint identities and six specified support controls. Existing boundary result and classification retained; no exponent scan, numerical spectrum, Lean or rerun of historical certificates."
+}

@@ -1,5 +1,12 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [three-prime consolidation diagnostic](notes/three-prime-tensor-consolidation.md)
+derives the two-dimensional tensor restriction and explains its limitation:
+Professor Nikandish's existing boundary family has an entirely integral
+restricted spectrum for arbitrarily large repeated exponents. A separate
+dependency guide gives the established minimum-seven hybrid classification
+core and identifies auxiliary arithmetic that it does not invoke.
+
 Public workspace for the follow-on collaboration between **Haobo Ma,
 Reza Nikandish and Wenlin Zhang**, studying ideal intersection graphs of
 `Z_n` and their Laplacian spectra.
