@@ -1,0 +1,217 @@
+{
+  "written_theorem": "Every integer a>=5 gives 3<kappa_min(K_a)<4 for four-prime exponents(a,a,a,a), hence a noninteger graph eigenvalue in(V-3,V-2). Earlier unit/pair-two/three/four theorems complete all positive a.",
+  "symbolic": {
+    "invariant_embeddings_weighted_symmetry_characteristic_factorization": "passed",
+    "cubic": "2*a**5*x - 8*a**5 + 8*a**4*x - 20*a**4 - a**3*x**2 + 19*a**3*x - 26*a**3 - 5*a**2*x**2 + 24*a**2*x - 19*a**2 - 7*a*x**2 + 14*a*x - 7*a + x**3 - 3*x**2 + 3*x - 1",
+    "positive_expansions": [
+      {
+        "identity": "leading_minor_1_at_three",
+        "polynomial_in_a": "a**3 + 3*a**2 + 4*a - 2",
+        "coefficients_after_a_equals_five_plus_u": [
+          1,
+          18,
+          109,
+          218
+        ]
+      },
+      {
+        "identity": "leading_minor_2_at_three",
+        "polynomial_in_a": "2*a**5 + 8*a**4 + 10*a**3 - 2*a**2 - 12*a + 4",
+        "coefficients_after_a_equals_five_plus_u": [
+          2,
+          58,
+          670,
+          3848,
+          10968,
+          12394
+        ]
+      },
+      {
+        "identity": "leading_minor_3_at_three",
+        "polynomial_in_a": "2*a**5 - 4*a**4 - 22*a**3 - 8*a**2 + 28*a - 8",
+        "coefficients_after_a_equals_five_plus_u": [
+          2,
+          46,
+          398,
+          1562,
+          2548,
+          932
+        ]
+      },
+      {
+        "identity": "characteristic_value_at_four",
+        "polynomial_in_a": "12*a**4 + 34*a**3 - 3*a**2 - 63*a + 27",
+        "coefficients_after_a_equals_five_plus_u": [
+          12,
+          274,
+          2307,
+          8457,
+          11387
+        ]
+      },
+      {
+        "identity": "product_tail_failure_margin",
+        "polynomial_in_a": "2*a**3 + a**2 - 5*a + 1",
+        "coefficients_after_a_equals_five_plus_u": [
+          2,
+          31,
+          155,
+          251
+        ]
+      },
+      {
+        "identity": "small_exponent_failure_margin",
+        "polynomial_in_a": "3*a**4 + 2*a**3 - 3*a**2 - 4*a + 1",
+        "coefficients_after_a_equals_five_plus_u": [
+          3,
+          62,
+          477,
+          1616,
+          2031
+        ]
+      }
+    ],
+    "positive_coefficients_checked": 30
+  },
+  "fixed_controls": [
+    {
+      "exponents": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "graph_vertices": 1294,
+      "complement_vertices": 670,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "cubic_coefficients": [
+        1,
+        -288,
+        14298,
+        -41261
+      ],
+      "four_independent_bareiss_determinant_values": [
+        [
+          0,
+          -41261
+        ],
+        [
+          1,
+          -27250
+        ],
+        [
+          2,
+          -13809
+        ],
+        [
+          3,
+          -932
+        ]
+      ],
+      "leading_minors_at_three": [
+        218,
+        12394,
+        932
+      ],
+      "cubic_at_three": -932,
+      "cubic_at_four": 11387,
+      "sturm_roots_in_three_four": 1
+    },
+    {
+      "exponents": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "graph_vertices": 2399,
+      "complement_vertices": 1104,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "cubic_coefficients": [
+        1,
+        -441,
+        30975,
+        -94471
+      ],
+      "four_independent_bareiss_determinant_values": [
+        [
+          0,
+          -94471
+        ],
+        [
+          1,
+          -63936
+        ],
+        [
+          2,
+          -34277
+        ],
+        [
+          3,
+          -5488
+        ]
+      ],
+      "leading_minors_at_three": [
+        346,
+        27940,
+        5488
+      ],
+      "cubic_at_three": -5488,
+      "cubic_at_four": 22437,
+      "sturm_roots_in_three_four": 1
+    },
+    {
+      "exponents": [
+        11,
+        11,
+        11,
+        11
+      ],
+      "graph_vertices": 20734,
+      "complement_vertices": 6094,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "cubic_coefficients": [
+        1,
+        -2016,
+        467580,
+        -1618211
+      ],
+      "four_independent_bareiss_determinant_values": [
+        [
+          0,
+          -1618211
+        ],
+        [
+          1,
+          -1152646
+        ],
+        [
+          2,
+          -691107
+        ],
+        [
+          3,
+          -233588
+        ]
+      ],
+      "leading_minors_at_three": [
+        1736,
+        452170,
+        233588
+      ],
+      "cubic_at_three": -233588,
+      "cubic_at_four": 219917,
+      "sturm_roots_in_three_four": 1
+    }
+  ],
+  "script_sha256": "bb4acaa06cade6d8853834aba3e21315abce8ed4d59cf08b9aefa4d87a1b263a",
+  "support_embedding_dependency_sha256": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+  "sympy_version": "1.14.0",
+  "scope": "Written unbounded proof; complete positive expansions and three fixed exact support/characteristic/Sturm controls. No finite exponent base, expanded vertex graph, exponent-range scan, floating eigensolver or Lean. General higher-prime Q3 remains open."
+}

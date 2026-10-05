@@ -1,5 +1,13 @@
 # First task: Laplacian integrality
 
+The [four-prime diagonal proof](notes/four-prime-diagonal.md) now settles
+every positive (a,a,a,a). For a>=5, a second swap gives a cubic block
+whose smallest root is strictly between three and four, with no finite
+base. Both earlier sufficient tail criteria fail on this entire new family.
+Next examine unequal double pairs (a,a,b,b), a,b>=5, outside the product
+condition, using this invariant cubic decomposition rather than an exponent
+scan. General higher-prime Q3 remains open; keep the three-prime main focused.
+
 The [uniform repeated-pair tail](notes/repeated-pair-product-tail.md) now
 provides an endpoint-one-to-two witness for arbitrary a at t>=4 when
 a^2*A>=(a^2-1)*B+(a-1)*(a-2), including equality. Its four-prime tail

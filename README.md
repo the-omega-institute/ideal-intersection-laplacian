@@ -1,5 +1,13 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [four-prime diagonal theorem](notes/four-prime-diagonal.md) proves
+every (a,a,a,a), a>=5, nonintegral, with smallest repeated-pair eigenvalue
+in (3,4) and a graph eigenvalue in (V-3,V-2). A second coordinate-swap
+reduces the restriction to a cubic; complete positive expansions give
+the unbounded interval. Earlier unit/pair-two/three/four results cover
+the other positive a. This diagonal family is outside the product-tail
+and small-exponent criteria and is now completely settled.
+
 The [repeated-pair product tail](notes/repeated-pair-product-tail.md) gives
 a uniform sufficient condition for every repeated exponent a and every
 prime count t>=4, including its equality boundary. For four primes,

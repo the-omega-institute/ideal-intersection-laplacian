@@ -192,8 +192,10 @@ The unbounded assertion rests on the written argument; the fixed controls
 validate its algebra and implementation. The focused three-prime manuscript
 is not enlarged by this supporting note.
 
-The next spectral question is the repeated-pair region where this product
-condition fails, especially a>=5 and all remaining exponents at least two.
+The [four-prime diagonal theorem](four-prime-diagonal.md) subsequently
+settles the condition-failing family (a,a,a,a). The next spectral question
+is the other repeated-pair region where this product condition fails,
+especially unequal double pairs with all entries at least five.
 Failure of the condition does not imply an integral tensor block or graph.
 Four-prime fully unequal vectors, general higher-prime nonsquarefree Q3,
 and old orthogonality n=7 remain open.
