@@ -1,5 +1,14 @@
 # First task: Laplacian integrality
 
+The [uniform local discriminant obstruction](notes/endpoint-one-equality-local-discriminant.md)
+now excludes equality spectra when p|b, a²=1modp and13 is a nonresidue
+at an odd prime. In particular7and11cannot divide b. It resolves the
+double-root degeneracy by Delta=13b²modp^(3v_p(b)), refining the necessary
+mod5pairs to{(2,0),(3,0),(0,2),(3,2)}. These remain necessary conditions.
+Next seek an obstruction on the positive branch q=1modp, or combine the
+actual integer cubic root equation with G=0. No integer equality-point
+list or global splitting classification follows from the local conditions.
+
 The [modulo-five obstruction](notes/endpoint-one-equality-mod-five.md)
 excludes two complete global residue classes and restricts the equality
 splitting problem to six (a,b) residue pairs. Modulo three gives no further

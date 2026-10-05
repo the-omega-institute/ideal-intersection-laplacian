@@ -8,10 +8,20 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+The [local discriminant proof](notes/endpoint-one-equality-local-discriminant.md)
+excludes an integral equality spectrum whenever an odd prime p divides b,
+a²=1modp and 13 is a nonresidue modulo p. In particular neither7nor11
+may divide b. The negative branch has Delta=13b² modp^(3v_p(b)), so
+its normalized discriminant detects an obstruction despite Delta=0modp.
+It removes two earlier modulo-five compatibility rows, leaving
+{(2,0),(3,0),(0,2),(3,2)}. This uniform written proof needs no finite base;
+the equality curve and full Q3 remain open.
+
 The [modulo-five splitting proof](notes/endpoint-one-equality-mod-five.md)
 now excludes every permutation of `(1,1,2)` or `(1,4,4)` modulo five,
 without size, gap or endpoint hypotheses. On the equality curve G=0,
-integral splitting requires b!=1mod5 and one of six explicit residue pairs.
+integral splitting requires b!=1mod5; its six initial compatibility pairs
+are refined to four by the local discriminant theorem above.
 One excluded cubic has square discriminant modulo five but is irreducible;
 the root equation adds information beyond the discriminant-square test.
 The complete fixed-prime tables and independent determinant checks are saved.
