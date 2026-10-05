@@ -26,6 +26,17 @@ this sum cutoff a root in(0,1)proves nonintegrality without a parity
 hypothesis. These are written unbounded results, with no finite base.
 General integer endpoint-one feasibility and full Q3 remain open.
 
+The [endpoint-one growing-gap theorem](notes/endpoint-one-growing-gap.md)
+now excludes every integer endpoint-one solution for d=b-a>=1,
+**a>=2d^2+20**, by an exact unit-width bracket for its unique real
+exponent c>b. Gaps1and2 are excluded already at every a>=8. Combining
+the written endpoint-one/two brackets proves nonintegrality for every
+parity pattern at **d>=5,a>=2d^2+20**, with no finite base. Broader
+consequences retain the earlier endpoint-two finite dependencies.
+Any fully distinct integer spectrum at minimum>=8 would now require
+**d>=3,a<2d^2+20**, in addition to the existing endpoint-one bounds.
+Full Q3 and the remaining endpoint-one region stay open.
+
 A standalone [middle-diagonal inertia restriction](notes/endpoint-two-middle-inertia.md)
 narrows the endpoint-two problem without further congruence lifting. For
 `4<=a<b<c`, `(b-2)(a+b+c-2)<=2ac` supplies a positive quotient root in `(0,2)`.

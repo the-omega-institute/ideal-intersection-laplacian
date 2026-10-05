@@ -1,0 +1,602 @@
+{
+  "written_endpoint_one_theorem": "For integer d>=1,a>=2d^2+20,b=a+d, the unique real c>b endpoint-one solution lies strictly between L and L+1, L=2a^2+(2d-3)a-d^2-ceil(3d/2)+1. No integer c>b has h_C(1)=0.",
+  "written_small_gap_theorem": "For integer a>=8,d=1or2,c>a+d, h_C(1) is nonzero; the unique real exponent roots have the same unit-width brackets.",
+  "written_nonintegrality_family": "Every integer d>=5,a>=2d^2+20,c>a+d is nonintegral for all parity patterns: written endpoint-one and preserved written endpoint-two growing-gap exclusions plus uniform low-root theorem. No finite base for this family.",
+  "broader_consequence": "For every d>=1,a>=2d^2+20,c>a+d and every d=1or2,a>=8,c>a+d, nonintegrality follows using previous global endpoint-two theorem/small-gap certificates. This broader consequence retains prior finite dependencies. A fully distinct integer spectrum at minimum>=8 would require d>=3,a<2d^2+20 and endpoint one; fullQ3 stays open.",
+  "boundary_positive_identities": {
+    "even_lower": {
+      "gap_base": 2,
+      "offset": "0",
+      "sign": -1,
+      "clearing_factor": 8,
+      "unshifted_polynomial": "32*a**5*d**2 + 32*a**4*d**4 + 80*a**4*d**3 - 144*a**4*d**2 + 64*a**3*d**5 - 64*a**3*d**4 - 288*a**3*d**3 + 168*a**3*d**2 - 176*a**2*d**5 + 24*a**2*d**4 + 252*a**2*d**3 - 58*a**2*d**2 - 32*a*d**7 - 8*a*d**6 + 168*a*d**5 + 14*a*d**4 - 58*a*d**3 + 6*a*d**2 + 8*d**8 + 28*d**7 + 6*d**6 - 35*d**5 - 10*d**4 + 3*d**3",
+      "positive_terms": 48,
+      "constant": 2540926584,
+      "ascending_gap_shift_vectors": {
+        "0": [
+          2540926584,
+          6605052084,
+          8253733722,
+          6622457331,
+          3802505228,
+          1645768113,
+          551127074,
+          144082780,
+          29293976,
+          4538368,
+          513792,
+          38656,
+          1536
+        ],
+        "1": [
+          442333800,
+          1009155552,
+          1083087594,
+          733577494,
+          348338038,
+          121299512,
+          31509240,
+          6051744,
+          832768,
+          75008,
+          3584
+        ],
+        "2": [
+          30753528,
+          60353640,
+          53758926,
+          29356604,
+          10847912,
+          2784656,
+          493312,
+          55552,
+          3328
+        ],
+        "3": [
+          1067424,
+          1753376,
+          1224936,
+          495584,
+          126144,
+          19136,
+          1536
+        ],
+        "4": [
+          18496,
+          24448,
+          11984,
+          2896,
+          352
+        ],
+        "5": [
+          128,
+          128,
+          32
+        ]
+      }
+    },
+    "even_upper": {
+      "gap_base": 2,
+      "offset": "1",
+      "sign": 1,
+      "clearing_factor": 8,
+      "unshifted_polynomial": "64*a**6 - 32*a**5*d**2 + 192*a**5*d - 192*a**5 - 32*a**4*d**4 - 80*a**4*d**3 + 304*a**4*d**2 - 480*a**4*d + 224*a**4 - 64*a**3*d**5 + 64*a**3*d**4 + 288*a**3*d**3 - 584*a**3*d**2 + 448*a**3*d - 128*a**3 + 176*a**2*d**5 - 104*a**2*d**4 - 396*a**2*d**3 + 518*a**2*d**2 - 192*a**2*d + 8*a**2 + 32*a*d**7 + 8*a*d**6 - 216*a*d**5 + 82*a*d**4 + 294*a*d**3 - 238*a*d**2 + 8*a*d + 24*a - 8*d**8 - 28*d**7 + 18*d**6 + 91*d**5 - 40*d**4 - 87*d**3 + 50*d**2 + 12*d - 8",
+      "positive_terms": 49,
+      "constant": 31525038720,
+      "ascending_gap_shift_vectors": {
+        "0": [
+          31525038720,
+          54275046096,
+          51447222400,
+          32786855337,
+          15500128850,
+          5644270719,
+          1621205030,
+          368652292,
+          66178600,
+          9165312,
+          944896,
+          65792,
+          2560
+        ],
+        "1": [
+          6745927104,
+          9698993304,
+          7823043894,
+          4178338134,
+          1635789882,
+          480448344,
+          107981896,
+          18222176,
+          2259712,
+          186112,
+          8704
+        ],
+        "2": [
+          600936256,
+          692654664,
+          460336030,
+          196260660,
+          60156488,
+          13070704,
+          2044928,
+          205568,
+          12032
+        ],
+        "3": [
+          28524768,
+          24710176,
+          12897400,
+          4006176,
+          865856,
+          111424,
+          8704
+        ],
+        "4": [
+          760928,
+          440352,
+          166736,
+          29744,
+          3488
+        ],
+        "5": [
+          10816,
+          3136,
+          736
+        ],
+        "6": [
+          64
+        ]
+      }
+    },
+    "odd_lower": {
+      "gap_base": 1,
+      "offset": "-1/2",
+      "sign": -1,
+      "clearing_factor": 8,
+      "unshifted_polynomial": "32*a**6 + 32*a**5*d**2 + 96*a**5*d - 96*a**5 + 32*a**4*d**4 + 80*a**4*d**3 - 64*a**4*d**2 - 240*a**4*d + 64*a**4 + 64*a**3*d**5 - 64*a**3*d**4 - 288*a**3*d**3 - 40*a**3*d**2 + 128*a**3*d + 8*a**3 - 176*a**2*d**5 - 16*a**2*d**4 + 180*a**2*d**3 + 124*a**2*d**2 + 12*a**2*d + 4*a**2 - 32*a*d**7 - 8*a*d**6 + 144*a*d**5 + 62*a*d**4 + 60*a*d**3 - 32*a*d**2 + 4*a*d - 6*a + 8*d**8 + 28*d**7 + 18*d**6 - 7*d**5 - 17*d**4 - 18*d**3 - 8*d**2 - 3*d - 1",
+      "positive_terms": 49,
+      "constant": 3761110144,
+      "ascending_gap_shift_vectors": {
+        "0": [
+          3761110144,
+          4901536544,
+          4878864528,
+          3194798344,
+          1732219058,
+          723570833,
+          256537234,
+          72224332,
+          17237624,
+          3168768,
+          480000,
+          47872,
+          3584
+        ],
+        "1": [
+          1021253568,
+          1110035248,
+          983913680,
+          543799620,
+          254349942,
+          86822672,
+          25319736,
+          5389728,
+          966656,
+          108288,
+          9728
+        ],
+        "2": [
+          115465984,
+          100484752,
+          78093064,
+          34531796,
+          13480400,
+          3429648,
+          767872,
+          98048,
+          11008
+        ],
+        "3": [
+          6958144,
+          4545040,
+          3034872,
+          968928,
+          299904,
+          44480,
+          6656
+        ],
+        "4": [
+          235712,
+          102720,
+          57328,
+          10128,
+          2272
+        ],
+        "5": [
+          4256,
+          928,
+          416
+        ],
+        "6": [
+          32
+        ]
+      }
+    },
+    "odd_upper": {
+      "gap_base": 1,
+      "offset": "1/2",
+      "sign": 1,
+      "clearing_factor": 8,
+      "unshifted_polynomial": "32*a**6 - 32*a**5*d**2 + 96*a**5*d - 96*a**5 - 32*a**4*d**4 - 80*a**4*d**3 + 224*a**4*d**2 - 240*a**4*d + 96*a**4 - 64*a**3*d**5 + 64*a**3*d**4 + 288*a**3*d**3 - 376*a**3*d**2 + 192*a**3*d - 40*a**3 + 176*a**2*d**5 - 64*a**2*d**4 - 324*a**2*d**3 + 272*a**2*d**2 - 60*a**2*d + 32*a*d**7 + 8*a*d**6 - 192*a*d**5 + 34*a*d**4 + 176*a*d**3 - 96*a*d**2 + 6*a - 8*d**8 - 28*d**7 + 6*d**6 + 63*d**5 - 9*d**4 - 38*d**3 + 12*d**2 + 3*d - 1",
+      "positive_terms": 49,
+      "constant": 3456425280,
+      "ascending_gap_shift_vectors": {
+        "0": [
+          3456425280,
+          3933037168,
+          3557868656,
+          2045502576,
+          988314476,
+          357181199,
+          110550294,
+          26234644,
+          5335368,
+          791552,
+          100096,
+          7424,
+          512
+        ],
+        "1": [
+          950746336,
+          902595016,
+          733023076,
+          355799368,
+          149872554,
+          44342528,
+          11487752,
+          2070112,
+          328704,
+          29952,
+          2560
+        ],
+        "2": [
+          108946816,
+          82843752,
+          59601332,
+          23128796,
+          8255264,
+          1819632,
+          372608,
+          40192,
+          4352
+        ],
+        "3": [
+          6657088,
+          3801328,
+          2381672,
+          665632,
+          192896,
+          24640,
+          3584
+        ],
+        "4": [
+          228768,
+          87200,
+          46512,
+          7152,
+          1568
+        ],
+        "5": [
+          4192,
+          800,
+          352
+        ],
+        "6": [
+          32
+        ]
+      }
+    }
+  },
+  "small_gap_positive_identities": {
+    "1": {
+      "lower": "2*a**2 - a - 2",
+      "minimum": 8,
+      "boundaries": {
+        "gap_1_lower": {
+          "boundary_polynomial": "4*a*(a + 1)*(a**4 - 4*a**2 - 2*a + 6)",
+          "descending_minimum_shift_vector": [
+            4,
+            196,
+            3984,
+            42984,
+            259536,
+            831256,
+            1103040
+          ]
+        },
+        "gap_1_upper": {
+          "boundary_polynomial": "4*a*(a - 1)*(a + 1)*(a**3 - a**2 + 1)",
+          "descending_minimum_shift_vector": [
+            4,
+            188,
+            3676,
+            38280,
+            223936,
+            697852,
+            905184
+          ]
+        }
+      }
+    },
+    "2": {
+      "lower": "2*a**2 + a - 6",
+      "minimum": 8,
+      "boundaries": {
+        "gap_2_lower": {
+          "boundary_polynomial": "16*a**5 + 72*a**4 - 76*a**3 - 433*a**2 + 69*a + 595",
+          "descending_minimum_shift_vector": [
+            16,
+            712,
+            12468,
+            107311,
+            453685,
+            753723
+          ]
+        },
+        "gap_2_upper": {
+          "boundary_polynomial": "4*(a + 2)*(2*a**5 - 2*a**4 - 17*a**3 + 25*a**2 + 28*a - 42)",
+          "descending_minimum_shift_vector": [
+            8,
+            392,
+            7916,
+            84316,
+            499672,
+            1562808,
+            2016880
+          ]
+        }
+      }
+    }
+  },
+  "exact_selected_fixtures": [
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "middle_gap": 1,
+      "exponent_cubic_coefficients": [
+        144,
+        -17168,
+        10752,
+        78848
+      ],
+      "unique_exponent_root_bracket": [
+        118,
+        119
+      ],
+      "integer_Horner_boundary_values": [
+        -1103040,
+        905184
+      ],
+      "independent_six_by_six_Bareiss_boundary_values": [
+        -1103040,
+        905184
+      ],
+      "roots_strictly_above_middle": 1
+    },
+    {
+      "pair": [
+        8,
+        10
+      ],
+      "middle_gap": 2,
+      "exponent_cubic_coefficients": [
+        163,
+        -21343,
+        13293,
+        103887
+      ],
+      "unique_exponent_root_bracket": [
+        130,
+        131
+      ],
+      "integer_Horner_boundary_values": [
+        -753723,
+        2016880
+      ],
+      "independent_six_by_six_Bareiss_boundary_values": [
+        -753723,
+        2016880
+      ],
+      "roots_strictly_above_middle": 1
+    },
+    {
+      "pair": [
+        38,
+        41
+      ],
+      "middle_gap": 3,
+      "exponent_cubic_coefficients": [
+        3124,
+        -9341300,
+        4958000,
+        188859840
+      ],
+      "unique_exponent_root_bracket": [
+        2989,
+        2990
+      ],
+      "integer_Horner_boundary_values": [
+        -17726297504,
+        10185625840
+      ],
+      "independent_six_by_six_Bareiss_boundary_values": [
+        -17726297504,
+        10185625840
+      ],
+      "roots_strictly_above_middle": 1
+    },
+    {
+      "pair": [
+        52,
+        56
+      ],
+      "middle_gap": 4,
+      "exponent_cubic_coefficients": [
+        5839,
+        -32977009,
+        17236725,
+        906107565
+      ],
+      "unique_exponent_root_bracket": [
+        5647,
+        5648
+      ],
+      "integer_Horner_boundary_values": [
+        -34924937544,
+        151308670717
+      ],
+      "independent_six_by_six_Bareiss_boundary_values": [
+        -34924937544,
+        151308670717
+      ],
+      "roots_strictly_above_middle": 1
+    },
+    {
+      "pair": [
+        70,
+        75
+      ],
+      "middle_gap": 5,
+      "exponent_cubic_coefficients": [
+        10524,
+        -107968332,
+        55818792,
+        3966014016
+      ],
+      "unique_exponent_root_bracket": [
+        10258,
+        10259
+      ],
+      "integer_Horner_boundary_values": [
+        -806121868608,
+        301284637248
+      ],
+      "independent_six_by_six_Bareiss_boundary_values": [
+        -806121868608,
+        301284637248
+      ],
+      "roots_strictly_above_middle": 1,
+      "preserved_endpoint_two_bracket": [
+        134,
+        135
+      ]
+    },
+    {
+      "pair": [
+        92,
+        98
+      ],
+      "middle_gap": 6,
+      "exponent_cubic_coefficients": [
+        18067,
+        -320016683,
+        164173373,
+        15356729115
+      ],
+      "unique_exponent_root_bracket": [
+        17712,
+        17713
+      ],
+      "integer_Horner_boundary_values": [
+        -1462225690485,
+        4205971193536
+      ],
+      "independent_six_by_six_Bareiss_boundary_values": [
+        -1462225690485,
+        4205971193536
+      ],
+      "roots_strictly_above_middle": 1,
+      "preserved_endpoint_two_bracket": [
+        179,
+        180
+      ]
+    },
+    {
+      "pair": [
+        262,
+        273
+      ],
+      "middle_gap": 11,
+      "exponent_cubic_coefficients": [
+        143172,
+        -20349083988,
+        10269276768,
+        2731774999680
+      ],
+      "unique_exponent_root_bracket": [
+        142129,
+        142130
+      ],
+      "integer_Horner_boundary_values": [
+        -2391990711144048,
+        500173859362320
+      ],
+      "independent_six_by_six_Bareiss_boundary_values": [
+        -2391990711144048,
+        500173859362320
+      ],
+      "roots_strictly_above_middle": 1,
+      "preserved_endpoint_two_bracket": [
+        524,
+        525
+      ]
+    },
+    {
+      "pair": [
+        820,
+        840
+      ],
+      "middle_gap": 20,
+      "exponent_cubic_coefficients": [
+        1377999,
+        -1894351566177,
+        950025342357,
+        787100418925821
+      ],
+      "unique_exponent_root_bracket": [
+        1374711,
+        1374712
+      ],
+      "integer_Horner_boundary_values": [
+        -928660234722129000,
+        1675525561507488789
+      ],
+      "independent_six_by_six_Bareiss_boundary_values": [
+        -928660234722129000,
+        1675525561507488789
+      ],
+      "roots_strictly_above_middle": 1,
+      "preserved_endpoint_two_bracket": [
+        1649,
+        1650
+      ]
+    }
+  ],
+  "preserved_repeated_control": {
+    "exponents": [
+      9,
+      9,
+      136
+    ],
+    "h_C_at_one": 0
+  },
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_one_growing_gap.py": "9e663e01efbb3b2eb3276c87b3f46e9c80ba93f97ee32db34edee85a465850b9",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Written unbounded growing-gap endpoint-one integer exclusion, plus all-minimum>=8gaps1/2, with complete positive identities and exact unit-width brackets. All31note vectors checked. Eight selected cubic Sturm/Horner/independent6x6Bareiss fixtures and repeated control supplement proofs; no parameter scan or new finite base, floats or Lean. The d>=5spectral family uses written endpoint exclusions only; broader spectral consequences retain prior finite certificates. No endpoint-surface emptiness outside hypotheses, no spectral-multiplicity claim, old results/manuscript unchanged. FullQ3/higher-prime nonsquarefree vectors open."
+}

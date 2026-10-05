@@ -21,6 +21,17 @@ Further bounded work should target integer feasibility of this unique root
 or its other quotient roots, retaining full Q3 as open. These standalone
 written results need no finite base or new congruence shifts.
 
+The [endpoint-one growing-gap proof](notes/endpoint-one-growing-gap.md)
+excludes integer endpoint one for all d=b-a>=1,a>=2d^2+20; gaps1and2
+are excluded for every a>=8. Its unique real exponent is bracketed by
+L=2a^2+(2d-3)a-d^2-ceil(3d/2)+1 and L+1. Written endpoint-one/two
+exclusions finish all parity patterns when d>=5,a>=2d^2+20 without a
+finite base. Broader spectral consequences use prior finite certificates.
+Focus subsequent bounded work inside d>=3,a<2d^2+20,b<=2a^2-a-2,
+b<c,b+c<4a^2-2a, on integer feasibility or other quotient roots.
+This is a necessary surviving region; full Q3 remains open. Earlier
+results and manuscript files remain unchanged pending coauthor review.
+
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
 Appendices B/C; Appendix A summarizes verification, with the full checker
