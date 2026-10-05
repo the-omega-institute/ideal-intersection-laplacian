@@ -54,6 +54,14 @@ gap2 uses its preserved theorem. With the growing-gap result, every fully
 distinct integer endpoint-two zero at minimum>=8 must have **d=b-a>=5 and
 a<2d^2+20**. General feasibility in this remaining region stays open.
 
+The [nine-fourths maximum bound](notes/endpoint-two-sharp-maximum.md)
+now improves the whole endpoint-two region at minimum>=8 to **c<9a/4-8**,
+strictly below the preceding3a-4bound. Two nonnegative square expressions
+and a complete84term positive residual prove h_C(2)>0 beyond this cutoff
+throughout the unbounded real domain, with no finite base or exponent scan.
+The remaining fully distinct integer region requires d>=5,a<2d^2+20,
+b<beta(a),b<c<9a/4-8. General integer feasibility stays open.
+
 ## First results
 
 We prove nonintegrality for every squarefree integer with at least three

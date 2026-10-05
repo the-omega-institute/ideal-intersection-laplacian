@@ -65,6 +65,15 @@ endpoint-two zero at minimum>=8 requires d=b-a>=5 and a<2d^2+20, in addition
 to b<beta(a),c<3a-4. Focus any next structural work inside this remaining
 region or on the other quotient roots; other endpoint-one cases remain open.
 
+The [nine-fourths maximum proof](notes/endpoint-two-sharp-maximum.md)
+now gives c<9a/4-8 for every endpoint-two zero at ordered minimum>=8.
+Its complete transformed identity has two nonnegative square expressions
+and an84term positive residual; the full unbounded theorem needs no finite
+base or parameter scan. The surviving fully distinct integer region requires
+d>=5,a<2d^2+20,b<beta(a),b<c<9a/4-8. Further work should target a specified
+case inside these restrictions or the other quotient roots; general endpoint-two
+feasibility and other endpoint-one cases remain open.
+
 **Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
 consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
 the successive linear cutoffs, all `(a,a,b)` with `a,b>=1`, and all
