@@ -1,5 +1,14 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [unequal-double-pair theorem](notes/four-prime-double-pair-balanced.md)
+proves every (a,a,b,b) with a<=b<=2a-6 nonintegral. A genuine second-swap
+cubic restriction has its smallest eigenvalue in (3,4); complete positive
+identities cover the entire two-parameter region, including its boundaries.
+Both repeated-pair orientations fail the earlier product-tail condition,
+and all coordinates fail the small-exponent criterion. The offset-six
+interval cannot be replaced uniformly by five; the wider classification
+remains open.
+
 The [four-prime diagonal theorem](notes/four-prime-diagonal.md) proves
 every (a,a,a,a), a>=5, nonintegral, with smallest repeated-pair eigenvalue
 in (3,4) and a graph eigenvalue in (V-3,V-2). A second coordinate-swap

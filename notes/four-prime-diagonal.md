@@ -146,8 +146,9 @@ implementation controls; the full infinite family has the written proof
 above. No expanded vertex graph, floating eigensolver, exponent-range
 scan, historical finite-base rerun or Lean run is used.
 
-The completed three-prime manuscript remains unchanged. The next bounded
-spectral question is the unequal double-pair vector (a,a,b,b), a,b>=5,
-outside the product-tail criterion, using the same second-swap decomposition.
+The completed three-prime manuscript remains unchanged. The subsequent
+[unequal-double-pair proof](four-prime-double-pair-balanced.md) uses this
+second-swap decomposition to cover a<=b<=2a-6. The next bounded spectral
+question is the remaining unequal double-pair region outside both criteria.
 General repeated-pair and fully unequal four-prime vectors, higher-prime
 nonsquarefree Q3 and old orthogonality n=7 remain open.

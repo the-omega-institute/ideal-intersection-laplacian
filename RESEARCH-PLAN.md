@@ -1,5 +1,15 @@
 # First task: Laplacian integrality
 
+The [unequal-double-pair proof](notes/four-prime-double-pair-balanced.md)
+now covers every (a,a,b,b), a<=b<=2a-6, by a written unbounded
+smallest-root interval (3,4). It includes arbitrarily large gaps b-a
+and is outside both orientations of the product-tail criterion. The
+neighboring offset-five point(20,35) instead has its smallest root in(2,3),
+so the interval cannot be extended simply by replacing six by five.
+Next address b>2a-6 where neither product-tail orientation holds,
+using the general cubic endpoints or another root. No arbitrary exponent
+scan; full higher-prime Q3 remains open and the three-prime main stays focused.
+
 The [four-prime diagonal proof](notes/four-prime-diagonal.md) now settles
 every positive (a,a,a,a). For a>=5, a second swap gives a cubic block
 whose smallest root is strictly between three and four, with no finite
