@@ -313,6 +313,26 @@ lift. Two small expanded graphs check the same embedding directly.
 These controls validate the implementation; no exponent-range scan,
 floating-point eigenvalues or Lean verification is used.
 
+\subsection{Four prime factors with two exponents equal to three}
+
+Theorem~\ref{thm:four-prime-pair-three} uses a written invariant-space
+and tensor positivity proof. Two complete nine-term positive expansions
+reduce the endpoint problem to fifteen symbolic low-$b$ polynomials:
+five have positive coefficients, eight have nonsquare discriminants,
+and two have explicit rational noninteger positive roots. This is a
+complete unbounded reduction with fixed arithmetic, not a finite
+two-parameter exponent base. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/04bf9df41dabe94d9736f930e1df7b92fba6dbb2/scripts/check_four_prime_pair_three.py}{checker}
+verifies the generic repeated-pair tensor identity and normalized
+two-dimensional characteristic polynomial, both endpoint polynomials,
+all eighteen positive coefficients and all fifteen low-$b$ rows.
+Ten specified support controls reconstruct all four embedding columns,
+weighted zero sums and complement/join identities, including two
+controls at other repeated exponents. Two small expanded graphs
+independently check the embedding. The certificate reproduces
+byte-for-byte, with no numerical spectra, modular search, exponent
+rectangle scan or Lean verification.
+
 \ifdefined\DetailedVerification
 \subsection{Complete checker catalogue}
 \input{sections/verification-details}

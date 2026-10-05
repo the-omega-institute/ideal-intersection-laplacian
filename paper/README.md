@@ -1,5 +1,12 @@
 # Working manuscript
 
+Theorem 8.6 proves every four-prime vector (3,3,b,c), b,c>=2, nonintegral.
+Tensor normalization gives a general repeated-pair lower bound; the
+exponent-three endpoint has no integer pair, by two positive expansions,
+eight fixed nonsquare discriminants and two rational factorizations.
+There is no finite two-parameter exponent base. The exact checker is
+pinned to PR9 `04bf9df41dabe94d9736f930e1df7b92fba6dbb2`.
+
 Theorem8.5 proves nonintegrality for every four-prime vector with two
 exponents equal to two, including (2,2,2,2). Its invariant-subspace proof
 uses five symbolic endpoint polynomials and one17-residue certificate,

@@ -324,3 +324,104 @@ In particular, $(2,2,2,2)$ is nonintegral, although it fails
 Theorem~\ref{thm:small-exponent-rayleigh}'s sufficient condition.
 The present argument uses an actual invariant subspace, whereas the
 preceding three-collection compression supplies trial functions.
+
+\subsection{Two exponents equal to three}
+
+Tensor normalization supplies a general lower bound for the
+repeated-pair restriction. At exponent three it leaves an endpoint
+equation with no integer solutions.
+
+\begin{theorem}
+\label{thm:four-prime-pair-three}
+For distinct primes $p_1,p_2,p_3,p_4$ and every $b,c\geq2$, the graph
+$G_{p_1^3p_2^3p_3^bp_4^c}$ has a noninteger Laplacian eigenvalue in
+$(V-2,V)$, different from $V-1$, where $V=16(b+1)(c+1)-2$.
+Together with Theorem~\ref{thm:unit-any-prime-count}, this proves
+nonintegrality for every positive four-prime vector with two entries
+equal to three.
+\end{theorem}
+\begin{proof}
+For the general vector $(a,a,b,c)$, use the paired-support functions
+of Theorem~\ref{thm:four-prime-pair-two}. Their weighted sum is zero.
+The degree on $\{1\}\cup T$ is now
+$(a+1)\prod_{i\in\{3,4\}\setminus T}(k_i+1)-1$, while the opposite
+neighbor classes have weights $a\prod_{i\in T'}k_i$.
+Thus the complement restriction is $K_a-I$, with
+\[
+ K_a=(a+1)E_b\otimes E_c+aF_b\otimes F_c,\qquad
+ E_k=\begin{pmatrix}k+1&0\\0&1\end{pmatrix},\quad
+ F_k=\begin{pmatrix}1&k\\1&0\end{pmatrix}.
+\]
+The symmetrizer is $\operatorname{diag}(1,c,b,bc)$, and an eigenvalue
+$\kappa$ lifts to $V+1-\kappa$, where
+$V=(a+1)^2(b+1)(c+1)-2$, by the zero-sum calculation above.
+
+In the weighted symmetric basis, $F_k$ becomes
+$S_k=\begin{pmatrix}1&\sqrt{k}\\\sqrt{k}&0\end{pmatrix}$.
+Put $T_k=E_k^{-1/2}S_kE_k^{-1/2}$. Its characteristic polynomial
+is $(x-1)(x+k/(k+1))$, so its eigenvalues are $1,-k/(k+1)$.
+Every eigenvalue of $T_b\otimes T_c$ is strictly greater than $-1$.
+With $E=E_b\otimes E_c$, the symmetric similar matrix of $K_a$ is
+\[
+ E^{1/2}\bigl((a+1)I+aT_b\otimes T_c\bigr)E^{1/2}.
+\]
+The bracket is strictly greater than $I$, so this matrix is strictly
+greater than $E\geq I$. Hence $\kappa_{\min}(K_a)>1$ for all
+$a,b,c\geq1$.
+
+Set $a=3$ and write $K=K_3$. Direct expansion gives
+\begin{align*}
+\det(K-3I)={}&-35b^2c^2+8b^2c-20b^2+8bc^2\\
+             &{}+109bc+11b-20c^2+11c+4.
+\end{align*}
+For $b=2+u,c=2+v$, its negative is
+\begin{align*}
+35u^2v^2+132u^2v+144u^2+132uv^2+387uv\\
+{}+315u+144v^2+315v+108>0.
+\end{align*}
+The symmetric similar matrix $K-3I$ therefore has a negative
+eigenvalue, giving $1<\kappa_{\min}(K)<3$. It suffices to exclude two.
+
+Write $P(b,c)=\det(K-2I)$. Its exact polynomial is
+\begin{align*}
+P(b,c)={}&-7b^2c^2+48b^2c-8b^2+48bc^2\\
+         &{}+302bc+76b-8c^2+76c+40.
+\end{align*}
+Order $b\leq c$. For $b=17+u,c=17+v$, with $u,v\geq0$,
+\begin{align*}
+-P(17+u,17+v)={}&7u^2v^2+190u^2v+1215u^2+190uv^2+4526uv\\
+                &{}+22228u+1215v^2+22228v+27721>0.
+\end{align*}
+For $2\leq b\leq16$, write $P=A_bc^2+B_bc+C_b$, where
+\[
+A_b=-7b^2+48b-8,\quad B_b=48b^2+302b+76,\quad C_b=-8b^2+76b+40.
+\]
+For $b=2,\ldots,6$, the $A_b$ values are $(60,73,72,57,28)$
+and the $C_b$ values are $(160,196,216,220,208)$; also $B_b>0$.
+These rows have no positive zero. Two further rows factor as
+\[
+P(10,c)=-12c(19c-658),\qquad P(14,c)=-4(3c-58)(59c-2).
+\]
+Their positive roots $658/19,58/3,2/59$ are not integers.
+For the remaining eight rows, the discriminant $D_b=B_b^2-4A_bC_b$
+lies strictly between the consecutive squares shown below:
+\[
+\begin{array}{r|r|r}
+b&D_b&h_b\text{ with }h_b^2<D_b<(h_b+1)^2\\\hline
+7&20640564&4543\\
+8&30997264&5567\\
+9&44692596&6685\\
+11&84630100&9199\\
+12&112262544&10595\\
+13&146014164&12083\\
+15&235204596&15336\\
+16&292433040&17100
+\end{array}
+\]
+Thus none of these quadratics has a rational zero. The complete
+symbolic reduction proves $P(b,c)\ne0$ for all integers $b,c\geq2$,
+with no exceptional pair. Therefore $\kappa_{\min}$ is noninteger
+in $(1,3)$, and its graph lift $V+1-\kappa_{\min}$ has the stated
+location. The fixed arithmetic consists of the eight discriminants
+and two factorizations; no finite two-parameter exponent base is used.
+\end{proof}
