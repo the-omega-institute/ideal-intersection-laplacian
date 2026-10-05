@@ -1,5 +1,16 @@
 # First task: Laplacian integrality
 
+The selected main-paper direction is the [three-prime classification
+manuscript](paper/classification-core.pdf), following coauthor review of
+the 25-page candidate. Its full proof chain, finite bases and coefficient
+appendices remain together. The original 61/67-page collection and the
+higher-prime research branch supply supporting material, without a separate
+submission being inferred. See the [placement decision](notes/classification-core-placement.md).
+Prioritize independent review of this focused proof and concrete corrections
+over additional fixed-value higher-prime expansions. Final author metadata,
+disclosure wording, title, venue, freeze and submission arrangements remain
+with the coauthors.
+
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new
 largest-root interval (bc+a+b+c,bc+a+b+c+1), the endpoint-one sum bound,

@@ -1,11 +1,15 @@
-# Three-prime classification-core candidate
+# Three-prime classification manuscript and supporting material
 
-The optional [25-page candidate](../paper/classification-core.pdf) makes
+The [25-page main manuscript](../paper/classification-core.pdf) makes
 the completed three-prime classification the central result. It preserves
 the proof chain and its finite dependencies while setting aside the
-auxiliary arithmetic and higher-prime results. This is a concrete working
-choice for coauthor review; the main/companion scope, authorship, disclosure,
-freeze and submission decisions remain pending.
+auxiliary arithmetic and higher-prime results. Reza Nikandish's
+[coauthor review](https://github.com/the-omega-institute/ideal-intersection-laplacian/pull/9#issuecomment-6001734445)
+endorses this organization and the retained evidence. The user has delegated
+the structure decision; we select the focused classification as the main-paper
+direction. The full collection is supporting research material, with no second
+submission inferred. Final title, venue, author metadata, disclosure wording,
+freeze and submission arrangements still require the coauthors' confirmation.
 
 The existing `paper/paper.tex`, every original section source and
 `paper/paper.pdf` are untouched. The default PDF remains 61 pages and the
@@ -14,7 +18,8 @@ previous optional detailed build remains 67 pages. The new candidate is
 margins and article layout. Its main argument ends on page 17; further
 questions and references occupy pages 18–19, the evidence summary is on
 page 19, and the full coefficient/base appendices occupy pages 20–25.
-No final page target or scope acceptance is inferred from this measurement.
+The page count is a measured consequence of the selected scope, not a journal
+page limit or a substitute for mathematical review.
 
 ## The retained route
 
@@ -61,10 +66,10 @@ This is the same mathematical assembly as the original classification.
 ## Material outside this candidate
 
 All these sources remain in the original manuscript or the supporting
-research branch. The table proposes a placement, not a deletion or an
-already approved companion paper.
+research branch. The table records their selected placement; it does not
+designate the supporting collection as an approved companion paper.
 
-| Material | Current source | Proposed placement and reason |
+| Material | Current source | Placement and reason |
 | --- | --- | --- |
 | Squarefree composite classification | `squarefree.tex` | Supporting result; the candidate proves only the three-prime classification |
 | Three successive repeated-family cutoffs; fixed-small-a results | Parts of `aa-bounds.tex`; `aa-small.tex` | Supporting refinements; their needed factor-index arguments are retained in the candidate |
@@ -79,10 +84,27 @@ already approved companion paper.
 | Full historical checker catalogue | `verification.tex`, `verification-details.tex` | Supporting reproducibility record; candidate Appendix A summarizes the dependencies it actually uses |
 
 The original manuscript remains the full collection, so it can still be
-read and reviewed alongside the candidate. A polished companion document
-is a separate possible editorial step, after the coauthors choose its
-mathematical scope. The higher-prime nonsquarefree classification remains
+read and reviewed alongside the main article. A polished companion document
+is a separate possible editorial step if the coauthors identify a coherent
+additional contribution. The higher-prime nonsquarefree classification remains
 open, including the currently unclosed four-prime case `(2,3,4,5)`.
+
+## Editorial direction
+
+The working title is *Laplacian nonintegrality of three-prime ideal
+intersection graphs*. It identifies the proved domain without implying
+the general higher-prime classification. The title and venue can be adapted
+to the corresponding coauthor's preference. JAC and EJC were mentioned in
+the collaboration discussion; no specific expansion of EJC or journal
+page limit is assumed here.
+
+Keep the finite-domain summaries and full coefficient appendices with the
+main article for referee access. The repository remains the reproducibility
+package for exact checker sources and complete finite rows. Auxiliary
+congruence refinements, equality-curve geometry and the four-prime pair-four
+theorem do not lengthen the classification argument. A separate companion
+should be assessed on its own mathematical contribution rather than created
+solely to accommodate material removed from the main article.
 
 ## Source concordance and validation
 
@@ -120,8 +142,8 @@ From the repository root, check the committed fragments and receipt:
 python3 scripts/check_classification_core.py
 ```
 
-From `paper/`, compile the optional candidate without replacing the
-existing default PDF:
+From `paper/`, compile the main classification manuscript without replacing
+the supporting collection PDF:
 
 ```sh
 pdflatex -interaction=nonstopmode -halt-on-error classification-core.tex
