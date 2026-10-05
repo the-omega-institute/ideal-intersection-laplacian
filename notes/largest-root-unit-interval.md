@@ -145,8 +145,12 @@ If b-a=1or2, the written [small-gap endpoint-one brackets](endpoint-one-growing-
 exclude every integer c>b. Their lower anchors are
 2a²-a-2 and2a²+a-6, respectively; opposite signs at the consecutive
 endpoints and unique real exponent-root geometry give the exclusion
-for every a>=8. The four complete univariate positive vectors are
-rechecked in the new certificate, without invoking a new finite base.
+for every a>=8. The four complete boundary positive vectors and two
+diagonal negative-value vectors are rechecked in the new certificate.
+The signs Q(0)>0>Q(b), Q(L)<0<Q(L+1), positive leading coefficient
+and negative value at negative infinity put the cubic's three roots
+in (-infinity,0), (0,b), (L,L+1). This gives uniqueness above b
+directly, without invoking a new finite base.
 
 If b-a>=3, the established [endpoint-one sum bound](endpoint-one-minimum-root.md)
 gives b+c>=2a²-2a+1. Since c>=b, it follows that
@@ -173,7 +177,7 @@ The [checker](../scripts/check_largest_root_unit_interval.py) and
 [certificate](../results/largest-root-unit-interval.json) reconstruct the
 generic quotient and independent Schur determinant, the lower identity,
 all34complete coefficient rows (36+170terms), and the four preserved
-small-gap sign vectors. Seven stated spectral controls cover the real
+small-gap boundary and diagonal sign vectors. Seven stated spectral controls cover the real
 boundary, minimum-eight domain, two earlier endpoint-feasibility pairs,
 and strongly unequal exponents. Fourteen independent6x6Bareiss determinants
 check the two signs; exact squarefree-factor Sturm counts retain

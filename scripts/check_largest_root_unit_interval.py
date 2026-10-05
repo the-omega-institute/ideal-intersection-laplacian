@@ -99,7 +99,13 @@ def main():
             vector = [int(polynomial.nth(index)) for index in range(polynomial.degree() + 1)]
             assert all(value > 0 for value in vector)
             signs.append(vector)
+        diagonal_positive = sympy.Poly(sympy.expand(-specialized.subs(third, first + gap)
+                                                   .subs(first, 8 + minimum_shift)), minimum_shift)
+        diagonal_vector = [int(diagonal_positive.nth(index))
+                           for index in range(diagonal_positive.degree() + 1)]
+        assert all(value > 0 for value in diagonal_vector)
         small_gap[str(gap)] = {'lower_anchor': str(anchor_expression),
+                              'ascending_diagonal_negative_vector': diagonal_vector,
                               'ascending_lower_negative_vector': signs[0],
                               'ascending_upper_positive_vector': signs[1]}
     root = Path(__file__).resolve().parents[1]

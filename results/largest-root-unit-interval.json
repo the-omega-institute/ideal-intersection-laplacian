@@ -553,6 +553,15 @@
   "preserved_small_gap_written_signs": {
     "1": {
       "lower_anchor": "2*a**2 - a - 2",
+      "ascending_diagonal_negative_vector": [
+        1110016,
+        834048,
+        259904,
+        43000,
+        3984,
+        196,
+        4
+      ],
       "ascending_lower_negative_vector": [
         1103040,
         831256,
@@ -574,6 +583,15 @@
     },
     "2": {
       "lower_anchor": "2*a**2 + a - 6",
+      "ascending_diagonal_negative_vector": [
+        1734483,
+        1216821,
+        352937,
+        54220,
+        4656,
+        212,
+        4
+      ],
       "ascending_lower_negative_vector": [
         753723,
         453685,
@@ -613,7 +631,7 @@
     "notes/open-region-diagnostic.md": "850e97e70562c84d08d0bd0d93dae3e87463322314d4637d1ea05ceaacf786c3",
     "notes/repeated-exponent-completion.md": "8fdb428323345847903f8e547e4ef5546a7802029aa563c6214aafe4ec309ef1"
   },
-  "script_sha256": "fe1d7cebe9ed2b2d08b5911ee0ecc02c6ba8729bc6df58c0b861adbe156e122c",
+  "script_sha256": "7f3454ab3eee9553ce26a73be8fbb2364e796ba830b573d2c1bbd1d572c17c4d",
   "sympy": "1.14.0",
   "scope": "Written unbounded real unit interval and endpoint-one completion. Combining established written/computer-assisted results proves nonintegrality for every three-prime exponent vector. Seven fixed spectral controls supplement proof, not an exponent scan. Historical finite bases retained, not rerun. Full Q3 for higher-prime nonsquarefree vectors and original orthogonality n=7 remain open. No Lean or floating spectra."
 }
