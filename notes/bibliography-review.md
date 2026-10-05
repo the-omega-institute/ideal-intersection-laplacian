@@ -65,3 +65,17 @@ title and attribution remain intact.
 Section openings and proof-to-result transitions were added outside theorem
 statements and proof bodies. No theorem, proof, certificate, author entry or
 disclosure was changed by this editorial pass.
+
+## Equality-curve arithmetic references
+
+The equality-curve remark cites Hindry and Silverman, *Diophantine Geometry:
+An Introduction*, Graduate Texts in Mathematics 201, Springer, 2000,
+[DOI10.1007/978-1-4612-1210-2](https://doi.org/10.1007/978-1-4612-1210-2).
+It now also cites J.-P. Serre, *Lectures on the Mordell-Weil Theorem*,
+Aspects of Mathematics 15, Vieweg+Teubner Verlag, Wiesbaden, 1997,
+[DOI10.1007/978-3-663-10632-6](https://doi.org/10.1007/978-3-663-10632-6).
+The Serre title, author, year and DOI agree between Crossref and the
+[publisher record](https://link.springer.com/book/10.1007/978-3-663-10632-6);
+the latter also verifies the series and volume. These references support
+Siegel finiteness and its arithmetic context. No effective integer-point
+list or applicable Chabauty rank bound is supplied by the remark.
