@@ -4,6 +4,12 @@ Read [the PDF](paper.pdf), or edit [paper.tex](paper.tex) and the section
 files it includes. This is a growing mathematical draft, not a submission
 package. Author metadata and any manuscript disclosure are for joint agreement.
 The main text ends with explicit remaining questions and references.
+Proposition13.9 supplies the exceptional-prime valuation obstruction:
+on q=-1mod13 with13 dividing b, integer splitting requires b=104mod169.
+It retains the positive branch and leaves that remaining residue open.
+Its exact anchor identities are pinned to PR9
+`eb6b7d378205033154c328cd5c543332f27b6467`; run
+`python3 scripts/check_endpoint_one_equality_thirteen.py` there.
 Proposition13.8 gives the complete local cubic splitting test at odd
 prime divisors of b, apart from the negative branch at13. The two
 surviving b=0mod5rows pass all5-power splitting tests by Hensel's lemma.

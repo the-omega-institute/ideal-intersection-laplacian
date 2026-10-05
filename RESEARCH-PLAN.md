@@ -1,5 +1,12 @@
 # First task: Laplacian integrality
 
+Proposition13.9 now requires b=104mod169 on the negative q=-1mod13
+equality branch for integer splitting. Every other negative-branch
+13-divisibility class has odd discriminant valuation by a refined
+anchor. Next derive the normalized discriminant on the remaining
+class; the positive branch retains its simple local roots. Global
+integer equality classification and full Q3 remain open.
+
 Local equality splitting at odd primes p|b is now classified, except the
 negative branch at13. The positive branch always splits overZ_p; the
 negative branch splits iff13is a residue. In particular the surviving

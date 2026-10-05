@@ -8,6 +8,13 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+Proposition13.9 now requires b=104mod169 for an integral equality spectrum
+on the negative q=-1mod13 branch with13 dividing b. Its refined anchor
+gives Delta=13b²-18b³mod13^(4v_13(b)); every other such class has an odd
+discriminant valuation. The positive branch remains locally split.
+The full written proof is integrated, with exact identities pinned to
+PR9 `eb6b7d37`; the b=104mod169 class and global equality problem remain open.
+
 Proposition13.8 now classifies local equality-cubic splitting at odd p|b,
 except the negative branch at p=13. The positive branch q=1modp always
 splits by simple-root Hensel lifting; the negative branch q=-1modp splits

@@ -323,6 +323,16 @@ The three specified residue examples $3,5,7$ exercise the split negative,
 positive and nonsplit negative branches, respectively. The prior generic
 quotient, Sylvester discriminant and local anchor checks are rerun.
 The written Hensel argument requires no prime-power enumeration.
+\item The prime-thirteen checker refines the anchor to
+$w=-1+2b+3b^2+\frac72b^3$ and verifies $G(w,b)=b^4S(b)$ and
+$\Delta(w,b)=13b^2-18b^3+b^4T(b)$ in $\mathbb Z[1/2][b]$.
+It checks all coefficients of $T$, the curve difference unit $2$,
+discriminant difference divisibility and the unique residue $u=8$
+solving $18u=1$ modulo $13$. The generic six-support quotient and
+independent Sylvester discriminant are reverified. The written proof
+excludes the negative branch unless $b\equiv104\pmod{169}$;
+the remaining class's square status is open. No exponent or power
+table and no finite exponent base are used.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

@@ -208,6 +208,19 @@ integer equality points. The certificate reproduces byte-for-byte.
 The all-prime-power conclusion is a written Hensel argument, without
 a prime, power or exponent scan or a finite exponent base.
 
+\subsection{The exceptional prime thirteen}
+
+Proposition~\ref{prop:equality-thirteen} is a written valuation proof
+with no finite exponent base. Its
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/eb6b7d378205033154c328cd5c543332f27b6467/scripts/check_endpoint_one_equality_thirteen.py}{pinned checker}
+verifies the refined anchor identities in $\mathbb Z[1/2][b]$, every
+coefficient of the discriminant remainder, the curve difference unit
+and discriminant difference divisibility. It also reconstructs the
+generic cubic from the six-support quotient and independently checks
+its discriminant by a $5\times5$ Sylvester determinant. The unique
+linear residue $u\equiv8\pmod{13}$ is checked exactly; the certificate
+reproduces byte-for-byte. There is no prime, power or exponent scan.
+
 \ifdefined\DetailedVerification
 \subsection{Complete checker catalogue}
 \input{sections/verification-details}

@@ -141,3 +141,51 @@ and splitting solutions exist in both rows modulo every power of five.
 These local points leave integer equality and global integer splitting as separate
 questions. Only the negative branch at $p=13$ is left outside the
 odd-prime-divisor classification.
+
+\begin{proposition}
+\label{prop:equality-thirteen}
+At an integer equality point $c=b(b+2)-a$, $q=ac$, $G=0$, suppose
+$13\mid b$ and $q\equiv-1\pmod{13}$, equivalently $a^2\equiv1\pmod{13}$.
+If $b\not\equiv104\pmod{169}$, then $P_3$ does not split over
+$\mathbb Q_{13}$ and the ideal intersection graph is Laplacian
+nonintegral. Thus an integral equality spectrum on this negative branch
+requires $b\equiv104\pmod{169}$, in particular $13^2\nmid b$.
+\end{proposition}
+
+\begin{proof}
+Let $e=v_{13}(b)\geq1$ and refine the previous anchor to
+$w=-1+2b+3b^2+\frac72b^3$. Substitution into the explicit curve and
+cubic-discriminant formulas gives identities in $\mathbb Z[1/2][b]$:
+\begin{align*}
+ G(w,b)&=b^4\left(\frac{143}{4}b^3+\frac{185}{4}b^2+43b-\frac{37}{2}\right),\\
+ \Delta(w,b)&=13b^2-18b^3+b^4T(b),\qquad T\in\mathbb Z[1/2][b].
+\end{align*}
+The curve difference identity of
+Proposition~\ref{prop:equality-local-discriminant} holds with $w$ in
+place of $v$. Since $q\equiv w\equiv-1\pmod{13}$, its bracket is
+$2$ modulo $13$. The coefficients are integral at $13$ and $G(q,b)=0$,
+so $q\equiv w\pmod{13^{4e}}$. Polynomial divisibility of the
+discriminant difference then gives
+\[
+ \Delta(q,b)\equiv13b^2-18b^3\pmod{13^{4e}}.
+\]
+If $e\geq2$, the displayed terms have valuations $2e+1$ and $3e$,
+and the remainder has valuation at least $4e$. Hence
+$v_{13}(\Delta)=2e+1$, which is odd, and $\Delta$ is nonsquare.
+
+If $e=1$, write $b=13u$ with $u$ a unit. The congruence becomes
+\[
+ \Delta\equiv13^3u^2(1-18u)\pmod{13^4}.
+\]
+Unless $u\equiv8\pmod{13}$, the factor $1-18u$ is a unit and
+$v_{13}(\Delta)=3$, again odd. The remaining residue is precisely
+$b\equiv104\pmod{169}$. A split cubic has square discriminant,
+so the nonsquare cases exclude splitting over $\mathbb Q_{13}$ and
+over the integers. The equality factorization and complement and
+universal-class lifts give the graph conclusion.
+\end{proof}
+
+On the remaining negative-branch class $b\equiv104\pmod{169}$,
+the discriminant has valuation at least four; its square status remains
+undecided by this congruence. The positive branch at $13$ retains the
+three simple local roots of Proposition~\ref{prop:equality-local-splitting}.
