@@ -310,6 +310,19 @@ It also verifies the generic curve difference and discriminant
 divisibility identities, both reductions $x(x+1)^2$ and $x(x^2+1)$,
 the specified prime consequences and the refinement of the prior
 modulo-five table. The valuation proof has no finite exponent base.
+\item The local splitting checker verifies $x(x^2+1)$ and $x(x+1)^2$,
+their simple-root derivative identities and generic division by $x-d$.
+It verifies the curve reduction $1-a^4$ and derivative $-4a^3$, which
+give unique fixed-$b$ local curve points by Hensel's lemma.
+For $P=x^3-Ax^2+Bx-N$ and $\delta=A^2+2Ad-3d^2-4B$, it checks
+\[
+ \operatorname{disc}(P)-P'(d)^2\delta
+ =P(d)\bigl(4A^3-18AB-27Ad^2+27Bd+27N+27d^3\bigr).
+\]
+The three specified residue examples $3,5,7$ exercise the split negative,
+positive and nonsplit negative branches, respectively. The prior generic
+quotient, Sylvester discriminant and local anchor checks are rerun.
+The written Hensel argument requires no prime-power enumeration.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;

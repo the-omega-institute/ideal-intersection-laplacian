@@ -1,5 +1,13 @@
 # First task: Laplacian integrality
 
+Local equality splitting at odd primes p|b is now classified, except the
+negative branch at13. The positive branch always splits overZ_p; the
+negative branch splits iff13is a residue. In particular the surviving
+b=0mod5rows pass every5-power splitting test, so increasing that modulus
+cannot exclude them. Next use the actual global integer root/discriminant
+equations, primes not dividingb, the two b=2mod5rows, or a stated reduction
+for the exceptional branch. Equality points/global splitting remain open.
+
 The normalized equality discriminant now gives a uniform written
 obstruction when p|b, a²=1modp and13 is a nonresidue at an odd prime.
 In particular7and11cannot divide b. It refines the necessary equality

@@ -192,6 +192,22 @@ the four remaining modulo-five pairs. The certificate reproduces
 byte-for-byte. No exponent scan, integer-point enumeration or larger
 prime search is used.
 
+\subsection{Local equality splitting}
+
+Proposition~\ref{prop:equality-local-splitting} uses simple-root Hensel
+lifting and the quadratic discriminant criterion over $\mathbb Q_p$.
+The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/8b87f9df6d402fafc60ed063ab8b12326707febf/scripts/check_endpoint_one_equality_local_splitting.py}{pinned checker}
+verifies both reduced cubics, the three positive-branch derivative
+identities, the curve reduction $1-a^4$ and derivative $-4a^3$, generic
+polynomial division and the factor discriminant
+identity modulo $P_3(d)=0$. It also reruns the direct quotient,
+independent Sylvester and local anchor identities. The specified
+residue examples at $3,5,7$ illustrate both branches; they are not
+integer equality points. The certificate reproduces byte-for-byte.
+The all-prime-power conclusion is a written Hensel argument, without
+a prime, power or exponent scan or a finite exponent base.
+
 \ifdefined\DetailedVerification
 \subsection{Complete checker catalogue}
 \input{sections/verification-details}

@@ -4,6 +4,12 @@ Read [the PDF](paper.pdf), or edit [paper.tex](paper.tex) and the section
 files it includes. This is a growing mathematical draft, not a submission
 package. Author metadata and any manuscript disclosure are for joint agreement.
 The main text ends with explicit remaining questions and references.
+Proposition13.8 gives the complete local cubic splitting test at odd
+prime divisors of b, apart from the negative branch at13. The two
+surviving b=0mod5rows pass all5-power splitting tests by Hensel's lemma.
+Its exact polynomial identities are pinned to PR9
+`8b87f9df6d402fafc60ed063ab8b12326707febf`; run
+`python3 scripts/check_endpoint_one_equality_local_splitting.py` there.
 Proposition13.6 excludes all permutations of (1,1,2)/(1,4,4)mod5 by a
 full reduced-quintic splitting proof. Proposition13.7 adds a uniform local
 discriminant obstruction on G=0 and refines the six initial compatibility

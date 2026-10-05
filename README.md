@@ -8,6 +8,17 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+Proposition13.8 now classifies local equality-cubic splitting at odd p|b,
+except the negative branch at p=13. The positive branch q=1modp always
+splits by simple-root Hensel lifting; the negative branch q=-1modp splits
+exactly when13is a quadratic residue. In particular, the surviving
+b=0mod5rows(2,0)/(3,0)pass every five-power splitting test. This is a
+written local theorem, not global integer splitting or an integer-point
+construction. Each fixed b in5Z_5 also has two unique compatible local
+curve points with split cubics; finite five-power curve-and-splitting
+tests cannot exclude these rows. Supporting identities are pinned to
+PR9 `8b87f9df`.
+
 Proposition13.6 now excludes every permutation of `(1,1,2)` or `(1,4,4)`
 modulo five by a full quadratic/cubic splitting obstruction, without size
 or endpoint hypotheses. On the equality curve, integer spectra require

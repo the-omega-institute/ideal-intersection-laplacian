@@ -83,3 +83,61 @@ nonsquare unit that the reduction modulo $p$ misses. At $p=5$, this
 excludes $(a,b)\equiv(1,0),(4,0)$ among the previously compatible
 equality rows. The argument is uniform in $p$ and its valuation and
 requires no finite exponent base.
+
+\begin{proposition}
+\label{prop:equality-local-splitting}
+At an integer equality point $c=b(b+2)-a$, $q=ac$, $G=0$, let $p$ be
+an odd prime dividing $b$. If $q\equiv1\pmod p$, then $P_3$ has three
+distinct roots in $\mathbb Z_p$. If $q\equiv-1\pmod p$ and $p\ne13$,
+then $P_3$ splits into three distinct $\mathbb Z_p$ roots exactly when
+$13$ is a quadratic residue modulo $p$. If $13$ is a nonresidue in this
+negative branch, it has exactly one $\mathbb Q_p$ root.
+In the split negative branch, the two roots reducing
+to $-1$ differ by valuation $v_p(b)$.
+Moreover, for every fixed $b\in p\mathbb Z_p$, each residue $a_0$ with
+$a_0^4\equiv1\pmod p$ lifts uniquely to a curve point
+$a\in a_0+p\mathbb Z_p$ on $G=0$.
+\end{proposition}
+
+\begin{proof}
+At $p\mid b$, the curve gives $q^2\equiv1$ and $q\equiv-a^2$.
+For fixed $b\in p\mathbb Z_p$, the polynomial
+$G(a[b(b+2)-a],b)$ reduces to $1-a^4$ and has derivative $-4a^3$
+modulo $p$. At $a_0^4\equiv1$, this derivative is a unit; Hensel's
+lemma gives the asserted unique local curve point.
+On the positive branch, $a^2\equiv-1$ and
+$P_3\equiv x(x^2+1)$. Its roots $0,a,-a$ have derivatives $1,-2,-2$
+modulo $p$, respectively. They are distinct simple roots, so Hensel's
+lemma lifts all three to $\mathbb Z_p$.
+
+On the negative branch, $P_3\equiv x(x+1)^2$, and the simple root $0$
+lifts uniquely to $d_0\in p\mathbb Z_p$. Polynomial division gives
+\begin{align*}
+ P_3(x)&=(x-d_0)Q(x),\\
+ Q(x)&=x^2+(d_0-A_3)x+d_0^2-A_3d_0+B_3,\\
+ \delta_Q&=A_3^2+2A_3d_0-3d_0^2-4B_3.
+\end{align*}
+Here $P_3'(d_0)\equiv1\pmod p$, $Q\equiv(x+1)^2$, and
+$\Delta=P_3'(d_0)^2\delta_Q$. Proposition~\ref{prop:equality-local-discriminant}
+and its anchor identities give $v_p(\Delta)=2e$ and normalized unit
+$13(b/p^e)^2\pmod p$, where $e=v_p(b)$ and $p\ne13$.
+An odd-prime-adic unit is a square if and only if its reduction is a
+nonzero square, by Hensel's lemma for $z^2-u$. Thus $\delta_Q$ is a
+square in $\mathbb Q_p$ if and only if $13$ is a residue modulo $p$.
+Since $2$ is a unit, the quadratic formula then supplies two integral
+roots; otherwise $Q$ is irreducible over $\mathbb Q_p$.
+In the split case the roots reduce to $-1$, and their difference is a
+square root of $\delta_Q$, of valuation $e$. Their differences from
+$d_0$ are units. All three roots are distinct because $\Delta\ne0$.
+\end{proof}
+
+The surviving $(a,b)\equiv(2,0),(3,0)\pmod5$ rows lie on the positive
+branch. At every actual equality point in either row, the cubic splits
+over $\mathbb Z_5$ and modulo every power of five. Higher five-power
+splitting tables cannot exclude these rows.
+For every fixed $b\in5\mathbb Z_5$, both residues $a_0=2,3$ also lift
+to local equality points with split cubics. Thus simultaneous curve
+and splitting solutions exist in both rows modulo every power of five.
+These local points leave integer equality and global integer splitting as separate
+questions. Only the negative branch at $p=13$ is left outside the
+odd-prime-divisor classification.
