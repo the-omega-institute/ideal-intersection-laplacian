@@ -25,6 +25,11 @@ standard-library integer polynomial arithmetic, checks all 40 manuscript
 coefficient rows, and verifies coverage and integrity of the two historical
 finite bases. It does not rerun their discriminant or determinant calculations.
 
+The subsequent [five structural checks](notes/three-prime-referee-checks.md)
+include a dependency diagram and a fresh complete rerun of both historical
+large bases, with byte-identical CSVs, independent five-term coefficient
+extracts, explicit small-gap uniqueness, and the integer-anchor domain.
+
 The [total-sum gap](notes/total-sum-spectral-gap.md) strengthens the
 three larger-root bound to lambda_4>a+b+c for real2<=a<=b<=c,
 with the sharp exception lambda_4=6 at(2,2,2). On endpoint one at

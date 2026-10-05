@@ -20,6 +20,92 @@
     "lower": 36,
     "upper": 170
   },
+  "independently_computed_five_term_extracts": {
+    "lower": [
+      {
+        "powers_m_u_v": [
+          0,
+          0,
+          0
+        ],
+        "coefficient": 1404
+      },
+      {
+        "powers_m_u_v": [
+          1,
+          0,
+          0
+        ],
+        "coefficient": 3042
+      },
+      {
+        "powers_m_u_v": [
+          2,
+          0,
+          0
+        ],
+        "coefficient": 2517
+      },
+      {
+        "powers_m_u_v": [
+          0,
+          1,
+          0
+        ],
+        "coefficient": 603
+      },
+      {
+        "powers_m_u_v": [
+          0,
+          0,
+          1
+        ],
+        "coefficient": 603
+      }
+    ],
+    "upper": [
+      {
+        "powers_m_u_v": [
+          0,
+          0,
+          0
+        ],
+        "coefficient": 513220
+      },
+      {
+        "powers_m_u_v": [
+          1,
+          0,
+          0
+        ],
+        "coefficient": 2023568
+      },
+      {
+        "powers_m_u_v": [
+          2,
+          0,
+          0
+        ],
+        "coefficient": 3509410
+      },
+      {
+        "powers_m_u_v": [
+          0,
+          1,
+          0
+        ],
+        "coefficient": 461006
+      },
+      {
+        "powers_m_u_v": [
+          0,
+          0,
+          1
+        ],
+        "coefficient": 461006
+      }
+    ]
+  },
   "small_gap_determinant_checks": [
     {
       "gap": 1,
@@ -124,7 +210,7 @@
     "scope": "Saved CSV coverage, uniqueness, strict square brackets and stored determinant/Horner agreement only. Discriminants and historical determinant calculations are not recomputed; their prior verifiers remain dependencies."
   },
   "source_certificate_sha256": "ca6380322c500367801940bdcc14ef33b780fad31774b94aaaae3ea9ac1ba05c",
-  "script_sha256": "50b5f0a75de346772c010b2eac4d849f5b3e02fd6558bf9b96f29418591af8af",
+  "script_sha256": "305b4658aec124f33f855e316bc8faa8f17a73eeca47623168813b0b29716710",
   "scope": "Independent exact polynomial identities for the written unbounded largest-root and small-gap steps, plus saved finite-certificate integrity/coverage. No new nonintegrality theorem, no exponent-range expansion or historical determinant rerun. Full higher-prime nonsquarefree Q3 and original orthogonality n=7 stay open; no Lean.",
   "manuscript_table_agreement": {
     "matched_rows": 40,

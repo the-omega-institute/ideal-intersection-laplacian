@@ -110,6 +110,23 @@ def univariate(vector):
     return IntegerPolynomial({(degree, 0, 0): value for degree, value in enumerate(vector)})
 
 
+def exact_polynomial_quotient(dividend, divisor):
+    remainder = dividend
+    quotient = IntegerPolynomial.constant(0)
+    divisor_powers = max(divisor.coefficients)
+    divisor_coefficient = divisor.coefficients[divisor_powers]
+    while remainder.coefficients:
+        leading_powers = max(remainder.coefficients)
+        powers = tuple(first - second for first, second in zip(leading_powers, divisor_powers))
+        coefficient = remainder.coefficients[leading_powers]
+        assert all(power >= 0 for power in powers)
+        assert coefficient % divisor_coefficient == 0
+        term = IntegerPolynomial({powers: coefficient // divisor_coefficient})
+        quotient = quotient + term
+        remainder = remainder - term * divisor
+    return quotient
+
+
 def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -193,10 +210,18 @@ def main():
     lower = read_table(certificate['complete_positive_tables']['lower'])
     upper = read_table(certificate['complete_positive_tables']['upper'])
     determinant_checks = []
+    independently_computed_extracts = {}
     for offset, expected in ((0, -anchor * minimum ** 2 * middle * maximum * lower),
                               (1, (anchor + 1) * upper)):
         actual, products = determinant_from_supports((minimum, middle, maximum), anchor + offset)
         assert actual == expected
+        divisor = -anchor * minimum ** 2 * middle * maximum if offset == 0 else anchor + 1
+        reconstructed = exact_polynomial_quotient(actual, divisor)
+        assert reconstructed == (lower if offset == 0 else upper)
+        sample_powers = ((0, 0, 0), (1, 0, 0), (2, 0, 0), (0, 1, 0), (0, 0, 1))
+        independently_computed_extracts['lower' if offset == 0 else 'upper'] = [
+            {'powers_m_u_v': powers, 'coefficient': reconstructed.coefficients[powers]}
+            for powers in sample_powers]
         determinant_checks.append({'offset': offset, 'leibniz_permutations': 720,
                                    'nonzero_products': products, 'full_polynomial_terms': len(actual.coefficients),
                                    'coefficientwise_identity': 'passed'})
@@ -219,6 +244,7 @@ def main():
     report = {'method': 'Python standard library only; sparse integer polynomial ring and direct six-by-six Leibniz determinant from disjoint supports. No SymPy, floating arithmetic or original checker imports.',
               'largest_root_determinant_checks': determinant_checks,
               'complete_positive_terms': {'lower': len(lower.coefficients), 'upper': len(upper.coefficients)},
+              'independently_computed_five_term_extracts': independently_computed_extracts,
               'small_gap_determinant_checks': small_gap_checks,
               'generic_polynomial_determinants': 8,
               'finite_certificate_coverage': finite_certificate_coverage(root),
