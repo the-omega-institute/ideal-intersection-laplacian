@@ -1,5 +1,19 @@
 # First task: Laplacian integrality
 
+The [largest-root unit interval](notes/largest-root-unit-interval.md)
+completes three-prime nonintegrality: the endpoint-one sum bound supplies
+c>a²-a, so b-a>=3 gives a largest quotient root in the open integer
+interval (bc+a+b+c,bc+a+b+c+1). Written gap1/2 brackets, repeated
+exponents, and the established small-minimum/endpoint-two completions
+exhaust the other cases. The combined classification retains the prior
+27562/8658finite bases, not rerun here; the new interval itself is a
+written real theorem with36/170-term complete positive identities.
+The earlier smallest-root/equality arithmetic remains valid but is
+unnecessary for classification. Review and integrate this proof before
+any new research direction; higher-prime nonsquarefree fullQ3 remains
+open. Joint duration/freeze/submission/authorship/disclosure decisions
+remain pending. The following research leads are historical.
+
 The [total-sum theorem](notes/total-sum-spectral-gap.md) now puts the
 three larger endpoint-one quartic roots above s=a+b+c, and supplies
 a strict rational smallest-root window from the reciprocal-root sum

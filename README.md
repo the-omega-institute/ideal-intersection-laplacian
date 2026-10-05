@@ -6,7 +6,18 @@ Reza Nikandish and Wenlin Zhang**, studying ideal intersection graphs of
 
 Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
-This is a new research track; no complete characterization is claimed here.
+Every positive three-prime exponent vector is now nonintegral; the
+nonsquarefree higher-prime classification remains open.
+
+The [largest-root unit interval](notes/largest-root-unit-interval.md)
+proves bc+a+b+c<lambda_max<bc+a+b+c+1 for real3<=a<=b<=c,
+b-a>=3,c>=a²-a. On endpoint one, the established sum bound supplies
+this maximum condition. Written gap1/2 brackets cover the other
+fully distinct endpoint-one cases at minimum>=8. Together with the
+repeated, small-minimum and endpoint-two results, this completes the
+three-prime nonintegrality classification. The combined theorem retains
+the27562/8658historical finite bases; the new interval has a written
+unbounded proof and complete positive coefficient identities.
 
 The [total-sum gap](notes/total-sum-spectral-gap.md) strengthens the
 three larger-root bound to lambda_4>a+b+c for real2<=a<=b<=c,

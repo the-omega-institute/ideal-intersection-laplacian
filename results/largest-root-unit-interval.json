@@ -1,0 +1,619 @@
+{
+  "theorem": "Real 3<=a<=b<=c, b-a>=3, c>=a^2-a: bc+a+b+c<lambda_max<bc+a+b+c+1.",
+  "generic_charpoly_and_independent_schur_identity": "passed",
+  "lower_identity": "-a*b*(a + b) + c**2*(-a*b - a + 2*b**2 + b) - c*(a**2 + b**2*(a - 1))",
+  "upper_identity": "a**4*b**2*c + a**4*b*c**2 + a**4*b*c + a**3*b**3*c**2 + a**3*b**3*c + a**3*b**2*c**3 + 2*a**3*b**2*c**2 + 2*a**3*b**2*c - a**3*b**2 + a**3*b*c**3 + 2*a**3*b*c**2 - a**3*b - a**3*c**2 - a**3*c - a**2*b**3*c**3 - a**2*b**3*c**2 - 2*a**2*b**3*c - a**2*b**3 - a**2*b**2*c**3 - 3*a**2*b**2*c**2 - 4*a**2*b**2*c - 3*a**2*b**2 - 2*a**2*b*c**3 - 4*a**2*b*c**2 - 3*a**2*b*c - a**2*b - a**2*c**3 - 3*a**2*c**2 - a**2*c + a**2 - a*b**4*c**3 - 2*a*b**4*c**2 - a*b**4*c - a*b**3*c**4 - 2*a*b**3*c**3 - 4*a*b**3*c**2 - 4*a*b**3*c - a*b**3 - 2*a*b**2*c**4 - 4*a*b**2*c**3 - 2*a*b**2*c**2 - a*b**2*c - a*b**2 - a*b*c**4 - 4*a*b*c**3 - a*b*c**2 + 4*a*b*c + 2*a*b - a*c**3 - a*c**2 + 2*a*c + 2*a + b**4*c**4 + 2*b**4*c**3 + b**4*c**2 + 2*b**3*c**4 + 7*b**3*c**3 + 7*b**3*c**2 + 2*b**3*c + b**2*c**4 + 7*b**2*c**3 + 12*b**2*c**2 + 7*b**2*c + b**2 + 2*b*c**3 + 7*b*c**2 + 7*b*c + 2*b + c**2 + 2*c + 1",
+  "substitution": "a=3+m, b=a+3+u, c=a^2-a+v; m,u,v>=0",
+  "complete_positive_tables": {
+    "lower": {
+      "rows": [
+        {
+          "middle_power": 0,
+          "maximum_power": 0,
+          "ascending_minimum_coefficients": [
+            1404,
+            3042,
+            2517,
+            1036,
+            224,
+            24,
+            1
+          ]
+        },
+        {
+          "middle_power": 0,
+          "maximum_power": 1,
+          "ascending_minimum_coefficients": [
+            603,
+            684,
+            261,
+            39,
+            2
+          ]
+        },
+        {
+          "middle_power": 0,
+          "maximum_power": 2,
+          "ascending_minimum_coefficients": [
+            57,
+            15,
+            1
+          ]
+        },
+        {
+          "middle_power": 1,
+          "maximum_power": 0,
+          "ascending_minimum_coefficients": [
+            603,
+            1188,
+            875,
+            305,
+            50,
+            3
+          ]
+        },
+        {
+          "middle_power": 1,
+          "maximum_power": 1,
+          "ascending_minimum_coefficients": [
+            240,
+            240,
+            72,
+            6
+          ]
+        },
+        {
+          "middle_power": 1,
+          "maximum_power": 2,
+          "ascending_minimum_coefficients": [
+            22,
+            3
+          ]
+        },
+        {
+          "middle_power": 2,
+          "maximum_power": 0,
+          "ascending_minimum_coefficients": [
+            57,
+            103,
+            67,
+            19,
+            2
+          ]
+        },
+        {
+          "middle_power": 2,
+          "maximum_power": 1,
+          "ascending_minimum_coefficients": [
+            22,
+            19,
+            4
+          ]
+        },
+        {
+          "middle_power": 2,
+          "maximum_power": 2,
+          "ascending_minimum_coefficients": [
+            2
+          ]
+        }
+      ],
+      "nonzero_terms": 36,
+      "constant": 1404
+    },
+    "upper": {
+      "rows": [
+        {
+          "middle_power": 0,
+          "maximum_power": 0,
+          "ascending_minimum_coefficients": [
+            513220,
+            2023568,
+            3509410,
+            3571354,
+            2381713,
+            1095075,
+            354193,
+            80470,
+            12554,
+            1277,
+            76,
+            2
+          ]
+        },
+        {
+          "middle_power": 0,
+          "maximum_power": 1,
+          "ascending_minimum_coefficients": [
+            461006,
+            1356418,
+            1739823,
+            1279064,
+            593441,
+            179723,
+            35391,
+            4351,
+            302,
+            9
+          ]
+        },
+        {
+          "middle_power": 0,
+          "maximum_power": 2,
+          "ascending_minimum_coefficients": [
+            142258,
+            295089,
+            256850,
+            120963,
+            33056,
+            5205,
+            436,
+            15
+          ]
+        },
+        {
+          "middle_power": 0,
+          "maximum_power": 3,
+          "ascending_minimum_coefficients": [
+            18594,
+            23290,
+            11201,
+            2530,
+            270,
+            11
+          ]
+        },
+        {
+          "middle_power": 0,
+          "maximum_power": 4,
+          "ascending_minimum_coefficients": [
+            882,
+            399,
+            60,
+            3
+          ]
+        },
+        {
+          "middle_power": 1,
+          "maximum_power": 0,
+          "ascending_minimum_coefficients": [
+            461006,
+            1812246,
+            3118532,
+            3129572,
+            2042989,
+            911507,
+            283142,
+            61012,
+            8889,
+            828,
+            44,
+            1
+          ]
+        },
+        {
+          "middle_power": 1,
+          "maximum_power": 1,
+          "ascending_minimum_coefficients": [
+            398473,
+            1159066,
+            1455815,
+            1037238,
+            460760,
+            131613,
+            23978,
+            2659,
+            161,
+            4
+          ]
+        },
+        {
+          "middle_power": 1,
+          "maximum_power": 2,
+          "ascending_minimum_coefficients": [
+            118957,
+            239834,
+            199807,
+            88401,
+            22137,
+            3087,
+            219,
+            6
+          ]
+        },
+        {
+          "middle_power": 1,
+          "maximum_power": 3,
+          "ascending_minimum_coefficients": [
+            15059,
+            17725,
+            7741,
+            1509,
+            131,
+            4
+          ]
+        },
+        {
+          "middle_power": 1,
+          "maximum_power": 4,
+          "ascending_minimum_coefficients": [
+            693,
+            253,
+            29,
+            1
+          ]
+        },
+        {
+          "middle_power": 2,
+          "maximum_power": 0,
+          "ascending_minimum_coefficients": [
+            142258,
+            547789,
+            915785,
+            883535,
+            547176,
+            227591,
+            64328,
+            12165,
+            1466,
+            101,
+            3
+          ]
+        },
+        {
+          "middle_power": 2,
+          "maximum_power": 1,
+          "ascending_minimum_coefficients": [
+            118957,
+            336158,
+            404388,
+            271110,
+            110621,
+            27997,
+            4258,
+            352,
+            12
+          ]
+        },
+        {
+          "middle_power": 2,
+          "maximum_power": 2,
+          "ascending_minimum_coefficients": [
+            34629,
+            66544,
+            51528,
+            20429,
+            4311,
+            450,
+            18
+          ]
+        },
+        {
+          "middle_power": 2,
+          "maximum_power": 3,
+          "ascending_minimum_coefficients": [
+            4285,
+            4597,
+            1712,
+            248,
+            12
+          ]
+        },
+        {
+          "middle_power": 2,
+          "maximum_power": 4,
+          "ascending_minimum_coefficients": [
+            193,
+            49,
+            3
+          ]
+        },
+        {
+          "middle_power": 3,
+          "maximum_power": 0,
+          "ascending_minimum_coefficients": [
+            18594,
+            69414,
+            111456,
+            101999,
+            58928,
+            22337,
+            5555,
+            872,
+            78,
+            3
+          ]
+        },
+        {
+          "middle_power": 3,
+          "maximum_power": 1,
+          "ascending_minimum_coefficients": [
+            15059,
+            40917,
+            46523,
+            28811,
+            10495,
+            2240,
+            257,
+            12
+          ]
+        },
+        {
+          "middle_power": 3,
+          "maximum_power": 2,
+          "ascending_minimum_coefficients": [
+            4285,
+            7749,
+            5460,
+            1864,
+            303,
+            18
+          ]
+        },
+        {
+          "middle_power": 3,
+          "maximum_power": 3,
+          "ascending_minimum_coefficients": [
+            520,
+            496,
+            147,
+            12
+          ]
+        },
+        {
+          "middle_power": 3,
+          "maximum_power": 4,
+          "ascending_minimum_coefficients": [
+            23,
+            3
+          ]
+        },
+        {
+          "middle_power": 4,
+          "maximum_power": 0,
+          "ascending_minimum_coefficients": [
+            882,
+            3171,
+            4853,
+            4172,
+            2218,
+            750,
+            158,
+            19,
+            1
+          ]
+        },
+        {
+          "middle_power": 4,
+          "maximum_power": 1,
+          "ascending_minimum_coefficients": [
+            693,
+            1797,
+            1911,
+            1075,
+            339,
+            57,
+            4
+          ]
+        },
+        {
+          "middle_power": 4,
+          "maximum_power": 2,
+          "ascending_minimum_coefficients": [
+            193,
+            325,
+            204,
+            57,
+            6
+          ]
+        },
+        {
+          "middle_power": 4,
+          "maximum_power": 3,
+          "ascending_minimum_coefficients": [
+            23,
+            19,
+            4
+          ]
+        },
+        {
+          "middle_power": 4,
+          "maximum_power": 4,
+          "ascending_minimum_coefficients": [
+            1
+          ]
+        }
+      ],
+      "nonzero_terms": 170,
+      "constant": 513220
+    }
+  },
+  "fixed_spectral_controls": [
+    {
+      "exponents": [
+        3,
+        6,
+        6
+      ],
+      "interval": [
+        51,
+        52
+      ],
+      "independent_bareiss_values": [
+        -23199696,
+        26687440
+      ],
+      "roots_in_open_interval_with_multiplicity": 1,
+      "roots_above_upper": 0
+    },
+    {
+      "exponents": [
+        4,
+        7,
+        12
+      ],
+      "interval": [
+        107,
+        108
+      ],
+      "independent_bareiss_values": [
+        -1186128384,
+        1462634496
+      ],
+      "roots_in_open_interval_with_multiplicity": 1,
+      "roots_above_upper": 0
+    },
+    {
+      "exponents": [
+        8,
+        11,
+        56
+      ],
+      "interval": [
+        691,
+        692
+      ],
+      "independent_bareiss_values": [
+        -11977319653376,
+        17655923667520
+      ],
+      "roots_in_open_interval_with_multiplicity": 1,
+      "roots_above_upper": 0
+    },
+    {
+      "exponents": [
+        9,
+        12,
+        72
+      ],
+      "interval": [
+        957,
+        958
+      ],
+      "independent_bareiss_values": [
+        -57439367720064,
+        87024938588776
+      ],
+      "roots_in_open_interval_with_multiplicity": 1,
+      "roots_above_upper": 0
+    },
+    {
+      "exponents": [
+        9,
+        12,
+        159
+      ],
+      "interval": [
+        2088,
+        2089
+      ],
+      "independent_bareiss_values": [
+        -1428933731064192,
+        6423161895073792
+      ],
+      "roots_in_open_interval_with_multiplicity": 1,
+      "roots_above_upper": 0
+    },
+    {
+      "exponents": [
+        9,
+        30,
+        951
+      ],
+      "interval": [
+        29520,
+        29521
+      ],
+      "independent_bareiss_values": [
+        -95218995688541784000,
+        14426608098407677175080
+      ],
+      "roots_in_open_interval_with_multiplicity": 1,
+      "roots_above_upper": 0
+    },
+    {
+      "exponents": [
+        9,
+        150,
+        160
+      ],
+      "interval": [
+        24319,
+        24320
+      ],
+      "independent_bareiss_values": [
+        -51626580114230640000,
+        7299536129264912384000
+      ],
+      "roots_in_open_interval_with_multiplicity": 1,
+      "roots_above_upper": 0
+    }
+  ],
+  "direct_six_by_six_bareiss_determinants": 14,
+  "preserved_small_gap_written_signs": {
+    "1": {
+      "lower_anchor": "2*a**2 - a - 2",
+      "ascending_lower_negative_vector": [
+        1103040,
+        831256,
+        259536,
+        42984,
+        3984,
+        196,
+        4
+      ],
+      "ascending_upper_positive_vector": [
+        905184,
+        697852,
+        223936,
+        38280,
+        3676,
+        188,
+        4
+      ]
+    },
+    "2": {
+      "lower_anchor": "2*a**2 + a - 6",
+      "ascending_lower_negative_vector": [
+        753723,
+        453685,
+        107311,
+        12468,
+        712,
+        16
+      ],
+      "ascending_upper_positive_vector": [
+        2016880,
+        1562808,
+        499672,
+        84316,
+        7916,
+        392,
+        8
+      ]
+    }
+  },
+  "classification_dependency_audit": {
+    "repeated": "Established all-repeated-exponent theorem.",
+    "minimum_at_most_seven": "Established computer-assisted theorem, including 27562-triple base.",
+    "endpoint_two_at_minimum_at_least_eight": "Established completion, including 8658-triple base.",
+    "endpoint_one_gaps_one_two": "Written unit brackets at a>=8, unique c>b by established real geometry.",
+    "endpoint_one_gap_at_least_three": "Written sum bound gives c> a^2-a, then new maximum-root unit interval.",
+    "minimum_eight_108_pair_base_required_by_this_route": false,
+    "historical_bases_rerun": false
+  },
+  "source_sha256": {
+    "scripts/check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c",
+    "notes/endpoint-one-minimum-root.md": "a5a228ef7570806dad8a643059dac7a25ff9e254ea965f965585c7624d4a561f",
+    "notes/endpoint-one-geometry.md": "9fb7a448a18264da37c088ceec0ffefbd0e5ff13734af0946c509e86052bb6db",
+    "notes/endpoint-one-growing-gap.md": "8cbe18b9a14c50fe00fc2747d9734ef582300d71d3ea26a1c568b27f3ed96461",
+    "results/endpoint-one-growing-gap.json": "34f89cee0c81ccd1386b101ad454099c627a9a3290b47e6adc18b2f3be6daf5e",
+    "notes/endpoint-two-completion.md": "daf0897b27b7dcc721dd7441e0f215bf6522eb25213fc5097af88261ad8f74ca",
+    "results/endpoint-two-completion.json": "f502a70e41fd8f35a452b10b05cf66e2fafca5db5e8bbef3037725a60af5d0bf",
+    "notes/open-region-diagnostic.md": "850e97e70562c84d08d0bd0d93dae3e87463322314d4637d1ea05ceaacf786c3",
+    "notes/repeated-exponent-completion.md": "8fdb428323345847903f8e547e4ef5546a7802029aa563c6214aafe4ec309ef1"
+  },
+  "script_sha256": "fe1d7cebe9ed2b2d08b5911ee0ecc02c6ba8729bc6df58c0b861adbe156e122c",
+  "sympy": "1.14.0",
+  "scope": "Written unbounded real unit interval and endpoint-one completion. Combining established written/computer-assisted results proves nonintegrality for every three-prime exponent vector. Seven fixed spectral controls supplement proof, not an exponent scan. Historical finite bases retained, not rerun. Full Q3 for higher-prime nonsquarefree vectors and original orthogonality n=7 remain open. No Lean or floating spectra."
+}
