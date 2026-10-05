@@ -16,6 +16,14 @@ has an explicit Rayleigh quotient (4B+A)/(4B+2A)<1. This written proof
 requires no finite base and leaves higher-prime vectors with every
 exponent at least two as the remaining nonsquarefree domain.
 
+For an arbitrary distinguished exponent m, the
+[three-collection Rayleigh compression](notes/small-exponent-rayleigh.md)
+extends this obstruction whenever A>=(m^2-1)B-(m-1), including equality,
+where A is the product of the other exponents and B is their proper-support
+weight. For m>=2, every other exponent at least m^2(t-1) suffices. This
+settles unbounded all-exponents-at-least-two families for every prime
+count t>=4, while Q3 outside this sufficient criterion remains open.
+
 The [largest-root unit interval](notes/largest-root-unit-interval.md)
 proves bc+a+b+c<lambda_max<bc+a+b+c+1 for real3<=a<=b<=c,
 b-a>=3,c>=a²-a. On endpoint one, the established sum bound supplies

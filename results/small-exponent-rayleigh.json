@@ -1,0 +1,210 @@
+{
+  "written_theorem": "For t>=3, A>= (m^2-1)*B-(m-1) gives a graph eigenvalue in (V-1,V), including equality.",
+  "symbolic": {
+    "characteristic_polynomial": "u*(u^2-(A+B+m+m/(m+1))*u+m*(A+(m+1)*B+m)/(m+1))",
+    "endpoint": "((m^2-1)*B-A-(m-1))/(m+1)",
+    "boundary_vector": [
+      "m",
+      "m-1",
+      "-m*(m-1)"
+    ],
+    "trial_energy_minus_norm": "m*((m^2-1)*B-A-(m-1))*(m*A+(m^2-1)*B+m*(m-1))/(B*(m+1)^2)",
+    "generic_identities": "passed"
+  },
+  "support_controls": [
+    {
+      "exponents": [
+        2,
+        3,
+        1
+      ],
+      "A": 6,
+      "B": 5,
+      "complement_vertices": 17,
+      "graph_vertices": 22,
+      "support_classes": 6,
+      "p_at_one": "-3",
+      "rational_trial_rayleigh_quotient": "13/16",
+      "criterion_applies": true,
+      "boundary_strictness_checked": false,
+      "reciprocal_sufficient_condition": false,
+      "support_energy_complement_join_checks": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        11,
+        2
+      ],
+      "A": 44,
+      "B": 15,
+      "complement_vertices": 91,
+      "graph_vertices": 178,
+      "support_classes": 6,
+      "p_at_one": "0",
+      "rational_trial_rayleigh_quotient": "1",
+      "criterion_applies": true,
+      "boundary_strictness_checked": true,
+      "reciprocal_sufficient_condition": false,
+      "support_energy_complement_join_checks": "passed"
+    },
+    {
+      "exponents": [
+        10,
+        39,
+        3
+      ],
+      "A": 390,
+      "B": 49,
+      "complement_vertices": 589,
+      "graph_vertices": 1758,
+      "support_classes": 6,
+      "p_at_one": "0",
+      "rational_trial_rayleigh_quotient": "1",
+      "criterion_applies": true,
+      "boundary_strictness_checked": true,
+      "reciprocal_sufficient_condition": false,
+      "support_energy_complement_join_checks": "passed"
+    },
+    {
+      "exponents": [
+        10,
+        10,
+        10,
+        2
+      ],
+      "A": 1000,
+      "B": 330,
+      "complement_vertices": 1992,
+      "graph_vertices": 3991,
+      "support_classes": 14,
+      "p_at_one": "-11/3",
+      "rational_trial_rayleigh_quotient": "67739/67926",
+      "criterion_applies": true,
+      "boundary_strictness_checked": false,
+      "reciprocal_sufficient_condition": false,
+      "support_energy_complement_join_checks": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        19,
+        74,
+        2
+      ],
+      "A": 5624,
+      "B": 1875,
+      "complement_vertices": 11251,
+      "graph_vertices": 22498,
+      "support_classes": 14,
+      "p_at_one": "0",
+      "rational_trial_rayleigh_quotient": "1",
+      "criterion_applies": true,
+      "boundary_strictness_checked": true,
+      "reciprocal_sufficient_condition": false,
+      "support_energy_complement_join_checks": "passed"
+    },
+    {
+      "exponents": [
+        12,
+        12,
+        12,
+        2
+      ],
+      "A": 1728,
+      "B": 468,
+      "complement_vertices": 3134,
+      "graph_vertices": 6589,
+      "support_classes": 14,
+      "p_at_one": "-325/3",
+      "rational_trial_rayleigh_quotient": "237826/249981",
+      "criterion_applies": true,
+      "boundary_strictness_checked": false,
+      "reciprocal_sufficient_condition": true,
+      "support_energy_complement_join_checks": "passed"
+    },
+    {
+      "exponents": [
+        36,
+        36,
+        36,
+        36,
+        3
+      ],
+      "A": 1679616,
+      "B": 194544,
+      "complement_vertices": 2457795,
+      "graph_vertices": 7496642,
+      "support_classes": 30,
+      "p_at_one": "-61633/2",
+      "rational_trial_rayleigh_quotient": "4060407468675/4128154523908",
+      "criterion_applies": true,
+      "boundary_strictness_checked": false,
+      "reciprocal_sufficient_condition": true,
+      "support_energy_complement_join_checks": "passed"
+    },
+    {
+      "exponents": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "A": 8,
+      "B": 18,
+      "complement_vertices": 64,
+      "graph_vertices": 79,
+      "support_classes": 14,
+      "p_at_one": "15",
+      "rational_trial_rayleigh_quotient": "2",
+      "criterion_applies": false,
+      "boundary_strictness_checked": false,
+      "reciprocal_sufficient_condition": false,
+      "support_energy_complement_join_checks": "passed"
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        9,
+        2
+      ],
+      "A": 729,
+      "B": 270,
+      "complement_vertices": 1541,
+      "graph_vertices": 2998,
+      "support_classes": 14,
+      "p_at_one": "80/3",
+      "rational_trial_rayleigh_quotient": "692437/674277",
+      "criterion_applies": false,
+      "boundary_strictness_checked": false,
+      "reciprocal_sufficient_condition": false,
+      "support_energy_complement_join_checks": "passed"
+    }
+  ],
+  "independent_expanded_graph_controls": [
+    {
+      "exponents": [
+        1,
+        1,
+        2
+      ],
+      "vertices": 9,
+      "exact_trial_energy": "118/9",
+      "expanded_graph_energy_check": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        11,
+        2
+      ],
+      "vertices": 91,
+      "exact_trial_energy": "358",
+      "expanded_graph_energy_check": "passed"
+    }
+  ],
+  "script_sha256": "50864f56e24ed202a43bc2ca4a6c0892085824f0a9098980437ff95e86639e51",
+  "sympy_version": "1.14.0",
+  "scope": "Written unbounded variational proof with a non-equitable compression and strict boundary argument, no finite base. Nine specified exact support controls, three boundary and two negative controls; two expanded graphs. No parameter scan, floating eigenvalues or Lean; higher-prime nonsquarefree Q3 remains open outside the sufficient criterion."
+}
