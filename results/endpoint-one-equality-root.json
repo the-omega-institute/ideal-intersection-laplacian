@@ -1,0 +1,74 @@
+{
+  "written_unconditional_equality_index": "For real4<=a<=b and c=b(b+2)-a, the complement quotient has b as its simple second-smallest nonzero eigenvalue lambda_3. No endpoint-one condition is needed. Five-support principal block deleting singleton2 has characteristic(x-b)^2K, with K(b)>0 and exactly one Kroot belowb, two above. Its beta_2=beta_3=b sandwich lambda_3=b. Nonzero coupling from scalar pair13 to deleted singleton2 makes full b-eigenspace one-dimensional.",
+  "written_endpoint_one_equality_index": "If also h_C(1)=0, the prior minimum-root theorem gives lambda_2=1; hence mu_1=b is simple and all three other residual roots exceedb. F=(x-b)P_3 with monic cubic P_3; integer feasibility of G(a,b)=0 and integral splitting of P_3 remain open.",
+  "written_complete_regime_partition": "At real4<=a<=b<=c on endpoint one, E>0 has mu_1>b, E<0 has mu_1<b, and E=0 has simplemu_1=b. In every regime mu_2>b. The earlier strict windows are retained; equality fixes the smallest residual root.",
+  "principal_cubic_K": "a**2*b**2 + 3*a**2*b - a*b**4 - 5*a*b**3 - 6*a*b**2 + x**3 + x**2*(-b**3 - 4*b**2 - 5*b) + x*(-a**2*b**2 - a**2 + a*b**4 + 2*a*b**3 + a*b**2 + 2*a*b + b**5 + 5*b**4 + 9*b**3 + 6*b**2)",
+  "K_at_b_positive_decomposition": "b*(b + 1)*(a*b*(b - 2)*(b + 1) + a*(-a + b)*(b - 2) + b**2*(b + 1)*(b + 2))",
+  "generic_endpoint_residual_cubic_quotient": "-a**4*b**2 - a**4 + 2*a**3*b**4 + 4*a**3*b**3 + 2*a**3*b**2 + 4*a**3*b - a**2*b**6 - 3*a**2*b**5 + a**2*b**4 + 7*a**2*b**3 + a**2*b**2 + a**2*b - a*b**7 - 8*a*b**6 - 23*a*b**5 - 27*a*b**4 - 11*a*b**3 - 2*a*b**2 - b**7 - 8*b**6 - 22*b**5 - 21*b**4 + 7*b**3 + 16*b**2 - 8*b + x**3 + x**2*(a**2 - a*b**2 - 2*a*b - b**3 - 5*b**2 - 8*b + 1) + x*(-a**2*b**3 - 5*a**2*b**2 - 5*a**2*b + a*b**5 + 7*a*b**4 + 15*a*b**3 + 10*a*b**2 + 2*b**5 + 12*b**4 + 25*b**3 + 16*b**2 - 8*b + 1) + 1",
+  "generic_symbolic_identities": "passed",
+  "equality_controls_off_endpoint_one": [
+    {
+      "exponents": [
+        4,
+        4,
+        20
+      ],
+      "E": 0,
+      "h_C_at_one": -11811,
+      "endpoint_one_point": false,
+      "h_C_at_b": 0,
+      "h_C_derivative_at_b": -1126400,
+      "full_eigenspace_dimension_at_b": 1,
+      "principal_five_eigenspace_dimension_at_b": 2,
+      "exact_Sturm_other_nonzero_roots_below_b": 1,
+      "exact_Sturm_other_nonzero_roots_above_b": 3,
+      "exact_Sturm_K_roots_below_b": 1,
+      "exact_Sturm_K_roots_above_b": 2,
+      "remaining_nonzero_quartic": "x**4 - 256*x**3 + 20320*x**2 - 473088*x + 456960"
+    },
+    {
+      "exponents": [
+        9,
+        12,
+        159
+      ],
+      "E": 0,
+      "h_C_at_one": -102699872,
+      "endpoint_one_point": false,
+      "h_C_at_b": 0,
+      "h_C_derivative_at_b": -9592636248,
+      "full_eigenspace_dimension_at_b": 1,
+      "principal_five_eigenspace_dimension_at_b": 2,
+      "exact_Sturm_other_nonzero_roots_below_b": 1,
+      "exact_Sturm_other_nonzero_roots_above_b": 3,
+      "exact_Sturm_K_roots_below_b": 1,
+      "exact_Sturm_K_roots_above_b": 2,
+      "remaining_nonzero_quartic": "x**4 - 3975*x**3 + 4384827*x**2 - 929287161*x + 934242660"
+    },
+    {
+      "exponents": [
+        9,
+        30,
+        951
+      ],
+      "E": 0,
+      "h_C_at_one": 622686010600,
+      "endpoint_one_point": false,
+      "h_C_at_b": 0,
+      "h_C_derivative_at_b": -9781651824840,
+      "full_eigenspace_dimension_at_b": 1,
+      "principal_five_eigenspace_dimension_at_b": 2,
+      "exact_Sturm_other_nonzero_roots_below_b": 1,
+      "exact_Sturm_other_nonzero_roots_above_b": 3,
+      "exact_Sturm_K_roots_below_b": 1,
+      "exact_Sturm_K_roots_above_b": 2,
+      "remaining_nonzero_quartic": "x**4 - 40299*x**3 + 329941809*x**2 - 346748633001*x + 324946800090"
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_one_equality_root.py": "221df0ed8e7b2b4fa8a5297884d650c2112506030255cce405bf1722d491e56f",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Written unbounded equality eigenvalue index and simplicity, unconditional on endpoint one; completes prior endpoint-one Epartition at minimum>=4. No finite base. Three selected exact integer Ezero fixtures are off endpoint one and only diagnose unconditional theorem; no integer endpoint solution or new nonintegrality family/globalQ3closure. Equality Diophantine classification and remaining cubic integer splitting open. No parameter/modulus scan,higher2adicshift,floats/Lean; prior manuscript/proofs/finite dependencies and oldn7/four native axioms retained."
+}

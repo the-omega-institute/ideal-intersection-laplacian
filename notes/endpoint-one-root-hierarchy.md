@@ -146,8 +146,9 @@ Indeed b+c=b^2+3b-a, so these follow by substitution in
 2a^2-2a+1<b+c<4a^2-2a. In the surviving integer-spectrum region a>=9,
 all earlier arithmetic and gap restrictions still apply. At any such
 equality point, b is a residual integer root; the other factor need not
-split integrally. Neither the root's index nor equality integer feasibility
-is resolved here.
+split integrally. The subsequent [equality theorem](endpoint-one-equality-root.md)
+identifies b as the simple smallest residual root. Equality integer
+feasibility and splitting of the remaining cubic are still unresolved.
 
 The [checker](../scripts/check_endpoint_one_root_hierarchy.py) reconstructs
 the generic determinant, hierarchy, boundary candidate identity, both

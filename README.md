@@ -104,8 +104,10 @@ The [middle-exponent location theorem](notes/endpoint-one-middle-root.md)
 refines the smallest-root window on real endpoint one at minimum>=4.
 If c+a>b(b+2), the smallest residual root exceeds b; if c+a<b(b+2),
 exactly one residual root lies below b. Integer candidates therefore lie
-in (b,min(c,a+b)) or (a,b), respectively. At equality b is a residual
-root, without a claim about its position or integer splitting. The proof
+in (b,min(c,a+b)) or (a,b), respectively. At equality the
+[equality theorem](notes/endpoint-one-equality-root.md) identifies b as
+the simple smallest residual root; integer feasibility and splitting
+of the remaining cubic stay open. The proof
 uses determinant sign and principal interlacing, with no finite base.
 
 The [higher-coefficient analysis](notes/endpoint-one-root-hierarchy.md)

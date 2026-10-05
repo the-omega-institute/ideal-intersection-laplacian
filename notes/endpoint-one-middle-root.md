@@ -16,8 +16,8 @@ mu_1<min(c,a+b). Put E=c+a-b(b+2). Then:
 - If E>0, mu_1>b.
 - If E<0, exactly one residual root lies below b, and
   a<mu_1<b<mu_2.
-- If E=0, b is a residual root. No identification of its position among
-  the residual roots is asserted here in this equality regime.
+- If E=0, the subsequent [equality theorem](endpoint-one-equality-root.md)
+  identifies mu_1=b as simple, with all other residual roots greater than b.
 
 These are written statements on the unbounded real endpoint-one surface,
 not a finite computation or an integer-feasibility theorem.
@@ -71,9 +71,10 @@ The positive value F(b) excludes equality with any residual root. At
 most one residual root is below b, and the positive monic quartic value
 requires an even number. There are therefore none, giving mu_1>b.
 
-Finally, E=0 gives F(b)=0 directly. This equality alone does not prove
-the existence of an integer endpoint-one triple or integer splitting of
-the other residual factor.
+Finally, E=0 gives F(b)=0 directly. Its index and simplicity are proved
+in the equality theorem by a double principal eigenvalue and the nonzero
+coupling to the deleted coordinate. Integer endpoint feasibility and
+integer splitting of the other residual factor remain separate questions.
 
 ## Refined integer divisor windows
 
