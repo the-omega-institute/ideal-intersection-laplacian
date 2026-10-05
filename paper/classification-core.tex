@@ -1,0 +1,170 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\title{Nonintegral Laplacian spectra of ideal intersection graphs\\
+\large Three-prime classification core}
+\author{Working manuscript}
+\date{October 6, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We prove that the ideal intersection graph of
+$\mathbb Z_{p^a q^b r^c}$ is Laplacian nonintegral for any three distinct
+primes and every positive exponent triple. Vertices are the nonzero
+proper ideals; adjacency means nonzero intersection.
+
+A six-support complement quotient supplies the spectral obstruction.
+For repeated exponents, exact factor indices and a symmetric cubic
+interval exhaust the exceptional square-discriminant cases. Small minima
+are settled by endpoint identities and complete finite certificates.
+At every remaining minimum, a positive quotient root below three forces
+an integer spectrum onto endpoint one or endpoint two. On endpoint two,
+geometric bounds and complete positive identities give a further root
+in $(4,5)$ at large minima; a complete $8\,658$-triple certificate
+handles the necessary finite base. On endpoint one, an exponent-sum
+bound and two written small-gap brackets reduce the final obstruction
+to a largest-root interval:
+\[
+ bc+a+b+c<\lambda_{\max}<bc+a+b+c+1
+\]
+for real $3\leq a\leq b\leq c$, $b-a\geq3$ and $c\geq a^2-a$.
+The global classification combines these written unbounded arguments
+with the historical $27\,562$-triple minimum-through-seven certificate
+and the earlier small-minimum inputs. All required coefficient tables
+are included. Exact verification uses integer and rational arithmetic.
+\end{abstract}
+\noindent\textbf{2020 Mathematics Subject Classification.}
+Primary 05C50; Secondary 05C25, 13A15, 11C08, 15A18.
+
+\noindent\textbf{Key words.} Ideal intersection graph, Laplacian integrality,
+equitable partition, universal vertex, factor-pair reduction,
+Schur complement.
+
+\section{Introduction}
+The ideal intersection graph records the intersection structure of the
+nonzero proper ideals of a ring~\cite{intersection}. For $\mathbb Z_n$,
+its isomorphism type depends on the prime exponents. We ask when its
+combinatorial Laplacian has only integer eigenvalues.
+Related ring graphs include Beck's coloring graph, zero-divisor graphs
+and annihilating-ideal graphs~\cite{beck,anderson,behboodi1,behboodi2,aalipour}.
+Their multiplication adjacency differs from the intersection convention
+used here. Laplacian and graph-spectral background is developed
+in~\cite{fiedler,grone,merris,cvetkovic,brouwer}; equitable partitions
+and generalized joins reduce these graphs to small matrices~\cite{godsilroyle,cardoso}.
+
+Nikandish~\cite{nikandish} gives a generalized-join spectrum formula
+and a Schur--Weyl reduction for equal prime exponents, with representation
+background in~\cite{fultonharris}. His nonintegrality result for $(pqr)^k$
+is extended here to every positive three-prime exponent triple
+(Theorem~\ref{thm:three-prime-classification}).
+The support-class graph model makes the prime values irrelevant.
+The main difficulty is therefore the unbounded exponent domain,
+including fully unequal exponents whose complement quotient can have
+integer low roots.
+
+Our proof separates three cases. Coordinate symmetry settles repeated
+entries. Explicit endpoint signs and the uniform cutoff settle minima
+at most seven, with a complete finite discriminant certificate.
+For $8\leq a<b<c$, a symmetric comparison puts a positive quotient root
+in $(0,3)$. Integrality would force that root to be one or two.
+The endpoint-two theorem supplies a second noninteger root, while
+endpoint one forces a large enough maximum exponent for a unit interval
+containing the largest root. Written brackets handle the two smallest
+middle gaps. The final proof assembles these cases without enumerating
+integer points on the endpoint-one surface.
+
+The computer-assisted dependencies are stated where used and collected
+in Appendix~\ref{sec:verification}. The complete coefficient tables
+in the other appendices support the unbounded real arguments.
+The higher-prime nonsquarefree classification remains open.
+Further arithmetic obstructions, local equality-curve analysis and
+higher-prime families are retained in the accompanying research
+manuscript and repository~\cite{repository}. Local Diophantine
+questions on that curve are separate from the spectral classification;
+their general background is in~\cite{hindrysilverman,serre}.
+
+\input{core/body}
+
+\section{Further questions}
+The three-prime classification is complete. The general nonsquarefree
+problem with four or more distinct prime factors remains open outside
+the established families in the supporting package. One structural
+question is whether a quotient restriction or variational argument can
+handle fully distinct higher-prime exponents without a separate expansion
+for each repeated value. Effective integer-point enumeration on the
+endpoint-one surface is another arithmetic question, independent of the
+nonintegrality theorem proved here.
+
+\input{core/bibliography}
+\appendix
+\section{Exact evidence for the classification}
+\label{sec:verification}
+The global theorem is computer-assisted. Its real-tail and small-gap
+steps have written unbounded proofs; the finite bases below exhaust the
+domains derived by those proofs. The source repository~\cite{repository}
+retains the checker sources, certificates and reproduction instructions.
+Python~3.10 or later and SymPy~1.14.0 use integer and rational arithmetic.
+No Lean formalization is claimed for these Laplacian results.
+
+\subsection{Repeated entries and small minima}
+The exact divisor reduction exhausts the first three nonboundary
+factor indices by all divisors of $24,108,320$. The eight positive-$b$
+cubics have complete root-free modular certificates; later indices use
+the written cubic interval. The saved data are in
+\path{results/repeated-exponent-completion.json} and the earlier
+factor-index certificates. At minimum three, the proved cutoff leaves
+exactly $325$ pairs $4\leq b<c<30$. The first endpoint has $257$ positive
+and $68$ negative values with no zero. The complete polynomial and
+separate integer-Horner certificate is in \path{results/distinct-tail.json}.
+
+At minima four through seven, the complete domain
+$a<b<c<4a^2-2a$ has $27\,562$ triples. Each row in
+\path{results/open-region-discriminants.csv} records the integer
+discriminant and consecutive-square brackets. Independent fraction-free
+$9\times9$ Sylvester determinants, exact divisions, completeness and
+absence of duplicate triples are checked by
+\path{scripts/check_open_region_certificate.py}; its saved report is
+\path{results/open-region-certificate-check.json}.
+These finite inputs remain part of Corollary~\ref{cor:minimum-seven}.
+
+\subsection{Endpoint-two completion}
+The rectangle lemma uses a full determinant identity and an $84$-term
+positive residual plus two nonnegative square expressions. The real
+tail uses $44$- and $112$-term positive identities. Every coefficient
+and every per-minimum count is in
+Appendix~\ref{sec:endpoint-two-identities}.
+The necessary fully distinct base at minima eight through thirty-nine
+has exactly $8\,658$ triples, independently evaluated by integer Horner
+arithmetic and $6\times6$ Bareiss determinants. All endpoint values are
+nonzero. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/scripts/check_endpoint_two_completion.py}{revision-pinned checker}
+and its complete CSV and JSON preserve this evidence.
+
+\subsection{Written endpoint-one and largest-root steps}
+The sum comparison includes all twelve positive terms in its proof.
+The largest-root interval uses $36$ and $170$ complete positive terms
+and a symmetric Schur complement. The two small-gap proofs use six
+complete sign vectors. Appendix~\ref{sec:largest-root-identities}
+retains every vector. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4471a5b4a02d97d3dcf78ea004298d5592924a95/scripts/check_largest_root_unit_interval.py}{revision-pinned largest-root checker}
+reconstructs the generic quotient and independent Schur determinant,
+the lower sign identity, every coefficient row and the small-gap vectors.
+Its fixed controls supplement the written proofs. The separate
+minimum-eight and middle-at-most-fifteen certificates are unnecessary
+for this route. Reorganizing the presentation does not rerun the
+unchanged historical certificates or remove their mathematical role.
+
+\clearpage
+\input{sections/endpoint-two-identities}
+\clearpage
+\input{sections/largest-root-identities}
+\end{document}

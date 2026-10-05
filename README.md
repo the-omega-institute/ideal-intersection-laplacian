@@ -1,5 +1,13 @@
 # Laplacian integrality of ideal intersection graphs
 
+An optional [25-page classification-core candidate](paper/classification-core.pdf)
+now presents the completed three-prime theorem with its full proof chain,
+historical finite certificates and complete coefficient tables. The
+[material-placement map](notes/classification-core-placement.md) distinguishes
+the retained core from auxiliary arithmetic and higher-prime results.
+The original 61-page manuscript remains intact; final main/companion scope
+and submission/authorship/disclosure decisions remain pending.
+
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new
 largest-root interval (bc+a+b+c,bc+a+b+c+1), the endpoint-one sum bound,

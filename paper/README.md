@@ -1,5 +1,28 @@
 # Working manuscript
 
+## Optional 25-page classification-core candidate
+
+The [classification-core PDF](classification-core.pdf) and
+[source](classification-core.tex) present the completed three-prime
+classification in dependency order, with all required finite inputs and
+complete coefficient tables. The [placement and concordance note](../notes/classification-core-placement.md)
+maps its theorem numbers to the original manuscript and proposes where
+the auxiliary arithmetic and higher-prime material can be read separately.
+
+This candidate retains 23 original proof bodies and 23 original statement
+bodies byte-for-byte. Its source checker verifies the selected source spans
+and explicit reference closure; it does not rerun the historical 27,562-
+and 8,658-triple certificates. The 25-page build is warning-free, with
+main argument through page 17 and all appendices through page 25.
+The existing 61-page default PDF and 67-page historical detailed build
+are preserved. The measured reduction is 36 pages from the default.
+Main/companion scope, authorship, disclosure, freeze and submission remain
+joint decisions. No further four-prime expansion is integrated here.
+
+From the repository root run `python3 scripts/check_classification_core.py`;
+from `paper/` run `pdflatex -interaction=nonstopmode -halt-on-error classification-core.tex`
+twice. The existing default and detailed build commands below remain available.
+
 ## Three-prime classification core
 
 The [tensor diagnostic and consolidation guide](https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/665504c43f9e8eac39a0dbf81c57045e3b93c3af/notes/three-prime-tensor-consolidation.md)
