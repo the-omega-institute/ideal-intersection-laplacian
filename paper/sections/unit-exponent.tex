@@ -1,4 +1,4 @@
-\section{A unit exponent with two arbitrary exponents}
+\section{A unit exponent}
 \label{sec:unit}
 
 The complement quotient replaces coordinate symmetry when the other
@@ -58,6 +58,63 @@ positive pairs are $(1,1),(1,2),(2,1)$; Theorem~\ref{thm:pqrk}
 settles the corresponding permutations of $(1,1,k)$. Permuting the
 prime factors preserves the graph's isomorphism type.
 \end{proof}
+
+The unit-exponent obstruction extends to any number of prime factors
+by a variational argument on the complement graph.
+
+\begin{theorem}
+\label{thm:unit-any-prime-count}
+Let $n=\prod_{i=1}^t p_i^{k_i}$ with $t\geq3$, distinct primes
+$p_i$ and positive integer exponents $k_i$. If some $k_i=1$, then
+$G_n$ has a Laplacian eigenvalue in $(V-1,V)$, where
+$V=\prod_{i=1}^t(k_i+1)-2$. In particular, $G_n$ is not
+Laplacian integral.
+\end{theorem}
+\begin{proof}
+Permute the factors so that $k_t=1$, and put
+\[
+ A=\prod_{i<t}k_i,\qquad
+ B=\prod_{i<t}(k_i+1)-1-A.
+\]
+The quantity $B$ is the sum of the weights of all nonempty proper
+supports on the first $t-1$ coordinates. Since $t-1\geq2$, it is
+positive. Remove the $A-1$ full-support universal vertices and let
+$F=\overline H$. Then $N=|H|=A+2B+1$ and $V=N+A-1=2A+2B$.
+The graph $F$ is connected: its singleton support classes form a
+connected complete multipartite graph, and every proper support has
+a singleton outside it.
+
+The support $\{t\}$ consists of a single vertex $z$. Each of the
+$A$ vertices supported on $[t-1]$ has $z$ as its sole neighbor in
+$F$. The remaining $2B$ vertices form two collections of weight $B$:
+nonempty proper supports $S\subset[t-1]$, and their counterparts
+$S\cup\{t\}$. The vertex $z$ is adjacent to all vertices of the
+first collection and none of the second.
+
+Give a function $f$ the value $2B$ on the $A$ leaves, zero at $z$,
+and $-A$ on the other $2B$ vertices. It is nonzero and
+orthogonal to the constant vector. Its Laplacian energy and norm are
+\[
+ f^TL(F)f=A(2B)^2+BA^2=AB(4B+A),\qquad
+ f^Tf=A(2B)^2+2BA^2=2AB(2B+A).
+\]
+Indeed, only edges incident to $z$ have unequal endpoint values.
+Connectedness and the variational characterization therefore give
+\[
+ 0<\lambda_2(F)\leq\frac{4B+A}{4B+2A}<1.
+\]
+For a corresponding eigenvector, the complement identity
+$L(H)+L(F)=NI-J$ gives the nonzero eigenvalue $N-\lambda_2(F)$
+of $H$. Lemma~\ref{lem:join} lifts it to
+$V-\lambda_2(F)\in(V-1,V)$, proving the claim.
+\end{proof}
+
+The restriction $t\geq3$ is sharp for this conclusion. If $t=2$
+and $k_2=1$, then $B=0$ and $F=K_{1,A}$, so the complement and
+universal-vertex identities give an integral spectrum for $G_n$.
+Theorem~\ref{thm:unit-any-prime-count} also gives a proof of
+Theorems~\ref{thm:squarefree} for $t\geq3$ and~\ref{thm:unit}
+without their separate spectral decompositions or small exceptions.
 
 The general six-support reduction also gives an exact diagnostic for
 fully distinct triples. For $1\leq a<b<c\leq7$, all thirty-five quintics

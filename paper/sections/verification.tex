@@ -264,6 +264,19 @@ its discriminant by a $5\times5$ Sylvester determinant. The unique
 linear residue $u\equiv8\pmod{13}$ is checked exactly; the certificate
 reproduces byte-for-byte. There is no prime, power or exponent scan.
 
+\subsection{A unit exponent with any prime-factor count}
+
+Theorem~\ref{thm:unit-any-prime-count} has a written support-counting
+and variational proof with no finite base. Its
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/16a677c34ffe2d8da84f3c1248b7698a7eadd960/scripts/check_unit_exponent_any_prime_count.py}{exact checker}
+constructs disjoint-support adjacency for nine specified exponent
+vectors with three, four or five prime factors. It checks connectedness,
+the weighted zero sum, both energy identities and the strict rational
+Rayleigh bound. Two small full graphs independently check the trial
+energy and complement identity. These controls verify the implementation;
+the unbounded theorem follows from the written proof, without
+an exponent scan, floating-point eigenvalues or Lean verification.
+
 \ifdefined\DetailedVerification
 \subsection{Complete checker catalogue}
 \input{sections/verification-details}
