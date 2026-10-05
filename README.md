@@ -31,6 +31,14 @@ restricted eigenvalue between one and three. The only possible integer
 endpoint pair is {b,c}={5,8}; its remaining cubic is irreducible modulo17.
 This written proof covers (2,2,2,2) and needs no finite exponent base.
 
+The [pair-three theorem](notes/four-prime-pair-three.md) proves every
+(3,3,b,c), b,c>=2 nonintegral as well, with a graph eigenvalue in
+(V-2,V) different from V-1. Tensor normalization gives a general lower
+bound for the repeated-pair operator, and the exponent-three endpoint
+equation has no integer solution. Two complete positive expansions,
+eight fixed nonsquare discriminants and two rational factorizations
+settle the unbounded domain without an exponent rectangle scan.
+
 The [largest-root unit interval](notes/largest-root-unit-interval.md)
 proves bc+a+b+c<lambda_max<bc+a+b+c+1 for real3<=a<=b<=c,
 b-a>=3,c>=a²-a. On endpoint one, the established sum bound supplies

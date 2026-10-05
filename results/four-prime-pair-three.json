@@ -1,0 +1,433 @@
+{
+  "written_theorem": "Every four-prime vector(3,3,b,c),b,c>=2 has a noninteger graph eigenvalue in(V-2,V), different fromV-1.",
+  "symbolic": {
+    "normalized_two_dimensional_eigenvalues": [
+      "1",
+      "-k/(k+1)"
+    ],
+    "general_lower_bound": "kappa_min(K_a)>1 for every a,b,c>=1",
+    "generic_second_endpoint": "-7*b**2*c**2 + 48*b**2*c - 8*b**2 + 48*b*c**2 + 302*b*c + 76*b - 8*c**2 + 76*c + 40",
+    "generic_third_endpoint": "-35*b**2*c**2 + 8*b**2*c - 20*b**2 + 8*b*c**2 + 109*b*c + 11*b - 20*c**2 + 11*c + 4",
+    "complete_positive_expansions": {
+      "2": [
+        [
+          2,
+          2,
+          35
+        ],
+        [
+          2,
+          1,
+          132
+        ],
+        [
+          2,
+          0,
+          144
+        ],
+        [
+          1,
+          2,
+          132
+        ],
+        [
+          1,
+          1,
+          387
+        ],
+        [
+          1,
+          0,
+          315
+        ],
+        [
+          0,
+          2,
+          144
+        ],
+        [
+          0,
+          1,
+          315
+        ],
+        [
+          0,
+          0,
+          108
+        ]
+      ],
+      "17": [
+        [
+          2,
+          2,
+          7
+        ],
+        [
+          2,
+          1,
+          190
+        ],
+        [
+          2,
+          0,
+          1215
+        ],
+        [
+          1,
+          2,
+          190
+        ],
+        [
+          1,
+          1,
+          4526
+        ],
+        [
+          1,
+          0,
+          22228
+        ],
+        [
+          0,
+          2,
+          1215
+        ],
+        [
+          0,
+          1,
+          22228
+        ],
+        [
+          0,
+          0,
+          27721
+        ]
+      ]
+    },
+    "all_fifteen_fixed_b_rows": [
+      {
+        "b": 2,
+        "coefficients": [
+          60,
+          872,
+          160
+        ],
+        "obstruction": "positive coefficients"
+      },
+      {
+        "b": 3,
+        "coefficients": [
+          73,
+          1414,
+          196
+        ],
+        "obstruction": "positive coefficients"
+      },
+      {
+        "b": 4,
+        "coefficients": [
+          72,
+          2052,
+          216
+        ],
+        "obstruction": "positive coefficients"
+      },
+      {
+        "b": 5,
+        "coefficients": [
+          57,
+          2786,
+          220
+        ],
+        "obstruction": "positive coefficients"
+      },
+      {
+        "b": 6,
+        "coefficients": [
+          28,
+          3616,
+          208
+        ],
+        "obstruction": "positive coefficients"
+      },
+      {
+        "b": 7,
+        "coefficients": [
+          -15,
+          4542,
+          180
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 20640564,
+        "square_anchor": 4543
+      },
+      {
+        "b": 8,
+        "coefficients": [
+          -72,
+          5564,
+          136
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 30997264,
+        "square_anchor": 5567
+      },
+      {
+        "b": 9,
+        "coefficients": [
+          -143,
+          6682,
+          76
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 44692596,
+        "square_anchor": 6685
+      },
+      {
+        "b": 10,
+        "coefficients": [
+          -228,
+          7896,
+          0
+        ],
+        "obstruction": "rational noninteger positive roots",
+        "positive_roots": [
+          "658/19"
+        ]
+      },
+      {
+        "b": 11,
+        "coefficients": [
+          -327,
+          9206,
+          -92
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 84630100,
+        "square_anchor": 9199
+      },
+      {
+        "b": 12,
+        "coefficients": [
+          -440,
+          10612,
+          -200
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 112262544,
+        "square_anchor": 10595
+      },
+      {
+        "b": 13,
+        "coefficients": [
+          -567,
+          12114,
+          -324
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 146014164,
+        "square_anchor": 12083
+      },
+      {
+        "b": 14,
+        "coefficients": [
+          -708,
+          13712,
+          -464
+        ],
+        "obstruction": "rational noninteger positive roots",
+        "positive_roots": [
+          "58/3",
+          "2/59"
+        ]
+      },
+      {
+        "b": 15,
+        "coefficients": [
+          -863,
+          15406,
+          -620
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 235204596,
+        "square_anchor": 15336
+      },
+      {
+        "b": 16,
+        "coefficients": [
+          -1032,
+          17196,
+          -792
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 292433040,
+        "square_anchor": 17100
+      }
+    ],
+    "integer_endpoint_pairs": [],
+    "generic_identities": "passed"
+  },
+  "support_controls": [
+    {
+      "exponents": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "graph_vertices": 142,
+      "complement_vertices": 107,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        3,
+        3,
+        7
+      ],
+      "graph_vertices": 510,
+      "complement_vertices": 322,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        3,
+        6,
+        100
+      ],
+      "graph_vertices": 11310,
+      "complement_vertices": 5911,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        3,
+        7,
+        304
+      ],
+      "graph_vertices": 39038,
+      "complement_vertices": 19887,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        3,
+        10,
+        35
+      ],
+      "graph_vertices": 6334,
+      "complement_vertices": 3185,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        3,
+        14,
+        19
+      ],
+      "graph_vertices": 4798,
+      "complement_vertices": 2405,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        3,
+        17,
+        17
+      ],
+      "graph_vertices": 5182,
+      "complement_vertices": 2582,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        3,
+        19,
+        100
+      ],
+      "graph_vertices": 32318,
+      "complement_vertices": 15219,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        4,
+        2,
+        5
+      ],
+      "graph_vertices": 448,
+      "complement_vertices": 289,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        7,
+        7,
+        11,
+        13
+      ],
+      "graph_vertices": 10750,
+      "complement_vertices": 3744,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    }
+  ],
+  "independent_expanded_graph_controls": [
+    {
+      "exponents": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "graph_vertices": 142,
+      "complement_vertices": 107,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": true,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "graph_vertices": 190,
+      "complement_vertices": 137,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": true,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    }
+  ],
+  "script_sha256": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+  "sympy_version": "1.14.0",
+  "scope": "Written unbounded invariant-subspace/tensor positivity proof with eight fixed nonsquare discriminants and two rational factorizations; no finite two-parameter exponent base, modular search, floating eigenvalues or Lean. Ten specified support controls and two expanded graphs validate implementation; general higher-prime nonsquarefreeQ3 remains open."
+}
