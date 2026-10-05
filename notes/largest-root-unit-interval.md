@@ -165,6 +165,41 @@ results, but no global Diophantine point enumeration or quartic factorization
 is needed for this classification. Integer exponent points on endpoint one
 and on the equality curve are not claimed to be absent.
 
+## The reciprocal-window width question
+
+For the real fully distinct endpoint-one family b=2a,a>=9, let c>b
+be the unique exponent root. The established geometry gives existence
+and uniqueness, while the sum bounds give
+a²-a<c<4a²-4a. Put z=c/a². The endpoint cubic, divided by a^8,
+has leading limit z²(5z-16). All accumulation points of z lie in
+[1,4] and must annul that polynomial, so c/a² tends to16/5.
+
+For the earlier reciprocal coefficient window, U=min(c,a+b)=3a
+eventually, and its exact coefficients give
+
+```text
+N/(aD) -> 24/13,
+a²R -> 5/8,
+NR/D -> 0.
+```
+
+Therefore its width satisfies
+
+```text
+N/(D-NR)-N/D = (N/D)^2 R/(1-NR/D) -> 360/169 > 1.
+```
+
+Thus this rational window is not eventually shorter than one throughout
+the real fully distinct endpoint-one surface. This does not construct
+integer c or settle an integer-point-only width threshold. The new
+largest-root interval already proves nonintegrality at every actual
+integer endpoint-one point covered by the classification, so such a
+threshold is unnecessary for the spectral conclusion. Also, a window
+containing at most one integer per triple would still leave infinitely
+many triples unless a separate effective bound or uniform exclusion is
+proved. The former control lists10;11;25,26 were four actual divisor
+values after filtering23candidates, not candidate counts10through26.
+
 ## Verification and dependencies
 
 With SymPy1.14.0:
@@ -176,7 +211,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 scripts/check_largest_root_unit_interval.py
 The [checker](../scripts/check_largest_root_unit_interval.py) and
 [certificate](../results/largest-root-unit-interval.json) reconstruct the
 generic quotient and independent Schur determinant, the lower identity,
-all34complete coefficient rows (36+170terms), and the four preserved
+all34complete coefficient rows (36+170terms), and the six preserved
 small-gap boundary and diagonal sign vectors. Seven stated spectral controls cover the real
 boundary, minimum-eight domain, two earlier endpoint-feasibility pairs,
 and strongly unequal exponents. Fourteen independent6x6Bareiss determinants

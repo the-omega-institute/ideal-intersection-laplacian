@@ -68,6 +68,24 @@ def main():
             'constant': int(shifted.subs({minimum_shift: 0, middle_shift: 0, maximum_shift: 0}))}
     assert tables['lower']['nonzero_terms'] == 36
     assert tables['upper']['nonzero_terms'] == 170
+    scale = sympy.symbols('z', positive=True)
+    scaled_endpoint = sympy.Poly(sympy.expand(quintic.eval(1).subs(
+        {second: 2 * first, third: scale * first ** 2})), first)
+    assert scaled_endpoint.degree() == 8
+    assert sympy.factor(scaled_endpoint.LC()) == scale ** 2 * (5 * scale - 16)
+    scaled_sum = 3 * first + scale * first ** 2
+    scaled_pairs = 2 * first ** 2 + 3 * scale * first ** 3
+    scaled_product = 2 * scale * first ** 4
+    scaled_constant = scaled_product * scaled_sum * (scaled_pairs + scaled_sum)
+    scaled_linear = (scaled_product ** 2 + (scaled_sum ** 2 - scaled_sum + 1) * scaled_product
+                     + scaled_sum ** 2 * scaled_pairs + scaled_pairs ** 2 + (scaled_sum - 1) ** 3)
+    scaled_reciprocal = 2 / scaled_sum + 1 / (scaled_pairs + scaled_sum - 1 - 3 * first)
+    ratio_limit = sympy.factor(sympy.limit(scaled_constant / (first * scaled_linear), first, sympy.oo))
+    reciprocal_limit = sympy.factor(sympy.limit(first ** 2 * scaled_reciprocal, first, sympy.oo))
+    assert ratio_limit == 3 * scale / (scale + 2)
+    assert reciprocal_limit == 2 / scale
+    width_limit = sympy.factor((ratio_limit ** 2 * reciprocal_limit).subs(scale, sympy.Rational(16, 5)))
+    assert width_limit == sympy.Rational(360, 169) > 1
     fixtures = []
     for triple in ((3, 6, 6), (4, 7, 12), (8, 11, 56),
                    (9, 12, 72), (9, 12, 159), (9, 30, 951), (9, 150, 160)):
@@ -123,6 +141,14 @@ def main():
         'upper_identity': str(upper_positive),
         'substitution': 'a=3+m, b=a+3+u, c=a^2-a+v; m,u,v>=0',
         'complete_positive_tables': tables,
+        'real_endpoint_one_width_limit': {
+            'family': 'b=2a, a>=9, unique real c>b with h_C(1)=0',
+            'scaled_endpoint_leading_coefficient': str(scaled_endpoint.LC()),
+            'c_over_a_squared_limit': '16/5',
+            'N_over_aD_limit': '24/13', 'a_squared_R_limit': '5/8',
+            'window_width_limit': str(width_limit),
+            'integer_c_feasibility_claimed': False,
+        },
         'fixed_spectral_controls': fixtures,
         'direct_six_by_six_bareiss_determinants': 14,
         'preserved_small_gap_written_signs': small_gap,

@@ -428,6 +428,15 @@
       "constant": 513220
     }
   },
+  "real_endpoint_one_width_limit": {
+    "family": "b=2a, a>=9, unique real c>b with h_C(1)=0",
+    "scaled_endpoint_leading_coefficient": "5*z**3 - 16*z**2",
+    "c_over_a_squared_limit": "16/5",
+    "N_over_aD_limit": "24/13",
+    "a_squared_R_limit": "5/8",
+    "window_width_limit": "360/169",
+    "integer_c_feasibility_claimed": false
+  },
   "fixed_spectral_controls": [
     {
       "exponents": [
@@ -631,7 +640,7 @@
     "notes/open-region-diagnostic.md": "850e97e70562c84d08d0bd0d93dae3e87463322314d4637d1ea05ceaacf786c3",
     "notes/repeated-exponent-completion.md": "8fdb428323345847903f8e547e4ef5546a7802029aa563c6214aafe4ec309ef1"
   },
-  "script_sha256": "7f3454ab3eee9553ce26a73be8fbb2364e796ba830b573d2c1bbd1d572c17c4d",
+  "script_sha256": "c919095000a99becc3132384318257b0cfe9dfdd5d232b5e25d0244e49cfb10b",
   "sympy": "1.14.0",
   "scope": "Written unbounded real unit interval and endpoint-one completion. Combining established written/computer-assisted results proves nonintegrality for every three-prime exponent vector. Seven fixed spectral controls supplement proof, not an exponent scan. Historical finite bases retained, not rerun. Full Q3 for higher-prime nonsquarefree vectors and original orthogonality n=7 remain open. No Lean or floating spectra."
 }
