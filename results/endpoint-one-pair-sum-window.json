@@ -1,0 +1,155 @@
+{
+  "written_universal_upper_bound": "For ordered positive real a<=b<=c, second smallest nonzero quotient root lambda_3<a+b. Four-support principal block on3,12,13,23 has eigenvalues a,b,rho_-,rho_+; Q(a+b)=-ab(a+b)<0 places exactly3principal eigenvalues below a+b; interlacing lambda_3<=beta_3<a+b.",
+  "written_refined_principal_bound": "lambda_3<=max(b,rho_-), rho_-=(ab+a+b+c-sqrt((ab+a+b-c)^2+4abc))/2. This inequality may be non-strict; lambda_3<a+b is strict.",
+  "written_endpoint_one_window": "For real4<=a<=b<=c on h_C(1)=0, prior minimum-root theorem and strictc bound give a<mu_1<min(c,a+b).",
+  "integer_spectrum_necessary_condition": "Smallest residual root must be a positive divisor of rs(p+s) with a+1<=d<=min(c,a+b)-1. Per-triple finite test does not decide whole unbounded surface.",
+  "nonsymmetric_principal_block": "Matrix([[a*b + a + b, -a*b, 0, 0], [-c, c, 0, 0], [0, 0, b, 0], [0, 0, 0, a]])",
+  "principal_quadratic": "a*c + b*c + x**2 + x*(-a*b - a - b - c)",
+  "quadratic_discriminant": "4*a*b*c + (a*b + a + b - c)**2",
+  "generic_symbolic_identities": "passed",
+  "endpoint_one_controls": [
+    {
+      "exponents": [
+        8,
+        8,
+        105
+      ],
+      "quartic_coefficients": [
+        1,
+        -2106,
+        1278729,
+        -173042960,
+        1516468800
+      ],
+      "quartic_constant": 1516468800,
+      "upper_endpoint": 16,
+      "candidate_count": 5,
+      "candidate_divisors": [
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "integer_Horner_values": [
+        -88183900,
+        -235065996,
+        -379528176,
+        -661242204,
+        -798518700
+      ],
+      "candidate_roots": [],
+      "rational_factorization": "(x - 968)*(x**3 - 1138*x**2 + 177145*x - 1566600)",
+      "integer_roots_from_rational_factorization": [
+        968
+      ],
+      "exact_Sturm_quartic_roots_in_0_through_a": 0,
+      "exact_Sturm_quartic_roots_between_a_and_upper": 1,
+      "exact_Sturm_quadratic_roots_between_0_and_upper": 1,
+      "principal_characteristic_polynomial": "x**4 - 201*x**3 + 4704*x**2 - 38720*x + 107520"
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        136
+      ],
+      "quartic_coefficients": [
+        1,
+        -2990,
+        2546083,
+        -450877446,
+        4551612912
+      ],
+      "quartic_constant": 4551612912,
+      "upper_endpoint": 18,
+      "candidate_count": 5,
+      "candidate_divisors": [
+        11,
+        12,
+        14,
+        16,
+        17
+      ],
+      "integer_Horner_values": [
+        -103928000,
+        -497426472,
+        -1269805208,
+        -2022810480,
+        -2392092032
+      ],
+      "candidate_roots": [],
+      "rational_factorization": "(x - 1386)*(x**3 - 1604*x**2 + 322939*x - 3283992)",
+      "integer_roots_from_rational_factorization": [
+        1386
+      ],
+      "exact_Sturm_quartic_roots_in_0_through_a": 0,
+      "exact_Sturm_quartic_roots_between_a_and_upper": 1,
+      "exact_Sturm_quadratic_roots_between_0_and_upper": 1,
+      "principal_characteristic_polynomial": "x**4 - 253*x**3 + 6759*x**2 - 63099*x + 198288"
+    },
+    {
+      "exponents": [
+        20,
+        20,
+        741
+      ],
+      "quartic_coefficients": [
+        1,
+        -32382,
+        280238421,
+        -288114390440,
+        7134703976400
+      ],
+      "quartic_constant": 7134703976400,
+      "upper_endpoint": 40,
+      "candidate_count": 13,
+      "candidate_divisors": [
+        21,
+        22,
+        24,
+        25,
+        26,
+        28,
+        30,
+        33,
+        34,
+        35,
+        37,
+        38,
+        39
+      ],
+      "integer_Horner_values": [
+        1207587225600,
+        931478213204,
+        380928619344,
+        106487650400,
+        -167397691500,
+        -713502268864,
+        -1257386661900,
+        -2069053793664,
+        -2338501089676,
+        -2607394500900,
+        -3143520442816,
+        -3410753360364,
+        -3677433166836
+      ],
+      "candidate_roots": [],
+      "rational_factorization": "(x - 15620)*(x**3 - 16762*x**2 + 18415981*x - 456767220)",
+      "integer_roots_from_rational_factorization": [
+        15620
+      ],
+      "exact_Sturm_quartic_roots_in_0_through_a": 0,
+      "exact_Sturm_quartic_roots_between_a_and_upper": 1,
+      "exact_Sturm_quadratic_roots_between_0_and_upper": 1,
+      "principal_characteristic_polynomial": "x**4 - 1221*x**3 + 77280*x**2 - 1658000*x + 11856000"
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_one_pair_sum_window.py": "d04d1ff6cfe3597c02adae513daae0b1010c6727acb56a2f5b83ca5756356b66",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c",
+    "check_endpoint_one_divisor_window.py": "3829a42632cd2d7e37e015957f34708eb1abcabdba55101f42f6c9fef2ae3299"
+  },
+  "scope": "Written universal positive-real pair-sum upper bound, refined principal bound and endpoint-one window by prior written minimum-root/c bounds. Three established controls/23exact candidate values, independent factorization/Sturm diagnostics supplement proofs; already nonintegral by repeated theorem. No finite base needed for written bounds, new nonintegrality family, globalQ3closure, parameter/modulus scan/floats/Lean. Prior certificates/manuscript and oldn7/four native axioms unaffected."
+}

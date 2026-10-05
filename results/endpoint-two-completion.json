@@ -1,0 +1,653 @@
+{
+  "written_tail": "For ordered reala>=40 and h_C(2)=0, h_C(4)>0>h_C(5), so another quotient root lies strictly in(4,5). Uses preceding middle/maximum bounds; no parity assumption or finite base for this tail.",
+  "complete_integer_result": "Every positive integer three-exponent vector with h_C(2)=0 has a nonintegral quotient spectrum: written taila>=40; complete8658triple finite base excludes fully distinct endpoint-two zeros at8<=a<=39; earlier repeated and minimum<=7nonintegrality results handle the other cases.",
+  "parity_class_completion": "Every all-even triple and every permutation(1,3,2)/(3,3,0)mod4 triple is Laplacian nonintegral, combining uniform low root, conditional exclusion of1, endpoint-two obstruction and earlier repeated/minimum<=7results. Global statement depends on finite computations.",
+  "positive_four_difference": {
+    "terms": 112,
+    "constant": 611305472,
+    "transformation": "a=40+m,b=a(1+2t)/(1+t),c=a(4+9u)/(4(1+u));m,t,u>=0.",
+    "vectors_ascending_in_m_by_t_power_and_u_power": [
+      [
+        [
+          611305472,
+          13438528512,
+          1669177344,
+          83080704,
+          2067840,
+          25728,
+          128
+        ],
+        [
+          225809391616,
+          101554217216,
+          10552548352,
+          490948992,
+          11793920,
+          143584,
+          704
+        ],
+        [
+          575935266816,
+          199453648896,
+          19487672672,
+          881946672,
+          20857320,
+          251384,
+          1224
+        ],
+        [
+          218865180672,
+          94951560192,
+          9789841664,
+          453837884,
+          10879740,
+          132278,
+          648
+        ]
+      ],
+      [
+        [
+          181014296576,
+          89306490880,
+          9443545088,
+          442607616,
+          10675840,
+          130304,
+          640
+        ],
+        [
+          2226833891328,
+          644107380480,
+          59528518784,
+          2622449728,
+          61045920,
+          728192,
+          3520
+        ],
+        [
+          5054388092928,
+          1267215288320,
+          110831526304,
+          4741723008,
+          108398120,
+          1277272,
+          6120
+        ],
+        [
+          2483032498176,
+          647063198720,
+          57495972608,
+          2481039396,
+          57022790,
+          674384,
+          3240
+        ]
+      ],
+      [
+        [
+          440930932736,
+          161760308224,
+          16049227264,
+          731519232,
+          17370880,
+          209920,
+          1024
+        ],
+        [
+          4630697975808,
+          1163490925312,
+          101856239872,
+          4360110016,
+          99710080,
+          1175200,
+          5632
+        ],
+        [
+          10376062353408,
+          2312188925952,
+          191477361952,
+          7938026736,
+          177794520,
+          2065240,
+          9792
+        ],
+        [
+          5505239310336,
+          1225715108864,
+          101452569344,
+          4204474452,
+          94149320,
+          1093460,
+          5184
+        ]
+      ],
+      [
+        [
+          193009477632,
+          77502509056,
+          7857856000,
+          361629184,
+          8634112,
+          104704,
+          512
+        ],
+        [
+          2343969284096,
+          585405371648,
+          51112650880,
+          2184643072,
+          49911296,
+          587872,
+          2816
+        ],
+        [
+          5508276535296,
+          1195972016128,
+          97721281760,
+          4018207392,
+          89506456,
+          1035632,
+          4896
+        ],
+        [
+          3069924728832,
+          652290753536,
+          52684826880,
+          2150833004,
+          47677022,
+          549714,
+          2592
+        ]
+      ]
+    ]
+  },
+  "positive_five_difference": {
+    "terms": 44,
+    "constant": 4629843,
+    "transformation": "a=8+m,b=8+t,c=8+u;m,t,u>=0.",
+    "vectors_ascending_in_m_by_t_power_and_u_power": [
+      [
+        [
+          4629843,
+          996483,
+          67377,
+          1353
+        ],
+        [
+          996483,
+          186366,
+          10395,
+          156
+        ],
+        [
+          67377,
+          10395,
+          417,
+          3
+        ],
+        [
+          1353,
+          156,
+          3
+        ]
+      ],
+      [
+        [
+          996483,
+          186366,
+          10395,
+          156
+        ],
+        [
+          186366,
+          29079,
+          1239,
+          12
+        ],
+        [
+          10395,
+          1239,
+          30
+        ],
+        [
+          156,
+          12
+        ]
+      ],
+      [
+        [
+          67377,
+          10395,
+          417,
+          3
+        ],
+        [
+          10395,
+          1239,
+          30
+        ],
+        [
+          417,
+          30
+        ],
+        [
+          3
+        ]
+      ],
+      [
+        [
+          1353,
+          156,
+          3
+        ],
+        [
+          156,
+          12
+        ],
+        [
+          3
+        ],
+        [
+          0
+        ]
+      ]
+    ]
+  },
+  "finite_base_scope": "Exactly all8658integer triples8<=a<=39,a<b<2a-2,b<c<9a/4-8. No small-gap or growing-gap exclusions needed to reduce this base. Every endpoint value checked by integer cubic Horner and an independent integer6x6Bareiss determinant. No zeros; repeated triples excluded from this base.",
+  "finite_base_counts": [
+    {
+      "minimum": 8,
+      "largest_integer_c_below_strict_cutoff": 9,
+      "complete_triples_checked": 0,
+      "least_absolute_h_C_at_two": null,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 9,
+      "largest_integer_c_below_strict_cutoff": 12,
+      "complete_triples_checked": 3,
+      "least_absolute_h_C_at_two": 18576,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 10,
+      "largest_integer_c_below_strict_cutoff": 14,
+      "complete_triples_checked": 6,
+      "least_absolute_h_C_at_two": 43440,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 11,
+      "largest_integer_c_below_strict_cutoff": 16,
+      "complete_triples_checked": 10,
+      "least_absolute_h_C_at_two": 51480,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 12,
+      "largest_integer_c_below_strict_cutoff": 18,
+      "complete_triples_checked": 15,
+      "least_absolute_h_C_at_two": 40500,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 13,
+      "largest_integer_c_below_strict_cutoff": 21,
+      "complete_triples_checked": 28,
+      "least_absolute_h_C_at_two": 23154,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 14,
+      "largest_integer_c_below_strict_cutoff": 23,
+      "complete_triples_checked": 36,
+      "least_absolute_h_C_at_two": 8208,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 15,
+      "largest_integer_c_below_strict_cutoff": 25,
+      "complete_triples_checked": 45,
+      "least_absolute_h_C_at_two": 11340,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 16,
+      "largest_integer_c_below_strict_cutoff": 27,
+      "complete_triples_checked": 55,
+      "least_absolute_h_C_at_two": 56580,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 17,
+      "largest_integer_c_below_strict_cutoff": 30,
+      "complete_triples_checked": 78,
+      "least_absolute_h_C_at_two": 177750,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 18,
+      "largest_integer_c_below_strict_cutoff": 32,
+      "complete_triples_checked": 91,
+      "least_absolute_h_C_at_two": 419904,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 19,
+      "largest_integer_c_below_strict_cutoff": 34,
+      "complete_triples_checked": 105,
+      "least_absolute_h_C_at_two": 163952,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 20,
+      "largest_integer_c_below_strict_cutoff": 36,
+      "complete_triples_checked": 120,
+      "least_absolute_h_C_at_two": 212220,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 21,
+      "largest_integer_c_below_strict_cutoff": 39,
+      "complete_triples_checked": 153,
+      "least_absolute_h_C_at_two": 862128,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 22,
+      "largest_integer_c_below_strict_cutoff": 41,
+      "complete_triples_checked": 171,
+      "least_absolute_h_C_at_two": 580032,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 23,
+      "largest_integer_c_below_strict_cutoff": 43,
+      "complete_triples_checked": 190,
+      "least_absolute_h_C_at_two": 544544,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 24,
+      "largest_integer_c_below_strict_cutoff": 45,
+      "complete_triples_checked": 210,
+      "least_absolute_h_C_at_two": 352924,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 25,
+      "largest_integer_c_below_strict_cutoff": 48,
+      "complete_triples_checked": 253,
+      "least_absolute_h_C_at_two": 3060896,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 26,
+      "largest_integer_c_below_strict_cutoff": 50,
+      "complete_triples_checked": 276,
+      "least_absolute_h_C_at_two": 3223584,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 27,
+      "largest_integer_c_below_strict_cutoff": 52,
+      "complete_triples_checked": 300,
+      "least_absolute_h_C_at_two": 2214918,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 28,
+      "largest_integer_c_below_strict_cutoff": 54,
+      "complete_triples_checked": 325,
+      "least_absolute_h_C_at_two": 5056800,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 29,
+      "largest_integer_c_below_strict_cutoff": 57,
+      "complete_triples_checked": 377,
+      "least_absolute_h_C_at_two": 594216,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 30,
+      "largest_integer_c_below_strict_cutoff": 59,
+      "complete_triples_checked": 405,
+      "least_absolute_h_C_at_two": 2709504,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 31,
+      "largest_integer_c_below_strict_cutoff": 61,
+      "complete_triples_checked": 434,
+      "least_absolute_h_C_at_two": 146010,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 32,
+      "largest_integer_c_below_strict_cutoff": 63,
+      "complete_triples_checked": 464,
+      "least_absolute_h_C_at_two": 2632860,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 33,
+      "largest_integer_c_below_strict_cutoff": 66,
+      "complete_triples_checked": 525,
+      "least_absolute_h_C_at_two": 13161040,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 34,
+      "largest_integer_c_below_strict_cutoff": 68,
+      "complete_triples_checked": 558,
+      "least_absolute_h_C_at_two": 3717120,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 35,
+      "largest_integer_c_below_strict_cutoff": 70,
+      "complete_triples_checked": 592,
+      "least_absolute_h_C_at_two": 5553600,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 36,
+      "largest_integer_c_below_strict_cutoff": 72,
+      "complete_triples_checked": 627,
+      "least_absolute_h_C_at_two": 15216640,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 37,
+      "largest_integer_c_below_strict_cutoff": 75,
+      "complete_triples_checked": 697,
+      "least_absolute_h_C_at_two": 9731970,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 38,
+      "largest_integer_c_below_strict_cutoff": 77,
+      "complete_triples_checked": 735,
+      "least_absolute_h_C_at_two": 11112840,
+      "endpoint_two_zeros": 0
+    },
+    {
+      "minimum": 39,
+      "largest_integer_c_below_strict_cutoff": 79,
+      "complete_triples_checked": 774,
+      "least_absolute_h_C_at_two": 9423692,
+      "endpoint_two_zeros": 0
+    }
+  ],
+  "finite_base_triples": 8658,
+  "finite_base_csv_sha256": "6f697abf299366f646b580c54152e53b78c48de1b375fe20682f452abd5f8a70",
+  "direct_quotient_fixtures": [
+    {
+      "exponents": [
+        40,
+        50,
+        75
+      ],
+      "quintic_coefficients": [
+        1,
+        -9245,
+        27727925,
+        -26906060875,
+        163295531250,
+        -220646250000
+      ],
+      "integer_Horner_at_2_4_5": [
+        -1457755488,
+        3811122504,
+        -73359900000
+      ],
+      "roots_strictly_between_4_and_5": 1,
+      "positive_four_difference_checked": true
+    },
+    {
+      "exponents": [
+        40,
+        60,
+        78
+      ],
+      "quintic_coefficients": [
+        1,
+        -10734,
+        37058052,
+        -41411759752,
+        255567180000,
+        -345811564800
+      ],
+      "integer_Horner_at_2_4_5": [
+        -27951104,
+        16237967616,
+        -98644107725
+      ],
+      "roots_strictly_between_4_and_5": 1,
+      "positive_four_difference_checked": true
+    },
+    {
+      "exponents": [
+        64,
+        80,
+        128
+      ],
+      "quintic_coefficients": [
+        1,
+        -24368,
+        191315712,
+        -480313643008,
+        3078251872256,
+        -4246816686080
+      ],
+      "integer_Horner_at_2_4_5": [
+        -10037377760,
+        393410483200,
+        -839499162875
+      ],
+      "roots_strictly_between_4_and_5": 1,
+      "positive_four_difference_checked": true
+    },
+    {
+      "exponents": [
+        100,
+        140,
+        215
+      ],
+      "quintic_coefficients": [
+        1,
+        -66965,
+        1429932675,
+        -9701286352375,
+        64833984740000,
+        -90465625250000
+      ],
+      "integer_Horner_at_2_4_5": [
+        408637210492,
+        13741230621184,
+        -8649160625000
+      ],
+      "roots_strictly_between_4_and_5": 1,
+      "positive_four_difference_checked": true
+    },
+    {
+      "exponents": [
+        8,
+        9,
+        10
+      ],
+      "quintic_coefficients": [
+        1,
+        -323,
+        34937,
+        -1311733,
+        5120046,
+        -5229360
+      ],
+      "integer_Horner_at_2_4_5": [
+        38160,
+        -3582600,
+        -8254080
+      ],
+      "roots_strictly_between_4_and_5": 0
+    },
+    {
+      "exponents": [
+        20,
+        30,
+        37
+      ],
+      "quintic_coefficients": [
+        1,
+        -2711,
+        2382857,
+        -686525353,
+        3852424350,
+        -4899961800
+      ],
+      "integer_Horner_at_2_4_5": [
+        77805000,
+        -322860192,
+        -2504808000
+      ],
+      "roots_strictly_between_4_and_5": 0
+    },
+    {
+      "exponents": [
+        39,
+        60,
+        79
+      ],
+      "quintic_coefficients": [
+        1,
+        -10695,
+        36627609,
+        -40464952813,
+        252472746762,
+        -340205622120
+      ],
+      "integer_Horner_at_2_4_5": [
+        3172909936,
+        24587550000,
+        -84893938760
+      ],
+      "roots_strictly_between_4_and_5": 1
+    }
+  ],
+  "repeated_control": {
+    "exponents": [
+      10,
+      10,
+      12
+    ],
+    "h_C_at_two": 0,
+    "scope": "Below written-tail threshold and outside fully distinct base. Existing repeated nonintegrality theorem retained; h_C(4)negative here, so no all-minima(4,5)bracket claimed."
+  },
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_two_completion.py": "7bfbfca2e84d90f6e6c13ad1292a0ddab3d61d2fe75fc281a3e49d0072580c6f",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Written unbounded endpoint-two nonintegrality tail and two full positive identities. Global parity-class completion relies on necessary8658triple finite base plus earlier repeated/minimum<=7results; not a purely written all-triples theorem. Seven direct quotient/Horner/Sturm fixtures and repeated control. No arbitrary c cutoff, unrelated search/modulus expansion, floats or Lean. General endpoint-two integer-point emptiness at unbounded minima is not proved or needed. Remaining endpoint-one classes, fullQ3 and higher-prime nonsquarefree vectors open; manuscript unchanged."
+}

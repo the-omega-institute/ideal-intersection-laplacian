@@ -8,6 +8,137 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+The [endpoint-two completion](notes/endpoint-two-completion.md) now settles
+**every all-even exponent triple**, and every permutation of `(1,3,2)` or
+`(3,3,0)` modulo four, with no size/gap/ratio bound. On an endpoint-two zero
+at minimum>=40, a written proof puts another quotient root in `(4,5)`.
+A complete8,658triple necessary base excludes fully distinct endpoint-two
+zeros at minima8through39, independently checked by integer Horner and6x6
+Bareiss determinants. Earlier repeated/minimum<=7results handle the other
+cases. The global completion uses finite computation; remaining endpoint-one
+classes and full Q3 stay open. Standalone manuscript integration awaits review.
+
+The remaining [endpoint-one geometry](notes/endpoint-one-geometry.md) now
+has an exact fixed-pair real existence test and a unique simple exponent
+root c>b. Its middle threshold lies in(2a^2-a-2,2a^2-a-1) at a>=8.
+Every ordered endpoint-one zero also requires **b+c<4a^2-2a**; beyond
+this sum cutoff a root in(0,1)proves nonintegrality without a parity
+hypothesis. These are written unbounded results, with no finite base.
+General integer endpoint-one feasibility and full Q3 remain open.
+
+The [endpoint-one growing-gap theorem](notes/endpoint-one-growing-gap.md)
+now excludes every integer endpoint-one solution for d=b-a>=1,
+**a>=2d^2+20**, by an exact unit-width bracket for its unique real
+exponent c>b. Gaps1and2 are excluded already at every a>=8. Combining
+the written endpoint-one/two brackets proves nonintegrality for every
+parity pattern at **d>=5,a>=2d^2+20**, with no finite base. Broader
+consequences retain the earlier endpoint-two finite dependencies.
+Any fully distinct integer spectrum at minimum>=8 would now require
+**d>=3,a<2d^2+20**, in addition to the existing endpoint-one bounds.
+Full Q3 and the remaining endpoint-one region stay open.
+
+The [minimum-eight completion](notes/minimum-eight.md) now certifies
+nonintegrality for **every triple with minimum exactly eight**. Written
+reductions leave precisely108middle exponents11through118on endpoint one.
+The complete fixed-pair certificate brackets each unique real exponent
+between consecutive integers, with216independent6x6Bareiss boundary
+checks and216exact Sturm counts, covering every integer c>b. Endpoint
+two is excluded here by the written maximum cutoff, without its global
+finite base. The theorem requires the108pair finite certificate; the
+cumulative minimum<=8result also retains the earlier27562triple base.
+Full Q3 remains open, with remaining minimum at least nine.
+
+The [endpoint-one spectral gap](notes/endpoint-one-spectral-gap.md) now
+proves that, for real exponents at least eight on h_C(1)=0, **one is a
+simple smallest positive quotient root and all four other roots exceed
+four**. A complete350termpositive identity proves residual-quartic
+positivity on the closed interval[0,4], without a finite base. This is
+actual spectral simplicity, distinct from exponent-root uniqueness.
+The gap does not itself exclude integer spectra; the remaining quartic
+must be studied above four. Full Q3 stays open.
+
+The [endpoint-one divisor window](notes/endpoint-one-divisor-window.md)
+answers the constant-term and upper-bound questions: F(0)=rs(p+s)>0,
+and weighted principal interlacing gives the second smallest nonzero
+quotient root strictly below c for every ordered positive real triple.
+On endpoint one at minimum>=8, the smallest quartic root lies in (4,c).
+An integer spectrum therefore requires a divisor of rs(p+s) in [5,c-1]
+to vanish in F. Exact checks on the three established controls find none.
+This is a finite test per fixed triple, not a global surface decision.
+
+The [minimum-dependent endpoint-one theorem](notes/endpoint-one-minimum-root.md)
+strengthens the window to **a<mu_1<c**, and proves root one simple with
+all four other roots above a, for every real 4<=a<=b<=c on endpoint one.
+A written comparison proves b+c>=2a²-2a+1, with equality exactly at the
+repeated boundary; determinant sign and interlacing then count exactly
+two quotient eigenvalues below a, zero and one. This uses no finite base
+or minimum-eight positivity certificate. Integer candidates now lie in
+[a+1,c-1]; three established controls leave252nonzero evaluations.
+The unbounded surface and full Q3 remain open.
+
+The [pair-sum upper bound](notes/endpoint-one-pair-sum-window.md) now gives
+lambda_3<a+b for every ordered positive real triple, by interlacing with
+a four-support principal block. On endpoint one at real minimum>=4,
+the smallest quartic root therefore lies in **(a,min(c,a+b))**.
+Hypothetical integer spectra require a divisor of rs(p+s) in that window.
+The three established controls leave only23candidates, all nonzero under
+exact evaluation. No finite base or new nonintegrality family is claimed;
+the unbounded surface and full Q3 remain open.
+
+A standalone [middle-diagonal inertia restriction](notes/endpoint-two-middle-inertia.md)
+narrows the endpoint-two problem without further congruence lifting. For
+`4<=a<b<c`, `(b-2)(a+b+c-2)<=2ac` supplies a positive quotient root in `(0,2)`.
+This proves nonintegrality for all-even triples and the mixed patterns
+`(1,3,2)/(3,3,0)` modulo four. The consolidated manuscript is unchanged.
+
+The [full endpoint-two determinant](notes/endpoint-two-middle-tail.md) now
+excludes every `b>=2a-2` for ordered `4<=a<=b<=c`: its endpoint polynomial
+is strictly positive and gives a root in `(0,2)`. Every endpoint-two zero
+therefore requires `b<2a-2`. Nonintegrality follows in the same three parity
+classes; the other endpoint-one cases remain open.
+
+The [sharper maximum tail](notes/endpoint-two-maximum-tail.md) now proves
+`c>=3a-4 => h_C(2)>0` for ordered minimum at least four. Every endpoint-two
+zero therefore requires both `b<2a-2` and `c<3a-4`, replacing the earlier
+maximum bound `c<7a-16+40/(a+2)`. Full Q3 remains open.
+
+The [endpoint-two root geometry](notes/endpoint-two-surface-geometry.md)
+now gives an exact existence test and a unique real c>b solution for
+each fixed a>=8,b>=a that passes it. The middle threshold is a unique
+cubic root beta(a)<2a-2. Minimum eight has no fully distinct endpoint-two
+solutions; at (a,b)=(20,22) the sole real c lies between32and33, excluding
+every integer endpoint-two solution for that pair.
+
+The [gap-two integer-feasibility result](notes/endpoint-two-gap-two.md)
+extends this to every ordered `(a,a+2,c)` with integer a>=8,c>a+2:
+endpoint two never occurs. A uniform unit-width real-root bracket proves
+the infinite tail a>=20; a complete twelve-pair exact computation covers
+8<=a<=19. Nonintegrality follows in the all-even and stated mixed classes;
+other endpoint-one cases and arbitrary middle gaps remain open.
+
+The [growing-gap integer exclusion](notes/endpoint-two-growing-gap.md) now
+allows an unbounded middle difference d: for real `d>=5,a>=2d^2+20,b=a+d`,
+the unique endpoint-two solution c>b lies in `(2a+d-11,2a+d-10)`.
+For integer exponents this excludes endpoint two throughout the stated
+family. The complete domain has a written coefficient-positivity proof,
+with no finite base required. Nonintegrality follows in the all-even and
+stated mixed classes; general endpoint-two feasibility remains open.
+
+The [small-middle-gap theorem](notes/endpoint-two-small-middle-gaps.md) now
+excludes endpoint two for every integer `(a,a+d,c)` with a>=8,1<=d<=4,c>a+d.
+Gaps1,3,4 use written infinite tails and a complete76pair finite base;
+gap2 uses its preserved theorem. With the growing-gap result, every fully
+distinct integer endpoint-two zero at minimum>=8 must have **d=b-a>=5 and
+a<2d^2+20**. General feasibility in this remaining region stays open.
+
+The [nine-fourths maximum bound](notes/endpoint-two-sharp-maximum.md)
+now improves the whole endpoint-two region at minimum>=8 to **c<9a/4-8**,
+strictly below the preceding3a-4bound. Two nonnegative square expressions
+and a complete84term positive residual prove h_C(2)>0 beyond this cutoff
+throughout the unbounded real domain, with no finite base or exponent scan.
+The remaining fully distinct integer region requires d>=5,a<2d^2+20,
+b<beta(a),b<c<9a/4-8. General integer feasibility stays open.
+
 ## First results
 
 We prove nonintegrality for every squarefree integer with at least three

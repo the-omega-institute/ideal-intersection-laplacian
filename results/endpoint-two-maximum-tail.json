@@ -1,0 +1,340 @@
+{
+  "written_result": "For4<=a<=b<=c,c>=3a-4 implies h_C(2)>0 and a positive quotient root in(0,2).",
+  "endpoint_two_necessary_conditions": [
+    "b<2a-2",
+    "c<3a-4"
+  ],
+  "nonintegral_classes": [
+    "all-even",
+    "permutation(1,3,2)mod4",
+    "permutation(3,3,0)mod4"
+  ],
+  "positive_expansion": {
+    "substitution": "a=4+m,c=3a-4+v,b=(a+(2a-2)t)/(1+t)",
+    "domain": "m,v,t>=0 covers a>=4,c>=3a-4,a<=b<2a-2; b>=2a-2 handled by prior middle-tail theorem",
+    "polynomial": "(1+t)^3*h_C(2)",
+    "nonzero_terms": 88,
+    "constant": 17568,
+    "all_nonzero_coefficients_strictly_positive": true,
+    "coefficient_vectors_ascending_in_m_rows_t_columns_v": [
+      [
+        [
+          17568,
+          45392,
+          41600,
+          18120,
+          3986,
+          413,
+          15
+        ],
+        [
+          13008,
+          22464,
+          14200,
+          4120,
+          545,
+          26
+        ],
+        [
+          2616,
+          3108,
+          1286,
+          219,
+          13
+        ],
+        [
+          156,
+          116,
+          27,
+          2
+        ]
+      ],
+      [
+        [
+          59072,
+          155168,
+          144464,
+          63824,
+          14180,
+          1466,
+          51
+        ],
+        [
+          45792,
+          80528,
+          52120,
+          15548,
+          2120,
+          104
+        ],
+        [
+          9552,
+          11704,
+          5036,
+          898,
+          56
+        ],
+        [
+          584,
+          460,
+          114,
+          9
+        ]
+      ],
+      [
+        [
+          74496,
+          194048,
+          181536,
+          80912,
+          18096,
+          1856,
+          60
+        ],
+        [
+          55360,
+          98880,
+          65336,
+          19948,
+          2778,
+          137
+        ],
+        [
+          11672,
+          14716,
+          6554,
+          1213,
+          78
+        ],
+        [
+          724,
+          600,
+          157,
+          13
+        ]
+      ],
+      [
+        [
+          36864,
+          93696,
+          88064,
+          40096,
+          9296,
+          1008,
+          36
+        ],
+        [
+          23424,
+          42560,
+          28816,
+          9064,
+          1304,
+          66
+        ],
+        [
+          4784,
+          6200,
+          2852,
+          546,
+          36
+        ],
+        [
+          296,
+          256,
+          70,
+          6
+        ]
+      ]
+    ]
+  },
+  "generic_checks": [
+    "direct6x6quotient endpoint cubic coefficients and h_C(0)",
+    "rational interval transformation and inverse",
+    "full positive expansion",
+    "t_cubic_coefficient_equals_b_2a_minus_2_boundary",
+    "strict improvement over prior maximum bound"
+  ],
+  "direct_exact_fixtures": [
+    {
+      "exponents": [
+        4,
+        4,
+        8
+      ],
+      "new_maximum_tail_applies": true,
+      "covered_nonintegral_class": true,
+      "prior_middle_tail_applies": false,
+      "prior_minimum_only_tail": "56/3",
+      "schur_diagonal_at_two": [
+        "-18",
+        "-18",
+        "26/3"
+      ],
+      "principal_ab_determinant": "468",
+      "prior_middle_diagonal_test": true,
+      "prior_principal_ab_test": true,
+      "quintic_coefficients": [
+        1,
+        -128,
+        5456,
+        -82816,
+        251904,
+        -196608
+      ],
+      "integer_Horner_at_0_1_2": [
+        -196608,
+        -22191,
+        17568
+      ],
+      "positive_roots_strictly_between_0_and_2": 1
+    },
+    {
+      "exponents": [
+        20,
+        34,
+        56
+      ],
+      "new_maximum_tail_applies": true,
+      "covered_nonintegral_class": true,
+      "prior_middle_tail_applies": false,
+      "prior_minimum_only_tail": "1384/11",
+      "schur_diagonal_at_two": [
+        "-932/9",
+        "38",
+        "2236/27"
+      ],
+      "principal_ab_determinant": "-10568/9",
+      "prior_middle_diagonal_test": false,
+      "prior_principal_ab_test": false,
+      "quintic_coefficients": [
+        1,
+        -4034,
+        5043684,
+        -1971576376,
+        12868458080,
+        -15976083200
+      ],
+      "integer_Horner_at_0_1_2": [
+        -15976083200,
+        -5074161845,
+        1914812416
+      ],
+      "positive_roots_strictly_between_0_and_2": 1
+    },
+    {
+      "exponents": [
+        20,
+        34,
+        58
+      ],
+      "new_maximum_tail_applies": true,
+      "covered_nonintegral_class": true,
+      "prior_middle_tail_applies": false,
+      "prior_minimum_only_tail": "1384/11",
+      "schur_diagonal_at_two": [
+        "-982/9",
+        "75/2",
+        "600/7"
+      ],
+      "principal_ab_determinant": "-10187/9",
+      "prior_middle_diagonal_test": false,
+      "prior_principal_ab_test": false,
+      "quintic_coefficients": [
+        1,
+        -4148,
+        5312612,
+        -2114896288,
+        14006638656,
+        -17333406720
+      ],
+      "integer_Horner_at_0_1_2": [
+        -17333406720,
+        -5436355887,
+        2262720000
+      ],
+      "positive_roots_strictly_between_0_and_2": 1
+    },
+    {
+      "exponents": [
+        19,
+        31,
+        56
+      ],
+      "new_maximum_tail_applies": true,
+      "covered_nonintegral_class": true,
+      "prior_middle_tail_applies": false,
+      "prior_minimum_only_tail": "2497/21",
+      "schur_diagonal_at_two": [
+        "-1704/17",
+        "888/29",
+        "2219/27"
+      ],
+      "principal_ab_determinant": "-268080/493",
+      "prior_middle_diagonal_test": false,
+      "prior_principal_ab_test": false,
+      "quintic_coefficients": [
+        1,
+        -3707,
+        4251869,
+        -1510059073,
+        9959439702,
+        -12219582480
+      ],
+      "integer_Horner_at_0_1_2": [
+        -12219582480,
+        -3765953688,
+        1693016304
+      ],
+      "positive_roots_strictly_between_0_and_2": 1
+    },
+    {
+      "exponents": [
+        20,
+        22,
+        32
+      ],
+      "new_maximum_tail_applies": false,
+      "covered_nonintegral_class": true,
+      "prior_middle_tail_applies": false,
+      "prior_minimum_only_tail": "1384/11",
+      "schur_diagonal_at_two": [
+        "-56/9",
+        "8",
+        "128/3"
+      ],
+      "principal_ab_determinant": "-656/9",
+      "prior_middle_diagonal_test": false,
+      "prior_principal_ab_test": false,
+      "quintic_coefficients": [
+        1,
+        -2006,
+        1324164,
+        -288983656,
+        1536534368,
+        -1935887360
+      ],
+      "integer_Horner_at_0_1_2": [
+        -1935887360,
+        -687014489,
+        -8192000
+      ],
+      "positive_roots_strictly_between_0_and_2": 0
+    }
+  ],
+  "repeated_endpoint_two_control": {
+    "exponents": [
+      10,
+      10,
+      12
+    ],
+    "h_C_at_two": 0,
+    "below_new_maximum_tail": true,
+    "integrality_not_claimed": true
+  },
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_two_maximum_tail.py": "43e62c90eb343e5f88badce54474061e1bd535ddc66a88b9f0025a60fc297341",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Written unbounded polynomial positivity proof with explicit coefficient certificate, using prior full determinant middle-tail theorem. Five fixed direct quotient/integer-Horner/Sturm checks and retained endpoint-zero control. No exponent/modulus scan, floats or Lean. Manuscript unchanged; surviving endpoint-two region, other mixed-parity endpoint-one cases, fullQ3 and higher-prime nonsquarefree vectors open."
+}

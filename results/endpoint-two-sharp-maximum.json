@@ -1,0 +1,359 @@
+{
+  "written_result": "For ordered real8<=a<=b<=c, c>=9a/4-8implies h_C(2)>0. Every endpoint-two zero in this domain requires c<9a/4-8.",
+  "strict_improvement_over_3a_minus_4": "3a-4-(9a/4-8)=3a/4+4>0.",
+  "transformation": "a=8+m,b=(a+(2a-2)t)/(1+t),c=9a/4-8+v; m,t,v>=0, covers a<=b<2a-2.",
+  "nonnegative_terms": [
+    "9*m**6*(2*t + 1)*(t**2 + 5*t + 14*(1 - t)**2)",
+    "308*m**5*t*(t - 1)**2"
+  ],
+  "residual_positive_terms": 84,
+  "residual_constant": 3014656,
+  "residual_vectors_ascending_in_m_by_t_power_and_v_power": [
+    [
+      [
+        3014656,
+        4968448,
+        2878080,
+        766780,
+        100060,
+        6027
+      ],
+      [
+        3489792,
+        4092928,
+        1603664,
+        277392,
+        21796,
+        632
+      ],
+      [
+        1124352,
+        751424,
+        170816,
+        16144,
+        544
+      ],
+      [
+        75520,
+        27392,
+        3264,
+        128
+      ]
+    ],
+    [
+      [
+        393216,
+        3104768,
+        2984064,
+        974712,
+        131516,
+        6322
+      ],
+      [
+        7569408,
+        11273216,
+        4914464,
+        907536,
+        74792,
+        2252
+      ],
+      [
+        4098048,
+        2845312,
+        670016,
+        65568,
+        2288
+      ],
+      [
+        308736,
+        115456,
+        14208,
+        576
+      ]
+    ],
+    [
+      [
+        19243008,
+        14490880,
+        5200064,
+        995716,
+        79824,
+        1
+      ],
+      [
+        6706176,
+        11799040,
+        5473584,
+        1047616,
+        88300,
+        2684
+      ],
+      [
+        5053440,
+        3608768,
+        872192,
+        87472,
+        3120
+      ],
+      [
+        413952,
+        158720,
+        20032,
+        832
+      ]
+    ],
+    [
+      [
+        44646400,
+        39516672,
+        14832512,
+        2952456,
+        316272,
+        15946
+      ],
+      [
+        6137856,
+        7480320,
+        3084384,
+        563904,
+        46760,
+        1416
+      ],
+      [
+        2217984,
+        1597824,
+        391424,
+        39840,
+        1440
+      ],
+      [
+        180736,
+        70656,
+        9088,
+        384
+      ]
+    ]
+  ],
+  "nonintegrality_consequence": "All-even triples and permutations(1,3,2)/(3,3,0)mod4 at a>=8,c>=9a/4-8 are nonintegral using a positive root in(0,2)and prior conditional exclusion of1.",
+  "remaining_fully_distinct_integer_endpoint_two_region": "a>=8,d=b-a>=5,a<2d^2+20,b<beta(a)<2a-2,b<c<9a/4-8. Necessary conditions, not a characterization of integer points.",
+  "direct_quotient_fixtures": [
+    {
+      "exponents": [
+        8,
+        8,
+        10
+      ],
+      "quintic_coefficients": [
+        1,
+        -302,
+        30540,
+        -1073704,
+        4131200,
+        -4160000
+      ],
+      "integer_Horner_at_0_1_2": [
+        -4160000,
+        -1072265,
+        47104
+      ],
+      "positive_roots_strictly_between_0_and_2": 1,
+      "sharp_cutoff": "10",
+      "preceding_cutoff": 20,
+      "positive_identity_matches_direct_quotient": true
+    },
+    {
+      "exponents": [
+        9,
+        10,
+        13
+      ],
+      "quintic_coefficients": [
+        1,
+        -433,
+        62417,
+        -3081143,
+        12959046,
+        -13815360
+      ],
+      "integer_Horner_at_0_1_2": [
+        -13815360,
+        -3875472,
+        270600
+      ],
+      "positive_roots_strictly_between_0_and_2": 1,
+      "sharp_cutoff": "49/4",
+      "preceding_cutoff": 23,
+      "positive_identity_matches_direct_quotient": true
+    },
+    {
+      "exponents": [
+        20,
+        30,
+        38
+      ],
+      "quintic_coefficients": [
+        1,
+        -2764,
+        2472132,
+        -723157472,
+        4086852800,
+        -5192563200
+      ],
+      "integer_Horner_at_0_1_2": [
+        -5192563200,
+        -1826398503,
+        108245376
+      ],
+      "positive_roots_strictly_between_0_and_2": 1,
+      "sharp_cutoff": "37",
+      "preceding_cutoff": 56,
+      "positive_identity_matches_direct_quotient": true
+    },
+    {
+      "exponents": [
+        40,
+        58,
+        84
+      ],
+      "quintic_coefficients": [
+        1,
+        -11098,
+        39419012,
+        -44904353048,
+        283066951776,
+        -380715229440
+      ],
+      "integer_Horner_at_0_1_2": [
+        -380715229440,
+        -142513222797,
+        6116436480
+      ],
+      "positive_roots_strictly_between_0_and_2": 1,
+      "sharp_cutoff": "82",
+      "preceding_cutoff": 116,
+      "positive_identity_matches_direct_quotient": true
+    },
+    {
+      "exponents": [
+        64,
+        80,
+        136
+      ],
+      "quintic_coefficients": [
+        1,
+        -25544,
+        209063744,
+        -542036594176,
+        3552353525760,
+        -4871120486400
+      ],
+      "integer_Horner_at_0_1_2": [
+        -4871120486400,
+        -1860594516615,
+        67112289696
+      ],
+      "positive_roots_strictly_between_0_and_2": 1,
+      "sharp_cutoff": "136",
+      "preceding_cutoff": 188,
+      "positive_identity_matches_direct_quotient": true
+    },
+    {
+      "exponents": [
+        100,
+        140,
+        218
+      ],
+      "quintic_coefficients": [
+        1,
+        -67694,
+        1459260732,
+        -9973373491912,
+        66992601759680,
+        -93343356848000
+      ],
+      "integer_Horner_at_0_1_2": [
+        -93343356848000,
+        -36322669387193,
+        760025706496
+      ],
+      "positive_roots_strictly_between_0_and_2": 1,
+      "sharp_cutoff": "217",
+      "preceding_cutoff": 296,
+      "positive_identity_matches_direct_quotient": true
+    },
+    {
+      "exponents": [
+        20,
+        38,
+        38
+      ],
+      "quintic_coefficients": [
+        1,
+        -3252,
+        3372180,
+        -1137796704,
+        6677317440,
+        -8483788800
+      ],
+      "integer_Horner_at_0_1_2": [
+        -8483788800,
+        -2940899135,
+        346584704
+      ],
+      "positive_roots_strictly_between_0_and_2": 1,
+      "sharp_cutoff": "37",
+      "preceding_cutoff": 56,
+      "branch": "Preserved middle-tail theorem covers b>=2a-2."
+    },
+    {
+      "exponents": [
+        20,
+        40,
+        40
+      ],
+      "quintic_coefficients": [
+        1,
+        -3500,
+        3873200,
+        -1387912000,
+        8332800000,
+        -10560000000
+      ],
+      "integer_Horner_at_0_1_2": [
+        -10560000000,
+        -3611242299,
+        584881632
+      ],
+      "positive_roots_strictly_between_0_and_2": 1,
+      "sharp_cutoff": "37",
+      "preceding_cutoff": 56,
+      "branch": "Preserved middle-tail theorem covers b>=2a-2."
+    }
+  ],
+  "below_cutoff_controls": [
+    {
+      "exponents": [
+        20,
+        22,
+        32
+      ],
+      "h_C_at_two": -8192000,
+      "below_new_cutoff": true
+    },
+    {
+      "exponents": [
+        10,
+        10,
+        12
+      ],
+      "h_C_at_two": 0,
+      "below_new_cutoff": true
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_two_sharp_maximum.py": "5ee2378b1ddd27bc73479d3cec9f143145702872a6c84fa065a290074ea7a95c",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Written unbounded positivity proof from two nonnegative square expressions and a complete84term positive residual, plus preserved middle-tail theorem. No finite base or parameter scan required. Exact generic6x6quotient/transform/inverse/coefficient reconstruction/boundary identities; eight fixed direct quotient/integer-Horner/Sturm fixtures and two below-cutoff controls. No floats or Lean. Previous scripts/results and manuscript files unchanged. General endpoint-two feasibility, other endpoint-one cases and fullQ3open."
+}

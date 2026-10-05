@@ -1,0 +1,1181 @@
+{
+  "written_residual_positivity": "For all reala,b,c>=8, F(x)=(h_C(x)-x*h_C(1))/(x-1), continued polynomially at1, is strictly positive throughout closedinterval[0,4].",
+  "written_endpoint_one_spectral_gap": "For realexponentsa,b,c>=8with h_C(1)=0, spectralroot1 is simple and the smallestpositive quotientroot; allfour remainingquotientroots are strictlygreaterthan4. Weightedselfadjointpositive-semidefinitequotient gives realnonnegative roots. This is spectral simplicity, distinct from prior exponent-cubic simplicity.",
+  "scope_of_consequence": "Underintegerexponents/integral-spectrumassumption onendpointone, the otherfourquotientroots must be integers>=5. Positivity/location alone does not prove a nonintegerroot or exclude integerendpointonepoints. FullQ3 remainsopen.",
+  "symmetric_quartic_formula": "x^4+(1-p-3s)x^3+(sr+2sp+3s^2-3s+1)x^2-[r^2+(s^2-s+1)r+s^2p+p^2+s^3-3s^2+3s-1]x+rs(p+s); s=a+b+c,p=ab+ac+bc,r=abc.",
+  "positive_identity": {
+    "substitution": "a=8+m,b=8+m+t,c=8+m+t+u,x=4v/(1+v),m,t,u,v>=0",
+    "clearing_factor": "(1+v)^4",
+    "nonzero_positive_terms": 350,
+    "constant": 2654208,
+    "v_four_constant": 188596,
+    "ascending_v_vectors": [
+      {
+        "powers_m_t_u": [
+          0,
+          0,
+          0
+        ],
+        "coefficients": [
+          2654208,
+          7797220,
+          7836988,
+          2882316,
+          188596
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          0,
+          1
+        ],
+        "coefficients": [
+          651264,
+          2000436,
+          2147180,
+          896892,
+          98884
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          0,
+          2
+        ],
+        "coefficients": [
+          48640,
+          158956,
+          186612,
+          90916,
+          14620
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          0,
+          3
+        ],
+        "coefficients": [
+          1088,
+          4028,
+          5556,
+          3380,
+          764
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          1,
+          0
+        ],
+        "coefficients": [
+          1302528,
+          4000872,
+          4294360,
+          1793784,
+          197768
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          1,
+          1
+        ],
+        "coefficients": [
+          248320,
+          796560,
+          909936,
+          423408,
+          61712
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          1,
+          2
+        ],
+        "coefficients": [
+          13568,
+          46408,
+          57976,
+          31000,
+          5864
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          1,
+          3
+        ],
+        "coefficients": [
+          200,
+          764,
+          1092,
+          692,
+          164
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          2,
+          0
+        ],
+        "coefficients": [
+          248320,
+          796560,
+          909936,
+          423408,
+          61712
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          2,
+          1
+        ],
+        "coefficients": [
+          34176,
+          115056,
+          140592,
+          72720,
+          13008
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          2,
+          2
+        ],
+        "coefficients": [
+          1192,
+          4328,
+          5832,
+          3448,
+          752
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          2,
+          3
+        ],
+        "coefficients": [
+          8,
+          32,
+          48,
+          32,
+          8
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          3,
+          0
+        ],
+        "coefficients": [
+          22784,
+          76704,
+          93728,
+          48480,
+          8672
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          3,
+          1
+        ],
+        "coefficients": [
+          1984,
+          7128,
+          9480,
+          5512,
+          1176
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          3,
+          2
+        ],
+        "coefficients": [
+          32,
+          128,
+          192,
+          128,
+          32
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          4,
+          0
+        ],
+        "coefficients": [
+          992,
+          3564,
+          4740,
+          2756,
+          588
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          4,
+          1
+        ],
+        "coefficients": [
+          40,
+          160,
+          240,
+          160,
+          40
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          0,
+          5,
+          0
+        ],
+        "coefficients": [
+          16,
+          64,
+          96,
+          64,
+          16
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          0,
+          0
+        ],
+        "coefficients": [
+          1953792,
+          6001308,
+          6441540,
+          2690676,
+          296652
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          0,
+          1
+        ],
+        "coefficients": [
+          399360,
+          1275208,
+          1446648,
+          664984,
+          94184
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          0,
+          2
+        ],
+        "coefficients": [
+          23872,
+          80732,
+          99284,
+          51860,
+          9436
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          0,
+          3
+        ],
+        "coefficients": [
+          400,
+          1528,
+          2184,
+          1384,
+          328
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          1,
+          0
+        ],
+        "coefficients": [
+          798720,
+          2550416,
+          2893296,
+          1329968,
+          188368
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          1,
+          1
+        ],
+        "coefficients": [
+          121792,
+          404076,
+          483620,
+          242180,
+          40844
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          1,
+          2
+        ],
+        "coefficients": [
+          4992,
+          17580,
+          22804,
+          12836,
+          2620
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          1,
+          3
+        ],
+        "coefficients": [
+          49,
+          192,
+          282,
+          184,
+          45
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          2,
+          0
+        ],
+        "coefficients": [
+          121792,
+          404076,
+          483620,
+          242180,
+          40844
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          2,
+          1
+        ],
+        "coefficients": [
+          12576,
+          43572,
+          55308,
+          30204,
+          5892
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          2,
+          2
+        ],
+        "coefficients": [
+          293,
+          1088,
+          1506,
+          920,
+          209
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          2,
+          3
+        ],
+        "coefficients": [
+          1,
+          4,
+          6,
+          4,
+          1
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          3,
+          0
+        ],
+        "coefficients": [
+          8384,
+          29048,
+          36872,
+          20136,
+          3928
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          3,
+          1
+        ],
+        "coefficients": [
+          488,
+          1792,
+          2448,
+          1472,
+          328
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          3,
+          2
+        ],
+        "coefficients": [
+          4,
+          16,
+          24,
+          16,
+          4
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          4,
+          0
+        ],
+        "coefficients": [
+          244,
+          896,
+          1224,
+          736,
+          164
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          4,
+          1
+        ],
+        "coefficients": [
+          5,
+          20,
+          30,
+          20,
+          5
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          1,
+          5,
+          0
+        ],
+        "coefficients": [
+          2,
+          8,
+          12,
+          8,
+          2
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          2,
+          0,
+          0
+        ],
+        "coefficients": [
+          599040,
+          1912812,
+          2169972,
+          997476,
+          141276
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          2,
+          0,
+          1
+        ],
+        "coefficients": [
+          97920,
+          323344,
+          384336,
+          190320,
+          31408
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          2,
+          0,
+          2
+        ],
+        "coefficients": [
+          4392,
+          15288,
+          19528,
+          10760,
+          2128
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          2,
+          0,
+          3
+        ],
+        "coefficients": [
+          49,
+          192,
+          282,
+          184,
+          45
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          2,
+          1,
+          0
+        ],
+        "coefficients": [
+          195840,
+          646688,
+          768672,
+          380640,
+          62816
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          2,
+          1,
+          1
+        ],
+        "coefficients": [
+          22392,
+          76464,
+          95152,
+          50480,
+          9400
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          2,
+          1,
+          2
+        ],
+        "coefficients": [
+          612,
+          2208,
+          2952,
+          1728,
+          372
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          2,
+          1,
+          3
+        ],
+        "coefficients": [
+          3,
+          12,
+          18,
+          12,
+          3
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          2,
+          2,
+          0
+        ],
+        "coefficients": [
+          22392,
+          76464,
+          95152,
+          50480,
+          9400
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          2,
+          2,
+          1
+        ],
+        "coefficients": [
+          1542,
+          5472,
+          7164,
+          4080,
+          846
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          2,
+          2,
+          2
+        ],
+        "coefficients": [
+          18,
+          68,
+          96,
+          60,
+          14
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          2,
+          3,
+          0
+        ],
+        "coefficients": [
+          1028,
+          3648,
+          4776,
+          2720,
+          564
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          2,
+          3,
+          1
+        ],
+        "coefficients": [
+          30,
+          112,
+          156,
+          96,
+          22
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          2,
+          4,
+          0
+        ],
+        "coefficients": [
+          15,
+          56,
+          78,
+          48,
+          11
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          3,
+          0,
+          0
+        ],
+        "coefficients": [
+          97920,
+          323344,
+          384336,
+          190320,
+          31408
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          3,
+          0,
+          1
+        ],
+        "coefficients": [
+          12000,
+          40784,
+          50416,
+          26480,
+          4848
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          3,
+          0,
+          2
+        ],
+        "coefficients": [
+          359,
+          1280,
+          1686,
+          968,
+          203
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          3,
+          0,
+          3
+        ],
+        "coefficients": [
+          2,
+          8,
+          12,
+          8,
+          2
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          3,
+          1,
+          0
+        ],
+        "coefficients": [
+          24000,
+          81568,
+          100832,
+          52960,
+          9696
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          3,
+          1,
+          1
+        ],
+        "coefficients": [
+          1829,
+          6400,
+          8226,
+          4568,
+          913
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          3,
+          1,
+          2
+        ],
+        "coefficients": [
+          25,
+          92,
+          126,
+          76,
+          17
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          3,
+          2,
+          0
+        ],
+        "coefficients": [
+          1829,
+          6400,
+          8226,
+          4568,
+          913
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          3,
+          2,
+          1
+        ],
+        "coefficients": [
+          63,
+          228,
+          306,
+          180,
+          39
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          3,
+          3,
+          0
+        ],
+        "coefficients": [
+          42,
+          152,
+          204,
+          120,
+          26
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          4,
+          0,
+          0
+        ],
+        "coefficients": [
+          9000,
+          30588,
+          37812,
+          19860,
+          3636
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          4,
+          0,
+          1
+        ],
+        "coefficients": [
+          735,
+          2560,
+          3270,
+          1800,
+          355
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          4,
+          0,
+          2
+        ],
+        "coefficients": [
+          11,
+          40,
+          54,
+          32,
+          7
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          4,
+          1,
+          0
+        ],
+        "coefficients": [
+          1470,
+          5120,
+          6540,
+          3600,
+          710
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          4,
+          1,
+          1
+        ],
+        "coefficients": [
+          56,
+          200,
+          264,
+          152,
+          32
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          4,
+          2,
+          0
+        ],
+        "coefficients": [
+          56,
+          200,
+          264,
+          152,
+          32
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          5,
+          0,
+          0
+        ],
+        "coefficients": [
+          441,
+          1536,
+          1962,
+          1080,
+          213
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          5,
+          0,
+          1
+        ],
+        "coefficients": [
+          18,
+          64,
+          84,
+          48,
+          10
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          5,
+          1,
+          0
+        ],
+        "coefficients": [
+          36,
+          128,
+          168,
+          96,
+          20
+        ]
+      },
+      {
+        "powers_m_t_u": [
+          6,
+          0,
+          0
+        ],
+        "coefficients": [
+          9,
+          32,
+          42,
+          24,
+          5
+        ]
+      }
+    ]
+  },
+  "note_vectors_checked": 70,
+  "direct_quotient_fixtures": [
+    {
+      "exponents": [
+        8,
+        9,
+        10
+      ],
+      "h_C_at_one": -1386432,
+      "residual_quartic_coefficients": [
+        1,
+        -322,
+        34615,
+        -1277118,
+        5229360
+      ],
+      "integer_Horner_at_0_1_4": [
+        5229360,
+        3986536,
+        654376
+      ],
+      "residual_roots_in_0_through_4": 0
+    },
+    {
+      "exponents": [
+        8,
+        118,
+        122
+      ],
+      "h_C_at_one": 482651881,
+      "residual_quartic_coefficients": [
+        1,
+        -17059,
+        36838169,
+        -21603294743,
+        473095402496
+      ],
+      "integer_Horner_at_0_1_4": [
+        473095402496,
+        451528928864,
+        387270542708
+      ],
+      "residual_roots_in_0_through_4": 0
+    },
+    {
+      "exponents": [
+        9,
+        12,
+        100
+      ],
+      "h_C_at_one": -171745920,
+      "residual_quartic_coefficients": [
+        1,
+        -2570,
+        1884697,
+        -312397392,
+        3043537200
+      ],
+      "integer_Horner_at_0_1_4": [
+        3043537200,
+        2733021936,
+        1823938560
+      ],
+      "residual_roots_in_0_through_4": 0
+    },
+    {
+      "exponents": [
+        20,
+        22,
+        815
+      ],
+      "h_C_at_one": 523997584,
+      "residual_quartic_coefficients": [
+        1,
+        -37240,
+        368945357,
+        -418952987546,
+        10918164745400
+      ],
+      "integer_Horner_at_0_1_4": [
+        10918164745400,
+        10499580665972,
+        9248253537824
+      ],
+      "residual_roots_in_0_through_4": 0
+    },
+    {
+      "exponents": [
+        40,
+        200,
+        5866
+      ],
+      "h_C_at_one": -3028815239625,
+      "residual_quartic_coefficients": [
+        1,
+        -1434157,
+        303944437471,
+        -4006597626939465,
+        407447774008128000
+      ],
+      "integer_Horner_at_0_1_4": [
+        407447774008128000,
+        403441480324191850,
+        391426246519583884
+      ],
+      "residual_roots_in_0_through_4": 0
+    },
+    {
+      "exponents": [
+        8,
+        8,
+        105
+      ],
+      "h_C_at_one": 0,
+      "residual_quartic_coefficients": [
+        1,
+        -2106,
+        1278729,
+        -173042960,
+        1516468800
+      ],
+      "integer_Horner_at_0_1_4": [
+        1516468800,
+        1344702464,
+        844622096
+      ],
+      "residual_roots_in_0_through_4": 0,
+      "spectral_root_one_simple": true,
+      "other_quotient_roots_strictly_above_four": 4,
+      "actual_spectral_derivative_at_one": 1344702464
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        136
+      ],
+      "h_C_at_one": 0,
+      "residual_quartic_coefficients": [
+        1,
+        -2990,
+        2546083,
+        -450877446,
+        4551612912
+      ],
+      "integer_Horner_at_0_1_4": [
+        4551612912,
+        4103278560,
+        2788649352
+      ],
+      "residual_roots_in_0_through_4": 0,
+      "spectral_root_one_simple": true,
+      "other_quotient_roots_strictly_above_four": 4,
+      "actual_spectral_derivative_at_one": 4103278560
+    },
+    {
+      "exponents": [
+        20,
+        20,
+        741
+      ],
+      "h_C_at_one": 0,
+      "residual_quartic_coefficients": [
+        1,
+        -32382,
+        280238421,
+        -288114390440,
+        7134703976400
+      ],
+      "integer_Horner_at_0_1_4": [
+        7134703976400,
+        6846869792000,
+        5986728157184
+      ],
+      "residual_roots_in_0_through_4": 0,
+      "spectral_root_one_simple": true,
+      "other_quotient_roots_strictly_above_four": 4,
+      "actual_spectral_derivative_at_one": 6846869792000
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_one_spectral_gap.py": "b1973544120fc5230cb114265656e465dc44a06215a40fd19e90573c6454556a",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Written universal residual positivity on closed[0,4]and endpoint-one spectral simplicity/gap, complete350termpositiveidentity and all70notevectors. Eight directquotient/integer-Horner/exactSturmfixtures, including3genuineendpoint-onecontrols, supplement proofs. Nofinitebase/parameterormodulusscan/floats/Lean. Residual is a spectralfactor onlyonh_C(1)=0; otherrootlocation doesnotcloseQ3. Oldresults/certificates/manuscriptunchanged; oldn7/fournativeaxiomsunaffected."
+}

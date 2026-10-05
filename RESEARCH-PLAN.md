@@ -1,10 +1,161 @@
 # First task: Laplacian integrality
 
+The current [standalone endpoint-two completion](notes/endpoint-two-completion.md)
+settles every all-even triple and every permutation(1,3,2)/(3,3,0)mod4 triple.
+For ordered real minimum>=40, an endpoint-two zero forces another quotient
+root in(4,5), by two full positive identities. The complete8,658triple
+necessary base at fully distinct minima8through39 has no endpoint-two zeros,
+with independent integer-Horner/6x6Bareiss agreement in every case. The global
+result also uses earlier repeated/minimum<=7theorems and their finite scopes.
+Unbounded integer-point emptiness of the endpoint-two surface is not needed
+or proved. Focus subsequent research on the remaining endpoint-one classes;
+full Q3 and higher-prime nonsquarefree vectors stay open. Standalone integration
+into the manuscript awaits review; historical reductions below are preserved.
+
+The [endpoint-one geometry](notes/endpoint-one-geometry.md) now gives exact
+real feasibility/uniqueness at fixed a>=8,b>=a: R1_a(b)>0 iff one c>b
+solution exists, with thresholdgamma(a)in(2a^2-a-2,2a^2-a-1). Integer middle
+exponents require b<=2a^2-a-2; the unique real c must also satisfy
+b+c<4a^2-2a. The sum tail proves nonintegrality for every parity pattern.
+Further bounded work should target integer feasibility of this unique root
+or its other quotient roots, retaining full Q3 as open. These standalone
+written results need no finite base or new congruence shifts.
+
+The [endpoint-one growing-gap proof](notes/endpoint-one-growing-gap.md)
+excludes integer endpoint one for all d=b-a>=1,a>=2d^2+20; gaps1and2
+are excluded for every a>=8. Its unique real exponent is bracketed by
+L=2a^2+(2d-3)a-d^2-ceil(3d/2)+1 and L+1. Written endpoint-one/two
+exclusions finish all parity patterns when d>=5,a>=2d^2+20 without a
+finite base. Broader spectral consequences use prior finite certificates.
+Focus subsequent bounded work inside d>=3,a<2d^2+20,b<=2a^2-a-2,
+b<c,b+c<4a^2-2a, on integer feasibility or other quotient roots.
+This is a necessary surviving region; full Q3 remains open. Earlier
+results and manuscript files remain unchanged pending coauthor review.
+
+The [minimum-eight certificate](notes/minimum-eight.md) completes every
+triple with minimum exactlyeight using written reductions and a complete
+108pair endpoint-one unit-bracket base, covering all c>b. Each boundary
+has independent integer-Horner/6x6Bareiss agreement; full-interval and
+unit-interval Sturm counts are1for each pair. The new result requires
+finite computation; its endpoint-two reduction is written and does not
+use the global8658triple base. Cumulative minimum<=8retains the earlier
+27562triple finite certificate. Remaining candidates have minimum>=9.
+Next target a specified structural obstruction or another quotient root;
+do not expand the minimum range without a stated mathematical question.
+
+The [endpoint-one spectral theorem](notes/endpoint-one-spectral-gap.md)
+now identifies one as a simple smallest positive quotient root and puts
+allfourremainingroots strictly above four, at real exponents>=8onh_C(1)=0.
+The exact residual quartic is positive throughout closed[0,4], by a
+complete350termpositive identity and all70note vectors, with no finite
+base. Further structural work should target quartic integer splitting or
+a noninteger root above four, or integer exponent feasibility in the
+surviving region. The gap alone does not prove nonintegrality or closeQ3;
+prior finite dependencies and manuscript scope remain unchanged.
+
+The [constant and divisor window](notes/endpoint-one-divisor-window.md)
+now gives F(0)=rs(p+s)>0 and the written strict interlacing bound
+lambda_3<c for all positive ordered real triples. On endpoint one at
+minimum>=8 this means 4<mu_1<c. For each fixed integer triple, test every
+positive divisor of rs(p+s) in [5,c-1] with exact F evaluation. Three
+established controls pass this nonintegrality diagnostic; no new family
+is claimed. Next seek a uniform obstruction to these candidate roots
+in the surviving region, rather than treating per-triple finiteness as
+a global decision of the unbounded endpoint-one surface. Full Q3 open.
+
+The [minimum-dependent root theorem](notes/endpoint-one-minimum-root.md)
+now puts all four residual roots above a on endpoint one for every real
+4<=a<=b<=c, with one simple and smallest positive. It proves the sum
+lower bound b+c>=2a²-2a+1 and its unique repeated-boundary equality case,
+then uses determinant sign and interlacing to count exactly two roots
+below a. No finite base or earlier350termgap certificate is needed.
+The smallest quartic root lies in (a,c), so refine the uniform splitting
+question to divisors a<d<c of rs(p+s) with h_C(1)=F(d)=0. Three established
+controls suffice for the diagnostic; no parameter scan or new family.
+Full Q3 and prior finite dependencies remain as recorded.
+
+The [pair-sum window](notes/endpoint-one-pair-sum-window.md) strengthens
+the universal upper bound to lambda_3<a+b for all ordered positive real
+exponents. A four-support principal block has exactly three roots below
+a+b, as its quadratic factor has Q(a+b)=-ab(a+b)<0. On endpoint one
+at real minimum>=4, refine the splitting target to positive divisors
+a<d<min(c,a+b) of rs(p+s) with h_C(1)=F(d)=0. The three established
+controls leave23exact nonzero candidates; no parameter scan is needed.
+Written bounds require no finite base; full Q3 stays open.
+
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
 Appendices B/C; Appendix A summarizes verification, with the full checker
 catalogue retained in an optional detailed build. No result or certificate
 is removed, and this reorganization introduces no new mathematical claim.
+
+The standalone [middle-diagonal proof](notes/endpoint-two-middle-inertia.md)
+now narrows the structural endpoint-two problem. In size order `4<=a<b<c`,
+a possible integer spectrum in the all-even or `(1,3,2)/(3,3,0)` modulo-four
+classes requires both `(a-2)(a+b+c-2)<2bc` and
+`(b-2)(a+b+c-2)>2ac`, with two the smallest positive quotient root and simple;
+the middle-dependent upper tail is additional to the old minimum-only bound.
+No endpoint-zero enumeration or new two-adic shift is needed. The current
+manuscript files in this PR remain unchanged pending review of the standalone
+deductions; the editorial revision is maintained separately on PR3.
+
+The [full determinant positivity proof](notes/endpoint-two-middle-tail.md)
+settles the previously surviving `b>=2a+2` branch, and more: every ordered
+triple with minimum at least four and `b>=2a-2` has `h_C(2)>0` and a positive
+root in `(0,2)`. Endpoint-two candidates require `b<2a-2` as well as the
+existing maximum bound. The next structural target is the secular equation
+inside this smaller region; the other mixed-parity endpoint-one cases remain
+open. Reza has deferred manuscript closure while structural work is informative.
+
+The [positive interval transformation](notes/endpoint-two-maximum-tail.md)
+now strengthens the maximum bound to `c<3a-4` on the endpoint-two surface.
+It uses the bounded middle interval `a<=b<2a-2` and a single exact
+positive-coefficient identity, without enlarging any parameter search.
+The next structural target is `h_C(2)=0` and the remaining quotient roots
+inside both new bounds, retaining the independent endpoint-one cases.
+
+The [root-geometry theorem](notes/endpoint-two-surface-geometry.md) now
+characterizes fixed-pair real feasibility: R_a(b)>0 iff there is a c>b
+endpoint-two solution, unique and simple as a polynomial root in c.
+For a>=8, b must lie below the unique threshold beta(a) in(a,2a-2).
+Focus further arithmetic work on integer feasibility of this unique
+real root, or on the other quotient roots there; the general surface
+and other endpoint-one cases remain open.
+
+The [gap-two proof and complete finite base](notes/endpoint-two-gap-two.md)
+now exclude integer endpoint-two solutions for all a>=8,b=a+2,c>b.
+The written tail a>=20 brackets the unique real exponent between2a-8and2a-7;
+the remaining twelve fixed pairs are certified by complete constant-divisor
+checks, independently cross-checked by rational-factor extraction.
+Further work should address a different specified structural subfamily or
+the other quotient roots, retaining the general integer-feasibility and
+endpoint-one problems as open rather than enlarging an arbitrary scan.
+
+The [growing-gap proof](notes/endpoint-two-growing-gap.md) now brackets the
+unique real endpoint-two root for `d=b-a>=5,a>=2d^2+20` between consecutive
+integers `2a+d-11` and `2a+d-10`. Integer endpoint-two solutions are excluded
+throughout this unbounded family by a written proof with no finite base.
+The general integer-feasibility problem outside the stated hypotheses and
+other endpoint-one cases remain open. Further work should address a specified
+remaining structural case or the other quotient roots; manuscript integration
+of the standalone results awaits review.
+
+The [small-middle-gap exclusion](notes/endpoint-two-small-middle-gaps.md)
+now covers all integer a>=8,1<=b-a<=4,c>b. New gaps1,3,4 use written tails
+and a complete76pair finite base; gap2 uses the earlier preserved result.
+Combining this with the growing-gap theorem, every fully distinct integer
+endpoint-two zero at minimum>=8 requires d=b-a>=5 and a<2d^2+20, in addition
+to b<beta(a),c<3a-4. Focus any next structural work inside this remaining
+region or on the other quotient roots; other endpoint-one cases remain open.
+
+The [nine-fourths maximum proof](notes/endpoint-two-sharp-maximum.md)
+now gives c<9a/4-8 for every endpoint-two zero at ordered minimum>=8.
+Its complete transformed identity has two nonnegative square expressions
+and an84term positive residual; the full unbounded theorem needs no finite
+base or parameter scan. The surviving fully distinct integer region requires
+d>=5,a<2d^2+20,b<beta(a),b<c<9a/4-8. Further work should target a specified
+case inside these restrictions or the other quotient roots; general endpoint-two
+feasibility and other endpoint-one cases remain open.
 
 **Status:** graph convention reviewed; the [working manuscript](paper/paper.tex)
 consolidates the squarefree classification, `(1,1,k)`, Reza's boundary family,
