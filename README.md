@@ -1,13 +1,22 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [double-pair completion](notes/four-prime-double-pair-completion.md)
+proves every positive four-prime vector (a,a,b,b) nonintegral. Its
+smallest repeated-pair witness lies in one of (1,2),(2,3),(3,4), with
+complete exponent thresholds. Two unique-positive-root cubics have
+unbounded consecutive-integer brackets, supplemented by eight fixed
+bracket rows. This settles the entire double-pair transition without
+an exponent rectangle base; general single-pair and fully unequal
+four-prime vectors remain open.
+
 The [unequal-double-pair theorem](notes/four-prime-double-pair-balanced.md)
 proves every (a,a,b,b) with a<=b<=2a-6 nonintegral. A genuine second-swap
 cubic restriction has its smallest eigenvalue in (3,4); complete positive
 identities cover the entire two-parameter region, including its boundaries.
 Both repeated-pair orientations fail the earlier product-tail condition,
 and all coordinates fail the small-exponent criterion. The offset-six
-interval cannot be replaced uniformly by five; the wider classification
-remains open.
+interval cannot be replaced uniformly by five. The subsequent completion
+settles all double pairs; the wider four-prime classification remains open.
 
 The [four-prime diagonal theorem](notes/four-prime-diagonal.md) proves
 every (a,a,a,a), a>=5, nonintegral, with smallest repeated-pair eigenvalue

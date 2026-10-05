@@ -1,5 +1,15 @@
 # First task: Laplacian integrality
 
+The [double-pair completion](notes/four-prime-double-pair-completion.md)
+now settles all positive four-prime (a,a,b,b), including the transition.
+Written unique-root endpoint brackets and eight fixed cubic brackets
+give the complete three-interval witness, without a finite exponent base.
+Next examine a single repeated pair(a,a,b,c),b!=c,all entries>=5,
+outside the product criterion. The genuine four-dimensional restriction
+remains available; do not reuse the second-swap cubic without b=c.
+General four-prime/higher-prime Q3 remains open, and final manuscript
+inclusion/stopping/submission remains joint; keep the three-prime main focused.
+
 The [unequal-double-pair proof](notes/four-prime-double-pair-balanced.md)
 now covers every (a,a,b,b), a<=b<=2a-6, by a written unbounded
 smallest-root interval (3,4). It includes arbitrarily large gaps b-a

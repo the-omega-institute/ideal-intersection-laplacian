@@ -12,7 +12,8 @@ case is covered by the [diagonal theorem](four-prime-diagonal.md).
 Neither repeated-pair orientation satisfies the earlier
 [product-tail criterion](repeated-pair-product-tail.md) in this region,
 and every coordinate fails the [small-exponent criterion](small-exponent-rayleigh.md).
-The general unequal-double-pair and four-prime classifications remain open.
+The subsequent [completion](four-prime-double-pair-completion.md) settles
+all double pairs. The general four-prime classification remains open.
 
 We use the existing graph convention: nonzero proper ideals of Z_n are
 vertices, with adjacency exactly when their intersection is nonzero.
@@ -170,8 +171,9 @@ support-checker dependency hash is recorded. The unbounded conclusion
 uses the written proof, with no finite exponent base, exponent scan,
 floating eigensolver, historical finite-base rerun or Lean claim.
 
-Keep the completed three-prime manuscript focused. The next spectral
-question is the transition a<b with b>2a-6 where neither product-tail
-orientation holds, using the general cubic endpoints and other roots.
-Full unequal-double-pair, repeated-pair and higher-prime nonsquarefree Q3
-remain open, as does old orthogonality n=7.
+Keep the completed three-prime manuscript focused. The subsequent
+[completion](four-prime-double-pair-completion.md) settles the entire
+double-pair transition using unique-positive-root endpoint brackets.
+The next spectral question is a single repeated pair with unequal
+remaining entries outside the product criterion. General repeated-pair
+and higher-prime nonsquarefree Q3 remain open, as does old orthogonality n=7.

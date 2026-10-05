@@ -149,6 +149,7 @@ scan, historical finite-base rerun or Lean run is used.
 The completed three-prime manuscript remains unchanged. The subsequent
 [unequal-double-pair proof](four-prime-double-pair-balanced.md) uses this
 second-swap decomposition to cover a<=b<=2a-6. The next bounded spectral
-question is the remaining unequal double-pair region outside both criteria.
+question after the [double-pair completion](four-prime-double-pair-completion.md)
+is a single repeated pair with unequal remaining entries outside the product criterion.
 General repeated-pair and fully unequal four-prime vectors, higher-prime
 nonsquarefree Q3 and old orthogonality n=7 remain open.

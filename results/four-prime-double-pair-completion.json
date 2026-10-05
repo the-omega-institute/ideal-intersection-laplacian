@@ -1,0 +1,774 @@
+{
+  "written_theorem": "Every positive four-prime double-pair exponent vector(a,a,b,b) is Laplacian nonintegral. The smallest repeated-pair witness lies in one of(1,2),(2,3),(3,4),with complete exponent thresholds.",
+  "symbolic": {
+    "generic_embedding_symmetry_characteristic_endpoint_identities": "passed",
+    "endpoint_cubic_coefficients": {
+      "2": [
+        "2*a + 1",
+        "-(a - 1)*(4*a**2 + 6*a + 1)",
+        "-(a - 1)*(4*a**2 - 3)",
+        "-(a - 1)**2*(2*a - 1)"
+      ],
+      "3": [
+        "(a + 2)*(2*a + 1)",
+        "-a*(a - 2)*(4*a + 5)",
+        "-2*(a - 2)*(2*a**2 - 2*a - 3)",
+        "-2*(a - 2)**2*(a - 1)"
+      ]
+    },
+    "unit_empty_full_minor_at_two": "-b^2",
+    "positive_expansions": [
+      {
+        "identity": "p(4),a=2+u,b=a+d",
+        "terms_u_power_d_power_coefficient": [
+          [
+            4,
+            1,
+            4
+          ],
+          [
+            4,
+            0,
+            12
+          ],
+          [
+            3,
+            2,
+            8
+          ],
+          [
+            3,
+            1,
+            68
+          ],
+          [
+            3,
+            0,
+            130
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            2,
+            2,
+            80
+          ],
+          [
+            2,
+            1,
+            367
+          ],
+          [
+            2,
+            0,
+            489
+          ],
+          [
+            1,
+            3,
+            24
+          ],
+          [
+            1,
+            2,
+            246
+          ],
+          [
+            1,
+            1,
+            759
+          ],
+          [
+            1,
+            0,
+            717
+          ],
+          [
+            0,
+            3,
+            35
+          ],
+          [
+            0,
+            2,
+            233
+          ],
+          [
+            0,
+            1,
+            503
+          ],
+          [
+            0,
+            0,
+            353
+          ]
+        ]
+      },
+      {
+        "endpoint": 2,
+        "exponent_anchor": "2*a**2 - 2",
+        "a_shift": 2,
+        "sign": -1,
+        "coefficients_in_descending_u_power": [
+          4,
+          36,
+          124,
+          201,
+          154,
+          45
+        ]
+      },
+      {
+        "endpoint": 2,
+        "exponent_anchor": "2*a**2 - 1",
+        "a_shift": 2,
+        "sign": 1,
+        "coefficients_in_descending_u_power": [
+          4,
+          48,
+          220,
+          483,
+          504,
+          200
+        ]
+      },
+      {
+        "endpoint": 3,
+        "exponent_anchor": "2*a - 6",
+        "a_shift": 13,
+        "sign": -1,
+        "coefficients_in_descending_u_power": [
+          4,
+          250,
+          5388,
+          48806,
+          159264
+        ]
+      },
+      {
+        "endpoint": 3,
+        "exponent_anchor": "2*a - 5",
+        "a_shift": 13,
+        "sign": 1,
+        "coefficients_in_descending_u_power": [
+          4,
+          146,
+          1839,
+          8839,
+          10452
+        ]
+      }
+    ],
+    "positive_coefficients_checked": 39
+  },
+  "endpoint_fixed_arithmetic": {
+    "a_two_identity": "P3(2,b)=20b^3",
+    "two_small_positive_values": [
+      {
+        "a": 3,
+        "P3_at_b_equals_a": 428,
+        "unique_positive_b_root_below_a": true
+      },
+      {
+        "a": 4,
+        "P3_at_b_equals_a": 408,
+        "unique_positive_b_root_below_a": true
+      }
+    ],
+    "all_eight_bracket_rows": [
+      {
+        "a": 5,
+        "h": 5,
+        "coefficients_in_b": [
+          77,
+          -375,
+          -222,
+          -72
+        ],
+        "P3_at_h": -932,
+        "P3_at_h_plus_one": 1728
+      },
+      {
+        "a": 6,
+        "h": 7,
+        "coefficients_in_b": [
+          104,
+          -696,
+          -456,
+          -160
+        ],
+        "P3_at_h": -1784,
+        "P3_at_h_plus_one": 4896
+      },
+      {
+        "a": 7,
+        "h": 9,
+        "coefficients_in_b": [
+          135,
+          -1155,
+          -810,
+          -300
+        ],
+        "P3_at_h": -2730,
+        "P3_at_h_plus_one": 11100
+      },
+      {
+        "a": 8,
+        "h": 11,
+        "coefficients_in_b": [
+          170,
+          -1776,
+          -1308,
+          -504
+        ],
+        "P3_at_h": -3518,
+        "P3_at_h_plus_one": 21816
+      },
+      {
+        "a": 9,
+        "h": 13,
+        "coefficients_in_b": [
+          209,
+          -2583,
+          -1974,
+          -784
+        ],
+        "P3_at_h": -3800,
+        "P3_at_h_plus_one": 38808
+      },
+      {
+        "a": 10,
+        "h": 15,
+        "coefficients_in_b": [
+          252,
+          -3600,
+          -2832,
+          -1152
+        ],
+        "P3_at_h": -3132,
+        "P3_at_h_plus_one": 64128
+      },
+      {
+        "a": 11,
+        "h": 17,
+        "coefficients_in_b": [
+          299,
+          -4851,
+          -3906,
+          -1620
+        ],
+        "P3_at_h": -974,
+        "P3_at_h_plus_one": 100116
+      },
+      {
+        "a": 12,
+        "h": 18,
+        "coefficients_in_b": [
+          350,
+          -6360,
+          -5220,
+          -2200
+        ],
+        "P3_at_h": -115600,
+        "P3_at_h_plus_one": 3310
+      }
+    ],
+    "independent_bareiss_determinants": 18
+  },
+  "fixed_support_controls": [
+    {
+      "exponents": [
+        1,
+        1,
+        3,
+        3
+      ],
+      "graph_vertices": 62,
+      "complement_vertices": 54,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 1,
+      "b": 3,
+      "cubic_coefficients": [
+        1,
+        -46,
+        436,
+        -615
+      ],
+      "five_direct_bareiss_values": [
+        [
+          0,
+          -615
+        ],
+        [
+          1,
+          -224
+        ],
+        [
+          2,
+          81
+        ],
+        [
+          3,
+          306
+        ],
+        [
+          4,
+          457
+        ]
+      ],
+      "leading_minor_endpoint": 1,
+      "leading_minors": [
+        32,
+        314,
+        224
+      ],
+      "smallest_restricted_root_interval": [
+        1,
+        2
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        2,
+        2,
+        6,
+        6
+      ],
+      "graph_vertices": 439,
+      "complement_vertices": 296,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 2,
+      "b": 6,
+      "cubic_coefficients": [
+        1,
+        -185,
+        5271,
+        -9855
+      ],
+      "five_direct_bareiss_values": [
+        [
+          0,
+          -9855
+        ],
+        [
+          1,
+          -4768
+        ],
+        [
+          2,
+          -45
+        ],
+        [
+          3,
+          4320
+        ],
+        [
+          4,
+          8333
+        ]
+      ],
+      "leading_minor_endpoint": 2,
+      "leading_minors": [
+        147,
+        4509,
+        45
+      ],
+      "smallest_restricted_root_interval": [
+        2,
+        3
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        2,
+        2,
+        7,
+        7
+      ],
+      "graph_vertices": 574,
+      "complement_vertices": 379,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 2,
+      "b": 7,
+      "cubic_coefficients": [
+        1,
+        -235,
+        7816,
+        -14500
+      ],
+      "five_direct_bareiss_values": [
+        [
+          0,
+          -14500
+        ],
+        [
+          1,
+          -6918
+        ],
+        [
+          2,
+          200
+        ],
+        [
+          3,
+          6860
+        ],
+        [
+          4,
+          13068
+        ]
+      ],
+      "leading_minor_endpoint": 1,
+      "leading_minors": [
+        193,
+        7085,
+        6918
+      ],
+      "smallest_restricted_root_interval": [
+        1,
+        2
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        12,
+        12,
+        18,
+        18
+      ],
+      "graph_vertices": 61007,
+      "complement_vertices": 14352,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 12,
+      "b": 18,
+      "cubic_coefficients": [
+        1,
+        -5181,
+        2193759,
+        -6650275
+      ],
+      "five_direct_bareiss_values": [
+        [
+          0,
+          -6650275
+        ],
+        [
+          1,
+          -4461696
+        ],
+        [
+          2,
+          -2283473
+        ],
+        [
+          3,
+          -115600
+        ],
+        [
+          4,
+          2041929
+        ]
+      ],
+      "leading_minor_endpoint": 3,
+      "leading_minors": [
+        4702,
+        2157736,
+        115600
+      ],
+      "smallest_restricted_root_interval": [
+        3,
+        4
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        12,
+        12,
+        19,
+        19
+      ],
+      "graph_vertices": 67598,
+      "complement_vertices": 15615,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 12,
+      "b": 19,
+      "cubic_coefficients": [
+        1,
+        -5713,
+        2560100,
+        -7625600
+      ],
+      "five_direct_bareiss_values": [
+        [
+          0,
+          -7625600
+        ],
+        [
+          1,
+          -5071212
+        ],
+        [
+          2,
+          -2528244
+        ],
+        [
+          3,
+          3310
+        ],
+        [
+          4,
+          2523456
+        ]
+      ],
+      "leading_minor_endpoint": 2,
+      "leading_minors": [
+        5210,
+        2526588,
+        2528244
+      ],
+      "smallest_restricted_root_interval": [
+        2,
+        3
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        13,
+        13,
+        20,
+        20
+      ],
+      "graph_vertices": 86434,
+      "complement_vertices": 18835,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 13,
+      "b": 20,
+      "cubic_coefficients": [
+        1,
+        -6755,
+        3447612,
+        -10441332
+      ],
+      "five_direct_bareiss_values": [
+        [
+          0,
+          -10441332
+        ],
+        [
+          1,
+          -7000474
+        ],
+        [
+          2,
+          -3573120
+        ],
+        [
+          3,
+          -159264
+        ],
+        [
+          4,
+          3241100
+        ]
+      ],
+      "leading_minor_endpoint": 3,
+      "leading_minors": [
+        6184,
+        3400624,
+        159264
+      ],
+      "smallest_restricted_root_interval": [
+        3,
+        4
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        13,
+        13,
+        21,
+        21
+      ],
+      "graph_vertices": 94862,
+      "complement_vertices": 20334,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 13,
+      "b": 21,
+      "cubic_coefficients": [
+        1,
+        -7384,
+        3965962,
+        -11821005
+      ],
+      "five_direct_bareiss_values": [
+        [
+          0,
+          -11821005
+        ],
+        [
+          1,
+          -7862426
+        ],
+        [
+          2,
+          -3918609
+        ],
+        [
+          3,
+          10452
+        ],
+        [
+          4,
+          3924763
+        ]
+      ],
+      "leading_minor_endpoint": 2,
+      "leading_minors": [
+        6787,
+        3922575,
+        3918609
+      ],
+      "smallest_restricted_root_interval": [
+        2,
+        3
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        13,
+        13,
+        336,
+        336
+      ],
+      "graph_vertices": 22259522,
+      "complement_vertices": 3180099,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 13,
+      "b": 336,
+      "cubic_coefficients": [
+        1,
+        -1599079,
+        14449743112,
+        -28894452300
+      ],
+      "five_direct_bareiss_values": [
+        [
+          0,
+          -28894452300
+        ],
+        [
+          1,
+          -14446308266
+        ],
+        [
+          2,
+          -1362384
+        ],
+        [
+          3,
+          14440385352
+        ],
+        [
+          4,
+          28878934948
+        ]
+      ],
+      "leading_minor_endpoint": 2,
+      "leading_minors": [
+        1589977,
+        14443237500,
+        1362384
+      ],
+      "smallest_restricted_root_interval": [
+        2,
+        3
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        13,
+        13,
+        337,
+        337
+      ],
+      "graph_vertices": 22391822,
+      "complement_vertices": 3198662,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 13,
+      "b": 337,
+      "cubic_coefficients": [
+        1,
+        -1608556,
+        14578808998,
+        -29149479801
+      ],
+      "five_direct_bareiss_values": [
+        [
+          0,
+          -29149479801
+        ],
+        [
+          1,
+          -14572279358
+        ],
+        [
+          2,
+          1703979
+        ],
+        [
+          3,
+          14572470216
+        ],
+        [
+          4,
+          29140019359
+        ]
+      ],
+      "leading_minor_endpoint": 1,
+      "leading_minors": [
+        1599428,
+        14573874030,
+        14572279358
+      ],
+      "smallest_restricted_root_interval": [
+        1,
+        2
+      ],
+      "sturm_roots_in_interval": 1
+    }
+  ],
+  "script_sha256": "303b3291ab856cb9a270c42d5442f8bf6e05471a6385e1c7974bf1b8f57bbdc8",
+  "support_embedding_dependency_sha256": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+  "sympy_version": "1.14.0",
+  "scope": "Written unbounded endpoint brackets with ten fixed rows of constant arithmetic, not an exponent rectangle base. Nine specified exact support/Bareiss/Sturm controls. No expanded graph, exponent scan, floating eigensolver, historical finite rerun or Lean. General four-prime and higher-prime Q3 remain open."
+}
