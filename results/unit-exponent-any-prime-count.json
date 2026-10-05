@@ -1,0 +1,181 @@
+{
+  "written_theorem": "Any t>=3 positive integer prime-exponent vector with a unit exponent is Laplacian nonintegral, with a graph eigenvalue in (V-1,V).",
+  "written_rayleigh_bound": "0<mu<= (4B+A)/(4B+2A)<1; A=product of other exponents, B=product of (other exponent+1)-1-A>0.",
+  "support_controls": [
+    {
+      "exponents": [
+        1,
+        1,
+        1
+      ],
+      "support_classes": 6,
+      "leaves": 1,
+      "half_remainder": 2,
+      "complement_vertices": 6,
+      "graph_vertices": 6,
+      "trial_energy": 18,
+      "trial_norm_squared": 20,
+      "rayleigh_quotient": "9/10",
+      "connected_and_identities": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        2,
+        1
+      ],
+      "support_classes": 6,
+      "leaves": 2,
+      "half_remainder": 3,
+      "complement_vertices": 9,
+      "graph_vertices": 10,
+      "trial_energy": 84,
+      "trial_norm_squared": 96,
+      "rayleigh_quotient": "7/8",
+      "connected_and_identities": "passed"
+    },
+    {
+      "exponents": [
+        2,
+        3,
+        1
+      ],
+      "support_classes": 6,
+      "leaves": 6,
+      "half_remainder": 5,
+      "complement_vertices": 17,
+      "graph_vertices": 22,
+      "trial_energy": 780,
+      "trial_norm_squared": 960,
+      "rayleigh_quotient": "13/16",
+      "connected_and_identities": "passed"
+    },
+    {
+      "exponents": [
+        9,
+        136,
+        1
+      ],
+      "support_classes": 6,
+      "leaves": 1224,
+      "half_remainder": 145,
+      "complement_vertices": 1515,
+      "graph_vertices": 2738,
+      "trial_energy": 320173920,
+      "trial_norm_squared": 537409440,
+      "rayleigh_quotient": "451/757",
+      "connected_and_identities": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "support_classes": 14,
+      "leaves": 1,
+      "half_remainder": 6,
+      "complement_vertices": 14,
+      "graph_vertices": 14,
+      "trial_energy": 150,
+      "trial_norm_squared": 156,
+      "rayleigh_quotient": "25/26",
+      "connected_and_identities": "passed"
+    },
+    {
+      "exponents": [
+        2,
+        3,
+        4,
+        1
+      ],
+      "support_classes": 14,
+      "leaves": 24,
+      "half_remainder": 35,
+      "complement_vertices": 95,
+      "graph_vertices": 118,
+      "trial_energy": 137760,
+      "trial_norm_squared": 157920,
+      "rayleigh_quotient": "41/47",
+      "connected_and_identities": "passed"
+    },
+    {
+      "exponents": [
+        7,
+        11,
+        13,
+        1
+      ],
+      "support_classes": 14,
+      "leaves": 1001,
+      "half_remainder": 342,
+      "complement_vertices": 1686,
+      "graph_vertices": 2686,
+      "trial_energy": 811008198,
+      "trial_norm_squared": 1153692540,
+      "rayleigh_quotient": "2369/3370",
+      "connected_and_identities": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "support_classes": 30,
+      "leaves": 1,
+      "half_remainder": 14,
+      "complement_vertices": 30,
+      "graph_vertices": 30,
+      "trial_energy": 798,
+      "trial_norm_squared": 812,
+      "rayleigh_quotient": "57/58",
+      "connected_and_identities": "passed"
+    },
+    {
+      "exponents": [
+        2,
+        3,
+        4,
+        5,
+        1
+      ],
+      "support_classes": 30,
+      "leaves": 120,
+      "half_remainder": 239,
+      "complement_vertices": 599,
+      "graph_vertices": 718,
+      "trial_energy": 30859680,
+      "trial_norm_squared": 34301280,
+      "rayleigh_quotient": "269/299",
+      "connected_and_identities": "passed"
+    }
+  ],
+  "independent_full_graph_controls": [
+    {
+      "exponents": [
+        1,
+        1,
+        1
+      ],
+      "full_complement_vertices": 6,
+      "rayleigh_quotient": "9/10",
+      "complement_identity_on_trial_vector": "passed"
+    },
+    {
+      "exponents": [
+        2,
+        3,
+        1
+      ],
+      "full_complement_vertices": 17,
+      "rayleigh_quotient": "13/16",
+      "complement_identity_on_trial_vector": "passed"
+    }
+  ],
+  "script_sha256": "f65bb22558af5d134d7c62900bed950a1fdb066011fb97a10ebf9cb6f5d4bc75",
+  "scope": "Written unbounded support-counting and Rayleigh proof; nine specified quotient controls and two small full graphs verify implementation. Controls are not the proof and no parameter scan or finite base is required. No floating eigenvalues or Lean. Higher-prime nonsquarefree all-exponents>=2 and original orthogonality n=7 remain open."
+}

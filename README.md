@@ -9,6 +9,13 @@ which graphs in this family have only integer Laplacian eigenvalues?
 Every positive three-prime exponent vector is now nonintegral; the
 nonsquarefree higher-prime classification remains open.
 
+For any number of prime factors t>=3, a
+[unit exponent](notes/unit-exponent-any-prime-count.md) gives a noninteger
+graph eigenvalue in (V-1,V). A connected complement with a pendant class
+has an explicit Rayleigh quotient (4B+A)/(4B+2A)<1. This written proof
+requires no finite base and leaves higher-prime vectors with every
+exponent at least two as the remaining nonsquarefree domain.
+
 The [largest-root unit interval](notes/largest-root-unit-interval.md)
 proves bc+a+b+c<lambda_max<bc+a+b+c+1 for real3<=a<=b<=c,
 b-a>=3,c>=a²-a. On endpoint one, the established sum bound supplies

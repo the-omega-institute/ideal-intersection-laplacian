@@ -1,5 +1,14 @@
 # First task: Laplacian integrality
 
+The [unit-exponent Rayleigh proof](notes/unit-exponent-any-prime-count.md)
+settles every positive exponent vector with at least three prime factors
+and an exponent one. The explicit complement bound
+0<mu<1 lifts to a graph eigenvalue in (V-1,V), without a finite base.
+Together with the completed three-prime classification, the unresolved
+nonsquarefree domain has at least four prime factors and all exponents
+at least two. Coauthor review and joint publication/authorship decisions
+remain pending; earlier paragraphs retain their historical scopes.
+
 The [largest-root unit interval](notes/largest-root-unit-interval.md)
 completes three-prime nonintegrality: the endpoint-one sum bound supplies
 c>a²-a, so b-a>=3 gives a largest quotient root in the open integer
