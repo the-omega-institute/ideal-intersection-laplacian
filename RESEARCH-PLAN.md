@@ -12,6 +12,15 @@ or proved. Focus subsequent research on the remaining endpoint-one classes;
 full Q3 and higher-prime nonsquarefree vectors stay open. Standalone integration
 into the manuscript awaits review; historical reductions below are preserved.
 
+The [endpoint-one geometry](notes/endpoint-one-geometry.md) now gives exact
+real feasibility/uniqueness at fixed a>=8,b>=a: R1_a(b)>0 iff one c>b
+solution exists, with thresholdgamma(a)in(2a^2-a-2,2a^2-a-1). Integer middle
+exponents require b<=2a^2-a-2; the unique real c must also satisfy
+b+c<4a^2-2a. The sum tail proves nonintegrality for every parity pattern.
+Further bounded work should target integer feasibility of this unique root
+or its other quotient roots, retaining full Q3 as open. These standalone
+written results need no finite base or new congruence shifts.
+
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
 Appendices B/C; Appendix A summarizes verification, with the full checker

@@ -18,6 +18,14 @@ Bareiss determinants. Earlier repeated/minimum<=7results handle the other
 cases. The global completion uses finite computation; remaining endpoint-one
 classes and full Q3 stay open. Standalone manuscript integration awaits review.
 
+The remaining [endpoint-one geometry](notes/endpoint-one-geometry.md) now
+has an exact fixed-pair real existence test and a unique simple exponent
+root c>b. Its middle threshold lies in(2a^2-a-2,2a^2-a-1) at a>=8.
+Every ordered endpoint-one zero also requires **b+c<4a^2-2a**; beyond
+this sum cutoff a root in(0,1)proves nonintegrality without a parity
+hypothesis. These are written unbounded results, with no finite base.
+General integer endpoint-one feasibility and full Q3 remain open.
+
 A standalone [middle-diagonal inertia restriction](notes/endpoint-two-middle-inertia.md)
 narrows the endpoint-two problem without further congruence lifting. For
 `4<=a<b<c`, `(b-2)(a+b+c-2)<=2ac` supplies a positive quotient root in `(0,2)`.

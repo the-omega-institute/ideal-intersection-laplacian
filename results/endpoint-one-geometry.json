@@ -1,0 +1,322 @@
+{
+  "written_geometry": "For fixed reala>=8,b>=a, h_C(1)=0has a real c>b solution iff R1_a(b)>0; then solution unique and simple as exponent root. Threshold gamma(a)lies strictly between2a^2-a-2and2a^2-a-1.",
+  "integer_middle_consequence": "For integera>=8,b>=a, c>b real endpoint-one feasibility holds exactly when b<=2a^2-a-2. Integer feasibility of c remains separate.",
+  "written_sum_tail": "For ordered real8<=a<=b<=c, b+c>=4a^2-2aimplies h_C(1)>0. Thus every ordered endpoint-one zero with c>b requires b+c<4a^2-2a; a positive quotient root in(0,1)proves nonintegrality in the integer sum tail without parity assumptions.",
+  "diagonal_factor_L1": "a - 2*b**2 + 3*b - 1",
+  "diagonal_test_R1": "-b**3 + b**2*(2*a**2 - a - 1) - b*(3*a - 3) - (a - 1)**2",
+  "normalized_derivative": "-1 + (3*a - 3)/b**2 + 2*(a - 1)**2/b**3",
+  "positive_vectors_descending_in_m_at_a_8_plus_m": {
+    "test_at_B_minus_one": [
+      4,
+      118,
+      1297,
+      6297,
+      11397
+    ],
+    "concave_at_a": [
+      4,
+      128,
+      1531,
+      8109,
+      16043
+    ],
+    "concave_at_B": [
+      2,
+      68,
+      856,
+      4734,
+      9716
+    ]
+  },
+  "fixed_pair_cubic_fixtures": [
+    {
+      "pair": [
+        8,
+        9
+      ],
+      "exponent_cubic_coefficients": [
+        144,
+        -17168,
+        10752,
+        78848
+      ],
+      "test_R1_value": 8672,
+      "h_C_at_one_on_diagonal": -1110016,
+      "real_exponent_roots_strictly_above_b": 1,
+      "unique_root_bracket": [
+        9,
+        231
+      ]
+    },
+    {
+      "pair": [
+        8,
+        118
+      ],
+      "exponent_cubic_coefficients": [
+        13987,
+        -1696531,
+        1853397,
+        109438875
+      ],
+      "test_R1_value": 11397,
+      "h_C_at_one_on_diagonal": -313269339,
+      "real_exponent_roots_strictly_above_b": 1,
+      "unique_root_bracket": [
+        118,
+        122
+      ]
+    },
+    {
+      "pair": [
+        8,
+        119
+      ],
+      "exponent_cubic_coefficients": [
+        14224,
+        -1711388,
+        1884932,
+        112193928
+      ],
+      "test_R1_value": -2548,
+      "h_C_at_one_on_diagonal": 71236984,
+      "real_exponent_roots_strictly_above_b": 0
+    },
+    {
+      "pair": [
+        9,
+        9
+      ],
+      "exponent_cubic_coefficients": [
+        161,
+        -22002,
+        13632,
+        106624
+      ],
+      "test_R1_value": 11303,
+      "h_C_at_one_on_diagonal": -1435481,
+      "real_exponent_roots_strictly_above_b": 1,
+      "unique_root_bracket": [
+        9,
+        297
+      ]
+    },
+    {
+      "pair": [
+        9,
+        151
+      ],
+      "exponent_cubic_coefficients": [
+        22881,
+        -3530964,
+        3834000,
+        289634400
+      ],
+      "test_R1_value": 19113,
+      "h_C_at_one_on_diagonal": -862779933,
+      "real_exponent_roots_strictly_above_b": 1,
+      "unique_root_bracket": [
+        151,
+        155
+      ]
+    },
+    {
+      "pair": [
+        9,
+        152
+      ],
+      "exponent_cubic_coefficients": [
+        23184,
+        -3554960,
+        3884928,
+        295331840
+      ],
+      "test_R1_value": -3712,
+      "h_C_at_one_on_diagonal": 169801728,
+      "real_exponent_roots_strictly_above_b": 0
+    },
+    {
+      "pair": [
+        20,
+        22
+      ],
+      "exponent_cubic_coefficients": [
+        883,
+        -719359,
+        400197,
+        7868679
+      ],
+      "test_R1_value": 364773,
+      "h_C_at_one_on_diagonal": -322094559,
+      "real_exponent_roots_strictly_above_b": 1,
+      "unique_root_bracket": [
+        22,
+        1538
+      ]
+    },
+    {
+      "pair": [
+        20,
+        779
+      ],
+      "exponent_cubic_coefficients": [
+        607240,
+        -473905676,
+        495995228,
+        193195477608
+      ],
+      "test_R1_value": -44764,
+      "h_C_at_one_on_diagonal": 54223797064,
+      "real_exponent_roots_strictly_above_b": 0
+    }
+  ],
+  "direct_quotient_fixtures": [
+    {
+      "exponents": [
+        8,
+        9,
+        231
+      ],
+      "quintic_coefficients": [
+        1,
+        -4743,
+        6296751,
+        -1578757577,
+        19951680576,
+        -17517753792
+      ],
+      "integer_Horner_at_0_1": [
+        -17517753792,
+        861461216
+      ],
+      "positive_roots_strictly_between_0_and_1": 1
+    },
+    {
+      "exponents": [
+        8,
+        118,
+        122
+      ],
+      "quintic_coefficients": [
+        1,
+        -17060,
+        36855228,
+        -21640132912,
+        495181349120,
+        -473095402496
+      ],
+      "integer_Horner_at_0_1": [
+        -473095402496,
+        482651881
+      ],
+      "positive_roots_strictly_between_0_and_1": 1
+    },
+    {
+      "exponents": [
+        8,
+        119,
+        120
+      ],
+      "quintic_coefficients": [
+        1,
+        -16933,
+        36415347,
+        -21293666663,
+        485394604736,
+        -463863865920
+      ],
+      "integer_Horner_at_0_1": [
+        -463863865920,
+        273470568
+      ],
+      "positive_roots_strictly_between_0_and_1": 1
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        136
+      ],
+      "quintic_coefficients": [
+        1,
+        -2991,
+        2549073,
+        -453423529,
+        5002490358,
+        -4551612912
+      ],
+      "integer_Horner_at_0_1": [
+        -4551612912,
+        0
+      ],
+      "positive_roots_strictly_between_0_and_1": 0,
+      "scope": "Preserved repeated endpoint-one zero below sum cutoff; already nonintegral, not a root-free claim."
+    },
+    {
+      "exponents": [
+        9,
+        151,
+        155
+      ],
+      "quintic_coefficients": [
+        1,
+        -27104,
+        83157179,
+        -68600432896,
+        1826409735945,
+        -1756633954950
+      ],
+      "integer_Horner_at_0_1": [
+        -1756633954950,
+        1258478175
+      ],
+      "positive_roots_strictly_between_0_and_1": 1
+    },
+    {
+      "exponents": [
+        20,
+        22,
+        1538
+      ],
+      "quintic_coefficients": [
+        1,
+        -69776,
+        1282285596,
+        -2318049820576,
+        75055187873600,
+        -71226999641600
+      ],
+      "integer_Horner_at_0_1": [
+        -71226999641600,
+        1511420627245
+      ],
+      "positive_roots_strictly_between_0_and_1": 1
+    },
+    {
+      "exponents": [
+        20,
+        779,
+        780
+      ],
+      "quintic_coefficients": [
+        1,
+        -643537,
+        21214088523,
+        -179986401789539,
+        12468389841710000,
+        -12288001838408400
+      ],
+      "integer_Horner_at_0_1": [
+        -12288001838408400,
+        422814957048
+      ],
+      "positive_roots_strictly_between_0_and_1": 1
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_one_geometry.py": "862f531abe6432e07e8b540e090ac7e71ee62c6b16248de91d7f0f3f893cb452",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Written unbounded real feasibility/uniqueness, precise quadratic middle threshold and b+c sum cutoff, no finite base or parameter scan. Exact generic6x6quotient/endpoint cubic/diagonal/symmetry derivative/threshold/concavity endpoint identities; eight chosen exponent cubics with complete exact Sturm counts, seven direct quotient/integer-Horner/Sturm fixtures including preserved repeated endpoint-one control. Simplicity concerns exponent polynomial, not spectral multiplicity. No floats or Lean. General endpoint-one integer feasibility, its other quotient roots, fullQ3 and higher-prime nonsquarefree vectors open; previous results/manuscript unchanged."
+}
