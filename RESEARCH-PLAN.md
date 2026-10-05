@@ -1,5 +1,13 @@
 # First task: Laplacian integrality
 
+The [prime-thirteen valuation proof](notes/endpoint-one-equality-thirteen.md)
+requires b=104mod169 for an integral equality spectrum on the negative
+q=-1mod13 branch. Its refined anchor gives Delta=13b²-18b³mod13^(4e).
+All other negative-branch13-divisibility classes have odd discriminant
+valuation. Next isolate the residual b=104mod169 class with its next
+discriminant term and normalized unit. Do not extend this exclusion to
+the positive branch or infer integer points from local compatibility.
+
 The [local splitting classification](notes/endpoint-one-equality-local-splitting.md)
 now settles every odd prime divisor of b except the negative branch at13.
 The positive q=1branch splits overZ_p; the negative q=-1branch splits

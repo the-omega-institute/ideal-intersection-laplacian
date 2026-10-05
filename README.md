@@ -8,6 +8,15 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+The [exceptional-prime proof](notes/endpoint-one-equality-thirteen.md)
+now requires b=104mod169 for an integral equality spectrum on the
+q=-1mod13 branch with13 dividing b. The refined congruence
+Delta=13b²-18b³ mod13^(4v_13(b)) gives an odd valuation in every other
+class. In particular13² cannot divide b on this negative branch.
+The positive branch at13 retains its three simple local roots; the
+remaining b=104mod169 class needs a further discriminant analysis.
+This is a written unbounded obstruction with exact symbolic checks.
+
 The [local splitting theorem](notes/endpoint-one-equality-local-splitting.md)
 now completes the cubic test at odd primes p|b, except the negative branch
 at p=13. The q=1modp branch always splits over Z_p by three simple Hensel
