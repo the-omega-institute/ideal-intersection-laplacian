@@ -63,6 +63,17 @@ is claimed. Next seek a uniform obstruction to these candidate roots
 in the surviving region, rather than treating per-triple finiteness as
 a global decision of the unbounded endpoint-one surface. Full Q3 open.
 
+The [minimum-dependent root theorem](notes/endpoint-one-minimum-root.md)
+now puts all four residual roots above a on endpoint one for every real
+4<=a<=b<=c, with one simple and smallest positive. It proves the sum
+lower bound b+c>=2a²-2a+1 and its unique repeated-boundary equality case,
+then uses determinant sign and interlacing to count exactly two roots
+below a. No finite base or earlier350termgap certificate is needed.
+The smallest quartic root lies in (a,c), so refine the uniform splitting
+question to divisors a<d<c of rs(p+s) with h_C(1)=F(d)=0. Three established
+controls suffice for the diagnostic; no parameter scan or new family.
+Full Q3 and prior finite dependencies remain as recorded.
+
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
 Appendices B/C; Appendix A summarizes verification, with the full checker

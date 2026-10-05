@@ -66,6 +66,16 @@ An integer spectrum therefore requires a divisor of rs(p+s) in [5,c-1]
 to vanish in F. Exact checks on the three established controls find none.
 This is a finite test per fixed triple, not a global surface decision.
 
+The [minimum-dependent endpoint-one theorem](notes/endpoint-one-minimum-root.md)
+strengthens the window to **a<mu_1<c**, and proves root one simple with
+all four other roots above a, for every real 4<=a<=b<=c on endpoint one.
+A written comparison proves b+c>=2a²-2a+1, with equality exactly at the
+repeated boundary; determinant sign and interlacing then count exactly
+two quotient eigenvalues below a, zero and one. This uses no finite base
+or minimum-eight positivity certificate. Integer candidates now lie in
+[a+1,c-1]; three established controls leave252nonzero evaluations.
+The unbounded surface and full Q3 remain open.
+
 A standalone [middle-diagonal inertia restriction](notes/endpoint-two-middle-inertia.md)
 narrows the endpoint-two problem without further congruence lifting. For
 `4<=a<b<c`, `(b-2)(a+b+c-2)<=2ac` supplies a positive quotient root in `(0,2)`.
