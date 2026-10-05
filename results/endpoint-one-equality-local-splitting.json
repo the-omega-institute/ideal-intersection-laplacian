@@ -8,6 +8,10 @@
   "generic_discriminant_remainder_factor": "4*A**3 - 18*A*B - 27*A*d**2 + 27*B*d + 27*N + 27*d**3",
   "generic_factor_discriminant_identity_verified": true,
   "positive_simple_root_identities_verified": true,
+  "curve_reduction_at_b_zero": "G(a[b(b+2)-a],b)=1-a^4modp",
+  "curve_a_derivative_at_b_zero": "-4*a^3modp",
+  "fixed_b_local_curve_existence": "For every fixed b in pZ_p, each residuea0 with a0^4=1modp lifts uniquely to a in a0+pZ_p satisfyingG=0. Derivative-4a0^3 is a unit for oddp.",
+  "surviving_mod5_rows_have_local_curve_points": "For every fixed b in5Z_5 the residuesa0=2,3 lift to two uniqueZ_5 equality points; each cubic splits overZ_5. They give simultaneous curve-and-splitting solutions modulo every5power, not integer equality points.",
   "prior_direct_quotient_sylvester_and_local_anchor_identities_reverified": true,
   "local_anchor": "3*b**2 + 2*b - 1",
   "fixed_prime_examples": [
@@ -67,7 +71,7 @@
   "exceptional_negative_branch": "p=13; not classified by the present normalized-unit argument.",
   "prior_local_certificate_sha256": "7212cc24ca300b1f78df199a8dff076ea2dcb22e8e34aecc455cefafe92d3153",
   "source_sha256": {
-    "check_endpoint_one_equality_local_splitting.py": "cef218fe175ee23613f5d9398e0b4dee4a681d52068c472d2d69b4f53bd16e13",
+    "check_endpoint_one_equality_local_splitting.py": "54eab360faadc30230f53b5620e104153e178b203a6d6434164000c3229f0183",
     "check_endpoint_one_equality_cubic.py": "47f1d32a62eb5f0a8f04565922201b5a9a13b5b5742d35d1a501ee3e57a11744",
     "check_endpoint_one_equality_local_discriminant.py": "4f25065a770b6c9ce346c3b9d724fa58b9efa0b3d35248ca95532dba9cd3dfde",
     "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"

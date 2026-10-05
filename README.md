@@ -14,7 +14,10 @@ at p=13. The q=1modp branch always splits over Z_p by three simple Hensel
 lifts. The q=-1modp branch splits exactly when13 is a residue modulo p;
 its two colliding roots differ by valuationv_p(b). In particular, the two
 surviving b=0mod5 rows pass splitting modulo every power of five. Higher
-five-power tables alone cannot exclude them. This is a written local result,
+five-power tables alone cannot exclude them. This is a written local result.
+For every fixed b in5Z_5, both rows also have unique local curve points
+with split cubics, so simultaneous curve-and-splitting tests cannot exclude
+them at any finite five-power modulus. These are local points,
 not a global integer splitting theorem or an integer-point construction.
 
 The [local discriminant proof](notes/endpoint-one-equality-local-discriminant.md)

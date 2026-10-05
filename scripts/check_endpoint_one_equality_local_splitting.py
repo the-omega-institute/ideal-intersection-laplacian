@@ -14,6 +14,9 @@ def certificate():
     first, middle, product, variable = sympy.symbols('a b q x')
     cubic = sympy.sympify(prior['cubic_P3'])
     curve = sympy.sympify(prior['curve_G'])
+    exponent_curve = sympy.expand(curve.subs(product, first * (middle * (middle + 2) - first)))
+    assert sympy.expand(exponent_curve.subs(middle, 0) - (1 - first ** 4)) == 0
+    assert sympy.expand(sympy.diff(exponent_curve, first).subs(middle, 0) + 4 * first ** 3) == 0
     assert sympy.expand(curve.subs(middle, 0) - (1 - product ** 2)) == 0
     positive_reduction = variable * (variable ** 2 + 1)
     negative_reduction = variable * (variable + 1) ** 2
@@ -63,6 +66,10 @@ def certificate():
         'generic_discriminant_remainder_factor': str(remainder_factor),
         'generic_factor_discriminant_identity_verified': True,
         'positive_simple_root_identities_verified': True,
+        'curve_reduction_at_b_zero': 'G(a[b(b+2)-a],b)=1-a^4modp',
+        'curve_a_derivative_at_b_zero': '-4*a^3modp',
+        'fixed_b_local_curve_existence': 'For every fixed b in pZ_p, each residuea0 with a0^4=1modp lifts uniquely to a in a0+pZ_p satisfyingG=0. Derivative-4a0^3 is a unit for oddp.',
+        'surviving_mod5_rows_have_local_curve_points': 'For every fixed b in5Z_5 the residuesa0=2,3 lift to two uniqueZ_5 equality points; each cubic splits overZ_5. They give simultaneous curve-and-splitting solutions modulo every5power, not integer equality points.',
         'prior_direct_quotient_sylvester_and_local_anchor_identities_reverified': True,
         'local_anchor': local['anchor_v'],
         'fixed_prime_examples': prime_examples,

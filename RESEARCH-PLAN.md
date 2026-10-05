@@ -4,7 +4,10 @@ The [local splitting classification](notes/endpoint-one-equality-local-splitting
 now settles every odd prime divisor of b except the negative branch at13.
 The positive q=1branch splits overZ_p; the negative q=-1branch splits
 iff13is a residue. Thus the surviving (a,b)=(2,0)/(3,0)mod5rows pass
-every5-power splitting test. Further work should use the actual integer
+every5-power splitting test.
+The curve also has two unique compatible local points for every fixed
+b in5Z_5, so simultaneous curve/splitting lifts do not exclude either row.
+Further work should use the actual integer
 root equation/global discriminant, primes not dividing b, the two b=2mod5
 rows, or a specific reduction for the exceptional negative branch at13.
 Do not enlarge5-power tables on the positive branch. Local compatibility

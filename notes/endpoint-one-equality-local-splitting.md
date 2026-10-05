@@ -18,12 +18,21 @@ In the split negative branch, write e=v_p(b). The two roots reducing
 to-1 have difference of valuation exactly e, while their differences
 from the root reducing to0 are units.
 
+For every fixed b in pZ_p, each residue a0 with a0⁴=1modp lifts
+uniquely to an a in a0+pZ_p on G=0. These are local curve points,
+not a construction of integer equality points.
+
 Thus, away from p=13 on the negative branch, the normalized
 discriminant condition is both necessary and sufficient for **local**
 splitting. Local splitting does not give an integer equality point or
 an integer spectrum.
 
 ## The positive branch already splits at every prime power
+
+For fixed b in pZ_p, substitute q=a[b(b+2)-a] into G. Its reduction
+is1-a⁴, and its derivative with respect to a is-4a³ modulo p.
+At every residue a0⁴=1 the derivative is a unit. Hensel's lemma
+therefore gives a unique curve solution a in each such residue class.
 
 At p|b, the curve equation reduces to G=1-q². Also q=-a²modp.
 For q=1, this forces a²=-1modp, and the cubic reduction is
@@ -43,6 +52,11 @@ over Z/5^kZ for every k>=1. Increasing the power of five in a splitting
 table cannot exclude those rows. This conclusion follows from a written
 lifting theorem, without enumerating any power or exponent range.
 Other equations or primes can still obstruct integer spectra.
+More strongly, for every fixed b in5Z_5 both residues a0=2 and3
+lift to unique local equality points, with completely split cubics.
+Thus simultaneous curve-and-splitting solutions exist in both rows
+modulo every finite power of five. No such local test can eliminate
+either full residue row. Their global integer feasibility remains open.
 
 ## The negative branch has a complete ordinary local criterion
 
@@ -86,6 +100,7 @@ still applies there. No assertion about the prime two is added.
 
 The [checker](../scripts/check_endpoint_one_equality_local_splitting.py)
 verifies both reductions, the simple-root derivative identities, generic
+curve reduction1-a⁴ and derivative-4a³, generic
 polynomial division and the discriminant identity modulo P3(d)=0.
 It reruns the established direct six-support characteristic identity,
 independent5x5Sylvester discriminant and local anchor identities. The
