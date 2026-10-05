@@ -1,0 +1,208 @@
+{
+  "written_theorem": "Every four-prime positive exponent vector (2,2,b,c), b,c>=2, is Laplacian nonintegral.",
+  "symbolic": {
+    "generic_principal_minors": [
+      "3*b*c + 3*b + 3*c + 4",
+      "9*b**2*c + 9*b**2 + 15*b*c + 18*b + 2*c + 8",
+      "15*b**2*c**2 + 33*b**2*c + 6*b**2 + 33*b*c**2 + 84*b*c + 28*b + 6*c**2 + 28*c + 16",
+      "10*b**2*c**2 + 42*b**2*c + 12*b**2 + 42*b*c**2 + 152*b*c + 56*b + 12*c**2 + 56*c + 32"
+    ],
+    "generic_endpoint_polynomial": "-5*b**2*c**2 + 12*b**2*c - 3*b**2 + 12*b*c**2 + 48*b*c + 8*b - 3*c**2 + 8*c + 3",
+    "tail_positive_coefficients": [
+      [
+        2,
+        2,
+        5
+      ],
+      [
+        2,
+        1,
+        58
+      ],
+      [
+        2,
+        0,
+        164
+      ],
+      [
+        1,
+        2,
+        58
+      ],
+      [
+        1,
+        1,
+        596
+      ],
+      [
+        1,
+        0,
+        1364
+      ],
+      [
+        0,
+        2,
+        164
+      ],
+      [
+        0,
+        1,
+        1364
+      ],
+      [
+        0,
+        0,
+        1600
+      ]
+    ],
+    "low_b_symbolic_rows": {
+      "2": "c**2 + 152*c + 7",
+      "3": "4*c*(65 - 3*c)",
+      "4": "-35*c**2 + 392*c - 13",
+      "5": "(32 - 4*c)*(17*c - 1)",
+      "6": "-111*c**2 + 728*c - 57"
+    },
+    "nonsquare_discriminants": {
+      "4": {
+        "discriminant": 151844,
+        "lower_square_anchor": 389
+      },
+      "6": {
+        "discriminant": 504676,
+        "lower_square_anchor": 710
+      }
+    },
+    "unique_integer_endpoint_pair": [
+      5,
+      8
+    ],
+    "exceptional_cubic": "x**3 - 210*x**2 + 7701*x - 53240",
+    "mod17_values_at_0_through_16": [
+      4,
+      16,
+      5,
+      11,
+      6,
+      13,
+      4,
+      2,
+      13,
+      9,
+      13,
+      14,
+      1,
+      14,
+      8,
+      6,
+      14
+    ],
+    "all_generic_identities": "passed"
+  },
+  "support_controls": [
+    {
+      "b": 2,
+      "c": 2,
+      "graph_vertices": 79,
+      "complement_vertices": 64,
+      "support_classes": 14,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "b": 2,
+      "c": 11,
+      "graph_vertices": 322,
+      "complement_vertices": 235,
+      "support_classes": 14,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "b": 3,
+      "c": 22,
+      "graph_vertices": 826,
+      "complement_vertices": 563,
+      "support_classes": 14,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "b": 4,
+      "c": 11,
+      "graph_vertices": 538,
+      "complement_vertices": 363,
+      "support_classes": 14,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "b": 5,
+      "c": 8,
+      "graph_vertices": 484,
+      "complement_vertices": 325,
+      "support_classes": 14,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "b": 6,
+      "c": 7,
+      "graph_vertices": 502,
+      "complement_vertices": 335,
+      "support_classes": 14,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "b": 7,
+      "c": 7,
+      "graph_vertices": 574,
+      "complement_vertices": 379,
+      "support_classes": 14,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "b": 19,
+      "c": 100,
+      "graph_vertices": 18178,
+      "complement_vertices": 10579,
+      "support_classes": 14,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    }
+  ],
+  "independent_expanded_graph_controls": [
+    {
+      "b": 2,
+      "c": 2,
+      "graph_vertices": 79,
+      "complement_vertices": 64,
+      "support_classes": 14,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": true,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "b": 2,
+      "c": 3,
+      "graph_vertices": 106,
+      "complement_vertices": 83,
+      "support_classes": 14,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": true,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    }
+  ],
+  "script_sha256": "61b96223fb3533159f008781d0ddabde498c56afc2492c99e3111df22afcba57",
+  "sympy_version": "1.14.0",
+  "scope": "Written infinite invariant-subspace and positive-minor proof; five symbolic low-b polynomials and one explicit17-residue irreducibility certificate, no finite exponent base or range scan. Eight specified support controls and two expanded graphs validate the implementation. No floating-point eigenvalues or Lean; full higher-prime nonsquarefree Q3 remains open."
+}

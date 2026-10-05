@@ -24,6 +24,13 @@ weight. For m>=2, every other exponent at least m^2(t-1) suffices. This
 settles unbounded all-exponents-at-least-two families for every prime
 count t>=4, while Q3 outside this sufficient criterion remains open.
 
+For four prime factors, every vector
+[(2,2,b,c), b,c>=2](notes/four-prime-pair-two.md) is nonintegral.
+An antisymmetric four-dimensional invariant subspace has its smallest
+restricted eigenvalue between one and three. The only possible integer
+endpoint pair is {b,c}={5,8}; its remaining cubic is irreducible modulo17.
+This written proof covers (2,2,2,2) and needs no finite exponent base.
+
 The [largest-root unit interval](notes/largest-root-unit-interval.md)
 proves bc+a+b+c<lambda_max<bc+a+b+c+1 for real3<=a<=b<=c,
 b-a>=3,c>=a²-a. On endpoint one, the established sum bound supplies
