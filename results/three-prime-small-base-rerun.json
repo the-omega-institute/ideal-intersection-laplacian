@@ -1,0 +1,31 @@
+{
+  "source_commit": "81a7dd3cdfd2d1c3008cf0aa4fc6147189d03731",
+  "environment": "Isolated venv created for the preceding large-base rerun, without system site packages; reused unchanged, Python3.14.4/SymPy1.14.0/mpmath1.3.0. New interpreter processes and a new detached source checkout; PYTHONDONTWRITEBYTECODE=1.",
+  "runs": [
+    {
+      "command": "python scripts/check_distinct_tail.py",
+      "exit_code": 0,
+      "historical_output": "results/distinct-tail.json",
+      "output_sha256": "1d47d675c2e2c84608f972b1db4663c1722930dc9706325e7d71b9231c27ea16",
+      "byte_identical_to_historical": true,
+      "source_sha256": "69625bd41521c58d8180783f1596b6381b67b36a77554cd14a461d11b999e324"
+    },
+    {
+      "command": "python scripts/check_repeated_exponent_completion.py",
+      "exit_code": 0,
+      "historical_output": "results/repeated-exponent-completion.json",
+      "output_sha256": "60b05de90014cb7482b9c28eff323b5cc4b334258d398aa92408fcd426941d1a",
+      "byte_identical_to_historical": true,
+      "source_sha256": "ba1a324ce71b47d731c07d1932a7f06e7bd1472582ec6de5f20bd0a1c77967c7"
+    },
+    {
+      "command": "python scripts/check_minimum_two.py",
+      "exit_code": 0,
+      "historical_output": "results/minimum-two.json",
+      "output_sha256": "945a77544bd63c08327d2512d0bb22860eefd12509a51fb65be5148a5c396fe7",
+      "byte_identical_to_historical": true,
+      "source_sha256": "2d8e719e0b7112e3099304bf4eca47164ec8ab8e4fa7836834c3aa28d0ca194e"
+    }
+  ],
+  "scope": "Selected earlier finite inputs omitted from the preceding fresh large-base rerun. No domain enlargement or new theorem. Written boundary/unit and other symbolic arguments remain dependencies, not all individually rerun."
+}

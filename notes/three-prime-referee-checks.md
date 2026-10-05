@@ -217,3 +217,14 @@ exponents and preserve nonintegrality.
 The full nonsquarefree higher-prime Q3 remains open. Integer endpoint-one
 and equality exponent points have not been enumerated or declared absent.
 No Lean verification, submission decision or authorship change is claimed.
+
+## Subsequent check of the smaller finite inputs
+
+The [smaller finite-input audit](three-prime-small-certificate-audit.md)
+subsequently reruns the minimum-three, repeated-exponent completion and
+minimum-two checkers, reproducing their historical outputs byte-identically.
+Its independent standard-library verifier checks all 325 minimum-three
+pairs, the complete divisors24/108/320 and eight root-free cubic
+certificates, and the minimum-two rational-endpoint exception. This
+supplements the original five checks without changing their theorem scope;
+the remaining written dependencies are not all individually rerun.

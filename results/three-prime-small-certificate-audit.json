@@ -1,0 +1,148 @@
+{
+  "method": "Python standard library only; disjoint-support matrix and direct integer Leibniz determinants, exact rational endpoint arithmetic; cubic coefficients recovered from independent 4x4 determinants at 1,2,3. No original checker imports or SymPy.",
+  "minimum_three": {
+    "complete_pairs": 325,
+    "h1_sign_counts": {
+      "positive": 257,
+      "negative": 68
+    },
+    "h1_h2_and_all_interval_endpoint_values": "passed",
+    "graph_lift_intervals": "passed"
+  },
+  "repeated_exponents": {
+    "complete_factor_indices": [
+      1,
+      2,
+      3
+    ],
+    "divisor_constants": [
+      24,
+      108,
+      320
+    ],
+    "root_free_cubic_certificates": [
+      {
+        "exponents": [
+          4,
+          2
+        ],
+        "prime": 5,
+        "cubic_coefficients": [
+          1,
+          -86,
+          2304,
+          -18816
+        ]
+      },
+      {
+        "exponents": [
+          6,
+          5
+        ],
+        "prime": 7,
+        "cubic_coefficients": [
+          1,
+          -245,
+          19266,
+          -488160
+        ]
+      },
+      {
+        "exponents": [
+          10,
+          12
+        ],
+        "prime": 13,
+        "cubic_coefficients": [
+          1,
+          -842,
+          230160,
+          -20534400
+        ]
+      },
+      {
+        "exponents": [
+          22,
+          35
+        ],
+        "prime": 17,
+        "cubic_coefficients": [
+          1,
+          -4919,
+          7887858,
+          -4132479120
+        ]
+      },
+      {
+        "exponents": [
+          12,
+          7
+        ],
+        "prime": 13,
+        "cubic_coefficients": [
+          1,
+          -751,
+          180348,
+          -13829760
+        ]
+      },
+      {
+        "exponents": [
+          12,
+          4
+        ],
+        "prime": 5,
+        "cubic_coefficients": [
+          1,
+          -568,
+          100032,
+          -5248512
+        ]
+      },
+      {
+        "exponents": [
+          20,
+          9
+        ],
+        "prime": 7,
+        "cubic_coefficients": [
+          1,
+          -1769,
+          992820,
+          -174744000
+        ]
+      },
+      {
+        "exponents": [
+          52,
+          30
+        ],
+        "prime": 7,
+        "cubic_coefficients": [
+          1,
+          -13394,
+          57771168,
+          -80229951360
+        ]
+      }
+    ]
+  },
+  "minimum_two": {
+    "exception": [
+      2,
+      3,
+      4
+    ],
+    "rational_endpoint_values": [
+      "-48",
+      "13437/32"
+    ]
+  },
+  "historical_certificate_sha256": {
+    "minimum_three": "1d47d675c2e2c84608f972b1db4663c1722930dc9706325e7d71b9231c27ea16",
+    "repeated_exponents": "60b05de90014cb7482b9c28eff323b5cc4b334258d398aa92408fcd426941d1a",
+    "minimum_two": "945a77544bd63c08327d2512d0bb22860eefd12509a51fb65be5148a5c396fe7"
+  },
+  "script_sha256": "acd295f0bffbeef54b05643e095d98fa8499cc66f8bc322d37e987819d24e732",
+  "scope": "Independent checks of the selected smaller finite inputs in the established three-prime proof. Written infinite reductions, repeated boundary family, unit-exponent theorem and other symbolic identities remain dependencies; not a fresh verification of every theorem. No new range, theorem or Lean; higher-prime nonsquarefree Q3 and orthogonality n=7 remain open."
+}

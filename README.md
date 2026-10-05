@@ -30,6 +30,11 @@ include a dependency diagram and a fresh complete rerun of both historical
 large bases, with byte-identical CSVs, independent five-term coefficient
 extracts, explicit small-gap uniqueness, and the integer-anchor domain.
 
+The [smaller finite-input audit](notes/three-prime-small-certificate-audit.md)
+reruns the earlier minimum-three, repeated-exponent and minimum-two
+checkers. Independent integer determinants also verify all 325 minimum-three
+pairs, eight root-free cubic certificates and the minimum-two rational endpoints.
+
 The [total-sum gap](notes/total-sum-spectral-gap.md) strengthens the
 three larger-root bound to lambda_4>a+b+c for real2<=a<=b<=c,
 with the sharp exception lambda_4=6 at(2,2,2). On endpoint one at
