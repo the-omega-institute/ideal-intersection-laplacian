@@ -1,5 +1,33 @@
 # Working manuscript
 
+## Three-prime classification core
+
+The [tensor diagnostic and consolidation guide](https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/665504c43f9e8eac39a0dbf81c57045e3b93c3af/notes/three-prime-tensor-consolidation.md)
+answers Professor Nikandish's question about replacing the three-prime
+chain by the repeated-pair tensor method. His existing boundary family
+has a wholly integral two-dimensional tensor spectrum for unbounded
+repeated exponents, so this block cannot supply a uniform witness.
+The unequal-pair space also fails invariance after zero-sum reweighting.
+
+The established hybrid core uses Theorem 7.1 for repeated entries and
+Corollary 11.4 for minimum at most seven. For fully distinct minima at
+least eight, it uses the low root (Theorem 12.2), endpoint-two completion
+(Theorem 14.8), endpoint-one sum bound (part of Theorem 14.2), small-gap
+brackets (Lemma 16.2) and largest-root interval (Theorem 16.1).
+The guide records a short complete assembly argument and identifies
+auxiliary arithmetic outside that route. Its
+[source review](https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/665504c43f9e8eac39a0dbf81c57045e3b93c3af/results/three-prime-classification-core-review.json)
+pins the existing inputs at manuscript revision `7be8459`.
+
+A shorter core can present the common-divisor/2-adic and local
+equality-curve results separately. It must retain the repeated-family
+subproofs, the 27,562- and 8,658-triple certificates and smaller finite
+inputs, and the complete coefficient identities. This guide does not
+establish a new certificate-free proof or a measured final page saving;
+the choice of companion material remains a manuscript scope decision.
+
+## Current results
+
 Theorem 8.6 proves every four-prime vector (3,3,b,c), b,c>=2, nonintegral.
 Tensor normalization gives a general repeated-pair lower bound; the
 exponent-three endpoint has no integer pair, by two positive expansions,
