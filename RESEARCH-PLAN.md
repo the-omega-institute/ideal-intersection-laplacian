@@ -1,5 +1,20 @@
 # First task: Laplacian integrality
 
+The [single-pair balanced theorem](notes/four-prime-single-pair-balanced.md)
+proves every four-prime vector (a,a,b,c), a<=b<=c<=2a-6, nonintegral,
+including unequal tails. Four positive leading-minor identities for the
+genuine 4x4 restriction give 3<kappa_min<4. Independently, every
+repeated-minimum vector a>=5,b,c>=a has kappa_min<4. The unequal-tail
+balanced region is outside the product-tail and small-exponent criteria.
+General single-pair and fully unequal four-prime classification stays open.
+
+Next examine repeated minima a>=5 with unequal tails beyond
+c<=2a-6 and outside the product-tail condition. The new universal bound
+1<kappa_min<4 leaves integer endpoints two and three; analyze their
+structure or another root without arbitrary exponent scans. Keep the
+completed three-prime main focused and final inclusion/stopping/submission
+joint. Earlier next-step paragraphs below retain historical scopes.
+
 The [double-pair completion](notes/four-prime-double-pair-completion.md)
 now settles all positive four-prime (a,a,b,b), including the transition.
 Written unique-root endpoint brackets and eight fixed cubic brackets

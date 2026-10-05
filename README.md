@@ -1,5 +1,13 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [single-pair balanced theorem](notes/four-prime-single-pair-balanced.md)
+proves every four-prime vector (a,a,b,c), a<=b<=c<=2a-6, nonintegral,
+including unequal tails. Four positive leading-minor identities for the
+genuine 4x4 restriction give 3<kappa_min<4. Independently, every
+repeated-minimum vector a>=5,b,c>=a has kappa_min<4. The unequal-tail
+balanced region is outside the product-tail and small-exponent criteria.
+General single-pair and fully unequal four-prime classification stays open.
+
 The [double-pair completion](notes/four-prime-double-pair-completion.md)
 proves every positive four-prime vector (a,a,b,b) nonintegral. Its
 smallest repeated-pair witness lies in one of (1,2),(2,3),(3,4), with
