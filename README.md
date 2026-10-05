@@ -85,6 +85,14 @@ The three established controls leave only23candidates, all nonzero under
 exact evaluation. No finite base or new nonintegrality family is claimed;
 the unbounded surface and full Q3 remain open.
 
+The [constant-divisibility analysis](notes/endpoint-one-constant-divisibility.md)
+proves **12 divides F(0)** on every integer endpoint-one triple, and the
+greatest common divisor of the constants over the full surface at
+minimum>=4 is exactly 12. The known repeated boundary also gives infinitely
+many divisors inside the smallest-root window that are not spectral roots.
+Thus the splitting problem must use F(d)=0 alongside divisibility and size.
+These are written unbounded results; the fully distinct region remains open.
+
 A standalone [middle-diagonal inertia restriction](notes/endpoint-two-middle-inertia.md)
 narrows the endpoint-two problem without further congruence lifting. For
 `4<=a<b<c`, `(b-2)(a+b+c-2)<=2ac` supplies a positive quotient root in `(0,2)`.

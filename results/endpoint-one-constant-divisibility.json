@@ -1,0 +1,358 @@
+{
+  "written_uniform_divisibility": "For every positive integer endpoint-one triple,12divides F(0)=rs(p+s): mixed parity gives4and the complete modulo3nonzero-residue argument gives3.",
+  "written_full_surface_gcd": "For all ordered integer4<=a<=b<=c on h_C(1)=0, gcd of the quartic constants is exactly12. Boundary family a=36k+26 gives v2=2,v3=1; residuesa=4mod5/a=5mod7exclude5/7; boundary polynomial degree9with leading16 excludes a universal prime ell>=11 by finite-field root count. This includes settled repeated triples, not a conclusion about the remaining fully distinct region.",
+  "written_infinite_divisor_candidates": "For a=6k,k>=1,c=(a-1)(2a-1), h_C(1)=0, c>2a, d=3a/2 lies in(a,2a)and dividesa^2henceF(0), but F(d)<0. Divisibility/size alone cannot eliminate all window candidates; F(d)=0is essential.",
+  "boundary_constant_factorization": "a**2*(a - 1)*(2*a - 1)*(2*a**2 - a + 1)*(4*a**3 - 3*a**2 + a + 1)",
+  "boundary_candidate_evaluation": "-a**2*(4*a**2 - 2*a - 1)*(8*a**5 + 48*a**4 - 132*a**3 + 95*a**2 - 32*a + 4)/16",
+  "positive_sign_factor_at_a4plusm": "8*m**5 + 208*m**4 + 1916*m**3 + 8239*m**2 + 16920*m + 13428",
+  "parity_table": [
+    {
+      "residues": [
+        0,
+        0,
+        0
+      ],
+      "h_C_at_one_mod2": 1
+    },
+    {
+      "residues": [
+        0,
+        0,
+        1
+      ],
+      "h_C_at_one_mod2": 0
+    },
+    {
+      "residues": [
+        0,
+        1,
+        0
+      ],
+      "h_C_at_one_mod2": 0
+    },
+    {
+      "residues": [
+        0,
+        1,
+        1
+      ],
+      "h_C_at_one_mod2": 0
+    },
+    {
+      "residues": [
+        1,
+        0,
+        0
+      ],
+      "h_C_at_one_mod2": 0
+    },
+    {
+      "residues": [
+        1,
+        0,
+        1
+      ],
+      "h_C_at_one_mod2": 0
+    },
+    {
+      "residues": [
+        1,
+        1,
+        0
+      ],
+      "h_C_at_one_mod2": 0
+    },
+    {
+      "residues": [
+        1,
+        1,
+        1
+      ],
+      "h_C_at_one_mod2": 1
+    }
+  ],
+  "modulo_three_table": [
+    {
+      "residues": [
+        0,
+        0,
+        0
+      ],
+      "h_C_at_one_mod3": 1,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        0,
+        0,
+        1
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        0,
+        0,
+        2
+      ],
+      "h_C_at_one_mod3": 2,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        0,
+        1,
+        0
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        0,
+        1,
+        1
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        0,
+        1,
+        2
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        0,
+        2,
+        0
+      ],
+      "h_C_at_one_mod3": 2,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        0,
+        2,
+        1
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        0,
+        2,
+        2
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        1,
+        0,
+        0
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        1,
+        0,
+        1
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        1,
+        0,
+        2
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        1,
+        1,
+        0
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        1,
+        1,
+        1
+      ],
+      "h_C_at_one_mod3": 2,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        1,
+        1,
+        2
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        1,
+        2,
+        0
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        1,
+        2,
+        1
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        1,
+        2,
+        2
+      ],
+      "h_C_at_one_mod3": 1,
+      "constant_mod3": 2
+    },
+    {
+      "residues": [
+        2,
+        0,
+        0
+      ],
+      "h_C_at_one_mod3": 2,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        2,
+        0,
+        1
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        2,
+        0,
+        2
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        2,
+        1,
+        0
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        2,
+        1,
+        1
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        2,
+        1,
+        2
+      ],
+      "h_C_at_one_mod3": 1,
+      "constant_mod3": 2
+    },
+    {
+      "residues": [
+        2,
+        2,
+        0
+      ],
+      "h_C_at_one_mod3": 0,
+      "constant_mod3": 0
+    },
+    {
+      "residues": [
+        2,
+        2,
+        1
+      ],
+      "h_C_at_one_mod3": 1,
+      "constant_mod3": 2
+    },
+    {
+      "residues": [
+        2,
+        2,
+        2
+      ],
+      "h_C_at_one_mod3": 1,
+      "constant_mod3": 0
+    }
+  ],
+  "generic_symbolic_identities": "passed",
+  "endpoint_one_controls": [
+    {
+      "exponents": [
+        8,
+        8,
+        105
+      ],
+      "h_C_at_one": 0,
+      "quartic_constant": 1516468800,
+      "constant_divided_by12": 126372400
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        136
+      ],
+      "h_C_at_one": 0,
+      "quartic_constant": 4551612912,
+      "constant_divided_by12": 379301076
+    },
+    {
+      "exponents": [
+        20,
+        20,
+        741
+      ],
+      "h_C_at_one": 0,
+      "quartic_constant": 7134703976400,
+      "constant_divided_by12": 594558664700
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_one_constant_divisibility.py": "595c7b6d5af0d18c0f7e7ab84a26d920b1ce400952a1cb0b7803c77a49abbaea",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Written universal constant divisibility12, exact full-surface gcd12and unbounded repeated-family false-positive divisor candidates with exact negative evaluation. Eight basic parity and27mod3residue rows, three established controls supplement proofs. No higher2adicshift or arbitrary parameter/modulus scan/floats/Lean. No fullydistinct survivor gcd classification, new nonintegrality family or fullQ3closure. Earlier proofs/certificates/manuscript unchanged; oldn7/four native axioms unaffected."
+}

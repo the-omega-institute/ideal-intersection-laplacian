@@ -83,6 +83,15 @@ a<d<min(c,a+b) of rs(p+s) with h_C(1)=F(d)=0. The three established
 controls leave23exact nonzero candidates; no parameter scan is needed.
 Written bounds require no finite base; full Q3 stays open.
 
+The [constant-divisibility proof](notes/endpoint-one-constant-divisibility.md)
+shows universal divisibility by 12 and exact gcd 12 over the whole integer
+endpoint-one surface at minimum>=4, including settled repeated triples.
+The family a=6k,b=a,c=(a-1)(2a-1) has divisors d=3a/2 in the window
+for infinitely many a, yet exact F(d)<0. A uniform splitting obstruction
+must use F(d)=0; divisor presence/size alone cannot close the full surface.
+The gcd on the narrower fully distinct surviving region is not determined.
+No higher two-adic lifts or exponent scan were used; full Q3 remains open.
+
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
 Appendices B/C; Appendix A summarizes verification, with the full checker
