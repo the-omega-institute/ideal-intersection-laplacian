@@ -1,5 +1,13 @@
 # First task: Laplacian integrality
 
+The [modulo-five obstruction](notes/endpoint-one-equality-mod-five.md)
+excludes two complete global residue classes and restricts the equality
+splitting problem to six (a,b) residue pairs. Modulo three gives no further
+splitting exclusions on the equality curve. Subsequent bounded research
+should combine this necessary residue information with the actual integer
+curve/root equations; compatible finite-field rows do not establish solutions.
+The endpoint-two completion is already integrated in the working PR3.
+
 The equality cubic now has explicit coefficient and discriminant formulas
 in [the arithmetic note](notes/endpoint-one-equality-cubic.md). A known
 integer equality point can be tested by its positive divisors above a+b

@@ -1,0 +1,490 @@
+{
+  "global_result": "Every positive triple that is a permutation of (1,1,2) or (1,4,4) modulo5 is Laplacian nonintegral.",
+  "global_classes": [
+    {
+      "residues_mod_5": [
+        1,
+        1,
+        2
+      ],
+      "quintic_factorization_mod_5": "(x - 3)*(x - 1)**2*(x**2 + 3*x + 4)",
+      "all_distinct_permutations_checked": 3
+    },
+    {
+      "residues_mod_5": [
+        1,
+        4,
+        4
+      ],
+      "quintic_factorization_mod_5": "(x - 1)**2*(x**3 + x**2 + 4*x + 3)",
+      "all_distinct_permutations_checked": 3
+    }
+  ],
+  "generic_equality_identity_verified": true,
+  "generic_six_permutations_verified": true,
+  "equality_residue_tables": {
+    "3": {
+      "pairs_checked": 9,
+      "curve_zero_rows": [
+        {
+          "a": 0,
+          "b": 1,
+          "c": 0,
+          "cubic_coefficients_descending": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "discriminant": 0,
+          "discriminant_is_square": true,
+          "distinct_roots": [
+            0,
+            1
+          ],
+          "splits_completely": true,
+          "factorization": "x**2*(x - 1)"
+        },
+        {
+          "a": 0,
+          "b": 2,
+          "c": 2,
+          "cubic_coefficients_descending": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "discriminant": 0,
+          "discriminant_is_square": true,
+          "distinct_roots": [
+            0,
+            2
+          ],
+          "splits_completely": true,
+          "factorization": "x*(x + 1)**2"
+        },
+        {
+          "a": 1,
+          "b": 0,
+          "c": 2,
+          "cubic_coefficients_descending": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "discriminant": 0,
+          "discriminant_is_square": true,
+          "distinct_roots": [
+            0,
+            2
+          ],
+          "splits_completely": true,
+          "factorization": "x*(x + 1)**2"
+        },
+        {
+          "a": 1,
+          "b": 2,
+          "c": 1,
+          "cubic_coefficients_descending": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "discriminant": 0,
+          "discriminant_is_square": true,
+          "distinct_roots": [
+            0,
+            2
+          ],
+          "splits_completely": true,
+          "factorization": "x**2*(x + 1)"
+        },
+        {
+          "a": 2,
+          "b": 0,
+          "c": 1,
+          "cubic_coefficients_descending": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "discriminant": 0,
+          "discriminant_is_square": true,
+          "distinct_roots": [
+            0,
+            2
+          ],
+          "splits_completely": true,
+          "factorization": "x*(x + 1)**2"
+        },
+        {
+          "a": 2,
+          "b": 2,
+          "c": 0,
+          "cubic_coefficients_descending": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "discriminant": 0,
+          "discriminant_is_square": true,
+          "distinct_roots": [
+            0,
+            2
+          ],
+          "splits_completely": true,
+          "factorization": "x*(x + 1)**2"
+        }
+      ],
+      "split_rows": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "5": {
+      "pairs_checked": 25,
+      "curve_zero_rows": [
+        {
+          "a": 0,
+          "b": 2,
+          "c": 3,
+          "cubic_coefficients_descending": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "discriminant": 0,
+          "discriminant_is_square": true,
+          "distinct_roots": [
+            0,
+            3
+          ],
+          "splits_completely": true,
+          "factorization": "x**2*(x + 2)"
+        },
+        {
+          "a": 1,
+          "b": 0,
+          "c": 4,
+          "cubic_coefficients_descending": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "discriminant": 0,
+          "discriminant_is_square": true,
+          "distinct_roots": [
+            0,
+            4
+          ],
+          "splits_completely": true,
+          "factorization": "x*(x + 1)**2"
+        },
+        {
+          "a": 1,
+          "b": 1,
+          "c": 2,
+          "cubic_coefficients_descending": [
+            1,
+            0,
+            0,
+            3
+          ],
+          "discriminant": 2,
+          "discriminant_is_square": false,
+          "distinct_roots": [
+            3
+          ],
+          "splits_completely": false,
+          "factorization": "(x + 2)*(x**2 - 2*x - 1)"
+        },
+        {
+          "a": 2,
+          "b": 0,
+          "c": 3,
+          "cubic_coefficients_descending": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "discriminant": 1,
+          "discriminant_is_square": true,
+          "distinct_roots": [
+            0,
+            2,
+            3
+          ],
+          "splits_completely": true,
+          "factorization": "x*(x - 2)*(x + 2)"
+        },
+        {
+          "a": 2,
+          "b": 1,
+          "c": 1,
+          "cubic_coefficients_descending": [
+            1,
+            0,
+            0,
+            3
+          ],
+          "discriminant": 2,
+          "discriminant_is_square": false,
+          "distinct_roots": [
+            3
+          ],
+          "splits_completely": false,
+          "factorization": "(x + 2)*(x**2 - 2*x - 1)"
+        },
+        {
+          "a": 3,
+          "b": 0,
+          "c": 2,
+          "cubic_coefficients_descending": [
+            1,
+            0,
+            1,
+            0
+          ],
+          "discriminant": 1,
+          "discriminant_is_square": true,
+          "distinct_roots": [
+            0,
+            2,
+            3
+          ],
+          "splits_completely": true,
+          "factorization": "x*(x - 2)*(x + 2)"
+        },
+        {
+          "a": 3,
+          "b": 2,
+          "c": 0,
+          "cubic_coefficients_descending": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "discriminant": 0,
+          "discriminant_is_square": true,
+          "distinct_roots": [
+            0,
+            3
+          ],
+          "splits_completely": true,
+          "factorization": "x**2*(x + 2)"
+        },
+        {
+          "a": 4,
+          "b": 0,
+          "c": 1,
+          "cubic_coefficients_descending": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "discriminant": 0,
+          "discriminant_is_square": true,
+          "distinct_roots": [
+            0,
+            4
+          ],
+          "splits_completely": true,
+          "factorization": "x*(x + 1)**2"
+        },
+        {
+          "a": 4,
+          "b": 1,
+          "c": 4,
+          "cubic_coefficients_descending": [
+            1,
+            1,
+            4,
+            3
+          ],
+          "discriminant": 1,
+          "discriminant_is_square": true,
+          "distinct_roots": [],
+          "splits_completely": false,
+          "factorization": "x**3 + x**2 - x - 2"
+        }
+      ],
+      "split_rows": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          0
+        ]
+      ]
+    }
+  },
+  "square_discriminant_nonsplit_curve_row": {
+    "a": 4,
+    "b": 1,
+    "c": 4,
+    "cubic_coefficients_descending": [
+      1,
+      1,
+      4,
+      3
+    ],
+    "discriminant": 1,
+    "discriminant_is_square": true,
+    "distinct_roots": [],
+    "splits_completely": false,
+    "factorization": "x**3 + x**2 - x - 2"
+  },
+  "irreducible_cubic_values_mod_5": [
+    3,
+    4,
+    3,
+    1,
+    4
+  ],
+  "irreducible_quadratic_discriminant_mod_5": 3,
+  "independent_integer_determinants": 83,
+  "direct_fixtures": [
+    {
+      "exponents": [
+        9,
+        16,
+        19
+      ],
+      "E": -260,
+      "h_C_at_1": -22088160,
+      "quintic_coefficients_descending": [
+        1,
+        -751,
+        181283,
+        -14506529,
+        72052428,
+        -79814592
+      ]
+    },
+    {
+      "exponents": [
+        11,
+        16,
+        22
+      ],
+      "E": -255,
+      "h_C_at_1": -46667520,
+      "quintic_coefficients_descending": [
+        1,
+        -917,
+        273161,
+        -26927707,
+        135375174,
+        -155387232
+      ]
+    },
+    {
+      "exponents": [
+        14,
+        21,
+        469
+      ],
+      "E": 0,
+      "h_C_at_1": -3282764400,
+      "quintic_coefficients_descending": [
+        1,
+        -18221,
+        87115973,
+        -58706347819,
+        1251546071538,
+        -1196209585872
+      ]
+    },
+    {
+      "exponents": [
+        26,
+        41,
+        1737
+      ],
+      "E": 0,
+      "h_C_at_1": -675344536800,
+      "quintic_coefficients_descending": [
+        1,
+        -122857,
+        3773984421,
+        -9856896222047,
+        407512625995514,
+        -398334848171832
+      ]
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        136
+      ],
+      "E": 46,
+      "h_C_at_1": 0,
+      "quintic_coefficients_descending": [
+        1,
+        -2991,
+        2549073,
+        -453423529,
+        5002490358,
+        -4551612912
+      ]
+    }
+  ],
+  "prior_cubic_certificate_sha256": "9718df7e98466b226c977b567015f3cfe51a5605eb1fab08f84e36ff0ed18cfc",
+  "source_sha256": {
+    "check_endpoint_one_equality_mod_five.py": "c5031a0d264fc9f0516eb7688d600e6c9b954fd44edf0cf1472a4585a5989097",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "sympy": "1.14.0",
+  "scope": "Written global modulo-five splitting obstruction and exact complete equality-residue tables at fixed primes3and5. 34residue pairs, separate root-multiset/routine splitting checks, 83independent720term integer determinants, five fixed controls. No exponent-range search, higher two-adic lift, integer equality-point enumeration, finite exponent base, rank or Lean. Equality integer feasibility/globalQ3 remain open."
+}

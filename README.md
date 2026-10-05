@@ -8,6 +8,17 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+The [modulo-five splitting proof](notes/endpoint-one-equality-mod-five.md)
+now excludes every permutation of `(1,1,2)` or `(1,4,4)` modulo five,
+without size, gap or endpoint hypotheses. On the equality curve G=0,
+integral splitting requires b!=1mod5 and one of six explicit residue pairs.
+One excluded cubic has square discriminant modulo five but is irreducible;
+the root equation adds information beyond the discriminant-square test.
+The complete fixed-prime tables and independent determinant checks are saved.
+The working manuscript on [PR3](https://github.com/the-omega-institute/ideal-intersection-laplacian/pull/3)
+has already integrated the endpoint-two completion; this branch retains
+the separate research notes and their exact evidence.
+
 The [explicit equality cubic](notes/endpoint-one-equality-cubic.md) now
 gives its three coefficients and discriminant in a,b. Generic determinant
 and Sylvester identities are checked exactly. At each known integer equality
