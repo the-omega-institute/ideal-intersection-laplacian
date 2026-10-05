@@ -9,12 +9,13 @@ which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
 Theorem14.2 now includes the global real gap
-lambda_3<a+b<=b+c<lambda_4, without endpoint or equality hypotheses.
-Corollary14.3 places the smallest endpoint-one quartic root in
-(a,min(c,a+b)) and the three larger roots above b+c. The equality
+lambda_3<a+b<a+b+c<=lambda_4, with equality only at(2,2,2).
+Corollary14.3 combines the smallest-root divisor window with the strict
+coefficient interval N/D<mu_1<N/(D-NR), and puts the three larger
+endpoint-one roots above s=a+b+c. The equality
 index/simplicity proof is retained, with its redundant gap proof removed;
 the E-sign test now refines only the smallest-root window. Exact supporting
-sources are pinned to PR9 `fb1d7c0134ad385931e3b4e43e445695bc4bf566`.
+sources are pinned to PR9 `4a451ac51055c6d04926967749196f12ac8e49c8`.
 Residue additions are paused; residual quartic/globalQ3 remain open.
 
 Proposition13.9 now requires b=104mod169 for an integral equality spectrum

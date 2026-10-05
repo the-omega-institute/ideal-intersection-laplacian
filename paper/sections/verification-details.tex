@@ -286,14 +286,18 @@ independent integer-Horner and $6\times6$ Bareiss evaluations in every
 case. The complete CSV and JSON reproduce byte-for-byte. Seven direct
 quotient/Horner/Sturm fixtures and the repeated control supplement the
 proof; earlier minimum-through-seven certificates remain dependencies.
-\item At PR9 revision \path{fb1d7c0134ad385931e3b4e43e445695bc4bf566},
-\path{check_global_pair_sum_separation.py} verifies the generic support
-quotient, weighted symmetry, principal decompositions, shifted high-pair
-determinant and pair-sum quintic identities. Five specified controls and
-ten direct $6\times6$ Bareiss determinants supplement the written
-global gap. Sturm counts weight squarefree factors by multiplicity,
-including the repeated $(4,4,4)$ control and the endpoint-one quartic
-at $(9,9,136)$. Source hashes and byte-identical reproduction are recorded;
+\item At the
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4a451ac51055c6d04926967749196f12ac8e49c8/scripts/check_total_sum_spectral_gap.py}{pinned PR9 revision},
+\path{check_total_sum_spectral_gap.py} verifies the generic support
+quotient, weighted symmetry, shifted high-pair determinant, symmetric
+total-sum quintic identity, quartic coefficients and denominator identity.
+Six specified controls and six direct $6\times6$ Bareiss determinants
+include the sharp $(2,2,2)$ boundary and repeated $(4,4,4)$ control.
+Sturm counts weight squarefree factors by multiplicity and exclude finite
+interval endpoints. The three existing endpoint-one controls filter the
+same $23$ divisor candidates to four, with nonzero integer Horner values
+and one quartic root in each rational coefficient window.
+Source/prior hashes and byte-identical reproduction are recorded;
 there is no parameter scan or Lean verification.
 \item At PR9, \path{check_endpoint_one_equality_cubic.py} verifies
 the explicit cubic's generic quotient identity and discriminant by an

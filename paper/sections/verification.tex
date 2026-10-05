@@ -152,17 +152,24 @@ finite diagnostics supplement the written bounds.
 
 The global gap in Theorem~\ref{thm:endpoint-one-spectrum} has no endpoint
 or equality hypothesis. Its
-\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/fb1d7c0134ad385931e3b4e43e445695bc4bf566/scripts/check_global_pair_sum_separation.py}{pinned checker}
-verifies the generic principal decompositions, shifted singleton-block
-determinant and both pair-sum quintic identities. Five specified controls
-$(2,2,3)$, $(4,4,4)$, $(9,9,136)$, $(9,12,159)$ and $(9,30,951)$
-give ten direct $6\times6$ Bareiss checks. Exact Sturm counts are summed
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4a451ac51055c6d04926967749196f12ac8e49c8/scripts/check_total_sum_spectral_gap.py}{pinned checker}
+verifies the shifted singleton-block determinant, symmetric total-sum
+identity, exact quartic coefficients and denominator-positivity identity.
+Six specified controls $(2,2,2)$, $(2,2,3)$, $(4,4,4)$, $(9,9,136)$,
+$(9,12,159)$ and $(9,30,951)$ give six direct $6\times6$ Bareiss
+checks at the total sum. The first is the sharp boundary where
+$\lambda_4=6$. Exact Sturm counts are summed
 over squarefree factors with their multiplicities. In particular,
 $(4,4,4)$ has characteristic polynomial
 $x(x-20)(x^2-32x+48)^2$: three eigenvalues lie below eight although
 there are only two distinct roots there. The endpoint-one control
-$(9,9,136)$ has one quartic root below $145$ and three above.
-These fixed diagnostics supplement the written global proof.
+$(9,9,136)$ has one quartic root below $154$ and three above.
+The reciprocal coefficient window filters the same $23$ old divisors
+at the three endpoint-one controls to $10$; $11$; and $25,26$,
+respectively. All four integer Horner values are nonzero, and exact
+Sturm counts put one quartic root in each rational interval.
+These fixed diagnostics supplement the written global and coefficient proofs;
+the controls were already settled by the repeated-exponent theorem.
 
 Proposition~\ref{prop:endpoint-one-equality-spectrum} retains the written
 index and simplicity argument. The
@@ -171,7 +178,7 @@ verifies the principal factors, weighted symmetry and nonzero coupling.
 The earlier
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/9e98266eb279a31b7282cea17fca3f5af6d9410f/scripts/check_endpoint_one_equality_second_root.py}{equality pair-sum checker}
 retains the superseded lower bound $a+b$ and its three off-endpoint
-controls. The present stronger bound $b+c$ follows from the global theorem.
+controls. The present stronger bound $s$ follows from the global theorem.
 
 \subsection{Modulo-five splitting and equality residues}
 

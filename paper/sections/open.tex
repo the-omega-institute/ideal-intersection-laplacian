@@ -27,20 +27,24 @@ Write $h_C(x)=(x-1)F(x)$, $s=a+b+c$, $p=ab+ac+bc$ and $r=abc$.
 Theorem~\ref{thm:endpoint-one-spectrum} gives four real roots of $F$
 strictly above $a$, and Corollary~\ref{cor:endpoint-one-divisor-window}
 places their smallest in $(a,\min\{c,a+b\})$. Its integer value must
-divide $N_4=rs(p+s)$, while all three larger roots exceed $b+c$,
+divide $N_4=rs(p+s)$, while all three larger roots exceed $s=a+b+c$,
 without an equality or sign condition. The sign parameter
 $E=c+a-b(b+2)$ refines only the smallest-root window:
 \[
  E>0:\quad b<d<\min\{c,a+b\},\qquad
  E<0:\quad a<d<b.
 \]
-Since the three larger roots exceed $b+c>b$, the sign of
+Since the three larger roots exceed $s>b$, the sign of
 $F(b)=r^2E/(b-1)$ determines the side of $b$ on which the smallest
 root lies. This gives the displayed refinements and, when $E=0$,
 the simple smallest residual root $b$. The earlier
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/notes/endpoint-one-middle-root.md}{regime proof}
 retains the original interlacing argument. Proposition~\ref{prop:endpoint-one-equality-spectrum}
 also identifies $b$ off endpoint one on the equality surface.
+The coefficient interval in Corollary~\ref{cor:endpoint-one-divisor-window}
+further requires $N_4/D<d<N_4/(D-N_4R)$, where $D$ is minus the
+linear coefficient of $F$, $U=\min\{c,a+b\}$ and
+$R=2/s+1/(p+s-1-U)$. Both denominator and endpoints are positive.
 
 \paragraph{Coefficient and exponent tests.}
 Write $F(x)=x^4-\alpha x^3+\beta x^2-\delta x+N_4$. Every integer
@@ -73,7 +77,7 @@ septic in Remark~\ref{rem:endpoint-one-equality-curve}, and define
 The generic identity is
 $h_C(x)=(x-1)(x-b)P_3(x)+x(x-b)G(a,b)$, so this is precisely the
 spectral cubic when $G(a,b)=0$. The equality splitting problem is:
-find all integers $4\leq a<b$, $d>b+c=b(b+3)-a$ and $u\geq0$ such that
+find all integers $4\leq a<b$, $d>s=b(b+3)$ and $u\geq0$ such that
 \[
  G(a,b)=0,\qquad P_3(d)=0,\qquad \Delta(a,b)=u^2.
 \]
@@ -89,7 +93,7 @@ square and hence an integer square; its parity gives integer roots.
 If $P_3'(d)=0$, the repeated root is $d$ and the third root is
 $A_3-2d$, also an integer. Thus the displayed system is equivalent
 to integral splitting on the equality curve. At each known point,
-only divisors $d\mid N_3$ above $b+c$ need testing. The
+only divisors $d\mid N_3$ above $s$ need testing. The
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/notes/endpoint-one-equality-cubic.md}{explicit cubic note}
 and its certificate retain the full $61$-term discriminant.
 

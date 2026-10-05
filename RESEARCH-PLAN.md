@@ -1,7 +1,8 @@
 # First task: Laplacian integrality
 
-The integrated global pair-sum gap now separates the three endpoint-one
-quartic roots above b+c from the smallest root in(a,min(c,a+b)).
+The integrated total-sum gap now separates the three endpoint-one
+quartic roots above s=a+b+c from the smallest root in(a,min(c,a+b)).
+The reciprocal-root argument further gives N/D<mu_1<N/(D-NR).
 Continue bounded structural work combining these bounds with the exact
 coefficients and smallest-root equation on d=b-a>=3,a<2d²+20.
 Residue-by-residue refinements are paused; older arithmetic leads below
