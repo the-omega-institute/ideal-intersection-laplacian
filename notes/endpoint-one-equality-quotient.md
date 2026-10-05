@@ -59,6 +59,39 @@ not classify maps of higher degree, involutions of the original genus-ten
 curve, or maps defined over number fields. No genus-one or genus-two
 subcover supporting an effective integer-point computation is established.
 
+## What remains of higher-degree descent
+
+There is a stronger conclusion for genus-two targets. A nonconstant map
+from H to a smooth projective genus-two curve has degree d satisfying
+Riemann-Hurwitz: 2*3-2 >= d(2*2-2), hence d<=2. Degree one would be
+an isomorphism and contradict the genera; degree two over Q would supply
+the extra rational involution excluded above. Thus H has no map over Q
+to a genus-two curve of any degree. This uses the existing finite
+branch-stabilizer certificate and the written specialization argument.
+
+For a map from the original genus-ten curve C to a genus-two target,
+the same inequality gives d<=9. Degrees three through nine are not
+excluded, nor are degree-two maps from C other than its known genus-three
+quotient. For genus-one targets, Riemann-Hurwitz gives no degree bound.
+Such a map would force a genus-one Jacobian factor of J(C) or J(H),
+up to isogeny over the field of definition. An automorphism obstruction
+does not establish the absence of those factors.
+
+Over number fields the F5-rational branch-stabilizer calculation is not
+a geometric automorphism classification. An extra automorphism could
+reduce to a transformation defined over an extension of F5. Maps and
+Jacobian decompositions after field extension therefore remain open.
+In particular, the known C-to-H quotient leaves a dimension-seven Prym
+factor in addition to J(H); its arithmetic has not been analyzed here.
+
+Descent remains viable in principle, but no effective route to integer
+points is established. A focused next diagnostic would be a certified
+isogeny-factor analysis of J(H), followed by a rank bound if an applicable
+Chabauty or covering method emerges. Even a low-genus map must retain
+the lift 2a=b(b+2)+sqrt(t^2-4q), integrality and the ordered exponent
+restrictions. Number-field computations would also need descent back
+to Q. These are proposed steps, not completed calculations.
+
 ## Rank and presentation
 
 No Mordell-Weil rank or certified bound has been computed for either
