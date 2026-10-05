@@ -107,7 +107,9 @@ exactly one residual root lies below b. Integer candidates therefore lie
 in (b,min(c,a+b)) or (a,b), respectively. At equality the
 [equality theorem](notes/endpoint-one-equality-root.md) identifies b as
 the simple smallest residual root; integer feasibility and splitting
-of the remaining cubic stay open. The proof
+of the remaining cubic stay open. The [equality curve analysis](notes/endpoint-one-equality-curve.md)
+gives geometric genus ten and integer-point finiteness, without a point list.
+The proof
 uses determinant sign and principal interlacing, with no finite base.
 
 The [higher-coefficient analysis](notes/endpoint-one-root-hierarchy.md)

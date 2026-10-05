@@ -108,7 +108,9 @@ At equality the [equality theorem](notes/endpoint-one-equality-root.md)
 identifies b as the simple smallest residual root, even proving
 lambda_3=b on the full real equality subfamily without endpoint one.
 Integer equality feasibility and splitting of the remaining cubic stay
-open. Use coefficient/anchor congruences in the refined windows
+open. The [equality curve](notes/endpoint-one-equality-curve.md) has geometric
+genus ten, so integer points are finite but not enumerated. Effective integer
+classification requires additional work. Use coefficient/anchor congruences in the refined windows
 when studying integer feasibility or splitting. Two selected real algebraic
 endpoint controls show both strict regimes; the written proof needs no
 finite base. No new nonintegrality family or full Q3 closure is claimed.

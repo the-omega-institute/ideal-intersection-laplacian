@@ -1,0 +1,26 @@
+{
+  "plane_total_degree": 7,
+  "degree_in_a": 4,
+  "degree_in_b": 7,
+  "quotient_R": "b*q*(b**2 + 4*b - 1) + q**2*(3*b - 1) + (-b**2 - 2*b + 1)*(b**2 + 3*b - 1)*(b**3 + 3*b**2 + 3*b - 1)",
+  "quotient_discriminant_D": "12*b**8 + 92*b**7 + 233*b**6 + 172*b**5 - 154*b**4 - 172*b**3 + 161*b**2 - 44*b + 4",
+  "norm_numerator_N": "(b**3 + 5*b**2 + 6*b - 2)*(3*b**6 + 8*b**5 - 6*b**4 - 36*b**3 - 28*b**2 + 40*b - 8)",
+  "norm_denominator": "3*b - 1",
+  "gcd_D_Dprime": 1,
+  "gcd_N_Nprime": 1,
+  "gcd_N_D": 1,
+  "N_at_one_third": "368/729",
+  "D_at_one_third": "16/729",
+  "written_quotient_genus": 3,
+  "written_double_cover_branch_count": 10,
+  "written_geometric_genus": 10,
+  "geometrically_irreducible": true,
+  "integer_point_list_computed": false,
+  "literature_identification_established": false,
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_one_equality_curve.py": "5c973f6372ed51916b86bb0ef634772677118a1ce161ffe39d7c98a6fb597130",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Exact curve identities and written normalization/ramification/Riemann-Hurwitz genus10 proof; Siegel gives integer-point finiteness, not a list or admissible-triple emptiness. Existing regime-specific windows and division-free necessary middle-anchor condition only; no new spectral family/globalQ3closure, integer/modulus scan, higher2adicshift or Lean. Prior manuscript/proofs/finite dependencies and oldn7/four native axioms retained."
+}

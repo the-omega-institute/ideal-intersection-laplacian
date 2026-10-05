@@ -91,7 +91,9 @@ integer coefficients. The earlier [G(a,b)=0 equation](endpoint-one-root-hierarch
 still controls whether such an integer endpoint-one point exists.
 If it does, integer spectra still require P_3 to split into three integer
 roots greater than b. This note resolves b's index and simplicity; integer
-feasibility and the remaining cubic splitting stay open.
+feasibility and the remaining cubic splitting stay open. The subsequent
+[curve analysis](endpoint-one-equality-curve.md) proves that G has geometric
+genus ten, giving integer-point finiteness without an effective list.
 
 | (a,b,c) | Other nonzero quotient roots below b | Above b | Full multiplicity of b | Endpoint one? |
 |---|---:|---:|---:|---|
