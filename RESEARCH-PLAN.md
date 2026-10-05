@@ -110,7 +110,11 @@ lambda_3=b on the full real equality subfamily without endpoint one.
 Integer equality feasibility and splitting of the remaining cubic stay
 open. The [equality curve](notes/endpoint-one-equality-curve.md) has geometric
 genus ten, so integer points are finite but not enumerated. Effective integer
-classification requires additional work. Use coefficient/anchor congruences in the refined windows
+classification requires additional work.
+The [quotient descent check](notes/endpoint-one-equality-quotient.md) rules out
+further rational degree-two descent to genus one or two on the known
+genus-three quotient. Other maps and both Jacobian ranks remain open.
+Use coefficient/anchor congruences in the refined windows
 when studying integer feasibility or splitting. Two selected real algebraic
 endpoint controls show both strict regimes; the written proof needs no
 finite base. No new nonintegrality family or full Q3 closure is claimed.

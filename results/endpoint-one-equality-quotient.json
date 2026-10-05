@@ -1,0 +1,48 @@
+{
+  "quotient": "H: y^2=D(b), geometric genus3",
+  "prime": 5,
+  "D_coefficients_ascending": [
+    4,
+    -44,
+    161,
+    -172,
+    -154,
+    172,
+    233,
+    92,
+    12
+  ],
+  "D_mod5_coefficients_ascending": [
+    4,
+    1,
+    1,
+    3,
+    1,
+    2,
+    3,
+    2,
+    2
+  ],
+  "squarefree_mod5": true,
+  "good_reduction_at5": true,
+  "PGL2_F5_elements_exhausted": 120,
+  "branch_stabilizer_F5": [
+    [
+      1,
+      0,
+      0,
+      1
+    ]
+  ],
+  "written_no_extra_Q_involution_on_H": true,
+  "written_no_degree_two_Q_quotient_of_H_of_genus_one_or_two": true,
+  "all_low_genus_maps_from_genus10_curve_excluded": false,
+  "jacobian_rank_computed": false,
+  "integer_points_computed": false,
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_one_equality_quotient.py": "34048537d765c3a779f5cc041b68f7e906b9b06b2e4b7c370594426a5d4c0fa1"
+  },
+  "input_curve_certificate_sha256": "6164fcd93704c9c5b2100df072f9f7f8190fb20edb28b6a7cd02be1461e2fcfc",
+  "scope": "One complete120element PGL2(F5) branch-stabilizer computation at verified good reduction, supporting written tame-specialization exclusion of extra rational involutions on known genus3quotient. This is not an exponent/modulus scan, a rank computation, or exclusion of all low-genus maps of original genus10curve. Classical Chabauty requires rank<genus; quotient rank<=2 would suffice on H, no rank bound established. Prior proof/finite dependencies/oldn7/four native axioms retained; no Lean/sharedCI/merge/publication/email."
+}

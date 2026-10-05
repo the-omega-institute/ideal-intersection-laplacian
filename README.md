@@ -109,6 +109,9 @@ in (b,min(c,a+b)) or (a,b), respectively. At equality the
 the simple smallest residual root; integer feasibility and splitting
 of the remaining cubic stay open. The [equality curve analysis](notes/endpoint-one-equality-curve.md)
 gives geometric genus ten and integer-point finiteness, without a point list.
+The [quotient descent check](notes/endpoint-one-equality-quotient.md) rules out
+extra rational involutions on its known genus-three quotient; other low-genus
+maps and Jacobian ranks remain unclassified.
 The proof
 uses determinant sign and principal interlacing, with no finite base.
 
