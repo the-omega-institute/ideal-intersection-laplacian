@@ -1,0 +1,411 @@
+{
+  "written_theorem": "Every positive integer four-prime vector(a,a,b,b+r),r in {1,2},has a restricted root in(a+b+1,a+b+2) and a noninteger graph eigenvalue in(V-a-b-1,V-a-b); no ordering or size condition on a,b.",
+  "general_root_window": "Every positive integer a,b,c with b<c has a restricted root in(a+b+1,a+c+1); for wider tail gaps this interval alone does not exclude integers.",
+  "symbolic": {
+    "generic_symmetry_and_two_endpoint_factorizations": "passed",
+    "characteristic_polynomial_at_a_plus_b_plus_one": "a*b*(b - c)*(a + b + 1)*(a*b*c + a*b - a*c + b*c)",
+    "characteristic_polynomial_at_a_plus_c_plus_one": "-a*c*(b - c)*(a + c + 1)*(a*b*c - a*b + a*c + b*c)",
+    "tail_gap_two_midpoint_identity": "(2*a + 1)*(a**2*b**2 + 4*a**2*b + 2*a**2 + a*b**3 + 5*a*b**2 + 7*a*b + 3*a + b**3 + 4*b**2 + 4*b + 1)",
+    "midpoint_positive_coefficient_count": 15,
+    "new_coverage_families": [
+      {
+        "tail_gap": 1,
+        "product_tail_failure_margin_at_b_equals_2a": "4*a**3 - a**2 - 9*a",
+        "positive_coefficients_at_a_equals_5_plus_u_descending": [
+          4,
+          59,
+          281,
+          430
+        ]
+      },
+      {
+        "tail_gap": 2,
+        "product_tail_failure_margin_at_b_equals_2a": "4*a**3 - 11*a - 1",
+        "positive_coefficients_at_a_equals_5_plus_u_descending": [
+          4,
+          60,
+          289,
+          444
+        ]
+      }
+    ]
+  },
+  "fixed_controls": [
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "graph_vertices": 22,
+      "complement_vertices": 21,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 1,
+      "b": 1,
+      "tail_gap": 1,
+      "quartic_coefficients": [
+        1,
+        -25,
+        193,
+        -552,
+        504
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          504
+        ],
+        [
+          1,
+          121
+        ],
+        [
+          2,
+          -12
+        ],
+        [
+          3,
+          -9
+        ],
+        [
+          4,
+          40
+        ],
+        [
+          5,
+          69
+        ]
+      ],
+      "two_direct_interval_endpoint_values": [
+        -9,
+        40
+      ],
+      "restricted_root_interval": [
+        3,
+        4
+      ],
+      "graph_root_interval": [
+        19,
+        20
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        1,
+        3
+      ],
+      "graph_vertices": 286,
+      "complement_vertices": 212,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 1,
+      "tail_gap": 2,
+      "quartic_coefficients": [
+        1,
+        -95,
+        2480,
+        -19365,
+        43659
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          43659
+        ],
+        [
+          1,
+          26680
+        ],
+        [
+          2,
+          14105
+        ],
+        [
+          3,
+          5400
+        ],
+        [
+          4,
+          55
+        ],
+        [
+          5,
+          -2416
+        ]
+      ],
+      "two_direct_interval_endpoint_values": [
+        -560,
+        2915
+      ],
+      "restricted_root_interval": [
+        7,
+        8
+      ],
+      "graph_root_interval": [
+        279,
+        280
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        10,
+        11
+      ],
+      "graph_vertices": 4750,
+      "complement_vertices": 2001,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 10,
+      "tail_gap": 1,
+      "quartic_coefficients": [
+        1,
+        -941,
+        114323,
+        -1876072,
+        4015264
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          4015264
+        ],
+        [
+          1,
+          2252575
+        ],
+        [
+          2,
+          712900
+        ],
+        [
+          3,
+          -609371
+        ],
+        [
+          4,
+          -1719824
+        ],
+        [
+          5,
+          -2624021
+        ]
+      ],
+      "two_direct_interval_endpoint_values": [
+        -524000,
+        621775
+      ],
+      "restricted_root_interval": [
+        16,
+        17
+      ],
+      "graph_root_interval": [
+        4734,
+        4735
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        20,
+        20,
+        40,
+        42
+      ],
+      "graph_vertices": 777481,
+      "complement_vertices": 105482,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 20,
+      "b": 40,
+      "tail_gap": 2,
+      "quartic_coefficients": [
+        1,
+        -38828,
+        65559482,
+        -4093679604,
+        11127571749
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          11127571749
+        ],
+        [
+          1,
+          7099412800
+        ],
+        [
+          2,
+          3202139861
+        ],
+        [
+          3,
+          -564480000
+        ],
+        [
+          4,
+          -4200679691
+        ],
+        [
+          5,
+          -7706692096
+        ]
+      ],
+      "two_direct_interval_endpoint_values": [
+        -3439424000,
+        91061861
+      ],
+      "restricted_root_interval": [
+        61,
+        62
+      ],
+      "graph_root_interval": [
+        777420,
+        777421
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        7,
+        7,
+        50,
+        51
+      ],
+      "graph_vertices": 169726,
+      "complement_vertices": 44777,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 7,
+      "b": 50,
+      "tail_gap": 1,
+      "quartic_coefficients": [
+        1,
+        -22055,
+        17579007,
+        -987295458,
+        2005257780
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          2005257780
+        ],
+        [
+          1,
+          1035519275
+        ],
+        [
+          2,
+          100806468
+        ],
+        [
+          3,
+          -799012935
+        ],
+        [
+          4,
+          -1664071204
+        ],
+        [
+          5,
+          -2494500585
+        ]
+      ],
+      "two_direct_interval_endpoint_values": [
+        -413977900,
+        429832641
+      ],
+      "restricted_root_interval": [
+        58,
+        59
+      ],
+      "graph_root_interval": [
+        169668,
+        169669
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        30,
+        30,
+        60,
+        62
+      ],
+      "graph_vertices": 3693121,
+      "complement_vertices": 345122,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 30,
+      "b": 60,
+      "tail_gap": 2,
+      "quartic_coefficients": [
+        1,
+        -123038,
+        458763112,
+        -42453203394,
+        119114296119
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          119114296119
+        ],
+        [
+          1,
+          77119732800
+        ],
+        [
+          2,
+          36041957491
+        ],
+        [
+          3,
+          -4119768000
+        ],
+        [
+          4,
+          -43366181841
+        ],
+        [
+          5,
+          -81698022176
+        ]
+      ],
+      "two_direct_interval_endpoint_values": [
+        -37759176000,
+        653988991
+      ],
+      "restricted_root_interval": [
+        91,
+        92
+      ],
+      "graph_root_interval": [
+        3693030,
+        3693031
+      ],
+      "sturm_roots_in_interval": 1
+    }
+  ],
+  "script_sha256": "66a06895ff7856373927f77b49673224f95f028723b1e14b78a0bbaee3a9db39",
+  "support_embedding_dependency_sha256": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+  "sympy_version": "1.14.0",
+  "scope": "Written unbounded two-parameter nonintegrality families and a general wider root window, supported by six specified exact support/integer-determinant/Sturm controls. No exponent scan, finite exponent base, expanded vertex graph, floating eigensolver, historical finite-base rerun or Lean. General single-pair and fully unequal four-prime classification remains open."
+}

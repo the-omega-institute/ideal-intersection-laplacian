@@ -1,5 +1,21 @@
 # First task: Laplacian integrality
 
+The [single-pair small-gap theorem](notes/four-prime-single-pair-small-gap.md)
+proves every positive (a,a,b,b+r), r=1 or 2, nonintegral, with no
+ordering or size condition on a,b. A restricted root lies in
+(a+b+1,a+b+2), giving a graph eigenvalue in(V-a-b-1,V-a-b).
+Two generic endpoint factorizations and one positive midpoint identity
+supply the written proof. The families(a,a,2a,2a+r),a>=5,add coverage
+outside the balanced, product-tail and small-exponent criteria.
+
+Next examine repeated minima with unequal tail gap at least three,
+outside the balanced/product-tail regions. The new generic higher-root
+window(a+b+1,a+c+1)and the established smallest-root window(1,4)
+are available, but wider windows do not exclude integers. Use a bounded
+structural question without exponent scans. Keep the three-prime main
+focused and final inclusion/stopping/submission joint. Earlier next-step
+paragraphs below retain historical scopes.
+
 The [single-pair balanced theorem](notes/four-prime-single-pair-balanced.md)
 proves every four-prime vector (a,a,b,c), a<=b<=c<=2a-6, nonintegral,
 including unequal tails. Four positive leading-minor identities for the

@@ -1,5 +1,13 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [single-pair small-gap theorem](notes/four-prime-single-pair-small-gap.md)
+proves every positive (a,a,b,b+r), r=1 or 2, nonintegral, with no
+ordering or size condition on a,b. A restricted root lies in
+(a+b+1,a+b+2), giving a graph eigenvalue in(V-a-b-1,V-a-b).
+Two generic endpoint factorizations and one positive midpoint identity
+supply the written proof. The families(a,a,2a,2a+r),a>=5,add coverage
+outside the balanced, product-tail and small-exponent criteria.
+
 The [single-pair balanced theorem](notes/four-prime-single-pair-balanced.md)
 proves every four-prime vector (a,a,b,c), a<=b<=c<=2a-6, nonintegral,
 including unequal tails. Four positive leading-minor identities for the
