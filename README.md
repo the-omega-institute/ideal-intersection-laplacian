@@ -8,6 +8,14 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+The [explicit equality cubic](notes/endpoint-one-equality-cubic.md) now
+gives its three coefficients and discriminant in a,b. Generic determinant
+and Sylvester identities are checked exactly. At each known integer equality
+point, divisors above a+b and a quadratic square test decide integral
+splitting. Square cubic discriminant alone is necessary, not sufficient;
+Siegel finiteness and computable Riemann-Roch spaces supply no exhaustive
+integer-point list here. That global arithmetic step remains open.
+
 The [endpoint-two completion](notes/endpoint-two-completion.md) now settles
 **every all-even exponent triple**, and every permutation of `(1,3,2)` or
 `(3,3,0)` modulo four, with no size/gap/ratio bound. On an endpoint-two zero

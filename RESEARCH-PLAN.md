@@ -1,5 +1,13 @@
 # First task: Laplacian integrality
 
+The equality cubic now has explicit coefficient and discriminant formulas
+in [the arithmetic note](notes/endpoint-one-equality-cubic.md). A known
+integer equality point can be tested by its positive divisors above a+b
+and the residual quadratic discriminant. The global missing step is an
+exhaustive integer-point computation, or a uniform splitting obstruction.
+Square discriminant alone does not prove splitting; Siegel finiteness and
+Riemann-Roch spaces do not supply an effective candidate bound.
+
 The current [standalone endpoint-two completion](notes/endpoint-two-completion.md)
 settles every all-even triple and every permutation(1,3,2)/(3,3,0)mod4 triple.
 For ordered real minimum>=40, an endpoint-two zero forces another quotient

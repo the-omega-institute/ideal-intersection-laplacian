@@ -1,0 +1,25 @@
+{
+  "parameters": "c=b(b+2)-a, q=ac, G=(3b-1)q^2+b(b^2+4b-1)q-(b^2+2b-1)(b^2+3b-1)(b^3+3b^2+3b-1)",
+  "cubic_P3": "-b*q*(b + 3)*(b*(b**2 + 3*b + 3) + q) + x**3 - x**2*(b**3 + 5*b**2 + 8*b + q - 1) + x*(2*b**5 + 12*b**4 + 25*b**3 + 16*b**2 + b*q*(b**2 + 5*b + 5) - 8*b + 1)",
+  "root_sum_A": "b**3 + 5*b**2 + 8*b + q - 1",
+  "root_pair_sum_B": "2*b**5 + 12*b**4 + 25*b**3 + 16*b**2 + b*q*(b**2 + 5*b + 5) - 8*b + 1",
+  "root_product_N": "b*q*(b + 3)*(b*(b**2 + 3*b + 3) + q)",
+  "curve_G": "b*q*(b**2 + 4*b - 1) + q**2*(3*b - 1) - (b**2 + 2*b - 1)*(b**2 + 3*b - 1)*(b**3 + 3*b**2 + 3*b - 1)",
+  "generic_quintic_identity": "h_C(x)=(x-1)(x-b)P3(x)+x(x-b)G",
+  "discriminant_formula": "A^2 B^2-4B^3-4A^3 N-27N^2+18ABN",
+  "discriminant_expanded_q_b": "4*b**16 + 56*b**15 + 312*b**14 - 4*b**13*q + 728*b**13 + b**12*q**2 - 78*b**12*q - 499*b**12 + 6*b**11*q**2 - 552*b**11*q - 7866*b**11 - 7*b**10*q**2 - 1922*b**10*q - 22027*b**10 - 2*b**9*q**3 - 100*b**9*q**2 - 3302*b**9*q - 29104*b**9 - 14*b**8*q**3 + 76*b**8*q**2 - 1296*b**8*q - 12818*b**8 - 4*b**7*q**3 + 1798*b**7*q**2 + 4692*b**7*q + 11778*b**7 + b**6*q**4 + 154*b**6*q**3 + 4733*b**6*q**2 + 6790*b**6*q + 11890*b**6 + 12*b**5*q**4 + 352*b**5*q**3 + 4236*b**5*q**2 + 774*b**5*q - 3694*b**5 + 32*b**4*q**4 - 18*b**4*q**3 - 822*b**4*q**2 - 2812*b**4*q - 3551*b**4 - 76*b**3*q**4 - 718*b**3*q**3 - 1980*b**3*q**2 + 280*b**3*q + 2292*b**3 - 4*b**2*q**5 - 260*b**2*q**4 - 132*b**2*q**3 + 737*b**2*q**2 + 106*b**2*q - 554*b**2 - 12*b*q**5 + 36*b*q**4 + 28*b*q**3 - 78*b*q**2 - 2*b*q + 64*b + q**2 - 2*q - 3",
+  "discriminant_degree_q": 5,
+  "discriminant_degree_b": 16,
+  "discriminant_term_count_q_b": 61,
+  "generic_determinant_identity_checked": true,
+  "generic_discriminant_and_sylvester_checked": true,
+  "generic_divisor_and_quadratic_identity_checked": true,
+  "square_discriminant_counterexample": "x^3-3x+1 has discriminant81 and no rational root; it is an abstract cubic, not an endpoint triple.",
+  "prior_pair_sum_certificate_sha256": "04440f8a70a6c4f49058e5a087bed6bd8734649d84215dfcc5fcf8e1d3cbcd7a",
+  "source_sha256": {
+    "check_endpoint_one_equality_cubic.py": "47f1d32a62eb5f0a8f04565922201b5a9a13b5b5742d35d1a501ee3e57a11744",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "sympy": "1.14.0",
+  "scope": "Exact generic identities for explicit equality endpoint cubic and discriminant, independently checked by direct quotient characteristic polynomial and 5x5 Sylvester determinant. No parameter scan, integer endpoint solution, finite base, point enumeration, rank calculation, new nonintegrality exclusion or Lean. Square discriminant is necessary, not sufficient for cubic integral splitting."
+}
