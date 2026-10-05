@@ -1,0 +1,61 @@
+{
+  "written_unconditional_pair_sum_gap": "For real4<=a<=b,c=b(b+2)-a, lambda3=b simple and lambda4>a+b. K(a+b)>0/c>a+b put beta4>a+b in the five-support principal block, hence lambda5>a+b; full determinant h_C(a+b)<0 and prior lambda3=b force lambda4>a+b.",
+  "written_endpoint_one_cubic_window": "If h_C(1)=0, mu1=b simple and all three roots of monic P3 in F=(x-b)P3 strictly exceed a+b. Integer equality feasibility and integral cubic splitting remain open.",
+  "K_at_pair_sum_positive_U": "a**2*b*(-a + b**2 - 2) + 2*a**2 + a*b*(4*b**2 + b*(2*b**2 - 3) - 5) + b**2*(b + 1)**2*(b + 2)",
+  "negative_h_C_at_pair_sum_positive_V": "a**2*b**2 + a**2*b*(-a + b**2 - 2) + 2*a**2 + a*b*(3*b**2 + b*(b**2 - 2) - 5) + b**2*(b + 1)*(b + 2)",
+  "controls_off_endpoint_one": [
+    {
+      "exponents": [
+        4,
+        4,
+        20
+      ],
+      "pair_sum": 8,
+      "endpoint_one_point": false,
+      "h_C_at_pair_sum": -8616960,
+      "K_at_pair_sum": 23488,
+      "exact_Sturm_other_nonzero_roots_below_pair_sum": 1,
+      "exact_Sturm_other_nonzero_roots_above_pair_sum": 3,
+      "exact_Sturm_K_roots_below_pair_sum": 1,
+      "exact_Sturm_K_roots_above_pair_sum": 2
+    },
+    {
+      "exponents": [
+        9,
+        12,
+        159
+      ],
+      "pair_sum": 21,
+      "endpoint_one_point": false,
+      "h_C_at_pair_sum": -150153273072,
+      "K_at_pair_sum": 10814040,
+      "exact_Sturm_other_nonzero_roots_below_pair_sum": 1,
+      "exact_Sturm_other_nonzero_roots_above_pair_sum": 3,
+      "exact_Sturm_K_roots_below_pair_sum": 1,
+      "exact_Sturm_K_roots_above_pair_sum": 2
+    },
+    {
+      "exponents": [
+        9,
+        30,
+        951
+      ],
+      "pair_sum": 39,
+      "endpoint_one_point": false,
+      "h_C_at_pair_sum": -114289169205600,
+      "K_at_pair_sum": 1360907460,
+      "exact_Sturm_other_nonzero_roots_below_pair_sum": 1,
+      "exact_Sturm_other_nonzero_roots_above_pair_sum": 3,
+      "exact_Sturm_K_roots_below_pair_sum": 1,
+      "exact_Sturm_K_roots_above_pair_sum": 2
+    }
+  ],
+  "requires_finite_base": false,
+  "source_sha256": {
+    "check_endpoint_one_equality_second_root.py": "8025d21bbfdad55fbc35da95bc3dbe705485dbbbeedcec0586d66870080bde0b",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "previous_equality_root_certificate_sha256": "123e5b8b6342154399b52cab3cd1b6307b691191b8ce3f02f8fc97e7d2e523e7",
+  "sympy": "1.14.0",
+  "scope": "Written unconditional equality lambda4>a+b and endpointone remaining cubic roots>a+b, using two positive identities/interlacing/earlier simpleb-index theorem. Same3offendpointEzero fixtures only, exact Sturm diagnostics; no finite base, new integer triple exclusion, globalQ3closure, exponent/modulus scan,higher2adicshift,floats or Lean. Genus/finiteautomorphismcertificate not used; earlier manuscript/proofs/finite dependencies/oldn7/four native axioms retained."
+}

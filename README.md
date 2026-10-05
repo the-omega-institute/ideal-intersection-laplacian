@@ -107,7 +107,9 @@ exactly one residual root lies below b. Integer candidates therefore lie
 in (b,min(c,a+b)) or (a,b), respectively. At equality the
 [equality theorem](notes/endpoint-one-equality-root.md) identifies b as
 the simple smallest residual root; integer feasibility and splitting
-of the remaining cubic stay open. The [equality curve analysis](notes/endpoint-one-equality-curve.md)
+of the remaining cubic stay open. The [equality pair-sum gap](notes/endpoint-one-equality-second-root.md)
+now puts all three remaining roots strictly above a+b, even proving
+lambda_4>a+b off endpoint one. The [equality curve analysis](notes/endpoint-one-equality-curve.md)
 gives geometric genus ten and integer-point finiteness, without a point list.
 The [quotient descent check](notes/endpoint-one-equality-quotient.md) rules out
 extra rational involutions on its known genus-three quotient; other low-genus

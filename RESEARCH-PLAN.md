@@ -107,8 +107,10 @@ c+a>b(b+2) gives b<mu_1<min(c,a+b); c+a<b(b+2) gives a<mu_1<b<mu_2.
 At equality the [equality theorem](notes/endpoint-one-equality-root.md)
 identifies b as the simple smallest residual root, even proving
 lambda_3=b on the full real equality subfamily without endpoint one.
-Integer equality feasibility and splitting of the remaining cubic stay
-open. The [equality curve](notes/endpoint-one-equality-curve.md) has geometric
+The [equality pair-sum gap](notes/endpoint-one-equality-second-root.md) proves
+lambda_4>a+b without endpoint one; all three remaining cubic roots lie above
+a+b on endpoint one. Integer equality feasibility and splitting of that
+cubic stay open. The [equality curve](notes/endpoint-one-equality-curve.md) has geometric
 genus ten, so integer points are finite but not enumerated. Effective integer
 classification requires additional work.
 The [quotient descent check](notes/endpoint-one-equality-quotient.md) rules out

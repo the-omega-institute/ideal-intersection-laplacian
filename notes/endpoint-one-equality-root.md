@@ -11,7 +11,8 @@ nonzero eigenvalue:
 No endpoint-one hypothesis is needed; c>b holds automatically.
 If also h_C(1)=0, the earlier [minimum-root theorem](endpoint-one-minimum-root.md)
 gives lambda_2=1. Therefore mu_1=b is simple, and all three other residual
-roots exceed b. Together with the [strict regimes](endpoint-one-middle-root.md),
+roots exceed b. The subsequent [pair-sum gap](endpoint-one-equality-second-root.md)
+strengthens their lower bound to a+b. Together with the [strict regimes](endpoint-one-middle-root.md),
 this completes the real endpoint-one partition:
 
 ```text
