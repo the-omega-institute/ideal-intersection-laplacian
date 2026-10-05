@@ -19,6 +19,12 @@ three-prime nonintegrality classification. The combined theorem retains
 the27562/8658historical finite bases; the new interval has a written
 unbounded proof and complete positive coefficient identities.
 
+An [independent audit](notes/three-prime-independent-audit.md) reconstructs
+eight generic determinant identities directly from disjoint supports using
+standard-library integer polynomial arithmetic, checks all 40 manuscript
+coefficient rows, and verifies coverage and integrity of the two historical
+finite bases. It does not rerun their discriminant or determinant calculations.
+
 The [total-sum gap](notes/total-sum-spectral-gap.md) strengthens the
 three larger-root bound to lambda_4>a+b+c for real2<=a<=b<=c,
 with the sharp exception lambda_4=6 at(2,2,2). On endpoint one at

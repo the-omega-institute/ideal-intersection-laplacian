@@ -1,0 +1,133 @@
+{
+  "method": "Python standard library only; sparse integer polynomial ring and direct six-by-six Leibniz determinant from disjoint supports. No SymPy, floating arithmetic or original checker imports.",
+  "largest_root_determinant_checks": [
+    {
+      "offset": 0,
+      "leibniz_permutations": 720,
+      "nonzero_products": 16,
+      "full_polynomial_terms": 225,
+      "coefficientwise_identity": "passed"
+    },
+    {
+      "offset": 1,
+      "leibniz_permutations": 720,
+      "nonzero_products": 16,
+      "full_polynomial_terms": 300,
+      "coefficientwise_identity": "passed"
+    }
+  ],
+  "complete_positive_terms": {
+    "lower": 36,
+    "upper": 170
+  },
+  "small_gap_determinant_checks": [
+    {
+      "gap": 1,
+      "boundary": "diagonal",
+      "leibniz_permutations": 720,
+      "nonzero_products": 16,
+      "positive_terms": 7,
+      "coefficientwise_identity": "passed"
+    },
+    {
+      "gap": 1,
+      "boundary": "lower",
+      "leibniz_permutations": 720,
+      "nonzero_products": 16,
+      "positive_terms": 7,
+      "coefficientwise_identity": "passed"
+    },
+    {
+      "gap": 1,
+      "boundary": "upper",
+      "leibniz_permutations": 720,
+      "nonzero_products": 16,
+      "positive_terms": 7,
+      "coefficientwise_identity": "passed"
+    },
+    {
+      "gap": 2,
+      "boundary": "diagonal",
+      "leibniz_permutations": 720,
+      "nonzero_products": 16,
+      "positive_terms": 7,
+      "coefficientwise_identity": "passed"
+    },
+    {
+      "gap": 2,
+      "boundary": "lower",
+      "leibniz_permutations": 720,
+      "nonzero_products": 16,
+      "positive_terms": 6,
+      "coefficientwise_identity": "passed"
+    },
+    {
+      "gap": 2,
+      "boundary": "upper",
+      "leibniz_permutations": 720,
+      "nonzero_products": 16,
+      "positive_terms": 7,
+      "coefficientwise_identity": "passed"
+    }
+  ],
+  "generic_polynomial_determinants": 8,
+  "finite_certificate_coverage": {
+    "minimum_through_seven": {
+      "complete_rows": 27562,
+      "duplicate_or_missing_rows": 0,
+      "counts_by_minimum": {
+        "4": 1275,
+        "5": 3486,
+        "6": 7750,
+        "7": 15051
+      },
+      "sha256": "64b2173e944761a31ff8e51cbdb9634a3c545d5cf189f153c3c97580c5af9ecb"
+    },
+    "endpoint_two": {
+      "complete_rows": 8658,
+      "duplicate_or_missing_rows": 0,
+      "counts_by_minimum": {
+        "9": 3,
+        "10": 6,
+        "11": 10,
+        "12": 15,
+        "13": 28,
+        "14": 36,
+        "15": 45,
+        "16": 55,
+        "17": 78,
+        "18": 91,
+        "19": 105,
+        "20": 120,
+        "21": 153,
+        "22": 171,
+        "23": 190,
+        "24": 210,
+        "25": 253,
+        "26": 276,
+        "27": 300,
+        "28": 325,
+        "29": 377,
+        "30": 405,
+        "31": 434,
+        "32": 464,
+        "33": 525,
+        "34": 558,
+        "35": 592,
+        "36": 627,
+        "37": 697,
+        "38": 735,
+        "39": 774
+      },
+      "sha256": "6f697abf299366f646b580c54152e53b78c48de1b375fe20682f452abd5f8a70"
+    },
+    "scope": "Saved CSV coverage, uniqueness, strict square brackets and stored determinant/Horner agreement only. Discriminants and historical determinant calculations are not recomputed; their prior verifiers remain dependencies."
+  },
+  "source_certificate_sha256": "ca6380322c500367801940bdcc14ef33b780fad31774b94aaaae3ea9ac1ba05c",
+  "script_sha256": "50b5f0a75de346772c010b2eac4d849f5b3e02fd6558bf9b96f29418591af8af",
+  "scope": "Independent exact polynomial identities for the written unbounded largest-root and small-gap steps, plus saved finite-certificate integrity/coverage. No new nonintegrality theorem, no exponent-range expansion or historical determinant rerun. Full higher-prime nonsquarefree Q3 and original orthogonality n=7 stay open; no Lean.",
+  "manuscript_table_agreement": {
+    "matched_rows": 40,
+    "sha256": "783e7f71d9b463387a3e123477ce0dca0ed3b315fbd43282ab2af696bdf2a084"
+  }
+}
