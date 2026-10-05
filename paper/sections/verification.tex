@@ -119,6 +119,18 @@ none on $[0,a]$. These controls already follow from the repeated-exponent
 theorem. The source-hashed certificates reproduce byte-for-byte; their
 finite diagnostics supplement the written bounds.
 
+Proposition~\ref{prop:endpoint-one-equality-spectrum} also has a written
+proof without a finite base. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/d3fa3478193f34777a88b970da8f0763ce177c38/scripts/check_endpoint_one_equality_root.py}{equality-index checker}
+verifies the principal factors, weighted symmetry and nonzero coupling.
+The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/9e98266eb279a31b7282cea17fca3f5af6d9410f/scripts/check_endpoint_one_equality_second_root.py}{equality pair-sum checker}
+verifies both positive identities at $a+b$. The three fixed controls
+$(4,4,20)$, $(9,12,159)$ and $(9,30,951)$ are all off endpoint one.
+After removing root $b$, exact Sturm counts place one positive root below
+$a+b$ and three above it. These are diagnostics of the unconditional
+statement, not integer endpoint solutions or a finite base.
+
 \ifdefined\DetailedVerification
 \subsection{Complete checker catalogue}
 \input{sections/verification-details}

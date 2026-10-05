@@ -7,7 +7,10 @@ needs no finite base; generic350termoff-surface positivity is a verification
 remark. The nonzero quartic constant gives a necessary divisor test for
 the smallest root, not an upper bound on allfourroots. Seek a uniform
 splitting obstruction; the other standalone PR9 deductions remain queued
-for separate review/integration, and full Q3 remains open.
+for separate review/integration, and full Q3 remains open. Proposition14.6
+now integrates the unconditional equality theorem: simple lambda_3=b and
+lambda_4>a+b for c=b(b+2)-a. On endpoint one, study integer feasibility of
+the equality curve and splitting of the remaining cubic strictly above a+b.
 
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in

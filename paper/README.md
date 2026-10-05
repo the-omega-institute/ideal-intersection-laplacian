@@ -7,6 +7,9 @@ The main text ends with explicit remaining questions and references.
 Remark 14.5 records the equality curve's genus ten and Siegel finiteness
 consequence, with a short quotient/ramification argument and a linked detailed
 verification note. It does not supply an effective integer-point list.
+Proposition 14.6 gives the unconditional equality spectrum: b is simple
+and third smallest, with all three larger roots above a+b. On endpoint
+one this leaves a monic cubic whose three roots exceed a+b.
 Theorem 13.5 combines the mixed-parity classes and their necessary conditions;
 Theorem 14.1 combines the endpoint reductions. The main text gives one worked
 shifted-root example. Appendix A summarizes the actual verification scopes,

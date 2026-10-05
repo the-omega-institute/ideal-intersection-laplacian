@@ -15,7 +15,10 @@ min(c,a+b). The twelve-term identity is in the main text; the generic
 350termresidual positivity is retained as a verification remark.
 The quartic constant rs(p+s) is positive, and its smallest integer root
 must be a divisor in that window. The other three roots need not be
-below c. Earlier standalone PR9 results still await separate integration.
+below c. Proposition 14.6 now integrates the equality spectrum: when
+c=b(b+2)-a, b is simple and third smallest, and the other three positive
+roots exceed a+b. On endpoint one, the remaining spectral factor is cubic
+with all roots above a+b. Other standalone PR9 results await integration.
 
 ## First results
 

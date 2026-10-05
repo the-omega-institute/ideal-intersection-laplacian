@@ -135,3 +135,74 @@ By Siegel's theorem \cite{hindrysilverman}, this affine equality curve
 has finitely many integer points. Their effective determination and
 the classification of admissible exponent triples remain open.
 \end{remark}
+
+\begin{proposition}
+\label{prop:endpoint-one-equality-spectrum}
+For real $4\leq a\leq b$ and $c=b(b+2)-a$, the ordered eigenvalues
+of the six-support complement quotient satisfy
+\[
+ 0=\lambda_1<\lambda_2<\lambda_3=b<a+b<\lambda_4\leq\lambda_5\leq\lambda_6,
+\]
+and $b$ is simple. If also $h_C(1)=0$, then $\lambda_2=1$ and
+$F(x)=(x-b)P_3(x)$, where the monic cubic $P_3$ has all three roots
+strictly greater than $a+b$.
+\end{proposition}
+
+\begin{proof}
+Use the symmetric similarity $S$ from Theorem~\ref{thm:endpoint-one-spectrum}.
+Every proper principal block is positive definite: $S$ is positive
+semidefinite with a one-dimensional zero kernel whose vector has every
+coordinate nonzero. Delete singleton support $2$. The five-support block
+$B$ is the direct sum of the scalar $b$ on support $13$ and the block $T$
+on $1,3,12,23$. Its characteristic polynomial is
+\begin{align*}
+ \det(xI-T)&=(x-b)K(x),\\
+ K(x)&=x^3-b(b^2+4b+5)x^2\\
+ &\quad+\bigl[ac(b^2+1)+b^2(b+2)(b^2+3b+3)\bigr]x-abc(b+3).
+\end{align*}
+The three roots of $K$ are positive and real. Moreover,
+\[
+ K(b)=b(b+1)\bigl[a(b-a)(b-2)+ab(b-2)(b+1)+b^2(b+1)(b+2)\bigr]>0.
+\]
+The pair-support block on $12,23$ is $\operatorname{diag}(c,a)$, so
+the largest eigenvalue of $T$ is at least $c>b$. A positive monic cubic
+value at $b$ requires one or three roots below $b$; the largest root
+rules out three. Thus $B$ has $\beta_2=\beta_3=b$, and interlacing gives
+$\beta_2\leq\lambda_3\leq\beta_3$, hence $\lambda_3=b$.
+
+The kernel of $B-bI$ has dimension two. Its support-$13$ unit vector
+couples to the deleted singleton by $-\sqrt{abc}\ne0$. Projecting the
+full eigenvector equation onto that vector forces the deleted coordinate
+to vanish. The remaining eigenvectors lie in $\ker(B-bI)$ and satisfy
+one nonzero coupling condition. Their space is one-dimensional, proving
+simplicity and $\lambda_2<b<\lambda_4$.
+
+Put $s=a+b$. We have $c-s=b(b+1)-2a\geq b(b-1)>0$, and exact
+substitution gives $K(s)=bU>0$, where
+\begin{align*}
+ U={}&a^2b(b^2-a-2)+2a^2\\
+ &+ab\bigl[b(2b^2-3)+4b^2-5\bigr]+b^2(b+1)^2(b+2).
+\end{align*}
+Here $b^2-a-2\geq(b-2)(b+1)>0$, and the other factors are positive
+for $b\geq4$. Since the largest $T$ eigenvalue is at least $c>s$,
+exactly one $K$ root is below $s$ and two above. Thus $B$ has exactly
+three eigenvalues below $s$, giving $\lambda_5\geq\beta_4>s$.
+
+The full determinant has $h_C(s)=-abc(s+1)V<0$, with
+\begin{align*}
+ V={}&a^2b(b^2-a-2)+a^2b^2+2a^2\\
+ &+ab\bigl[b(b^2-2)+3b^2-5\bigr]+b^2(b+1)(b+2)>0.
+\end{align*}
+Consequently no eigenvalue equals $s$ and $\det(sI-S)=s h_C(s)<0$.
+The first three eigenvalues are below $s$ and the last two above it.
+If $\lambda_4<s$, the determinant would have two negative factors and
+be positive. Hence $\lambda_4>s$. On endpoint one,
+Theorem~\ref{thm:endpoint-one-spectrum} gives $\lambda_2=1$, and division
+by the simple roots $1,b$ yields the stated cubic.
+\end{proof}
+
+This proposition narrows the equality splitting problem: for integer
+endpoint-one equality points, all three integer roots of $P_3$ would have
+to exceed $a+b$. The two positive identities and exact off-endpoint
+controls are retained in the
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/9e98266eb279a31b7282cea17fca3f5af6d9410f/notes/endpoint-one-equality-second-root.md}{equality spectral verification note}.
