@@ -1,5 +1,13 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [pair-four theorem](notes/four-prime-pair-four.md) proves every
+four-prime vector (4,4,b,c), b,c>=2, nonintegral. Its restricted
+eigenvalue lies in (1,4); endpoint two never occurs, and endpoint
+three has only the pair {b,c}={2,6}, handled by an explicit cubic
+root in (7,8). This supporting result uses a complete unbounded
+endpoint reduction with fixed arithmetic and does not enlarge the
+current manuscript while its core organization is under discussion.
+
 The [three-prime consolidation diagnostic](notes/three-prime-tensor-consolidation.md)
 derives the two-dimensional tensor restriction and explains its limitation:
 Professor Nikandish's existing boundary family has an entirely integral

@@ -1,5 +1,15 @@
 # First task: Laplacian integrality
 
+The [pair-four proof](notes/four-prime-pair-four.md) now settles all
+(4,4,b,c) four-prime vectors. The smallest restricted root lies in
+(1,4); thirty symbolic endpoint-two rows and two endpoint-three
+rows leave only {b,c}={2,6}, whose cubic has opposite signs at
+seven and eight. Remaining four-prime candidates have at most one
+exponent equal to each of two, three and four, and fail the earlier
+support criterion. Repeated pairs a>=5 remain an authorized bounded
+spectral question. Keep this supporting note separate while the
+classification core and companion-result scope are considered.
+
 The [tensor consolidation review](notes/three-prime-tensor-consolidation.md)
 answers the proposed three-prime replacement question. The present
 repeated-pair block cannot furnish a witness on Nikandish's unbounded

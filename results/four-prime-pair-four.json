@@ -1,0 +1,587 @@
+{
+  "written_theorem": "Every positive four-prime exponent vector with at least two entries equal to four is Laplacian nonintegral.",
+  "symbolic": {
+    "tensor_identity": "passed",
+    "generic_second_endpoint": "-9*b**2*c**2 + 120*b**2*c - 15*b**2 + 120*b*c**2 + 1014*b*c + 306*b - 15*c**2 + 306*c + 189",
+    "generic_third_endpoint": "-54*b**2*c**2 + 30*b**2*c - 60*b**2 + 30*b*c**2 + 540*b*c + 96*b - 60*c**2 + 96*c + 48",
+    "upper_bound_principal_minor": "-11*b*c + 5*b + 5*c + 5",
+    "b_c_two_third_endpoint_leading_minors": [
+      46,
+      520,
+      3424,
+      1728
+    ],
+    "complete_positive_tails": {
+      "32": [
+        [
+          2,
+          2,
+          9
+        ],
+        [
+          2,
+          1,
+          456
+        ],
+        [
+          2,
+          0,
+          5391
+        ],
+        [
+          1,
+          2,
+          456
+        ],
+        [
+          1,
+          1,
+          20490
+        ],
+        [
+          1,
+          0,
+          189390
+        ],
+        [
+          0,
+          2,
+          5391
+        ],
+        [
+          0,
+          1,
+          189390
+        ],
+        [
+          0,
+          0,
+          545475
+        ]
+      ],
+      "4": [
+        [
+          2,
+          2,
+          54
+        ],
+        [
+          2,
+          1,
+          402
+        ],
+        [
+          2,
+          0,
+          804
+        ],
+        [
+          1,
+          2,
+          402
+        ],
+        [
+          1,
+          1,
+          2436
+        ],
+        [
+          1,
+          0,
+          3696
+        ],
+        [
+          0,
+          2,
+          804
+        ],
+        [
+          0,
+          1,
+          3696
+        ],
+        [
+          0,
+          0,
+          2448
+        ]
+      ]
+    },
+    "all_thirty_second_endpoint_rows": [
+      {
+        "b": 2,
+        "coefficients": [
+          189,
+          2814,
+          741
+        ],
+        "obstruction": "positive coefficients, also certified by concavity"
+      },
+      {
+        "b": 3,
+        "coefficients": [
+          264,
+          4428,
+          972
+        ],
+        "obstruction": "positive coefficients, also certified by concavity"
+      },
+      {
+        "b": 4,
+        "coefficients": [
+          321,
+          6282,
+          1173
+        ],
+        "obstruction": "positive coefficients, also certified by concavity"
+      },
+      {
+        "b": 5,
+        "coefficients": [
+          360,
+          8376,
+          1344
+        ],
+        "obstruction": "positive coefficients, also certified by concavity"
+      },
+      {
+        "b": 6,
+        "coefficients": [
+          381,
+          10710,
+          1485
+        ],
+        "obstruction": "positive coefficients, also certified by concavity"
+      },
+      {
+        "b": 7,
+        "coefficients": [
+          384,
+          13284,
+          1596
+        ],
+        "obstruction": "positive coefficients, also certified by concavity"
+      },
+      {
+        "b": 8,
+        "coefficients": [
+          369,
+          16098,
+          1677
+        ],
+        "obstruction": "positive coefficients, also certified by concavity"
+      },
+      {
+        "b": 9,
+        "coefficients": [
+          336,
+          19152,
+          1728
+        ],
+        "obstruction": "positive coefficients, also certified by concavity"
+      },
+      {
+        "b": 10,
+        "coefficients": [
+          285,
+          22446,
+          1749
+        ],
+        "obstruction": "positive coefficients, also certified by concavity"
+      },
+      {
+        "b": 11,
+        "coefficients": [
+          216,
+          25980,
+          1740
+        ],
+        "obstruction": "positive coefficients, also certified by concavity"
+      },
+      {
+        "b": 12,
+        "coefficients": [
+          129,
+          29754,
+          1701
+        ],
+        "obstruction": "positive coefficients, also certified by concavity"
+      },
+      {
+        "b": 13,
+        "coefficients": [
+          24,
+          33768,
+          1632
+        ],
+        "obstruction": "positive coefficients, also certified by concavity"
+      },
+      {
+        "b": 14,
+        "coefficients": [
+          -99,
+          38022,
+          1533
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 1446279552,
+        "square_anchor": 38029
+      },
+      {
+        "b": 15,
+        "coefficients": [
+          -240,
+          42516,
+          1404
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 1808958096,
+        "square_anchor": 42531
+      },
+      {
+        "b": 16,
+        "coefficients": [
+          -399,
+          47250,
+          1245
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 2234549520,
+        "square_anchor": 47271
+      },
+      {
+        "b": 17,
+        "coefficients": [
+          -576,
+          52224,
+          1056
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 2729779200,
+        "square_anchor": 52247
+      },
+      {
+        "b": 18,
+        "coefficients": [
+          -771,
+          57438,
+          837
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 3301705152,
+        "square_anchor": 57460
+      },
+      {
+        "b": 19,
+        "coefficients": [
+          -984,
+          62892,
+          588
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 3957718032,
+        "square_anchor": 62910
+      },
+      {
+        "b": 20,
+        "coefficients": [
+          -1215,
+          68586,
+          309
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 4705541136,
+        "square_anchor": 68596
+      },
+      {
+        "b": 21,
+        "coefficients": [
+          -1464,
+          74520,
+          0
+        ],
+        "obstruction": "rational noninteger positive roots",
+        "positive_roots": [
+          "3105/61"
+        ]
+      },
+      {
+        "b": 22,
+        "coefficients": [
+          -1731,
+          80694,
+          -339
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 6509174400,
+        "square_anchor": 80679
+      },
+      {
+        "b": 23,
+        "coefficients": [
+          -2016,
+          87108,
+          -708
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 7582094352,
+        "square_anchor": 87075
+      },
+      {
+        "b": 24,
+        "coefficients": [
+          -2319,
+          93762,
+          -1107
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 8781044112,
+        "square_anchor": 93707
+      },
+      {
+        "b": 25,
+        "coefficients": [
+          -2640,
+          100656,
+          -1536
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 10115410176,
+        "square_anchor": 100575
+      },
+      {
+        "b": 26,
+        "coefficients": [
+          -2979,
+          107790,
+          -1995
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 11594911680,
+        "square_anchor": 107679
+      },
+      {
+        "b": 27,
+        "coefficients": [
+          -3336,
+          115164,
+          -2484
+        ],
+        "obstruction": "rational noninteger positive roots",
+        "positive_roots": [
+          "69/2",
+          "3/139"
+        ]
+      },
+      {
+        "b": 28,
+        "coefficients": [
+          -3711,
+          122778,
+          -3003
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 15029860752,
+        "square_anchor": 122596
+      },
+      {
+        "b": 29,
+        "coefficients": [
+          -4104,
+          130632,
+          -3552
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 17006409792,
+        "square_anchor": 130408
+      },
+      {
+        "b": 30,
+        "coefficients": [
+          -4515,
+          138726,
+          -4131
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 19170297216,
+        "square_anchor": 138456
+      },
+      {
+        "b": 31,
+        "coefficients": [
+          -4944,
+          147060,
+          -4740
+        ],
+        "obstruction": "nonsquare discriminant",
+        "discriminant": 21532905360,
+        "square_anchor": 146740
+      }
+    ],
+    "third_endpoint_rows": {
+      "2": "-216*c*(c - 6)",
+      "3": "(102 - 24*c)*(19*c - 2)"
+    },
+    "second_endpoint_integer_pairs": [],
+    "sole_unordered_third_endpoint_pair": [
+      2,
+      6
+    ],
+    "exceptional_cubic": "x**3 - 161*x**2 + 5775*x - 35343",
+    "exceptional_cubic_at_seven_eight": [
+      -2464,
+      1065
+    ]
+  },
+  "specified_support_controls": [
+    {
+      "exponents": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "graph_vertices": 223,
+      "complement_vertices": 160,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        4,
+        2,
+        6
+      ],
+      "graph_vertices": 523,
+      "complement_vertices": 332,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        4,
+        3,
+        5
+      ],
+      "graph_vertices": 598,
+      "complement_vertices": 359,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        4,
+        13,
+        32
+      ],
+      "graph_vertices": 11548,
+      "complement_vertices": 4893,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        4,
+        14,
+        100
+      ],
+      "graph_vertices": 37873,
+      "complement_vertices": 15474,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        4,
+        21,
+        51
+      ],
+      "graph_vertices": 28598,
+      "complement_vertices": 11463,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        4,
+        27,
+        35
+      ],
+      "graph_vertices": 25198,
+      "complement_vertices": 10079,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        4,
+        32,
+        32
+      ],
+      "graph_vertices": 27223,
+      "complement_vertices": 10840,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        4,
+        19,
+        100
+      ],
+      "graph_vertices": 50498,
+      "complement_vertices": 20099,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    }
+  ],
+  "independent_expanded_graph_controls": [
+    {
+      "exponents": [
+        4,
+        4,
+        2,
+        2
+      ],
+      "graph_vertices": 223,
+      "complement_vertices": 160,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": true,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    },
+    {
+      "exponents": [
+        4,
+        4,
+        2,
+        3
+      ],
+      "graph_vertices": 298,
+      "complement_vertices": 203,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": true,
+      "weighted_symmetry_zero_sum_complement_join": "passed"
+    }
+  ],
+  "script_sha256": "97f0c4bf2b7048c05fadc243c80074a67326e8ffff4d9a0e2a8dc910729c9cfc",
+  "embedding_dependency_sha256": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+  "sympy_version": "1.14.0",
+  "scope": "Written unbounded invariant-space proof, thirty symbolic endpoint-two rows and two endpoint-three rows, sixteen nonsquare discriminants, four rational factorizations and two cubic signs. Nine specified support controls and two expanded graphs validate implementation. No exponent rectangle scan, modular search, floating eigenvalues, Lean or historical three-prime certificate rerun. Main manuscript scope unchanged; higher-prime nonsquarefree Q3 remains open."
+}
