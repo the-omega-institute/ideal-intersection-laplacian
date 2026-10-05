@@ -1,0 +1,446 @@
+{
+  "written_linear_congruence": "For integer endpoint-one exponents and an integer root d>0 of F, d|N and N/d=D mod d, with D=r^2+(s^2-s+1)r+s^2p+p^2+s^3-3s^2+3s-1. Equivalently d^2 divides N-Dd. Necessary, not sufficient.",
+  "written_anchor_congruences": "For exponents e in {a,b,c} all>=4 on endpoint one, K_e=-r^2(e^2+3e-s)/(e-1)=F(e) is integral. An integer root d requires d-e|K_e when d!=e and K_e=0 when d=e. Equivalently (d-e)(e-1)|r^2(e^2+3e-s) when d!=e. These avoid evaluating F at d and are necessary, not sufficient.",
+  "sign_counterexample": {
+    "exponents": [
+      20,
+      20,
+      741
+    ],
+    "candidate": 21,
+    "F_at_candidate": 1207587225600,
+    "scope": "Existing repeated boundary, not a fully distinct surviving triple. F(d)<0 is not universal over the full endpoint-one divisor window. Its truth in the narrower fully distinct integer region is undetermined."
+  },
+  "boundary_F_at_a": "a**4*(a - 1)*(2*a - 1)**2*(a**2 - 4*a + 1)",
+  "generic_symbolic_identities": "passed",
+  "endpoint_one_controls": [
+    {
+      "exponents": [
+        8,
+        8,
+        105
+      ],
+      "quartic_coefficients": [
+        1,
+        -2106,
+        1278729,
+        -173042960,
+        1516468800
+      ],
+      "quartic_constant": 1516468800,
+      "linear_D": 173042960,
+      "anchor_values": [
+        [
+          8,
+          212889600
+        ],
+        [
+          8,
+          212889600
+        ],
+        [
+          105,
+          -4871462400
+        ]
+      ],
+      "candidate_count": 5,
+      "linear_survivors": [
+        10,
+        15
+      ],
+      "anchor_survivors": [
+        15
+      ],
+      "combined_survivors": [
+        15
+      ],
+      "candidates": [
+        {
+          "divisor": 10,
+          "linear_remainder_mod_d": 0,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            40
+          ],
+          "passes_linear": true,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -88183900
+        },
+        {
+          "divisor": 11,
+          "linear_remainder_mod_d": 9,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            86
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -235065996
+        },
+        {
+          "divisor": 12,
+          "linear_remainder_mod_d": 8,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            81
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -379528176
+        },
+        {
+          "divisor": 14,
+          "linear_remainder_mod_d": 4,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            14
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -661242204
+        },
+        {
+          "divisor": 15,
+          "linear_remainder_mod_d": 0,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            0
+          ],
+          "passes_linear": true,
+          "passes_anchors": true,
+          "passes_both": true,
+          "exact_F_at_d": -798518700
+        }
+      ]
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        136
+      ],
+      "quartic_coefficients": [
+        1,
+        -2990,
+        2546083,
+        -450877446,
+        4551612912
+      ],
+      "quartic_constant": 4551612912,
+      "linear_D": 450877446,
+      "anchor_values": [
+        [
+          9,
+          697775472
+        ],
+        [
+          9,
+          697775472
+        ],
+        [
+          136,
+          -16854480000
+        ]
+      ],
+      "candidate_count": 5,
+      "linear_survivors": [
+        14
+      ],
+      "anchor_survivors": [
+        11
+      ],
+      "combined_survivors": [],
+      "candidates": [
+        {
+          "divisor": 11,
+          "linear_remainder_mod_d": 10,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            0
+          ],
+          "passes_linear": false,
+          "passes_anchors": true,
+          "passes_both": false,
+          "exact_F_at_d": -103928000
+        },
+        {
+          "divisor": 12,
+          "linear_remainder_mod_d": 6,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            24
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -497426472
+        },
+        {
+          "divisor": 14,
+          "linear_remainder_mod_d": 0,
+          "anchor_remainders_at_a_b_c": [
+            2,
+            2,
+            72
+          ],
+          "passes_linear": true,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -1269805208
+        },
+        {
+          "divisor": 16,
+          "linear_remainder_mod_d": 9,
+          "anchor_remainders_at_a_b_c": [
+            2,
+            2,
+            0
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -2022810480
+        },
+        {
+          "divisor": 17,
+          "linear_remainder_mod_d": 16,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            34
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -2392092032
+        }
+      ]
+    },
+    {
+      "exponents": [
+        20,
+        20,
+        741
+      ],
+      "quartic_coefficients": [
+        1,
+        -32382,
+        280238421,
+        -288114390440,
+        7134703976400
+      ],
+      "quartic_constant": 7134703976400,
+      "linear_D": 288114390440,
+      "anchor_values": [
+        [
+          20,
+          1484252640000
+        ],
+        [
+          20,
+          1484252640000
+        ],
+        [
+          741,
+          -65358209592000
+        ]
+      ],
+      "candidate_count": 13,
+      "linear_survivors": [
+        30
+      ],
+      "anchor_survivors": [
+        21
+      ],
+      "combined_survivors": [],
+      "candidates": [
+        {
+          "divisor": 21,
+          "linear_remainder_mod_d": 12,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            0
+          ],
+          "passes_linear": false,
+          "passes_anchors": true,
+          "passes_both": false,
+          "exact_F_at_d": 1207587225600
+        },
+        {
+          "divisor": 22,
+          "linear_remainder_mod_d": 18,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            436
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": 931478213204
+        },
+        {
+          "divisor": 24,
+          "linear_remainder_mod_d": 14,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            378
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": 380928619344
+        },
+        {
+          "divisor": 25,
+          "linear_remainder_mod_d": 16,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            512
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": 106487650400
+        },
+        {
+          "divisor": 26,
+          "linear_remainder_mod_d": 22,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            390
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -167397691500
+        },
+        {
+          "divisor": 28,
+          "linear_remainder_mod_d": 12,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            421
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -713502268864
+        },
+        {
+          "divisor": 30,
+          "linear_remainder_mod_d": 0,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            198
+          ],
+          "passes_linear": true,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -1257386661900
+        },
+        {
+          "divisor": 33,
+          "linear_remainder_mod_d": 2,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            48
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -2069053793664
+        },
+        {
+          "divisor": 34,
+          "linear_remainder_mod_d": 32,
+          "anchor_remainders_at_a_b_c": [
+            4,
+            4,
+            60
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -2338501089676
+        },
+        {
+          "divisor": 35,
+          "linear_remainder_mod_d": 5,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            670
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -2607394500900
+        },
+        {
+          "divisor": 37,
+          "linear_remainder_mod_d": 12,
+          "anchor_remainders_at_a_b_c": [
+            9,
+            9,
+            192
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -3143520442816
+        },
+        {
+          "divisor": 38,
+          "linear_remainder_mod_d": 16,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            589
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -3410753360364
+        },
+        {
+          "divisor": 39,
+          "linear_remainder_mod_d": 30,
+          "anchor_remainders_at_a_b_c": [
+            0,
+            0,
+            234
+          ],
+          "passes_linear": false,
+          "passes_anchors": false,
+          "passes_both": false,
+          "exact_F_at_d": -3677433166836
+        }
+      ]
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_one_root_congruences.py": "4ffa9a741725635408f20c948804c90e29b9f9efab4e9c6272b81e218a13e524",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Written universal necessary coefficient/anchor root congruences and one exact positive-value counterexample on an established repeated control. Exactly the same three controls/23 divisor candidates as the prior window certificate; no exponent/modulus scan or higher endpoint two-adic lifting. No fully distinct sign decision, new nonintegrality family, sufficient root test, global Q3 closure or Lean. Prior manuscript/proofs/finite dependencies and old n7/four native axioms retained."
+}

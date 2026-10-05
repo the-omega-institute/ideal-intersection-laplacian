@@ -92,6 +92,15 @@ must use F(d)=0; divisor presence/size alone cannot close the full surface.
 The gcd on the narrower fully distinct surviving region is not determined.
 No higher two-adic lifts or exponent scan were used; full Q3 remains open.
 
+The [root-congruence note](notes/endpoint-one-root-congruences.md) records
+F(21)>0 at the existing (20,20,741) control, so negativity is not uniform
+over the full divisor window. For a root d, N/d=D modulo d and d-e divides
+F(e)=-r^2(e^2+3e-s)/(e-1) for e=a,b,c,d!=e; if d=e, require F(e)=0.
+These uniform necessary tests reduce the existing 23 candidates to one,
+which is still a nonroot. Seek a uniform obstruction in the fully distinct
+surviving region; passing these tests is not sufficient for being a root.
+No new family, range scan, endpoint lifting or full Q3 closure is claimed.
+
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
 Appendices B/C; Appendix A summarizes verification, with the full checker

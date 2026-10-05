@@ -93,6 +93,13 @@ many divisors inside the smallest-root window that are not spectral roots.
 Thus the splitting problem must use F(d)=0 alongside divisibility and size.
 These are written unbounded results; the fully distinct region remains open.
 
+The [root-congruence analysis](notes/endpoint-one-root-congruences.md)
+shows that window candidates can give either sign: F(21)>0 at (20,20,741).
+Integer roots must additionally satisfy N/d=D modulo d and three congruences
+from exact evaluations at a,b,c. Together these necessary conditions leave
+one of the existing 23 candidates, which still fails exact F evaluation.
+The fully distinct sign question and global splitting problem remain open.
+
 A standalone [middle-diagonal inertia restriction](notes/endpoint-two-middle-inertia.md)
 narrows the endpoint-two problem without further congruence lifting. For
 `4<=a<b<c`, `(b-2)(a+b+c-2)<=2ac` supplies a positive quotient root in `(0,2)`.
