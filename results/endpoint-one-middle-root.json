@@ -1,0 +1,72 @@
+{
+  "written_middle_root_location": "For real4<=a<=b<=c on h_C(1)=0, if c+a>b(b+2), then mu_1>b. If c+a<b(b+2), exactly one residual root is belowb and a<mu_1<b<mu_2. If equality holds, F(b)=0; no smallest-root identification or integer feasibility is claimed for this equality regime.",
+  "written_refined_divisor_windows": "Integer spectra require d|N with b<d<min(c,a+b) in the positive comparison regime, or a<d<b in the negative regime. Apply prior coefficient/anchor congruences within these windows. Equality gives b as a residual integer root, not integer splitting of the other factor.",
+  "generic_middle_determinant_identity": "a**2*b**2*c**2*(a - b**2 - 2*b + c)",
+  "generic_principal_quadratic": "c*(a + b) + x**2 - x*(a*b + a + b + c)",
+  "quadratic_at_b": "a*(-b**2 - b + c)",
+  "generic_symbolic_identities": "passed",
+  "fully_distinct_real_endpoint_controls": [
+    {
+      "fixed_exponents_a_b": [
+        9,
+        12
+      ],
+      "endpoint_one_exponent_cubic": "224*c**3 - 39840*c**2 + 24288*c + 225280",
+      "unique_real_c_bracket": [
+        177,
+        178
+      ],
+      "h_C_at_one_at_bracket": [
+        -1490912,
+        5562432
+      ],
+      "exact_Sturm_roots_on_c_greater_than_b": 1,
+      "exact_Sturm_roots_in_bracket": 1,
+      "comparison_threshold_for_c": 159,
+      "middle_root_branch": "mu_1>b",
+      "new_smallest_root_window": [
+        12,
+        21
+      ],
+      "previous_smallest_root_window": [
+        9,
+        21
+      ],
+      "integer_endpoint_one_triple_claimed": false
+    },
+    {
+      "fixed_exponents_a_b": [
+        9,
+        30
+      ],
+      "endpoint_one_exponent_cubic": "980*c**3 - 243636*c**2 + 151728*c + 2715328",
+      "unique_real_c_bracket": [
+        247,
+        248
+      ],
+      "h_C_at_one_at_bracket": [
+        -55958040,
+        3687488
+      ],
+      "exact_Sturm_roots_on_c_greater_than_b": 1,
+      "exact_Sturm_roots_in_bracket": 1,
+      "comparison_threshold_for_c": 951,
+      "middle_root_branch": "a<mu_1<b<mu_2",
+      "new_smallest_root_window": [
+        9,
+        30
+      ],
+      "previous_smallest_root_window": [
+        9,
+        39
+      ],
+      "integer_endpoint_one_triple_claimed": false
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_one_middle_root.py": "79ebee06b45f8993ff30529de5242a526ad1805beb859726c643e325a57c224e",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Written unbounded real endpoint-one smallest-root location relative to middle exponent, using existing determinant identity and principal interlacing. No finite base required. Exactly two selected fixed-pair cubic/Sturm controls represent real algebraic endpoint points, not integer triples or finite proof of the theorem. Equality only asserts b is a residual root. No new nonintegrality family, integer-feasibility decision, globalQ3closure, exponent/modulus scan, higher2adicshift, floating spectra or Lean. Prior manuscript/proofs/finite dependencies and oldn7/four native axioms retained."
+}

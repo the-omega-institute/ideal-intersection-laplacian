@@ -101,6 +101,15 @@ which is still a nonroot. Seek a uniform obstruction in the fully distinct
 surviving region; passing these tests is not sufficient for being a root.
 No new family, range scan, endpoint lifting or full Q3 closure is claimed.
 
+The [middle-root location proof](notes/endpoint-one-middle-root.md)
+now refines the candidate window on real endpoint one at minimum>=4:
+c+a>b(b+2) gives b<mu_1<min(c,a+b); c+a<b(b+2) gives a<mu_1<b<mu_2.
+At equality b is a residual root; its index and integer splitting are not
+decided here. Use coefficient/anchor congruences in the refined windows
+when studying integer feasibility or splitting. Two selected real algebraic
+endpoint controls show both strict regimes; the written proof needs no
+finite base. No new nonintegrality family or full Q3 closure is claimed.
+
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
 Appendices B/C; Appendix A summarizes verification, with the full checker

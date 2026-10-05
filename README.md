@@ -100,6 +100,14 @@ from exact evaluations at a,b,c. Together these necessary conditions leave
 one of the existing 23 candidates, which still fails exact F evaluation.
 The fully distinct sign question and global splitting problem remain open.
 
+The [middle-exponent location theorem](notes/endpoint-one-middle-root.md)
+refines the smallest-root window on real endpoint one at minimum>=4.
+If c+a>b(b+2), the smallest residual root exceeds b; if c+a<b(b+2),
+exactly one residual root lies below b. Integer candidates therefore lie
+in (b,min(c,a+b)) or (a,b), respectively. At equality b is a residual
+root, without a claim about its position or integer splitting. The proof
+uses determinant sign and principal interlacing, with no finite base.
+
 A standalone [middle-diagonal inertia restriction](notes/endpoint-two-middle-inertia.md)
 narrows the endpoint-two problem without further congruence lifting. For
 `4<=a<b<c`, `(b-2)(a+b+c-2)<=2ac` supplies a positive quotient root in `(0,2)`.
