@@ -74,6 +74,15 @@ question to divisors a<d<c of rs(p+s) with h_C(1)=F(d)=0. Three established
 controls suffice for the diagnostic; no parameter scan or new family.
 Full Q3 and prior finite dependencies remain as recorded.
 
+The [pair-sum window](notes/endpoint-one-pair-sum-window.md) strengthens
+the universal upper bound to lambda_3<a+b for all ordered positive real
+exponents. A four-support principal block has exactly three roots below
+a+b, as its quadratic factor has Q(a+b)=-ab(a+b)<0. On endpoint one
+at real minimum>=4, refine the splitting target to positive divisors
+a<d<min(c,a+b) of rs(p+s) with h_C(1)=F(d)=0. The three established
+controls leave23exact nonzero candidates; no parameter scan is needed.
+Written bounds require no finite base; full Q3 stays open.
+
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
 Appendices B/C; Appendix A summarizes verification, with the full checker

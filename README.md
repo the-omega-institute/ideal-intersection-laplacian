@@ -76,6 +76,15 @@ or minimum-eight positivity certificate. Integer candidates now lie in
 [a+1,c-1]; three established controls leave252nonzero evaluations.
 The unbounded surface and full Q3 remain open.
 
+The [pair-sum upper bound](notes/endpoint-one-pair-sum-window.md) now gives
+lambda_3<a+b for every ordered positive real triple, by interlacing with
+a four-support principal block. On endpoint one at real minimum>=4,
+the smallest quartic root therefore lies in **(a,min(c,a+b))**.
+Hypothetical integer spectra require a divisor of rs(p+s) in that window.
+The three established controls leave only23candidates, all nonzero under
+exact evaluation. No finite base or new nonintegrality family is claimed;
+the unbounded surface and full Q3 remain open.
+
 A standalone [middle-diagonal inertia restriction](notes/endpoint-two-middle-inertia.md)
 narrows the endpoint-two problem without further congruence lifting. For
 `4<=a<b<c`, `(b-2)(a+b+c-2)<=2ac` supplies a positive quotient root in `(0,2)`.
