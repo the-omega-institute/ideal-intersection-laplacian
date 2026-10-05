@@ -1,5 +1,15 @@
 # First task: Laplacian integrality
 
+The [local splitting classification](notes/endpoint-one-equality-local-splitting.md)
+now settles every odd prime divisor of b except the negative branch at13.
+The positive q=1branch splits overZ_p; the negative q=-1branch splits
+iff13is a residue. Thus the surviving (a,b)=(2,0)/(3,0)mod5rows pass
+every5-power splitting test. Further work should use the actual integer
+root equation/global discriminant, primes not dividing b, the two b=2mod5
+rows, or a specific reduction for the exceptional negative branch at13.
+Do not enlarge5-power tables on the positive branch. Local compatibility
+does not construct an integer equality point or prove integral spectra.
+
 The [uniform local discriminant obstruction](notes/endpoint-one-equality-local-discriminant.md)
 now excludes equality spectra when p|b, a²=1modp and13 is a nonresidue
 at an odd prime. In particular7and11cannot divide b. It resolves the

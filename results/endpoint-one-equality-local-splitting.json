@@ -1,0 +1,77 @@
+{
+  "hypotheses": "Integer equality point c=b(b+2)-a, q=ac, G=0; p odd dividing b.",
+  "positive_branch": "q=1modp gives a^2=-1modp. P3=x(x^2+1)modp has three simple roots0,+a,-a, with derivatives1,-2,-2. Hensel gives three distinct Z_p roots, for every oddp including13.",
+  "negative_branch": "q=-1modp and p!=13: the root0 has a unique Hensel lift d0 in pZ_p. P3=(x-d0)Q and P3prime(d0) is a unit. Q splits over Z_p iff13 is a quadratic residue modp; otherwise P3 has exactly one Q_p root.",
+  "negative_branch_discriminant_valuation": "v_p(Delta)=2v_p(b), normalized unit13*(b/p^e)^2modp. In the split case the two roots reducing to-1 differ by valuatione; differences to d0 are units.",
+  "generic_factorization": "-A*d + B + d**2 + x**2 + x*(-A + d)",
+  "quadratic_discriminant": "A**2 + 2*A*d - 4*B - 3*d**2",
+  "generic_discriminant_remainder_factor": "4*A**3 - 18*A*B - 27*A*d**2 + 27*B*d + 27*N + 27*d**3",
+  "generic_factor_discriminant_identity_verified": true,
+  "positive_simple_root_identities_verified": true,
+  "prior_direct_quotient_sylvester_and_local_anchor_identities_reverified": true,
+  "local_anchor": "3*b**2 + 2*b - 1",
+  "fixed_prime_examples": [
+    {
+      "prime": 3,
+      "q_branch": -1,
+      "reduced_roots": [
+        0,
+        2
+      ],
+      "derivatives_at_reduced_roots": [
+        1,
+        0
+      ],
+      "thirteen_is_square": true
+    },
+    {
+      "prime": 5,
+      "q_branch": 1,
+      "reduced_roots": [
+        0,
+        2,
+        3
+      ],
+      "derivatives_at_reduced_roots": [
+        1,
+        3,
+        3
+      ],
+      "thirteen_is_square": false
+    },
+    {
+      "prime": 7,
+      "q_branch": -1,
+      "reduced_roots": [
+        0,
+        6
+      ],
+      "derivatives_at_reduced_roots": [
+        1,
+        0
+      ],
+      "thirteen_is_square": false
+    }
+  ],
+  "surviving_mod5_b_zero_rows": [
+    [
+      2,
+      0
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "all_mod5_power_splitting_tests_pass_on_surviving_b_zero_rows": true,
+  "exceptional_negative_branch": "p=13; not classified by the present normalized-unit argument.",
+  "prior_local_certificate_sha256": "7212cc24ca300b1f78df199a8dff076ea2dcb22e8e34aecc455cefafe92d3153",
+  "source_sha256": {
+    "check_endpoint_one_equality_local_splitting.py": "cef218fe175ee23613f5d9398e0b4dee4a681d52068c472d2d69b4f53bd16e13",
+    "check_endpoint_one_equality_cubic.py": "47f1d32a62eb5f0a8f04565922201b5a9a13b5b5742d35d1a501ee3e57a11744",
+    "check_endpoint_one_equality_local_discriminant.py": "4f25065a770b6c9ce346c3b9d724fa58b9efa0b3d35248ca95532dba9cd3dfde",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "sympy": "1.14.0",
+  "scope": "Written local splitting classification at every odd prime dividingb, apart from the negative branch at13. Hensel lemma and the quadratic discriminant criterion supply the unbounded prime-power conclusion. Exact generic identities and three specified residue examples are diagnostics, not finite exponent bases or an empirical test of Hensel lemma. No exponent/prime/power scan, integer equality point, global integral spectrum, Lean or new nonintegrality family claimed. Remaining positive mod5branch cannot be excluded by local splitting at5 alone."
+}

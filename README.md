@@ -8,6 +8,15 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+The [local splitting theorem](notes/endpoint-one-equality-local-splitting.md)
+now completes the cubic test at odd primes p|b, except the negative branch
+at p=13. The q=1modp branch always splits over Z_p by three simple Hensel
+lifts. The q=-1modp branch splits exactly when13 is a residue modulo p;
+its two colliding roots differ by valuationv_p(b). In particular, the two
+surviving b=0mod5 rows pass splitting modulo every power of five. Higher
+five-power tables alone cannot exclude them. This is a written local result,
+not a global integer splitting theorem or an integer-point construction.
+
 The [local discriminant proof](notes/endpoint-one-equality-local-discriminant.md)
 excludes an integral equality spectrum whenever an odd prime p divides b,
 a²=1modp and 13 is a nonresidue modulo p. In particular neither7nor11
