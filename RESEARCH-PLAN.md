@@ -1,5 +1,14 @@
 # First task: Laplacian integrality
 
+The [uniform repeated-pair tail](notes/repeated-pair-product-tail.md) now
+provides an endpoint-one-to-two witness for arbitrary a at t>=4 when
+a^2*A>=(a^2-1)*B+(a-1)*(a-2), including equality. Its four-prime tail
+b,c>=2a^2-1 adds an unbounded family beyond the earlier support criterion.
+Continue the coauthor-requested four-prime research in the region where
+this condition fails, especially repeated a>=5, using the invariant block
+and its other eigenvalues. Failure does not imply integrality. Keep the
+completed three-prime manuscript focused; general higher-prime Q3 is open.
+
 The [pair-four proof](notes/four-prime-pair-four.md) now settles all
 (4,4,b,c) four-prime vectors. The smallest restricted root lies in
 (1,4); thirty symbolic endpoint-two rows and two endpoint-three

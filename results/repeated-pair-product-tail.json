@@ -1,0 +1,272 @@
+{
+  "written_theorem": "For t>=4 and exponents(a,a,k3,...,kt),a^2*A>=(a^2-1)*B+(a-1)*(a-2) gives a noninteger graph eigenvalue in(V-1,V),including equality.",
+  "symbolic": {
+    "product_minor": "-A*a**2 + B*(a**2 - 1) + (a - 2)*(a - 1)",
+    "four_prime_minor": "-b*c + (a - 1)*(2*a - 1) + (a**2 - 1)*(b + c)",
+    "strict_tail_identity": "a**2*(u + v) + 3*a + u*v - 2",
+    "boundary_family": [
+      "a^2",
+      "a^4+a^2-3a+1"
+    ],
+    "comparison_with_small_exponent_criterion": [
+      {
+        "distinguished_exponent": "a",
+        "failure_margin": "4*a**6 - 4*a**4 - a**3 - a**2 - a + 2",
+        "coefficients_after_a_equals_z_plus_two": [
+          4,
+          48,
+          236,
+          607,
+          857,
+          623,
+          180
+        ]
+      },
+      {
+        "distinguished_exponent": "2*a**2 - 1",
+        "failure_margin": "16*a**7 + 12*a**6 - 16*a**5 - 18*a**4 + 3*a**2 + 2",
+        "coefficients_after_a_equals_z_plus_two": [
+          16,
+          236,
+          1472,
+          5022,
+          10096,
+          11923,
+          7628,
+          2030
+        ]
+      }
+    ],
+    "identities": "passed"
+  },
+  "support_controls": [
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "graph_vertices": 14,
+      "proper_supports_checked": 14,
+      "embedding_columns_checked": 4,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "leading_minors_at_one": [
+        8,
+        23,
+        60,
+        52
+      ],
+      "endpoint_principal_minor_at_two": -1,
+      "sufficient_condition_holds": true,
+      "characteristic_coefficients": [
+        1,
+        -19,
+        118,
+        -291,
+        243
+      ],
+      "distinct_roots_strictly_between_one_and_two": 1
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        49,
+        49
+      ],
+      "graph_vertices": 89998,
+      "proper_supports_checked": 14,
+      "embedding_columns_checked": 4,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "leading_minors_at_one": [
+        15004,
+        219763579,
+        1057941114804,
+        2535541762807620
+      ],
+      "endpoint_principal_minor_at_two": -13,
+      "sufficient_condition_holds": true,
+      "characteristic_coefficients": [
+        1,
+        -15611,
+        9064130,
+        -467808275,
+        898591375
+      ],
+      "distinct_roots_strictly_between_one_and_two": 1
+    },
+    {
+      "exponents": [
+        2,
+        2,
+        4,
+        15
+      ],
+      "graph_vertices": 718,
+      "proper_supports_checked": 14,
+      "embedding_columns_checked": 4,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "leading_minors_at_one": [
+        241,
+        49710,
+        5919240,
+        349156800
+      ],
+      "endpoint_principal_minor_at_two": 0,
+      "sufficient_condition_holds": true,
+      "characteristic_coefficients": [
+        1,
+        -308,
+        16325,
+        -145830,
+        226800
+      ],
+      "distinct_roots_strictly_between_one_and_two": 1,
+      "boundary_negative_trial_energy_minus_twice_norm": "-60/13"
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        25,
+        636
+      ],
+      "graph_vertices": 596230,
+      "proper_supports_checked": 14,
+      "embedding_columns_checked": 4,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "leading_minors_at_one": [
+        99376,
+        9786373680,
+        306823843969500,
+        4821181004450250000
+      ],
+      "endpoint_principal_minor_at_two": 0,
+      "sufficient_condition_holds": true,
+      "characteristic_coefficients": [
+        1,
+        -103361,
+        395726543,
+        -20484266142,
+        39159015984
+      ],
+      "distinct_roots_strictly_between_one_and_two": 1,
+      "boundary_negative_trial_energy_minus_twice_norm": "-127200/77"
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        25,
+        635
+      ],
+      "graph_vertices": 595294,
+      "proper_supports_checked": 14,
+      "embedding_columns_checked": 4,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "leading_minors_at_one": [
+        99220,
+        9755647875,
+        305381624281250,
+        4791029984453125000
+      ],
+      "endpoint_principal_minor_at_two": 1,
+      "sufficient_condition_holds": false,
+      "characteristic_coefficients": [
+        1,
+        -103199,
+        394510016,
+        -20420161189,
+        39036599371
+      ],
+      "distinct_roots_strictly_between_one_and_two": 1
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        99,
+        99,
+        99
+      ],
+      "graph_vertices": 35999998,
+      "proper_supports_checked": 30,
+      "embedding_columns_checked": 8,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "leading_minors_at_one": [
+        6000004,
+        35639429514579,
+        211680272631912014304,
+        1242647608265281583037674496,
+        2397895944325685222711145269476896,
+        4572326055026201439379795925252527309779,
+        8716166999715868270608412268856365340143489796,
+        8073897915606598099826953541917996450659513890034420
+      ],
+      "endpoint_principal_minor_at_two": -257463,
+      "sufficient_condition_holds": true,
+      "characteristic_coefficients": [
+        1,
+        -6181811,
+        1101864572355,
+        -66538327407491250,
+        1360870463925724659750,
+        -780848395486715667948750,
+        151713612197442319329703125,
+        -9984440184180313352894859375,
+        18942300865576397916716484375
+      ],
+      "distinct_roots_strictly_between_one_and_two": 1
+    },
+    {
+      "exponents": [
+        2,
+        2,
+        7,
+        7,
+        48
+      ],
+      "graph_vertices": 28222,
+      "proper_supports_checked": 30,
+      "embedding_columns_checked": 8,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "leading_minors_at_one": [
+        9409,
+        86252496,
+        705177835152,
+        5415765733792512,
+        28675685416511976192,
+        142626498426781940551680,
+        669785216736145470577827840,
+        1545095941125427766364745236480
+      ],
+      "endpoint_principal_minor_at_two": 0,
+      "sufficient_condition_holds": true,
+      "characteristic_coefficients": [
+        1,
+        -12152,
+        28105061,
+        -22348131302,
+        5609894513572,
+        -413870155242744,
+        9657916514676864,
+        -77557620560555520,
+        118798080952320000
+      ],
+      "distinct_roots_strictly_between_one_and_two": 1,
+      "boundary_negative_trial_energy_minus_twice_norm": "-96/95"
+    }
+  ],
+  "three_prime_boundary": {
+    "family": "(a,a,(a-1)(2a-1)),a>=2",
+    "restricted_eigenvalues": [
+      "2",
+      "2*a**3 - a**2 + a + 1"
+    ],
+    "equality_strictness_does_not_extend_to_t_equals_three": true
+  },
+  "script_sha256": "b3b25249657a0b0d124b70b43f6194dda7cbbad6cf91a9720cb3c8d5e72ccfab",
+  "sympy_version": "1.14.0",
+  "scope": "Written unbounded sufficient condition; seven fixed support controls, exact symbolic identities, leading minors and Sturm counts. No expanded vertex graph, exponent scan, floating eigenvalues, finite classification base or Lean run. Higher-prime Q3 remains open."
+}

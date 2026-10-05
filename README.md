@@ -1,5 +1,14 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [repeated-pair product tail](notes/repeated-pair-product-tail.md) gives
+a uniform sufficient condition for every repeated exponent a and every
+prime count t>=4, including its equality boundary. For four primes,
+bc>=(a^2-1)(b+c)+(a-1)(2a-1) supplies a graph eigenvalue in (V-1,V).
+In particular every (a,a,b,c) with a>=2 and b,c>=2a^2-1 is nonintegral.
+The diagonal tail is outside the earlier small-exponent criterion;
+for a>=5 it also avoids all previous fixed pair-two/three/four cases.
+This is a supporting written theorem, not a full higher-prime classification.
+
 The [pair-four theorem](notes/four-prime-pair-four.md) proves every
 four-prime vector (4,4,b,c), b,c>=2, nonintegral. Its restricted
 eigenvalue lies in (1,4); endpoint two never occurs, and endpoint
