@@ -1,5 +1,12 @@
 # First task: Laplacian integrality
 
+The modulo-five splitting obstruction now excludes two complete global
+residue classes. Equality candidates must have one of six explicit (a,b)
+residue pairs; b=1mod5 is impossible for integral splitting. Apply these
+necessary restrictions together with G=0 and the actual cubic root equation.
+The fixed modulo-three comparison adds no equality splitting exclusions.
+Effective equality classification and the full endpoint-one problem stay open.
+
 The current manuscript integrates the endpoint-two completion with its
 full proof, geometric bounds, all positive coefficient vectors and the
 required8,658-triple finite base. It settles all-even triples and the

@@ -4,6 +4,13 @@ Read [the PDF](paper.pdf), or edit [paper.tex](paper.tex) and the section
 files it includes. This is a growing mathematical draft, not a submission
 package. Author metadata and any manuscript disclosure are for joint agreement.
 The main text ends with explicit remaining questions and references.
+Proposition13.6 excludes all permutations of (1,1,2)/(1,4,4)mod5 by a
+full reduced-quintic splitting proof. The equality problem now has six
+necessary (a,b)mod5 rows, including b!=1mod5. Supporting evidence is pinned
+to PR9 `7d917afffd7c2616bc052810718dcc720d916a8b`; run
+`python3 scripts/check_endpoint_one_equality_mod_five.py` there and compare
+with `results/endpoint-one-equality-mod-five.json`. This result has no finite
+exponent base, and leaves effective equality classification open.
 Remark 14.5 records the equality curve's genus ten and Siegel finiteness
 consequence, with a short quotient/ramification argument and a linked detailed
 verification note. It does not supply an effective integer-point list.

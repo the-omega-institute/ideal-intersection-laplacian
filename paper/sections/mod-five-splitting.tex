@@ -1,0 +1,33 @@
+\subsection{Two further congruence classes modulo five}
+
+\begin{proposition}
+\label{prop:mod-five-splitting}
+Every positive exponent triple that is a permutation of $(1,1,2)$ or
+$(1,4,4)$ modulo five gives a nonintegral ideal intersection graph.
+\end{proposition}
+
+\begin{proof}
+The monic integer quintic $h_C(x)=\det(xI-C)/x$ is symmetric in the
+exponents. Reducing the six-support quotient gives the complete identities
+\begin{align*}
+ (1,1,2):\quad h_C(x)&\equiv(x-1)^2(x-3)(x^2+3x+4),\\
+ (1,4,4):\quad h_C(x)&\equiv(x-1)^2(x^3+x^2+4x+3)
+ \pmod5.
+\end{align*}
+The quadratic discriminant is $3$, a nonsquare modulo five. The cubic
+takes the values $3,4,3,1,4$ at $0,1,2,3,4$, respectively, and hence
+is irreducible over $\mathbb F_5$. An integer quotient spectrum would
+make $h_C$ split into linear factors modulo every prime, contradicting
+either reduction. The complement and universal-class lifts give the
+graph conclusion. No size, parity or endpoint-zero hypothesis is needed.
+\end{proof}
+
+On the equality subfamily $c=b(b+2)-a$, this gives a splitting obstruction
+that a square-discriminant congruence can miss. If $b\equiv1\pmod5$, put
+$q=ac\equiv a(3-a)$. The curve equation in
+Remark~\ref{rem:endpoint-one-equality-curve} becomes
+$G\equiv2(q-1)(q-2)\pmod5$. Thus $G=0$ permits precisely
+$a\equiv1,2,4\pmod5$, giving one of the two excluded exponent classes.
+For $q\equiv1$, the irreducible cubic has discriminant $1$ modulo five.
+Consequently an integral equality spectrum requires $b\not\equiv1\pmod5$,
+even though the discriminant-square test alone permits one excluded row.

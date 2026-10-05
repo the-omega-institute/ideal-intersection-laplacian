@@ -8,6 +8,14 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+Proposition13.6 now excludes every permutation of `(1,1,2)` or `(1,4,4)`
+modulo five by a full quadratic/cubic splitting obstruction, without size
+or endpoint hypotheses. On the equality curve, integer spectra require
+one of six explicit (a,b) residue pairs, in particular b!=1mod5.
+An irreducible cubic with square discriminant modulo five demonstrates
+the additional force of the root equation. The complete proof is in the
+manuscript; exact supporting sources are pinned to PR9 `7d917aff`.
+
 The manuscript now completes the endpoint-two nonintegrality alternative.
 Theorem14.8 gives a written further-root interval(4,5) at minimum>=40;
 the necessary complete8,658-triple base handles fully distinct minima8through39,

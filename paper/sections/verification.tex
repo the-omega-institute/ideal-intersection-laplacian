@@ -162,6 +162,22 @@ After removing root $b$, exact Sturm counts place one positive root below
 $a+b$ and three above it. These are diagnostics of the unconditional
 statement, not integer endpoint solutions or a finite base.
 
+\subsection{Modulo-five splitting and equality residues}
+
+Proposition~\ref{prop:mod-five-splitting} has a written finite-field proof
+with no exponent base. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/7d917afffd7c2616bc052810718dcc720d916a8b/scripts/check_endpoint_one_equality_mod_five.py}{pinned checker}
+reconstructs the generic six-support determinant, verifies all six exponent
+permutations and the equality identity, and checks all $34$ residue pairs
+at the fixed primes three and five. Separate root-multiset enumeration
+and polynomial factorization agree on every curve row. Independent
+$720$-term integer determinant expansions check the endpoint residues,
+both global residue polynomials at seven interpolation points each,
+and five fixed controls, for $83$ determinants. The two $E=0$ controls
+are off endpoint one; the repeated endpoint-one zero $(9,9,136)$ is
+preserved. The certificate reproduces byte-for-byte. These are finite-field
+tables and fixed controls, with no exponent-range or integer-point search.
+
 \ifdefined\DetailedVerification
 \subsection{Complete checker catalogue}
 \input{sections/verification-details}
