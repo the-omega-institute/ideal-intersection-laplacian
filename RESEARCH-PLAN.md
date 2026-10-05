@@ -1,5 +1,16 @@
 # First task: Laplacian integrality
 
+The [structural review](notes/structural-closure-review.md) proves the
+whole d>=1,a>=2d²+20,c>a+d region using written arguments only.
+Pause additional residue-class refinements. The next mathematical target
+is a spectral argument on the remaining endpoint-one region d>=3,
+a<2d²+20, using the quartic and established root windows. The known
+genus-three quotient has no Q-map to genus two, and no effective rank
+bound or complete mixed-invariant covering is established. A submission
+or scope decision remains for the authors; this review leaves the49-page
+manuscript unchanged. Earlier next-step paragraphs below are historical
+research leads, superseded by this structural priority.
+
 The [prime-thirteen valuation proof](notes/endpoint-one-equality-thirteen.md)
 requires b=104mod169 for an integral equality spectrum on the negative
 q=-1mod13 branch. Its refined anchor gives Delta=13b²-18b³mod13^(4e).

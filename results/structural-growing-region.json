@@ -1,0 +1,134 @@
+{
+  "written_structural_theorem": "For every integer d>=1, a>=2*d^2+20, c>a+d, the ideal intersection graph is Laplacian nonintegral for every parity and residue pattern. No finite exponent base is required for this whole region.",
+  "proof": "Endpoint one has its unique exponent root in a unit interval. At a>=40 an endpoint-two zero forces a quotient root in(4,5). Below40 the threshold allows only d=1,2,3, whose written endpoint-two tails cover minima22,28,38. The uniform positive root in(0,3) then rules out an integer spectrum.",
+  "endpoint_one_boundary_positive_terms": {
+    "even_lower": 48,
+    "even_upper": 49,
+    "odd_lower": 49,
+    "odd_upper": 49
+  },
+  "endpoint_one_all31_note_vectors_reverified": true,
+  "endpoint_one_fixed_fixtures_reverified": 8,
+  "endpoint_two_small_gap_written_boundaries": [
+    {
+      "gap": 1,
+      "written_tail_minimum": 20,
+      "endpoint_two_lower": "2*a - 9",
+      "positive_boundary_vectors_descending": [
+        [
+          136,
+          9192,
+          228898,
+          2482218,
+          9856980
+        ],
+        [
+          6,
+          414,
+          10596,
+          119754,
+          519138,
+          212220
+        ]
+      ]
+    },
+    {
+      "gap": 2,
+      "written_tail_minimum": 20,
+      "endpoint_two_lower": "2*a - 8",
+      "positive_boundary_vectors_descending": [
+        [
+          112,
+          7616,
+          190528,
+          2069760,
+          8192000
+        ],
+        [
+          6,
+          453,
+          13308,
+          189999,
+          1323714,
+          3658680
+        ]
+      ]
+    },
+    {
+      "gap": 3,
+      "written_tail_minimum": 16,
+      "endpoint_two_lower": "2*a - 7",
+      "positive_boundary_vectors_descending": [
+        [
+          72,
+          3528,
+          61002,
+          422694,
+          881604
+        ],
+        [
+          6,
+          388,
+          10256,
+          140678,
+          1016228,
+          3116304
+        ]
+      ]
+    }
+  ],
+  "threshold_comparison": [
+    {
+      "gap": 1,
+      "region_minimum": 22,
+      "endpoint_two_tail_minimum": 20,
+      "tail_covers_whole_region": true
+    },
+    {
+      "gap": 2,
+      "region_minimum": 28,
+      "endpoint_two_tail_minimum": 20,
+      "tail_covers_whole_region": true
+    },
+    {
+      "gap": 3,
+      "region_minimum": 38,
+      "endpoint_two_tail_minimum": 16,
+      "tail_covers_whole_region": true
+    }
+  ],
+  "endpoint_two_real_tail_positive_terms": {
+    "four_difference": 112,
+    "five_difference": 44
+  },
+  "endpoint_two_saved_tail_vectors_agree": true,
+  "finite_base_8658_rerun": false,
+  "finite_base_27562_rerun": false,
+  "finite_exponent_base_required_for_structural_region": false,
+  "broader_minimum8_gap1or2_consequence_retains_finite_dependencies": true,
+  "descent_review": {
+    "known_quotient_genus": 3,
+    "branch_stabilizer_elements_reverified": 120,
+    "extra_rational_involution_on_known_quotient": false,
+    "known_quotient_has_Q_map_to_genus2": false,
+    "maps_from_original_genus10_curve_classified": false,
+    "Jacobian_rank_computed": false
+  },
+  "covering_review": "CRT limitations apply to finite congruence tests; they do not disprove a finite covering that also uses spectral inequalities and exact root/divisor conditions. No complete covering is established.",
+  "scope": "Written structural proof and exact polynomial identity review, not a new residue slice. The spectral region was already recorded as a broader consequence; its finite-dependency requirement is removed here by using written tails only. Full Q3 and the remaining endpoint-one region stay open. No exponent/prime/power scan, new finite base, integer-point/rank computation or Lean. Manuscript unchanged.",
+  "source_sha256": {
+    "check_structural_growing_region.py": "4aff757986770d59eaa650073c3280c6f027259bd815e8596a8ab3e839a0b8e9",
+    "check_endpoint_one_growing_gap.py": "9e663e01efbb3b2eb3276c87b3f46e9c80ba93f97ee32db34edee85a465850b9",
+    "check_endpoint_one_equality_quotient.py": "34048537d765c3a779f5cc041b68f7e906b9b06b2e4b7c370594426a5d4c0fa1",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "prior_certificate_sha256": {
+    "endpoint-one-growing-gap": "34f89cee0c81ccd1386b101ad454099c627a9a3290b47e6adc18b2f3be6daf5e",
+    "endpoint-two-completion": "f502a70e41fd8f35a452b10b05cf66e2fafca5db5e8bbef3037725a60af5d0bf",
+    "endpoint-two-middle-tail": "eed8c238b5ee25abdd711e2d392a6e008e1074fd706f09c8dee3711790012d83",
+    "endpoint-two-sharp-maximum": "bbf01475c8331e6e970502ff1ef3bfd9fb7db6bb09cd7136838ea5fde06b467e",
+    "endpoint-one-equality-quotient": "06006b268ee4379ea6b0526217ff5c2128d722cfe8886b556090fca52c8c2a77",
+    "endpoint-one-equality-curve": "6164fcd93704c9c5b2100df072f9f7f8190fb20edb28b6a7cd02be1461e2fcfc"
+  },
+  "sympy": "1.14.0"
+}

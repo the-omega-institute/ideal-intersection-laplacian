@@ -23,8 +23,11 @@ This family uses only written proofs, with no finite base.
 
 **Broader consequence.** Every triple with d>=1,a>=2d²+20,c>a+d, and every
 triple with d=1or2,a>=8,c>a+d, is also nonintegral. This broader conclusion
-uses the earlier global endpoint-two theorem or small-gap certificates and
-retains their finite-computation dependencies. Consequently any fully
+was first obtained using the earlier global endpoint-two theorem or
+small-gap certificates. The [structural review](structural-closure-review.md)
+now gives a written proof with no finite base for the entire
+d>=1,a>=2d²+20 region. The additional d=1or2,a>=8 conclusion retains
+its earlier finite dependencies. Consequently any fully
 distinct integer spectrum at minimum>=8 would require
 
 ```text
@@ -163,11 +166,14 @@ the stated spectral family entirely by written arguments, for every parity.
 For d=1or2,a>=8, the earlier
 [small-middle-gap theorem](endpoint-two-small-middle-gaps.md)
 excludes endpoint two, retaining its
-finite certificates. For the broader d>=1,a>=2d²+20 consequence, the
+finite certificates. The original proof of the broader d>=1,a>=2d²+20 consequence used the
 [global endpoint-two nonintegrality theorem](endpoint-two-completion.md)
 excludes an integer spectrum even if endpoint two occurs. That theorem
 retains its8658triple finite base and prior minimum<=7certificate. The
-broader consequences are therefore not claimed as purely written results.
+original broader route retained finite dependencies. The later
+[structural review](structural-closure-review.md) removes that dependency
+for the full quadratic-threshold region by using written tails only.
+The gaps1/2 conclusion at all a>=8 still retains its finite certificates.
 Repeated and small-minimum triples retain their existing proofs/certificates.
 
 The genuinely repeated endpoint-one zero(9,9,136) remains a control outside

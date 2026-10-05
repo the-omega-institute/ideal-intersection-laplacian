@@ -8,6 +8,15 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+The [structural review](notes/structural-closure-review.md) gives a written
+proof for the entire region d=b-a>=1,a>=2d²+20,c>b, across all residues
+and parities, with no finite exponent base. This region was already
+recorded as a broader consequence; written endpoint-two tails remove its
+unnecessary dependence on the global finite base. The review assesses
+the spectral, descent and covering routes without extending the49-page
+manuscript. Further residue additions are paused while a global structural
+route and manuscript scope are considered.
+
 The [exceptional-prime proof](notes/endpoint-one-equality-thirteen.md)
 now requires b=104mod169 for an integral equality spectrum on the
 q=-1mod13 branch with13 dividing b. The refined congruence
@@ -81,8 +90,10 @@ now excludes every integer endpoint-one solution for d=b-a>=1,
 **a>=2d^2+20**, by an exact unit-width bracket for its unique real
 exponent c>b. Gaps1and2 are excluded already at every a>=8. Combining
 the written endpoint-one/two brackets proves nonintegrality for every
-parity pattern at **d>=5,a>=2d^2+20**, with no finite base. Broader
-consequences retain the earlier endpoint-two finite dependencies.
+parity pattern at **d>=5,a>=2d^2+20**, with no finite base. The structural
+review above extends the written evidence scope to all d>=1 in this
+quadratic-threshold region. The additional gaps1/2 consequence at all
+minima>=8 retains its earlier finite dependencies.
 Any fully distinct integer spectrum at minimum>=8 would now require
 **d>=3,a<2d^2+20**, in addition to the existing endpoint-one bounds.
 Full Q3 and the remaining endpoint-one region stay open.
