@@ -8,6 +8,16 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+The [endpoint-two completion](notes/endpoint-two-completion.md) now settles
+**every all-even exponent triple**, and every permutation of `(1,3,2)` or
+`(3,3,0)` modulo four, with no size/gap/ratio bound. On an endpoint-two zero
+at minimum>=40, a written proof puts another quotient root in `(4,5)`.
+A complete8,658triple necessary base excludes fully distinct endpoint-two
+zeros at minima8through39, independently checked by integer Horner and6x6
+Bareiss determinants. Earlier repeated/minimum<=7results handle the other
+cases. The global completion uses finite computation; remaining endpoint-one
+classes and full Q3 stay open. Standalone manuscript integration awaits review.
+
 A standalone [middle-diagonal inertia restriction](notes/endpoint-two-middle-inertia.md)
 narrows the endpoint-two problem without further congruence lifting. For
 `4<=a<b<c`, `(b-2)(a+b+c-2)<=2ac` supplies a positive quotient root in `(0,2)`.

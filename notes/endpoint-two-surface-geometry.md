@@ -159,7 +159,13 @@ bases. Every fully distinct integer endpoint-two zero at minimum>=8 now
 requires d=b-a>=5 and a<2d^2+20. The subsequent
 [nine-fourths maximum theorem](endpoint-two-sharp-maximum.md) also improves
 the maximum bound at a>=8 to c<9a/4-8, with a written unbounded proof.
-General feasibility remains open inside these restrictions.
+General integer-point feasibility remains open inside these restrictions.
+The subsequent [endpoint-two spectral completion](endpoint-two-completion.md)
+shows that every positive integer exponent triple with endpoint two has a
+nonintegral quotient spectrum: the written minimum>=40tail has a further
+root in(4,5), a complete finite base excludes distinct minima8through39,
+and prior repeated/minimum<=7results handle the other cases. This settles
+the all-even and stated mixed classes without proving surface emptiness.
 
 Run with SymPy 1.14.0:
 

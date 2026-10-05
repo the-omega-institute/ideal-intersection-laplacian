@@ -1,5 +1,17 @@
 # First task: Laplacian integrality
 
+The current [standalone endpoint-two completion](notes/endpoint-two-completion.md)
+settles every all-even triple and every permutation(1,3,2)/(3,3,0)mod4 triple.
+For ordered real minimum>=40, an endpoint-two zero forces another quotient
+root in(4,5), by two full positive identities. The complete8,658triple
+necessary base at fully distinct minima8through39 has no endpoint-two zeros,
+with independent integer-Horner/6x6Bareiss agreement in every case. The global
+result also uses earlier repeated/minimum<=7theorems and their finite scopes.
+Unbounded integer-point emptiness of the endpoint-two surface is not needed
+or proved. Focus subsequent research on the remaining endpoint-one classes;
+full Q3 and higher-prime nonsquarefree vectors stay open. Standalone integration
+into the manuscript awaits review; historical reductions below are preserved.
+
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
 Appendices B/C; Appendix A summarizes verification, with the full checker
