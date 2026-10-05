@@ -28,6 +28,16 @@ the choice of companion material remains a manuscript scope decision.
 
 ## Current results
 
+The [supporting pair-four theorem](https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/2e7d022088246d32572d51318438644d9f456e4d/notes/four-prime-pair-four.md)
+settles every positive four-prime vector with two entries equal to four.
+The invariant restriction has its smallest eigenvalue in (1,4), with
+no endpoint-two pair and only the endpoint-three pair {2,6}; an explicit
+cubic root in (7,8) handles that exception. Sixteen nonsquare
+discriminants, four factorizations and two cubic signs complete the
+unbounded endpoint reduction, without an exponent rectangle scan.
+The result stays in the supporting research package while the authors
+consider the main-core and companion-result organization.
+
 Theorem 8.6 proves every four-prime vector (3,3,b,c), b,c>=2, nonintegral.
 Tensor normalization gives a general repeated-pair lower bound; the
 exponent-three endpoint has no integer pair, by two positive expansions,
