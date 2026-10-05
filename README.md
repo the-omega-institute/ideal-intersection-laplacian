@@ -57,6 +57,15 @@ actual spectral simplicity, distinct from exponent-root uniqueness.
 The gap does not itself exclude integer spectra; the remaining quartic
 must be studied above four. Full Q3 stays open.
 
+The [endpoint-one divisor window](notes/endpoint-one-divisor-window.md)
+answers the constant-term and upper-bound questions: F(0)=rs(p+s)>0,
+and weighted principal interlacing gives the second smallest nonzero
+quotient root strictly below c for every ordered positive real triple.
+On endpoint one at minimum>=8, the smallest quartic root lies in (4,c).
+An integer spectrum therefore requires a divisor of rs(p+s) in [5,c-1]
+to vanish in F. Exact checks on the three established controls find none.
+This is a finite test per fixed triple, not a global surface decision.
+
 A standalone [middle-diagonal inertia restriction](notes/endpoint-two-middle-inertia.md)
 narrows the endpoint-two problem without further congruence lifting. For
 `4<=a<b<c`, `(b-2)(a+b+c-2)<=2ac` supplies a positive quotient root in `(0,2)`.

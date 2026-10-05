@@ -53,6 +53,16 @@ a noninteger root above four, or integer exponent feasibility in the
 surviving region. The gap alone does not prove nonintegrality or closeQ3;
 prior finite dependencies and manuscript scope remain unchanged.
 
+The [constant and divisor window](notes/endpoint-one-divisor-window.md)
+now gives F(0)=rs(p+s)>0 and the written strict interlacing bound
+lambda_3<c for all positive ordered real triples. On endpoint one at
+minimum>=8 this means 4<mu_1<c. For each fixed integer triple, test every
+positive divisor of rs(p+s) in [5,c-1] with exact F evaluation. Three
+established controls pass this nonintegrality diagnostic; no new family
+is claimed. Next seek a uniform obstruction to these candidate roots
+in the surviving region, rather than treating per-triple finiteness as
+a global decision of the unbounded endpoint-one surface. Full Q3 open.
+
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
 Appendices B/C; Appendix A summarizes verification, with the full checker
