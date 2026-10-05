@@ -1,5 +1,16 @@
 # First task: Laplacian integrality
 
+The [total-sum theorem](notes/total-sum-spectral-gap.md) now puts the
+three larger endpoint-one quartic roots above s=a+b+c, and supplies
+a strict rational smallest-root window from the reciprocal-root sum
+and exact coefficients. Next combine that window with the actual
+smallest-root equation on the remaining fully distinct region, seeking
+a uniform integer exclusion. Three old controls reduce23candidates to4,
+but give no new nonintegrality family or full surface decision.
+The prior pair-sum theorem is integrated in PR3d4ef2ab(main49/detailed55).
+Residue additions remain paused; no joint duration/freeze/submission
+decision is assumed, and higher-prime nonsquarefree fullQ3 stays open.
+
 The [global pair-sum separation](notes/global-pair-sum-separation.md)
 now gives lambda_3<a+b<=b+c<lambda_4 throughout real2<=a<=b<=c.
 The next bounded structural question is whether the three endpoint-one

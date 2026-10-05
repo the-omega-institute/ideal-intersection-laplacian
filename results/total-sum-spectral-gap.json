@@ -1,0 +1,208 @@
+{
+  "written_global_theorem": "For real2<=a<=b<=c except(2,2,2), lambda_3<a+b<a+b+c<lambda_4. Boundary lambda_4=6.",
+  "written_coefficient_window": "On real endpoint1/minimum>=4, N/D<mu_1<N/(D-NR), R=2/s+1/(A-U-2s), U=min(c,a+b), D-NR>0.",
+  "generic_symbolic_identities": "passed",
+  "ordered_high_pair_positive": "a**2*(a - 2) + a*b*(-b + c) + (-a + b)*(a - 1)*(a + b)",
+  "symmetric_total_sign_factor": "a**2*(b*c - b - c) + b**2*(a*c - a - c) + c**2*(a*b - a - b)",
+  "denominator_positive_identity": "a*b*c*(a*b*c - 4*a - 4*b - 4*c) + a*b*c*(-3*a*b - 3*a*c - 3*b*c + (a + b + c)**2 + 1) + (a + b + c)**2*(a*b + a*c + b*c) + (a*b + a*c + b*c)**2 + (a + b + c - 1)**3",
+  "spectral_controls": [
+    {
+      "exponents": [
+        2,
+        2,
+        2
+      ],
+      "total_sum": 6,
+      "characteristic_factorization": "x*(x - 6)*(x**2 - 12*x + 12)**2",
+      "Bareiss_determinant_at_total": 0,
+      "roots_strictly_below_with_multiplicity": 3,
+      "roots_strictly_above_with_multiplicity": 2,
+      "roots_at_endpoint_with_multiplicity": 1
+    },
+    {
+      "exponents": [
+        2,
+        2,
+        3
+      ],
+      "total_sum": 7,
+      "characteristic_factorization": "x*(x - 14)*(x - 1)*(x**3 - 22*x**2 + 127*x - 138)",
+      "Bareiss_determinant_at_total": -4704,
+      "roots_strictly_below_with_multiplicity": 3,
+      "roots_strictly_above_with_multiplicity": 3,
+      "roots_at_endpoint_with_multiplicity": 0
+    },
+    {
+      "exponents": [
+        4,
+        4,
+        4
+      ],
+      "total_sum": 12,
+      "characteristic_factorization": "x*(x - 20)*(x**2 - 32*x + 48)**2",
+      "Bareiss_determinant_at_total": -3538944,
+      "roots_strictly_below_with_multiplicity": 3,
+      "roots_strictly_above_with_multiplicity": 3,
+      "roots_at_endpoint_with_multiplicity": 0
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        136
+      ],
+      "total_sum": 154,
+      "characteristic_factorization": "x*(x - 1386)*(x - 1)*(x**3 - 1604*x**2 + 322939*x - 3283992)",
+      "Bareiss_determinant_at_total": -350094328790976,
+      "roots_strictly_below_with_multiplicity": 3,
+      "roots_strictly_above_with_multiplicity": 3,
+      "roots_at_endpoint_with_multiplicity": 0
+    },
+    {
+      "exponents": [
+        9,
+        12,
+        159
+      ],
+      "total_sum": 180,
+      "characteristic_factorization": "x*(x - 12)*(x**4 - 3975*x**3 + 4384827*x**2 - 929287161*x + 934242660)",
+      "Bareiss_determinant_at_total": -1403181103564800,
+      "roots_strictly_below_with_multiplicity": 3,
+      "roots_strictly_above_with_multiplicity": 3,
+      "roots_at_endpoint_with_multiplicity": 0
+    },
+    {
+      "exponents": [
+        9,
+        30,
+        951
+      ],
+      "total_sum": 990,
+      "characteristic_factorization": "x*(x - 30)*(x**4 - 40299*x**3 + 329941809*x**2 - 346748633001*x + 324946800090)",
+      "Bareiss_determinant_at_total": -54858719134454400000,
+      "roots_strictly_below_with_multiplicity": 3,
+      "roots_strictly_above_with_multiplicity": 3,
+      "roots_at_endpoint_with_multiplicity": 0
+    }
+  ],
+  "coefficient_controls": [
+    {
+      "exponents": [
+        8,
+        8,
+        105
+      ],
+      "quartic_coefficients": [
+        1,
+        -2106,
+        1278729,
+        -173042960,
+        1516468800
+      ],
+      "lower": "18955860/2163037",
+      "upper": "37911720/3678919",
+      "reciprocal_bound": "347/20328",
+      "old_candidates": [
+        10,
+        11,
+        12,
+        14,
+        15
+      ],
+      "filtered_candidates": [
+        10
+      ],
+      "integer_Horner_values": [
+        -88183900
+      ],
+      "exact_roots_in_coefficient_window": 1,
+      "exact_roots_above_total_with_multiplicity": 3
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        136
+      ],
+      "quartic_coefficients": [
+        1,
+        -2990,
+        2546083,
+        -450877446,
+        4551612912
+      ],
+      "lower": "252867384/25048747",
+      "upper": "389837217/33407662",
+      "reciprocal_bound": "2741/205128",
+      "old_candidates": [
+        11,
+        12,
+        14,
+        16,
+        17
+      ],
+      "filtered_candidates": [
+        11
+      ],
+      "integer_Horner_values": [
+        -103928000
+      ],
+      "exact_roots_in_coefficient_window": 1,
+      "exact_roots_above_total_with_multiplicity": 3
+    },
+    {
+      "exponents": [
+        20,
+        20,
+        741
+      ],
+      "quartic_coefficients": [
+        1,
+        -32382,
+        280238421,
+        -288114390440,
+        7134703976400
+      ],
+      "lower": "10492211730/423697633",
+      "upper": "566579433420/21410357153",
+      "reciprocal_bound": "62341/24039180",
+      "old_candidates": [
+        21,
+        22,
+        24,
+        25,
+        26,
+        28,
+        30,
+        33,
+        34,
+        35,
+        37,
+        38,
+        39
+      ],
+      "filtered_candidates": [
+        25,
+        26
+      ],
+      "integer_Horner_values": [
+        106487650400,
+        -167397691500
+      ],
+      "exact_roots_in_coefficient_window": 1,
+      "exact_roots_above_total_with_multiplicity": 3
+    }
+  ],
+  "candidate_counts": {
+    "before": 23,
+    "after": 4
+  },
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_total_sum_spectral_gap.py": "0947d465c0b5ab2ebc5ffd4cbc28c2be1f609f8eb7ae177da34c1106f1b02bd4",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c",
+    "check_fully_distinct.py": "f2dd1b9985c0223d2adb71b450e786e625aace09571c308c70fe4f49f8b38880"
+  },
+  "prior_certificate_sha256": "155c91215c8e5f042fbb90ca1d582dde73f40672f0f811740797a5a1e5dc591f",
+  "scope": "Written global total-sum gap including sharp boundary and real coefficient window; six fixed spectral controls/six Bareiss checks and three existing endpoint-one controls/23old candidates filtered to4nonzero Horner values. No new nonintegrality region, scan, floats or Lean. Residual integer splitting/three-prime/fullQ3/higher-prime nonsquarefree remain open; oldn7/four native axioms retained."
+}

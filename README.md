@@ -8,6 +8,15 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+The [total-sum gap](notes/total-sum-spectral-gap.md) strengthens the
+three larger-root bound to lambda_4>a+b+c for real2<=a<=b<=c,
+with the sharp exception lambda_4=6 at(2,2,2). On endpoint one at
+minimum>=4, the total-sum gap and exact quartic coefficients also
+give N/D<mu_1<N/(D-NR), with R=2/s+1/(A-U-2s), U=min(c,a+b).
+The three established controls reduce23divisor candidates to4;
+all four exact values are nonzero. These are written spectral and
+coefficient bounds, not a full integer-splitting classification.
+
 The [global pair-sum gap](notes/global-pair-sum-separation.md) proves
 lambda_3<a+b<=b+c<lambda_4 for every real 2<=a<=b<=c, counting
 multiplicity. On endpoint one at minimum>=4 this places the three
