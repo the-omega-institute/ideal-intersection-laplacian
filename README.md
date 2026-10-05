@@ -1,5 +1,17 @@
 # Laplacian integrality of ideal intersection graphs
 
+The three-prime classification is now complete: every positive exponent
+vector (a,b,c) gives a nonintegral ideal intersection graph. The new
+largest-root interval (bc+a+b+c,bc+a+b+c+1), the endpoint-one sum bound,
+and written gap1/2 brackets complete the last alternative. The combined
+classification retains historical27562/8658finite bases. The interval
+itself has a written real proof with36/170complete positive terms.
+Higher-prime nonsquarefree Q3 remains open; effective integer exponent-point
+enumeration is separate. No submission, freeze or authorship/disclosure
+agreement is inferred. Earlier research status paragraphs below describe
+prior stages and are superseded by this classification.
+
+
 Public workspace for the follow-on collaboration between **Haobo Ma,
 Reza Nikandish and Wenlin Zhang**, studying ideal intersection graphs of
 `Z_n` and their Laplacian spectra.

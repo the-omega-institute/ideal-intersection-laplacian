@@ -96,12 +96,37 @@ The pinned
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/scripts/check_endpoint_two_completion.py}{completion checker}
 and its companion middle/maximum checkers reproduce the proof data.
 
-The equality cubic in the closing section has generic determinant and
+The equality cubic in the arithmetic discussion has generic determinant and
 independent $5\times5$ Sylvester-discriminant checks in its pinned
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/scripts/check_endpoint_one_equality_cubic.py}{checker}.
 The square-discriminant-plus-integer-root formulation also includes the
 curve equation $G(a,b)=0$. It supplies a finite splitting test at each
 known integer point, without a point enumeration or rank computation.
+
+\subsection{Largest-root completion and classification dependencies}
+
+Theorem~\ref{thm:largest-root-unit-interval} uses the complete $36$- and
+$170$-term positive identities in Appendix~\ref{sec:largest-root-identities}.
+The pinned
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4471a5b4a02d97d3dcf78ea004298d5592924a95/scripts/check_largest_root_unit_interval.py}{checker}
+reconstructs the generic quotient and the independent Schur determinant,
+the lower sign identity, all $34$ coefficient rows, and the six small-gap
+boundary/diagonal sign vectors. Seven specified controls, including
+$(3,6,6)$, $(4,7,12)$, $(8,11,56)$, $(9,12,72)$, $(9,12,159)$,
+$(9,30,951)$ and $(9,150,160)$, have $14$ independent $6\times6$
+Bareiss endpoint determinants. Exact Sturm counts, weighted by squarefree
+factor multiplicity, give one root in each open unit interval and none
+above its upper endpoint. The controls supplement written unbounded proofs;
+there is no new exponent scan or Lean run.
+
+Theorem~\ref{thm:three-prime-classification} retains the established
+$27\,562$-triple minimum-through-seven and $8\,658$-triple endpoint-two
+bases, with earlier repeated and small-minimum proof dependencies.
+They were not rerun for this completion. The separate $108$-pair
+minimum-eight certificate is valid but unnecessary for this proof route.
+The certificate records hashes of the prior proof and result inputs.
+The new real unit interval and small-gap exponent brackets require no
+finite exponent base; the combined global theorem is computer-assisted.
 
 \subsection{Arithmetic and shifted-root cases}
 

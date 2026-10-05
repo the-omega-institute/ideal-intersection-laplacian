@@ -1,5 +1,17 @@
 # First task: Laplacian integrality
 
+The three-prime classification is now complete: every positive exponent
+vector (a,b,c) gives a nonintegral ideal intersection graph. The new
+largest-root interval (bc+a+b+c,bc+a+b+c+1), the endpoint-one sum bound,
+and written gap1/2 brackets complete the last alternative. The combined
+classification retains historical27562/8658finite bases. The interval
+itself has a written real proof with36/170complete positive terms.
+Higher-prime nonsquarefree Q3 remains open; effective integer exponent-point
+enumeration is separate. No submission, freeze or authorship/disclosure
+agreement is inferred. Earlier research status paragraphs below describe
+prior stages and are superseded by this classification.
+
+
 The integrated total-sum gap now separates the three endpoint-one
 quartic roots above s=a+b+c from the smallest root in(a,min(c,a+b)).
 The reciprocal-root argument further gives N/D<mu_1<N/(D-NR).

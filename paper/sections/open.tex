@@ -1,26 +1,19 @@
 \section{Remaining questions}
 \label{sec:open}
 
-The squarefree composite classification and every repeated-exponent triple
-are settled. Theorem~\ref{thm:endpoint-two-completion} completes the
-endpoint-two nonintegrality alternative, including the three full parity
-classes in Corollary~\ref{cor:endpoint-two-parity-completion}. For three
-distinct primes, an integral spectrum can therefore occur only on endpoint
-one. This is the remaining spectral problem; vanishing at one alone is
-not an integrality characterization.
+Theorem~\ref{thm:three-prime-classification} proves nonintegrality for
+every positive three-prime exponent vector. Together with the squarefree
+classification, this leaves the nonsquarefree higher-prime part of Q3.
+The endpoint-one equations retain separate arithmetic questions about
+exponent points, even though none of their integer quotient spectra split.
 
-\subsection{The endpoint-one splitting problem}
+\subsection{Arithmetic of endpoint-one exponent points}
 
-Determine whether any fully distinct positive integer exponents give an
-integral quotient spectrum on $h_C(1)=0$. The earlier results confine
-possible cases to
-\[
- 8\leq a<b<c<4a^2-2a,\qquad b\geq16,\qquad\gcd(a,b,c)=1,
-\]
-with both odd and even exponents, outside the bounded-gap and sufficient
-balanced regions. They satisfy $(a-2)(a+b+c-2)\leq2bc$ and
-$a<3(c-a)+8$, together with the remaining common-residue and modulo-three
-restrictions. Four reductions make the open problem explicit.
+The spectral and coefficient reductions below remain useful descriptions
+of the endpoint-one surface. The new largest-root argument settles
+integral splitting uniformly; determining all integer exponent points
+on that surface is a different question and is not required by the
+classification.
 
 \paragraph{Spectral and divisor windows.}
 Write $h_C(x)=(x-1)F(x)$, $s=a+b+c$, $p=ab+ac+bc$ and $r=abc$.
@@ -76,12 +69,14 @@ septic in Remark~\ref{rem:endpoint-one-equality-curve}, and define
 \end{align*}
 The generic identity is
 $h_C(x)=(x-1)(x-b)P_3(x)+x(x-b)G(a,b)$, so this is precisely the
-spectral cubic when $G(a,b)=0$. The equality splitting problem is:
-find all integers $4\leq a<b$, $d>s=b(b+3)$ and $u\geq0$ such that
+spectral cubic when $G(a,b)=0$. The equality splitting system would require integers $4\leq a<b$, $d>s=b(b+3)$ and $u\geq0$ such that
 \[
  G(a,b)=0,\qquad P_3(d)=0,\qquad \Delta(a,b)=u^2.
 \]
-The curve equation is essential to this formulation. A square
+Theorem~\ref{thm:three-prime-classification} proves that this system
+has no admissible solutions. The following algebraic equivalence still
+explains the earlier diagnostic tests. The curve equation is essential
+to the formulation. A square
 discriminant alone does not imply integral splitting: $x^3-3x+1$ has
 discriminant $81$ and no rational root. With an integer root $d$, however,
 $P_3=(x-d)[x^2+(d-A_3)x+N_3/d]$. If $P_3'(d)\ne0$, then
@@ -124,17 +119,20 @@ for $13$ is also sufficient for local splitting, except at $p=13$.
 At $p=13$, Proposition~\ref{prop:equality-thirteen} requires
 $b\equiv104\pmod{169}$ on the negative branch for integer splitting;
 every other $13$-divisibility class has odd discriminant valuation.
-Further obstructions must use the global integer-root equation or
-square discriminant, other primes, or this remaining exceptional class.
+These local compatibility classes no longer leave an open global
+integral-spectrum case: the largest-root interval excludes all of them
+at admissible integer exponent points. Further local analysis remains
+a separate arithmetic question.
 
 \paragraph{Finiteness and effective classification.}
 Remark~\ref{rem:endpoint-one-equality-curve} and Siegel's theorem show
 that the equality curve has finitely many integer points. They provide
 neither a height bound nor an exhaustive list here. Riemann--Roch spaces
 for specified divisors do not by themselves enumerate those points.
-An effective equality classification or a uniform obstruction to the
-remaining cubic is open. Away from equality, a uniform quartic splitting
-obstruction or an exclusion of integer exponent points is likewise open.
+Effective enumeration of equality exponent points remains open.
+Their integral cubic spectra, and integral quartic spectra away from
+equality, are now excluded by the global three-prime theorem.
+The endpoint-one surface itself is not claimed to have no integer points.
 The genus consequence remains a structural remark; no Jacobian rank
 bound or covering computation is assumed in the spectral results.
 

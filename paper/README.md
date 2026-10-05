@@ -1,5 +1,17 @@
 # Working manuscript
 
+The three-prime classification is now complete: every positive exponent
+vector (a,b,c) gives a nonintegral ideal intersection graph. The new
+largest-root interval (bc+a+b+c,bc+a+b+c+1), the endpoint-one sum bound,
+and written gap1/2 brackets complete the last alternative. The combined
+classification retains historical27562/8658finite bases. The interval
+itself has a written real proof with36/170complete positive terms.
+Higher-prime nonsquarefree Q3 remains open; effective integer exponent-point
+enumeration is separate. No submission, freeze or authorship/disclosure
+agreement is inferred. Earlier research status paragraphs below describe
+prior stages and are superseded by this classification.
+
+
 Read [the PDF](paper.pdf), or edit [paper.tex](paper.tex) and the section
 files it includes. This is a growing mathematical draft, not a submission
 package. Author metadata and any manuscript disclosure are for joint agreement.
@@ -91,7 +103,9 @@ sections and their shared graph/lifting definitions.
 | [verification-details.tex](sections/verification-details.tex) | Complete per-checker catalogue, included in the optional detailed build |
 | [two-adic-lifting.tex](sections/two-adic-lifting.tex) | Appendix B: residue/modulus/condition table, complete case proofs, derivative thresholds and successive lifting |
 | [endpoint-details.tex](sections/endpoint-details.tex) | Appendix C: complete endpoint polynomial, positivity, divisor, finite-certificate, modulo-three and CRT-scope proofs |
-| [open.tex](sections/open.tex) | Single remaining endpoint-one spectral problem, four current reductions, explicit finite equality splitting system and nonsquarefree higher-prime vectors |
+| [three-prime-classification.tex](sections/three-prime-classification.tex) | Largest-root unit interval, written small-gap brackets, complete three-prime nonintegrality theorem |
+| [largest-root-identities.tex](sections/largest-root-identities.tex) | Complete36/170positive coefficients and six small-gap vectors |
+| [open.tex](sections/open.tex) | Endpoint-one exponent-point arithmetic and the open nonsquarefree higher-prime question |
 
 ## Build
 
@@ -222,3 +236,5 @@ Its public PDF has the same SHA256 as the previously supplied source.
 The source PDF is linked rather than copied into this repository.
 
 [Return to the project entrance](../README.md).
+
+New classification checker and exact certificate are pinned to PR9 `4471a5b4a02d97d3dcf78ea004298d5592924a95`: run `python3 scripts/check_largest_root_unit_interval.py` there.

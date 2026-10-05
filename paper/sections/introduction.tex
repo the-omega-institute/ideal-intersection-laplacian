@@ -22,7 +22,9 @@ Nikandish~\cite{nikandish} develops a generalized-join formula for the
 Laplacian spectrum and a Schur--Weyl reduction for equal prime exponents.
 His results include nonintegrality for $(pqr)^k$ for every $k\geq1$.
 His Question~(Q3) asks for the full integrality characterization; the
-present arguments address this question for additional exponent families.
+present arguments complete its three-prime case: every positive exponent
+triple is nonintegral (Theorem~\ref{thm:three-prime-classification}).
+The nonsquarefree higher-prime case of the full question remains open.
 
 Two further complete residue classes are excluded by
 Proposition~\ref{prop:mod-five-splitting}: every permutation of $(1,1,2)$
@@ -39,10 +41,12 @@ divides $b$, and reduces the six compatible modulo-five pairs to four.
 Proposition~\ref{prop:equality-local-splitting} completes the corresponding
 local splitting test, except the negative branch at $13$. In particular,
 the two remaining $b\equiv0\pmod5$ rows split modulo every power of
-five, by simple-root Hensel lifting; a stronger integer obstruction is needed.
+five, by simple-root Hensel lifting. The global largest-root obstruction
+proved below excludes integral spectra even in those locally split rows.
 At the exceptional prime $13$, Proposition~\ref{prop:equality-thirteen}
 uses the next discriminant term to exclude the negative branch unless
-$b\equiv104\pmod{169}$. The surviving class requires further analysis.
+$b\equiv104\pmod{169}$. Its further local analysis is independent of the completed global
+three-prime nonintegrality theorem.
 
 We prove a complete classification for squarefree composite integers
 (Theorem~\ref{thm:squarefree}), an explicit quadratic obstruction for
@@ -135,8 +139,7 @@ nonintegrality for every all-even triple and the full $(1,3,2)$ and
 $(3,3,0)$ classes modulo four
 (Corollary~\ref{cor:endpoint-two-parity-completion}). The complete positive
 identities and finite-base counts are in
-Appendix~\ref{sec:endpoint-two-identities}. The remaining low-root alternative
-is endpoint one.
+Appendix~\ref{sec:endpoint-two-identities}. The final low-root alternative is endpoint one, completed below.
 
 Theorem~\ref{thm:endpoint-one-spectrum} proves the global gap
 $\lambda_3<a+b<a+b+c\leq\lambda_4$ for real $2\leq a\leq b\leq c$,
@@ -157,5 +160,11 @@ a convexity bound for the three larger roots' reciprocal sum.
 The graph and lifting arguments are given explicitly, so the proofs do not
 require a complete spectral decomposition. Appendix~\ref{sec:verification}
 describes the exact computations supporting the displayed formulas and
-finite certificates. The classification for arbitrary exponent vectors
-remains open.
+finite certificates. Theorem~\ref{thm:largest-root-unit-interval} finally places the largest
+quotient root in $(bc+s,bc+s+1)$ when $b-a\geq3$ and $c\geq a^2-a$.
+On endpoint one, the exponent-sum bound supplies the latter inequality;
+written unit brackets handle gaps one and two. This proves the complete
+three-prime nonintegrality theorem. The new real interval needs no finite
+base; the combined classification retains the earlier $27\,562$- and
+$8\,658$-triple certificates. The classification for nonsquarefree
+higher-prime exponent vectors remains open.

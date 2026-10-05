@@ -1,0 +1,123 @@
+\section{Completion of the three-prime classification}
+\label{sec:three-prime-classification}
+
+The largest quotient root supplies the final obstruction. Its open unit
+interval completes endpoint one without deciding the quartic's smallest
+root or enumerating integer exponent points on the endpoint surface.
+
+\begin{theorem}
+\label{thm:largest-root-unit-interval}
+Let $3\leq a\leq b\leq c$ be real, with $b-a\geq3$ and $c\geq a^2-a$.
+Put $s=a+b+c$ and $M=bc+s$. Then
+\[
+ M<\lambda_{\max}(C)<M+1.
+\]
+For integer exponents in this domain, the ideal intersection graph is
+Laplacian nonintegral. The real interval has a written proof with no
+finite exponent base.
+\end{theorem}
+
+\begin{proof}
+The quotient determinant gives
+\[
+ h_C(M)=-a^2bc\,T(a,b,c),
+\]
+where
+\[
+ T=(2b^2-ab+b-a)c^2-[(a-1)b^2+a^2]c-ab(a+b).
+\]
+Put $P(a,b,c)=h_C(M+1)$. Under
+$a=3+m$, $b=a+3+u$, $c=a^2-a+v$, with $m,u,v\geq0$,
+the complete identities in Appendix~\ref{sec:largest-root-identities}
+express $T$ and $P$ as polynomials with respectively $36$ and $170$
+strictly positive coefficients, including constants $1404$ and $513220$.
+Thus $h_C(M)<0<h_C(M+1)$, giving a root in $(M,M+1)$.
+
+To identify it as the largest root, use the symmetric similarity $S$
+from Theorem~\ref{thm:endpoint-one-spectrum}. For $x>c$, the pair-support
+block of $xI-S$ is positive definite. Its Schur complement is
+\[
+ H(x)=\operatorname{diag}(\ell_a,\ell_b,\ell_c)+zz^T,\qquad
+ z=(\sqrt a,\sqrt b,\sqrt c)^T,\qquad
+ \ell_t=x-s-\frac{xabc}{t(x-t)}.
+\]
+At $x=M+1$, both $x-b$ and $x-c$ exceed $bc$. Hence
+\begin{align*}
+ \ell_b&=c(b-a)+1-\frac{abc}{x-b}>c(b-a)+1-a>0,\\
+ \ell_c&=b(c-a)+1-\frac{abc}{x-c}>b(c-a)+1-a>0.
+\end{align*}
+Here $c\geq a^2-a\geq a+3$. The $b,c$ principal block of $H$ is
+positive definite, and $\det(xI-S)=xP>0$ gives $\det H>0$.
+Its remaining scalar Schur complement is therefore positive.
+Consequently $xI-S$ is positive definite, and every eigenvalue is less
+than $M+1$. Since $\det(MI-S)=Mh_C(M)<0$, not all eigenvalues can
+lie below $M$, so the largest lies in the stated interval. For integer exponents,
+the established complement and universal-class lifts transfer its
+nonintegrality to the ideal intersection graph.
+\end{proof}
+
+The first two middle gaps use exponent-root brackets rather than the
+largest-root interval. The following proof records their signs explicitly
+so that the classification does not rely on an unstated uniqueness claim.
+
+\begin{lemma}
+\label{lem:endpoint-one-small-gaps}
+For integer $a\geq8$, $d\in\{1,2\}$ and $b=a+d$, no integer $c>b$
+satisfies $h_C(1)=0$.
+\end{lemma}
+\begin{proof}
+For fixed $a,b$, write $Q(c)=h_C(1)=A c^3+B c^2+D c+E$, where
+\begin{align*}
+ A&=a^2+b^2-1,\\
+ B&=a^3-4a^2b^2+2a^2b-a^2+2ab^2+ab-3a+b^3-b^2-3b+3,\\
+ D&=(a-1)(b-1)(2ab+3a+3b-3),\\
+ E&=(a-1)(b-1)(a+b-1)(ab+a+b-1).
+\end{align*}
+Both $A$ and $E$ are positive. Put $L_1=2a^2-a-2$ and
+$L_2=2a^2+a-6$. Direct expansion gives
+\begin{align*}
+ -Q(L_1)&=4a(a+1)(a^4-4a^2-2a+6),\\
+ Q(L_1+1)&=4a(a-1)(a+1)(a^3-a^2+1),\\
+ -Q(L_2)&=16a^5+72a^4-76a^3-433a^2+69a+595,\\
+ Q(L_2+1)&=4(a+2)(2a^5-2a^4-17a^3+25a^2+28a-42),
+\end{align*}
+where each pair uses its own $b=a+d$. The complete positive vectors
+at $a=8+m$, including those for $-Q(b)$, are in
+Appendix~\ref{sec:largest-root-identities}. Thus $Q(0)>0>Q(b)$ and
+$Q(L_d)<0<Q(L_d+1)$, while $L_d>b$.
+The cubic has one root in each of $(-\infty,0)$, $(0,b)$ and
+$(L_d,L_d+1)$. These three distinct roots exhaust its degree.
+The unique root above $b$ is therefore between consecutive integers,
+proving the lemma on its whole domain without a finite base.
+\end{proof}
+
+\begin{theorem}[Three-prime nonintegrality]
+\label{thm:three-prime-classification}
+For distinct primes $p,q,r$ and positive integers $a,b,c$, the ideal
+intersection graph of $\mathbb Z_{p^a q^b r^c}$ is Laplacian nonintegral.
+This global conclusion combines written proofs with the established
+small-minimum and endpoint-two finite certificates.
+\end{theorem}
+\begin{proof}
+Sort the exponents. Repeated entries are covered by
+Theorem~\ref{thm:repeated}; minima at most seven by
+Corollary~\ref{cor:minimum-seven}. Suppose $8\leq a<b<c$ and the
+spectrum is integral. Theorem~\ref{thm:uniform-low-root} supplies a
+positive quotient root in $(0,3)$, necessarily one or two.
+Theorem~\ref{thm:endpoint-two-completion} excludes the second alternative,
+so $h_C(1)=0$.
+
+For $b-a=1$ or $2$, Lemma~\ref{lem:endpoint-one-small-gaps} contradicts
+integer $c>b$. Otherwise $b-a\geq3$, and
+Theorem~\ref{thm:endpoint-one-spectrum} gives
+$b+c\geq2a^2-2a+1$. Since $c\geq b$, we have $c>a^2-a$.
+Theorem~\ref{thm:largest-root-unit-interval} supplies a noninteger
+quotient root, again contradicting integrality. These cases exhaust
+all positive exponent triples.
+
+The minimum-through-seven theorem retains its $27\,562$-triple base
+and earlier small-minimum dependencies; the endpoint-two theorem
+retains its $8\,658$-triple base. The new largest-root and small-gap
+steps have written unbounded proofs. No additional exponent scan or
+integer-point enumeration is used in this completion.
+\end{proof}

@@ -16,53 +16,35 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-We study Laplacian integrality for the graph of nonzero proper ideals of
-$\mathbb Z_n$, where distinct ideals are adjacent when their intersection
-is nonzero. For squarefree composite $n$, the graph is Laplacian integral
-exactly when $n$ has two prime factors. For three distinct primes, we prove
-nonintegrality for every repeated-exponent triple $(a,a,b)$ with $a,b\geq1$
-and every exponent triple with minimum entry at most seven. For ordered
-$2\leq a\leq b\leq c$, we also prove nonintegrality whenever
-$c\geq4a^2-2a$.
-A symmetric Schur complement supplies a positive quotient root in $(0,3)$
-for minimum exponent at least four and proves further nonintegral families,
-including every exponent span at most three and an unbounded balanced region.
-Arithmetic arguments settle every common exponent divisor at least three,
-every all-odd triple, and every common $2$-adic valuation.
-Reduction modulo five also excludes every permutation of $(1,1,2)$ or
-$(1,4,4)$, without a size or endpoint hypothesis.
-Shifted root distributions settle every permutation of $(3,3,2)$ and
-$(3,0,0)$ modulo four. We also settle every all-even triple and every
-permutation of $(1,3,2)$ or $(3,3,0)$ modulo four by completing the
-endpoint-two alternative. On that surface, a written proof at minimum
-at least forty gives a further quotient root in $(4,5)$; geometric bounds
-reduce the smaller fully distinct cases to a complete $8\,658$-triple
-integer certificate.
-The repeated-exponent proof combines discriminant arithmetic with a
-consecutive-integer interval for a symmetric cubic. Exact finite certificates
-exhaust the exceptional divisor levels, the minimum-three region and the
-cutoff regions at minima four through seven; an endpoint certificate also
-settles every triple with second-smallest exponent at most fifteen.
-On the endpoint-one surface at real minimum exponent $a\geq4$, we prove
-that one is a simple smallest positive quotient root and all four other
-roots exceed $a$; their smallest lies below both $c$ and $a+b$.
-For every real $2\leq a\leq b\leq c$, the ordered complement quotient
-eigenvalues satisfy $\lambda_3<a+b<a+b+c\leq\lambda_4$, with equality
-only at $(2,2,2)$. Thus the three larger residual roots on endpoint one
-exceed $a+b+c$, and their reciprocal sum gives a rational coefficient
-window for the smallest root.
-On $c=b(b+2)-a$, the second smallest positive quotient root is the
-simple root $b$.
-A local discriminant argument excludes integral spectra on this equality
-curve whenever $7$ or $11$ divides $b$, and refines its modulo-five
-compatibility conditions to four pairs.
-We also classify local cubic splitting at odd prime divisors of $b$,
-apart from one branch at $13$.
-On that negative branch, integral spectra require $b\equiv104\pmod{169}$
-by a refined discriminant valuation argument.
-Only endpoint one remains as a possible low-root alternative for an
-integral three-prime quotient spectrum.
-The remaining unequal-exponent and nonsquarefree higher-prime cases stay open.
+We prove that the ideal intersection graph of
+$\mathbb Z_{p^a q^b r^c}$ is Laplacian nonintegral for any three
+distinct primes and every positive exponent triple. Adjacency means
+nonzero intersection of distinct nonzero proper ideals. For squarefree
+composite integers, the integral case is exactly two prime factors.
+
+A six-support complement quotient reduces the three-prime problem to
+a real symmetric matrix. Its uniform positive root below three forces
+an integer spectrum onto one of two endpoint surfaces. On endpoint two,
+a written large-minimum argument supplies another root in $(4,5)$;
+the remaining geometric domain has a complete $8\,658$-triple certificate.
+On endpoint one, an exponent-sum bound and written small-gap brackets
+reduce the final obstruction to the largest quotient root. For real
+$3\leq a\leq b\leq c$, $b-a\geq3$ and $c\geq a^2-a$, we prove
+\[
+ bc+a+b+c<\lambda_{\max}<bc+a+b+c+1.
+\]
+Complete positive polynomial identities and a Schur complement establish
+this unit interval throughout its unbounded domain. It closes the
+remaining integer spectra without enumerating the endpoint-one exponent
+points or solving the residual quartic's integer-root equation.
+
+The global classification combines these written arguments with the
+established repeated-exponent and small-minimum results, including a
+complete $27\,562$-triple minimum-through-seven certificate. We retain
+further spectral gaps, arithmetic obstructions and local equality-curve
+splitting results. Exact verification uses integer and rational arithmetic;
+no Lean formalization is claimed. The nonsquarefree cases with more
+than three prime factors remain open.
 \end{abstract}
 \noindent\textbf{2020 Mathematics Subject Classification.}
 Primary 05C50; Secondary 05C25, 13A15, 11C08, 15A18.
@@ -88,6 +70,7 @@ $2$-adic obstruction, Schur complement.
 \input{sections/mod-five-splitting}
 \input{sections/endpoint-reduction}
 \input{sections/aa-small}
+\input{sections/three-prime-classification}
 \input{sections/open}
 \begingroup
 \small
@@ -178,4 +161,6 @@ Aspects of Mathematics 15, Vieweg+Teubner Verlag, Wiesbaden, 1997.
 \input{sections/endpoint-details}
 \clearpage
 \input{sections/endpoint-two-identities}
+\clearpage
+\input{sections/largest-root-identities}
 \end{document}
