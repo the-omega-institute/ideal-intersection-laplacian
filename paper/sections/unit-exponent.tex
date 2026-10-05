@@ -218,3 +218,109 @@ irreducibility of the entire quintic is therefore not a
 uniform obstruction. Theorem~\ref{thm:unit} covers every triple beginning
 with $1$ without a range restriction; the thirty-five-case calculation
 itself remains finite evidence.
+
+\subsection{Four prime factors and two exponents equal to two}
+
+A repeated pair also produces a small invariant subspace in four
+coordinates. This settles a family including balanced vectors outside
+the preceding Rayleigh criterion.
+
+\begin{theorem}
+\label{thm:four-prime-pair-two}
+For distinct primes $p_1,p_2,p_3,p_4$ and every $b,c\geq2$, the graph
+$G_{p_1^2p_2^2p_3^bp_4^c}$ is not Laplacian integral.
+Together with Theorem~\ref{thm:unit-any-prime-count}, this covers every
+positive four-prime exponent vector with at least two entries equal to two.
+\end{theorem}
+\begin{proof}
+Remove the $4bc-1$ universal vertices and let $F=\overline H$.
+For each $T\subseteq\{3,4\}$, assign a function the values $h(T)$
+on support $\{1\}\cup T$, $-h(T)$ on $\{2\}\cup T$, and zero elsewhere.
+The paired classes have equal weight, so the function has weighted sum
+zero. Classes containing neither or both of coordinates $1,2$ see
+equal opposite contributions. At support $\{1\}\cup T$, the complement
+degree is $3\prod_{i\in\{3,4\}\setminus T}(k_i+1)-1$ and its
+nonzero-valued neighbors are precisely the classes $\{2\}\cup T'$
+with $T'\cap T=\varnothing$, of weight $2\prod_{i\in T'}k_i$.
+Thus the four-dimensional space is invariant. In the order
+$T=\varnothing,\{4\},\{3\},\{3,4\}$, its complement action is $K-I$,
+where
+\[
+K=\begin{pmatrix}
+3(b+1)(c+1)+2&2c&2b&2bc\\
+2&3(b+1)&2b&0\\
+2&2c&3(c+1)&0\\
+2&0&0&3
+\end{pmatrix}.
+\]
+The matrix $\operatorname{diag}(1,c,b,bc)K$ is symmetric. If $\kappa$
+is an eigenvalue of $K$, complement reflection and the zero-sum
+lifting calculation in the proof of Lemma~\ref{lem:join}
+give the graph eigenvalue $V+1-\kappa$, with $V=9(b+1)(c+1)-2$.
+
+The leading principal minors of $K-I$ are
+\begin{align*}
+D_1={}&3bc+3b+3c+4,\\
+D_2={}&9b^2c+9b^2+15bc+18b+2c+8,\\
+D_3={}&15b^2c^2+33b^2c+6b^2+33bc^2+84bc\\
+       &{}+28b+6c^2+28c+16,\\
+D_4={}&2\bigl(5b^2c^2+21b^2c+6b^2+21bc^2+76bc\\
+       &\hspace{1.5em}{}+28b+6c^2+28c+16\bigr).
+\end{align*}
+All coefficients are positive. The symmetric similar matrix has the
+same leading minors, so Sylvester's criterion gives $\kappa_{\min}>1$.
+The principal submatrix of $K-3I$ on coordinates $1,4$ has determinant
+$-4bc$, hence a negative Rayleigh quotient in its symmetric similar
+matrix. Thus $\kappa_{\min}<3$. Unless $\det(K-2I)=0$, this smallest
+eigenvalue is noninteger and so is its graph lift.
+
+Direct expansion gives
+\begin{align*}
+P(b,c):=\det(K-2I)={}&-5b^2c^2+12b^2c-3b^2+12bc^2\\
+                    &{}+48bc+8b-3c^2+8c+3.
+\end{align*}
+Order $b\leq c$. For $b=7+u,c=7+v$, with $u,v\geq0$,
+\begin{align*}
+-P(7+u,7+v)={}&5u^2v^2+58u^2v+164u^2+58uv^2+596uv\\
+              &{}+1364u+164v^2+1364v+1600>0.
+\end{align*}
+For the remaining five values of $b$, the polynomial is
+\[
+\begin{array}{c|l}
+b&P(b,c)\\\hline
+2&c^2+152c+7\\
+3&4c(65-3c)\\
+4&-35c^2+392c-13\\
+5&-4(c-8)(17c-1)\\
+6&-111c^2+728c-57
+\end{array}
+\]
+The first two rows have no positive integer zero. The discriminants
+of rows $4,6$ are $151844\in(389^2,390^2)$ and
+$504676\in(710^2,711^2)$, so neither has a rational zero.
+The only positive integer endpoint pair is therefore $(b,c)=(5,8)$,
+up to exchange.
+
+At this pair,
+\[
+\det(xI-K)=(x-2)(x^3-210x^2+7701x-53240).
+\]
+The cubic reduces to $x^3+11x^2+4$ modulo $17$. At the residues
+$0,\ldots,16$ its values, in order, are
+\[
+\begin{gathered}
+4,16,5,11,6,13,4,2,13,\\
+9,13,14,1,14,8,6,14.
+\end{gathered}
+\]
+None vanishes, so the cubic is irreducible over $\mathbb F_{17}$ and
+over $\mathbb Q$. Its roots are real eigenvalues of $K$ and irrational;
+their graph lifts settle the exceptional pair as well. The proof uses
+the five symbolic rows and this $17$-residue certificate, with no
+finite exponent base.
+\end{proof}
+
+In particular, $(2,2,2,2)$ is nonintegral, although it fails
+Theorem~\ref{thm:small-exponent-rayleigh}'s sufficient condition.
+The present argument uses an actual invariant subspace, whereas the
+preceding three-collection compression supplies trial functions.

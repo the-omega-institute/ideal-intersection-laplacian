@@ -295,6 +295,24 @@ that the trial function is not a full eigenvector at one. These
 controls validate the implementation, with no exponent scan, numerical
 eigensolver or Lean verification.
 
+\subsection{Four prime factors with two exponents equal to two}
+
+Theorem~\ref{thm:four-prime-pair-two} has a written invariant-subspace
+and positive-minor proof, reducing the endpoint equation to five
+symbolic low-$b$ polynomials and one explicit $17$-residue cubic
+irreducibility certificate. It requires no finite exponent base.
+The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/8684d83aefc0dac63ebab8c078421ab499e19ab9/scripts/check_four_prime_pair_two.py}{checker}
+verifies all four generic principal minors, the endpoint polynomial,
+the complete nine-term positive tail, all five low-$b$ identities,
+the two nonsquare discriminants and the exceptional characteristic
+polynomial and cubic residues. Eight specified support controls
+independently reconstruct every column of the four-dimensional
+invariant subspace, the weighted zero sum and the complement/join
+lift. Two small expanded graphs check the same embedding directly.
+These controls validate the implementation; no exponent-range scan,
+floating-point eigenvalues or Lean verification is used.
+
 \ifdefined\DetailedVerification
 \subsection{Complete checker catalogue}
 \input{sections/verification-details}

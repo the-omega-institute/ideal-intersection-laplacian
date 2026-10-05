@@ -1,5 +1,11 @@
 # Working manuscript
 
+Theorem8.5 proves nonintegrality for every four-prime vector with two
+exponents equal to two, including (2,2,2,2). Its invariant-subspace proof
+uses five symbolic endpoint polynomials and one17-residue certificate,
+without a finite exponent base. The exact checker is pinned to PR9
+`8684d83aefc0dac63ebab8c078421ab499e19ab9`.
+
 Theorem8.3 extends the arbitrary-prime-count Rayleigh obstruction to a
 distinguished exponent m whenever A>=(m^2-1)B-(m-1), including equality.
 Corollary8.4 covers every other exponent at least m^2(t-1), for m>=2.
