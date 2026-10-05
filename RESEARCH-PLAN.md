@@ -1,5 +1,14 @@
 # First task: Laplacian integrality
 
+The integrated global pair-sum gap now separates the three endpoint-one
+quartic roots above b+c from the smallest root in(a,min(c,a+b)).
+Continue bounded structural work combining these bounds with the exact
+coefficients and smallest-root equation on d=b-a>=3,a<2d²+20.
+Residue-by-residue refinements are paused; older arithmetic leads below
+are historical. Attempt duration, scope freeze and submission preparation
+remain joint decisions; the two-week suggestion is withdrawn. FullQ3
+also retains nonsquarefree vectors with more than three prime factors.
+
 Proposition13.9 now requires b=104mod169 on the negative q=-1mod13
 equality branch for integer splitting. Every other negative-branch
 13-divisibility class has odd discriminant valuation by a refined

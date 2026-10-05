@@ -4,6 +4,14 @@ Read [the PDF](paper.pdf), or edit [paper.tex](paper.tex) and the section
 files it includes. This is a growing mathematical draft, not a submission
 package. Author metadata and any manuscript disclosure are for joint agreement.
 The main text ends with explicit remaining questions and references.
+Theorem14.2 now proves the global gap lambda_3<a+b<=b+c<lambda_4
+for real2<=a<=b<=c and retains the endpoint-one minimum-root theorem.
+Corollary14.3 includes all four residual bounds; Proposition14.6 keeps
+the equality index/simplicity argument and uses the stronger b+c gap.
+The E-sign test refines only the smallest root, and equality cubic
+divisor candidates must exceed b+c. Supporting proof/checker/certificate
+are pinned to PR9 `fb1d7c0134ad385931e3b4e43e445695bc4bf566`; reproduce
+`python3 scripts/check_global_pair_sum_separation.py` at that revision.
 Proposition13.9 supplies the exceptional-prime valuation obstruction:
 on q=-1mod13 with13 dividing b, integer splitting requires b=104mod169.
 It retains the positive branch and leaves that remaining residue open.
@@ -30,8 +38,8 @@ Remark 14.5 records the equality curve's genus ten and Siegel finiteness
 consequence, with a short quotient/ramification argument and a linked detailed
 verification note. It does not supply an effective integer-point list.
 Proposition 14.6 gives the unconditional equality spectrum: b is simple
-and third smallest, with all three larger roots above a+b. On endpoint
-one this leaves a monic cubic whose three roots exceed a+b.
+and third smallest, with all three larger roots above b+c. On endpoint
+one this leaves a monic cubic whose three roots exceed b+c.
 Lemma14.7 supplies the endpoint-two middle/maximum rectangle bounds;
 Theorem14.8 completes that alternative using the written(4,5)tail and
 the required8,658-triple base plus earlier finite dependencies.

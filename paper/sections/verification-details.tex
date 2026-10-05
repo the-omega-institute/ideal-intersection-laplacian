@@ -286,6 +286,15 @@ independent integer-Horner and $6\times6$ Bareiss evaluations in every
 case. The complete CSV and JSON reproduce byte-for-byte. Seven direct
 quotient/Horner/Sturm fixtures and the repeated control supplement the
 proof; earlier minimum-through-seven certificates remain dependencies.
+\item At PR9 revision \path{fb1d7c0134ad385931e3b4e43e445695bc4bf566},
+\path{check_global_pair_sum_separation.py} verifies the generic support
+quotient, weighted symmetry, principal decompositions, shifted high-pair
+determinant and pair-sum quintic identities. Five specified controls and
+ten direct $6\times6$ Bareiss determinants supplement the written
+global gap. Sturm counts weight squarefree factors by multiplicity,
+including the repeated $(4,4,4)$ control and the endpoint-one quartic
+at $(9,9,136)$. Source hashes and byte-identical reproduction are recorded;
+there is no parameter scan or Lean verification.
 \item At PR9, \path{check_endpoint_one_equality_cubic.py} verifies
 the explicit cubic's generic quotient identity and discriminant by an
 independent $5\times5$ Sylvester determinant. Its $61$-term expansion,

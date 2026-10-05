@@ -150,17 +150,28 @@ none on $[0,a]$. These controls already follow from the repeated-exponent
 theorem. The source-hashed certificates reproduce byte-for-byte; their
 finite diagnostics supplement the written bounds.
 
-Proposition~\ref{prop:endpoint-one-equality-spectrum} also has a written
-proof without a finite base. The
+The global gap in Theorem~\ref{thm:endpoint-one-spectrum} has no endpoint
+or equality hypothesis. Its
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/fb1d7c0134ad385931e3b4e43e445695bc4bf566/scripts/check_global_pair_sum_separation.py}{pinned checker}
+verifies the generic principal decompositions, shifted singleton-block
+determinant and both pair-sum quintic identities. Five specified controls
+$(2,2,3)$, $(4,4,4)$, $(9,9,136)$, $(9,12,159)$ and $(9,30,951)$
+give ten direct $6\times6$ Bareiss checks. Exact Sturm counts are summed
+over squarefree factors with their multiplicities. In particular,
+$(4,4,4)$ has characteristic polynomial
+$x(x-20)(x^2-32x+48)^2$: three eigenvalues lie below eight although
+there are only two distinct roots there. The endpoint-one control
+$(9,9,136)$ has one quartic root below $145$ and three above.
+These fixed diagnostics supplement the written global proof.
+
+Proposition~\ref{prop:endpoint-one-equality-spectrum} retains the written
+index and simplicity argument. The
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/d3fa3478193f34777a88b970da8f0763ce177c38/scripts/check_endpoint_one_equality_root.py}{equality-index checker}
 verifies the principal factors, weighted symmetry and nonzero coupling.
-The
+The earlier
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/9e98266eb279a31b7282cea17fca3f5af6d9410f/scripts/check_endpoint_one_equality_second_root.py}{equality pair-sum checker}
-verifies both positive identities at $a+b$. The three fixed controls
-$(4,4,20)$, $(9,12,159)$ and $(9,30,951)$ are all off endpoint one.
-After removing root $b$, exact Sturm counts place one positive root below
-$a+b$ and three above it. These are diagnostics of the unconditional
-statement, not integer endpoint solutions or a finite base.
+retains the superseded lower bound $a+b$ and its three off-endpoint
+controls. The present stronger bound $b+c$ follows from the global theorem.
 
 \subsection{Modulo-five splitting and equality residues}
 

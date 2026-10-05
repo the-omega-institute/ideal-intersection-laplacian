@@ -1,24 +1,62 @@
 \subsection{The spectrum on the endpoint-one surface}
 
-The endpoint-one equation isolates a simple low root and constrains the
-remaining quartic. The following proof works with positive real weights.
+Principal interlacing separates the five positive quotient roots into
+two below $a+b$ and three above $b+c$. On endpoint one, this gap
+isolates the smallest residual root from the other three.
 
 \begin{theorem}
 \label{thm:endpoint-one-spectrum}
-Let $4\leq a\leq b\leq c$ be real and suppose $h_C(1)=0$. Then
+Let $2\leq a\leq b\leq c$ be real. The ordered eigenvalues of the
+six-support complement quotient, counted with multiplicity, satisfy
+\[
+ 0=\lambda_1<\lambda_2\leq\lambda_3<a+b\leq b+c
+ <\lambda_4\leq\lambda_5\leq\lambda_6.
+\]
+If also $a\geq4$ and $h_C(1)=0$, then
 \[
  b+c\geq2a^2-2a+1,
 \]
 with equality exactly when $b=a$ and $c=(a-1)(2a-1)$. Root one is
 simple and is the smallest positive quotient root; all four other
-quotient roots are strictly greater than $a$. If $\mu_1$ is the
-smallest of those four roots, then
+quotient roots are strictly greater than $a$. Their ordered roots satisfy
 \[
- a<\mu_1<\min\{c,a+b\}.
+ a<\mu_1<\min\{c,a+b\},\qquad b+c<\mu_2\leq\mu_3\leq\mu_4.
 \]
 \end{theorem}
 
 \begin{proof}
+Let $S=W^{1/2}CW^{-1/2}$, with $W=\operatorname{diag}(a,b,c,ab,ac,bc)$.
+It is symmetric positive semidefinite with a one-dimensional zero kernel.
+The principal block on supports $3,12,13,23$ is
+\[
+ \begin{pmatrix}ab+a+b&-\sqrt{abc}\\-\sqrt{abc}&c\end{pmatrix}
+ \mathbin{\oplus}(b)\mathbin{\oplus}(a).
+\]
+The two-dimensional block has polynomial
+$Q(x)=x^2-(ab+a+b+c)x+c(a+b)$, with $Q(a+b)=-ab(a+b)<0$.
+Exactly three eigenvalues of this four-dimensional block lie below $a+b$;
+interlacing gives $\lambda_3<a+b$.
+
+The principal block on singleton supports $1,2$, shifted by $b+c$, is
+\[
+ \begin{pmatrix}bc&-\sqrt{ab}\\-\sqrt{ab}&a(c+1)-b\end{pmatrix}.
+\]
+Its first leading minor is $bc>0$ and its determinant is
+$b[a(c^2+c-1)-bc]>0$, since
+$a(c^2+c-1)-bc\geq c^2+2c-2>0$.
+Both principal eigenvalues therefore exceed $b+c$, so interlacing gives
+$\lambda_5,\lambda_6>b+c$. Direct determinant expansion gives
+\[
+ h_C(b+c)=-abc(b+c+1)
+ \bigl[bc(b+c)(a-1)+a(bc-b-c+a)\bigr]<0,
+\]
+where $bc-b-c+a=(b-1)(c-1)+a-1>0$.
+No eigenvalue equals $b+c$. At least three eigenvalues lie below it
+and at most four. The negative determinant $(b+c)h_C(b+c)$ requires
+an odd number below it, counting multiplicity; hence exactly three
+lie below it and $\lambda_4>b+c$.
+
+Now suppose $a\geq4$ and $h_C(1)=0$.
 Put $q=b+c$, $z=bc$ and $K=4a^2-2a+1$. The generic determinant is
 \begin{align*}
  h_C(1)&=(q-K)z^2-a(a-1)(q+2a-1)z+P_a(q),\\
@@ -46,11 +84,8 @@ proves $B<0$. Thus $q<Q$ gives $h_C(1)<0$. At $q=Q$, equality
 requires $z=z_0$, hence $b=a$ by ordering, and $c=(a-1)(2a-1)$.
 The factorization also verifies this equality case.
 
-Let $S=W^{1/2}CW^{-1/2}$, with $W=\operatorname{diag}(a,b,c,ab,ac,bc)$.
-It is symmetric positive semidefinite with a one-dimensional zero kernel.
-Its pair-support principal block is $\operatorname{diag}(c,b,a)$.
-For ordered eigenvalues $0=\lambda_1<\lambda_2\leq\cdots\leq\lambda_6$,
-interlacing gives $\lambda_4\geq a$. The sum bound implies
+The pair-support principal block is $\operatorname{diag}(c,b,a)$.
+The sum bound implies
 $b+c-(a^2+2a)\geq(a-4)^2+4(a-4)+1>0$, so
 \[
  h_C(a)=-a^2b^2c^2(a^2+2a-b-c)>0.
@@ -61,18 +96,9 @@ $a$, counted with multiplicity. There are at least two, zero and one,
 and at most three by interlacing. There are therefore exactly two:
 zero and a simple one. All four remaining roots exceed $a$.
 
-The pair-support block also gives $\lambda_3\leq c$. The identity
-$h_C(c)=-a^2b^2c^2(c^2+2c-a-b)<0$ excludes equality. For the other
-upper bound, the principal block of $S$ on supports $3,12,13,23$ is
-\[
- \begin{pmatrix}ab+a+b&-\sqrt{abc}\\-\sqrt{abc}&c\end{pmatrix}
- \mathbin{\oplus}(b)\mathbin{\oplus}(a).
-\]
-The two-dimensional block has polynomial
-$Q(x)=x^2-(ab+a+b+c)x+c(a+b)$, with $Q(a+b)=-ab(a+b)<0$.
-Its smaller root lies below $a+b$ and its larger root above it.
-The four-dimensional principal block thus has exactly three eigenvalues
-below $a+b$. Interlacing gives $\lambda_3<a+b$, completing the proof.
+The pair-support block gives $\lambda_3\leq c$. The identity
+$h_C(c)=-a^2b^2c^2(c^2+2c-a-b)<0$ excludes equality.
+Together with the global pair-sum gap, this proves the residual bounds.
 \end{proof}
 
 \begin{corollary}
@@ -80,15 +106,21 @@ below $a+b$. Interlacing gives $\lambda_3<a+b$, completing the proof.
 For integer exponents $4\leq a\leq b\leq c$ on $h_C(1)=0$, define
 $F(x)=h_C(x)/(x-1)$ and $s=a+b+c$, $p=ab+ac+bc$, $r=abc$.
 Then $F$ is a monic integer quartic with $F(0)=rs(p+s)>0$.
-An integer spectrum requires a positive divisor $d$ of $rs(p+s)$ with
+Its ordered real roots satisfy
+\[
+ a<\mu_1<\min\{c,a+b\},\qquad b+c<\mu_2\leq\mu_3\leq\mu_4.
+\]
+An integer spectrum therefore requires a positive divisor $d$ of $rs(p+s)$ with
 \[
  a<d<\min\{c,a+b\},\qquad F(d)=0.
 \]
+The other three integer roots would each be at least $b+c+1$.
 \end{corollary}
 \begin{proof}
 The determinant gives $h_C(0)=-rs(p+s)$, so division by $x-1$
 retains the stated nonzero constant. Apply the rational-root theorem
-to the smallest quartic root and Theorem~\ref{thm:endpoint-one-spectrum}.
+to the smallest quartic root and apply Theorem~\ref{thm:endpoint-one-spectrum}
+to all four roots.
 \end{proof}
 
 All four quartic roots exceed $a$; the upper window in the corollary
@@ -141,11 +173,12 @@ the classification of admissible exponent triples remain open.
 For real $4\leq a\leq b$ and $c=b(b+2)-a$, the ordered eigenvalues
 of the six-support complement quotient satisfy
 \[
- 0=\lambda_1<\lambda_2<\lambda_3=b<a+b<\lambda_4\leq\lambda_5\leq\lambda_6,
+ 0=\lambda_1<\lambda_2<\lambda_3=b<a+b\leq b+c
+ <\lambda_4\leq\lambda_5\leq\lambda_6,
 \]
 and $b$ is simple. If also $h_C(1)=0$, then $\lambda_2=1$ and
 $F(x)=(x-b)P_3(x)$, where the monic cubic $P_3$ has all three roots
-strictly greater than $a+b$.
+strictly greater than $b+c$.
 \end{proposition}
 
 \begin{proof}
@@ -177,32 +210,13 @@ to vanish. The remaining eigenvectors lie in $\ker(B-bI)$ and satisfy
 one nonzero coupling condition. Their space is one-dimensional, proving
 simplicity and $\lambda_2<b<\lambda_4$.
 
-Put $s=a+b$. We have $c-s=b(b+1)-2a\geq b(b-1)>0$, and exact
-substitution gives $K(s)=bU>0$, where
-\begin{align*}
- U={}&a^2b(b^2-a-2)+2a^2\\
- &+ab\bigl[b(2b^2-3)+4b^2-5\bigr]+b^2(b+1)^2(b+2).
-\end{align*}
-Here $b^2-a-2\geq(b-2)(b+1)>0$, and the other factors are positive
-for $b\geq4$. Since the largest $T$ eigenvalue is at least $c>s$,
-exactly one $K$ root is below $s$ and two above. Thus $B$ has exactly
-three eigenvalues below $s$, giving $\lambda_5\geq\beta_4>s$.
-
-The full determinant has $h_C(s)=-abc(s+1)V<0$, with
-\begin{align*}
- V={}&a^2b(b^2-a-2)+a^2b^2+2a^2\\
- &+ab\bigl[b(b^2-2)+3b^2-5\bigr]+b^2(b+1)(b+2)>0.
-\end{align*}
-Consequently no eigenvalue equals $s$ and $\det(sI-S)=s h_C(s)<0$.
-The first three eigenvalues are below $s$ and the last two above it.
-If $\lambda_4<s$, the determinant would have two negative factors and
-be positive. Hence $\lambda_4>s$. On endpoint one,
-Theorem~\ref{thm:endpoint-one-spectrum} gives $\lambda_2=1$, and division
+The global gap in Theorem~\ref{thm:endpoint-one-spectrum} gives
+$\lambda_4>b+c$. On endpoint one it also gives $\lambda_2=1$, and division
 by the simple roots $1,b$ yields the stated cubic.
 \end{proof}
 
 This proposition narrows the equality splitting problem: for integer
 endpoint-one equality points, all three integer roots of $P_3$ would have
-to exceed $a+b$. The two positive identities and exact off-endpoint
-controls are retained in the
-\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/9e98266eb279a31b7282cea17fca3f5af6d9410f/notes/endpoint-one-equality-second-root.md}{equality spectral verification note}.
+to exceed $b+c$. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/fb1d7c0134ad385931e3b4e43e445695bc4bf566/notes/global-pair-sum-separation.md}{global spectral verification note}
+records the determinant identities and exact controls.
