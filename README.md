@@ -8,6 +8,18 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+The manuscript now completes the endpoint-two nonintegrality alternative.
+Theorem14.8 gives a written further-root interval(4,5) at minimum>=40;
+the necessary complete8,658-triple base handles fully distinct minima8through39,
+with the earlier repeated and minimum<=7 dependencies retained. Corollary14.9
+settles every all-even triple and all permutations(1,3,2)/(3,3,0)mod4.
+The full middle/maximum-bound proof and all positive coefficient vectors
+appear in the manuscript. The closing section presents endpoint one as
+the single remaining three-prime spectral problem, with four explicit
+reductions. Its equality problem includes G(a,b)=0 as well as an integer
+cubic root above a+b and square discriminant; no exhaustive point list
+or full Q3 characterization is claimed.
+
 The manuscript now includes the short endpoint-one spectral proof: for
 real 4<=a<=b<=c on h_C(1)=0, root one is simple and smallest positive,
 all four residual roots exceed a, and their smallest lies below

@@ -1,0 +1,130 @@
+\subsection{Completion of the endpoint-two alternative}
+
+The endpoint-two surface admits a second noninteger root at large minima.
+Two geometric bounds first confine the surface to a rectangle on which
+positive polynomial identities give that root. A complete finite base
+then handles the smaller fully distinct triples.
+
+\begin{lemma}
+\label{lem:endpoint-two-rectangle}
+For ordered real exponents $4\leq a\leq b\leq c$, the equation
+$h_C(2)=0$ requires $b<2a-2$. If $a\geq8$, it also requires
+$c<9a/4-8$.
+\end{lemma}
+
+\begin{proof}
+First put $b=2a-2+u$ and $c=b+v$, where $u,v\geq0$. Define
+\begin{align*}
+ A_0(u)&=2u^2+7(a-2)u+2(3a^2-14a+12),\\
+ B_0(u)&=(a+2)u^3+(4a^2+10a-12)u^2\\
+ &\quad +(4a^3+25a^2-48a+12)u+2(13a^3-28a^2+8a+8),\\
+ D_0(u)&=2(a-2)(9a^3+24a^2-56a+16)\\
+ &\quad +(33a^3+20a^2-208a+136)u
+ +(20a^2+23a-62)u^2+4(a+2)u^3,\\
+ E_0(u)&=2(3a^3-a^2-8a+4)+(5a^2+3a-10)u+(a+2)u^2.
+\end{align*}
+Direct expansion of the quotient determinant gives
+\[
+ h_C(2)=A_0B_0+\tfrac12(A_0B_0)'v+D_0v^2+E_0v^3,
+\]
+where the derivative is in $u$. Substitution $a=4+m$ makes every
+coefficient of $A_0,B_0,D_0,E_0$ strictly positive for $m\geq0$.
+In particular, $3a^2-14a+12=3m^2+10m+4$.
+Thus $h_C(2)>0$ on $b\geq2a-2$, proving the first bound.
+
+For $a\geq8$ and $a\leq b<2a-2$, parameterize the proposed maximum
+tail by
+\[
+ a=8+m,\qquad b=\frac{a+(2a-2)t}{1+t},\qquad
+ c=\frac{9a}{4}-8+v,\qquad m,t,v\geq0.
+\]
+The inverse $t=(b-a)/(2a-2-b)$ has positive denominator. The exact
+identity is
+\begin{align*}
+ 64(1+t)^3h_C(2)
+ &=9m^6(1+2t)\bigl[14(1-t)^2+5t+t^2\bigr]\\
+ &\quad+308m^5t(t-1)^2+P(m,t,v).
+\end{align*}
+The first two terms are nonnegative. The complete polynomial $P$,
+listed in Appendix~\ref{sec:endpoint-two-identities}, has $84$ strictly
+positive coefficients and constant $3\,014\,656$. Hence the right side
+is positive, and so is $h_C(2)$. Together with the first bound, this
+proves $c<9a/4-8$ on the zero surface.
+\end{proof}
+
+\begin{theorem}
+\label{thm:endpoint-two-completion}
+For ordered real $40\leq a\leq b\leq c$ with $h_C(2)=0$,
+\[
+ h_C(4)>0>h_C(5).
+\]
+Consequently the quotient has a noninteger root in $(4,5)$.
+For every positive integer exponent triple with $h_C(2)=0$, the
+quotient spectrum is nonintegral. The integer conclusion uses the
+complete finite base specified below and the earlier small-minimum
+certificates.
+\end{theorem}
+
+\begin{proof}
+Write $s=a+b+c$, $p=ab+ac+bc$ and $r=abc$, and set
+\[
+ D_4=h_C(4)-3h_C(2),\qquad D_5=4h_C(2)-h_C(5).
+\]
+The full identities in Appendix~\ref{sec:endpoint-two-identities} give
+the following positive expansions. For $a=8+m,b=8+t,c=8+u$,
+$D_5$ has $44$ strictly positive coefficients and constant
+$4\,629\,843$. Thus $D_5>0$ for arbitrary $a,b,c\geq8$.
+
+Lemma~\ref{lem:endpoint-two-rectangle} confines an endpoint-two zero
+at $a\geq40$ to $a\leq b<2a$ and $a\leq c<9a/4$. Put
+\[
+ a=40+m,\qquad b=\frac{a(1+2t)}{1+t},\qquad
+ c=\frac{a(4+9u)}{4(1+u)},\qquad m,t,u\geq0.
+\]
+The inverse substitutions are $t=(b-a)/(2a-b)$ and
+$u=4(c-a)/(9a-4c)$, with positive denominators. The polynomial
+$64(1+t)^3(1+u)^3D_4$ has $112$ strictly positive coefficients and
+constant $611\,305\,472$, all displayed in the appendix. Therefore
+$D_4>0$. At $h_C(2)=0$ these two signs give $h_C(4)>0>h_C(5)$;
+the intermediate value theorem supplies the root in $(4,5)$.
+
+For positive integer triples, repeated exponents are nonintegral by
+Theorem~\ref{thm:repeated}, and minima at most seven by
+Corollary~\ref{cor:minimum-seven}. The only remaining base is
+\[
+ 8\leq a\leq39,\qquad a<b<2a-2,\qquad b<c<\frac{9a}{4}-8.
+\]
+The largest permitted integer $c$ is $\lfloor(9a-33)/4\rfloor$.
+This domain contains exactly $8\,658$ triples; its per-minimum counts
+are listed in Appendix~\ref{sec:endpoint-two-identities}. Every endpoint
+value is nonzero, with smallest absolute value $8\,208$.
+The complete
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/results/endpoint-two-completion-base.csv}{integer certificate}
+records $h_C(2)$ by integer Horner evaluation and
+$\det(2I-C)=2h_C(2)$ by an independent fraction-free $6\times6$
+Bareiss determinant for every triple. Thus no fully distinct endpoint-two
+zero occurs in this necessary base. The real tail covers all larger
+minima, completing the integer conclusion. The proof does not require
+emptiness of the unbounded integer zero surface.
+\end{proof}
+
+\begin{corollary}
+\label{cor:endpoint-two-parity-completion}
+Every all-even exponent triple and every permutation of $(1,3,2)$ or
+$(3,3,0)$ modulo four has a nonintegral ideal intersection graph,
+without a size, gap or ratio bound.
+\end{corollary}
+
+\begin{proof}
+Repeated triples and minima at most seven are already excluded. For the
+others, Theorem~\ref{thm:uniform-low-root} gives a quotient root in
+$(0,3)$. If all exponents are even, $C/2$ is an integer matrix, so
+an integer spectrum of $C$ would have only even roots by the rational-root
+theorem. In the two mixed classes, the shifted-root argument in
+Theorem~\ref{thm:mixed-residue-classes} forces hypothetical odd integer
+roots to be three modulo four. In either case the low root cannot be one,
+so it must be two. Theorem~\ref{thm:endpoint-two-completion} contradicts
+integrality. The complement and universal-class lifts transfer the result
+to the ideal intersection graph. Exclusion of one in the mixed classes is
+conditional on an integer spectrum.
+\end{proof}

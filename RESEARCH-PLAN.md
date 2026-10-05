@@ -1,5 +1,17 @@
 # First task: Laplacian integrality
 
+The current manuscript integrates the endpoint-two completion with its
+full proof, geometric bounds, all positive coefficient vectors and the
+required8,658-triple finite base. It settles all-even triples and the
+(1,3,2)/(3,3,0)mod4 classes with no size or gap bound. Earlier finite
+dependencies remain explicit. Endpoint one is the remaining three-prime
+spectral gap; the closing section groups its root windows, coefficient
+and exponent tests, explicit equality cubic and genus/Siegel finiteness.
+The equality system explicitly requires G(a,b)=0, P3(d)=0 with d>a+b,
+and Delta=u^2. Effective point classification and full Q3 remain open.
+No Prym/rank project is part of the manuscript. Earlier reductions below
+retain their historical proofs and verification scopes.
+
 The endpoint-one spectral theorem is now integrated in the main text:
 root one simple/smallest, all four residual roots>a, smallest in
 (a,min(c,a+b)), at real minimum>=4onh_C(1)=0. The twelve-term proof

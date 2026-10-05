@@ -10,6 +10,13 @@ verification note. It does not supply an effective integer-point list.
 Proposition 14.6 gives the unconditional equality spectrum: b is simple
 and third smallest, with all three larger roots above a+b. On endpoint
 one this leaves a monic cubic whose three roots exceed a+b.
+Lemma14.7 supplies the endpoint-two middle/maximum rectangle bounds;
+Theorem14.8 completes that alternative using the written(4,5)tail and
+the required8,658-triple base plus earlier finite dependencies.
+Corollary14.9 settles all-even triples and both(1,3,2)/(3,3,0)mod4 classes.
+Appendix D lists every positive coefficient vector and every base count.
+The closing section presents one endpoint-one spectral problem with four
+current reductions and a precise equality system including G(a,b)=0.
 Theorem 13.5 combines the mixed-parity classes and their necessary conditions;
 Theorem 14.1 combines the endpoint reductions. The main text gives one worked
 shifted-root example. Appendix A summarizes the actual verification scopes,
@@ -18,8 +25,8 @@ endpoint polynomial, divisor and certificate arguments.
 The complete per-checker catalogue is preserved in
 [verification-details.tex](sections/verification-details.tex) and can be
 included with the optional detailed build below.
-Further two-adic shifts are paused while the endpoint-two argument inside
-the linear region and consolidation of the existing results are pursued.
+Further two-adic shifts are paused. Subsequent work targets endpoint-one
+integer feasibility or splitting; the endpoint-two alternative is settled.
 
 The section names follow Reza's proposed layout. At the time of integration,
 his announced `paper/` files were not yet present on any of the three remote
@@ -45,12 +52,14 @@ sections and their shared graph/lifting definitions.
 | [mixed-parity-congruence.tex](sections/mixed-parity-congruence.tex) | Combined Theorem 13.5 for all mixed-parity exclusions/restrictions, with one worked example |
 | [endpoint-reduction.tex](sections/endpoint-reduction.tex) | Combined Theorem 14.1 for the linear bound, tails, divisor candidates, second-smallest<=15 certificate and modulo-three classes |
 | [endpoint-one-spectrum.tex](sections/endpoint-one-spectrum.tex) | Main-text twelve-term endpoint-one proof, simple root one, all residual roots>a, smallest root below min(c,a+b), nonzero constant and divisor window; generic350termpositivity retained as a verification remark |
+| [endpoint-two-completion.tex](sections/endpoint-two-completion.tex) | Complete rectangle-bound, further-root and global integer/parity-class proofs, with explicit finite dependencies |
+| [endpoint-two-identities.tex](sections/endpoint-two-identities.tex) | Appendix D: all84/44/112 positive coefficients and32per-minimum finite-base counts |
 | [aa-small.tex](sections/aa-small.tex) | All-b theorem for a=2 through9, divisor/modular certificates and cubic-test scope |
 | [verification.tex](sections/verification.tex) | Appendix A: grouped verification scopes, complete finite-domain counts and evidence boundaries |
 | [verification-details.tex](sections/verification-details.tex) | Complete per-checker catalogue, included in the optional detailed build |
 | [two-adic-lifting.tex](sections/two-adic-lifting.tex) | Appendix B: residue/modulus/condition table, complete case proofs, derivative thresholds and successive lifting |
 | [endpoint-details.tex](sections/endpoint-details.tex) | Appendix C: complete endpoint polynomial, positivity, divisor, finite-certificate, modulo-three and CRT-scope proofs |
-| [open.tex](sections/open.tex) | Ordered 8<=a<b<c<4a^2-2a outside the proved criteria; endpoint-zero necessary condition and nonsquarefree higher-prime vectors |
+| [open.tex](sections/open.tex) | Single remaining endpoint-one spectral problem, four current reductions, explicit finite equality splitting system and nonsquarefree higher-prime vectors |
 
 ## Build
 
@@ -82,6 +91,27 @@ factor certificates and cutoff are retained from PR #3 at
 `fd8cffe184c0fff34647299fe6e08cdd1caac442`. The manuscript presents their
 proofs in dependency order. No new parameter search or Lean validation is
 needed to reproduce this consolidation.
+
+The endpoint-two completion and equality-cubic supporting sources are pinned
+to PR9 revision `4afe151e1dc7193e6776cc1b08d3606aa804238e`. The manuscript
+includes the full proofs and positive coefficient vectors; that revision
+retains the standalone checker scripts, JSON and complete base CSV. To rerun
+them in an independent checkout of this same repository:
+
+```sh
+git fetch origin endpoint-two-middle-inertia-20261005
+git worktree add --detach ../ideal-intersection-endpoint-checks 4afe151e1dc7193e6776cc1b08d3606aa804238e
+cd ../ideal-intersection-endpoint-checks
+PYTHONDONTWRITEBYTECODE=1 python3 scripts/check_endpoint_two_middle_tail.py
+PYTHONDONTWRITEBYTECODE=1 python3 scripts/check_endpoint_two_sharp_maximum.py
+PYTHONDONTWRITEBYTECODE=1 python3 scripts/check_endpoint_two_completion.py
+PYTHONDONTWRITEBYTECODE=1 python3 scripts/check_endpoint_two_completion.py --csv
+PYTHONDONTWRITEBYTECODE=1 python3 scripts/check_endpoint_one_equality_cubic.py
+```
+
+Compare each output with its saved result at that revision. The global
+endpoint-two theorem retains the earlier complete minimum-through-seven
+finite dependency; the new base alone is not a proof for every minimum.
 
 From the repository root, use Python 3.10+ and SymPy 1.14.0:
 

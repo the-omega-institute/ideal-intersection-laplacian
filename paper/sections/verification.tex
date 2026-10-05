@@ -72,6 +72,37 @@ positive controls. The CRT scope note uses six substitution identities,
 two positive boundary shifts and two integer seed determinants; its
 all-moduli claim is the written polynomial-congruence argument.
 
+\subsection{Endpoint-two completion}
+
+Lemma~\ref{lem:endpoint-two-rectangle} uses a full determinant identity
+for the middle bound and an $84$-term positive residual with two
+nonnegative square expressions for the maximum bound. The real tail in
+Theorem~\ref{thm:endpoint-two-completion} uses complete $44$- and
+$112$-term positive identities. All coefficient vectors are displayed in
+Appendix~\ref{sec:endpoint-two-identities}; these written statements
+require no finite base.
+
+The global integer conclusion uses exactly $8\,658$ fully distinct
+triples at minima eight through thirty-nine in the necessary geometric
+domain. Every endpoint has independent integer-Horner and $6\times6$
+Bareiss agreement, with no zeros; the CSV and JSON reproduce byte-for-byte.
+This base requires no small-gap or growing-gap exclusions. Repeated
+exponents and minima at most seven retain their earlier proofs, including
+the necessary $27\,562$-triple minimum-through-seven certificate.
+The global conclusion is therefore computer-assisted. Seven selected
+quotient/Horner/Sturm fixtures supplement the identities; the repeated
+zero $(10,10,12)$ is preserved below the tail threshold.
+The pinned
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/scripts/check_endpoint_two_completion.py}{completion checker}
+and its companion middle/maximum checkers reproduce the proof data.
+
+The equality cubic in the closing section has generic determinant and
+independent $5\times5$ Sylvester-discriminant checks in its pinned
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/scripts/check_endpoint_one_equality_cubic.py}{checker}.
+The square-discriminant-plus-integer-root formulation also includes the
+curve equation $G(a,b)=0$. It supplies a finite splitting test at each
+known integer point, without a point enumeration or rank computation.
+
 \subsection{Arithmetic and shifted-root cases}
 
 Scaling, all parity patterns and common residues for primes $3,5,7$

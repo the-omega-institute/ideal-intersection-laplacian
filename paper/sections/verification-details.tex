@@ -268,6 +268,29 @@ Proposition~\ref{thm:one-odd-endpoints} and
 Proposition~\ref{cor:mixed-linear-tail} follow from the written root-distribution
 argument and the preceding low-root and endpoint-two proofs.
 No exponent or modulus range is scanned.
+\item The pinned PR9 \path{check_endpoint_two_middle_tail.py} verifies
+the full endpoint Schur determinant, the diagonal factorization and
+the middle-bound positive expansion, with five selected quotient/Horner/Sturm
+fixtures and the repeated endpoint-zero control. Its unbounded statement
+uses the written positive identity.
+\item The pinned PR9 \path{check_endpoint_two_sharp_maximum.py} verifies
+the inverse interval substitution, both nonnegative expressions and every
+coefficient of the $84$-term residual in
+Lemma~\ref{lem:endpoint-two-rectangle}. All $16$ residual vectors agree
+with Appendix~\ref{sec:endpoint-two-identities}; eight direct fixtures
+and two below-cutoff controls supplement the written proof.
+\item At PR9, \path{check_endpoint_two_completion.py} checks the
+$44$- and $112$-term identities and all $32$ coefficient vectors.
+It exhausts exactly $8\,658$ necessary fully distinct triples, with
+independent integer-Horner and $6\times6$ Bareiss evaluations in every
+case. The complete CSV and JSON reproduce byte-for-byte. Seven direct
+quotient/Horner/Sturm fixtures and the repeated control supplement the
+proof; earlier minimum-through-seven certificates remain dependencies.
+\item At PR9, \path{check_endpoint_one_equality_cubic.py} verifies
+the explicit cubic's generic quotient identity and discriminant by an
+independent $5\times5$ Sylvester determinant. Its $61$-term expansion,
+divisor/quadratic identity and abstract square-discriminant counterexample
+are exact checks, with no exponent scan or point enumeration.
 \end{enumerate}
 
 The symbolic and characteristic-polynomial checks use SymPy~1.14.0;
