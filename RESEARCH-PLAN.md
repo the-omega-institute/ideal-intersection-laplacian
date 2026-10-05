@@ -43,6 +43,16 @@ use the global8658triple base. Cumulative minimum<=8retains the earlier
 Next target a specified structural obstruction or another quotient root;
 do not expand the minimum range without a stated mathematical question.
 
+The [endpoint-one spectral theorem](notes/endpoint-one-spectral-gap.md)
+now identifies one as a simple smallest positive quotient root and puts
+allfourremainingroots strictly above four, at real exponents>=8onh_C(1)=0.
+The exact residual quartic is positive throughout closed[0,4], by a
+complete350termpositive identity and all70note vectors, with no finite
+base. Further structural work should target quartic integer splitting or
+a noninteger root above four, or integer exponent feasibility in the
+surviving region. The gap alone does not prove nonintegrality or closeQ3;
+prior finite dependencies and manuscript scope remain unchanged.
+
 The manuscript now combines the mixed-parity restrictions in Theorem 13.5
 and the endpoint reductions in Theorem 14.1. Complete case proofs remain in
 Appendices B/C; Appendix A summarizes verification, with the full checker

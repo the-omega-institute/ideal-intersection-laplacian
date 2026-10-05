@@ -48,6 +48,15 @@ finite base. The theorem requires the108pair finite certificate; the
 cumulative minimum<=8result also retains the earlier27562triple base.
 Full Q3 remains open, with remaining minimum at least nine.
 
+The [endpoint-one spectral gap](notes/endpoint-one-spectral-gap.md) now
+proves that, for real exponents at least eight on h_C(1)=0, **one is a
+simple smallest positive quotient root and all four other roots exceed
+four**. A complete350termpositive identity proves residual-quartic
+positivity on the closed interval[0,4], without a finite base. This is
+actual spectral simplicity, distinct from exponent-root uniqueness.
+The gap does not itself exclude integer spectra; the remaining quartic
+must be studied above four. Full Q3 stays open.
+
 A standalone [middle-diagonal inertia restriction](notes/endpoint-two-middle-inertia.md)
 narrows the endpoint-two problem without further congruence lifting. For
 `4<=a<b<c`, `(b-2)(a+b+c-2)<=2ac` supplies a positive quotient root in `(0,2)`.
