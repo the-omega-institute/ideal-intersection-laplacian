@@ -8,6 +8,14 @@ Our first question is the **Laplacian integrality characterization**:
 which graphs in this family have only integer Laplacian eigenvalues?
 This is a new research track; no complete characterization is claimed here.
 
+The [global pair-sum gap](notes/global-pair-sum-separation.md) proves
+lambda_3<a+b<=b+c<lambda_4 for every real 2<=a<=b<=c, counting
+multiplicity. On endpoint one at minimum>=4 this places the three
+larger quartic roots strictly above b+c, alongside the smallest-root
+window (a,min(c,a+b)). Principal interlacing and a negative determinant
+give a written proof; five fixed exact controls supplement it. The
+remaining quartic integrality problem and full Q3 stay open.
+
 The [structural review](notes/structural-closure-review.md) gives a written
 proof for the entire region d=b-a>=1,a>=2d²+20,c>b, across all residues
 and parities, with no finite exponent base. This region was already

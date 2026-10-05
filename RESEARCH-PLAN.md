@@ -1,5 +1,14 @@
 # First task: Laplacian integrality
 
+The [global pair-sum separation](notes/global-pair-sum-separation.md)
+now gives lambda_3<a+b<=b+c<lambda_4 throughout real2<=a<=b<=c.
+The next bounded structural question is whether the three endpoint-one
+quartic roots above b+c, together with the exact coefficients and
+smallest-root equation, exclude integer splitting on the residual region.
+No attempt duration, scope freeze or submission decision is assumed.
+The49-page manuscript remains unchanged pending compact integration;
+full Q3 also includes unresolved higher-prime nonsquarefree vectors.
+
 The [structural review](notes/structural-closure-review.md) proves the
 whole d>=1,a>=2d²+20,c>a+d region using written arguments only.
 Pause additional residue-class refinements. The next mathematical target

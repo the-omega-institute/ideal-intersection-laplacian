@@ -1,0 +1,144 @@
+{
+  "written_theorem": "For real 2<=a<=b<=c, lambda_3<a+b<=b+c<lambda_4, counting multiplicity.",
+  "written_proof": "Four-support low block and interlacing give lambda_3<a+b. Positive definite shifted singleton pair gives lambda_5,lambda_6>b+c. Negative determinant at b+c and parity then give exactly three eigenvalues below it.",
+  "endpoint_one_consequence": "At real minimum>=4 on h_C(1)=0: a<mu_1<min(c,a+b), and b+c<mu_2<=mu_3<=mu_4.",
+  "symbolic_identities": "passed",
+  "pair_sum_quintic_identities": [
+    "-a*b*c*(a*b*(a + b)*(c - 1) + c*(a*b - a - b + c))*(a + b + 1)",
+    "-a*b*c*(a*(a + b*c - b - c) + b*c*(a - 1)*(b + c))*(b + c + 1)"
+  ],
+  "shifted_high_pair_determinant": "b*(a*(c**2 + c - 1) - b*c)",
+  "positive_determinant_remainder": "c**2 + c*(-b + c) + 2*c + (a - 2)*(c**2 + c - 1) - 2",
+  "specified_controls": [
+    {
+      "exponents": [
+        2,
+        2,
+        3
+      ],
+      "characteristic_polynomial": "x*(x - 14)*(x - 1)*(x**3 - 22*x**2 + 127*x - 138)",
+      "pair_sum_checks": [
+        {
+          "endpoint": 4,
+          "Bareiss_determinant": -9840,
+          "roots_below_with_multiplicity": 3,
+          "roots_above_with_multiplicity": 3
+        },
+        {
+          "endpoint": 5,
+          "Bareiss_determinant": -12960,
+          "roots_below_with_multiplicity": 3,
+          "roots_above_with_multiplicity": 3
+        }
+      ]
+    },
+    {
+      "exponents": [
+        4,
+        4,
+        4
+      ],
+      "characteristic_polynomial": "x*(x - 20)*(x**2 - 32*x + 48)**2",
+      "pair_sum_checks": [
+        {
+          "endpoint": 8,
+          "Bareiss_determinant": -1990656,
+          "roots_below_with_multiplicity": 3,
+          "roots_above_with_multiplicity": 3
+        },
+        {
+          "endpoint": 8,
+          "Bareiss_determinant": -1990656,
+          "roots_below_with_multiplicity": 3,
+          "roots_above_with_multiplicity": 3
+        }
+      ],
+      "distinct_roots_below_8": 2,
+      "roots_below_8_with_multiplicity": 3
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        136
+      ],
+      "characteristic_polynomial": "x*(x - 1386)*(x - 1)*(x**3 - 1604*x**2 + 322939*x - 3283992)",
+      "pair_sum_checks": [
+        {
+          "endpoint": 18,
+          "Bareiss_determinant": -843514375968,
+          "roots_below_with_multiplicity": 3,
+          "roots_above_with_multiplicity": 3
+        },
+        {
+          "endpoint": 145,
+          "Bareiss_determinant": -333402648791040,
+          "roots_below_with_multiplicity": 3,
+          "roots_above_with_multiplicity": 3
+        }
+      ],
+      "endpoint_one_quartic_coefficients": [
+        1,
+        -2990,
+        2546083,
+        -450877446,
+        4551612912
+      ],
+      "quartic_roots_in_9_18": 1,
+      "quartic_roots_below_145": 1,
+      "quartic_roots_above_145_with_multiplicity": 3
+    },
+    {
+      "exponents": [
+        9,
+        12,
+        159
+      ],
+      "characteristic_polynomial": "x*(x - 12)*(x**4 - 3975*x**3 + 4384827*x**2 - 929287161*x + 934242660)",
+      "pair_sum_checks": [
+        {
+          "endpoint": 21,
+          "Bareiss_determinant": -3153218734512,
+          "roots_below_with_multiplicity": 3,
+          "roots_above_with_multiplicity": 3
+        },
+        {
+          "endpoint": 171,
+          "Bareiss_determinant": -1326223361937312,
+          "roots_below_with_multiplicity": 3,
+          "roots_above_with_multiplicity": 3
+        }
+      ]
+    },
+    {
+      "exponents": [
+        9,
+        30,
+        951
+      ],
+      "characteristic_polynomial": "x*(x - 30)*(x**4 - 40299*x**3 + 329941809*x**2 - 346748633001*x + 324946800090)",
+      "pair_sum_checks": [
+        {
+          "endpoint": 39,
+          "Bareiss_determinant": -4457277599018400,
+          "roots_below_with_multiplicity": 3,
+          "roots_above_with_multiplicity": 3
+        },
+        {
+          "endpoint": 981,
+          "Bareiss_determinant": -55445506111370647080,
+          "roots_below_with_multiplicity": 3,
+          "roots_above_with_multiplicity": 3
+        }
+      ]
+    }
+  ],
+  "root_count_method": "Exact Sturm counts on squarefree factors, weighted by multiplicity; interval endpoints are checked nonroots.",
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_global_pair_sum_separation.py": "2b73098bd17fc52b013d7d1e53726143503b57963b66e4feaf9d91d1a95db8c9",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c",
+    "check_fully_distinct.py": "f2dd1b9985c0223d2adb71b450e786e625aace09571c308c70fe4f49f8b38880"
+  },
+  "scope": "Written global real theorem; five fixed supplementary controls and ten direct Bareiss determinants. No scan, floats or Lean. No full integer-splitting, three-prime classification or full Q3 closure. Manuscript unchanged; old n7 open and four native axioms retained."
+}
