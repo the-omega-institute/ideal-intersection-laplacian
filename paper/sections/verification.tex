@@ -277,6 +277,24 @@ energy and complement identity. These controls verify the implementation;
 the unbounded theorem follows from the written proof, without
 an exponent scan, floating-point eigenvalues or Lean verification.
 
+\subsection{Small-exponent Rayleigh criterion}
+
+Theorem~\ref{thm:small-exponent-rayleigh} and
+Corollary~\ref{cor:small-exponent-reciprocal} have written unbounded
+proofs and require no finite base. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/295fffdd14afb3d5ef54e5fbbf02c31347ecb51d/scripts/check_small_exponent_rayleigh.py}{checker}
+verifies the generic energy-minus-norm factorization, a three-collection
+compression characteristic polynomial and the boundary vector.
+The compression is not equitable; its eigenvectors are trial functions,
+not full eigenvectors. Nine specified support controls check the exact
+aggregated energy matrix, connectedness, zero sums, complement identity
+and universal shift. They include three equality controls and two
+controls outside the sufficient criterion. Two small expanded graphs
+independently verify the trial energies. Boundary residuals confirm
+that the trial function is not a full eigenvector at one. These
+controls validate the implementation, with no exponent scan, numerical
+eigensolver or Lean verification.
+
 \ifdefined\DetailedVerification
 \subsection{Complete checker catalogue}
 \input{sections/verification-details}

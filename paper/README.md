@@ -1,5 +1,14 @@
 # Working manuscript
 
+Theorem8.3 extends the arbitrary-prime-count Rayleigh obstruction to a
+distinguished exponent m whenever A>=(m^2-1)B-(m-1), including equality.
+Corollary8.4 covers every other exponent at least m^2(t-1), for m>=2.
+The complete rational trial-function proof is in
+[unit-exponent.tex](sections/unit-exponent.tex); its exact supporting
+checker is pinned to PR9 `295fffdd14afb3d5ef54e5fbbf02c31347ecb51d`.
+These all-exponents-at-least-two families need no finite base. Higher-prime
+Q3 outside the criterion and joint submission/authorship decisions remain open.
+
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new
 largest-root interval (bc+a+b+c,bc+a+b+c+1), the endpoint-one sum bound,

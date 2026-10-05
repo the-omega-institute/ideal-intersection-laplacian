@@ -1,9 +1,11 @@
-\section{A unit exponent}
+\section{Small exponents and complement Rayleigh bounds}
 \label{sec:unit}
 
 The complement quotient replaces coordinate symmetry when the other
 two exponents are arbitrary. A root between zero and one then settles the
 entire unit-exponent family after the small exceptions are identified.
+For arbitrary prime-factor count, a rational trial function also gives
+an explicit sufficient condition with a distinguished exponent $m\geq2$.
 
 \begin{theorem}
 \label{thm:unit}
@@ -115,6 +117,92 @@ universal-vertex identities give an integral spectrum for $G_n$.
 Theorem~\ref{thm:unit-any-prime-count} also gives a proof of
 Theorems~\ref{thm:squarefree} for $t\geq3$ and~\ref{thm:unit}
 without their separate spectral decompositions or small exceptions.
+
+The same support partition gives an obstruction when the distinguished
+exponent is larger than one and the other support weights are sufficiently
+concentrated on their full support.
+
+\begin{theorem}
+\label{thm:small-exponent-rayleigh}
+Let $n=(\prod_{i<t}p_i^{k_i})p_t^m$ have $t\geq3$ distinct prime
+factors and positive integer exponents. Put
+\[
+ A=\prod_{i<t}k_i,\qquad B=\prod_{i<t}(k_i+1)-1-A.
+\]
+If $A\geq(m^2-1)B-(m-1)$, then $G_n$ has a Laplacian eigenvalue
+in $(V-1,V)$, where $V=(m+1)\prod_{i<t}(k_i+1)-2$.
+In particular, it is not Laplacian integral. The condition includes
+equality and can be applied after any permutation of the factors.
+\end{theorem}
+\begin{proof}
+Remove the $mA-1$ universal vertices and let $F=\overline H$.
+As in Theorem~\ref{thm:unit-any-prime-count}, $F$ is connected and
+$B>0$. Its vertices split into three collections: $L$ supported on
+$[t-1]$, $Z$ supported on $\{t\}$, and the remaining collection $R$.
+Their sizes are $A,m,(m+1)B$, respectively. There are $mA$ edges
+between $L$ and $Z$, none between $L$ and $R$, and $mB$ between
+$Z$ and $R$. Among the vertices of $R$, those whose support contains
+$t$ have total weight $mB$ and no neighbor in $Z$; the others have
+total weight $B$ and are adjacent to every vertex of $Z$.
+
+Give a trial function $f$ the values
+\[
+ x=m\ \text{on }L,\qquad y=m-1\ \text{on }Z,\qquad
+ z=-\frac{m(A+m-1)}{(m+1)B}\ \text{on }R.
+\]
+It is nonzero and $Ax+my+(m+1)Bz=0$. Its energy $E$ and squared
+norm $D$ are
+\[
+ E=mA(x-y)^2+mB(y-z)^2,\qquad
+ D=Ax^2+my^2+(m+1)Bz^2.
+\]
+Direct expansion gives
+\[
+ E-D=\frac{m\bigl((m^2-1)B-A-(m-1)\bigr)
+                 \bigl(mA+(m^2-1)B+m(m-1)\bigr)}{B(m+1)^2}.
+\]
+The second factor is positive. Thus $E/D<1$ when the hypothesis
+is strict, and the variational principle gives $0<\lambda_2(F)<1$.
+
+At equality, necessarily $m\geq2$, and $z=-m(m-1)$, with $E/D=1$.
+At every vertex of $R$ whose support contains $t$, the full Laplacian
+action on $f$ is zero: its neighbors are in $R$ and have the same
+trial value. But $f=-m(m-1)\ne0$ there, so $f$ is not an eigenvector
+at one. Equality in the Rayleigh minimum would force $f$ to be such
+an eigenvector. Hence $\lambda_2(F)<1$ also at the boundary.
+
+In both cases, the complement identity reflects this positive
+eigenvalue to $N-\lambda_2(F)$, where $N=A+m+(m+1)B$.
+Lemma~\ref{lem:join} then shifts it by $mA-1$, giving
+$V-\lambda_2(F)\in(V-1,V)$.
+\end{proof}
+
+The exact product condition has a convenient reciprocal sufficient
+condition, giving unbounded families with every exponent at least two.
+
+\begin{corollary}
+\label{cor:small-exponent-reciprocal}
+Under the hypotheses of Theorem~\ref{thm:small-exponent-rayleigh},
+let $m\geq2$. If $\sum_{i<t}1/k_i\leq1/m^2$, then $G_n$ is not
+Laplacian integral. In particular, every $k_i\geq m^2(t-1)$ suffices.
+\end{corollary}
+\begin{proof}
+Put $u_i=1/k_i$ and $s=\sum u_i<1$. Induction gives
+$\prod(1-u_i)\geq1-s$, while $1+u_i<(1-u_i)^{-1}$. Therefore
+\[
+ \frac BA=\prod_{i<t}(1+u_i)-1-\frac1A
+ <\frac1{1-s}-1\leq\frac1{m^2-1}.
+\]
+Thus $A>(m^2-1)B$, and Theorem~\ref{thm:small-exponent-rayleigh}
+applies. The stated coordinate bound implies the reciprocal bound.
+\end{proof}
+
+For example, $(10,10,10,2)$ has $A=1000,B=330$ and satisfies
+the strict condition. The boundary vector $(4,19,74,2)$ has
+$A=5624,B=1875$ and $A=3B-1$; the non-eigenvector argument in the
+proof supplies strictness. The criterion does not apply to
+$(2,2,2,2)$, for which $A=8,B=18$. It is a sufficient obstruction,
+and the higher-prime classification outside it remains open.
 
 The general six-support reduction also gives an exact diagnostic for
 fully distinct triples. For $1\leq a<b<c\leq7$, all thirty-five quintics
