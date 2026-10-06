@@ -1,5 +1,14 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [Galois coset theorem](notes/four-prime-galois-coset.md)
+restricts the quadratic-field images to Pstar+E0(Q), with
+an explicit fixed Galois difference and translation to the
+negative of the previous rational chart. Candidate group
+parameterization needs no full E0(K) basis. The remaining
+complete target is rational Q with integral translate Pstar+Q,
+followed by the original exact tail filter. No rank, basis or
+point enumeration is computed.
+
 The [quadratic-field integrality reduction](notes/four-prime-affine-integrality.md)
 maps every positive integer a=6 root-two tail pair polynomially
 to algebraic integer points on a cubic over Q(sqrt(43645)).

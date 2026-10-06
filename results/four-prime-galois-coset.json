@@ -1,0 +1,76 @@
+{
+  "written_result": "The quadratic-field images lie in the exact Galois-difference coset Pstar+E0(Q), and translating by -Pstar gives the negative of the preceding rational chart.",
+  "symbolic": {
+    "fixed_difference_T_U": "196265550/203",
+    "fixed_difference_T_V_coefficient_s": "-712421190000/41209",
+    "T_on_E0_and_sigma_T_equals_negative_T": true,
+    "base_Pstar_U_coefficients_one_s": [
+      0,
+      1950
+    ],
+    "base_Pstar_V_coefficients_one_s": [
+      1123590000,
+      4524000
+    ],
+    "Pstar_on_E0": true,
+    "generic_difference_P_minus_sigma_P_equals_T": true,
+    "generic_translation_P_equals_Pstar_minus_previous_rational_R": true,
+    "difference_slope": "(4alpha*b+beta)/(2s)",
+    "difference_denominator_nonzero_on_positive_domain": "U-sigma(U)=4sW; f(b)>0 for b>0",
+    "translation_denominator_nonzero_for_finite_rational_R": "R_U rational, Pstar_U=1950s irrational",
+    "coset": "{P in E0(K): P-sigma(P)=T}=Pstar+E0(Q)",
+    "previous_chart_relation": "P-Pstar=-R, including rational-chart O at b=0,W=975"
+  },
+  "specified_affine_controls": [
+    {
+      "b": 55,
+      "W": 781950,
+      "P_minus_sigma_P_equals_T": true,
+      "Q_equals_P_minus_Pstar": [
+        "586950",
+        "-2550717000"
+      ],
+      "Q_rational_and_equals_negative_previous_chart": true
+    },
+    {
+      "b": 55,
+      "W": -781950,
+      "P_minus_sigma_P_equals_T": true,
+      "Q_equals_P_minus_Pstar": [
+        "-50963250/121",
+        "-234393705000/1331"
+      ],
+      "Q_rational_and_equals_negative_previous_chart": true
+    },
+    {
+      "b": 0,
+      "W": 975,
+      "P_minus_sigma_P_equals_T": true,
+      "Q_equals_P_minus_Pstar": "O",
+      "Q_rational_and_equals_negative_previous_chart": true
+    },
+    {
+      "b": 0,
+      "W": -975,
+      "P_minus_sigma_P_equals_T": true,
+      "Q_equals_P_minus_Pstar": [
+        "-1257750",
+        "-1794390000"
+      ],
+      "Q_rational_and_equals_negative_previous_chart": true
+    }
+  ],
+  "candidate_group_parameterization_requires_full_E0_K_basis": false,
+  "translated_integrality_complete_algorithm_run": false,
+  "rank_computed": false,
+  "rational_or_number_field_basis_certified": false,
+  "integral_points_enumerated": false,
+  "new_nonintegrality_classification": false,
+  "script_sha256": "5cbd22e622d03100619e348ecb587bf3c0f42a7b7c73e735b7a7a1953cc09463",
+  "dependency_sha256": {
+    "check_four_prime_a6_elliptic.py": "212cbf0c3f95d6c3670c7cd913b0b6e9aa55eb5df47e03b073ea74aef2f5c7aa",
+    "check_four_prime_affine_integrality.py": "8f9f40a06e350b12f7b0f1d020d60eedfc0b22f429643668d5777c9299945aff"
+  },
+  "sympy_version": "1.14.0",
+  "scope": "Generic exact elliptic group-law/difference/translation identities and four specified affine controls. The full O_K integrality and original conjugate/quartic/tail filter remain required. No rank/basis/complete point algorithm, arbitrary scan, graph or historical finite-base rerun, floats or Lean."
+}

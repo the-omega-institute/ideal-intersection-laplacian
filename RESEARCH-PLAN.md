@@ -1,5 +1,19 @@
 # First task: Laplacian integrality
 
+The [Galois coset theorem](notes/four-prime-galois-coset.md)
+refines the field target to Pstar+E0(Q). Its translated rational
+point equals the negative of the prior rational chart; the
+fixed Galois difference and coset equality are proved exactly.
+Full E0(K) group enumeration is unnecessary for parameterization.
+
+Next verify a complete algorithm for rational Q with
+Pstar+Q integral over O_K, and a certified full rational group
+basis if its method requires one. Keep the full original filter
+and both signs. Ordinary integral Q coordinates are insufficient.
+No rank, basis or complete list obtained; no arbitrary bounded
+scan as a substitute. Prior results and joint manuscript
+decisions retain their scopes.
+
 The [quadratic-field integrality reduction](notes/four-prime-affine-integrality.md)
 now supplies an integral enumeration target: all relevant affine
 points map into O_K-integral E0(K) points, K=Q(sqrt(43645)).
