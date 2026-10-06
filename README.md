@@ -1,5 +1,14 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [coprime completion](notes/four-prime-coprime-completion.md)
+proves every (a,a,b,c),a>=5,b,c>=a,gcd((a-1)(a-2),bc)=1,
+nonintegral, removing all four exceptions from the preceding corollary.
+An explicit tail cutoff reduces a=6,12,22 to exactly eleven quadratics,
+all with nonsquare discriminants; a=7 is excluded by the existing
+modular theorem. The larger tail stays unbounded. Next examine
+noncoprime repeated minima and combine their low-root equations with
+the remaining unique-tail conditions. General classification stays open.
+
 The [low-root divisibility theorem](notes/four-prime-low-root-divisibility.md)
 proves nonintegrality for a>=5,b,c>=a whenever neither
 (a-1)|3b^2c^2 nor (a-2)|20b^2c^2 holds. The smallest genuine

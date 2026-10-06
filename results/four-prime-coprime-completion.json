@@ -1,0 +1,464 @@
+{
+  "written_theorem": "Every positive four-prime vector(a,a,b,c),a>=5,b,c>=a,gcd((a-1)(a-2),bc)=1,is nonintegral,with no exceptional a. Previous4exceptions are settled by a7modular obstruction and complete11necessary nonsquare-discriminant quadratics for a6,12,22,after min-tail cutoff2a-2.",
+  "symbolic": {
+    "minor_at_three": "b*c*(-a - 2) + (a - 2)*(a + 1)*(b + c) + (a - 2)*(2*a - 2)",
+    "negative_minor_above_tail_cutoff": "u*v*(-a - 2) - (2*a - 2)*(3*a + 2) - (u + v)*(a**2 + 3*a - 2)",
+    "tail_cutoff": "min(b,c)>=2a-2 implies1<kappa_min<3",
+    "coprime_exceptional_a_from_previous_reduction": [
+      6,
+      7,
+      12,
+      22
+    ],
+    "a_seven_all_odd_modular_factorization": "(x+1)^2(x^2+x+1)mod2",
+    "complete_necessary_finite_b_lists": {
+      "6": [
+        7,
+        9
+      ],
+      "12": [
+        13,
+        17,
+        19,
+        21
+      ],
+      "22": [
+        23,
+        29,
+        31,
+        37,
+        41
+      ]
+    }
+  },
+  "complete_eleven_finite_rows": [
+    {
+      "a": 6,
+      "b": 7,
+      "content": 4,
+      "primitive_coefficients_descending": [
+        -1085,
+        8417,
+        -848
+      ],
+      "primitive_discriminant": 67165569,
+      "strict_square_anchor": 8195,
+      "four_independent_integer_determinants_at_c_zero_through_three": [
+        -3392,
+        25936,
+        46584,
+        58552
+      ],
+      "no_rational_tail_root": true
+    },
+    {
+      "a": 6,
+      "b": 9,
+      "content": 4,
+      "primitive_coefficients_descending": [
+        -1847,
+        11381,
+        -2144
+      ],
+      "primitive_discriminant": 113687289,
+      "strict_square_anchor": 10662,
+      "four_independent_integer_determinants_at_c_zero_through_three": [
+        -8576,
+        29560,
+        52920,
+        61504
+      ],
+      "no_rational_tail_root": true
+    },
+    {
+      "a": 12,
+      "b": 13,
+      "content": 10,
+      "primitive_coefficients_descending": [
+        -4238,
+        121085,
+        6802
+      ],
+      "primitive_discriminant": 14776884729,
+      "strict_square_anchor": 121560,
+      "four_independent_integer_determinants_at_c_zero_through_three": [
+        68020,
+        1236490,
+        2320200,
+        3319150
+      ],
+      "no_rational_tail_root": true
+    },
+    {
+      "a": 12,
+      "b": 17,
+      "content": 90,
+      "primitive_coefficients_descending": [
+        -874,
+        18581,
+        -462
+      ],
+      "primitive_discriminant": 343638409,
+      "strict_square_anchor": 18537,
+      "four_independent_integer_determinants_at_c_zero_through_three": [
+        -41580,
+        1552050,
+        2988360,
+        4267350
+      ],
+      "no_rational_tail_root": true
+    },
+    {
+      "a": 12,
+      "b": 19,
+      "content": 10,
+      "primitive_coefficients_descending": [
+        -10100,
+        192017,
+        -11822
+      ],
+      "primitive_discriminant": 36392919489,
+      "strict_square_anchor": 190769,
+      "four_independent_integer_determinants_at_c_zero_through_three": [
+        -118220,
+        1700950,
+        3318120,
+        4733290
+      ],
+      "no_rational_tail_root": true
+    },
+    {
+      "a": 12,
+      "b": 21,
+      "content": 10,
+      "primitive_coefficients_descending": [
+        -12614,
+        217949,
+        -20942
+      ],
+      "primitive_discriminant": 46445117049,
+      "strict_square_anchor": 215511,
+      "four_independent_integer_determinants_at_c_zero_through_three": [
+        -209420,
+        1843930,
+        3645000,
+        5193790
+      ],
+      "no_rational_tail_root": true
+    },
+    {
+      "a": 22,
+      "b": 23,
+      "content": 180,
+      "primitive_coefficients_descending": [
+        -2001,
+        142585,
+        17568
+      ],
+      "primitive_discriminant": 20471096497,
+      "strict_square_anchor": 143077,
+      "four_independent_integer_determinants_at_c_zero_through_three": [
+        3162240,
+        28467360,
+        53052120,
+        76916520
+      ],
+      "no_rational_tail_root": true
+    },
+    {
+      "a": 22,
+      "b": 29,
+      "content": 180,
+      "primitive_coefficients_descending": [
+        -3551,
+        188573,
+        10992
+      ],
+      "primitive_discriminant": 35715906697,
+      "strict_square_anchor": 188986,
+      "four_independent_integer_determinants_at_c_zero_through_three": [
+        1978560,
+        35282520,
+        67308120,
+        98055360
+      ],
+      "no_rational_tail_root": true
+    },
+    {
+      "a": 22,
+      "b": 31,
+      "content": 60,
+      "primitive_coefficients_descending": [
+        -12491,
+        614283,
+        23456
+      ],
+      "primitive_discriminant": 378515559673,
+      "strict_square_anchor": 615236,
+      "four_independent_integer_determinants_at_c_zero_through_three": [
+        1407360,
+        37514880,
+        72123480,
+        105233160
+      ],
+      "no_rational_tail_root": true
+    },
+    {
+      "a": 22,
+      "b": 37,
+      "content": 60,
+      "primitive_coefficients_descending": [
+        -18869,
+        767703,
+        -13936
+      ],
+      "primitive_discriminant": 588316062673,
+      "strict_square_anchor": 767017,
+      "four_independent_integer_determinants_at_c_zero_through_three": [
+        -836160,
+        44093880,
+        86759640,
+        127161120
+      ],
+      "no_rational_tail_root": true
+    },
+    {
+      "a": 22,
+      "b": 41,
+      "content": 180,
+      "primitive_coefficients_descending": [
+        -7947,
+        292141,
+        -15408
+      ],
+      "primitive_discriminant": 84856574377,
+      "strict_square_anchor": 291301,
+      "four_independent_integer_determinants_at_c_zero_through_three": [
+        -2773440,
+        48381480,
+        96675480,
+        142108560
+      ],
+      "no_rational_tail_root": true
+    }
+  ],
+  "fixed_controls": [
+    {
+      "exponents": [
+        6,
+        6,
+        7,
+        49
+      ],
+      "support_embedding": {
+        "exponents": [
+          6,
+          6,
+          7,
+          49
+        ],
+        "graph_vertices": 19598,
+        "complement_vertices": 7251,
+        "embedding_columns_checked": 4,
+        "expanded_graph_checked": false,
+        "weighted_symmetry_zero_sum_complement_join": "passed"
+      },
+      "five_independent_integer_determinants_at_zero_through_four": [
+        49512736,
+        27800334,
+        8377848,
+        -8774000,
+        -23674464
+      ],
+      "tail_cutoff_holds": false,
+      "exact_low_root_window": [
+        1,
+        4
+      ],
+      "exact_low_window_sturm_count": 1,
+      "a_seven_modular_branch": false
+    },
+    {
+      "exponents": [
+        12,
+        12,
+        13,
+        169
+      ],
+      "support_embedding": {
+        "exponents": [
+          12,
+          12,
+          13,
+          169
+        ],
+        "graph_vertices": 402218,
+        "complement_vertices": 85851,
+        "embedding_columns_checked": 4,
+        "expanded_graph_checked": false,
+        "weighted_symmetry_zero_sum_complement_join": "passed"
+      },
+      "five_independent_integer_determinants_at_zero_through_four": [
+        6779063200,
+        4035976596,
+        1441117728,
+        -1005713510,
+        -3304717200
+      ],
+      "tail_cutoff_holds": false,
+      "exact_low_root_window": [
+        1,
+        4
+      ],
+      "exact_low_window_sturm_count": 1,
+      "a_seven_modular_branch": false
+    },
+    {
+      "exponents": [
+        22,
+        22,
+        23,
+        529
+      ],
+      "support_embedding": {
+        "exponents": [
+          22,
+          22,
+          23,
+          529
+        ],
+        "graph_vertices": 6728878,
+        "complement_vertices": 840051,
+        "embedding_columns_checked": 4,
+        "expanded_graph_checked": false,
+        "weighted_symmetry_zero_sum_complement_join": "passed"
+      },
+      "five_independent_integer_determinants_at_zero_through_four": [
+        640145777760,
+        390235713406,
+        147783389688,
+        -87213025440,
+        -314755364000
+      ],
+      "tail_cutoff_holds": false,
+      "exact_low_root_window": [
+        1,
+        4
+      ],
+      "exact_low_window_sturm_count": 1,
+      "a_seven_modular_branch": false
+    },
+    {
+      "exponents": [
+        7,
+        7,
+        11,
+        121
+      ],
+      "support_embedding": {
+        "exponents": [
+          7,
+          7,
+          11,
+          121
+        ],
+        "graph_vertices": 93694,
+        "complement_vertices": 28476,
+        "embedding_columns_checked": 4,
+        "expanded_graph_checked": false,
+        "weighted_symmetry_zero_sum_complement_join": "passed"
+      },
+      "five_independent_integer_determinants_at_zero_through_four": [
+        773131185,
+        426180244,
+        104396295,
+        -192297420,
+        -463977635
+      ],
+      "tail_cutoff_holds": false,
+      "exact_low_root_window": [
+        1,
+        4
+      ],
+      "exact_low_window_sturm_count": 1,
+      "a_seven_modular_branch": true
+    },
+    {
+      "exponents": [
+        6,
+        6,
+        11,
+        13
+      ],
+      "support_embedding": {
+        "exponents": [
+          6,
+          6,
+          11,
+          13
+        ],
+        "graph_vertices": 8230,
+        "complement_vertices": 3083,
+        "embedding_columns_checked": 4,
+        "expanded_graph_checked": false,
+        "weighted_symmetry_zero_sum_complement_join": "passed"
+      },
+      "five_independent_integer_determinants_at_zero_through_four": [
+        9519120,
+        5527086,
+        1970328,
+        -1159344,
+        -3870096
+      ],
+      "tail_cutoff_holds": true,
+      "exact_low_root_window": [
+        1,
+        3
+      ],
+      "exact_low_window_sturm_count": 1,
+      "a_seven_modular_branch": false
+    },
+    {
+      "exponents": [
+        12,
+        12,
+        23,
+        29
+      ],
+      "support_embedding": {
+        "exponents": [
+          12,
+          12,
+          23,
+          29
+        ],
+        "graph_vertices": 121678,
+        "complement_vertices": 25631,
+        "embedding_columns_checked": 4,
+        "expanded_graph_checked": false,
+        "weighted_symmetry_zero_sum_complement_join": "passed"
+      },
+      "five_independent_integer_determinants_at_zero_through_four": [
+        656359200,
+        404775996,
+        166396688,
+        -58839210,
+        -270992160
+      ],
+      "tail_cutoff_holds": true,
+      "exact_low_root_window": [
+        1,
+        3
+      ],
+      "exact_low_window_sturm_count": 1,
+      "a_seven_modular_branch": false
+    }
+  ],
+  "script_sha256": "78b1e45ca91784781b6c6e27a2acbad9e0f5f76b153c4eb50208493561a50601",
+  "dependency_sha256": {
+    "check_four_prime_pair_three.py": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+    "check_four_prime_single_pair_midpoint.py": "d4e4dd85935656682409d075605236e4de37717d478122087bd289f5e160dd7e"
+  },
+  "sympy_version": "1.14.0",
+  "scope": "Written unbounded reduction with complete11-row exact finite arithmetic,not an arbitrary exponent base.44independent integer determinants reconstruct finite tail quadratics; six support controls verify336column actions,30more integer determinants and6exact Sturm counts;74determinants total. Algebraic c0 solely interpolation. No tail scan,expanded graph,historical finite-base rerun or Lean. General noncoprime repeated-minimum/single-pair,fully unequal four-prime,higher-prime classification remains open."
+}

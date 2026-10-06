@@ -1,5 +1,19 @@
 # First task: Laplacian integrality
 
+The [coprime completion](notes/four-prime-coprime-completion.md)
+settles every positive repeated-minimum vector a>=5,b,c>=a with
+gcd((a-1)(a-2),bc)=1, without exceptional a. The upper minor at
+three gives kappa_min<3 when both tails are at least 2a-2. The
+remaining a=6,12,22 reduce to eleven necessary smaller-tail values;
+complete nonsquare-discriminant arithmetic excludes root three for
+all larger tails. The a=7 branch uses the prior modular obstruction.
+
+Next consider noncoprime repeated minima where at least one low-root
+divisibility holds. Combine actual endpoint equations with unique-tail
+conditions and modular restrictions. Do not expand arbitrary exponent
+tables or repeat the two-stage binary lift diagnosis. Keep the
+three-prime main focused; final scope/stopping/submission remains joint.
+
 The [low-root divisibility theorem](notes/four-prime-low-root-divisibility.md)
 adds the necessary disjunction (a-1)|3b^2c^2 or (a-2)|20b^2c^2
 for repeated minima a>=5,b,c>=a. Excluding both forces the smallest
