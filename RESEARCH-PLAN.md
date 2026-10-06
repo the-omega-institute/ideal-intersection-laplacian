@@ -1,5 +1,19 @@
 # First task: Laplacian integrality
 
+The [unique positive tail-root theorem](notes/four-prime-unique-tail.md)
+proves at most b-1 possibly integral tails per fixed (a,b), b<c.
+For every admissible offset b+1<=t<=2b-1, the linear and constant
+coefficients are positive. Only A_t<0 can yield a positive root,
+and then exactly one exists. A_t increases for t>=b, so the remaining
+offsets form a contiguous initial segment ending before its zero
+tau in (b,2b). At a=b=5 only t=6,7,8 remain; the complete earlier
+triple-five arithmetic is retained.
+
+Next analyze square discriminants and numerator divisibility uniformly
+on A_t<0, or combine these necessary conditions with a second genuine
+restricted root. Keep the three-prime main focused; the final manuscript
+scope, stopping point and submission remain joint decisions.
+
 The [harmonic second-root window](notes/four-prime-harmonic-tail.md)
 places kappa_2 between a+b+1 and a+1+2bc/(b+c),for b<c.
 Only b-1 integer offsets remain,leaving at most2(b-1)quadratic

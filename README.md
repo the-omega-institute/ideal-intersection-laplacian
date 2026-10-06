@@ -1,5 +1,16 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [unique positive tail-root theorem](notes/four-prime-unique-tail.md)
+reduces positive (a,a,b,c), b<c, to at most b-1 possibly integral
+tails per fixed (a,b), halving the preceding bound. A complete positive
+identity proves the linear coefficient of each candidate quadratic
+strictly positive. Its leading coefficient must be negative, leaving
+exactly one positive real tail root per retained offset. The retained
+offsets form a contiguous initial segment; at a=b=5 only t=6,7,8
+remain. Next analyze square discriminants and numerator divisibility
+uniformly, or impose a second restricted root. General classification
+remains open.
+
 The [harmonic second-root window](notes/four-prime-harmonic-tail.md)
 places kappa_2 between a+b+1 and a+1+2bc/(b+c),for b<c.
 Only b-1 integer offsets remain,leaving at most2(b-1)quadratic
