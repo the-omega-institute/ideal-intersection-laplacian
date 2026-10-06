@@ -1,5 +1,22 @@
 # First task: Laplacian integrality
 
+The [modular repeated-pair theorem](notes/repeated-pair-modular.md)
+proves that the tensor characteristic polynomial modulo p|a+1 splits
+if and only if every x^2-x-k_i does, for any number of remaining
+prime factors. Integral graph spectrum requires this splitting.
+At p=2 all remaining exponents must be even; at odd p all
+1+4k_i must be quadratic residues, with zero allowed. Small-prime
+exclusions are k_i=1 mod2, k_i=1 mod3 and k_i=3,4 mod5.
+The unbounded family (a,a,2a,2a^2+1), odd a>=5, lies outside
+the previous sufficient spectral regions and is now settled.
+
+Next impose these tail residues before analyzing square discriminants
+and numerator divisibility on the remaining A_t<0 offsets, or seek
+an additional root obstruction in cases passing every prime divisor
+of a+1. Modular splitting is necessary, not sufficient for integrality.
+Keep the three-prime main focused; final scope/stopping/submission
+remains joint.
+
 The [unique positive tail-root theorem](notes/four-prime-unique-tail.md)
 proves at most b-1 possibly integral tails per fixed (a,b), b<c.
 For every admissible offset b+1<=t<=2b-1, the linear and constant

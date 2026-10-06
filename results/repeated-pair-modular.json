@@ -1,0 +1,439 @@
+{
+  "written_theorem": "For any positive repeated-pair vector(a,a,k3,...,kt),t>=3,and prime p dividing a+1,the characteristic polynomial of the genuine tensor restriction splits over F_p iff every x^2-x-k_i splits. Integrality therefore requires each tail even at p=2,or each 1+4k_i a quadratic residue(including0)at odd p.",
+  "symbolic": {
+    "tensor_reduction_identity": "K+tensor(F)=(a+1)(tensor(E)+tensor(F))",
+    "factor_characteristic": "x^2-x-k",
+    "binary_four_prime_table": [
+      {
+        "tail_parities": [
+          0,
+          0
+        ],
+        "characteristic_modulo_two": "x**3*(x + 1)",
+        "splits_into_linear_factors": true
+      },
+      {
+        "tail_parities": [
+          0,
+          1
+        ],
+        "characteristic_modulo_two": "x**2*(x**2 + x + 1)",
+        "splits_into_linear_factors": false
+      },
+      {
+        "tail_parities": [
+          1,
+          0
+        ],
+        "characteristic_modulo_two": "x**2*(x**2 + x + 1)",
+        "splits_into_linear_factors": false
+      },
+      {
+        "tail_parities": [
+          1,
+          1
+        ],
+        "characteristic_modulo_two": "(x + 1)**2*(x**2 + x + 1)",
+        "splits_into_linear_factors": false
+      }
+    ],
+    "complete_tail_residue_table_for_primes_2_3_5": [
+      {
+        "prime": 2,
+        "tail_residue": 0,
+        "splits": true
+      },
+      {
+        "prime": 2,
+        "tail_residue": 1,
+        "splits": false
+      },
+      {
+        "prime": 3,
+        "tail_residue": 0,
+        "splits": true
+      },
+      {
+        "prime": 3,
+        "tail_residue": 1,
+        "splits": false
+      },
+      {
+        "prime": 3,
+        "tail_residue": 2,
+        "splits": true
+      },
+      {
+        "prime": 5,
+        "tail_residue": 0,
+        "splits": true
+      },
+      {
+        "prime": 5,
+        "tail_residue": 1,
+        "splits": true
+      },
+      {
+        "prime": 5,
+        "tail_residue": 2,
+        "splits": true
+      },
+      {
+        "prime": 5,
+        "tail_residue": 3,
+        "splits": false
+      },
+      {
+        "prime": 5,
+        "tail_residue": 4,
+        "splits": false
+      }
+    ],
+    "additional_coverage_family": "(a,a,2a,2a^2+1),odd a>=5",
+    "coverage_comparisons": [
+      {
+        "criterion": "product_tail_failure",
+        "failure_margin": "2*a**4 - 2*a**3 + a**2 - 7*a",
+        "positive_coefficients_after_a_equals_z_plus_five": [
+          2,
+          38,
+          271,
+          853,
+          990
+        ]
+      },
+      {
+        "criterion": "odd_gap_weighted_failure",
+        "failure_margin": "8*a**5 - 12*a**4 + 8*a**3 - 8*a**2 - 2*a + 1",
+        "positive_coefficients_after_a_equals_z_plus_five": [
+          8,
+          188,
+          1768,
+          8312,
+          19518,
+          18291
+        ]
+      },
+      {
+        "criterion": "small_exponent_failure",
+        "distinguished_exponent": "a",
+        "failure_margin": "6*a**5 - 5*a**2 - 7*a",
+        "positive_coefficients_after_a_equals_z_plus_five": [
+          6,
+          150,
+          1500,
+          7495,
+          18693,
+          18590
+        ]
+      },
+      {
+        "criterion": "small_exponent_failure",
+        "distinguished_exponent": "2*a",
+        "failure_margin": "16*a**5 + 10*a**4 + 12*a**3 - 6*a",
+        "positive_coefficients_after_a_equals_z_plus_five": [
+          16,
+          410,
+          4212,
+          21680,
+          55894,
+          57720
+        ]
+      },
+      {
+        "criterion": "small_exponent_failure",
+        "distinguished_exponent": "2*a**2 + 1",
+        "failure_margin": "20*a**6 + 16*a**5 + 20*a**4 + 14*a**3 - 2*a**2",
+        "positive_coefficients_after_a_equals_z_plus_five": [
+          20,
+          616,
+          7920,
+          54414,
+          210708,
+          436030,
+          376700
+        ]
+      }
+    ]
+  },
+  "fixed_controls": [
+    {
+      "exponents": [
+        5,
+        5,
+        10,
+        51
+      ],
+      "prime": 2,
+      "dimension": 4,
+      "support_column_actions_checked": 56,
+      "weighted_zero_sum_symmetry_complement_graph_lift": "passed",
+      "characteristic_coefficients": [
+        1,
+        -3821,
+        1315643,
+        -29679672,
+        60011424
+      ],
+      "direct_integer_determinants_at_0_through_dimension": [
+        60011424,
+        31643575,
+        5884100,
+        -17289891,
+        -37901264
+      ],
+      "reduced_factorization": [
+        [
+          "x",
+          2
+        ],
+        [
+          "x**2 + x + 1",
+          1
+        ]
+      ],
+      "tail_quadratics_split": [
+        true,
+        false
+      ],
+      "full_restriction_splits": false,
+      "modular_nonintegrality_proved_for_control": true
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        10,
+        52
+      ],
+      "prime": 2,
+      "dimension": 4,
+      "support_column_actions_checked": 56,
+      "weighted_zero_sum_symmetry_complement_graph_lift": "passed",
+      "characteristic_coefficients": [
+        1,
+        -3893,
+        1361912,
+        -30799604,
+        62248384
+      ],
+      "direct_integer_determinants_at_0_through_dimension": [
+        62248384,
+        32806800,
+        6065696,
+        -17998250,
+        -39408336
+      ],
+      "reduced_factorization": [
+        [
+          "x + 1",
+          1
+        ],
+        [
+          "x",
+          3
+        ]
+      ],
+      "tail_quadratics_split": [
+        true,
+        true
+      ],
+      "full_restriction_splits": true,
+      "modular_nonintegrality_proved_for_control": false
+    },
+    {
+      "exponents": [
+        8,
+        8,
+        10,
+        11
+      ],
+      "prime": 3,
+      "dimension": 4,
+      "support_column_actions_checked": 56,
+      "weighted_zero_sum_symmetry_complement_graph_lift": "passed",
+      "characteristic_coefficients": [
+        1,
+        -1412,
+        255467,
+        -5132680,
+        13359280
+      ],
+      "direct_integer_determinants_at_0_through_dimension": [
+        13359280,
+        8480656,
+        4104508,
+        222400,
+        -3174080
+      ],
+      "reduced_factorization": [
+        [
+          "x**2 - x - 1",
+          2
+        ]
+      ],
+      "tail_quadratics_split": [
+        false,
+        true
+      ],
+      "full_restriction_splits": false,
+      "modular_nonintegrality_proved_for_control": true
+    },
+    {
+      "exponents": [
+        8,
+        8,
+        11,
+        14
+      ],
+      "prime": 3,
+      "dimension": 4,
+      "support_column_actions_checked": 56,
+      "weighted_zero_sum_symmetry_complement_graph_lift": "passed",
+      "characteristic_coefficients": [
+        1,
+        -1880,
+        405711,
+        -8844920,
+        22302640
+      ],
+      "direct_integer_determinants_at_0_through_dimension": [
+        22302640,
+        13861552,
+        6220620,
+        -631400,
+        -6705728
+      ],
+      "reduced_factorization": [
+        [
+          "x + 1",
+          4
+        ]
+      ],
+      "tail_quadratics_split": [
+        true,
+        true
+      ],
+      "full_restriction_splits": true,
+      "modular_nonintegrality_proved_for_control": false
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        13,
+        20,
+        22
+      ],
+      "prime": 5,
+      "dimension": 8,
+      "support_column_actions_checked": 240,
+      "weighted_zero_sum_symmetry_complement_graph_lift": "passed",
+      "characteristic_coefficients": [
+        1,
+        -79209,
+        826945753,
+        -3052098041364,
+        3980322164119756,
+        -637156041394302720,
+        35730877285502452800,
+        -704925655853595264000,
+        1820780061011619840000
+      ],
+      "direct_integer_determinants_at_0_through_dimension": [
+        1820780061011619840000,
+        1150952103673025671017,
+        548818597655687683584,
+        10699440940849828959,
+        -466990671972464934912,
+        -887742614832047836875,
+        -1254953193802893992448,
+        -1571925511043787682341,
+        -1841869327690482241536
+      ],
+      "reduced_factorization": [
+        [
+          "x",
+          4
+        ],
+        [
+          "x**2 + 2*x - 2",
+          1
+        ],
+        [
+          "x**2 - x + 2",
+          1
+        ]
+      ],
+      "tail_quadratics_split": [
+        false,
+        true,
+        true
+      ],
+      "full_restriction_splits": false,
+      "modular_nonintegrality_proved_for_control": true
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        10,
+        11,
+        12
+      ],
+      "prime": 5,
+      "dimension": 8,
+      "support_column_actions_checked": 240,
+      "weighted_zero_sum_symmetry_complement_graph_lift": "passed",
+      "characteristic_coefficients": [
+        1,
+        -21849,
+        87680923,
+        -131979109908,
+        74734490651644,
+        -8258130170896320,
+        340797234991514400,
+        -5246746438784400000,
+        14769368434275840000
+      ],
+      "direct_integer_determinants_at_0_through_dimension": [
+        14769368434275840000,
+        9855235702911258891,
+        5574190989433618944,
+        1879356204922760145,
+        -1274384650153466880,
+        -3930401165973665625,
+        -6130332140597259264,
+        -7914101134508734851,
+        -9319931962581703680
+      ],
+      "reduced_factorization": [
+        [
+          "x + 1",
+          2
+        ],
+        [
+          "x + 2",
+          2
+        ],
+        [
+          "x",
+          4
+        ]
+      ],
+      "tail_quadratics_split": [
+        true,
+        true,
+        true
+      ],
+      "full_restriction_splits": true,
+      "modular_nonintegrality_proved_for_control": false
+    }
+  ],
+  "script_sha256": "c8a15188391f3d94bef2edd37bb42ffc2e751cb8486fc4beadcd0fd59e3171c9",
+  "dependency_sha256": {
+    "check_four_prime_single_pair_midpoint.py": "d4e4dd85935656682409d075605236e4de37717d478122087bd289f5e160dd7e"
+  },
+  "sympy_version": "1.14.0",
+  "scope": "Written unbounded tensor-splitting proof for arbitrary prime count. Complete10tail-residue rows for primes2,3,5and4binary four-prime rows. Six specified4/5-prime controls,704support-column actions and38independent integer determinants. Passing split controls are not integrality claims. No exponent/tail scan,expanded graph,Sturm count,historical finite-base rerun or Lean. General classification remains open."
+}

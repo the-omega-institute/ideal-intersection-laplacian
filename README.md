@@ -1,5 +1,16 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [modular repeated-pair theorem](notes/repeated-pair-modular.md)
+gives necessary tail residues for arbitrary prime count: for every
+prime p dividing a+1, all x^2-x-k_i must split over F_p.
+Thus an odd repeated exponent with any other odd exponent always
+gives nonintegrality. For odd p, each 1+4k_i must be a quadratic
+residue, including zero. The written tensor-splitting lemma supplies
+the unbounded proof. In particular, every (a,a,2a,2a^2+1), odd a>=5,
+is excluded outside the prior sufficient spectral regions. Next combine
+these modular restrictions with the remaining tail-candidate conditions.
+General classification remains open.
+
 The [unique positive tail-root theorem](notes/four-prime-unique-tail.md)
 reduces positive (a,a,b,c), b<c, to at most b-1 possibly integral
 tails per fixed (a,b), halving the preceding bound. A complete positive
