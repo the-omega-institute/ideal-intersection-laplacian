@@ -1,5 +1,14 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [even-gap midpoint theorem](notes/four-prime-even-midpoint.md)
+proves every positive(a,a,b,b+r),even r>=2,8ab>=(2a+1)r^2,
+nonintegral, including equality and without ordering a,b. A restricted
+root lies between consecutive integers a+b+r/2 and a+b+r/2+1.
+The sufficient threshold halves the previous weighted bound for even
+gaps. Four small-tail polynomial identities also complete every
+positive tail-gap-four vector; all positive gaps one through four
+are now settled. General single-pair classification remains open.
+
 The [weighted midpoint theorem](notes/four-prime-weighted-midpoint.md)
 proves every positive(a,a,b,b+r),r>=3,4ab>=(2a+1)r^2,nonintegral,
 including equality and with no ordering between a,b. A complete128-term

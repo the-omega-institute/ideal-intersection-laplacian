@@ -1,5 +1,22 @@
 # First task: Laplacian integrality
 
+The [even-gap midpoint theorem](notes/four-prime-even-midpoint.md)
+proves every positive(a,a,b,b+r),even r>=2,8ab>=(2a+1)r^2,
+nonintegral, including equality and without ordering a,b. The unit
+interval(a+b+r/2,a+b+r/2+1)excludes integers because r is even.
+A complete128-term positive identity halves the previous weighted
+threshold for even gaps. Four small-tail cubics complete all positive
+tail-gap-four vectors, so gaps one through four are settled. The
+equality family(2s,2s,4s^2+s,4s^2+5s),s>=3,adds coverage beyond
+the previous weighted, balanced, product-tail and small-exponent regions.
+
+Next examine repeated minima a>=5: odd r>=5 below
+4ab>=(2a+1)r^2,or even r>=6 below8ab>=(2a+1)r^2,outside
+balanced/product-tail criteria. Seek a structural interval or endpoint
+exclusion without arbitrary exponent scans. Keep the three-prime main
+focused; final inclusion/stopping/submission remains joint. Earlier
+next-step paragraphs retain their historical scopes.
+
 The [weighted midpoint theorem](notes/four-prime-weighted-midpoint.md)
 proves every positive(a,a,b,b+r),r>=3,4ab>=(2a+1)r^2,nonintegral,
 including equality and with no ordering between a,b. A complete128-term
