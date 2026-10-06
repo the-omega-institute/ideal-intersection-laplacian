@@ -1,5 +1,23 @@
 # First task: Laplacian integrality
 
+The [effective large-tail theorem](notes/four-prime-large-tail.md)
+proves positive(a,a,b,c)nonintegral for
+c>24(M+a)^3(3M+a),M=(a+1)(b+1),without ordering a,b.
+The two lower restricted roots satisfy1<=kappa_1<a+1<kappa_2<=M.
+The leading quadratic in the tail expansion cannot have two integer
+roots: its sum and constant term give incompatible congruences
+modulo a+1. An explicit determinant majorant then gives the uniform
+cutoff. For every fixed(a,b),possibly integral tails are finite;
+remaining a,b and intermediate tails are unbounded/unclassified.
+The family(a,a,a,c),a>=5,cabove this cutoff,adds coverage beyond
+the prior weighted,balanced,product-tail and small-exponent regions.
+
+Next sharpen the conservative majorant or analyze intermediate tails
+below this cutoff,outside the previous sufficient regions. Seek a
+structural argument without arbitrary exponent scans. Keep the
+three-prime main focused and final inclusion/stopping/submission joint.
+Earlier next-step paragraphs retain their historical scopes.
+
 The [even-gap midpoint theorem](notes/four-prime-even-midpoint.md)
 proves every positive(a,a,b,b+r),even r>=2,8ab>=(2a+1)r^2,
 nonintegral, including equality and without ordering a,b. The unit

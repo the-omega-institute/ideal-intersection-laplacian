@@ -1,5 +1,14 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [effective large-tail theorem](notes/four-prime-large-tail.md)
+proves every positive(a,a,b,c)nonintegral when
+c>24(M+a)^3(3M+a),M=(a+1)(b+1),without ordering a,b.
+Two distinct bounded restricted roots and a leading tail quadratic
+that cannot have two integer roots give the written proof. Consequently
+each fixed(a,b)has only finitely many possibly integral tails.
+The explicit bound is conservative; the remaining unbounded
+classification stays open, with no parameter scan needed for this result.
+
 The [even-gap midpoint theorem](notes/four-prime-even-midpoint.md)
 proves every positive(a,a,b,b+r),even r>=2,8ab>=(2a+1)r^2,
 nonintegral, including equality and without ordering a,b. A restricted
