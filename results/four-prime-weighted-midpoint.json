@@ -1,0 +1,1331 @@
+{
+  "written_theorem": "Every positive(a,a,b,b+r),r>=3,4ab>=(2a+1)r^2,is nonintegral via the same open half-unit midpoint interval; no ordering condition on a,b.",
+  "gap_three_corollary": "Every positive(a,a,b,b+3)is nonintegral: weighted region covers a,b>=5, four written small-b cubics cover a>=5,b<=4, prior unit/pair-two/three/four results cover a<=4.",
+  "symbolic": {
+    "generic_symmetry_and_midpoint_identity": "passed",
+    "positive_midpoint_bracket": "4*a**2*b**2 + 4*a**2*b*r + 8*a**2*b + 4*a**2*r + 4*a*b**3 + 6*a*b**2*r + 8*a*b**2 + 2*a*b*r**2 + 8*a*b*r + 4*a*b + 2*a*r**2 + 2*a*r + 4*b**3 + 6*b**2*r + 4*b**2 + 2*b*r**2 + 4*b*r + r**2",
+    "weighted_lower_endpoint_positive_expansion": {
+      "identity": "-256a^3 p(m-1/2),r=3+v,b=((2a+1)r^2+z)/(4a)",
+      "terms_a_power_v_power_z_power_coefficient": [
+        [
+          6,
+          5,
+          0,
+          32
+        ],
+        [
+          6,
+          4,
+          0,
+          416
+        ],
+        [
+          6,
+          3,
+          0,
+          1984
+        ],
+        [
+          6,
+          2,
+          0,
+          4160
+        ],
+        [
+          6,
+          1,
+          0,
+          3360
+        ],
+        [
+          6,
+          0,
+          0,
+          288
+        ],
+        [
+          5,
+          7,
+          0,
+          16
+        ],
+        [
+          5,
+          6,
+          0,
+          384
+        ],
+        [
+          5,
+          5,
+          0,
+          4000
+        ],
+        [
+          5,
+          4,
+          1,
+          16
+        ],
+        [
+          5,
+          4,
+          0,
+          23232
+        ],
+        [
+          5,
+          3,
+          1,
+          256
+        ],
+        [
+          5,
+          3,
+          0,
+          80688
+        ],
+        [
+          5,
+          2,
+          1,
+          1408
+        ],
+        [
+          5,
+          2,
+          0,
+          166816
+        ],
+        [
+          5,
+          1,
+          1,
+          3264
+        ],
+        [
+          5,
+          1,
+          0,
+          189600
+        ],
+        [
+          5,
+          0,
+          1,
+          2736
+        ],
+        [
+          5,
+          0,
+          0,
+          91296
+        ],
+        [
+          4,
+          7,
+          0,
+          40
+        ],
+        [
+          4,
+          6,
+          1,
+          8
+        ],
+        [
+          4,
+          6,
+          0,
+          944
+        ],
+        [
+          4,
+          5,
+          1,
+          192
+        ],
+        [
+          4,
+          5,
+          0,
+          9576
+        ],
+        [
+          4,
+          4,
+          1,
+          1904
+        ],
+        [
+          4,
+          4,
+          0,
+          54040
+        ],
+        [
+          4,
+          3,
+          1,
+          10032
+        ],
+        [
+          4,
+          3,
+          0,
+          183032
+        ],
+        [
+          4,
+          2,
+          2,
+          16
+        ],
+        [
+          4,
+          2,
+          1,
+          29592
+        ],
+        [
+          4,
+          2,
+          0,
+          371872
+        ],
+        [
+          4,
+          1,
+          2,
+          120
+        ],
+        [
+          4,
+          1,
+          1,
+          46176
+        ],
+        [
+          4,
+          1,
+          0,
+          419608
+        ],
+        [
+          4,
+          0,
+          2,
+          216
+        ],
+        [
+          4,
+          0,
+          1,
+          29664
+        ],
+        [
+          4,
+          0,
+          0,
+          202840
+        ],
+        [
+          3,
+          7,
+          0,
+          36
+        ],
+        [
+          3,
+          6,
+          1,
+          20
+        ],
+        [
+          3,
+          6,
+          0,
+          836
+        ],
+        [
+          3,
+          5,
+          1,
+          456
+        ],
+        [
+          3,
+          5,
+          0,
+          8336
+        ],
+        [
+          3,
+          4,
+          2,
+          12
+        ],
+        [
+          3,
+          4,
+          1,
+          4284
+        ],
+        [
+          3,
+          4,
+          0,
+          46260
+        ],
+        [
+          3,
+          3,
+          2,
+          180
+        ],
+        [
+          3,
+          3,
+          1,
+          21288
+        ],
+        [
+          3,
+          3,
+          0,
+          154300
+        ],
+        [
+          3,
+          2,
+          2,
+          1024
+        ],
+        [
+          3,
+          2,
+          1,
+          59116
+        ],
+        [
+          3,
+          2,
+          0,
+          309364
+        ],
+        [
+          3,
+          1,
+          2,
+          2616
+        ],
+        [
+          3,
+          1,
+          1,
+          87096
+        ],
+        [
+          3,
+          1,
+          0,
+          345264
+        ],
+        [
+          3,
+          0,
+          3,
+          4
+        ],
+        [
+          3,
+          0,
+          2,
+          2508
+        ],
+        [
+          3,
+          0,
+          1,
+          53228
+        ],
+        [
+          3,
+          0,
+          0,
+          165476
+        ],
+        [
+          2,
+          7,
+          0,
+          14
+        ],
+        [
+          2,
+          6,
+          1,
+          18
+        ],
+        [
+          2,
+          6,
+          0,
+          324
+        ],
+        [
+          2,
+          5,
+          1,
+          384
+        ],
+        [
+          2,
+          5,
+          0,
+          3220
+        ],
+        [
+          2,
+          4,
+          2,
+          24
+        ],
+        [
+          2,
+          4,
+          1,
+          3400
+        ],
+        [
+          2,
+          4,
+          0,
+          17812
+        ],
+        [
+          2,
+          3,
+          2,
+          342
+        ],
+        [
+          2,
+          3,
+          1,
+          16012
+        ],
+        [
+          2,
+          3,
+          0,
+          59222
+        ],
+        [
+          2,
+          2,
+          3,
+          6
+        ],
+        [
+          2,
+          2,
+          2,
+          1828
+        ],
+        [
+          2,
+          2,
+          1,
+          42346
+        ],
+        [
+          2,
+          2,
+          0,
+          118332
+        ],
+        [
+          2,
+          1,
+          3,
+          44
+        ],
+        [
+          2,
+          1,
+          2,
+          4344
+        ],
+        [
+          2,
+          1,
+          1,
+          59684
+        ],
+        [
+          2,
+          1,
+          0,
+          131544
+        ],
+        [
+          2,
+          0,
+          3,
+          84
+        ],
+        [
+          2,
+          0,
+          2,
+          3876
+        ],
+        [
+          2,
+          0,
+          1,
+          35052
+        ],
+        [
+          2,
+          0,
+          0,
+          62748
+        ],
+        [
+          1,
+          7,
+          0,
+          2
+        ],
+        [
+          1,
+          6,
+          1,
+          7
+        ],
+        [
+          1,
+          6,
+          0,
+          49
+        ],
+        [
+          1,
+          5,
+          1,
+          138
+        ],
+        [
+          1,
+          5,
+          0,
+          510
+        ],
+        [
+          1,
+          4,
+          2,
+          15
+        ],
+        [
+          1,
+          4,
+          1,
+          1142
+        ],
+        [
+          1,
+          4,
+          0,
+          2927
+        ],
+        [
+          1,
+          3,
+          2,
+          198
+        ],
+        [
+          1,
+          3,
+          1,
+          5076
+        ],
+        [
+          1,
+          3,
+          0,
+          10014
+        ],
+        [
+          1,
+          2,
+          3,
+          9
+        ],
+        [
+          1,
+          2,
+          2,
+          985
+        ],
+        [
+          1,
+          2,
+          1,
+          12775
+        ],
+        [
+          1,
+          2,
+          0,
+          20439
+        ],
+        [
+          1,
+          1,
+          3,
+          62
+        ],
+        [
+          1,
+          1,
+          2,
+          2190
+        ],
+        [
+          1,
+          1,
+          1,
+          17250
+        ],
+        [
+          1,
+          1,
+          0,
+          23058
+        ],
+        [
+          1,
+          0,
+          4,
+          1
+        ],
+        [
+          1,
+          0,
+          3,
+          108
+        ],
+        [
+          1,
+          0,
+          2,
+          1838
+        ],
+        [
+          1,
+          0,
+          1,
+          9756
+        ],
+        [
+          1,
+          0,
+          0,
+          11097
+        ],
+        [
+          0,
+          6,
+          1,
+          1
+        ],
+        [
+          0,
+          6,
+          0,
+          1
+        ],
+        [
+          0,
+          5,
+          1,
+          18
+        ],
+        [
+          0,
+          5,
+          0,
+          18
+        ],
+        [
+          0,
+          4,
+          2,
+          3
+        ],
+        [
+          0,
+          4,
+          1,
+          138
+        ],
+        [
+          0,
+          4,
+          0,
+          135
+        ],
+        [
+          0,
+          3,
+          2,
+          36
+        ],
+        [
+          0,
+          3,
+          1,
+          576
+        ],
+        [
+          0,
+          3,
+          0,
+          540
+        ],
+        [
+          0,
+          2,
+          3,
+          3
+        ],
+        [
+          0,
+          2,
+          2,
+          165
+        ],
+        [
+          0,
+          2,
+          1,
+          1377
+        ],
+        [
+          0,
+          2,
+          0,
+          1215
+        ],
+        [
+          0,
+          1,
+          3,
+          18
+        ],
+        [
+          0,
+          1,
+          2,
+          342
+        ],
+        [
+          0,
+          1,
+          1,
+          1782
+        ],
+        [
+          0,
+          1,
+          0,
+          1458
+        ],
+        [
+          0,
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          0,
+          3,
+          28
+        ],
+        [
+          0,
+          0,
+          2,
+          270
+        ],
+        [
+          0,
+          0,
+          1,
+          972
+        ],
+        [
+          0,
+          0,
+          0,
+          729
+        ]
+      ],
+      "positive_coefficient_count": 128,
+      "constant": 729
+    },
+    "gap_three_small_tail_rows": [
+      {
+        "b": 1,
+        "polynomial": "26*a**3 + 62*a**2 + 68*a + 28",
+        "positive_variable": "a",
+        "positive_coefficients_descending": [
+          26,
+          62,
+          68,
+          28
+        ]
+      },
+      {
+        "b": 2,
+        "polynomial": "37*a**3 + 98*a**2 + 150*a + 84",
+        "positive_variable": "a",
+        "positive_coefficients_descending": [
+          37,
+          98,
+          150,
+          84
+        ]
+      },
+      {
+        "b": 3,
+        "polynomial": "36*a**3 + 72*a**2 + 224*a + 184",
+        "positive_variable": "a",
+        "positive_coefficients_descending": [
+          36,
+          72,
+          224,
+          184
+        ]
+      },
+      {
+        "b": 4,
+        "polynomial": "17*a**3 - 94*a**2 + 230*a + 340",
+        "positive_variable": "u=a-5",
+        "positive_coefficients_descending": [
+          17,
+          161,
+          565,
+          1265
+        ]
+      }
+    ],
+    "gap_three_all_a_b_at_least_five_margin": "4*u*w + 2*u + 20*w + 1",
+    "new_below_square_family": "(r(r-1)/2,r(r-1)/2,r(r-1),r^2),r>=4",
+    "new_below_square_family_weighted_margin": "r**4 - 3*r**3 + r**2",
+    "new_below_square_family_product_failure": "r**6/2 - 5*r**5/4 + r**4/2 - r**3/4 - 3*r**2 + 5*r/2 + 1",
+    "eight_times_new_family_product_failure_coefficients_at_r_equals_4_plus_v": [
+      4,
+      86,
+      764,
+      3582,
+      9296,
+      12532,
+      6744
+    ]
+  },
+  "fixed_controls": [
+    {
+      "exponents": [
+        5,
+        5,
+        5,
+        8
+      ],
+      "graph_vertices": 1942,
+      "complement_vertices": 943,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 5,
+      "tail_gap": 3,
+      "control_mode": "weighted",
+      "weighted_condition_margin": 1,
+      "quartic_coefficients": [
+        1,
+        -425,
+        31743,
+        -396650,
+        887656
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          887656
+        ],
+        [
+          1,
+          522325
+        ],
+        [
+          2,
+          217944
+        ],
+        [
+          3,
+          -28001
+        ],
+        [
+          4,
+          -218000
+        ],
+        [
+          5,
+          -354519
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        -237056,
+        1339371
+      ],
+      "restricted_interval": [
+        "12",
+        "25/2"
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        9,
+        13
+      ],
+      "graph_vertices": 5038,
+      "complement_vertices": 2114,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 9,
+      "tail_gap": 4,
+      "control_mode": "weighted",
+      "weighted_condition_margin": 4,
+      "quartic_coefficients": [
+        1,
+        -995,
+        126254,
+        -2093895,
+        4467375
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          4467375
+        ],
+        [
+          1,
+          2498740
+        ],
+        [
+          2,
+          776657
+        ],
+        [
+          3,
+          -704808
+        ],
+        [
+          4,
+          -1951565
+        ],
+        [
+          5,
+          -2969500
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        -1676565,
+        8858432
+      ],
+      "restricted_interval": [
+        "33/2",
+        "17"
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        10,
+        10,
+        20,
+        25
+      ],
+      "graph_vertices": 66064,
+      "complement_vertices": 16065,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 10,
+      "b": 20,
+      "tail_gap": 5,
+      "control_mode": "weighted",
+      "weighted_condition_margin": 275,
+      "quartic_coefficients": [
+        1,
+        -6544,
+        3143701,
+        -104966274,
+        257936616
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          257936616
+        ],
+        [
+          1,
+          156107500
+        ],
+        [
+          2,
+          60526536
+        ],
+        [
+          3,
+          -28845504
+        ],
+        [
+          4,
+          -112047824
+        ],
+        [
+          5,
+          -189119604
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        -263133504,
+        397123125
+      ],
+      "restricted_interval": [
+        "33",
+        "67/2"
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        55,
+        65
+      ],
+      "graph_vertices": 133054,
+      "complement_vertices": 43680,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 55,
+      "tail_gap": 10,
+      "control_mode": "weighted",
+      "weighted_condition_margin": 0,
+      "quartic_coefficients": [
+        1,
+        -22919,
+        16325276,
+        -1000917049,
+        1908069691
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          1908069691
+        ],
+        [
+          1,
+          923455000
+        ],
+        [
+          2,
+          -28646639
+        ],
+        [
+          3,
+          -948372704
+        ],
+        [
+          4,
+          -1835860649
+        ],
+        [
+          5,
+          -2691247904
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        -553201889,
+        6244810000
+      ],
+      "restricted_interval": [
+        "131/2",
+        "66"
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        30,
+        30,
+        5,
+        8
+      ],
+      "graph_vertices": 51892,
+      "complement_vertices": 15893,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 30,
+      "b": 5,
+      "tail_gap": 3,
+      "control_mode": "weighted",
+      "weighted_condition_margin": 51,
+      "quartic_coefficients": [
+        1,
+        -2200,
+        827793,
+        -34350750,
+        246140856
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          246140856
+        ],
+        [
+          1,
+          212615700
+        ],
+        [
+          2,
+          180732944
+        ],
+        [
+          3,
+          150479424
+        ],
+        [
+          4,
+          121842000
+        ],
+        [
+          5,
+          94807556
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        -18411456,
+        128536821
+      ],
+      "restricted_interval": [
+        "37",
+        "75/2"
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        100,
+        100,
+        600,
+        630
+      ],
+      "graph_vertices": 3868535429,
+      "complement_vertices": 88535430,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 100,
+      "b": 600,
+      "tail_gap": 30,
+      "control_mode": "weighted",
+      "weighted_condition_margin": 59100,
+      "quartic_coefficients": [
+        1,
+        -38426964,
+        4766225442786,
+        -3402138122924684,
+        7838435908908861
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          7838435908908861
+        ],
+        [
+          1,
+          4441063973000000
+        ],
+        [
+          2,
+          1053224257414941
+        ],
+        [
+          3,
+          -2325083468408064
+        ],
+        [
+          4,
+          -5693859435030739
+        ],
+        [
+          5,
+          -9053103873014784
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        -7104347401921599,
+        19788907679010000
+      ],
+      "restricted_interval": [
+        "1431/2",
+        "716"
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        4,
+        7
+      ],
+      "graph_vertices": 1438,
+      "complement_vertices": 739,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 4,
+      "tail_gap": 3,
+      "control_mode": "small_b_gap_three",
+      "weighted_condition_margin": -19,
+      "quartic_coefficients": [
+        1,
+        -329,
+        20813,
+        -239750,
+        543400
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          543400
+        ],
+        [
+          1,
+          324135
+        ],
+        [
+          2,
+          144536
+        ],
+        [
+          3,
+          2665
+        ],
+        [
+          4,
+          -103392
+        ],
+        [
+          5,
+          -175525
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        -1468800,
+        20240
+      ],
+      "restricted_interval": [
+        "10",
+        "11"
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        4
+      ],
+      "graph_vertices": 38,
+      "complement_vertices": 35,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 1,
+      "b": 1,
+      "tail_gap": 3,
+      "control_mode": "diagnostic",
+      "weighted_condition_margin": -23,
+      "quartic_coefficients": [
+        1,
+        -37,
+        391,
+        -1314,
+        1296
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          1296
+        ],
+        [
+          1,
+          337
+        ],
+        [
+          2,
+          -48
+        ],
+        [
+          3,
+          -45
+        ],
+        [
+          4,
+          184
+        ],
+        [
+          5,
+          501
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        2944,
+        5427
+      ],
+      "restricted_interval": [
+        "4",
+        "9/2"
+      ],
+      "sturm_roots_in_interval": 0
+    }
+  ],
+  "script_sha256": "a5cdf4f0bb5b6d6e69641f55d03d9d844d9c145695c2bdbb99d2a3fe4ee5f638",
+  "dependency_sha256": {
+    "check_four_prime_pair_three.py": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+    "check_four_prime_single_pair_midpoint.py": "d4e4dd85935656682409d075605236e4de37717d478122087bd289f5e160dd7e"
+  },
+  "sympy_version": "1.14.0",
+  "scope": "Written unbounded weighted three-parameter region and complete positive tail-gap-three corollary. Eight specified support/integer-determinant/Sturm controls. No exponent scan, finite exponent base, expanded graph, floating eigensolver, historical finite-base rerun or Lean. General single-pair and fully unequal four-prime classification remains open."
+}

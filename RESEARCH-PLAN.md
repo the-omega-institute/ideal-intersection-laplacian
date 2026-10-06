@@ -1,5 +1,20 @@
 # First task: Laplacian integrality
 
+The [weighted midpoint theorem](notes/four-prime-weighted-midpoint.md)
+proves every positive(a,a,b,b+r),r>=3,4ab>=(2a+1)r^2,nonintegral,
+including equality and with no ordering between a,b. A complete128-term
+positive identity improves the previous square bound to
+b>=(1/2+1/(4a))r^2. Four written small-tail cubics also complete every
+positive tail-gap-three vector. Thus gaps one through three are settled;
+general single-pair classification remains open.
+
+Next examine repeated minima a>=5 with gap r>=4 and
+4ab<(2a+1)r^2,outside balanced/product-tail criteria. Generic positive
+midpoint and wider high-root windows remain available, but do not
+by themselves decide this region. Use a bounded structural question,
+without exponent scans. Keep the three-prime main focused and final
+inclusion/stopping/submission joint. Earlier next steps retain historical scopes.
+
 The [single-pair midpoint theorem](notes/four-prime-single-pair-midpoint.md)
 proves every positive(a,a,b,b+r),r>=2,b>=r^2,nonintegral, with a
 restricted root in(a+b+(r+1)/2,a+b+(r+2)/2). Consecutive half-integer
