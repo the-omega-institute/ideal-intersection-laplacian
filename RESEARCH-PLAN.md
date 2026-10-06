@@ -1,5 +1,21 @@
 # First task: Laplacian integrality
 
+The [low-root divisibility theorem](notes/four-prime-low-root-divisibility.md)
+adds the necessary disjunction (a-1)|3b^2c^2 or (a-2)|20b^2c^2
+for repeated minima a>=5,b,c>=a. Excluding both forces the smallest
+restricted root in (1,4) to be noninteger. Coprime tails exclude all
+a except 6,7,12,22; the new family (a,a,a+1,(a+1)^2),a=6s,s>=3,
+is nonintegral while passing every p|a+1 modular splitting condition.
+The exceptions and passing divisibilities are limitations of this
+sufficient arithmetic criterion, not integral graph examples.
+
+Next combine the low-root divisibility disjunction with the remaining
+A_t<0 unique-tail integer-root equations and modular residue conditions.
+Seek a bounded structural obstruction when at least one endpoint
+divisibility holds. Do not repeat the private two-stage binary lift
+diagnostic or automatically enlarge its modulus. Keep the three-prime
+main focused; final scope/stopping/submission remains joint.
+
 The [modular repeated-pair theorem](notes/repeated-pair-modular.md)
 proves that the tensor characteristic polynomial modulo p|a+1 splits
 if and only if every x^2-x-k_i does, for any number of remaining

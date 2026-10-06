@@ -1,0 +1,314 @@
+{
+  "written_theorem": "For positive(a,a,b,c),a>=5,b,c>=a,integrality requires (a-1)|3b^2c^2 or (a-2)|20b^2c^2. If neither holds,the smallest genuine restricted root in(1,4)is noninteger. Coprime tails exclude all a except6,7,12,22. In particular every(a,a,a+1,(a+1)^2),a=6s,s>=3,is nonintegral despite passing all p|a+1 modular splitting tests.",
+  "symbolic": {
+    "generic_anchor_value": "-a**2*b**2*c**2*(2*a + 1)",
+    "low_endpoint_remainders": [
+      {
+        "endpoint": 2,
+        "divisor": "a - 1",
+        "polynomial_remainder": "-3*b**2*c**2",
+        "quotient_has_integer_coefficients": true
+      },
+      {
+        "endpoint": 3,
+        "divisor": "a - 2",
+        "polynomial_remainder": "-20*b**2*c**2",
+        "quotient_has_integer_coefficients": true
+      }
+    ],
+    "upper_principal_minor_at_four": "2*a**2 - 9*a + b*c*(-2*a - 3) + (b + c)*(a**2 - 2*a - 3) + 9",
+    "negative_minor_at_b_a_plus_v_c_a_plus_w": "-5*a**2 - 15*a + v*w*(-2*a - 3) - (v + w)*(a**2 + 5*a + 3) + 9",
+    "coprime_corollary_exceptional_a": [
+      6,
+      7,
+      12,
+      22
+    ],
+    "new_family": "(a,a,a+1,(a+1)^2),a=6s,s>=3",
+    "new_family_passes_all_p_dividing_a_plus_one": "Both tails are0modp; x^2-x-k reduces to x(x-1).",
+    "coverage_comparisons": [
+      {
+        "criterion": "product_tail_failure",
+        "failure_margin": "a**4 + 2*a**3 - 9*a - 2",
+        "positive_coefficients_after_a_equals_z_plus_eighteen": [
+          1,
+          74,
+          2052,
+          25263,
+          116476
+        ]
+      },
+      {
+        "criterion": "even_gap_weighted_failure",
+        "failure_margin": "2*a**5 + 5*a**4 + 4*a**3 - 7*a**2 - 8*a",
+        "positive_coefficients_after_a_equals_z_plus_eighteen": [
+          2,
+          185,
+          6844,
+          126569,
+          1170028,
+          4324932
+        ]
+      },
+      {
+        "criterion": "small_exponent_failure",
+        "distinguished_exponent": "a",
+        "failure_margin": "2*a**5 + 6*a**4 + 4*a**3 - 7*a**2 - 11*a - 2",
+        "positive_coefficients_after_a_equals_z_plus_eighteen": [
+          2,
+          186,
+          6916,
+          128513,
+          1193353,
+          4429852
+        ]
+      },
+      {
+        "criterion": "small_exponent_failure",
+        "distinguished_exponent": "a + 1",
+        "failure_margin": "2*a**5 + 9*a**4 + 16*a**3 + 12*a**2 + a",
+        "positive_coefficients_after_a_equals_z_plus_eighteen": [
+          2,
+          189,
+          7144,
+          135012,
+          1275697,
+          4821138
+        ]
+      },
+      {
+        "criterion": "small_exponent_failure",
+        "distinguished_exponent": "(a + 1)**2",
+        "failure_margin": "3*a**6 + 17*a**5 + 39*a**4 + 45*a**3 + 24*a**2 + 2*a",
+        "positive_coefficients_after_a_equals_z_plus_eighteen": [
+          3,
+          341,
+          16149,
+          407853,
+          5793630,
+          43889582,
+          138523644
+        ]
+      }
+    ]
+  },
+  "fixed_controls": [
+    {
+      "exponents": [
+        18,
+        18,
+        19,
+        361
+      ],
+      "support_embedding": {
+        "exponents": [
+          18,
+          18,
+          19,
+          361
+        ],
+        "graph_vertices": 2613638,
+        "complement_vertices": 391323,
+        "embedding_columns_checked": 4,
+        "expanded_graph_checked": false,
+        "weighted_symmetry_zero_sum_complement_join": "passed"
+      },
+      "five_independent_integer_determinants_at_zero_through_four": [
+        139458834160,
+        84499461522,
+        31537897560,
+        -19426726820,
+        -68395280688
+      ],
+      "endpoint_two_divisibility": false,
+      "endpoint_three_divisibility": false,
+      "arithmetic_nonintegrality_condition_holds": true,
+      "coprime_to_both_endpoint_divisors": true,
+      "exact_distinct_restricted_roots_between_one_and_four": 1,
+      "negative_upper_principal_minor": -158706,
+      "passing_one_divisibility_is_not_integrality_claim": true
+    },
+    {
+      "exponents": [
+        24,
+        24,
+        25,
+        625
+      ],
+      "support_embedding": {
+        "exponents": [
+          24,
+          24,
+          25,
+          625
+        ],
+        "graph_vertices": 10172498,
+        "complement_vertices": 1172499,
+        "embedding_columns_checked": 4,
+        "expanded_graph_checked": false,
+        "weighted_symmetry_zero_sum_complement_join": "passed"
+      },
+      "five_independent_integer_determinants_at_zero_through_four": [
+        1245175750000,
+        760762054152,
+        289616298624,
+        -168264056042,
+        -612881549280
+      ],
+      "endpoint_two_divisibility": false,
+      "endpoint_three_divisibility": false,
+      "arithmetic_nonintegrality_condition_holds": true,
+      "coprime_to_both_endpoint_divisors": true,
+      "exact_distinct_restricted_roots_between_one_and_four": 1,
+      "negative_upper_principal_minor": -454680,
+      "passing_one_divisibility_is_not_integrality_claim": true
+    },
+    {
+      "exponents": [
+        30,
+        30,
+        31,
+        961
+      ],
+      "support_embedding": {
+        "exponents": [
+          30,
+          30,
+          31,
+          961
+        ],
+        "graph_vertices": 29583422,
+        "complement_vertices": 2771523,
+        "embedding_columns_checked": 4,
+        "expanded_graph_checked": false,
+        "weighted_symmetry_zero_sum_complement_join": "passed"
+      },
+      "five_independent_integer_determinants_at_zero_through_four": [
+        6933350471296,
+        4256525727990,
+        1638519982200,
+        -920672677112,
+        -3421058160960
+      ],
+      "endpoint_two_divisibility": false,
+      "endpoint_three_divisibility": false,
+      "arithmetic_nonintegrality_condition_holds": true,
+      "coprime_to_both_endpoint_divisors": true,
+      "exact_distinct_restricted_roots_between_one_and_four": 1,
+      "negative_upper_principal_minor": -1044990,
+      "passing_one_divisibility_is_not_integrality_claim": true
+    },
+    {
+      "exponents": [
+        11,
+        11,
+        14,
+        26
+      ],
+      "support_embedding": {
+        "exponents": [
+          11,
+          11,
+          14,
+          26
+        ],
+        "graph_vertices": 58318,
+        "complement_vertices": 14275,
+        "embedding_columns_checked": 4,
+        "expanded_graph_checked": false,
+        "weighted_symmetry_zero_sum_complement_join": "passed"
+      },
+      "five_independent_integer_determinants_at_zero_through_four": [
+        201425536,
+        127347022,
+        58205952,
+        -6029960,
+        -65392976
+      ],
+      "endpoint_two_divisibility": false,
+      "endpoint_three_divisibility": false,
+      "arithmetic_nonintegrality_condition_holds": true,
+      "coprime_to_both_endpoint_divisors": false,
+      "exact_distinct_restricted_roots_between_one_and_four": 1,
+      "negative_upper_principal_minor": -5108,
+      "passing_one_divisibility_is_not_integrality_claim": true
+    },
+    {
+      "exponents": [
+        6,
+        6,
+        7,
+        49
+      ],
+      "support_embedding": {
+        "exponents": [
+          6,
+          6,
+          7,
+          49
+        ],
+        "graph_vertices": 19598,
+        "complement_vertices": 7251,
+        "embedding_columns_checked": 4,
+        "expanded_graph_checked": false,
+        "weighted_symmetry_zero_sum_complement_join": "passed"
+      },
+      "five_independent_integer_determinants_at_zero_through_four": [
+        49512736,
+        27800334,
+        8377848,
+        -8774000,
+        -23674464
+      ],
+      "endpoint_two_divisibility": false,
+      "endpoint_three_divisibility": true,
+      "arithmetic_nonintegrality_condition_holds": false,
+      "coprime_to_both_endpoint_divisors": true,
+      "exact_distinct_restricted_roots_between_one_and_four": 1,
+      "negative_upper_principal_minor": -3942,
+      "passing_one_divisibility_is_not_integrality_claim": true
+    },
+    {
+      "exponents": [
+        22,
+        22,
+        23,
+        529
+      ],
+      "support_embedding": {
+        "exponents": [
+          22,
+          22,
+          23,
+          529
+        ],
+        "graph_vertices": 6728878,
+        "complement_vertices": 840051,
+        "embedding_columns_checked": 4,
+        "expanded_graph_checked": false,
+        "weighted_symmetry_zero_sum_complement_join": "passed"
+      },
+      "five_independent_integer_determinants_at_zero_through_four": [
+        640145777760,
+        390235713406,
+        147783389688,
+        -87213025440,
+        -314755364000
+      ],
+      "endpoint_two_divisibility": false,
+      "endpoint_three_divisibility": true,
+      "arithmetic_nonintegrality_condition_holds": false,
+      "coprime_to_both_endpoint_divisors": true,
+      "exact_distinct_restricted_roots_between_one_and_four": 1,
+      "negative_upper_principal_minor": -329846,
+      "passing_one_divisibility_is_not_integrality_claim": true
+    }
+  ],
+  "script_sha256": "b96b2b379317ebfe3875c03712b488ddd34713df39cddb436ba1fcaa0185083f",
+  "dependency_sha256": {
+    "check_four_prime_pair_three.py": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+    "check_four_prime_single_pair_midpoint.py": "d4e4dd85935656682409d075605236e4de37717d478122087bd289f5e160dd7e"
+  },
+  "sympy_version": "1.14.0",
+  "scope": "Written unbounded endpoint-divisibility theorem and new modular-compatible infinite family. Six specified support controls,336support-column actions,30independent integer determinants and6exact Sturm root counts. Two controls illustrate arithmetic-test limits,not integrality. No exponent/tail scan,expanded graph,historical finite-base rerun or Lean. General classification remains open."
+}

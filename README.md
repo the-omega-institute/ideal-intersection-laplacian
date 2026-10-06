@@ -1,5 +1,16 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [low-root divisibility theorem](notes/four-prime-low-root-divisibility.md)
+proves nonintegrality for a>=5,b,c>=a whenever neither
+(a-1)|3b^2c^2 nor (a-2)|20b^2c^2 holds. The smallest genuine
+restricted root lies in (1,4); these residues exclude both integer
+endpoints 2 and 3. Coprime tails settle every a except 6,7,12,22.
+In particular every (a,a,a+1,(a+1)^2),a=6s,s>=3,is now settled,
+despite passing every preceding p|a+1 modular splitting test and
+lying outside the earlier sufficient spectral regions. Next combine
+these low-root divisibilities with the remaining unique-tail conditions.
+General classification remains open.
+
 The [modular repeated-pair theorem](notes/repeated-pair-modular.md)
 gives necessary tail residues for arbitrary prime count: for every
 prime p dividing a+1, all x^2-x-k_i must split over F_p.
