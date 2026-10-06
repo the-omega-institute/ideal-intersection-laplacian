@@ -1,5 +1,13 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [torsion theorem](notes/four-prime-torsion.md) proves that
+the rational, quadratic-twist rational and quadratic-field
+torsion groups are all trivial. Two specified good-prime
+counts and a cubic irreducibility certificate determine the
+rational groups; a Galois trace argument determines the field
+group. The quartic method's torsion offset is zero. The full
+free basis and complete point computation remain uncomputed.
+
 The [published quartic-method specialization](notes/four-prime-quartic-method.md)
 identifies Tzanakis (1996) as a complete-method route for the
 original a=6 affine integrality condition. The model matches

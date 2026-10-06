@@ -1,5 +1,17 @@
 # First task: Laplacian integrality
 
+The [torsion theorem](notes/four-prime-torsion.md) settles the
+torsion input for E(Q), its quadratic twist and E(K): all are
+trivial. The inhomogeneous quartic method has no torsion offset.
+
+Next certify the full rational free Mordell-Weil basis and its
+exact model maps. Trivial torsion and the existing rank lower
+bound do not certify the exact rank or saturation. Keep the
+remaining regulator/height/logarithm gates before any proved
+coefficient bound, LLL or point enumeration. Both W signs,
+the original recovery filter and joint manuscript decisions
+retain their scopes.
+
 The [Tzanakis-method specialization](notes/four-prime-quartic-method.md)
 now identifies a published route that directly covers the original
 quartic, including its nonsquare leading coefficient. The exact

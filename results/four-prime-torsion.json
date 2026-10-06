@@ -1,0 +1,293 @@
+{
+  "written_result": "The rational, quadratic-twist rational and quadratic-field torsion groups are all trivial; the inhomogeneous quartic method has no torsion offset.",
+  "exact_checks": {
+    "rational_curve_reductions": [
+      {
+        "prime": 11,
+        "reduced_A_B": [
+          2,
+          5
+        ],
+        "discriminant_mod_prime": 7,
+        "cubic_residues_by_x": [
+          5,
+          8,
+          6,
+          5,
+          0,
+          8,
+          2,
+          10,
+          5,
+          4,
+          2
+        ],
+        "vertical_solution_counts_by_x": [
+          2,
+          0,
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          2,
+          2,
+          0
+        ],
+        "Legendre_symbols_by_x": [
+          1,
+          -1,
+          -1,
+          1,
+          0,
+          -1,
+          -1,
+          -1,
+          1,
+          1,
+          -1
+        ],
+        "group_order_including_infinity": 10
+      },
+      {
+        "prime": 17,
+        "reduced_A_B": [
+          10,
+          11
+        ],
+        "discriminant_mod_prime": 8,
+        "cubic_residues_by_x": [
+          11,
+          5,
+          5,
+          0,
+          13,
+          16,
+          15,
+          16,
+          8,
+          14,
+          6,
+          7,
+          6,
+          9,
+          5,
+          0,
+          0
+        ],
+        "vertical_solution_counts_by_x": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          1,
+          1
+        ],
+        "Legendre_symbols_by_x": [
+          -1,
+          -1,
+          -1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          -1,
+          0,
+          0
+        ],
+        "group_order_including_infinity": 16
+      }
+    ],
+    "quadratic_twist_reductions": [
+      {
+        "prime": 11,
+        "reduced_A_B": [
+          7,
+          8
+        ],
+        "discriminant_mod_prime": 10,
+        "cubic_residues_by_x": [
+          8,
+          5,
+          8,
+          1,
+          1,
+          3,
+          2,
+          4,
+          4,
+          8,
+          0
+        ],
+        "vertical_solution_counts_by_x": [
+          0,
+          2,
+          0,
+          2,
+          2,
+          2,
+          0,
+          2,
+          2,
+          0,
+          1
+        ],
+        "Legendre_symbols_by_x": [
+          -1,
+          1,
+          -1,
+          1,
+          1,
+          1,
+          -1,
+          1,
+          1,
+          -1,
+          0
+        ],
+        "group_order_including_infinity": 14
+      },
+      {
+        "prime": 17,
+        "reduced_A_B": [
+          3,
+          13
+        ],
+        "discriminant_mod_prime": 13,
+        "cubic_residues_by_x": [
+          13,
+          0,
+          10,
+          15,
+          4,
+          0,
+          9,
+          3,
+          5,
+          4,
+          6,
+          0,
+          9,
+          5,
+          11,
+          16,
+          9
+        ],
+        "vertical_solution_counts_by_x": [
+          2,
+          1,
+          0,
+          2,
+          2,
+          1,
+          2,
+          0,
+          0,
+          2,
+          0,
+          1,
+          2,
+          0,
+          0,
+          2,
+          2
+        ],
+        "Legendre_symbols_by_x": [
+          1,
+          0,
+          -1,
+          1,
+          1,
+          0,
+          1,
+          -1,
+          -1,
+          1,
+          -1,
+          0,
+          1,
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "group_order_including_infinity": 20
+      }
+    ],
+    "rational_and_twist_torsion_order_divisibility_bound": 2,
+    "irreducibility_prime": 23,
+    "original_cubic_residues_mod_23": [
+      15,
+      15,
+      21,
+      16,
+      6,
+      20,
+      18,
+      6,
+      13,
+      22,
+      16,
+      1,
+      6,
+      14,
+      8,
+      17,
+      1,
+      12,
+      10,
+      1,
+      14,
+      9,
+      15
+    ],
+    "original_cubic_has_no_root_mod_23": true,
+    "original_cubic_irreducible_over_Q": true,
+    "twist_cubic_scaling_identity": "g_twist(x)=d^3*g(x/d)",
+    "rational_two_torsion": false,
+    "twist_rational_two_torsion": false,
+    "proved_torsion_groups": {
+      "E_Q": "trivial",
+      "quadratic_twist_Q": "trivial",
+      "E_K": "trivial"
+    },
+    "field_torsion_proof": "A K-torsion point has zero rational trace, so is anti-invariant and maps to rational twist torsion, hence is O",
+    "Tzanakis_torsion_offset_s_over_t": "0/1",
+    "Tzanakis_case_two_linear_form": "rho0+m0+sum_i(mi*rho_i)"
+  },
+  "proof_inputs": [
+    "Prime-to-p torsion injects under good reduction",
+    "Rational 2-torsion corresponds to rational roots of the short cubic",
+    "Galois trace and quadratic-twist isomorphism"
+  ],
+  "exact_rank_or_full_basis_computed": false,
+  "regulator_or_remaining_height_constants_computed": false,
+  "initial_coefficient_bound_or_LLL_run": false,
+  "complete_integral_points_enumerated": false,
+  "new_nonintegrality_classification": false,
+  "script_sha256": "90ed02703c2a44231e81fb33dfc32bb44016ea9871f6107efc44806ef50cdd87",
+  "dependency_sha256": {
+    "check_four_prime_a6_elliptic.py": "212cbf0c3f95d6c3670c7cd913b0b6e9aa55eb5df47e03b073ea74aef2f5c7aa"
+  },
+  "sympy_version": "1.14.0",
+  "scope": "Written torsion proof and four finite-field point counts at the two specified good primes11/17, plus a root/irreducibility certificate at23. These targeted counts resolve the torsion input, with no parameter scan, graph/historical finite-base rerun, exact rank/full basis, remaining height/log bounds, LLL, full point list, floats or Lean."
+}
