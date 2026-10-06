@@ -1,5 +1,21 @@
 # First task: Laplacian integrality
 
+The [single-pair midpoint theorem](notes/four-prime-single-pair-midpoint.md)
+proves every positive(a,a,b,b+r),r>=2,b>=r^2,nonintegral, with a
+restricted root in(a+b+(r+1)/2,a+b+(r+2)/2). Consecutive half-integer
+grid endpoints exclude integer roots. The repeated exponent a is
+arbitrary and the tail gap r is unbounded. A generic positive midpoint
+identity and complete91-coefficient negative lower-endpoint identity
+prove the region, including b=r^2. The families(a,a,2a,2a+r),r>=3,
+a>=r^2,add coverage outside the previous sufficient regions.
+
+Next examine unequal tails r>=3,b<r^2 outside balanced/product-tail
+criteria. The positive generic midpoint remains available; its sign
+alone does not isolate a noninteger root after the lower half-unit
+endpoint changes sign. Use a bounded structural question, without
+exponent scans. Keep the three-prime main focused and final inclusion/
+stopping/submission joint. Earlier next steps below retain historical scopes.
+
 The [single-pair small-gap theorem](notes/four-prime-single-pair-small-gap.md)
 proves every positive (a,a,b,b+r), r=1 or 2, nonintegral, with no
 ordering or size condition on a,b. A restricted root lies in

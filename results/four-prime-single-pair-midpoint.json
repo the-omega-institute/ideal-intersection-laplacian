@@ -1,0 +1,1012 @@
+{
+  "written_theorem": "Every positive four-prime vector(a,a,b,b+r),r>=2,b>=r^2,has a restricted root between a+b+(r+1)/2 and a+b+(r+2)/2; this open half-unit interval contains no integer, so the graph is nonintegral. No ordering condition on a and b.",
+  "symbolic": {
+    "generic_symmetry_midpoint_identity": "passed",
+    "positive_midpoint_bracket": "4*a**2*b**2 + 4*a**2*b*r + 8*a**2*b + 4*a**2*r + 4*a*b**3 + 6*a*b**2*r + 8*a*b**2 + 2*a*b*r**2 + 8*a*b*r + 4*a*b + 2*a*r**2 + 2*a*r + 4*b**3 + 6*b**2*r + 4*b**2 + 2*b*r**2 + 4*b*r + r**2",
+    "positive_midpoint_bracket_terms": 18,
+    "lower_endpoint_negative_identity": "16*a**3*b**3 - 8*a**3*b**2*r**2 + 24*a**3*b**2*r - 8*a**3*b*r**3 - 8*a**3*b*r**2 - 8*a**3*r**3 + 8*a**3*r**2 + 16*a**2*b**4 - 8*a**2*b**3*r**2 + 32*a**2*b**3*r + 24*a**2*b**3 - 12*a**2*b**2*r**3 + 4*a**2*b**2*r**2 + 36*a**2*b**2*r - 12*a**2*b**2 - 4*a**2*b*r**4 - 12*a**2*b*r**3 + 12*a**2*b*r**2 - 12*a**2*b*r - 4*a**2*r**4 + 4*a**2*r**2 + 16*a*b**4 - 12*a*b**3*r**2 + 32*a*b**3*r + 12*a*b**3 - 18*a*b**2*r**3 + 10*a*b**2*r**2 + 18*a*b**2*r + 6*a*b**2 - 6*a*b*r**4 - 6*a*b*r**3 + 10*a*b*r**2 + 6*a*b*r - 4*a*b - 4*a*r**4 + 2*a*r**3 + 6*a*r**2 - 2*a*r - 2*a - 4*b**3*r**2 + 4*b**3 - 6*b**2*r**3 - 2*b**2*r**2 + 6*b**2*r + 2*b**2 - 2*b*r**4 - 2*b*r**3 + 2*b*r**2 + 2*b*r - r**4 + 2*r**2 - 1",
+    "complete_lower_endpoint_positive_expansion": {
+      "substitution": "a=1+u,r=2+v,b=r^2+w",
+      "terms_u_power_v_power_w_power_coefficient": [
+        [
+          3,
+          6,
+          0,
+          8
+        ],
+        [
+          3,
+          5,
+          0,
+          112
+        ],
+        [
+          3,
+          4,
+          1,
+          32
+        ],
+        [
+          3,
+          4,
+          0,
+          632
+        ],
+        [
+          3,
+          3,
+          1,
+          296
+        ],
+        [
+          3,
+          3,
+          0,
+          1848
+        ],
+        [
+          3,
+          2,
+          2,
+          40
+        ],
+        [
+          3,
+          2,
+          1,
+          1000
+        ],
+        [
+          3,
+          2,
+          0,
+          2968
+        ],
+        [
+          3,
+          1,
+          2,
+          184
+        ],
+        [
+          3,
+          1,
+          1,
+          1472
+        ],
+        [
+          3,
+          1,
+          0,
+          2496
+        ],
+        [
+          3,
+          0,
+          3,
+          16
+        ],
+        [
+          3,
+          0,
+          2,
+          208
+        ],
+        [
+          3,
+          0,
+          1,
+          800
+        ],
+        [
+          3,
+          0,
+          0,
+          864
+        ],
+        [
+          2,
+          8,
+          0,
+          8
+        ],
+        [
+          2,
+          7,
+          0,
+          148
+        ],
+        [
+          2,
+          6,
+          1,
+          40
+        ],
+        [
+          2,
+          6,
+          0,
+          1224
+        ],
+        [
+          2,
+          5,
+          1,
+          552
+        ],
+        [
+          2,
+          5,
+          0,
+          5912
+        ],
+        [
+          2,
+          4,
+          2,
+          72
+        ],
+        [
+          2,
+          4,
+          1,
+          3292
+        ],
+        [
+          2,
+          4,
+          0,
+          18132
+        ],
+        [
+          2,
+          3,
+          2,
+          660
+        ],
+        [
+          2,
+          3,
+          1,
+          10836
+        ],
+        [
+          2,
+          3,
+          0,
+          35836
+        ],
+        [
+          2,
+          2,
+          3,
+          56
+        ],
+        [
+          2,
+          2,
+          2,
+          2428
+        ],
+        [
+          2,
+          2,
+          1,
+          20532
+        ],
+        [
+          2,
+          2,
+          0,
+          44196
+        ],
+        [
+          2,
+          1,
+          3,
+          256
+        ],
+        [
+          2,
+          1,
+          2,
+          4204
+        ],
+        [
+          2,
+          1,
+          1,
+          20948
+        ],
+        [
+          2,
+          1,
+          0,
+          30912
+        ],
+        [
+          2,
+          0,
+          4,
+          16
+        ],
+        [
+          2,
+          0,
+          3,
+          360
+        ],
+        [
+          2,
+          0,
+          2,
+          2812
+        ],
+        [
+          2,
+          0,
+          1,
+          8888
+        ],
+        [
+          2,
+          0,
+          0,
+          9360
+        ],
+        [
+          1,
+          8,
+          0,
+          20
+        ],
+        [
+          1,
+          7,
+          0,
+          374
+        ],
+        [
+          1,
+          6,
+          1,
+          108
+        ],
+        [
+          1,
+          6,
+          0,
+          3084
+        ],
+        [
+          1,
+          5,
+          1,
+          1500
+        ],
+        [
+          1,
+          5,
+          0,
+          14660
+        ],
+        [
+          1,
+          4,
+          2,
+          204
+        ],
+        [
+          1,
+          4,
+          1,
+          8818
+        ],
+        [
+          1,
+          4,
+          0,
+          43860
+        ],
+        [
+          1,
+          3,
+          2,
+          1878
+        ],
+        [
+          1,
+          3,
+          1,
+          28094
+        ],
+        [
+          1,
+          3,
+          0,
+          84280
+        ],
+        [
+          1,
+          2,
+          3,
+          164
+        ],
+        [
+          1,
+          2,
+          2,
+          6690
+        ],
+        [
+          1,
+          2,
+          1,
+          50986
+        ],
+        [
+          1,
+          2,
+          0,
+          101202
+        ],
+        [
+          1,
+          1,
+          3,
+          752
+        ],
+        [
+          1,
+          1,
+          2,
+          10914
+        ],
+        [
+          1,
+          1,
+          1,
+          49710
+        ],
+        [
+          1,
+          1,
+          0,
+          69222
+        ],
+        [
+          1,
+          0,
+          4,
+          48
+        ],
+        [
+          1,
+          0,
+          3,
+          956
+        ],
+        [
+          1,
+          0,
+          2,
+          6810
+        ],
+        [
+          1,
+          0,
+          1,
+          20224
+        ],
+        [
+          1,
+          0,
+          0,
+          20610
+        ],
+        [
+          0,
+          8,
+          0,
+          8
+        ],
+        [
+          0,
+          7,
+          0,
+          156
+        ],
+        [
+          0,
+          6,
+          1,
+          56
+        ],
+        [
+          0,
+          6,
+          0,
+          1336
+        ],
+        [
+          0,
+          5,
+          1,
+          792
+        ],
+        [
+          0,
+          5,
+          0,
+          6568
+        ],
+        [
+          0,
+          4,
+          2,
+          120
+        ],
+        [
+          0,
+          4,
+          1,
+          4724
+        ],
+        [
+          0,
+          4,
+          0,
+          20243
+        ],
+        [
+          0,
+          3,
+          2,
+          1116
+        ],
+        [
+          0,
+          3,
+          1,
+          15212
+        ],
+        [
+          0,
+          3,
+          0,
+          39950
+        ],
+        [
+          0,
+          2,
+          3,
+          104
+        ],
+        [
+          0,
+          2,
+          2,
+          3988
+        ],
+        [
+          0,
+          2,
+          1,
+          27824
+        ],
+        [
+          0,
+          2,
+          0,
+          49180
+        ],
+        [
+          0,
+          1,
+          3,
+          480
+        ],
+        [
+          0,
+          1,
+          2,
+          6484
+        ],
+        [
+          0,
+          1,
+          1,
+          27308
+        ],
+        [
+          0,
+          1,
+          0,
+          34470
+        ],
+        [
+          0,
+          0,
+          4,
+          32
+        ],
+        [
+          0,
+          0,
+          3,
+          600
+        ],
+        [
+          0,
+          0,
+          2,
+          4020
+        ],
+        [
+          0,
+          0,
+          1,
+          11188
+        ],
+        [
+          0,
+          0,
+          0,
+          10521
+        ]
+      ],
+      "positive_coefficient_count": 91,
+      "constant": 10521
+    },
+    "new_coverage_family": "(a,a,2a,2a+r),r>=3,a>=r^2",
+    "coverage_product_tail_failure_margin": "4*a**3 + a**2*(r - 2) - a*(2*r + 7) - r + 1",
+    "coverage_strict_positive_lower_bound": "4*a**3 - 2*a**2 - 8*a + 1"
+  },
+  "fixed_controls": [
+    {
+      "exponents": [
+        1,
+        1,
+        4,
+        6
+      ],
+      "graph_vertices": 138,
+      "complement_vertices": 115,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 1,
+      "b": 4,
+      "tail_gap": 2,
+      "in_midpoint_theorem_region": true,
+      "quartic_coefficients": [
+        1,
+        -97,
+        1976,
+        -11204,
+        13536
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          13536
+        ],
+        [
+          1,
+          4212
+        ],
+        [
+          2,
+          -1728
+        ],
+        [
+          3,
+          -4830
+        ],
+        [
+          4,
+          -5616
+        ],
+        [
+          5,
+          -4584
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        -10521,
+        16992
+      ],
+      "restricted_half_unit_interval": [
+        "13/2",
+        "7"
+      ],
+      "graph_half_unit_interval": [
+        "132",
+        "265/2"
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        10,
+        13
+      ],
+      "graph_vertices": 5542,
+      "complement_vertices": 2293,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 10,
+      "tail_gap": 3,
+      "in_midpoint_theorem_region": true,
+      "quartic_coefficients": [
+        1,
+        -1085,
+        144293,
+        -2478740,
+        5263456
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          5263456
+        ],
+        [
+          1,
+          2927925
+        ],
+        [
+          2,
+          874484
+        ],
+        [
+          3,
+          -903341
+        ],
+        [
+          4,
+          -2412000
+        ],
+        [
+          5,
+          -3657919
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        -6744496,
+        5665671
+      ],
+      "restricted_half_unit_interval": [
+        "17",
+        "35/2"
+      ],
+      "graph_half_unit_interval": [
+        "11051/2",
+        "5526"
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        30,
+        30,
+        9,
+        12
+      ],
+      "graph_vertices": 124928,
+      "complement_vertices": 27729,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 30,
+      "b": 9,
+      "tail_gap": 3,
+      "in_midpoint_theorem_region": true,
+      "quartic_coefficients": [
+        1,
+        -4804,
+        2954373,
+        -132260710,
+        762768400
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          762768400
+        ],
+        [
+          1,
+          633457260
+        ],
+        [
+          2,
+          510026056
+        ],
+        [
+          3,
+          392446000
+        ],
+        [
+          4,
+          280688328
+        ],
+        [
+          5,
+          174724300
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        -350246720,
+        347614173
+      ],
+      "restricted_half_unit_interval": [
+        "41",
+        "83/2"
+      ],
+      "graph_half_unit_interval": [
+        "249775/2",
+        "124888"
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        16,
+        20
+      ],
+      "graph_vertices": 12850,
+      "complement_vertices": 4851,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 16,
+      "tail_gap": 4,
+      "in_midpoint_theorem_region": true,
+      "quartic_coefficients": [
+        1,
+        -2381,
+        499718,
+        -11530252,
+        23544664
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          23544664
+        ],
+        [
+          1,
+          12511750
+        ],
+        [
+          2,
+          2464000
+        ],
+        [
+          3,
+          -6612836
+        ],
+        [
+          4,
+          -14732984
+        ],
+        [
+          5,
+          -21910646
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        -32677325,
+        33168256
+      ],
+      "restricted_half_unit_interval": [
+        "47/2",
+        "24"
+      ],
+      "graph_half_unit_interval": [
+        "12827",
+        "25655/2"
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        25,
+        25,
+        50,
+        55
+      ],
+      "graph_vertices": 1930654,
+      "complement_vertices": 211905,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 25,
+      "b": 50,
+      "tail_gap": 5,
+      "in_midpoint_theorem_region": true,
+      "quartic_coefficients": [
+        1,
+        -77089,
+        207080911,
+        -16330173684,
+        44897591736
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          44897591736
+        ],
+        [
+          1,
+          28774421875
+        ],
+        [
+          2,
+          13064951316
+        ],
+        [
+          3,
+          -2231282439
+        ],
+        [
+          4,
+          -17114741864
+        ],
+        [
+          5,
+          -31585889409
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        -88342674624,
+        28968031875
+      ],
+      "restricted_half_unit_interval": [
+        "78",
+        "157/2"
+      ],
+      "graph_half_unit_interval": [
+        "3861153/2",
+        "1930577"
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        100,
+        100,
+        200,
+        210
+      ],
+      "graph_vertices": 432634609,
+      "complement_vertices": 12634610,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 100,
+      "b": 200,
+      "tail_gap": 10,
+      "in_midpoint_theorem_region": true,
+      "quartic_coefficients": [
+        1,
+        -4325324,
+        178275003066,
+        -54647437270164,
+        159624139592421
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          159624139592421
+        ],
+        [
+          1,
+          105154973000000
+        ],
+        [
+          2,
+          51042330461781
+        ],
+        [
+          3,
+          -2713813974144
+        ],
+        [
+          4,
+          -56113486259659
+        ],
+        [
+          5,
+          -109156712346624
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        -320543387491999,
+        104695073010000
+      ],
+      "restricted_half_unit_interval": [
+        "611/2",
+        "306"
+      ],
+      "graph_half_unit_interval": [
+        "432634304",
+        "865268609/2"
+      ],
+      "sturm_roots_in_interval": 1
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "graph_vertices": 30,
+      "complement_vertices": 28,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 1,
+      "b": 1,
+      "tail_gap": 2,
+      "in_midpoint_theorem_region": false,
+      "quartic_coefficients": [
+        1,
+        -31,
+        284,
+        -893,
+        855
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          855
+        ],
+        [
+          1,
+          216
+        ],
+        [
+          2,
+          -27
+        ],
+        [
+          3,
+          -24
+        ],
+        [
+          4,
+          99
+        ],
+        [
+          5,
+          240
+        ]
+      ],
+      "two_direct_doubled_matrix_determinants": [
+        471,
+        1584
+      ],
+      "restricted_half_unit_interval": [
+        "7/2",
+        "4"
+      ],
+      "graph_half_unit_interval": [
+        "27",
+        "55/2"
+      ],
+      "sturm_roots_in_interval": 0
+    }
+  ],
+  "script_sha256": "d4e4dd85935656682409d075605236e4de37717d478122087bd289f5e160dd7e",
+  "support_embedding_dependency_sha256": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+  "sympy_version": "1.14.0",
+  "scope": "Written unbounded three-parameter region with a positive generic midpoint and complete 91-coefficient lower identity. Seven specified support/integer-determinant/Sturm controls include one limitation outside the hypothesis. No exponent scan, finite exponent base, expanded graph, floating eigensolver, historical finite-base rerun or Lean. General single-pair and fully unequal four-prime classification remains open."
+}
