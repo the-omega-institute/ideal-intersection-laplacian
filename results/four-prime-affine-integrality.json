@@ -1,0 +1,126 @@
+{
+  "written_result": "An injective integrality-preserving polynomial reduction of positive integer p(2;6,b,c)=0 tails to O_K-integral points on the explicit nonsingular cubic over K=Q(sqrt(43645)), with an exact complete-list recovery filter.",
+  "symbolic": {
+    "polynomial_U_coefficients_one_s": [
+      "87290*b**2 + 1152400*b",
+      "2*W"
+    ],
+    "polynomial_V_coefficients_one_s": [
+      "W*(174580*b + 1152400)",
+      "174580*b**3 + 3457200*b**2 + 13280300*b + 4524000"
+    ],
+    "cubic_coefficients_U_squared_U_constant": [
+      6640150,
+      5047497487500,
+      1053718156603125000
+    ],
+    "cubic_discriminant": -309476819336418859764366000000000000000,
+    "curve_identity_quotient_by_W_squared_minus_f_mod_s_squared_minus_alpha": "-1720*(203*W*s + 8859935*b**2 + 116968600*b - 98132775)",
+    "quotient_ideal_identity_verified": true,
+    "coefficient_inverse_verified": true,
+    "inverse_b": "(2v0-beta*u1)/(4alpha*u1)",
+    "inverse_W": "u1/2",
+    "positive_b_implies_W_nonzero": "all five f coefficients positive",
+    "square_completion_and_c_recovery_verified": true,
+    "field_discriminant": 43645,
+    "field_radical_squarefree_factors": [
+      5,
+      7,
+      29,
+      43
+    ],
+    "ring_of_integers": "Z[(1+s)/2],s^2=43645",
+    "polynomial_image_coordinates_in_Z_s": true,
+    "rational_A_equals_zero_fibers": [],
+    "short_model_fixed_allowed_denominator_primes": [
+      2,
+      5
+    ],
+    "short_model_scaling_identity_verified": true
+  },
+  "specified_affine_controls": [
+    {
+      "b": 55,
+      "W": 781950,
+      "U_coefficients_one_s": [
+        327434250,
+        1563900
+      ],
+      "V_coefficients_one_s": [
+        8409324885000,
+        40238718000
+      ],
+      "coordinates_are_algebraic_integers": true,
+      "coefficient_round_trip": true,
+      "recovered_c": "0",
+      "positive_integer_tail_filter_passes": false
+    },
+    {
+      "b": 55,
+      "W": -781950,
+      "U_coefficients_one_s": [
+        327434250,
+        -1563900
+      ],
+      "V_coefficients_one_s": [
+        -8409324885000,
+        40238718000
+      ],
+      "coordinates_are_algebraic_integers": true,
+      "coefficient_round_trip": true,
+      "recovered_c": "26065/271",
+      "positive_integer_tail_filter_passes": false
+    },
+    {
+      "b": 0,
+      "W": 975,
+      "U_coefficients_one_s": [
+        0,
+        1950
+      ],
+      "V_coefficients_one_s": [
+        1123590000,
+        4524000
+      ],
+      "coordinates_are_algebraic_integers": true,
+      "coefficient_round_trip": true,
+      "recovered_c": "-5/7",
+      "positive_integer_tail_filter_passes": false
+    },
+    {
+      "b": 0,
+      "W": -975,
+      "U_coefficients_one_s": [
+        0,
+        -1950
+      ],
+      "V_coefficients_one_s": [
+        -1123590000,
+        4524000
+      ],
+      "coordinates_are_algebraic_integers": true,
+      "coefficient_round_trip": true,
+      "recovered_c": "55",
+      "positive_integer_tail_filter_passes": false
+    }
+  ],
+  "complete_filter": [
+    "discard u1=0",
+    "recover b,W and require positive integer b and integer W",
+    "check all four conjugate-coefficient identities and W^2=f(b)",
+    "recover c with A(b) divisibility and positive integer c; require b,c>=6 for repeated minimum"
+  ],
+  "complete_integral_point_target": "O_K-integral E0(K) points; rational E0(Q) points alone are insufficient",
+  "rank_computed": false,
+  "number_field_basis_certified": false,
+  "integral_points_enumerated": false,
+  "new_nonintegrality_classification": false,
+  "script_sha256": "8f9f40a06e350b12f7b0f1d020d60eedfc0b22f429643668d5777c9299945aff",
+  "dependency_sha256": {
+    "check_four_prime_a6_elliptic.py": "212cbf0c3f95d6c3670c7cd913b0b6e9aa55eb5df47e03b073ea74aef2f5c7aa",
+    "check_four_prime_pair_three.py": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+    "check_four_prime_single_pair_midpoint.py": "d4e4dd85935656682409d075605236e4de37717d478122087bd289f5e160dd7e"
+  },
+  "sympy_version": "1.14.0",
+  "scope": "Written polynomial-integrality reduction over the specific quadratic field, generic quotient-ideal and recovery identities, four specified affine controls, squarefree factor/ring-of-integers input and fixed short-model denominator primes. No field rank/basis or complete point algorithm, parameter scan, graph expansion, historical finite-base rerun, floats or Lean. Previous rational-chart warning, finiteness and all other results retain their scopes."
+}

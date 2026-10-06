@@ -1,5 +1,20 @@
 # First task: Laplacian integrality
 
+The [quadratic-field integrality reduction](notes/four-prime-affine-integrality.md)
+now supplies an integral enumeration target: all relevant affine
+points map into O_K-integral E0(K) points, K=Q(sqrt(43645)).
+Polynomial coordinates and the exact conjugate-coefficient filter
+retain both W signs and original b,c integrality. The optional
+short model has proved denominator primes above 2 and 5.
+
+Next verify a complete number-field integral-point method and,
+if its algorithm requires it, a certified full E0(K) group basis.
+Rank, basis and the point list have not been computed. Rational
+E0(Q) data alone is insufficient. Preserve the field chart and
+filter; no arbitrary coordinate or group-coefficient scan as a
+completeness substitute. Keep previous proofs, finite inputs and
+the three-prime main; final manuscript decisions remain joint.
+
 The [explicit a=6 elliptic model](notes/four-prime-a6-elliptic.md)
 now has verified rational maps, compositions and exceptional points.
 No rational A=0 or inverse-denominator-zero fibers remain in this

@@ -1,5 +1,14 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [quadratic-field integrality reduction](notes/four-prime-affine-integrality.md)
+maps every positive integer a=6 root-two tail pair polynomially
+to algebraic integer points on a cubic over Q(sqrt(43645)).
+An exact conjugate-coefficient filter recovers the original tails
+from a complete O_K-integral point list. The short model needs
+only primes above 2 and 5 for this new field chart. No field rank,
+group basis or point list is computed. The rational-chart warning
+and previous results retain their scopes.
+
 The [explicit a=6 elliptic model](notes/four-prime-a6-elliptic.md)
 turns the complete root-two tail equation into
 Y^2=X^3-78162568812X+8433576786332241, with verified forward
