@@ -1,5 +1,14 @@
 # First task: Laplacian integrality
 
+The [harmonic second-root window](notes/four-prime-harmonic-tail.md)
+places kappa_2 between a+b+1 and a+1+2bc/(b+c),for b<c.
+Only b-1 integer offsets remain,leaving at most2(b-1)quadratic
+tail candidates per fixed(a,b),independent of repeated a. For
+a>=3,the positive constant-term cutoff sharpens to H_(2b-1).
+The wider window can contain integers; general classification
+remains open. Next analyze these reduced integer-root conditions
+uniformly,without tail scans. Previous results retain their scopes.
+
 The [quadratic tail reduction](notes/four-prime-tail-reduction.md)
 uses a strict second-root interval(a+1,(a+1)(b+1)). Any integral
 graph forces c to be an integer root of one of d-1 nonzero quadratics,

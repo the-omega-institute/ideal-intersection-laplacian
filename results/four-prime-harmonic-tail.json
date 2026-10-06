@@ -1,0 +1,402 @@
+{
+  "written_theorem": "For positive(a,a,b,c),b<c,the second genuine restricted root lies in(a+b+1,a+1+2bc/(b+c)). Any integral graph has t=kappa_2-a-1 in[b+1,2b-1],leaving at most2(b-1)quadratic tail candidates per fixed(a,b). For a>=3,the positive constant-term bound sharpens to H_(2b-1).",
+  "symbolic": {
+    "harmonic_endpoint": "a+1+2bc/(b+c)",
+    "positive_harmonic_bracket": "2*a**3*b**3 + 6*a**3*b**2*c + 6*a**3*b*c**2 + 2*a**3*c**3 + a**2*b**3*c + 2*a**2*b**3 + 2*a**2*b**2*c**2 + 6*a**2*b**2*c + a**2*b*c**3 + 6*a**2*b*c**2 + 2*a**2*c**3 + 2*a*b**3*c**2 + 2*a*b**3*c + 2*a*b**2*c**3 + 4*a*b**2*c**2 + 2*a*b**2*c + 2*a*b*c**3 + 2*a*b*c**2 + 2*b**3*c**2 + 2*b**3*c + 2*b**2*c**3 + 2*b*c**3",
+    "positive_harmonic_bracket_terms": 22,
+    "generic_lower_endpoint_identity": "a*b*(b - c)*(a + b + 1)*(a*b*c + a*b - a*c + b*c)",
+    "second_root_window_for_b_less_than_c": "a+b+1<kappa_2<a+1+2bc/(b+c)<a+2b+1",
+    "integer_offset_domain_for_unequal_ordered_tails": "b+1<=t<=2b-1",
+    "quadratic_tail_candidate_count": "at most2(b-1),independent of repeated a",
+    "refined_cutoff_for_a_at_least_3": "2*a**3*b**3 - a**3*b**2 + 4*a**2*b**4 - 2*a**2*b**3 - 8*a*b**4 + 12*a*b**3 - 2*a*b**2 - 3*a*b + a + 4*b**4 - 12*b**3 + 13*b**2 - 6*b + 1",
+    "refined_cutoff_formula": "T=(2b-1),d=(a+1)b,J=T(d-T),c<=J[J+aT+a^2b]",
+    "scope": "b<c; tail permutation permits this order; no ordering between a and b. Cutoff refinement uses a>=3."
+  },
+  "fixed_controls": [
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        4
+      ],
+      "graph_vertices": 38,
+      "complement_vertices": 35,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 1,
+      "b": 1,
+      "c": 4,
+      "quartic_coefficients": [
+        1,
+        -37,
+        391,
+        -1314,
+        1296
+      ],
+      "six_independent_integer_determinants": [
+        [
+          0,
+          1296
+        ],
+        [
+          1,
+          337
+        ],
+        [
+          2,
+          -48
+        ],
+        [
+          3,
+          -45
+        ],
+        [
+          4,
+          184
+        ],
+        [
+          5,
+          501
+        ]
+      ],
+      "second_root_window": [
+        "3",
+        "18/5"
+      ],
+      "exact_endpoint_values": [
+        "-45",
+        "46656/625"
+      ],
+      "exact_sturm_root_counts_below_inside_above": [
+        1,
+        1,
+        2
+      ],
+      "window_integer_free": true
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        5,
+        6
+      ],
+      "graph_vertices": 1510,
+      "complement_vertices": 761,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 5,
+      "c": 6,
+      "quartic_coefficients": [
+        1,
+        -341,
+        21793,
+        -257232,
+        583704
+      ],
+      "six_independent_integer_determinants": [
+        [
+          0,
+          583704
+        ],
+        [
+          1,
+          347925
+        ],
+        [
+          2,
+          153700
+        ],
+        [
+          3,
+          -981
+        ],
+        [
+          4,
+          -118104
+        ],
+        [
+          5,
+          -199631
+        ]
+      ],
+      "second_root_window": [
+        "11",
+        "126/11"
+      ],
+      "exact_endpoint_values": [
+        "-48125",
+        "19563300/14641"
+      ],
+      "exact_sturm_root_counts_below_inside_above": [
+        1,
+        1,
+        2
+      ],
+      "window_integer_free": true
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        5,
+        11
+      ],
+      "graph_vertices": 2590,
+      "complement_vertices": 1216,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 5,
+      "c": 11,
+      "quartic_coefficients": [
+        1,
+        -551,
+        49908,
+        -660857,
+        1454299
+      ],
+      "six_independent_integer_determinants": [
+        [
+          0,
+          1454299
+        ],
+        [
+          1,
+          842800
+        ],
+        [
+          2,
+          327825
+        ],
+        [
+          3,
+          -93896
+        ],
+        [
+          4,
+          -425609
+        ],
+        [
+          5,
+          -670536
+        ]
+      ],
+      "second_root_window": [
+        "11",
+        "103/8"
+      ],
+      "exact_endpoint_values": [
+        "-495000",
+        "287998425/4096"
+      ],
+      "exact_sturm_root_counts_below_inside_above": [
+        1,
+        1,
+        2
+      ],
+      "window_integer_free": false
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        6,
+        20
+      ],
+      "graph_vertices": 5290,
+      "complement_vertices": 2291,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 6,
+      "c": 20,
+      "quartic_coefficients": [
+        1,
+        -1061,
+        153988,
+        -2393652,
+        5086224
+      ],
+      "six_independent_integer_determinants": [
+        [
+          0,
+          5086224
+        ],
+        [
+          1,
+          2845500
+        ],
+        [
+          2,
+          906400
+        ],
+        [
+          3,
+          -737406
+        ],
+        [
+          4,
+          -2092224
+        ],
+        [
+          5,
+          -3164336
+        ]
+      ],
+      "second_root_window": [
+        "12",
+        "198/13"
+      ],
+      "exact_endpoint_values": [
+        "-3276000",
+        "18728740800/28561"
+      ],
+      "exact_sturm_root_counts_below_inside_above": [
+        1,
+        1,
+        2
+      ],
+      "window_integer_free": false
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        11,
+        100
+      ],
+      "graph_vertices": 43630,
+      "complement_vertices": 16131,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 11,
+      "c": 100,
+      "quartic_coefficients": [
+        1,
+        -7961,
+        4967393,
+        -127170742,
+        253166584
+      ],
+      "six_independent_integer_determinants": [
+        [
+          0,
+          253166584
+        ],
+        [
+          1,
+          130955275
+        ],
+        [
+          2,
+          18631000
+        ],
+        [
+          3,
+          -83853971
+        ],
+        [
+          4,
+          -176547344
+        ],
+        [
+          5,
+          -259496801
+        ]
+      ],
+      "second_root_window": [
+        "17",
+        "2866/111"
+      ],
+      "exact_endpoint_values": [
+        "-512188325",
+        "21955748600500000/151807041"
+      ],
+      "exact_sturm_root_counts_below_inside_above": [
+        1,
+        1,
+        2
+      ],
+      "window_integer_free": false
+    },
+    {
+      "exponents": [
+        30,
+        30,
+        5,
+        100
+      ],
+      "graph_vertices": 582364,
+      "complement_vertices": 132365,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 30,
+      "b": 5,
+      "c": 100,
+      "quartic_coefficients": [
+        1,
+        -22164,
+        62686661,
+        -2678288334,
+        9719421336
+      ],
+      "six_independent_integer_determinants": [
+        [
+          0,
+          9719421336
+        ],
+        [
+          1,
+          7103797500
+        ],
+        [
+          2,
+          4613414016
+        ],
+        [
+          3,
+          2248137936
+        ],
+        [
+          4,
+          7836336
+        ],
+        [
+          5,
+          -2107623684
+        ]
+      ],
+      "second_root_window": [
+        "36",
+        "851/21"
+      ],
+      "exact_endpoint_values": [
+        "-6489450000",
+        "516433243000000/194481"
+      ],
+      "exact_sturm_root_counts_below_inside_above": [
+        1,
+        1,
+        2
+      ],
+      "window_integer_free": false
+    }
+  ],
+  "script_sha256": "be870b5abaa2022bf81d3462e520c9931c9f93c5d13b30da8766487ac99bba8b",
+  "dependency_sha256": {
+    "check_four_prime_pair_three.py": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+    "check_four_prime_single_pair_midpoint.py": "d4e4dd85935656682409d075605236e4de37717d478122087bd289f5e160dd7e"
+  },
+  "sympy_version": "1.14.0",
+  "scope": "Written harmonic root-location and uniform quadratic candidate reduction,not full classification. Six exact support/determinant/Sturm controls; some windows contain integers and do not themselves prove nonintegrality. No exponent scan,expanded graph,historical finite-base rerun or Lean."
+}
