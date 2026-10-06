@@ -1,5 +1,23 @@
 # First task: Laplacian integrality
 
+The [quadratic tail reduction](notes/four-prime-tail-reduction.md)
+uses a strict second-root interval(a+1,(a+1)(b+1)). Any integral
+graph forces c to be an integer root of one of d-1 nonzero quadratics,
+d=(a+1)b,and a divisor of their explicit positive constant terms.
+At most2(d-1)tail candidates remain per fixed(a,b); the cutoff
+U[U+a(d-1)+a^2b],U=floor(d^2/4),improves the earlier bound by
+more than128. Complete29candidate-quadratic arithmetic leaves only
+c=5 for(a,b)=(5,5),and an explicit cubic handles that exception.
+Thus every positive(5,5,5,c)is nonintegral,without a tail scan.
+
+Next analyze these quadratic integer-root conditions as a,b vary,
+or impose sharper divisibility constraints on intermediate tails
+outside previous sufficient regions. Fixed-pair finiteness does not
+decide the unbounded classification; do not scan the huge remaining
+tail bounds or arbitrary exponent rectangles. Keep the three-prime
+main focused and final inclusion/stopping/submission joint.
+Earlier next-step paragraphs retain their historical scopes.
+
 The [effective large-tail theorem](notes/four-prime-large-tail.md)
 proves positive(a,a,b,c)nonintegral for
 c>24(M+a)^3(3M+a),M=(a+1)(b+1),without ordering a,b.

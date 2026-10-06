@@ -1,5 +1,15 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [quadratic tail reduction](notes/four-prime-tail-reduction.md)
+limits possibly integral positive(a,a,b,c)tails to at most2((a+1)b-1)
+quadratic integer-root candidates for each fixed(a,b),with no ordering
+between a,b. A positive constant-term divisor identity also gives
+c<=U[U+a(d-1)+a^2b],d=(a+1)b,U=floor(d^2/4),improving the
+previous cutoff by a factor greater than128. Complete29candidate-row
+arithmetic and one explicit cubic interval settle every(5,5,5,c),c>=1.
+The uniform reduction is a written proof; the fixed-pair corollary
+retains its exact finite arithmetic. General classification stays open.
+
 The [effective large-tail theorem](notes/four-prime-large-tail.md)
 proves every positive(a,a,b,c)nonintegral when
 c>24(M+a)^3(3M+a),M=(a+1)(b+1),without ordering a,b.

@@ -1,0 +1,1132 @@
+{
+  "written_uniform_theorem": "For all positive(a,a,b,c),integrality requires c to be a positive integer root of one of at most d-1 nonzero quadratics p(a+1+t),1<=t<=d-1,d=(a+1)b; at most2(d-1)tail candidates; c divides positive H(t). Nonintegral for c>U[U+a(d-1)+a^2b],U=floor(d^2/4). No ordering between a,b.",
+  "fixed_pair_corollary": "Every positive(5,5,5,c)is nonintegral. Complete29candidate-quadratic arithmetic leaves only c=5,kappa_2=11; its remaining cubic has a root in(3,4).",
+  "symbolic": {
+    "strict_second_root_upper_endpoint_identity": "a**2*b*c*(-a*b + (a + 1)**2*(b**2 + 1) + (c - 1)*(-b*(2*a + 1) + (a + 1)**2*(b + 1)**2))",
+    "strict_second_root_interval": "a+1<kappa_2<(a+1)(b+1)",
+    "constant_coefficient_positive_identity": "t*(b*(a + 1) - t)*(a**2*b + a*t + t*(b*(a + 1) - t))",
+    "constant_coefficient_factorization": "(x - (a + 1)*(b + 1))*(-a + x - 1)*(2*a**2 + 2*a*b + 3*a + b + x**2 - x*(a*b + 3*a + b + 2) + 1)",
+    "integer_second_root_candidate_domain": "k=a+1+t,1<=t<=(a+1)b-1",
+    "candidate_tail_divisibility": "c divides t(d-t)[t(d-t)+at+a^2b],d=(a+1)b",
+    "candidate_tail_count_bound": "2((a+1)b-1)",
+    "refined_tail_cutoff": "U[U+a(d-1)+a^2b],U=floor(d^2/4),d=(a+1)b",
+    "fixed_a_b_5_tail_polynomial_coefficients_descending": [
+      "216*t**2 - 1080*t - 6875",
+      "t*(-42*t**2 + 1195*t + 575)",
+      "t*(30 - t)*(t*(30 - t) + 5*t + 125)"
+    ],
+    "fixed_a_b_5_positive_coefficient_region": "9<=t<=28; A=216(t-9)^2+2808(t-9)+901>0; B/t=7928-359(t-9)+42(t-9)(28-t)>=1107",
+    "fixed_a_b_5_only_integer_second_root_tail": {
+      "t": 5,
+      "k": 11,
+      "c": 5
+    },
+    "exceptional_quartic_factorization": "(x - 11)*(x**3 - 288*x**2 + 14298*x - 41261)",
+    "exceptional_cubic_endpoint_values": [
+      -932,
+      11387
+    ]
+  },
+  "all_29_fixed_pair_candidate_quadratics": [
+    {
+      "t": 1,
+      "k": 7,
+      "quadratic_coefficients_descending": [
+        -7739,
+        1728,
+        4611
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        4611,
+        -1400,
+        -22889,
+        -59856
+      ],
+      "discriminant": 145724100,
+      "obstruction": "nonsquare discriminant",
+      "positive_integer_tail_candidates": [],
+      "consecutive_square_anchor": 12071
+    },
+    {
+      "t": 2,
+      "k": 8,
+      "quadratic_coefficients_descending": [
+        -8171,
+        5594,
+        10696
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        10696,
+        8119,
+        -10800,
+        -46061
+      ],
+      "discriminant": 380880900,
+      "obstruction": "nonsquare discriminant",
+      "positive_integer_tail_candidates": [],
+      "consecutive_square_anchor": 19516
+    },
+    {
+      "t": 3,
+      "k": 9,
+      "quadratic_coefficients_descending": [
+        -8171,
+        11346,
+        17901
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        17901,
+        21076,
+        7909,
+        -21600
+      ],
+      "discriminant": 713808000,
+      "obstruction": "nonsquare discriminant",
+      "positive_integer_tail_candidates": [],
+      "consecutive_square_anchor": 26717
+    },
+    {
+      "t": 4,
+      "k": 10,
+      "quadratic_coefficients_descending": [
+        -7739,
+        18732,
+        25896
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        25896,
+        36889,
+        32404,
+        12441
+      ],
+      "discriminant": 1152524400,
+      "obstruction": "nonsquare discriminant",
+      "positive_integer_tail_candidates": [],
+      "consecutive_square_anchor": 33948
+    },
+    {
+      "t": 5,
+      "k": 11,
+      "quadratic_coefficients_descending": [
+        -6875,
+        27500,
+        34375
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        34375,
+        55000,
+        61875,
+        55000
+      ],
+      "discriminant": 1701562500,
+      "obstruction": "-6875(c-5)(c+1)",
+      "positive_integer_tail_candidates": [
+        5
+      ]
+    },
+    {
+      "t": 6,
+      "k": 12,
+      "quadratic_coefficients_descending": [
+        -5579,
+        37398,
+        43056
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        43056,
+        74875,
+        95536,
+        105039
+      ],
+      "discriminant": 2359448100,
+      "obstruction": "nonsquare discriminant",
+      "positive_integer_tail_candidates": [],
+      "consecutive_square_anchor": 48574
+    },
+    {
+      "t": 7,
+      "k": 13,
+      "quadratic_coefficients_descending": [
+        -3851,
+        48174,
+        51681
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        51681,
+        96004,
+        132625,
+        161544
+      ],
+      "discriminant": 3116828400,
+      "obstruction": "nonsquare discriminant",
+      "positive_integer_tail_candidates": [],
+      "consecutive_square_anchor": 55828
+    },
+    {
+      "t": 8,
+      "k": 14,
+      "quadratic_coefficients_descending": [
+        -1691,
+        59576,
+        60016
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        60016,
+        117901,
+        172404,
+        223525
+      ],
+      "discriminant": 3955248000,
+      "obstruction": "nonsquare discriminant",
+      "positive_integer_tail_candidates": [],
+      "consecutive_square_anchor": 62890
+    },
+    {
+      "t": 9,
+      "k": 15,
+      "quadratic_coefficients_descending": [
+        901,
+        71352,
+        67851
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        67851,
+        140104,
+        214159,
+        290016
+      ],
+      "discriminant": 4846572900,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 10,
+      "k": 16,
+      "quadratic_coefficients_descending": [
+        3925,
+        83250,
+        75000
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        75000,
+        162175,
+        257200,
+        360075
+      ],
+      "discriminant": 5753062500,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 11,
+      "k": 17,
+      "quadratic_coefficients_descending": [
+        7381,
+        95018,
+        81301
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        81301,
+        183700,
+        300861,
+        432784
+      ],
+      "discriminant": 6628089600,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 12,
+      "k": 18,
+      "quadratic_coefficients_descending": [
+        11269,
+        106404,
+        86616
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        86616,
+        204289,
+        344500,
+        507249
+      ],
+      "discriminant": 7417508400,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 13,
+      "k": 19,
+      "quadratic_coefficients_descending": [
+        15589,
+        117156,
+        90831
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        90831,
+        223576,
+        387499,
+        582600
+      ],
+      "discriminant": 8061670500,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 14,
+      "k": 20,
+      "quadratic_coefficients_descending": [
+        20341,
+        127022,
+        93856
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        93856,
+        241219,
+        429264,
+        657991
+      ],
+      "discriminant": 8498088900,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 15,
+      "k": 21,
+      "quadratic_coefficients_descending": [
+        25525,
+        135750,
+        95625
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        95625,
+        256900,
+        469225,
+        732600
+      ],
+      "discriminant": 8664750000,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 16,
+      "k": 22,
+      "quadratic_coefficients_descending": [
+        31141,
+        143088,
+        96096
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        96096,
+        270325,
+        506836,
+        805629
+      ],
+      "discriminant": 8504073600,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 17,
+      "k": 23,
+      "quadratic_coefficients_descending": [
+        37189,
+        148784,
+        95251
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        95251,
+        281224,
+        541575,
+        876304
+      ],
+      "discriminant": 7967520900,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 18,
+      "k": 24,
+      "quadratic_coefficients_descending": [
+        43669,
+        152586,
+        93096
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        93096,
+        289351,
+        572944,
+        943875
+      ],
+      "discriminant": 7020850500,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 19,
+      "k": 25,
+      "quadratic_coefficients_descending": [
+        50581,
+        154242,
+        89661
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        89661,
+        294484,
+        600469,
+        1007616
+      ],
+      "discriminant": 5650022400,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 20,
+      "k": 26,
+      "quadratic_coefficients_descending": [
+        57925,
+        153500,
+        85000
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        85000,
+        296425,
+        623700,
+        1066825
+      ],
+      "discriminant": 3867750000,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 21,
+      "k": 27,
+      "quadratic_coefficients_descending": [
+        65701,
+        150108,
+        79191
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        79191,
+        295000,
+        642211,
+        1120824
+      ],
+      "discriminant": 1720700100,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 22,
+      "k": 28,
+      "quadratic_coefficients_descending": [
+        73909,
+        143814,
+        72336
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        72336,
+        290059,
+        655600,
+        1168959
+      ],
+      "discriminant": -702659100,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 23,
+      "k": 29,
+      "quadratic_coefficients_descending": [
+        82549,
+        134366,
+        64561
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        64561,
+        281476,
+        663489,
+        1210600
+      ],
+      "discriminant": -3263562000,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 24,
+      "k": 30,
+      "quadratic_coefficients_descending": [
+        91621,
+        121512,
+        56016
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        56016,
+        269149,
+        665524,
+        1245141
+      ],
+      "discriminant": -5763801600,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 25,
+      "k": 31,
+      "quadratic_coefficients_descending": [
+        101125,
+        105000,
+        46875
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        46875,
+        253000,
+        661375,
+        1272000
+      ],
+      "discriminant": -7935937500,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 26,
+      "k": 32,
+      "quadratic_coefficients_descending": [
+        111061,
+        84578,
+        37336
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        37336,
+        232975,
+        650736,
+        1290619
+      ],
+      "discriminant": -9432855900,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 27,
+      "k": 33,
+      "quadratic_coefficients_descending": [
+        121429,
+        59994,
+        27621
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        27621,
+        209044,
+        633325,
+        1300464
+      ],
+      "discriminant": -9816681600,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 28,
+      "k": 34,
+      "quadratic_coefficients_descending": [
+        132229,
+        30996,
+        17976
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        17976,
+        181201,
+        608884,
+        1301025
+      ],
+      "discriminant": -8547042000,
+      "obstruction": "all three coefficients positive",
+      "positive_integer_tail_candidates": []
+    },
+    {
+      "t": 29,
+      "k": 35,
+      "quadratic_coefficients_descending": [
+        143461,
+        -2668,
+        8671
+      ],
+      "four_direct_integer_determinants_at_c_0_1_2_3": [
+        8671,
+        149464,
+        577179,
+        1291816
+      ],
+      "discriminant": -4968683100,
+      "obstruction": "negative discriminant",
+      "positive_integer_tail_candidates": []
+    }
+  ],
+  "fixed_controls": [
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        4
+      ],
+      "graph_vertices": 38,
+      "complement_vertices": 35,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 1,
+      "b": 1,
+      "c": 4,
+      "refined_tail_bound": 3,
+      "old_tail_bound": 39000,
+      "in_refined_large_tail_region": true,
+      "two_low_root_isolating_intervals": [
+        [
+          "7/4",
+          "9/5"
+        ],
+        [
+          "13/4",
+          "10/3"
+        ]
+      ],
+      "root_counts_below_and_above_a_plus_1": [
+        1,
+        1
+      ],
+      "quartic_coefficients": [
+        1,
+        -37,
+        391,
+        -1314,
+        1296
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          1296
+        ],
+        [
+          1,
+          337
+        ],
+        [
+          2,
+          -48
+        ],
+        [
+          3,
+          -45
+        ],
+        [
+          4,
+          184
+        ],
+        [
+          5,
+          501
+        ]
+      ],
+      "two_direct_witness_endpoint_determinants": [
+        -45,
+        184
+      ],
+      "witness_root_index": 2,
+      "restricted_noninteger_witness_interval": [
+        3,
+        4
+      ],
+      "graph_noninteger_witness_interval": [
+        35,
+        36
+      ],
+      "sturm_roots_in_witness_interval": 1
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        5,
+        111376
+      ],
+      "graph_vertices": 24057430,
+      "complement_vertices": 10135431,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 5,
+      "c": 111376,
+      "refined_tail_bound": 111375,
+      "old_tail_bound": 186913752,
+      "in_refined_large_tail_region": true,
+      "two_low_root_isolating_intervals": [
+        [
+          "9/4",
+          "7/3"
+        ],
+        [
+          "44/3",
+          "59/4"
+        ]
+      ],
+      "root_counts_below_and_above_a_plus_1": [
+        1,
+        1
+      ],
+      "quartic_coefficients": [
+        1,
+        -4677881,
+        2679613786103,
+        -45551778624082,
+        91563868905784
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          91563868905784
+        ],
+        [
+          1,
+          48691699389925
+        ],
+        [
+          2,
+          11178729379000
+        ],
+        [
+          3,
+          -20975069194241
+        ],
+        [
+          4,
+          -47769724397024
+        ],
+        [
+          5,
+          -69205264296551
+        ]
+      ],
+      "two_direct_witness_endpoint_determinants": [
+        -20969565822224,
+        11184503619979
+      ],
+      "witness_root_index": 2,
+      "restricted_noninteger_witness_interval": [
+        14,
+        15
+      ],
+      "graph_noninteger_witness_interval": [
+        24057416,
+        24057417
+      ],
+      "sturm_roots_in_witness_interval": 1
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        6,
+        210277
+      ],
+      "graph_vertices": 52990054,
+      "complement_vertices": 21448505,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 6,
+      "c": 210277,
+      "refined_tail_bound": 210276,
+      "old_tail_bound": 326419512,
+      "in_refined_large_tail_region": true,
+      "two_low_root_isolating_intervals": [
+        [
+          "9/4",
+          "7/3"
+        ],
+        [
+          "33/2",
+          "50/3"
+        ]
+      ],
+      "root_counts_below_and_above_a_plus_1": [
+        1,
+        1
+      ],
+      "quartic_coefficients": [
+        1,
+        -10093397,
+        11143065444737,
+        -209856113782032,
+        420245981237016
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          420245981237016
+        ],
+        [
+          1,
+          221532922806325
+        ],
+        [
+          2,
+          45105934704740
+        ],
+        [
+          3,
+          -109035043628085
+        ],
+        [
+          4,
+          -240890072752472
+        ],
+        [
+          5,
+          -350459213228719
+        ]
+      ],
+      "two_direct_witness_endpoint_determinants": [
+        -84868427911400,
+        72988371695525
+      ],
+      "witness_root_index": 2,
+      "restricted_noninteger_witness_interval": [
+        16,
+        17
+      ],
+      "graph_noninteger_witness_interval": [
+        52990038,
+        52990039
+      ],
+      "sturm_roots_in_witness_interval": 1
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        11,
+        1839322
+      ],
+      "graph_vertices": 794587534,
+      "complement_vertices": 288773985,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 11,
+      "c": 1839322,
+      "refined_tail_bound": 1839321,
+      "old_tail_bound": 2421451032,
+      "in_refined_large_tail_region": true,
+      "two_low_root_isolating_intervals": [
+        [
+          "2",
+          "15/7"
+        ],
+        [
+          "129/5",
+          "26"
+        ]
+      ],
+      "root_counts_below_and_above_a_plus_1": [
+        1,
+        1
+      ],
+      "quartic_coefficients": [
+        1,
+        -143467277,
+        1461513318489347,
+        -40922156464301272,
+        80345657469136576
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          80345657469136576
+        ],
+        [
+          1,
+          40885014179857375
+        ],
+        [
+          2,
+          4347396666753220
+        ],
+        [
+          3,
+          -29267195930979515
+        ],
+        [
+          4,
+          -59958764474144432
+        ],
+        [
+          5,
+          -87727309823545109
+        ]
+      ],
+      "two_direct_witness_endpoint_determinants": [
+        -29264671758365849,
+        4350071115698500
+      ],
+      "witness_root_index": 2,
+      "restricted_noninteger_witness_interval": [
+        25,
+        26
+      ],
+      "graph_noninteger_witness_interval": [
+        794587509,
+        794587510
+      ],
+      "sturm_roots_in_witness_interval": 1
+    },
+    {
+      "exponents": [
+        10,
+        10,
+        20,
+        197109001
+      ],
+      "graph_vertices": 500853974080,
+      "complement_vertices": 106635972081,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 10,
+      "b": 20,
+      "c": 197109001,
+      "refined_tail_bound": 197109000,
+      "old_tail_bound": 236166174312,
+      "in_refined_large_tail_region": true,
+      "two_low_root_isolating_intervals": [
+        [
+          "9/4",
+          "7/3"
+        ],
+        [
+          "244/5",
+          "49"
+        ]
+      ],
+      "root_counts_below_and_above_a_plus_1": [
+        1,
+        1
+      ],
+      "quartic_coefficients": [
+        1,
+        -47700378736,
+        98722837736063568373,
+        -5043839108779404318882,
+        10901121942815838977544
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          10901121942815838977544
+        ],
+        [
+          1,
+          5956005671724797848300
+        ],
+        [
+          2,
+          1208335075819681583400
+        ],
+        [
+          3,
+          -3341889845185712089536
+        ],
+        [
+          4,
+          -7694669091577585442864
+        ],
+        [
+          5,
+          -11850002663642140748916
+        ]
+      ],
+      "two_direct_witness_endpoint_determinants": [
+        -3745742409985386660696,
+        786533405011802869036
+      ],
+      "witness_root_index": 2,
+      "restricted_noninteger_witness_interval": [
+        48,
+        49
+      ],
+      "graph_noninteger_witness_interval": [
+        500853974032,
+        500853974033
+      ],
+      "sturm_roots_in_witness_interval": 1
+    },
+    {
+      "exponents": [
+        30,
+        30,
+        5,
+        90846757
+      ],
+      "graph_vertices": 523822406626,
+      "complement_vertices": 115012000127,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 30,
+      "b": 5,
+      "c": 90846757,
+      "refined_tail_bound": 90846756,
+      "old_tail_bound": 142216445952,
+      "in_refined_large_tail_region": true,
+      "two_low_root_isolating_intervals": [
+        [
+          "16/5",
+          "13/4"
+        ],
+        [
+          "79/2",
+          "119/3"
+        ]
+      ],
+      "root_counts_below_and_above_a_plus_1": [
+        1,
+        1
+      ],
+      "quartic_coefficients": [
+        1,
+        -19713746733,
+        47587570872899097902,
+        -2037055045975706493744,
+        6089626007878196469024
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          6089626007878196469024
+        ],
+        [
+          1,
+          4100158532755675326450
+        ],
+        [
+          2,
+          2205866199260669899296
+        ],
+        [
+          3,
+          406749007274897707200
+        ],
+        [
+          4,
+          -1297193043319923730176
+        ],
+        [
+          5,
+          -2905959952642076893146
+        ]
+      ],
+      "two_direct_witness_endpoint_determinants": [
+        -974826656894569019436,
+        747536303808705010464
+      ],
+      "witness_root_index": 2,
+      "restricted_noninteger_witness_interval": [
+        39,
+        40
+      ],
+      "graph_noninteger_witness_interval": [
+        523822406587,
+        523822406588
+      ],
+      "sturm_roots_in_witness_interval": 1
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "graph_vertices": 1294,
+      "complement_vertices": 670,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "a": 5,
+      "b": 5,
+      "c": 5,
+      "refined_tail_bound": 111375,
+      "old_tail_bound": 186913752,
+      "in_refined_large_tail_region": false,
+      "two_low_root_isolating_intervals": [
+        [
+          "3",
+          "19/6"
+        ],
+        [
+          "11",
+          "11"
+        ]
+      ],
+      "root_counts_below_and_above_a_plus_1": [
+        1,
+        1
+      ],
+      "quartic_coefficients": [
+        1,
+        -299,
+        17466,
+        -198539,
+        453871
+      ],
+      "six_direct_integer_determinant_values": [
+        [
+          0,
+          453871
+        ],
+        [
+          1,
+          272500
+        ],
+        [
+          2,
+          124281
+        ],
+        [
+          3,
+          7456
+        ],
+        [
+          4,
+          -79709
+        ],
+        [
+          5,
+          -138924
+        ]
+      ],
+      "two_direct_witness_endpoint_determinants": [
+        7456,
+        -79709
+      ],
+      "witness_root_index": 1,
+      "restricted_noninteger_witness_interval": [
+        3,
+        4
+      ],
+      "graph_noninteger_witness_interval": [
+        1291,
+        1292
+      ],
+      "sturm_roots_in_witness_interval": 1
+    }
+  ],
+  "script_sha256": "d2faf574a1f54b3e784395502bb51bf6cfd5b5ef01a8be3c4c01162f0cc6ad76",
+  "dependency_sha256": {
+    "check_four_prime_pair_three.py": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+    "check_four_prime_single_pair_midpoint.py": "d4e4dd85935656682409d075605236e4de37717d478122087bd289f5e160dd7e"
+  },
+  "sympy_version": "1.14.0",
+  "scope": "Written uniform divisor/quadratic tail reduction and refined cutoff; fixed triple-five corollary uses complete29candidate-quadratic arithmetic plus an explicit cubic interval. 116 independent determinants reconstruct/cross-check all29quadratics; seven support/quartic/root-isolation/Sturm controls add56integer determinants. No exponent rectangle,tail scan,expanded graph,floating eigensolver,historical finite-base rerun or Lean. General single-pair and fully unequal four-prime classification remains open."
+}
