@@ -1,5 +1,15 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [zero-constant endpoint theorem](notes/four-prime-zero-constant.md)
+proves nonintegrality for every (a,a,(a-1)(2a-1),c), a>=2, c>=a.
+The root-two tail equation factors as 2a(a-1)c(N-Dc); an integer
+Bezout identity gives gcd(N,D)|8, while D is odd and at least three.
+Its only positive tail candidate is therefore noninteger. A strict
+minor gives 1<kappa_min<3 throughout the family, including c=a.
+No tail coprimality or ordering is needed, and no finite exponent
+base enters the proof. Other resonances and general classification
+remain open.
+
 The [resonant discriminant obstruction](notes/four-prime-resonance-discriminant.md)
 adds D_s(z)=(2s-1)^2z^2+2s^2(2s-1)^2z+s^4 as a necessary
 quadratic residue at good primes ell|h=a+1-s when

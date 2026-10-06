@@ -1,5 +1,20 @@
 # First task: Laplacian integrality
 
+The [zero-constant endpoint theorem](notes/four-prime-zero-constant.md)
+settles every a>=2, b=(a-1)(2a-1), c>=a. The structurally vanishing
+constant gives one positive rational tail candidate N/D; an integer
+Bezout identity with constant 8 and odd D>=3 exclude integrality uniformly.
+The strict upper minor works already at c=a. A checked simple
+resonance passes prior local tests but is excluded by this global
+tail arithmetic. No finite exponent base or tail scan is required.
+
+Next examine nonzero constant terms in the simple-resonance branch
+or second-root compatibility. Preserve the resolved degeneration,
+all previous proofs and finite inputs. Do not grow arbitrary tables
+or expand the private binary diagnosis. General classification stays
+open; the three-prime main and final scope/stopping/submission remain
+joint decisions.
+
 The [resonant discriminant obstruction](notes/four-prime-resonance-discriminant.md)
 addresses the double-resonance point using an exact h^6 leading
 discriminant and h^7 integer-polynomial error. It requires D_s(z)
