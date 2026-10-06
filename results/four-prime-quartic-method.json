@@ -1,0 +1,62 @@
+{
+  "written_result": "Source-audited specialization of Tzanakis (1996) to the a6 quartic, with exact model identification, positive-domain monotonicity, initial integral/height estimates and proof of the inhomogeneous reduction case.",
+  "method_source": {
+    "author": "N. Tzanakis",
+    "year": 1996,
+    "journal": "Acta Arithmetica",
+    "volume": 75,
+    "issue": 2,
+    "pages": "165-190",
+    "DOI": "10.4064/aa-75-2-165-190"
+  },
+  "exact_checks": {
+    "quartic_coefficients_descending": [
+      43645,
+      1152400,
+      6640150,
+      4524000,
+      950625
+    ],
+    "quartic_discriminant": -19342301208526178735272875000000000000,
+    "paper_short_A": "-28949099560000/3",
+    "paper_short_B": "312354695790083000000/27",
+    "paper_short_cubic_discriminant": "-19342301208526178735272875000000000000",
+    "paper_short_model_has_exactly_one_real_root": true,
+    "paper_to_previous_short_scaling": "(X,Y)=(9x/100,27y/1000)",
+    "paper_asymptotic_point": "(1950s+6640150/3,1123590000+4524000s)",
+    "asymptotic_point_equals_shifted_Pstar": true,
+    "common_coordinate_field_degree_for_rational_basis_and_P0": 2,
+    "paper_sign_sigma": 1,
+    "F_star_derivative_times_b_cubed_sqrt_f": "-W*(4524000*b + 3802500) - 1123590000*b**3 - 12948292500*b**2 - 13232700000*b - 3707437500",
+    "F_star_strictly_decreasing_for_all_positive_b": true,
+    "rational_chart_differential_identity_verified": "R_V=-W*dR_U/db on W^2=f(b)",
+    "F_star_limit": "1950s",
+    "paper_forbidden_F_star_values": [
+      "-1950s",
+      "-1257750"
+    ],
+    "positive_domain_avoids_both_forbidden_values": true,
+    "monotonicity_cutoff_u0": 0,
+    "integral_upper_bound_for_positive_b": "integral_b^infinity du/sqrt(f(u)) < 1/(sqrt(43645)*b)",
+    "c9": "1/sqrt(43645)",
+    "f_one": 13310820,
+    "integer_upper_bound_sqrt_f_one": 3649,
+    "rational_height_bound_for_integer_b_ge_one": "h(R_U)<=log(13540800)+2log(b)",
+    "c10_for_integral_cubic_E0": "log(13540800)",
+    "paper_reduction_case": "Section 5 Case 2, inhomogeneous Proposition 4",
+    "case_two_proof_input": "Infinite-order T=Pstar-sigma(Pstar) excludes rational dependence of the asymptotic logarithm on rational-group logarithms and the real period"
+  },
+  "full_rational_basis_required": true,
+  "exact_rank_or_full_basis_computed": false,
+  "initial_mordell_weil_coefficient_bound_computed": false,
+  "LLL_reduction_run": false,
+  "complete_integral_points_enumerated": false,
+  "new_nonintegrality_classification": false,
+  "script_sha256": "47dac2f648d43e2a3330e07084cbbb5c7c677f33414dfd69ac056589aff23bd9",
+  "dependency_sha256": {
+    "check_four_prime_a6_elliptic.py": "212cbf0c3f95d6c3670c7cd913b0b6e9aa55eb5df47e03b073ea74aef2f5c7aa",
+    "check_four_prime_nontorsion.py": "8470ca26f4641dd7e98a9bcdf105fbd8598d527129136ef4c6eea9fea6c0935d"
+  },
+  "sympy_version": "1.14.0",
+  "scope": "Application of an existing published quartic method, with written specialization and exact algebraic checks. No numeric elliptic logarithms, regulator/height-correction/David constants, initial coefficient bound, LLL, coefficient scan, full point list, graph or historical finite-base rerun, floats or Lean."
+}

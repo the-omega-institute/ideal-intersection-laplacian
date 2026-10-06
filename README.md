@@ -1,5 +1,14 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [published quartic-method specialization](notes/four-prime-quartic-method.md)
+identifies Tzanakis (1996) as a complete-method route for the
+original a=6 affine integrality condition. The model matches
+exactly; the positive branch is monotone throughout b>0, with
+explicit initial integral and rational-height estimates. The
+asymptotic logarithm requires the inhomogeneous reduction case.
+A full rational basis and certified bound/reduction work remain;
+no complete algorithm or point list has been executed.
+
 The [infinite-order obstruction](notes/four-prime-nontorsion.md)
 proves that the coset's fixed Galois difference is nontorsion.
 Multiplication and Q-defined isogenies cannot rationalize any

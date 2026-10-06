@@ -1,5 +1,19 @@
 # First task: Laplacian integrality
 
+The [Tzanakis-method specialization](notes/four-prime-quartic-method.md)
+now identifies a published route that directly covers the original
+quartic, including its nonsquare leading coefficient. The exact
+model, inhomogeneous Case 2, zero monotonicity cutoff and initial
+c9/c10 estimates are verified.
+
+Next certify the full rational basis/torsion input and the remaining
+height, regulator and elliptic-logarithm constants before deriving
+an initial coefficient bound. Lattice-distance and rounding bounds
+must be independently certified; no LLL or point enumeration has
+run. Preserve both W signs and the original recovery filter.
+Do not replace these gates by arbitrary scans. Previous proofs,
+rank lower bounds and joint manuscript decisions retain their scopes.
+
 The [infinite-order obstruction](notes/four-prime-nontorsion.md)
 rules out rationalization by multiplication or Q-defined isogeny.
 Exact Nagell-Lutz witnesses give rational and twist rank lower
