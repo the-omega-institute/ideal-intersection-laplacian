@@ -1,5 +1,20 @@
 # First task: Laplacian integrality
 
+The [resonant discriminant obstruction](notes/four-prime-resonance-discriminant.md)
+addresses the double-resonance point using an exact h^6 leading
+discriminant and h^7 integer-polynomial error. It requires D_s(z)
+to be a square modulo every applicable good prime. Complete tests
+at s=2,ell=5 and s=3,ell=7 give explicit excluded residues.
+The unbounded family a=6+25n,b=20+100n+125m,c>=2a-2 is settled,
+including both-tail-cutoff boundaries and noncoprime tails.
+
+Next examine the remaining resonances or impose this discriminant
+condition on second-root offsets. A passing square residue is only
+necessary. Preserve all prior proofs and finite inputs; no arbitrary
+parameter tables or binary-modulus expansion. General classification
+and bad-prime branches remain open. The three-prime main and final
+scope/stopping/submission decisions remain joint.
+
 The [shared-prime valuation theorem](notes/four-prime-shared-prime.md)
 gives necessary valuation ranges and a cubic resonance without any
 tail coprimality hypothesis. At a good prime of first order in

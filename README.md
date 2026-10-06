@@ -1,5 +1,15 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [resonant discriminant obstruction](notes/four-prime-resonance-discriminant.md)
+adds D_s(z)=(2s-1)^2z^2+2s^2(2s-1)^2z+s^4 as a necessary
+quadratic residue at good primes ell|h=a+1-s when
+v_ell(b+h)>=2v_ell(h),z=(b+h)/h^2. It excludes a double
+resonance passing the previous valuation and modular tests.
+In particular all a=6+25n,b=20+100n+125m,n,m>=0,c>=2a-2
+give nonintegrality, without tail coprimality or ordering. The proof
+uses a generic discriminant identity and the strict low-root cutoff;
+no finite exponent base is required. General classification stays open.
+
 The [shared-prime valuation theorem](notes/four-prime-shared-prime.md)
 removes the tail coprimality hypothesis. For a good prime ell|a+1-s,
 let e=v_ell(a+1-s),r=min tail valuation,t=max tail valuation.
