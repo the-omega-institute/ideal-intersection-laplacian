@@ -1,0 +1,226 @@
+{
+  "written_theorem": "For every fixed integer a>=2, p(2;a,b,c)=0 has finitely many positive integer tail pairs; its normalization is a geometrically irreducible genus-one curve with a rational point.",
+  "graph_corollary": "For each fixed a>=5, only finitely many b,c>=a can give integer Laplacian spectrum for (a,a,b,c). No effective bound or list is supplied.",
+  "symbolic": {
+    "independent_symbolic_permutation_determinant": "passed",
+    "endpoint_two_coefficients_descending": [
+      "-a**2 + 2*a*b*(a**2 - 1) + b**2*(-2*a - 1) + 1",
+      "(a - 1)*(2*a*b**2*(a + 1) + b*(4*a**3 + 6*a**2 - 3*a - 2) + (a - 1)*(2*a**2 + a - 2))",
+      "(a - 1)*(-b + (a - 1)*(2*a - 1))*(a + b*(a + 1) - 1)"
+    ],
+    "tail_discriminant_quartic_coefficients_descending": [
+      "(a + 1)*(4*a - 4)*(a**2 - a - 1)*(a**2 + a + 1)",
+      "4*(a - 1)**2*(a**2 + a + 1)*(4*a**3 + 6*a**2 - a - 2)",
+      "(a - 1)**2*(16*a**6 + 40*a**5 + 8*a**4 - 20*a**3 - 31*a**2 - 8*a + 4)",
+      "2*a*(a - 1)**3*(2*a + 1)*(4*a**3 + 2*a**2 - a - 2)",
+      "a**2*(a - 1)**4*(2*a + 1)**2"
+    ],
+    "quartic_discriminant_factorization": "-4096*a**8*(a - 1)**15*(a + 1)**2*(2*a + 1)**6*(a**2 + a + 1)**2*(64*a**9 + 128*a**8 + 48*a**7 - 192*a**6 - 196*a**5 - 44*a**4 + 119*a**3 + 58*a**2 + 4*a + 8)",
+    "positive_factor_H": "64*a**9 + 128*a**8 + 48*a**7 - 192*a**6 - 196*a**5 - 44*a**4 + 119*a**3 + 58*a**2 + 4*a + 8",
+    "H_after_a_v_plus_two_coefficients_descending": [
+      64,
+      1280,
+      11312,
+      57824,
+      187900,
+      401324,
+      561527,
+      494500,
+      247744,
+      53616
+    ],
+    "binary_quartic_invariant_identity": "disc=(4I^3-J^2)/27; I=12LT-3MR+Q^2; J=72LQT+9MQR-27LR^2-27M^2T-2Q^3",
+    "inverse_identity": "(2Ac+B)^2-F=4A*p(2)",
+    "rational_base_point": {
+      "b": "(a - 1)*(2*a - 1)",
+      "y": "2*a*(a - 1)**2*(2*a + 1)*(2*a**3 - a**2 + a - 1)",
+      "original_tail_c": 0
+    },
+    "endpoint_three_linear_coefficient": "(a - 2)*(b**2*(a**2 - 1) + b*(4*a**3 + 3*a**2 - 8*a - 2) + (a - 2)*(2*a**2 - a - 4))",
+    "endpoint_two_and_three_positive_linear_terms": "checked by complete positive expansions at a>=2 and a>=3,b>=1",
+    "prior_cutoff_minors_verified": true,
+    "strip_b_count": "a-2",
+    "strip_candidate_bound": "4(a-2)",
+    "a6_integral_model": "5z^2=8729b^4+230480b^3+1328030b^2+904800b+190125",
+    "a6_base_point_b_z": [
+      55,
+      156390
+    ]
+  },
+  "fixed_controls": [
+    {
+      "exponents": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "graph_vertices": 79,
+      "complement_vertices": 64,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "four_tail_determinants_at_c_zero_through_three": [
+        7,
+        160,
+        315,
+        472
+      ],
+      "tail_quadratic_coefficients_descending": [
+        1,
+        152,
+        7
+      ],
+      "tail_discriminant": 23076,
+      "height_y": 156,
+      "inverse_identity_verified": true,
+      "five_quartic_determinants_at_x_zero_through_four": [
+        4375,
+        1792,
+        315,
+        -320,
+        -353
+      ],
+      "quartic_coefficients_descending": [
+        1,
+        -50,
+        696,
+        -3230,
+        4375
+      ],
+      "integer_sylvester_resultant": -32541099687936000000,
+      "nonzero_quartic_discriminant": -387394043904000000,
+      "exact_sturm_count_in_one_four": 1
+    },
+    {
+      "exponents": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "graph_vertices": 1294,
+      "complement_vertices": 670,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "four_tail_determinants_at_c_zero_through_three": [
+        4216,
+        24625,
+        46836,
+        70849
+      ],
+      "tail_quadratic_coefficients_descending": [
+        901,
+        19508,
+        4216
+      ],
+      "tail_discriminant": 365367600,
+      "height_y": 28518,
+      "inverse_identity_verified": true,
+      "five_quartic_determinants_at_x_zero_through_four": [
+        453871,
+        272500,
+        124281,
+        7456,
+        -79709
+      ],
+      "quartic_coefficients_descending": [
+        1,
+        -299,
+        17466,
+        -198539,
+        453871
+      ],
+      "integer_sylvester_resultant": -1042653207035590106750184275627212800000000,
+      "nonzero_quartic_discriminant": -18439678958609049709079376691200000000,
+      "exact_sturm_count_in_one_four": 1
+    },
+    {
+      "exponents": [
+        6,
+        6,
+        105,
+        75
+      ],
+      "graph_vertices": 394742,
+      "complement_vertices": 111243,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "four_tail_determinants_at_c_zero_through_three": [
+        -185000,
+        4904640,
+        9795760,
+        14488360
+      ],
+      "tail_quadratic_coefficients_descending": [
+        -99260,
+        5188900,
+        -185000
+      ],
+      "tail_discriminant": 26851230810000,
+      "height_y": -9700100,
+      "inverse_identity_verified": true,
+      "five_quartic_determinants_at_x_zero_through_four": [
+        12374025664,
+        6030432342,
+        -169355000,
+        -6225682400,
+        -12138895872
+      ],
+      "quartic_coefficients_descending": [
+        1,
+        -57679,
+        72076020,
+        -6415611664,
+        12374025664
+      ],
+      "integer_sylvester_resultant": -13831286558656513161641732167680000000000000000,
+      "nonzero_quartic_discriminant": -79226065750123228099677696000000000000000,
+      "exact_sturm_count_in_one_four": 1
+    }
+  ],
+  "comparison_example": {
+    "exponents": [
+      6,
+      6,
+      105,
+      75
+    ],
+    "both_coarse_divisibilities_pass": true,
+    "root_two_valuation_branch": "e=r=1<t=2",
+    "simple_cubic_resonance_passes": true,
+    "prior_double_resonance_hypothesis": false,
+    "modular_factors_at_only_prime7": [
+      "x(x-1)",
+      "(x-4)^2"
+    ],
+    "tail_discriminant": 26851230810000,
+    "square_root_floor": 5181817,
+    "all_integer_tails_excluded_at_fixed_a_b": true,
+    "comparison_scope": "named local tests only; not every previous sufficient spectral region"
+  },
+  "classical_theorems_used": [
+    "Riemann-Hurwitz for a degree-two cover with four simple branch points",
+    "Siegel finiteness of integral points on an affine curve of positive genus"
+  ],
+  "classical_theorems_formally_verified": false,
+  "effective_integral_point_enumeration": false,
+  "script_sha256": "c7d2d0d0bb7a6398c4f6d52f6b354fac259a70e0b8fdea2be51adf5f75219ef6",
+  "dependency_sha256": {
+    "check_four_prime_pair_three.py": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+    "check_four_prime_single_pair_midpoint.py": "d4e4dd85935656682409d075605236e4de37717d478122087bd289f5e160dd7e"
+  },
+  "sympy_version": "1.14.0",
+  "requires_finite_exponent_base": false,
+  "validation_counts": {
+    "support_column_actions": 168,
+    "tail_matrix_determinants": 12,
+    "quartic_matrix_determinants": 15,
+    "integer_sylvester_determinants": 3,
+    "total_exact_determinants": 30,
+    "exact_sturm_counts_in_one_four": 3
+  },
+  "scope": "Written geometric and fixed-minimum finiteness deductions from generic exact identities plus classical Riemann-Hurwitz and Siegel theorems. Three specified implementation controls. No elliptic rank, effective bound, integral-point list or emptiness assertion; integer root two is necessary only for the large-tail spectral region. No scan, expanded graph, historical finite-base rerun, floats or Lean. All previous results and joint manuscript decisions retain their scopes."
+}

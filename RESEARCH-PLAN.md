@@ -1,5 +1,21 @@
 # First task: Laplacian integrality
 
+The [root-two curve theorem](notes/four-prime-root-two-curve.md)
+gives a smooth genus-one model for every fixed a>=2, with no
+exceptional integer a in this range. Siegel's theorem makes its
+positive integer tail pairs finite. Prior low-root cutoffs and
+the finite narrow strip then give fixed-repeated-minimum finiteness
+for every a>=5, allowing both tails to vary.
+
+Next establish a verified elliptic model for a chosen remaining
+case such as a=6, and determine what complete integral-point
+method is available. Preserve the recovery divisibility and
+exceptional leading-coefficient fibers. No effective bound or
+point list has been obtained; an integer root alone is not
+integral graph spectrum. Do not replace completeness by a scan.
+Keep all previous results, finite inputs and the three-prime main;
+final scope/stopping/submission remain joint decisions.
+
 The [zero-constant endpoint theorem](notes/four-prime-zero-constant.md)
 settles every a>=2, b=(a-1)(2a-1), c>=a. The structurally vanishing
 constant gives one positive rational tail candidate N/D; an integer

@@ -1,5 +1,16 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [root-two curve theorem](notes/four-prime-root-two-curve.md)
+proves that for each fixed a>=2 the complete equation p(2)=0 has
+only finitely many positive integer tail pairs. An exact squarefree
+quartic gives a genus-one model with a rational point; Siegel's
+theorem supplies finiteness. Combined with the prior low-root
+bounds, each fixed repeated minimum a>=5 admits only finitely
+many possibly integral tail pairs, with both tails free.
+No effective tail bound, integral-point list or emptiness assertion
+is supplied. The a=6 model and integer recovery condition are
+explicit; general classification remains open.
+
 The [zero-constant endpoint theorem](notes/four-prime-zero-constant.md)
 proves nonintegrality for every (a,a,(a-1)(2a-1),c), a>=2, c>=a.
 The root-two tail equation factors as 2a(a-1)c(N-Dc); an integer
