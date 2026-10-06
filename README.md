@@ -1,5 +1,16 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [shared-prime valuation theorem](notes/four-prime-shared-prime.md)
+removes the tail coprimality hypothesis. For a good prime ell|a+1-s,
+let e=v_ell(a+1-s),r=min tail valuation,t=max tail valuation.
+If r<t, an integer root requires e=r or e=2t; if r=t, it requires
+r>=1 and r<=e<=2r. In particular e=1 forces the tail gcd to
+have valuation exactly one. Thus every a=156+2450n,n>=0,b,c>=a
+with neither v_5(gcd(b,c)) nor v_7(gcd(b,c)) equal to one is
+nonintegral. Arbitrarily large common tail divisors are allowed.
+The written theorem also gives a cubic resonance condition;
+general classification remains open.
+
 The [root-valuation lemma](notes/four-prime-root-valuation.md)
 proves v_ell(a+1-s)=2v_ell(bc) for any integer restricted root
 s>=2, coprime tails, and ell|a+1-s not dividing s(s-1)(2s-1).

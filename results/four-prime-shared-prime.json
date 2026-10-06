@@ -1,0 +1,669 @@
+{
+  "written_theorem": "For positive a,b,c and an integer restricted root s>=2,put h=a+1-s. For good ell|h not dividing s(s-1)(2s-1),e=v_ell(h),r=min(v_ell(b),v_ell(c)),t=max(...). If r<t then e=r or e=2t. If r=t then r>=1 and r<=e<=2r. No tail coprimality hypothesis.",
+  "written_first_valuation_corollary": "e=1 implies v_ell(gcd(b,c))=1;both tails divisible by ell and at least one not divisible by ell^2.",
+  "written_nonintegrality_region": "a=156+2450n,n>=0,b,c>=a and both v_5(gcd(b,c)),v_7(gcd(b,c)) differ from1 imply nonintegrality;tails need not be coprime.",
+  "symbolic": {
+    "independent_symbolic_permutation_determinant": "passed",
+    "cubic": "-h*(s - 1)*(b*s - c*(s - 1) + h)*(b*(s - 1) - c*s - h)",
+    "constant_in_h_anchor": "-b**2*c**2*(s - 1)**2*(2*s - 1)",
+    "complete_remainder_terms_h_power_b_power_c_power_coefficient": [
+      [
+        4,
+        1,
+        1,
+        "4"
+      ],
+      [
+        4,
+        1,
+        0,
+        "2"
+      ],
+      [
+        4,
+        0,
+        1,
+        "2"
+      ],
+      [
+        4,
+        0,
+        0,
+        "2"
+      ],
+      [
+        3,
+        2,
+        1,
+        "4 - s"
+      ],
+      [
+        3,
+        2,
+        0,
+        "2 - s"
+      ],
+      [
+        3,
+        1,
+        2,
+        "4 - s"
+      ],
+      [
+        3,
+        1,
+        1,
+        "9*s"
+      ],
+      [
+        3,
+        1,
+        0,
+        "2*s + 1"
+      ],
+      [
+        3,
+        0,
+        2,
+        "2 - s"
+      ],
+      [
+        3,
+        0,
+        1,
+        "2*s + 1"
+      ],
+      [
+        2,
+        2,
+        2,
+        "4 - 2*s"
+      ],
+      [
+        2,
+        2,
+        1,
+        "-2*s**2 + 8*s - 2"
+      ],
+      [
+        2,
+        2,
+        0,
+        "-2*s**2 + 4*s - 1"
+      ],
+      [
+        2,
+        1,
+        2,
+        "-2*s**2 + 8*s - 2"
+      ],
+      [
+        2,
+        1,
+        1,
+        "7*s**2 - 4*s + 1"
+      ],
+      [
+        2,
+        0,
+        2,
+        "-2*s**2 + 4*s - 1"
+      ],
+      [
+        1,
+        2,
+        2,
+        "-4*s**2 + 9*s - 4"
+      ],
+      [
+        1,
+        2,
+        1,
+        "-s**3 + 4*s**2 - 2*s"
+      ],
+      [
+        1,
+        1,
+        2,
+        "-s**3 + 4*s**2 - 2*s"
+      ]
+    ],
+    "remainder_monomial_conditions": "h power>=1,total degree>=4,b power<=2,c power<=2",
+    "remainder_terms": 20,
+    "zero_tail_specialization": "p(s)|b=c=0=h^3(s-1+2h)",
+    "first_valuation_corollary": "v_ell(h)=1 forces v_ell(gcd(b,c))=1 at every good prime",
+    "progression": "a=156+2450n,n>=0;v_5(a-1)=v_7(a-2)=1"
+  },
+  "fixed_controls": [
+    {
+      "exponents": [
+        156,
+        156,
+        73005,
+        48048
+      ],
+      "graph_vertices": 86465371631804,
+      "complement_vertices": 1100907807165,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "tail_gcd": 3,
+      "quartic_coefficients_descending": [
+        1,
+        -550753857106,
+        10467067767706732101,
+        -606329218563832050430576,
+        1211997626342724094942540
+      ],
+      "five_direct_integer_determinants_at_zero_through_four": [
+        1211997626342724094942540,
+        605678874846108997386960,
+        -618942518275209847040,
+        -606895825753733049902060,
+        -1213151774863569045920676
+      ],
+      "exact_low_window_sturm_count": 1,
+      "endpoint_controls": [
+        {
+          "endpoint": 2,
+          "good_prime_controls": [
+            {
+              "prime": 5,
+              "h_valuation": 1,
+              "tail_valuations": [
+                1,
+                0
+              ],
+              "necessary_valuation_branch_passes": false,
+              "determinant_valuation": 1,
+              "predicted_nonzero_determinant_valuation": 1,
+              "exclusion_reason": "unequal tail valuations;unmatched cubic/anchor valuations"
+            },
+            {
+              "prime": 31,
+              "h_valuation": 1,
+              "tail_valuations": [
+                1,
+                0
+              ],
+              "necessary_valuation_branch_passes": false,
+              "determinant_valuation": 1,
+              "predicted_nonzero_determinant_valuation": 1,
+              "exclusion_reason": "unequal tail valuations;unmatched cubic/anchor valuations"
+            }
+          ],
+          "excluded_by_valuation_ranges": true
+        },
+        {
+          "endpoint": 3,
+          "good_prime_controls": [
+            {
+              "prime": 7,
+              "h_valuation": 1,
+              "tail_valuations": [
+                0,
+                1
+              ],
+              "necessary_valuation_branch_passes": false,
+              "determinant_valuation": 1,
+              "predicted_nonzero_determinant_valuation": 1,
+              "exclusion_reason": "unequal tail valuations;unmatched cubic/anchor valuations"
+            },
+            {
+              "prime": 11,
+              "h_valuation": 1,
+              "tail_valuations": [
+                0,
+                1
+              ],
+              "necessary_valuation_branch_passes": false,
+              "determinant_valuation": 1,
+              "predicted_nonzero_determinant_valuation": 1,
+              "exclusion_reason": "unequal tail valuations;unmatched cubic/anchor valuations"
+            }
+          ],
+          "excluded_by_valuation_ranges": true
+        }
+      ],
+      "both_endpoints_excluded_by_valuation_ranges": true,
+      "in_new_progression_region": true
+    },
+    {
+      "exponents": [
+        156,
+        156,
+        192325,
+        193550
+      ],
+      "graph_vertices": 917556304391272,
+      "complement_vertices": 11660781131273,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "tail_gcd": 1225,
+      "quartic_coefficients_descending": [
+        1,
+        -5844368254284,
+        354063897400725651995,
+        -68149899061952644580250804,
+        135973816591488772146649884
+      ],
+      "five_direct_integer_determinants_at_zero_through_four": [
+        135973816591488772146649884,
+        67824271593427683923796792,
+        -324565276873669057278000,
+        -68472694019450353006100160,
+        -136620114634337434132195332
+      ],
+      "exact_low_window_sturm_count": 1,
+      "endpoint_controls": [
+        {
+          "endpoint": 2,
+          "good_prime_controls": [
+            {
+              "prime": 5,
+              "h_valuation": 1,
+              "tail_valuations": [
+                2,
+                2
+              ],
+              "necessary_valuation_branch_passes": false,
+              "determinant_valuation": 3,
+              "predicted_nonzero_determinant_valuation": 3,
+              "exclusion_reason": "h cubic has uniquely lowest valuation"
+            },
+            {
+              "prime": 31,
+              "h_valuation": 1,
+              "tail_valuations": [
+                0,
+                0
+              ],
+              "necessary_valuation_branch_passes": false,
+              "determinant_valuation": 0,
+              "predicted_nonzero_determinant_valuation": 0,
+              "exclusion_reason": "neither tail divisible;anchor unit"
+            }
+          ],
+          "excluded_by_valuation_ranges": true
+        },
+        {
+          "endpoint": 3,
+          "good_prime_controls": [
+            {
+              "prime": 7,
+              "h_valuation": 1,
+              "tail_valuations": [
+                2,
+                2
+              ],
+              "necessary_valuation_branch_passes": false,
+              "determinant_valuation": 3,
+              "predicted_nonzero_determinant_valuation": 3,
+              "exclusion_reason": "h cubic has uniquely lowest valuation"
+            },
+            {
+              "prime": 11,
+              "h_valuation": 1,
+              "tail_valuations": [
+                0,
+                0
+              ],
+              "necessary_valuation_branch_passes": false,
+              "determinant_valuation": 0,
+              "predicted_nonzero_determinant_valuation": 0,
+              "exclusion_reason": "neither tail divisible;anchor unit"
+            }
+          ],
+          "excluded_by_valuation_ranges": true
+        }
+      ],
+      "both_endpoints_excluded_by_valuation_ranges": true,
+      "in_new_progression_region": true
+    },
+    {
+      "exponents": [
+        2606,
+        2606,
+        7821,
+        7824
+      ],
+      "graph_vertices": 415991273410348,
+      "complement_vertices": 425328551405,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "tail_gcd": 3,
+      "quartic_coefficients_descending": [
+        1,
+        -159607836992,
+        6509016412114039161,
+        -67885768992711971690334,
+        180904376964716331714216
+      ],
+      "five_direct_integer_determinants_at_zero_through_four": [
+        180904376964716331714216,
+        113025116988256866226052,
+        45158875043663981794272,
+        -22694348870019968603040,
+        -90534554753752631987776
+      ],
+      "exact_low_window_sturm_count": 1,
+      "endpoint_controls": [
+        {
+          "endpoint": 2,
+          "good_prime_controls": [
+            {
+              "prime": 5,
+              "h_valuation": 1,
+              "tail_valuations": [
+                0,
+                0
+              ],
+              "necessary_valuation_branch_passes": false,
+              "determinant_valuation": 0,
+              "predicted_nonzero_determinant_valuation": 0,
+              "exclusion_reason": "neither tail divisible;anchor unit"
+            },
+            {
+              "prime": 521,
+              "h_valuation": 1,
+              "tail_valuations": [
+                0,
+                0
+              ],
+              "necessary_valuation_branch_passes": false,
+              "determinant_valuation": 0,
+              "predicted_nonzero_determinant_valuation": 0,
+              "exclusion_reason": "neither tail divisible;anchor unit"
+            }
+          ],
+          "excluded_by_valuation_ranges": true
+        },
+        {
+          "endpoint": 3,
+          "good_prime_controls": [
+            {
+              "prime": 7,
+              "h_valuation": 1,
+              "tail_valuations": [
+                0,
+                0
+              ],
+              "necessary_valuation_branch_passes": false,
+              "determinant_valuation": 0,
+              "predicted_nonzero_determinant_valuation": 0,
+              "exclusion_reason": "neither tail divisible;anchor unit"
+            },
+            {
+              "prime": 31,
+              "h_valuation": 1,
+              "tail_valuations": [
+                0,
+                0
+              ],
+              "necessary_valuation_branch_passes": false,
+              "determinant_valuation": 0,
+              "predicted_nonzero_determinant_valuation": 0,
+              "exclusion_reason": "neither tail divisible;anchor unit"
+            }
+          ],
+          "excluded_by_valuation_ranges": true
+        }
+      ],
+      "both_endpoints_excluded_by_valuation_ranges": true,
+      "in_new_progression_region": true
+    },
+    {
+      "exponents": [
+        156,
+        156,
+        71610,
+        298375
+      ],
+      "graph_vertices": 526675275088662,
+      "complement_vertices": 6696876148663,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "tail_gcd": 11935,
+      "quartic_coefficients_descending": [
+        1,
+        -3354677674824,
+        194863018407159425395,
+        -22465860709470985546440324,
+        44848119304949054139670144
+      ],
+      "five_direct_integer_determinants_at_zero_through_four": [
+        44848119304949054139670144,
+        22382453458493121074980392,
+        -82822661946125736907500,
+        -22547709056388814362042440,
+        -45012205724855072866473312
+      ],
+      "exact_low_window_sturm_count": 1,
+      "endpoint_controls": [
+        {
+          "endpoint": 2,
+          "good_prime_controls": [
+            {
+              "prime": 5,
+              "h_valuation": 1,
+              "tail_valuations": [
+                1,
+                3
+              ],
+              "necessary_valuation_branch_passes": true,
+              "determinant_valuation": 4,
+              "cubic_resonance_residue": 0,
+              "necessary_cubic_resonance_passes": true
+            },
+            {
+              "prime": 31,
+              "h_valuation": 1,
+              "tail_valuations": [
+                1,
+                1
+              ],
+              "necessary_valuation_branch_passes": true,
+              "determinant_valuation": 3,
+              "cubic_resonance_residue": 13,
+              "necessary_cubic_resonance_passes": false
+            }
+          ],
+          "excluded_by_valuation_ranges": false
+        },
+        {
+          "endpoint": 3,
+          "good_prime_controls": [
+            {
+              "prime": 7,
+              "h_valuation": 1,
+              "tail_valuations": [
+                1,
+                1
+              ],
+              "necessary_valuation_branch_passes": true,
+              "determinant_valuation": 3,
+              "cubic_resonance_residue": 5,
+              "necessary_cubic_resonance_passes": false
+            },
+            {
+              "prime": 11,
+              "h_valuation": 1,
+              "tail_valuations": [
+                1,
+                1
+              ],
+              "necessary_valuation_branch_passes": true,
+              "determinant_valuation": 3,
+              "cubic_resonance_residue": 9,
+              "necessary_cubic_resonance_passes": false
+            }
+          ],
+          "excluded_by_valuation_ranges": false
+        }
+      ],
+      "both_endpoints_excluded_by_valuation_ranges": false,
+      "in_new_progression_region": false
+    },
+    {
+      "exponents": [
+        26,
+        26,
+        27,
+        30
+      ],
+      "graph_vertices": 632770,
+      "complement_vertices": 85211,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "tail_gcd": 3,
+      "quartic_coefficients_descending": [
+        1,
+        -25082,
+        37550571,
+        -2135065554,
+        7258810464
+      ],
+      "five_direct_integer_determinants_at_zero_through_four": [
+        7258810464,
+        5161270400,
+        3138681000,
+        1190891808,
+        -682247608
+      ],
+      "exact_low_window_sturm_count": 1,
+      "endpoint_controls": [
+        {
+          "endpoint": 2,
+          "good_prime_controls": [
+            {
+              "prime": 5,
+              "h_valuation": 2,
+              "tail_valuations": [
+                0,
+                1
+              ],
+              "necessary_valuation_branch_passes": true,
+              "determinant_valuation": 3
+            }
+          ],
+          "excluded_by_valuation_ranges": false
+        },
+        {
+          "endpoint": 3,
+          "good_prime_controls": [],
+          "excluded_by_valuation_ranges": false
+        }
+      ],
+      "both_endpoints_excluded_by_valuation_ranges": false,
+      "in_new_progression_region": false
+    },
+    {
+      "exponents": [
+        126,
+        126,
+        130,
+        135
+      ],
+      "graph_vertices": 287354262,
+      "complement_vertices": 8730463,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "tail_gcd": 5,
+      "quartic_coefficients_descending": [
+        1,
+        -2296794,
+        76745437255,
+        -20050943676774,
+        76215677533864
+      ],
+      "five_direct_integer_determinants_at_zero_through_four": [
+        76215677533864,
+        56241476997552,
+        36420753555000,
+        16753493425480,
+        -2760317171712
+      ],
+      "exact_low_window_sturm_count": 1,
+      "endpoint_controls": [
+        {
+          "endpoint": 2,
+          "good_prime_controls": [
+            {
+              "prime": 5,
+              "h_valuation": 3,
+              "tail_valuations": [
+                1,
+                1
+              ],
+              "necessary_valuation_branch_passes": false,
+              "determinant_valuation": 4,
+              "predicted_nonzero_determinant_valuation": 4,
+              "exclusion_reason": "equal tail valuations;anchor has uniquely lowest valuation"
+            }
+          ],
+          "excluded_by_valuation_ranges": true
+        },
+        {
+          "endpoint": 3,
+          "good_prime_controls": [
+            {
+              "prime": 31,
+              "h_valuation": 1,
+              "tail_valuations": [
+                0,
+                0
+              ],
+              "necessary_valuation_branch_passes": false,
+              "determinant_valuation": 0,
+              "predicted_nonzero_determinant_valuation": 0,
+              "exclusion_reason": "neither tail divisible;anchor unit"
+            }
+          ],
+          "excluded_by_valuation_ranges": true
+        }
+      ],
+      "both_endpoints_excluded_by_valuation_ranges": true,
+      "in_new_progression_region": false
+    }
+  ],
+  "extra_coverage_example": {
+    "exponents": [
+      156,
+      156,
+      73005,
+      48048
+    ],
+    "tail_gcd": 3,
+    "both_old_coarse_endpoint_divisibilities_pass": true,
+    "modular_factor_roots_at_only_prime_157": [
+      [
+        0,
+        1
+      ],
+      [
+        3,
+        -2
+      ]
+    ],
+    "previous_coprime_tail_lemma_hypothesis_passes": false,
+    "new_obstruction": "v_5(h_2)=v_7(h_3)=1 but min tail valuations at5,7are0"
+  },
+  "script_sha256": "7fe54541a8463551f5150f9fad796ae467fc8b52b62f2d68c5b64e003a394eaa",
+  "dependency_sha256": {
+    "check_four_prime_pair_three.py": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+    "check_four_prime_single_pair_midpoint.py": "d4e4dd85935656682409d075605236e4de37717d478122087bd289f5e160dd7e"
+  },
+  "sympy_version": "1.14.0",
+  "requires_finite_base": false,
+  "validation_counts": {
+    "support_column_actions": 336,
+    "direct_integer_determinants": 30,
+    "exact_low_window_sturm_counts": 6
+  },
+  "scope": "Written unbounded valuation ranges,cubic resonance and progression. Six noncoprime-tail controls check symbolic/support/determinant/Sturm implementation,including permitted valuation branches and failed sufficient hypotheses. No parameter scan,expanded graph,historical finite-base rerun,floating eigenvalues or Lean. Passing local conditions does not prove an integer root or graph integrality;bad primes and general classification remain open."
+}

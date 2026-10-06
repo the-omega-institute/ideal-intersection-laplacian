@@ -1,5 +1,21 @@
 # First task: Laplacian integrality
 
+The [shared-prime valuation theorem](notes/four-prime-shared-prime.md)
+gives necessary valuation ranges and a cubic resonance without any
+tail coprimality hypothesis. At a good prime of first order in
+a+1-s, the tail gcd must also have order exactly one. This extends
+the a=156+2450n progression to all tails with v_5(gcd(b,c))!=1
+and v_7(gcd(b,c))!=1, including arbitrary common divisors and
+high-order shared primes. The unit failure is resolved by the exact
+cubic leading polynomial and complete remainder monomial bounds.
+
+Next combine permitted resonances with actual low-root equations
+and second-root offsets; passing local valuation conditions is not
+an integer-root assertion. Bad primes and general classification
+remain open. Preserve all prior proofs and the eleven-row completion;
+no arbitrary tables or binary-modulus expansion. The three-prime
+main and final manuscript scope/stopping/submission remain joint.
+
 The [root-valuation lemma](notes/four-prime-root-valuation.md)
 gives v_ell(h)=2v_ell(bc),h=a+1-s, for any integer root s>=2
 with gcd(b,c)=1 and ell|h not dividing s(s-1)(2s-1). Odd
