@@ -1,5 +1,19 @@
 # First task: Laplacian integrality
 
+The [root-valuation lemma](notes/four-prime-root-valuation.md)
+gives v_ell(h)=2v_ell(bc),h=a+1-s, for any integer root s>=2
+with gcd(b,c)=1 and ell|h not dividing s(s-1)(2s-1). Odd
+good-prime multiplicities exclude low roots 2 and 3, settling every
+a=156+2450r,r>=0,b,c>=a with coprime tails. This includes cases
+passing the old endpoint divisibilities and modular splitting test.
+
+Next combine this rule at h=-t with the A_t<0 unique-tail equations,
+or examine the precise loss of the unit argument when a prime divides
+both tails. The conditions at bad primes and shared-prime tails remain
+unresolved. Preserve the previous eleven-row completion; do not expand
+arbitrary tables or repeat the binary lift diagnosis. Final manuscript
+scope/stopping/submission remains joint.
+
 The [coprime completion](notes/four-prime-coprime-completion.md)
 settles every positive repeated-minimum vector a>=5,b,c>=a with
 gcd((a-1)(a-2),bc)=1, without exceptional a. The upper minor at

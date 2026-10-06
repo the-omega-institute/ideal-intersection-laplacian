@@ -1,5 +1,15 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [root-valuation lemma](notes/four-prime-root-valuation.md)
+proves v_ell(a+1-s)=2v_ell(bc) for any integer restricted root
+s>=2, coprime tails, and ell|a+1-s not dividing s(s-1)(2s-1).
+Odd good-prime multiplicities in both a-1 and a-2 exclude the low
+roots 2 and 3. In particular every a=156+2450r,r>=0, with
+b,c>=a,gcd(b,c)=1 gives nonintegrality. A specified example passes
+both older coarse divisibilities and every p|a+1 splitting test.
+This written unbounded result also constrains second-root offsets;
+no finite exponent base is required. General classification stays open.
+
 The [coprime completion](notes/four-prime-coprime-completion.md)
 proves every (a,a,b,c),a>=5,b,c>=a,gcd((a-1)(a-2),bc)=1,
 nonintegral, removing all four exceptions from the preceding corollary.

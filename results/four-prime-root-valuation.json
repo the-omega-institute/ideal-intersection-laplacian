@@ -1,0 +1,515 @@
+{
+  "written_theorem": "If a,b,c are positive,gcd(b,c)=1,and integer s>=2 is a root of the genuine restriction,then h=a+1-s is nonzero and v_ell(h)=2v_ell(bc) for every prime ell|h with ell not dividing s(s-1)(2s-1).",
+  "written_nonintegrality_corollary": "For a>=5,b,c>=a,gcd(b,c)=1,a prime ell>=5 of odd multiplicity in a-1 and a prime q>=7 of odd multiplicity in a-2 exclude roots2,3 and graph integrality. In particular a=156+2450r,r>=0 works for every coprime pair of tails.",
+  "symbolic": {
+    "integer_polynomial_quotient": "4*a**3*b*c + 2*a**3*b + 2*a**3*c + 2*a**3 - a**2*b**2*c*s + 4*a**2*b**2*c - a**2*b**2*s + 2*a**2*b**2 - a**2*b*c**2*s + 4*a**2*b*c**2 - 3*a**2*b*c*s + 12*a**2*b*c - 4*a**2*b*s + 7*a**2*b - a**2*c**2*s + 2*a**2*c**2 - 4*a**2*c*s + 7*a**2*c - 5*a**2*s + 5*a**2 - 2*a*b**2*c**2*s + 4*a*b**2*c**2 - 2*a*b**2*c*s + 6*a*b**2*c - 2*a*b**2*s + 3*a*b**2 - 2*a*b*c**2*s + 6*a*b*c**2 + a*b*c*s**2 - 10*a*b*c*s + 13*a*b*c + 2*a*b*s**2 - 9*a*b*s + 7*a*b - 2*a*c**2*s + 3*a*c**2 + 2*a*c*s**2 - 9*a*c*s + 7*a*c + 4*a*s**2 - 8*a*s + 4*a - 2*b**2*c**2*s**2 + 3*b**2*c**2*s - b**2*c*s + 2*b**2*c - b**2*s + b**2 - b*c**2*s + 2*b*c**2 + b*c*s**2 - 5*b*c*s + 4*b*c + 2*b*s**2 - 4*b*s + 2*b - c**2*s + c**2 + 2*c*s**2 - 4*c*s + 2*c - s**3 + 3*s**2 - 3*s + 1",
+    "generic_identity": "p(s)=-(s-1)^2(2s-1)b^2c^2+(a+1-s)Q_s(a,b,c)",
+    "unit_specializations": [
+      "Q_s(s-1,0,c)=-s(s-1)^2c^2",
+      "Q_s(s-1,b,0)=-s(s-1)^2b^2"
+    ],
+    "nonzero_anchor": "p(a+1)=-a^2b^2c^2(2a+1)",
+    "bad_primes_at_two": [
+      2,
+      3
+    ],
+    "bad_primes_at_three": [
+      2,
+      3,
+      5
+    ],
+    "unbounded_progression": "a=156+2450r,r>=0;v_5(a-1)=v_7(a-2)=1",
+    "second_root_offset_identity": "s=a+1+t implies h=-t"
+  },
+  "fixed_controls": [
+    {
+      "exponents": [
+        156,
+        156,
+        24335,
+        16016
+      ],
+      "graph_vertices": 9607926611086,
+      "complement_vertices": 122986186127,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "tail_gcd": 1,
+      "quartic_coefficients_descending": [
+        1,
+        -61203320518,
+        387708909510635649,
+        -7527162685337283575340,
+        15125560474378752994752
+      ],
+      "five_direct_integer_determinants_at_zero_through_four": [
+        15125560474378752994752,
+        7598785497889776734544,
+        72785938852601822540,
+        -7452438203099991664332,
+        -14976886928335223649120
+      ],
+      "exact_low_window_sturm_count": 1,
+      "endpoint_controls": [
+        {
+          "endpoint": 2,
+          "odd_good_prime_witnesses": [
+            {
+              "prime": 5,
+              "v_prime_h": 1,
+              "v_prime_bc": 1,
+              "v_prime_p_endpoint": 1,
+              "unequal_summand_valuations": [
+                1,
+                2
+              ]
+            },
+            {
+              "prime": 31,
+              "v_prime_h": 1,
+              "v_prime_bc": 1,
+              "v_prime_p_endpoint": 1,
+              "unequal_summand_valuations": [
+                1,
+                2
+              ]
+            }
+          ],
+          "old_coarse_divisibility_passes": true
+        },
+        {
+          "endpoint": 3,
+          "odd_good_prime_witnesses": [
+            {
+              "prime": 7,
+              "v_prime_h": 1,
+              "v_prime_bc": 1,
+              "v_prime_p_endpoint": 1,
+              "unequal_summand_valuations": [
+                1,
+                2
+              ]
+            },
+            {
+              "prime": 11,
+              "v_prime_h": 1,
+              "v_prime_bc": 1,
+              "v_prime_p_endpoint": 1,
+              "unequal_summand_valuations": [
+                1,
+                2
+              ]
+            }
+          ],
+          "old_coarse_divisibility_passes": true
+        }
+      ],
+      "in_new_sufficient_region": true
+    },
+    {
+      "exponents": [
+        156,
+        156,
+        157,
+        158
+      ],
+      "graph_vertices": 619232176,
+      "complement_vertices": 15553361,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "tail_gcd": 1,
+      "quartic_coefficients_descending": [
+        1,
+        -3994236,
+        196335643499,
+        -62121399111636,
+        241908892148700
+      ],
+      "five_direct_integer_determinants_at_zero_through_four": [
+        241908892148700,
+        179983824686328,
+        118451404545552,
+        57311607760992,
+        -3435589632708
+      ],
+      "exact_low_window_sturm_count": 1,
+      "endpoint_controls": [
+        {
+          "endpoint": 2,
+          "odd_good_prime_witnesses": [
+            {
+              "prime": 5,
+              "v_prime_h": 1,
+              "v_prime_bc": 0,
+              "v_prime_p_endpoint": 0,
+              "unequal_summand_valuations": [
+                1,
+                0
+              ]
+            },
+            {
+              "prime": 31,
+              "v_prime_h": 1,
+              "v_prime_bc": 0,
+              "v_prime_p_endpoint": 0,
+              "unequal_summand_valuations": [
+                1,
+                0
+              ]
+            }
+          ],
+          "old_coarse_divisibility_passes": false
+        },
+        {
+          "endpoint": 3,
+          "odd_good_prime_witnesses": [
+            {
+              "prime": 7,
+              "v_prime_h": 1,
+              "v_prime_bc": 0,
+              "v_prime_p_endpoint": 0,
+              "unequal_summand_valuations": [
+                1,
+                0
+              ]
+            },
+            {
+              "prime": 11,
+              "v_prime_h": 1,
+              "v_prime_bc": 0,
+              "v_prime_p_endpoint": 0,
+              "unequal_summand_valuations": [
+                1,
+                0
+              ]
+            }
+          ],
+          "old_coarse_divisibility_passes": false
+        }
+      ],
+      "in_new_sufficient_region": true
+    },
+    {
+      "exponents": [
+        2606,
+        2606,
+        2607,
+        2608
+      ],
+      "graph_vertices": 46244887630126,
+      "complement_vertices": 70893756911,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "tail_gcd": 1,
+      "quartic_coefficients_descending": [
+        1,
+        -17752343036,
+        241259756044937849,
+        -1258530107187497550186,
+        5025924907672884415200
+      ],
+      "five_direct_integer_determinants_at_zero_through_four": [
+        5025924907672884415200,
+        3767636060223679459828,
+        2509829732180050321952,
+        1252505923435482943392,
+        -4335366116536734008
+      ],
+      "exact_low_window_sturm_count": 1,
+      "endpoint_controls": [
+        {
+          "endpoint": 2,
+          "odd_good_prime_witnesses": [
+            {
+              "prime": 5,
+              "v_prime_h": 1,
+              "v_prime_bc": 0,
+              "v_prime_p_endpoint": 0,
+              "unequal_summand_valuations": [
+                1,
+                0
+              ]
+            },
+            {
+              "prime": 521,
+              "v_prime_h": 1,
+              "v_prime_bc": 0,
+              "v_prime_p_endpoint": 0,
+              "unequal_summand_valuations": [
+                1,
+                0
+              ]
+            }
+          ],
+          "old_coarse_divisibility_passes": false
+        },
+        {
+          "endpoint": 3,
+          "odd_good_prime_witnesses": [
+            {
+              "prime": 7,
+              "v_prime_h": 1,
+              "v_prime_bc": 0,
+              "v_prime_p_endpoint": 0,
+              "unequal_summand_valuations": [
+                1,
+                0
+              ]
+            },
+            {
+              "prime": 31,
+              "v_prime_h": 1,
+              "v_prime_bc": 0,
+              "v_prime_p_endpoint": 0,
+              "unequal_summand_valuations": [
+                1,
+                0
+              ]
+            }
+          ],
+          "old_coarse_divisibility_passes": false
+        }
+      ],
+      "in_new_sufficient_region": true
+    },
+    {
+      "exponents": [
+        5056,
+        5056,
+        5057,
+        5058
+      ],
+      "graph_vertices": 654379087323076,
+      "complement_vertices": 517372395461,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "tail_gcd": 1,
+      "quartic_coefficients_descending": [
+        1,
+        -129451821836,
+        6620354520044777199,
+        -66974796545281718153736,
+        267674197548061234721700
+      ],
+      "five_direct_integer_determinants_at_zero_through_four": [
+        267674197548061234721700,
+        200706021357170109523328,
+        133751085874542362948352,
+        66809391099401284065792,
+        -119062969029838055308
+      ],
+      "exact_low_window_sturm_count": 1,
+      "endpoint_controls": [
+        {
+          "endpoint": 2,
+          "odd_good_prime_witnesses": [
+            {
+              "prime": 5,
+              "v_prime_h": 1,
+              "v_prime_bc": 0,
+              "v_prime_p_endpoint": 0,
+              "unequal_summand_valuations": [
+                1,
+                0
+              ]
+            },
+            {
+              "prime": 337,
+              "v_prime_h": 1,
+              "v_prime_bc": 0,
+              "v_prime_p_endpoint": 0,
+              "unequal_summand_valuations": [
+                1,
+                0
+              ]
+            }
+          ],
+          "old_coarse_divisibility_passes": false
+        },
+        {
+          "endpoint": 3,
+          "odd_good_prime_witnesses": [
+            {
+              "prime": 7,
+              "v_prime_h": 1,
+              "v_prime_bc": 0,
+              "v_prime_p_endpoint": 0,
+              "unequal_summand_valuations": [
+                1,
+                0
+              ]
+            }
+          ],
+          "old_coarse_divisibility_passes": false
+        }
+      ],
+      "in_new_sufficient_region": true
+    },
+    {
+      "exponents": [
+        156,
+        156,
+        1550,
+        16017
+      ],
+      "graph_vertices": 612377734780,
+      "complement_vertices": 8203681181,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "tail_gcd": 1,
+      "quartic_coefficients_descending": [
+        1,
+        -3903253772,
+        10758881265619531,
+        -32020248582088467444,
+        67174838865066802284
+      ],
+      "five_direct_integer_determinants_at_zero_through_four": [
+        67174838865066802284,
+        35165349160340700600,
+        3177377194726315360,
+        -28789077055195876032,
+        -60734013612845396148
+      ],
+      "exact_low_window_sturm_count": 1,
+      "endpoint_controls": [
+        {
+          "endpoint": 2,
+          "odd_good_prime_witnesses": [
+            {
+              "prime": 5,
+              "v_prime_h": 1,
+              "v_prime_bc": 2,
+              "v_prime_p_endpoint": 1,
+              "unequal_summand_valuations": [
+                1,
+                4
+              ]
+            },
+            {
+              "prime": 31,
+              "v_prime_h": 1,
+              "v_prime_bc": 1,
+              "v_prime_p_endpoint": 1,
+              "unequal_summand_valuations": [
+                1,
+                2
+              ]
+            }
+          ],
+          "old_coarse_divisibility_passes": true
+        },
+        {
+          "endpoint": 3,
+          "odd_good_prime_witnesses": [
+            {
+              "prime": 7,
+              "v_prime_h": 1,
+              "v_prime_bc": 0,
+              "v_prime_p_endpoint": 0,
+              "unequal_summand_valuations": [
+                1,
+                0
+              ]
+            },
+            {
+              "prime": 11,
+              "v_prime_h": 1,
+              "v_prime_bc": 0,
+              "v_prime_p_endpoint": 0,
+              "unequal_summand_valuations": [
+                1,
+                0
+              ]
+            }
+          ],
+          "old_coarse_divisibility_passes": false
+        }
+      ],
+      "in_new_sufficient_region": true
+    },
+    {
+      "exponents": [
+        26,
+        26,
+        27,
+        28
+      ],
+      "graph_vertices": 591946,
+      "complement_vertices": 80891,
+      "embedding_columns_checked": 4,
+      "expanded_graph_checked": false,
+      "weighted_symmetry_zero_sum_complement_join": "passed",
+      "tail_gcd": 1,
+      "quartic_coefficients_descending": [
+        1,
+        -23516,
+        33947909,
+        -1900288566,
+        6545107800
+      ],
+      "five_direct_integer_determinants_at_zero_through_four": [
+        6545107800,
+        4678743628,
+        2880134192,
+        1149138432,
+        -514384688
+      ],
+      "exact_low_window_sturm_count": 1,
+      "endpoint_controls": [
+        {
+          "endpoint": 2,
+          "odd_good_prime_witnesses": [],
+          "old_coarse_divisibility_passes": false
+        },
+        {
+          "endpoint": 3,
+          "odd_good_prime_witnesses": [],
+          "old_coarse_divisibility_passes": true
+        }
+      ],
+      "in_new_sufficient_region": false
+    }
+  ],
+  "extra_coverage_example": {
+    "exponents": [
+      156,
+      156,
+      24335,
+      16016
+    ],
+    "tail_gcd": 1,
+    "both_old_endpoint_divisibilities_pass": true,
+    "all_prime_divisors_of_a_plus_one": [
+      157
+    ],
+    "modular_factor_roots": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        -1
+      ]
+    ],
+    "new_obstruction": "v_5(a-1)=1 and v_7(a-2)=1 exclude both low integer roots"
+  },
+  "script_sha256": "88abddcd97d6588ac6fee96169c00ccb71646b9b2f94a7ece87493763e169fed",
+  "dependency_sha256": {
+    "check_four_prime_pair_three.py": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+    "check_four_prime_single_pair_midpoint.py": "d4e4dd85935656682409d075605236e4de37717d478122087bd289f5e160dd7e"
+  },
+  "sympy_version": "1.14.0",
+  "requires_finite_base": false,
+  "validation_counts": {
+    "support_column_actions": 336,
+    "direct_integer_determinants": 30,
+    "exact_low_window_sturm_counts": 6
+  },
+  "scope": "Written unbounded root-valuation lemma and nonintegrality progression; six fixed algebra/support/Sturm controls,including one limitation outside the sufficient region. No parameter scan,expanded graph,historical finite-base rerun,floating eigenvalues or Lean. General shared-prime tails,single-pair,fully unequal four-prime and higher-prime classification remain open."
+}
