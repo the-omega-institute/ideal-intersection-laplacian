@@ -1,5 +1,13 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [infinite-order obstruction](notes/four-prime-nontorsion.md)
+proves that the coset's fixed Galois difference is nontorsion.
+Multiplication and Q-defined isogenies cannot rationalize any
+coset point. Two explicit independent infinite-order witnesses
+give rank E0(K)>=2, with rational and twist ranks at least one.
+These are proved lower bounds; exact ranks, full bases and
+complete translated-integral point enumeration remain uncomputed.
+
 The [Galois coset theorem](notes/four-prime-galois-coset.md)
 restricts the quadratic-field images to Pstar+E0(Q), with
 an explicit fixed Galois difference and translation to the

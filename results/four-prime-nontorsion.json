@@ -1,0 +1,63 @@
+{
+  "written_result": "The fixed Galois difference T has infinite order; multiplication and Q-defined isogenies cannot rationalize the coset. An explicit rational infinite-order point is independent of T, giving rank E(K)>=2.",
+  "exact_checks": {
+    "short_E_a_invariants": [
+      0,
+      0,
+      0,
+      -78162568812,
+      8433576786332241
+    ],
+    "T_short_X": "58102413/203",
+    "T_short_Y_coefficient_s": "-19235372130/41209",
+    "quadratic_twist_d": 43645,
+    "twist_a_invariants": [
+      0,
+      0,
+      0,
+      -148890785008079652300,
+      701157036776970375669428731125
+    ],
+    "twist_T_rational_X_Y": [
+      12492018795,
+      -889155076709250
+    ],
+    "twist_map_identity": "(X,Y)->(dX,dsY),s^2=d",
+    "twist_map_identity_verified": true,
+    "twist_T_on_curve": true,
+    "twist_discriminant": -1136815976280408035609325833402796221443116889195408218750000,
+    "nagell_lutz_witness_prime": 1201,
+    "twist_T_Y_mod_witness": 0,
+    "twist_discriminant_mod_witness": 4,
+    "T_infinite_order_by_nagell_lutz": true,
+    "specified_rational_S_X_Y": [
+      "19517052/121",
+      "6328630035/1331"
+    ],
+    "specified_rational_S_nonintegral_X": true,
+    "S_infinite_order_by_nagell_lutz": true,
+    "S_galois_sign": 1,
+    "T_galois_sign": -1,
+    "S_T_independent_over_Z": true,
+    "proved_rank_lower_bounds": {
+      "E_Q": 1,
+      "quadratic_twist_Q": 1,
+      "E_K": 2
+    },
+    "all_nonzero_multiples_of_coset_points_are_nonrational": true,
+    "all_images_under_nonzero_Q_defined_isogenies_are_nonrational": true
+  },
+  "proof_input": "Nagell-Lutz theorem on nonsingular short Weierstrass equations with integer coefficients; Galois eigenspace independence and finite isogeny kernel.",
+  "exact_rank_computed": false,
+  "rational_or_field_basis_certified": false,
+  "complete_integral_point_algorithm_run": false,
+  "integral_points_enumerated": false,
+  "new_nonintegrality_classification": false,
+  "script_sha256": "8470ca26f4641dd7e98a9bcdf105fbd8598d527129136ef4c6eea9fea6c0935d",
+  "dependency_sha256": {
+    "check_four_prime_a6_elliptic.py": "212cbf0c3f95d6c3670c7cd913b0b6e9aa55eb5df47e03b073ea74aef2f5c7aa",
+    "check_four_prime_affine_integrality.py": "8f9f40a06e350b12f7b0f1d020d60eedfc0b22f429643668d5777c9299945aff"
+  },
+  "sympy_version": "1.14.0",
+  "scope": "Written infinite-order and Galois/isogeny obstruction proofs, exact twist/curve identities and two specified infinite-order witnesses. Proved rank lower bounds, not exact ranks or a basis. No point enumeration, arbitrary scan, graph or historical finite-base rerun, floats or Lean."
+}

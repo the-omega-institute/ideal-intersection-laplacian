@@ -1,5 +1,19 @@
 # First task: Laplacian integrality
 
+The [infinite-order obstruction](notes/four-prime-nontorsion.md)
+rules out rationalization by multiplication or Q-defined isogeny.
+Exact Nagell-Lutz witnesses give rational and twist rank lower
+bounds one and field rank lower bound two. No exact rank or
+full basis is certified.
+
+Next retain the translated-integrality problem on Pstar+E0(Q)
+and verify an algorithm with a complete contract for that
+condition or the original affine quartic. A full rational basis
+may be required. Do not substitute ordinary integral Q points,
+fixed-multiplier rationalization or arbitrary group bounds.
+Preserve the full O_K, both signs and exact recovery filter.
+Earlier results and joint manuscript decisions retain their scopes.
+
 The [Galois coset theorem](notes/four-prime-galois-coset.md)
 refines the field target to Pstar+E0(Q). Its translated rational
 point equals the negative of the prior rational chart; the
