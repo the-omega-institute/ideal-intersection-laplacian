@@ -1,5 +1,19 @@
 # First task: Laplacian integrality
 
+The [explicit a=6 elliptic model](notes/four-prime-a6-elliptic.md)
+now has verified rational maps, compositions and exceptional points.
+No rational A=0 or inverse-denominator-zero fibers remain in this
+case. The exact compact inverse gives both tail integrality tests.
+
+Next identify a complete integral-point method for the original
+quartic or the inverse b(P),c(P), together with a certified full
+Mordell-Weil basis. The usual integral X,Y list does not by itself
+certify all integral quartic points; allowed denominator primes
+need proof. Do not replace this condition by a coordinate or
+group-coefficient scan. Rank, basis and complete point enumeration
+have not been computed. Preserve previous results, finite inputs
+and the three-prime main; final manuscript decisions remain joint.
+
 The [root-two curve theorem](notes/four-prime-root-two-curve.md)
 gives a smooth genus-one model for every fixed a>=2, with no
 exceptional integer a in this range. Siegel's theorem makes its

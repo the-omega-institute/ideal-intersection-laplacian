@@ -1,5 +1,15 @@
 # Laplacian integrality of ideal intersection graphs
 
+The [explicit a=6 elliptic model](notes/four-prime-a6-elliptic.md)
+turns the complete root-two tail equation into
+Y^2=X^3-78162568812X+8433576786332241, with verified forward
+and inverse maps and all rational exceptions accounted for.
+The recovered b,c must be positive integers; the maps have
+denominators, and integral quartic points can have nonintegral
+Weierstrass images. No rank or complete integral-point list is
+claimed. The next step needs an algorithm for the original
+affine integrality condition and a certified group basis.
+
 The [root-two curve theorem](notes/four-prime-root-two-curve.md)
 proves that for each fixed a>=2 the complete equation p(2)=0 has
 only finitely many positive integer tail pairs. An exact squarefree

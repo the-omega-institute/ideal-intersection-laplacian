@@ -1,0 +1,103 @@
+{
+  "written_result": "Explicit birational equivalence of p(2;6,b,c)=0 to Y^2=X^3-78162568812X+8433576786332241, with both maps and all rational exceptional points accounted for.",
+  "symbolic": {
+    "a6_endpoint_reconstructed_by_symbolic_permutation_determinant": true,
+    "square_completion_identity": "W^2-f(b)=A(b)*p(2;6,b,c)",
+    "quadratic_discriminant_derivation": true,
+    "forward_and_inverse_curve_identities": true,
+    "both_map_compositions": true,
+    "compact_inverse_b": "(1628640*X + 2340*Y - 253444000680)/((2*X - 398409)**2 - 5377107645)",
+    "quartic_coefficients_descending": [
+      43645,
+      1152400,
+      6640150,
+      4524000,
+      950625
+    ],
+    "weierstrass_a_invariants": [
+      0,
+      0,
+      0,
+      -78162568812,
+      8433576786332241
+    ],
+    "weierstrass_discriminant": -164468670344965775252034431406000,
+    "alpha_nonsquare_interval": [
+      208,
+      209
+    ],
+    "rational_A_equals_zero_fibers": [],
+    "rational_inverse_denominator_zero_fibers": [],
+    "rational_quartic_points_at_infinity": [],
+    "b_zero_positive_height": {
+      "b": 0,
+      "W": 975,
+      "c": "-5/7",
+      "image": "O"
+    },
+    "b_zero_negative_height": {
+      "b": 0,
+      "W": -975,
+      "c": "55",
+      "image_X_Y": [
+        86007,
+        48448530
+      ]
+    },
+    "only_finite_E_point_with_inverse_b_zero": [
+      86007,
+      48448530
+    ]
+  },
+  "specified_rational_round_trips": [
+    {
+      "b": "55",
+      "W": "781950",
+      "c": "0",
+      "X": "252030",
+      "Y": "68869359",
+      "exact_round_trip": true,
+      "positive_integer_graph_tail_pair": false
+    },
+    {
+      "b": "55",
+      "W": "-781950",
+      "c": "26065/271",
+      "X": "19517052/121",
+      "Y": "6328630035/1331",
+      "exact_round_trip": true,
+      "positive_integer_graph_tail_pair": false
+    },
+    {
+      "b": "-5/7",
+      "W": "-5850/7",
+      "c": "0",
+      "X": "-322908",
+      "Y": "1848015",
+      "exact_round_trip": true,
+      "positive_integer_graph_tail_pair": false
+    },
+    {
+      "b": "-5/7",
+      "W": "5850/7",
+      "c": "-455/93",
+      "X": "252030",
+      "Y": "-68869359",
+      "exact_round_trip": true,
+      "positive_integer_graph_tail_pair": false
+    }
+  ],
+  "integrality_filter": "Recover b and W, then c=(W-210b^2-2650b-950)/A(b); require positive integers b,c, or b,c>=6 for repeated minimum.",
+  "weierstrass_integral_points_alone_are_complete_quartic_certificate": false,
+  "rank_computed": false,
+  "mordell_weil_basis_certified": false,
+  "minimal_model_claimed": false,
+  "integral_points_enumerated": false,
+  "script_sha256": "212cbf0c3f95d6c3670c7cd913b0b6e9aa55eb5df47e03b073ea74aef2f5c7aa",
+  "dependency_sha256": {
+    "check_four_prime_pair_three.py": "87887c7f0722e822c0654d4d18f11de4efd7c215a4e6b6252d1f9f8dc500bb88",
+    "check_four_prime_single_pair_midpoint.py": "d4e4dd85935656682409d075605236e4de37717d478122087bd289f5e160dd7e"
+  },
+  "sympy_version": "1.14.0",
+  "scope": "Generic exact coordinate/curve/composition identities and four specified rational controls, plus nonsquare denominator and exceptional-point analysis. No graph control rerun, exponent scan, expanded graph, historical finite-base rerun, rank/basis/complete integral-point computation, floats or Lean. Previous finiteness and joint manuscript decisions retain their scopes."
+}
