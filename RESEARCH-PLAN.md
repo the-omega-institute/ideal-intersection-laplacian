@@ -3,7 +3,7 @@
 The selected main-paper direction is the [three-prime classification
 manuscript](paper/classification-core.pdf), following coauthor review of
 the 25-page candidate. Its full proof chain, finite bases and coefficient
-appendices remain together. The original 61/67-page collection and the
+appendices remain together. The 62-page collection, earlier 67-page detailed build and the
 higher-prime research branch supply supporting material, without a separate
 submission being inferred. See the [placement decision](notes/classification-core-placement.md).
 Prioritize independent review of this focused proof and concrete corrections
@@ -17,7 +17,8 @@ vector (a,b,c) gives a nonintegral ideal intersection graph. The new
 largest-root interval (bc+a+b+c,bc+a+b+c+1), the endpoint-one sum bound,
 and written gap1/2 brackets complete the last alternative. The combined
 classification retains historical27562/8658finite bases. The interval
-itself has a written real proof with36/170complete positive terms.
+itself has a written real proof at minimum two, with the original36/170
+positive identities and a35-coefficient slab bound.
 Higher-prime nonsquarefree Q3 remains open; effective integer exponent-point
 enumeration is separate. Submission and freeze remain pending.
 Earlier research status paragraphs below describe

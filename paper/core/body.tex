@@ -1042,7 +1042,7 @@ root or enumerating integer exponent points on the endpoint surface.
 
 \begin{theorem}
 \label{thm:largest-root-unit-interval}
-Let $3\leq a\leq b\leq c$ be real, with $b-a\geq3$ and $c\geq a^2-a$.
+Let $2\leq a\leq b\leq c$ be real, with $b-a\geq3$ and $c\geq a^2-a$.
 Put $s=a+b+c$ and $M=bc+s$. Then
 \[
  M<\lambda_{\max}(C)<M+1.
@@ -1061,11 +1061,21 @@ where
 \[
  T=(2b^2-ab+b-a)c^2-[(a-1)b^2+a^2]c-ab(a+b).
 \]
-Put $P(a,b,c)=h_C(M+1)$. Under
+The quadratic coefficient of $T$ in $c$ is positive, and
+\[
+ T(a,b,b)=2b[(b-a+1)b^2-ab-a^2]\geq2b^3(b-a-1)>0,
+ \qquad \partial_cT(a,b,b)\geq b^3>0.
+\]
+The derivative bound follows from
+$\partial_cT(a,b,b)=b^2(4b-3a+3)-2ab-a^2$ and $a\leq b$.
+Thus $T>0$ for $c\geq b$. Put $P(a,b,c)=h_C(M+1)$. For $a\geq3$, under
 $a=3+m$, $b=a+3+u$, $c=a^2-a+v$, with $m,u,v\geq0$,
 the complete identities in Appendix~\ref{sec:largest-root-identities}
 express $T$ and $P$ as polynomials with respectively $36$ and $170$
 strictly positive coefficients, including constants $1404$ and $513220$.
+For $2\leq a\leq3$, write $a=2+m$, $b=a+3+u$, $c=b+v$,
+where $0\leq m\leq1$ and $u,v\geq0$. The same appendix gives
+$P\geq B(u,v)>0$, with all $35$ coefficients of $B$ displayed.
 Thus $h_C(M)<0<h_C(M+1)$, giving a root in $(M,M+1)$.
 
 To identify it as the largest root, use the symmetric similarity $S$
@@ -1081,7 +1091,7 @@ At $x=M+1$, both $x-b$ and $x-c$ exceed $bc$. Hence
  \ell_b&=c(b-a)+1-\frac{abc}{x-b}>c(b-a)+1-a>0,\\
  \ell_c&=b(c-a)+1-\frac{abc}{x-c}>b(c-a)+1-a>0.
 \end{align*}
-Here $c\geq a^2-a\geq a+3$. The $b,c$ principal block of $H$ is
+Here $c\geq b\geq a+3$. The $b,c$ principal block of $H$ is
 positive definite, and $\det(xI-S)=xP>0$ gives $\det H>0$.
 Its remaining scalar Schur complement is therefore positive.
 Consequently $xI-S$ is positive definite, and every eigenvalue is less

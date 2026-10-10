@@ -6,8 +6,8 @@ focused candidate. It presents the completed three-prime theorem with its
 full proof chain, historical finite certificates and complete coefficient tables. The
 [material-placement map](notes/classification-core-placement.md) distinguishes
 the retained core from auxiliary arithmetic and higher-prime results.
-The original 61-page manuscript remains the supporting research collection;
-the detailed build is 67 pages. This placement does not designate the collection
+The 62-page manuscript remains the supporting research collection;
+the earlier detailed build is 67 pages. This placement does not designate the collection
 as a separate submission. The alphabetical author order and Reza Nikandish
 as corresponding author are agreed. The revised manuscript includes the
 confirmed tool uses; exact disclosure wording, final title, journal and
@@ -30,8 +30,14 @@ three-coefficient quadratic identity. The subsequent residual-spectrum
 statements retain their hypothesis `a >= 4`.
 
 An independent [direct determinant and manuscript-table check](notes/largest-root-coefficient-verification.md)
-confirms all 247 displayed coefficients in the largest-root and small-gap
-proofs, together with their Schur identities and anchor bounds.
+confirms the original 36/170 largest-root tables and six current small-gap
+vectors, totaling 247 coefficients, together with their Schur identities and anchor bounds.
+
+The [largest-root interval](notes/largest-root-minimum-two.md) now holds
+for real `2 <= a <= b <= c`, with `b-a >= 3` and `c >= a^2-a`.
+A written quadratic argument proves the lower sign; a 35-coefficient
+positive bound fills the range `2 <= a <= 3`. Its direct determinant
+check and two fixed rational controls introduce no finite exponent base.
 
 The [endpoint-two direct check](notes/endpoint-two-coefficient-verification.md)
 also confirms all 240 nonzero coefficients in its three tables, the middle
@@ -57,7 +63,8 @@ vector (a,b,c) gives a nonintegral ideal intersection graph. The new
 largest-root interval (bc+a+b+c,bc+a+b+c+1), the endpoint-one sum bound,
 and written gap1/2 brackets complete the last alternative. The combined
 classification retains historical27562/8658finite bases. The interval
-itself has a written real proof with36/170complete positive terms.
+itself has a written real proof at minimum two, with the original36/170
+positive identities and a35-coefficient slab bound.
 Higher-prime nonsquarefree Q3 remains open; effective integer exponent-point
 enumeration is separate. Submission and freeze remain pending.
 Earlier research status paragraphs below describe

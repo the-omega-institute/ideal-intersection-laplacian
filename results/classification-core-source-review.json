@@ -2,8 +2,8 @@
   "source_base_commit": "08065334917ac0bacc965e4c447e2b2aa5c421d1",
   "original_proof_source_revision": "7be84599097fdff320b196cb4f84a2dfe505bd77",
   "scope": "Source concordance, explicit-reference closure and selected statement/proof bodies matching the current source sections; not an independent proof validation or certificate rerun.",
-  "written_proof_update": "Endpoint-one sum bound and small-gap1/2 exponent-root brackets hold at real minimum a>=2; residual spectral claims retain a>=4. Small-gap sign vectors use a=2+m with the L2=b boundary explicit.",
-  "generated_body_sha256": "acbbf27aa8d9c073f0e6429e1314d7645c4527e303441709b6479aa33186469e",
+  "written_proof_update": "Endpoint-one sum bound, small-gap1/2 exponent-root brackets and largest-root unit interval hold at real minimum a>=2; general endpoint-one residual claims retain a>=4. Largest-root upper sign adds a35-coefficient lower bound on2<=a<=3. Small-gap sign vectors use a=2+m with the L2=b boundary explicit.",
+  "generated_body_sha256": "e9e169f44eec277be7c3453d63136261c7269b00c841c3ed2102b3a82987da12",
   "generated_bibliography_sha256": "a4e88f7600b492ab2443fd7e91c54bd2d6debf2710523d9710c0343dea1e991f",
   "selections": [
     {
@@ -113,15 +113,15 @@
     },
     {
       "source": "paper/sections/three-prime-classification.tex",
-      "source_sha256": "48667699a820237a5b6b9115b8304dfa7e9a041886828534c19f5c121c3f162e",
+      "source_sha256": "f51070d109eac96d68df6c800d6be07cca131115c35f5218110e3608a337dddb",
       "start_line": 1,
-      "exclusive_end_line": 133,
-      "selected_sha256": "48667699a820237a5b6b9115b8304dfa7e9a041886828534c19f5c121c3f162e"
+      "exclusive_end_line": 143,
+      "selected_sha256": "f51070d109eac96d68df6c800d6be07cca131115c35f5218110e3608a337dddb"
     }
   ],
   "shared_appendices": {
     "paper/sections/endpoint-two-identities.tex": "1b615213520e5fa11c6dbeaa66929dd2be3de9e4eab315ada13abec530229de4",
-    "paper/sections/largest-root-identities.tex": "2a5bf37fc1e3f5c1a680be7a8565320d657e1c9ff6ca9eeba0854a003877823d"
+    "paper/sections/largest-root-identities.tex": "07a53cb81a1ed8ee77dc7c33e0118df215f272018be69240b0df58a4f28c577b"
   },
   "environment_counts": {
     "proof": 23,
@@ -151,9 +151,9 @@
       "c808009d90b91666c33b044a5801efc4381d49fe4609f1fe9c4f00f4729bed2f": 1,
       "c8a29afa744c48c4fc9d7cd133ac67844866089f30458a4521d6c1a6176d34f5": 1,
       "ce53be365664f060ecac548297157ee51ebeb50edb580a5994798eb9098c47fe": 1,
+      "d7abad8e7fa129e2021956a45ad8ca1579ac9a7d78b43d58bbb6250a2c8415f5": 1,
       "e99242c6866afe7ed232252f48ce5afa0348115371699e10a8653522501b7b71": 1,
       "f3235a0b601661da2d3ae0bec7e982a9496dac9aca3d3bb5255039098428040e": 1,
-      "f707e81698b740d265ad9d8b06a57c07197bfa62d10d9ca466a7e2ead1dc4b06": 1,
       "fc20cc0f940223d6cb53bc286fb080b30c985ec5aaa61b84bb6c394ef253e72a": 1
     },
     "theorem": {
@@ -162,10 +162,10 @@
       "2b3d2f962d910972da93e9a0113fc8f033482a02ac11e7947fd89b34f22334c4": 1,
       "3303a876648d8ecc07b2b1914d637570fb795ea8836b74fa3867a4d2e63b79e6": 1,
       "69e5a2c5bd0d0b8bfbb6c654fc72b0dc1a8156bc175924a758fd5bb8e5146675": 1,
-      "7cfe6de95075b06d00b50eea938944e78dddae9007ad14f6fb005e41c08fe506": 1,
       "a1a3d8457fafeb4cf6bb8ec6582b850b9dc3c7d23f5e097f882f1ee0d11879f7": 1,
       "aa6631cea13849e2ce1f54345543bf0323d6c8aad1312372f94e68352d111e45": 1,
       "b4ced0019201c1b97cf9d904b974d1ee8d10bc9efcc369532cb51cc27a49e377": 1,
+      "d0e033fee6ba06176269b64ac8256269f20ea1ed20a22845e8edb290a90e6127": 1,
       "d3110886bf2e9a57d5cc4fbfc2859db1122102b293881e9f6905712f18e18ad6": 1,
       "ffa535e6e072e111b65c1a9cde78346b589f7b351e1f49be58d31ad162e66c3d": 1
     },

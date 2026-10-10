@@ -9,7 +9,7 @@ For $a=3+m$, $b=a+3+u$, $c=a^2-a+v$, each row below gives the
 ascending $m$ coefficient vector of $u^i v^j$. All rows and all
 coefficients are displayed: $36$ terms for $T$, $170$ for $P$.
 Every coefficient is positive. Thus the identities establish the two
-signs on the whole unbounded real domain, rather than by extrapolating
+signs on the unbounded real domain with $a\geq3$, rather than by extrapolating
 from integer controls.
 
 The independent Schur reconstruction uses
@@ -100,6 +100,36 @@ $d$ & Expression & Ascending $m$ coefficient vector\\
 2 & $-Q(b)$ & $[57,\allowbreak 1689,\allowbreak 2513,\allowbreak 1516,\allowbreak 456,\allowbreak 68,\allowbreak 4]$\\
 2 & $-Q(L_d)$ & $[57,\allowbreak 1009,\allowbreak 2119,\allowbreak 1140,\allowbreak 232,\allowbreak 16]$\\
 2 & $Q(L_d+1)$ & $[160,\allowbreak 360,\allowbreak 640,\allowbreak 892,\allowbreak 476,\allowbreak 104,\allowbreak 8]$\\
+\bottomrule
+\end{tabular}
+\endgroup
+
+\subsection{The upper sign for minima between two and three}
+
+Put $a=2+m$, $b=5+m+u$, $c=b+v$, with $0\leq m\leq1$ and $u,v\geq0$,
+and expand $P=\sum p_{kij}m^ku^iv^j$. Define
+$B=\sum_{i,j}(p_{0ij}+\sum_{k\geq1,\,p_{kij}<0}p_{kij})u^iv^j$.
+The exact identity
+\[
+ P-B=\sum_{k\geq1,\,p_{kij}>0}p_{kij}m^ku^iv^j
+       +\sum_{k\geq1,\,p_{kij}<0}|p_{kij}|(1-m^k)u^iv^j\geq0
+\]
+holds on this slab. The following complete ascending $u$ vectors of $v^j$
+give $B$ directly from the determinant above. All $35$ coefficients
+are positive, so $P\geq B\geq259876>0$.
+
+\begingroup
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\noindent\begin{tabular}{cp{14.0cm}}
+\toprule
+$j$ & Ascending $u$ coefficient vector of $B$\\
+\midrule
+0 & $[259876,\allowbreak 480352,\allowbreak 371193,\allowbreak 157834,\allowbreak 41170,\allowbreak 6792,\allowbreak 693,\allowbreak 40,\allowbreak 1]$\\
+1 & $[240176,\allowbreak 371193,\allowbreak 236751,\allowbreak 82340,\allowbreak 16980,\allowbreak 2079,\allowbreak 140,\allowbreak 4]$\\
+2 & $[77666,\allowbreak 100317,\allowbreak 52638,\allowbreak 14520,\allowbreak 2226,\allowbreak 180,\allowbreak 6]$\\
+3 & $[10700,\allowbreak 11468,\allowbreak 4800,\allowbreak 987,\allowbreak 100,\allowbreak 4]$\\
+4 & $[540,\allowbreak 468,\allowbreak 147,\allowbreak 20,\allowbreak 1]$\\
 \bottomrule
 \end{tabular}
 \endgroup

@@ -110,7 +110,9 @@ known integer point, without a point enumeration or rank computation.
 \subsection{Largest-root completion and classification dependencies}
 
 Theorem~\ref{thm:largest-root-unit-interval} uses the complete $36$- and
-$170$-term positive identities in Appendix~\ref{sec:largest-root-identities}.
+$170$-term positive identities for $a\geq3$ and the $35$-coefficient
+positive lower bound for $2\leq a\leq3$ in
+Appendix~\ref{sec:largest-root-identities}.
 The pinned
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4471a5b4a02d97d3dcf78ea004298d5592924a95/scripts/check_largest_root_unit_interval.py}{checker}
 reconstructs the generic quotient and the independent Schur determinant,
@@ -130,6 +132,14 @@ The latter now use $a=2+m$, proving the real minimum-two brackets;
 the boundary $L_2=b$ at $a=2$ is retained explicitly in the proof.
 It shares the support model and SymPy backend, but does not import the
 original characteristic-polynomial helper.
+
+The separate \path{scripts/verify_largest_root_minimum_two.py} checks
+the $143$-term expansion at $a=2+m$, $b=5+m+u$, $c=b+v$.
+On $0\leq m\leq1$, its $39$ negative terms are bounded using $m^k\leq1$;
+discarding the remaining positive terms with $k\geq1$ gives the displayed
+$35$ positive lower-bound coefficients. The lower-sign quadratic and
+Schur diagonal bounds are also checked generically. Two fixed rational
+controls supplement the written real-domain proof; no finite base is added.
 
 Theorem~\ref{thm:three-prime-classification} retains the established
 $27\,562$-triple minimum-through-seven and $8\,658$-triple endpoint-two
