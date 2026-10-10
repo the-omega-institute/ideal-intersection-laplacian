@@ -13,7 +13,7 @@ as corresponding author are agreed. The revised manuscript includes the
 confirmed tool uses; exact disclosure wording, final title, journal and
 submission arrangements remain for coauthor review. The
 [certificate manifest](notes/classification-certificate-manifest.md) supplies
-fixed revisions, hashes and reproduction commands for the core evidence.
+fixed revisions and reproduction commands for the core evidence.
 
 The minimum-three input has a fresh
 [independent standard-library verification](notes/minimum-three-independent-verification.md).
@@ -21,6 +21,13 @@ It reconstructs all 325 remaining quintics by exact determinants and
 interpolation, confirming their noninteger-root intervals and graph lifts.
 This is a finite verification of an existing theorem input; the other
 finite bases and written arguments retain their separate scopes.
+
+The [sharp endpoint-one sum bound](notes/endpoint-one-sum-bound.md) now has
+a shorter written proof for all real `2 <= a <= b <= c`: if `h_C(1)=0`,
+then `b+c >= 2a^2-2a+1`, with equality exactly at
+`b=a, c=(a-1)(2a-1)`. An exact generic determinant check supports the
+three-coefficient quadratic identity. The subsequent residual-spectrum
+statements retain their hypothesis `a >= 4`.
 
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new
@@ -101,7 +108,7 @@ or full Q3 characterization is claimed.
 The manuscript now includes the short endpoint-one spectral proof: for
 real 4<=a<=b<=c on h_C(1)=0, root one is simple and smallest positive,
 all four residual roots exceed a, and their smallest lies below
-min(c,a+b). The twelve-term identity is in the main text; the generic
+min(c,a+b). The three-coefficient quadratic identity is in the main text; the generic
 350termresidual positivity is retained as a verification remark.
 The quartic constant rs(p+s) is positive, and its smallest integer root
 must be a divisor in that window. The other three roots need not be

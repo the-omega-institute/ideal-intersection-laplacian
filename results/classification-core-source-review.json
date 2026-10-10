@@ -1,8 +1,9 @@
 {
   "source_base_commit": "08065334917ac0bacc965e4c447e2b2aa5c421d1",
   "original_proof_source_revision": "7be84599097fdff320b196cb4f84a2dfe505bd77",
-  "scope": "Source concordance, explicit-reference closure and unchanged selected statement/proof bodies; not an independent proof validation or certificate rerun.",
-  "generated_body_sha256": "8e72409cb3b32917357391ad4fe61aae12d24c55f7c00f7e6e23006d06b27e45",
+  "scope": "Source concordance, explicit-reference closure and selected statement/proof bodies matching the current source sections; not an independent proof validation or certificate rerun.",
+  "written_proof_update": "Endpoint-one exponent-sum bound strengthened to real minimum a>=2 by a three-coefficient positive quadratic; residual spectral claims retain a>=4.",
+  "generated_body_sha256": "7446346cbef5c4e43d6356963932039d754270110f35df2d61fed76d12e37e62",
   "generated_bibliography_sha256": "a4e88f7600b492ab2443fd7e91c54bd2d6debf2710523d9710c0343dea1e991f",
   "selections": [
     {
@@ -98,10 +99,10 @@
     },
     {
       "source": "paper/sections/endpoint-one-spectrum.tex",
-      "source_sha256": "35c740c48ed7c24f82e2383060353f0fd12b531c481f35ea866e093ff455d129",
+      "source_sha256": "e0ef1ad4d1039ac593d149e733f10ac52408f4bf3c1d648ebf3dbe38612e1d77",
       "start_line": 8,
-      "exclusive_end_line": 109,
-      "selected_sha256": "70a025476567ac4348151eaf5943165021f13423b272fe2f495619734e892a8e"
+      "exclusive_end_line": 113,
+      "selected_sha256": "958c2f0e3e15eeea6256d652c5d14b41954fbd65fbcc9af95c272b761e8b6267"
     },
     {
       "source": "paper/sections/endpoint-two-completion.tex",
@@ -137,7 +138,6 @@
       "2d97b72c5af2d7dc1f9888ae288c145e9ccaa33676b5eeea6cc198aa39baed02": 1,
       "3e99dd9cfa5c11a005d023a9cadb77a0775d5ebcd27beabbb83335afde6cd6fa": 1,
       "423ba209b1bcf9bd18d8ae1502e67875db0035ef041fe966fa67601adefb9664": 1,
-      "46034fdf7131e8c524374468bcda87f7188dac796e1c686bb968b1b028079904": 1,
       "4b40ab418e50a3292aab5dcd8ddbc3fdda3e323a54971cefac96bed5b4eba41f": 1,
       "509cd7be759bcc63975602ffb232c1c976a900cd7db90147c98af0b3b3221c12": 1,
       "56c515c24c979c019eacc02059efd57ebfac9c051dca25d06edd079c16b580b6": 1,
@@ -145,6 +145,7 @@
       "79e6c023440af93f339d5124654c8131d479883902fbed54743daf9a232bf688": 1,
       "864ae263af98db76ff1eddbca04e14abc6bf054ee45d285a871b7fc93d7b1e53": 1,
       "878054892f13f8a600572cd17b18b1d33e8ad2f5fcf0e43dc056b31ed138f320": 1,
+      "8abe78c57995213bdf8a85347c12effceec3efcdc484f2699df3430c47cc225a": 1,
       "bd37114701fd5d8fd369fffd6dfbe5a79530376421a88f1e38751377dda46648": 1,
       "c07c480f52e3ac8ff3b9cfb4a322a0c8bd9be129cce5d42f7b58f84030461b97": 1,
       "c808009d90b91666c33b044a5801efc4381d49fe4609f1fe9c4f00f4729bed2f": 1,
@@ -156,6 +157,7 @@
       "fc20cc0f940223d6cb53bc286fb080b30c985ec5aaa61b84bb6c394ef253e72a": 1
     },
     "theorem": {
+      "1a60df946f8bd1bef507e79556b301166adc38cbeeed6ebcc81c725d955cb41a": 1,
       "254ccb2ad4e575cf2ba97c462f241561f1dae2131e9a4ebb9aeb9e13d8868511": 1,
       "2b3d2f962d910972da93e9a0113fc8f033482a02ac11e7947fd89b34f22334c4": 1,
       "3303a876648d8ecc07b2b1914d637570fb795ea8836b74fa3867a4d2e63b79e6": 1,
@@ -165,7 +167,6 @@
       "aa6631cea13849e2ce1f54345543bf0323d6c8aad1312372f94e68352d111e45": 1,
       "b4ced0019201c1b97cf9d904b974d1ee8d10bc9efcc369532cb51cc27a49e377": 1,
       "d3110886bf2e9a57d5cc4fbfc2859db1122102b293881e9f6905712f18e18ad6": 1,
-      "e2e681b206cbf38b99f31ebc7b702c4f993e47efc57ab7f21c0b47a765ee7f7a": 1,
       "ffa535e6e072e111b65c1a9cde78346b589f7b351e1f49be58d31ad162e66c3d": 1
     },
     "lemma": {

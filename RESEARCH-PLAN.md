@@ -77,8 +77,9 @@ retain their historical proofs and verification scopes.
 
 The endpoint-one spectral theorem is now integrated in the main text:
 root one simple/smallest, all four residual roots>a, smallest in
-(a,min(c,a+b)), at real minimum>=4onh_C(1)=0. The twelve-term proof
-needs no finite base; generic350termoff-surface positivity is a verification
+(a,min(c,a+b)), at real minimum>=4onh_C(1)=0. The sum-bound portion now
+holds at real minimum>=2 by a three-coefficient quadratic proof, without
+a finite base; generic350termoff-surface positivity is a verification
 remark. The nonzero quartic constant gives a necessary divisor test for
 the smallest root, not an upper bound on allfourroots. Seek a uniform
 splitting obstruction; the other standalone PR9 deductions remain queued

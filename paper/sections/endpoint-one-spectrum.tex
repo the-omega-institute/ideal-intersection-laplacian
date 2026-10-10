@@ -14,11 +14,12 @@ six-support complement quotient, counted with multiplicity, satisfy
  \leq\lambda_4\leq\lambda_5\leq\lambda_6.
 \]
 Equality $\lambda_4=s$ holds exactly at $(a,b,c)=(2,2,2)$.
-If also $a\geq4$ and $h_C(1)=0$, then
+If also $h_C(1)=0$, then
 \[
  b+c\geq2a^2-2a+1,
 \]
-with equality exactly when $b=a$ and $c=(a-1)(2a-1)$. Root one is
+with equality exactly when $b=a$ and $c=(a-1)(2a-1)$.
+If in addition $a\geq4$, root one is
 simple and is the smallest positive quotient root; all four other
 quotient roots are strictly greater than $a$. Their ordered roots satisfy
 \[
@@ -61,7 +62,7 @@ an odd number below it, counting multiplicity; hence exactly three
 lie below it and $\lambda_4>s$. At the boundary the characteristic
 polynomial is $x(x-6)(x^2-12x+12)^2$, giving $\lambda_4=s=6$.
 
-Now suppose $a\geq4$ and $h_C(1)=0$.
+Now suppose $h_C(1)=0$.
 Put $q=b+c$, $z=bc$ and $K=4a^2-2a+1$. The generic determinant is
 \begin{align*}
  h_C(1)&=(q-K)z^2-a(a-1)(q+2a-1)z+P_a(q),\\
@@ -80,15 +81,18 @@ strictly unless $z=z_0$. Set $t=q-a\geq a$. At $z_0$ the value factors as
  \bigl[(a-1)(2a-1)-t\bigr]B(a,t),
 \]
 where $B=a^3-2a^2t^2+a^2t+a^2+3at-3a+t^2-2t+1$. For
-$a=4+m$, $t=a+u$, with $m,u\geq0$, the complete identity
+$t=a+u$, with $u\geq0$, the identity
 \begin{align*}
- -B(4+m,4+m+u)={}&2m^4+4m^3u+30m^3+2m^2u^2+47m^2u+163m^2\\
- &+16mu^2+179mu+381m+31u^2+222u+323
+ -B(a,a+u)={}&(2a^2-1)u^2\\
+ &+\bigl[(a-2)(4a^2+7a+9)+20\bigr]u\\
+ &+(a-2)\bigl[2a^3+a(2a-1)+3\bigr]+5
 \end{align*}
-proves $B<0$. Thus $q<Q$ gives $h_C(1)<0$. At $q=Q$, equality
+has strictly positive coefficients for every $a\geq2$, so $B<0$.
+Thus $q<Q$ gives $h_C(1)<0$. At $q=Q$, equality
 requires $z=z_0$, hence $b=a$ by ordering, and $c=(a-1)(2a-1)$.
 The factorization also verifies this equality case.
 
+Now assume also $a\geq4$.
 The pair-support principal block is $\operatorname{diag}(c,b,a)$.
 The sum bound implies
 $b+c-(a^2+2a)\geq(a-4)^2+4(a-4)+1>0$, so

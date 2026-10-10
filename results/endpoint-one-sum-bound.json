@@ -1,0 +1,32 @@
+{
+  "statement": "For real2<=a<=b<=c, h_C(1)=0 implies b+c>=2a^2-2a+1; equality iff b=a,c=(a-1)(2a-1)",
+  "generic_determinant_identity": "passed, direct6x6 set-disjointness quotient",
+  "product_lower_bound_identity": "passed",
+  "quadratic_monotonicity_difference": "passed",
+  "boundary_factorization": "passed",
+  "negative_boundary_polynomial_at_t_a_plus_u": [
+    "2*a**2 - 1",
+    "(a - 2)*(4*a**2 + 7*a + 9) + 20",
+    "(a - 2)*(2*a**3 + 2*a**2 - a + 3) + 5"
+  ],
+  "coefficient_positivity": "Written proof: a>=2 makes a-2>=0,2a^2-1>0; all other displayed factors strictly positive",
+  "equality_identity": "passed generically; admissibility c>=a follows from2(a-1)^2-1>0",
+  "lower_minimum_equality_controls": [
+    [
+      2,
+      2,
+      3
+    ],
+    [
+      3,
+      3,
+      10
+    ]
+  ],
+  "residual_spectrum_scope": "Unchanged a>=4 hypothesis; not extended to a>=2",
+  "sympy": "1.14.0",
+  "finite_exponent_scan": false,
+  "lean_run": false,
+  "scope": "Exact generic identities supporting a written real-domain strengthening; shared independent set-quotient constructor, no original characteristic-polynomial helper",
+  "status": "passed"
+}
