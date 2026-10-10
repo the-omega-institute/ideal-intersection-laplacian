@@ -1,0 +1,105 @@
+{
+  "generic_direct_determinant_and_schur_identity": "passed",
+  "lower_endpoint_identity": "passed",
+  "manuscript_coefficient_tables": {
+    "lower": {
+      "rows": 9,
+      "positive_coefficients": 36,
+      "constant": 1404,
+      "displayed_table_identity": "passed"
+    },
+    "upper": {
+      "rows": 25,
+      "positive_coefficients": 170,
+      "constant": 513220,
+      "displayed_table_identity": "passed"
+    }
+  },
+  "upper_schur_diagonal_lower_bounds": "positive coefficient expansions passed",
+  "small_gap_displayed_vectors": [
+    {
+      "gap": 1,
+      "expression": "-Q(b)",
+      "coefficients": [
+        1110016,
+        834048,
+        259904,
+        43000,
+        3984,
+        196,
+        4
+      ]
+    },
+    {
+      "gap": 1,
+      "expression": "-Q(L_d)",
+      "coefficients": [
+        1103040,
+        831256,
+        259536,
+        42984,
+        3984,
+        196,
+        4
+      ]
+    },
+    {
+      "gap": 1,
+      "expression": "Q(L_d+1)",
+      "coefficients": [
+        905184,
+        697852,
+        223936,
+        38280,
+        3676,
+        188,
+        4
+      ]
+    },
+    {
+      "gap": 2,
+      "expression": "-Q(b)",
+      "coefficients": [
+        1734483,
+        1216821,
+        352937,
+        54220,
+        4656,
+        212,
+        4
+      ]
+    },
+    {
+      "gap": 2,
+      "expression": "-Q(L_d)",
+      "coefficients": [
+        753723,
+        453685,
+        107311,
+        12468,
+        712,
+        16
+      ]
+    },
+    {
+      "gap": 2,
+      "expression": "Q(L_d+1)",
+      "coefficients": [
+        2016880,
+        1562808,
+        499672,
+        84316,
+        7916,
+        392,
+        8
+      ]
+    }
+  ],
+  "small_gap_boundary_above_middle": "passed at real a>=8",
+  "small_gap_cubic_degree_and_positive_leading_constant": "passed for gaps1and2",
+  "total_displayed_coefficients": 247,
+  "main_and_supporting_table_inclusions": "passed",
+  "sympy": "1.14.0",
+  "scope": "Independent direct determinant reconstruction and literal manuscript-table check; shared set-disjointness quotient constructor and SymPy backend. Written root-location and degree-exhaustion arguments reviewed separately. No historical finite-base rerun, exponent scan, graph enumeration, floats or Lean.",
+  "status": "passed"
+}

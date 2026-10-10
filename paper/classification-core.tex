@@ -171,7 +171,7 @@ nonzero. The
 and its complete CSV and JSON preserve this evidence.
 
 \subsection{Written endpoint-one and largest-root steps}
-The sum comparison includes all twelve positive terms in its proof.
+The sum comparison uses the displayed quadratic with three positive coefficients.
 The largest-root interval uses $36$ and $170$ complete positive terms
 and a symmetric Schur complement. The two small-gap proofs use six
 complete sign vectors. Appendix~\ref{sec:largest-root-identities}
@@ -180,6 +180,9 @@ retains every vector. The
 reconstructs the generic quotient and independent Schur determinant,
 the lower sign identity, every coefficient row and the small-gap vectors.
 Its fixed controls supplement the written proofs. The separate
+checker \path{scripts/verify_largest_root_coefficients.py} reconstructs
+the direct determinant and checks every displayed coefficient against it.
+The separate
 minimum-eight and middle-at-most-fifteen certificates are unnecessary
 for this route. Reorganizing the presentation does not rerun the
 unchanged historical certificates or remove their mathematical role.

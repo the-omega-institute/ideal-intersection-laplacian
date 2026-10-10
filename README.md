@@ -29,6 +29,10 @@ then `b+c >= 2a^2-2a+1`, with equality exactly at
 three-coefficient quadratic identity. The subsequent residual-spectrum
 statements retain their hypothesis `a >= 4`.
 
+An independent [direct determinant and manuscript-table check](notes/largest-root-coefficient-verification.md)
+confirms all 247 displayed coefficients in the largest-root and small-gap
+proofs, together with their Schur identities and anchor bounds.
+
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new
 largest-root interval (bc+a+b+c,bc+a+b+c+1), the endpoint-one sum bound,

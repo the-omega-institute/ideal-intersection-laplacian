@@ -71,6 +71,19 @@ In the largest-root checkout, run:
 python3 scripts/check_largest_root_unit_interval.py
 ```
 
+The current manuscript checkout also provides a
+[direct determinant and literal table verification](largest-root-coefficient-verification.md):
+
+```sh
+python3 scripts/verify_largest_root_coefficients.py
+```
+
+This fresh check confirms all 36/170 largest-root coefficients and all six
+small-gap vectors against the actual shared LaTeX appendix, using a direct
+symbolic determinant and the separate set-disjointness constructor. It
+shares the mathematical model and SymPy backend, but not the original
+characteristic-polynomial helper. It does not rerun a historical finite base.
+
 The source/data SHA256 values bind each file to its revision. A successful
 checking command establishes its stated identities or finite predicates;
 the classification additionally uses the written reductions in the paper.

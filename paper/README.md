@@ -178,7 +178,7 @@ sections and their shared graph/lifting definitions.
 | [arithmetic-obstructions.tex](sections/arithmetic-obstructions.tex) | Every gcd>=3 triple, all-odd and prime-residue classes, all-two-modulo-four triples and every common 2-adic valuation |
 | [mixed-parity-congruence.tex](sections/mixed-parity-congruence.tex) | Combined Theorem 13.5 for all mixed-parity exclusions/restrictions, with one worked example |
 | [endpoint-reduction.tex](sections/endpoint-reduction.tex) | Combined Theorem 14.1 for the linear bound, tails, divisor candidates, second-smallest<=15 certificate and modulo-three classes |
-| [endpoint-one-spectrum.tex](sections/endpoint-one-spectrum.tex) | Main-text twelve-term endpoint-one proof, simple root one, all residual roots>a, smallest root below min(c,a+b), nonzero constant and divisor window; generic350termpositivity retained as a verification remark |
+| [endpoint-one-spectrum.tex](sections/endpoint-one-spectrum.tex) | Sharp sum bound at real minimum2 by three positive quadratic coefficients; root one and residual spectrum retain minimum4, including smallest root below min(c,a+b), nonzero constant and divisor window; generic350termpositivity retained as a verification remark |
 | [endpoint-two-completion.tex](sections/endpoint-two-completion.tex) | Complete rectangle-bound, further-root and global integer/parity-class proofs, with explicit finite dependencies |
 | [endpoint-two-identities.tex](sections/endpoint-two-identities.tex) | Appendix D: all84/44/112 positive coefficients and32per-minimum finite-base counts |
 | [aa-small.tex](sections/aa-small.tex) | All-b theorem for a=2 through9, divisor/modular certificates and cubic-test scope |

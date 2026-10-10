@@ -119,6 +119,12 @@ factor multiplicity, give one root in each open unit interval and none
 above its upper endpoint. The controls supplement written unbounded proofs;
 there is no new exponent scan or Lean run.
 
+The separate \path{scripts/verify_largest_root_coefficients.py} reconstructs
+the determinant directly from the set-disjointness quotient and checks
+every displayed coefficient in both tables and all six small-gap vectors.
+It shares the support model and SymPy backend, but does not import the
+original characteristic-polynomial helper.
+
 Theorem~\ref{thm:three-prime-classification} retains the established
 $27\,562$-triple minimum-through-seven and $8\,658$-triple endpoint-two
 bases, with earlier repeated and small-minimum proof dependencies.
@@ -163,7 +169,10 @@ Corollary~\ref{cor:endpoint-one-divisor-window} use written proofs without
 a finite base. The
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/d09cfdcc08f2a0b6c5b3abbd7d7a30bacc9030b4/scripts/check_endpoint_one_minimum_root.py}{minimum-root checker}
 reconstructs the generic endpoint polynomial, comparison and equality
-factorization, all twelve positive terms and the determinant identities.
+factorization, the historical twelve-term expansion and the determinant identities.
+The current sum proof uses three positive quadratic coefficients for $a\geq2$;
+\path{scripts/check_endpoint_one_sum_bound.py} checks its generic identities.
+The residual-spectrum assertions retain $a\geq4$.
 The
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/fd02ed726d3ada4bbd5e401e8818739f3bddc371/scripts/check_endpoint_one_pair_sum_window.py}{pair-sum checker}
 verifies the four-support block, characteristic factor, discriminant and
