@@ -188,7 +188,12 @@ reconstructs the generic endpoint polynomial, comparison and equality
 factorization, the historical twelve-term expansion and the determinant identities.
 The current sum proof uses three positive quadratic coefficients for $a\geq2$;
 \path{scripts/check_endpoint_one_sum_bound.py} checks its generic identities.
-The residual-spectrum assertions retain $a\geq4$.
+The residual-spectrum assertions hold for the sharp real cutoff
+$a>2+\sqrt3$; the integer divisor corollary retains $a\geq4$.
+The separate \path{scripts/verify_residual_spectrum_cutoff.py} checks the
+generic anchor identities and the repeated endpoint-one family proving
+sharpness, with two fixed integer controls below the cutoff and one
+rational control in the newly admitted range.
 The
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/fd02ed726d3ada4bbd5e401e8818739f3bddc371/scripts/check_endpoint_one_pair_sum_window.py}{pair-sum checker}
 verifies the four-support block, characteristic factor, discriminant and

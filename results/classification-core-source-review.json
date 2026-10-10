@@ -2,8 +2,8 @@
   "source_base_commit": "08065334917ac0bacc965e4c447e2b2aa5c421d1",
   "original_proof_source_revision": "7be84599097fdff320b196cb4f84a2dfe505bd77",
   "scope": "Source concordance, explicit-reference closure and selected statement/proof bodies matching the current source sections; not an independent proof validation or certificate rerun.",
-  "written_proof_update": "Endpoint-one sum bound, small-gap1/2 exponent-root brackets and largest-root unit interval hold at real minimum a>=2; general endpoint-one residual claims retain a>=4. Largest-root upper sign adds a35-coefficient lower bound on2<=a<=3. Small-gap sign vectors use a=2+m with the L2=b boundary explicit.",
-  "generated_body_sha256": "e9e169f44eec277be7c3453d63136261c7269b00c841c3ed2102b3a82987da12",
+  "written_proof_update": "Endpoint-one sum bound, small-gap1/2 brackets and largest-root interval hold at real minimum a>=2. General endpoint-one residual-root separation has the sharp real cutoff a>2+sqrt3;the integer divisor corollary retains a>=4. Largest-root upper sign uses a35-coefficient bound on2<=a<=3;small-gap vectors use a=2+m with L2=b explicit.",
+  "generated_body_sha256": "de7fdba8ffb1182340e089ff7672001fe82f99579e3f82efc6c934e17143c325",
   "generated_bibliography_sha256": "a4e88f7600b492ab2443fd7e91c54bd2d6debf2710523d9710c0343dea1e991f",
   "selections": [
     {
@@ -99,10 +99,10 @@
     },
     {
       "source": "paper/sections/endpoint-one-spectrum.tex",
-      "source_sha256": "fac7d314dc8d2a1f900381d1d2f2e4561edd741bf21020dbe82ff2dab9be3aa8",
+      "source_sha256": "16c52326f7c88bf538ee2b70bfc4f6c6e4b6901f93d963cd288ab96e4d4c50f5",
       "start_line": 8,
-      "exclusive_end_line": 113,
-      "selected_sha256": "958c2f0e3e15eeea6256d652c5d14b41954fbd65fbcc9af95c272b761e8b6267"
+      "exclusive_end_line": 120,
+      "selected_sha256": "133bac7d3d7d125ca790a54b18b435e82d099c51cb3a3a6751389331bf7ea9a1"
     },
     {
       "source": "paper/sections/endpoint-two-completion.tex",
@@ -142,10 +142,10 @@
       "509cd7be759bcc63975602ffb232c1c976a900cd7db90147c98af0b3b3221c12": 1,
       "56c515c24c979c019eacc02059efd57ebfac9c051dca25d06edd079c16b580b6": 1,
       "5f47f8e38b6e8d61b52bcf7dbe3e3e9b67fdc90c136a61b5a36c522176f96309": 1,
+      "731221a3e22810e5b728b6416bb6883ea97a0b85774ce83e771014d196430865": 1,
       "79e6c023440af93f339d5124654c8131d479883902fbed54743daf9a232bf688": 1,
       "864ae263af98db76ff1eddbca04e14abc6bf054ee45d285a871b7fc93d7b1e53": 1,
       "878054892f13f8a600572cd17b18b1d33e8ad2f5fcf0e43dc056b31ed138f320": 1,
-      "8abe78c57995213bdf8a85347c12effceec3efcdc484f2699df3430c47cc225a": 1,
       "bd37114701fd5d8fd369fffd6dfbe5a79530376421a88f1e38751377dda46648": 1,
       "c07c480f52e3ac8ff3b9cfb4a322a0c8bd9be129cce5d42f7b58f84030461b97": 1,
       "c808009d90b91666c33b044a5801efc4381d49fe4609f1fe9c4f00f4729bed2f": 1,
@@ -157,7 +157,6 @@
       "fc20cc0f940223d6cb53bc286fb080b30c985ec5aaa61b84bb6c394ef253e72a": 1
     },
     "theorem": {
-      "1a60df946f8bd1bef507e79556b301166adc38cbeeed6ebcc81c725d955cb41a": 1,
       "254ccb2ad4e575cf2ba97c462f241561f1dae2131e9a4ebb9aeb9e13d8868511": 1,
       "2b3d2f962d910972da93e9a0113fc8f033482a02ac11e7947fd89b34f22334c4": 1,
       "3303a876648d8ecc07b2b1914d637570fb795ea8836b74fa3867a4d2e63b79e6": 1,
@@ -167,6 +166,7 @@
       "b4ced0019201c1b97cf9d904b974d1ee8d10bc9efcc369532cb51cc27a49e377": 1,
       "d0e033fee6ba06176269b64ac8256269f20ea1ed20a22845e8edb290a90e6127": 1,
       "d3110886bf2e9a57d5cc4fbfc2859db1122102b293881e9f6905712f18e18ad6": 1,
+      "e3a33edbab030d9714ecd4fa0e0c896bd6ee1b2b3dc3cc8f96f731e91e1ef22c": 1,
       "ffa535e6e072e111b65c1a9cde78346b589f7b351e1f49be58d31ad162e66c3d": 1
     },
     "lemma": {

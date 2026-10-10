@@ -26,8 +26,9 @@ The [sharp endpoint-one sum bound](notes/endpoint-one-sum-bound.md) now has
 a shorter written proof for all real `2 <= a <= b <= c`: if `h_C(1)=0`,
 then `b+c >= 2a^2-2a+1`, with equality exactly at
 `b=a, c=(a-1)(2a-1)`. An exact generic determinant check supports the
-three-coefficient quadratic identity. The subsequent residual-spectrum
-statements retain their hypothesis `a >= 4`.
+three-coefficient quadratic identity. The subsequent residual-root separation
+has the [sharp real cutoff](notes/residual-spectrum-sharp-cutoff.md)
+`a > 2 + sqrt(3)`; the integer divisor corollary retains `a >= 4`.
 
 An independent [direct determinant and manuscript-table check](notes/largest-root-coefficient-verification.md)
 confirms the original 36/170 largest-root tables and six current small-gap
@@ -56,7 +57,8 @@ also holds for every real `2 <= a <= b`, with `c=b(b+2)-a`:
 `b` is the simple third quotient root, and the three larger roots exceed
 `a+b+c`. On endpoint one, the other low root is a simple one.
 This strengthens the former minimum-four hypothesis; the general
-endpoint-one residual window retains its separate minimum-four domain.
+endpoint-one residual separation has its separate sharp real cutoff
+`a > 2 + sqrt(3)`.
 
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new

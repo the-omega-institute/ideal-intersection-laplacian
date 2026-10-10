@@ -161,7 +161,7 @@ def audit(body, selections, bibliography):
         "source_base_commit": "08065334917ac0bacc965e4c447e2b2aa5c421d1",
         "original_proof_source_revision": "7be84599097fdff320b196cb4f84a2dfe505bd77",
         "scope": "Source concordance, explicit-reference closure and selected statement/proof bodies matching the current source sections; not an independent proof validation or certificate rerun.",
-        "written_proof_update": "Endpoint-one sum bound, small-gap1/2 exponent-root brackets and largest-root unit interval hold at real minimum a>=2; general endpoint-one residual claims retain a>=4. Largest-root upper sign adds a35-coefficient lower bound on2<=a<=3. Small-gap sign vectors use a=2+m with the L2=b boundary explicit.",
+        "written_proof_update": "Endpoint-one sum bound, small-gap1/2 brackets and largest-root interval hold at real minimum a>=2. General endpoint-one residual-root separation has the sharp real cutoff a>2+sqrt3;the integer divisor corollary retains a>=4. Largest-root upper sign uses a35-coefficient bound on2<=a<=3;small-gap vectors use a=2+m with L2=b explicit.",
         "generated_body_sha256": digest(body),
         "generated_bibliography_sha256": digest(bibliography),
         "selections": selections,

@@ -57,7 +57,7 @@ print(json.dumps({
     "coefficient_positivity": "Written proof: a>=2 makes a-2>=0,2a^2-1>0; all other displayed factors strictly positive",
     "equality_identity": "passed generically; admissibility c>=a follows from2(a-1)^2-1>0",
     "lower_minimum_equality_controls": [[2, 2, 3], [3, 3, 10]],
-    "residual_spectrum_scope": "Unchanged a>=4 hypothesis; not extended to a>=2",
+    "residual_spectrum_scope": "This checker covers the sum bound/equality only. Sharp residual cutoff a>2+sqrt3 is checked separately by verify_residual_spectrum_cutoff.py;integer divisor corollary retains a>=4.",
     "sympy": sympy.__version__,
     "finite_exponent_scan": False,
     "lean_run": False,

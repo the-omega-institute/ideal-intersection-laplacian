@@ -19,7 +19,7 @@ If also $h_C(1)=0$, then
  b+c\geq2a^2-2a+1,
 \]
 with equality exactly when $b=a$ and $c=(a-1)(2a-1)$.
-If in addition $a\geq4$, root one is
+If in addition $a>2+\sqrt3$, root one is
 simple and is the smallest positive quotient root; all four other
 quotient roots are strictly greater than $a$. Their ordered roots satisfy
 \[
@@ -92,10 +92,10 @@ Thus $q<Q$ gives $h_C(1)<0$. At $q=Q$, equality
 requires $z=z_0$, hence $b=a$ by ordering, and $c=(a-1)(2a-1)$.
 The factorization also verifies this equality case.
 
-Now assume also $a\geq4$.
+Now assume also $a>2+\sqrt3$.
 The pair-support principal block is $\operatorname{diag}(c,b,a)$.
 The sum bound implies
-$b+c-(a^2+2a)\geq(a-4)^2+4(a-4)+1>0$, so
+$b+c-(a^2+2a)\geq a^2-4a+1>0$, so
 \[
  h_C(a)=-a^2b^2c^2(a^2+2a-b-c)>0.
 \]
@@ -108,6 +108,13 @@ zero and a simple one. All four remaining roots exceed $a$.
 The pair-support block gives $\lambda_3\leq c$. The identity
 $h_C(c)=-a^2b^2c^2(c^2+2c-a-b)<0$ excludes equality.
 Together with the global total-sum gap, this proves the residual bounds.
+
+The real cutoff is sharp. On the ordered endpoint-one family
+$b=a$, $c=(a-1)(2a-1)$, we have
+$h_C(a)=a^4(a-1)^2(2a-1)^2(a^2-4a+1)$.
+At $a=2+\sqrt3$ a residual root equals $a$. For $2\leq a<2+\sqrt3$,
+the determinant at $a$ is negative, so the same interlacing and parity
+argument gives three roots below $a$; a residual root lies below $a$.
 \end{proof}
 
 \begin{corollary}

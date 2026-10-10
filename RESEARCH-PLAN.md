@@ -27,6 +27,8 @@ prior stages and are superseded by this classification.
 
 The integrated total-sum gap now separates the three endpoint-one
 quartic roots above s=a+b+c from the smallest root in(a,min(c,a+b)).
+The residual separation holds at the sharp real cutoff a>2+sqrt3;
+the integer divisor corollary still starts at a=4.
 The reciprocal-root argument further gives N/D<mu_1<N/(D-NR).
 Continue bounded structural work combining these bounds with the exact
 coefficients and smallest-root equation on d=b-a>=3,a<2d²+20.

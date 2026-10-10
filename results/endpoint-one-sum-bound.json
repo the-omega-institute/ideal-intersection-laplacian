@@ -23,7 +23,7 @@
       10
     ]
   ],
-  "residual_spectrum_scope": "Unchanged a>=4 hypothesis; not extended to a>=2",
+  "residual_spectrum_scope": "This checker covers the sum bound/equality only. Sharp residual cutoff a>2+sqrt3 is checked separately by verify_residual_spectrum_cutoff.py;integer divisor corollary retains a>=4.",
   "sympy": "1.14.0",
   "finite_exponent_scan": false,
   "lean_run": false,
