@@ -212,7 +212,11 @@ These fixed diagnostics supplement the written global and coefficient proofs;
 the controls were already settled by the repeated-exponent theorem.
 
 Proposition~\ref{prop:endpoint-one-equality-spectrum} retains the written
-index and simplicity argument. The
+index and simplicity argument, now for real $2\leq a\leq b$.
+The direct checker \path{scripts/verify_equality_spectrum.py} verifies
+the principal factorization, the positive expression at $b$, ordering
+and nonzero coupling; three fixed controls below the former minimum
+use exact root counts. The
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/d3fa3478193f34777a88b970da8f0763ce177c38/scripts/check_endpoint_one_equality_root.py}{equality-index checker}
 verifies the principal factors, weighted symmetry and nonzero coupling.
 The earlier

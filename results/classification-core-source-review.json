@@ -99,7 +99,7 @@
     },
     {
       "source": "paper/sections/endpoint-one-spectrum.tex",
-      "source_sha256": "e0ef1ad4d1039ac593d149e733f10ac52408f4bf3c1d648ebf3dbe38612e1d77",
+      "source_sha256": "fac7d314dc8d2a1f900381d1d2f2e4561edd741bf21020dbe82ff2dab9be3aa8",
       "start_line": 8,
       "exclusive_end_line": 113,
       "selected_sha256": "958c2f0e3e15eeea6256d652c5d14b41954fbd65fbcc9af95c272b761e8b6267"

@@ -45,6 +45,13 @@ the middle exponent lies between the displayed quadratic anchors and
 their successors. Integer exponents therefore admit no endpoint-one zero
 in these two gap families, with no finite base.
 
+The supporting [equality-surface spectral theorem](notes/equality-spectrum-minimum-two.md)
+also holds for every real `2 <= a <= b`, with `c=b(b+2)-a`:
+`b` is the simple third quotient root, and the three larger roots exceed
+`a+b+c`. On endpoint one, the other low root is a simple one.
+This strengthens the former minimum-four hypothesis; the general
+endpoint-one residual window retains its separate minimum-four domain.
+
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new
 largest-root interval (bc+a+b+c,bc+a+b+c+1), the endpoint-one sum bound,

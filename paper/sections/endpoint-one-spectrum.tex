@@ -201,7 +201,7 @@ the classification of admissible exponent triples remain open.
 
 \begin{proposition}
 \label{prop:endpoint-one-equality-spectrum}
-For real $4\leq a\leq b$ and $c=b(b+2)-a$, put $s=a+b+c$. The ordered eigenvalues
+For real $2\leq a\leq b$ and $c=b(b+2)-a$, put $s=a+b+c$. The ordered eigenvalues
 of the six-support complement quotient satisfy
 \[
  0=\lambda_1<\lambda_2<\lambda_3=b<a+b<s
@@ -214,6 +214,8 @@ strictly greater than $s=a+b+c$.
 
 \begin{proof}
 Use the symmetric similarity $S$ from Theorem~\ref{thm:endpoint-one-spectrum}.
+Here $c-b=b^2+(b-a)>0$, so the exponents are ordered and the
+exceptional global-gap boundary $(2,2,2)$ is absent.
 Every proper principal block is positive definite: $S$ is positive
 semidefinite with a one-dimensional zero kernel whose vector has every
 coordinate nonzero. Delete singleton support $2$. The five-support block
@@ -228,6 +230,8 @@ The three roots of $K$ are positive and real. Moreover,
 \[
  K(b)=b(b+1)\bigl[a(b-a)(b-2)+ab(b-2)(b+1)+b^2(b+1)(b+2)\bigr]>0.
 \]
+The first two bracketed terms are nonnegative for $b\geq a\geq2$,
+and the third is strictly positive, including at $a=b=2$.
 The pair-support block on $12,23$ is $\operatorname{diag}(c,a)$, so
 the largest eigenvalue of $T$ is at least $c>b$. A positive monic cubic
 value at $b$ requires one or three roots below $b$; the largest root
@@ -242,8 +246,10 @@ one nonzero coupling condition. Their space is one-dimensional, proving
 simplicity and $\lambda_2<b<\lambda_4$.
 
 The global gap in Theorem~\ref{thm:endpoint-one-spectrum} gives
-$\lambda_4>s$. On endpoint one it also gives $\lambda_2=1$, and division
-by the simple roots $1,b$ yields the stated cubic.
+$\lambda_4>s$. If $h_C(1)=0$, then $1<b=\lambda_3$ and all
+later roots exceed $s$, so the root $1$ must be $\lambda_2$.
+It is simple because $\lambda_1=0<1<b=\lambda_3$.
+Division by the simple roots $1,b$ yields the stated cubic.
 \end{proof}
 
 This proposition narrows the equality splitting problem: for integer

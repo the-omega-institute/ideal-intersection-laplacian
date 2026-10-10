@@ -1,0 +1,60 @@
+{
+  "real_domain": "2<=a<=b, c=b(b+2)-a",
+  "weighted_symmetry_and_zero_vector": "passed",
+  "four_support_principal_factorization": "passed against direct determinant",
+  "cubic_value_at_middle_identity": "passed",
+  "positive_shifted_cubic_value_terms": 28,
+  "middle_root_generic_identity": "passed against direct six-support determinant",
+  "pair_principal_block": "diag(c,a) passed",
+  "isolated_b_in_five_support_principal_block": "passed",
+  "nonzero_symmetric_coupling_squared": "abc identity passed",
+  "ordering_identity": "c-b=b^2+(b-a) passed",
+  "fixed_exact_controls": [
+    {
+      "exponents": [
+        2,
+        2,
+        6
+      ],
+      "characteristic_factorization": "x*(x - 2)*(x**2 - 32*x + 228)*(x**2 - 24*x + 20)",
+      "root_b_multiplicity": 1,
+      "remaining_root_counts_0_b__b_s__s_infinity": [
+        1,
+        0,
+        3
+      ]
+    },
+    {
+      "exponents": [
+        2,
+        3,
+        13
+      ],
+      "characteristic_factorization": "x*(x - 3)*(x**4 - 122*x**3 + 4637*x**2 - 53956*x + 41652)",
+      "root_b_multiplicity": 1,
+      "remaining_root_counts_0_b__b_s__s_infinity": [
+        1,
+        0,
+        3
+      ]
+    },
+    {
+      "exponents": [
+        3,
+        3,
+        12
+      ],
+      "characteristic_factorization": "x*(x - 3)*(x**2 - 75*x + 1188)*(x**2 - 57*x + 54)",
+      "root_b_multiplicity": 1,
+      "remaining_root_counts_0_b__b_s__s_infinity": [
+        1,
+        0,
+        3
+      ]
+    }
+  ],
+  "manuscript_domain": "real minimum two passed",
+  "sympy": "1.14.0",
+  "scope": "Generic determinant, weighted-symmetry, principal-block and coupling identities; three specified exact root-count controls, with squarefree-factor multiplicities. Shares set-disjointness model and SymPy backend, no original characteristic helper. Root index/simplicity and conditional endpoint-one cubic separation have written proofs. No parameter scan, integer-point enumeration, historical finite-base rerun, expanded graph, floats or Lean.",
+  "status": "passed"
+}
