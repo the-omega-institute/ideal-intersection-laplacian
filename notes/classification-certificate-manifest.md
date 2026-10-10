@@ -35,6 +35,21 @@ python3 scripts/check_distinct_tail.py
 python3 scripts/check_open_region_certificate.py
 ```
 
+The minimum-three finite input now also has a
+[standalone independent check](minimum-three-independent-verification.md)
+in the focused manuscript checkout:
+
+```sh
+python3 scripts/verify_minimum_three.py
+```
+
+It requires Python's standard library only and reconstructs all 325
+characteristic polynomials by integer determinants and exact interpolation,
+checking their strict root intervals and graph lifts against the archived
+rows. This check has been run; its result is in
+`results/minimum-three-independent-verification.json`. The two larger
+historical finite bases were not rerun in this addition.
+
 In the endpoint-two checkout, run:
 
 ```sh

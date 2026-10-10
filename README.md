@@ -15,6 +15,13 @@ submission arrangements remain for coauthor review. The
 [certificate manifest](notes/classification-certificate-manifest.md) supplies
 fixed revisions, hashes and reproduction commands for the core evidence.
 
+The minimum-three input has a fresh
+[independent standard-library verification](notes/minimum-three-independent-verification.md).
+It reconstructs all 325 remaining quintics by exact determinants and
+interpolation, confirming their noninteger-root intervals and graph lifts.
+This is a finite verification of an existing theorem input; the other
+finite bases and written arguments retain their separate scopes.
+
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new
 largest-root interval (bc+a+b+c,bc+a+b+c+1), the endpoint-one sum bound,
