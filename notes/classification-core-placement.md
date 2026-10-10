@@ -1,6 +1,6 @@
 # Three-prime classification manuscript and supporting material
 
-The [26-page main manuscript](../paper/classification-core.pdf) makes
+The [27-page main manuscript](../paper/classification-core.pdf) makes
 the completed three-prime classification the central result. It preserves
 the proof chain and its finite dependencies while setting aside the
 auxiliary arithmetic and higher-prime results. Reza Nikandish's
@@ -13,13 +13,18 @@ corresponding author are now agreed; the confirmed tool uses are included
 for a final coauthor wording review. Final title, venue, disclosure wording,
 freeze and submission arrangements still require the coauthors' confirmation.
 
-The existing `paper/paper.tex`, every original section source and
-`paper/paper.pdf` are untouched. The default PDF remains 61 pages and the
-previous optional detailed build remains 67 pages. The new candidate is
-35 pages shorter than the default, with the same 11pt font, one-inch
-margins and article layout. It revises the earlier 25-page candidate with
-the confirmed author arrangement, tool-use declaration, precise proof
-roadmap, real-weight interpretation and quotient-transfer explanation.
+The supporting `paper/paper.tex` and section sources retain the full research
+collection and incorporate the subsequent proof refinements. Its current
+PDF is 63 pages; the previous optional detailed build remains a historical
+67-page artifact and has not been rebuilt. The focused manuscript is
+36 pages shorter than the current supporting collection, with the same
+11pt font, one-inch margins and article layout. It revises the earlier
+25-page candidate with the confirmed author arrangement, tool-use declaration,
+proof roadmap, real-weight interpretation and quotient-transfer explanation.
+The later all-positive-real low-root proof increases the main build from
+26 to 27 pages. The [current coverage review](classification-final-coverage-review.md)
+records the exact assumptions used by the final assembly and the archived
+finite domains after these refinements.
 The essential evidence remains summarized in Appendix A, with complete
 coefficient/base appendices in B and C.
 The page count is a measured consequence of the selected scope, not a journal
@@ -27,9 +32,10 @@ page limit or a substitute for mathematical review.
 
 ## The retained route
 
-The following numbers are read from the compiled candidate. The old
-numbers refer to the original manuscript proof sources at `7be8459`,
-which are still unchanged at the candidate's base `0806533`.
+The following main theorem numbers retain the compiled classification
+ordering. The original numbers are locators in the supporting section
+structure, also used at historical revision `7be8459`. Subsequent proof
+strengthenings are reflected in the current selected source spans.
 
 | Input | Original | Candidate | Role |
 | --- | --- | --- | --- |
@@ -118,8 +124,8 @@ proof edits during rearrangement. The saved
 [source receipt](../results/classification-core-source-review.json)
 records the source files, line intervals and SHA256 hashes, plus the
 shared coefficient appendices. It verifies that all 23 proof bodies and
-23 theorem/lemma/proposition/corollary bodies selected for the candidate
-are byte-identical to the original sources; the statements comprise
+23 theorem/lemma/proposition/corollary bodies selected for the manuscript
+match the current section sources; the statements comprise
 11 theorems, six lemmas, four propositions and two corollaries.
 All explicit `ref`/`eqref` targets and all 18 bibliography entries/citations
 resolve. The receipt is a source-integrity and explicit-reference check;
@@ -132,13 +138,15 @@ arguments and final classification have their required definitions,
 hypotheses, finite inputs and coefficient vectors present. No new
 mathematical theorem or certificate-free replacement is claimed.
 
-The manuscript builds with pdfTeX/TeX Live 2026 without LaTeX warnings,
-undefined references or overfull/underfull boxes. All 26 pages were
-rendered and visually inspected, including the classification page and
-dense coefficient tables. The original default PDF retains SHA256
-`f2b3a845f3e04879943471c21eaa556dfddf81dd54e1568db6be09156508aa3f`.
-The historical finite certificates were not rerun; no new exponent scan,
-floating-point eigensolver or Lean validation was performed.
+The current 27-page main PDF was built at `36e6de0` with pdfTeX/TeX Live 2026
+and no final LaTeX warnings or overfull/underfull boxes. The preceding
+26-page version received a full visual review; the later proof additions
+received targeted visual review. The current 63-page supporting PDF was
+built at `1c467a5`, also with no final warnings, and its changed pages were
+visually inspected. This documentation update rebuilds neither artifact.
+Historical finite-domain determinant computations were not rerun for this
+update; the coverage review distinguishes archived-row checks from fresh
+polynomial or determinant reconstruction. No Lean validation is claimed.
 
 From the repository root, check the committed fragments and receipt:
 

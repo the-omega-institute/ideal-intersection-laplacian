@@ -1,23 +1,27 @@
 # Working manuscript
 
-## Optional 25-page classification-core candidate
+## Selected 27-page classification manuscript
 
 The [classification-core PDF](classification-core.pdf) and
 [source](classification-core.tex) present the completed three-prime
 classification in dependency order, with all required finite inputs and
-complete coefficient tables. The [placement and concordance note](../notes/classification-core-placement.md)
+complete coefficient tables. The [current coverage review](../notes/classification-final-coverage-review.md)
+checks the final case assembly, graph-eigenvalue transfer and exact archived
+finite domains. The [placement and concordance note](../notes/classification-core-placement.md)
 maps its theorem numbers to the original manuscript and proposes where
 the auxiliary arithmetic and higher-prime material can be read separately.
 
-This candidate retains 23 original proof bodies and 23 original statement
-bodies byte-for-byte. Its source checker verifies the selected source spans
-and explicit reference closure; it does not rerun the historical 27,562-
-and 8,658-triple certificates. The 25-page build is warning-free, with
-main argument through page 17 and all appendices through page 25.
-The existing 61-page default PDF and 67-page historical detailed build
-are preserved. The measured reduction is 36 pages from the default.
-Main/companion scope, authorship, disclosure, freeze and submission remain
-joint decisions. No further four-prime expansion is integrated here.
+The focused manuscript retains 23 proof bodies and 23 statement bodies
+from the current selected section sources. Its source checker verifies
+concordance and explicit reference/citation closure; this does not establish
+proof correctness or rerun the historical 27,562- and 8,658-triple certificates.
+The current warning-free main build is 27 pages, including the all-positive-real
+low-root proof. The supporting collection is 63 pages; the earlier detailed
+67-page build is historical and has not been rebuilt. The main/supporting
+placement and three-prime-first direction are agreed. Author order and
+Professor Nikandish as corresponding author are also agreed; final title,
+journal, metadata, disclosure wording and submission arrangements require
+coauthor confirmation. No actual submission has occurred.
 
 From the repository root run `python3 scripts/check_classification_core.py`;
 from `paper/` run `pdflatex -interaction=nonstopmode -halt-on-error classification-core.tex`

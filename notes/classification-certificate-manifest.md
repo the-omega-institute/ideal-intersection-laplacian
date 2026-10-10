@@ -6,6 +6,13 @@ data filenames, SHA256 hashes, command and expected result for every entry
 below. This connects the focused manuscript to the historical evidence without
 requiring a referee to infer which revision contains a supporting checker.
 
+These revisions pin the historical inputs, including the original narrower
+real hypotheses. The [current final coverage review](classification-final-coverage-review.md)
+maps the later proof strengthenings to their notes and confirms that the
+integer classification still uses the same three finite domains. A historical
+checker is evidence for its pinned statement, not an automatic verification
+of a subsequent strengthened real-domain statement.
+
 | Main-paper input | Fixed revision | Exact evidence |
 | --- | --- | --- |
 | Boundary family, Theorem 3.2 | [afe3999](https://github.com/the-omega-institute/ideal-intersection-laplacian/tree/afe3999071b81a71cb5aa559053b649b721929dc) | Written boundary identities and the separate minimum-two modular exception |
