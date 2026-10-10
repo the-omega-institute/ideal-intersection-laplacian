@@ -1097,8 +1097,10 @@ so that the classification does not rely on an unstated uniqueness claim.
 
 \begin{lemma}
 \label{lem:endpoint-one-small-gaps}
-For integer $a\geq8$, $d\in\{1,2\}$ and $b=a+d$, no integer $c>b$
-satisfies $h_C(1)=0$.
+Let $a\geq2$ be real, $d\in\{1,2\}$ and $b=a+d$. Put
+$L_1=2a^2-a-2$ and $L_2=2a^2+a-6$. As a polynomial in $c$,
+$h_C(1)$ has exactly one root above $b$, lying in $(L_d,L_d+1)$.
+Consequently, for integer $a\geq2$, no integer $c>b$ satisfies $h_C(1)=0$.
 \end{lemma}
 \begin{proof}
 For fixed $a,b$, write $Q(c)=h_C(1)=A c^3+B c^2+D c+E$, where
@@ -1117,13 +1119,20 @@ $L_2=2a^2+a-6$. Direct expansion gives
  Q(L_2+1)&=4(a+2)(2a^5-2a^4-17a^3+25a^2+28a-42),
 \end{align*}
 where each pair uses its own $b=a+d$. The complete positive vectors
-at $a=8+m$, including those for $-Q(b)$, are in
+at $a=2+m$, including those for $-Q(b)$, are in
 Appendix~\ref{sec:largest-root-identities}. Thus $Q(0)>0>Q(b)$ and
-$Q(L_d)<0<Q(L_d+1)$, while $L_d>b$.
+$Q(L_d)<0<Q(L_d+1)$. Moreover,
+\[
+ L_1-b=1+6(a-2)+2(a-2)^2>0,\qquad
+ L_2-b=2(a-2)(a+2)\geq0.
+\]
+The second equality occurs only at $a=2$; the final open interval
+still lies strictly above $b$ there.
 The cubic has one root in each of $(-\infty,0)$, $(0,b)$ and
 $(L_d,L_d+1)$. These three distinct roots exhaust its degree.
-The unique root above $b$ is therefore between consecutive integers,
-proving the lemma on its whole domain without a finite base.
+The unique root above $b$ is therefore in $(L_d,L_d+1)$.
+For integer $a$, the endpoints are consecutive integers, proving the
+nonvanishing conclusion without a finite base.
 \end{proof}
 
 \begin{theorem}[Three-prime nonintegrality]

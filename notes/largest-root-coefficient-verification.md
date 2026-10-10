@@ -14,8 +14,13 @@ and six small-gap vectors (41 coefficients) agree exactly with the
 reconstructed polynomials. Their constants are 1404 and 513220, and all
 247 displayed coefficients are strictly positive. The checker also verifies
 the positive polynomial lower bounds for the two Schur diagonal entries,
-the small-gap anchor above the middle exponent, and inclusion of the same
+the small-gap anchor at or above the middle exponent, and inclusion of the same
 tables in both manuscript builds.
+
+The six small-gap vectors now use `a=2+m`, so their positivity proves
+the brackets for all real `a>=2`. The second anchor equals the middle
+exponent only at `a=2,d=2`; its open unit interval still lies above
+that exponent. The largest-root interval's original domain is retained.
 
 The mathematical root-location argument remains the written one. At the
 upper endpoint the pair-support block is positive definite; the two

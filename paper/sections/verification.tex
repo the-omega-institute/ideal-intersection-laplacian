@@ -114,8 +114,8 @@ $170$-term positive identities in Appendix~\ref{sec:largest-root-identities}.
 The pinned
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4471a5b4a02d97d3dcf78ea004298d5592924a95/scripts/check_largest_root_unit_interval.py}{checker}
 reconstructs the generic quotient and the independent Schur determinant,
-the lower sign identity, all $34$ coefficient rows, and the six small-gap
-boundary/diagonal sign vectors. Seven specified controls, including
+the lower sign identity, all $34$ coefficient rows, and the six historical
+small-gap sign vectors at $a=8+m$. Seven specified controls, including
 $(3,6,6)$, $(4,7,12)$, $(8,11,56)$, $(9,12,72)$, $(9,12,159)$,
 $(9,30,951)$ and $(9,150,160)$, have $14$ independent $6\times6$
 Bareiss endpoint determinants. Exact Sturm counts, weighted by squarefree
@@ -126,6 +126,8 @@ there is no new exponent scan or Lean run.
 The separate \path{scripts/verify_largest_root_coefficients.py} reconstructs
 the determinant directly from the set-disjointness quotient and checks
 every displayed coefficient in both tables and all six small-gap vectors.
+The latter now use $a=2+m$, proving the real minimum-two brackets;
+the boundary $L_2=b$ at $a=2$ is retained explicitly in the proof.
 It shares the support model and SymPy backend, but does not import the
 original characteristic-polynomial helper.
 

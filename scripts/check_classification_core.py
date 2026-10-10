@@ -161,7 +161,7 @@ def audit(body, selections, bibliography):
         "source_base_commit": "08065334917ac0bacc965e4c447e2b2aa5c421d1",
         "original_proof_source_revision": "7be84599097fdff320b196cb4f84a2dfe505bd77",
         "scope": "Source concordance, explicit-reference closure and selected statement/proof bodies matching the current source sections; not an independent proof validation or certificate rerun.",
-        "written_proof_update": "Endpoint-one exponent-sum bound strengthened to real minimum a>=2 by a three-coefficient positive quadratic; residual spectral claims retain a>=4.",
+        "written_proof_update": "Endpoint-one sum bound and small-gap1/2 exponent-root brackets hold at real minimum a>=2; residual spectral claims retain a>=4. Small-gap sign vectors use a=2+m with the L2=b boundary explicit.",
         "generated_body_sha256": digest(body),
         "generated_bibliography_sha256": digest(bibliography),
         "selections": selections,

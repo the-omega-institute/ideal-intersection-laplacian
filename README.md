@@ -38,6 +38,13 @@ also confirms all 240 nonzero coefficients in its three tables, the middle
 bound and parameter inverses, and all 32 necessary finite-domain counts.
 The historical endpoint-value certificate retains its separate scope.
 
+The [small-gap endpoint-one brackets](notes/endpoint-one-small-gap-strengthening.md)
+now hold for every real minimum `a >= 2`, strengthening the former
+`a >= 8` lemma. For gaps one and two the unique endpoint-zero root above
+the middle exponent lies between the displayed quadratic anchors and
+their successors. Integer exponents therefore admit no endpoint-one zero
+in these two gap families, with no finite base.
+
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new
 largest-root interval (bc+a+b+c,bc+a+b+c+1), the endpoint-one sum bound,

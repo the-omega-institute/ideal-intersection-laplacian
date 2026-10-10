@@ -96,6 +96,11 @@ symbolic determinant and the separate set-disjointness constructor. It
 shares the mathematical model and SymPy backend, but not the original
 characteristic-polynomial helper. It does not rerun a historical finite base.
 
+The current small-gap vectors are shifted at `a=2+m` and prove the
+real minimum-two strengthening in
+[the small-gap note](endpoint-one-small-gap-strengthening.md). The pinned
+older vectors at `a=8+m` remain historical evidence for the former domain.
+
 The source/data SHA256 values bind each file to its revision. A successful
 checking command establishes its stated identities or finite predicates;
 the classification additionally uses the written reductions in the paper.

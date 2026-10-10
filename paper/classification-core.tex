@@ -177,11 +177,13 @@ against a direct determinant and an arithmetic count formula.
 The sum comparison uses the displayed quadratic with three positive coefficients.
 The largest-root interval uses $36$ and $170$ complete positive terms
 and a symmetric Schur complement. The two small-gap proofs use six
-complete sign vectors. Appendix~\ref{sec:largest-root-identities}
+complete sign vectors at $a=2+m$, proving the brackets for all real $a\geq2$.
+Appendix~\ref{sec:largest-root-identities}
 retains every vector. The
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4471a5b4a02d97d3dcf78ea004298d5592924a95/scripts/check_largest_root_unit_interval.py}{revision-pinned largest-root checker}
 reconstructs the generic quotient and independent Schur determinant,
-the lower sign identity, every coefficient row and the small-gap vectors.
+the lower sign identity, every coefficient row and the historical small-gap
+vectors at $a=8+m$.
 Its fixed controls supplement the written proofs. The separate
 checker \path{scripts/verify_largest_root_coefficients.py} reconstructs
 the direct determinant and checks every displayed coefficient against it.

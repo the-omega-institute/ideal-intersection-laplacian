@@ -2,8 +2,8 @@
   "source_base_commit": "08065334917ac0bacc965e4c447e2b2aa5c421d1",
   "original_proof_source_revision": "7be84599097fdff320b196cb4f84a2dfe505bd77",
   "scope": "Source concordance, explicit-reference closure and selected statement/proof bodies matching the current source sections; not an independent proof validation or certificate rerun.",
-  "written_proof_update": "Endpoint-one exponent-sum bound strengthened to real minimum a>=2 by a three-coefficient positive quadratic; residual spectral claims retain a>=4.",
-  "generated_body_sha256": "7446346cbef5c4e43d6356963932039d754270110f35df2d61fed76d12e37e62",
+  "written_proof_update": "Endpoint-one sum bound and small-gap1/2 exponent-root brackets hold at real minimum a>=2; residual spectral claims retain a>=4. Small-gap sign vectors use a=2+m with the L2=b boundary explicit.",
+  "generated_body_sha256": "acbbf27aa8d9c073f0e6429e1314d7645c4527e303441709b6479aa33186469e",
   "generated_bibliography_sha256": "a4e88f7600b492ab2443fd7e91c54bd2d6debf2710523d9710c0343dea1e991f",
   "selections": [
     {
@@ -113,15 +113,15 @@
     },
     {
       "source": "paper/sections/three-prime-classification.tex",
-      "source_sha256": "4e34679c36d51ef44ab37a092593258186b6740d2dec30acc4e1e5b3b6af548c",
+      "source_sha256": "48667699a820237a5b6b9115b8304dfa7e9a041886828534c19f5c121c3f162e",
       "start_line": 1,
-      "exclusive_end_line": 124,
-      "selected_sha256": "4e34679c36d51ef44ab37a092593258186b6740d2dec30acc4e1e5b3b6af548c"
+      "exclusive_end_line": 133,
+      "selected_sha256": "48667699a820237a5b6b9115b8304dfa7e9a041886828534c19f5c121c3f162e"
     }
   ],
   "shared_appendices": {
     "paper/sections/endpoint-two-identities.tex": "1b615213520e5fa11c6dbeaa66929dd2be3de9e4eab315ada13abec530229de4",
-    "paper/sections/largest-root-identities.tex": "783e7f71d9b463387a3e123477ce0dca0ed3b315fbd43282ab2af696bdf2a084"
+    "paper/sections/largest-root-identities.tex": "2a5bf37fc1e3f5c1a680be7a8565320d657e1c9ff6ca9eeba0854a003877823d"
   },
   "environment_counts": {
     "proof": 23,
@@ -134,7 +134,7 @@
     "proof": {
       "09b4740c7dda024d5c04e356ac65d6ed0b19104ac5f32a21dc08b9e4a11542af": 1,
       "183e8d169717401ee854ba5da44ff7f03fe134d12a1be3bc26e3c86fa9622a93": 1,
-      "2533d5d6fa0174c934c7ba43d12131dae255fd70ff2f93a4b73b94cba48f4a29": 1,
+      "260fccb7de4db89194d830b4398832781b7b8f7d65c3f3d2b64e4d7d3a486659": 1,
       "2d97b72c5af2d7dc1f9888ae288c145e9ccaa33676b5eeea6cc198aa39baed02": 1,
       "3e99dd9cfa5c11a005d023a9cadb77a0775d5ebcd27beabbb83335afde6cd6fa": 1,
       "423ba209b1bcf9bd18d8ae1502e67875db0035ef041fe966fa67601adefb9664": 1,
@@ -174,8 +174,8 @@
       "97bad08971e6a41917fc80fbfe7d3821eb46b56a85fc08606e8cd19e4455858f": 1,
       "a588cb5064ddfa3dd9a3a5e3c5680fdd03063c80b5162e6b7e31245cc7824a0b": 1,
       "a9115a1240dfd96dda54889334eb68932a46551c2f8ad0e5138bdc45ba5fb7ba": 1,
-      "b43bb5cdfa95ac875213b3749adc3c94810b50a29e0a84fa52be48922b7d18ee": 1,
-      "fc49554bd4d04fa2b785d4b9d96c0d922b420c252e47788e31484e56ef47a12d": 1
+      "ab8e4fefa3d896d4206651f10fbda285c572ccac953118bba7bcc20f8fff58c1": 1,
+      "b43bb5cdfa95ac875213b3749adc3c94810b50a29e0a84fa52be48922b7d18ee": 1
     },
     "proposition": {
       "452c84684653cb2f2c61c7773e9a9491b8a7ff2a61a8759cbecf62b080d8b6d9": 1,

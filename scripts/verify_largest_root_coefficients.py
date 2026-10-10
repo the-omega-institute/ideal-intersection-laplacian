@@ -84,7 +84,7 @@ def main():
         assert cubic.degree() == 3
         for expression in (cubic.LC(), cubic.eval(0)):
             assert all(coefficient > 0 for coefficient in sympy.Poly(
-                sympy.expand(expression.subs(minimum, 8 + minimum_shift)), minimum_shift).coeffs())
+                sympy.expand(expression.subs(minimum, 2 + minimum_shift)), minimum_shift).coeffs())
     small_gap_rows = re.findall(r"^([12]) & (.*?) & \$\[([^\]]+)\]\$", sections[3], re.MULTILINE)
     vectors = []
     labels = set()
@@ -98,14 +98,15 @@ def main():
                      r"Q(L_d+1)": boundary + 1}[label]
         sign = 1 if label == r"Q(L_d+1)" else -1
         expression = sympy.expand(sign * endpoint.subs(middle, minimum + gap)
-                                  .subs(maximum, candidate).subs(minimum, 8 + minimum_shift))
+                                  .subs(maximum, candidate).subs(minimum, 2 + minimum_shift))
         coefficients = [int(value.strip()) for value in vector.replace(r"\allowbreak", "").split(",")]
         assert all(coefficient > 0 for coefficient in coefficients)
         assert sympy.expand(expression - sum(coefficient * minimum_shift ** degree
                                             for degree, coefficient in enumerate(coefficients))) == 0
-        assert all(coefficient > 0 for coefficient in sympy.Poly(
-            sympy.expand((boundary - minimum - gap).subs(minimum, 8 + minimum_shift)),
-            minimum_shift).coeffs())
+        expected_boundary = (1 + 6 * minimum_shift + 2 * minimum_shift ** 2
+                             if gap == 1 else 2 * minimum_shift * (minimum_shift + 4))
+        assert sympy.expand((boundary - minimum - gap).subs(minimum, 2 + minimum_shift)
+                            - expected_boundary) == 0
         vectors.append({"gap": gap, "expression": label, "coefficients": coefficients})
     assert len(vectors) == 6
     total_coefficients = sum(report["positive_coefficients"] for report in reports.values()) + sum(
@@ -119,7 +120,9 @@ def main():
         "manuscript_coefficient_tables": reports,
         "upper_schur_diagonal_lower_bounds": "positive coefficient expansions passed",
         "small_gap_displayed_vectors": vectors,
-        "small_gap_boundary_above_middle": "passed at real a>=8",
+        "small_gap_real_minimum": 2,
+        "small_gap_boundary_at_or_above_middle": "L1>b; L2>=b, equality only at a=2",
+        "small_gap_boundary_shift_polynomials": [[1, 6, 2], [0, 8, 2]],
         "small_gap_cubic_degree_and_positive_leading_constant": "passed for gaps1and2",
         "total_displayed_coefficients": total_coefficients,
         "main_and_supporting_table_inclusions": "passed",
