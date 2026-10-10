@@ -1,5 +1,12 @@
 # A uniform low eigenvalue and a balanced region of nonintegrality
 
+The current [uniform low-root theorem](uniform-low-root-positive.md)
+covers every positive real parameter triple, with optimal constant three.
+The supporting [span corollary](balanced-span-threshold.md) now uses
+`a > r+4+sqrt(3)(r+2)`, the exact span-only threshold for the strict
+diagonal criterion. The earlier statements and checker below record
+their original, narrower scopes.
+
 For **every ordered exponent triple `4<=a<=b<=c`**, the six-support
 complement quotient has a nonzero eigenvalue in **`(0,3)`**. The diagonal
 of its Schur complement may have any sign pattern. This gives a uniform

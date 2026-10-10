@@ -117,8 +117,12 @@ only if it equals one or two, giving the necessary condition.
 \begin{corollary}
 \label{cor:balanced-span}
 Let $a$ be the minimum exponent and $\rho$ the maximum minus minimum.
-Every positive three-prime exponent triple with $a\geq3\rho+8$ gives
-a nonintegral ideal intersection graph.
+Every positive three-prime exponent triple with
+\[
+a>\rho+4+\sqrt3(\rho+2)
+\]
+gives a nonintegral ideal intersection graph. In particular,
+$a\geq3\rho+8$ still suffices.
 \end{corollary}
 
 \begin{proof}
@@ -127,10 +131,25 @@ The left side minus the right side of~\eqref{eq:balanced-interval} is
 \[
 a^2-2a\rho-8a-2\rho^2-4\rho+4+(\rho-d)(a+2\rho+2).
 \]
-The last term is nonnegative. At $a=3\rho+8+u$, $u\geq0$, the
-first part is $(\rho+2)^2+(4\rho+8)u+u^2>0$.
-Corollary~\ref{cor:balanced-interval} applies.
+The last term is nonnegative, while the first part factors as
+\[
+\bigl(a-\rho-4-\sqrt3(\rho+2)\bigr)
+\bigl(a-\rho-4+\sqrt3(\rho+2)\bigr).
+\]
+Both factors are positive under the stated bound, which also gives
+$a>4+2\sqrt3>4$. Corollary~\ref{cor:balanced-interval} applies.
+The old linear bound is larger, since
+$3\rho+8-[\rho+4+\sqrt3(\rho+2)]=(2-\sqrt3)(\rho+2)>0$.
 \end{proof}
+
+The new threshold is exact for guaranteeing the strict diagonal
+criterion~\eqref{eq:balanced-interval} from the minimum and span alone:
+at fixed $a,\rho$ its left side minus right side is minimized by
+$b=c=a+\rho$, and it vanishes at the displayed threshold.
+This optimality concerns that sufficient criterion, not the entire
+spectral region where a root lies in $(2,3)$. For example,
+$(35,45,45)$ and $(281,381,381)$ satisfy the new bound but not
+$a\geq3\rho+8$.
 
 For example, $(20,21,24)$, $(38,43,48)$ and $(308,350,408)$ satisfy
 the span criterion and lie outside the four fixed-gap families of

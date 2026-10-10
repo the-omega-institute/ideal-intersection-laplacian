@@ -71,6 +71,11 @@ for every positive real parameter triple, replacing the former minimum-four
 assumption. A written inertia proof includes the singular minimum-three
 boundary. The uniform constant three is optimal by the equal-parameter limit.
 
+The supporting [balanced-span bound](notes/balanced-span-threshold.md)
+is sharpened to `a > r + 4 + sqrt(3)(r+2)`, where `r=c-a`,
+from `a >= 3r+8`. This is the exact span-only threshold for the
+strict Schur diagonal criterion; it is a sufficient spectral bound.
+
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new
 largest-root interval (bc+a+b+c,bc+a+b+c+1), the endpoint-one sum bound,

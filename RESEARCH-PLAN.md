@@ -27,6 +27,11 @@ Higher-prime nonsquarefree Q3 remains open; effective integer exponent-point
 enumeration is separate. The uniform positive-root bound below three now
 holds for all positive real parameters, including the singular minimum-three
 boundary; its constant three is optimal by the equal-parameter limit.
+The supporting balanced-span criterion now uses the exact threshold
+`a > r + 4 + sqrt(3)(r+2)`, strengthening `a >= 3r+8`.
+This threshold is sharp for the strict Schur diagonal criterion,
+not necessary for a root in `(2,3)`. The main classification retains
+its finite inputs. See [the proof](notes/balanced-span-threshold.md).
 Submission and freeze remain pending.
 Earlier research status paragraphs below describe
 prior stages and are superseded by this classification.
