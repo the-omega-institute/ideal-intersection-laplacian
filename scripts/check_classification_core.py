@@ -171,6 +171,7 @@ def audit(body, selections, bibliography):
         "explicit_references_resolve": True,
         "labels": sorted(labels),
         "citations_resolve": True,
+        "uniform_low_root_domain": "All ordered positive real0<a<=b<=c,including singular a=3;comparison at a>3 retained. Constant3optimal by equal-parameter lowest-root limit;finite bases unchanged.",
         "finite_bases_retained": [27562, 8658],
         "earlier_minimum_three_base_retained": 325,
         "new_mathematical_theorem": False,

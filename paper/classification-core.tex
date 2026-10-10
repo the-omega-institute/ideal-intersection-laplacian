@@ -122,19 +122,12 @@ The verification scope is specified in Appendix~\ref{sec:verification}.
 \appendix
 \section{Exact evidence for the classification}
 \label{sec:verification}
-The global theorem is computer-assisted. Its real-tail and small-gap
-steps have written unbounded proofs; the finite bases below exhaust the
-domains derived by those proofs. The source repository~\cite{repository}
-retains the checker sources, certificates and reproduction instructions.
-Python~3.10 or later and SymPy~1.14.0 use integer and rational arithmetic.
-No Lean formalization is claimed for these Laplacian results.
-The revision-pinned manifest in
-\path{notes/classification-certificate-manifest.md} and
-\path{results/classification-certificate-manifest.json} maps each essential
-input to its source and data revisions, SHA256 hashes, checking command
-and expected result. Historical scope strings in the saved reports describe
-the state when those reports were produced; the dependencies below give
-their role in the completed classification.
+The computer-assisted classification combines written unbounded proofs
+with finite bases exhausting the domains derived by those proofs.
+The repository~\cite{repository} retains exact integer and rational
+checkers for Python~3.10 or later and SymPy~1.14.0, without a Lean formalization.
+Reproduction commands, fixed source and data revisions, and expected
+results are in \path{notes/classification-certificate-manifest.md}.
 
 \subsection{Repeated entries and small minima}
 The exact divisor reduction exhausts the first three nonboundary
@@ -172,7 +165,10 @@ and its complete CSV and JSON preserve this evidence.
 displayed coefficients and $32$ domain counts by direct determinant
 and an arithmetic formula.
 
-\subsection{Written endpoint-one and largest-root steps}
+\subsection{Written spectral bounds}
+The uniform positive-root bound below three holds for all positive real
+parameters; \path{scripts/verify_uniform_low_root_positive.py} checks its
+principal-block identities, singular boundary and sharp limiting family.
 The sum comparison uses the displayed quadratic with three positive coefficients.
 Its residual-root separation has the sharp real cutoff $a>2+\sqrt3$;
 \path{scripts/verify_residual_spectrum_cutoff.py} checks the anchor and sharpness identities.
@@ -180,20 +176,15 @@ The largest-root interval uses the positive $36$- and $170$-term identities
 for $a\geq3$, a $35$-coefficient positive lower bound for $2\leq a\leq3$,
 and a symmetric Schur complement. The two small-gap proofs use six
 complete sign vectors at $a=2+m$, proving the brackets for all real $a\geq2$.
-Appendix~\ref{sec:largest-root-identities}
-retains every vector. The
+Appendix~\ref{sec:largest-root-identities} retains every coefficient.
+The
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4471a5b4a02d97d3dcf78ea004298d5592924a95/scripts/check_largest_root_unit_interval.py}{revision-pinned largest-root checker}
-reconstructs the generic quotient and independent Schur determinant,
-the lower sign identity, every coefficient row and the historical small-gap
-vectors at $a=8+m$.
-Its fixed controls supplement the written proofs. The separate
-checker \path{scripts/verify_largest_root_coefficients.py} reconstructs
-the direct determinant and checks the original tables and current small-gap vectors against it.
-The slab bound is checked by \path{scripts/verify_largest_root_minimum_two.py}.
-The separate
-minimum-eight and middle-at-most-fifteen certificates are unnecessary
-for this route. Reorganizing the presentation does not rerun the
-unchanged historical certificates or remove their mathematical role.
+checks the quotient, Schur determinant, original tables and historical
+small-gap vectors. \path{scripts/verify_largest_root_coefficients.py}
+checks the current tables directly; \path{scripts/verify_largest_root_minimum_two.py}
+checks the slab bound. Fixed controls supplement the written proofs.
+The finite bases above remain essential; separate minimum-eight and
+middle-at-most-fifteen certificates are unnecessary for this route.
 
 \clearpage
 \input{sections/endpoint-two-identities}

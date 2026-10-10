@@ -767,7 +767,7 @@ Their graph eigenvalues lie in $(V-m,V-m+1)$, which contains no integer.
 
 \begin{theorem}
 \label{thm:uniform-low-root}
-For every ordered triple $4\leq a\leq b\leq c$, the six-support
+For every ordered real triple $0<a\leq b\leq c$, the six-support
 complement quotient has a nonzero eigenvalue in $(0,3)$.
 \end{theorem}
 
@@ -783,25 +783,43 @@ Expansion of this diagonal-minus-rank-one determinant gives
 \det L&=6\bigl(c(a-b)^2+b(a-c)^2+a(b-c)^2\bigr),\\
 v^TLv&=-3P\left(\frac1a+\frac1b+\frac1c\right)<0.
 \end{align*}
-If the exponents are not all equal, the determinant is positive.
-The negative Rayleigh value supplies a negative eigenvalue, so the
-positive determinant forces exactly two negative eigenvalues.
-If all exponents are equal, $L=-vv^T$, with one negative and two zero
-eigenvalues. In both cases there is a two-dimensional subspace on
-which $L$ is nonpositive.
+The determinant and Rayleigh value give exactly two negative eigenvalues
+at unequal parameters. At equal parameters $L=-vv^T$; thus $L$ is
+nonpositive on a two-dimensional subspace in both cases.
 
-Since $a>3$, the identity
+For $a>3$, the identity
 \[
 K(3)=L-\operatorname{diag}_{t\in\{a,b,c\}}
 \left(3+\frac{9P}{t^2(t-3)}\right)
 \]
-subtracts a positive definite matrix. Thus $K(3)$ is strictly negative
-on that subspace and has at least two negative eigenvalues. As $D-3I$
-is positive definite, $\mathcal C-3I$ also has at least two negative
-eigenvalues. The connected complement quotient has a simple zero
-eigenvalue and all other eigenvalues are positive. At least one of
-them therefore lies strictly between zero and three. This argument
-also covers zero values among the $k_t(3)$.
+subtracts a positive definite matrix. Since $D-3I>0$, this gives
+at least two negative eigenvalues of $\mathcal C-3I$.
+
+If $b\leq3$, restrict $\mathcal C-3I$ to the first two singleton
+supports and their paired supports. Its blocks are
+$\bigl[\begin{smallmatrix}A_0&-\sqrt P I_2\\-\sqrt P I_2&D_0\end{smallmatrix}\bigr]$
+with $D_0\leq0$. On vectors $(z,tz)$, the quadratic form is at most
+$z^T(A_0-2t\sqrt P I_2)z$, which is negative definite for large $t$.
+
+It remains to consider $a\leq3<b$. Eliminate the positive paired
+diagonals $b-3,c-3$. On singleton supports $2,3$, the vector
+$(\sqrt b,\sqrt c)$ has quadratic value
+\[
+ q=(a-3)(b+c)-3P\left(\frac1{b-3}+\frac1{c-3}\right)<0.
+\]
+Compress the remaining matrix to singleton $1$, its paired support,
+and this vector. The resulting matrix is
+\[
+ \begin{pmatrix}M&-\sqrt P&r\\-\sqrt P&a-3&0\\r&0&q\end{pmatrix},
+ \quad M=bc+b+c-3>0,\quad r=-\sqrt a(b+c).
+\]
+Its determinant $M(a-3)q-Pq-(a-3)r^2$ is positive.
+Its positive and negative diagonal entries therefore force exactly
+two negative eigenvalues. This includes the singular boundary $a=3$.
+
+In every case $\mathcal C-3I$ has at least two negative eigenvalues.
+Since $\mathcal C$ is positive semidefinite with a simple zero,
+at least one positive eigenvalue lies strictly below three.
 \end{proof}
 
 \section{The endpoint-one sum bound and spectral separation}

@@ -1,7 +1,8 @@
 # First task: Laplacian integrality
 
 The selected main-paper direction is the [three-prime classification
-manuscript](paper/classification-core.pdf), following coauthor review of
+manuscript](paper/classification-core.pdf), now 27 pages after including
+the all-positive-real low-root proof, following coauthor review of
 the 25-page candidate. Its full proof chain, finite bases and coefficient
 appendices remain together. The 62-page collection, earlier 67-page detailed build and the
 higher-prime research branch supply supporting material, without a separate
@@ -23,7 +24,10 @@ The endpoint-two middle bound now has the sharp real cutoff
 a>(7+sqrt13)/3, with sole boundary equality b=c=2a-2;
 the integer minimum-four and maximum-bound minimum-eight scopes are retained.
 Higher-prime nonsquarefree Q3 remains open; effective integer exponent-point
-enumeration is separate. Submission and freeze remain pending.
+enumeration is separate. The uniform positive-root bound below three now
+holds for all positive real parameters, including the singular minimum-three
+boundary; its constant three is optimal by the equal-parameter limit.
+Submission and freeze remain pending.
 Earlier research status paragraphs below describe
 prior stages and are superseded by this classification.
 

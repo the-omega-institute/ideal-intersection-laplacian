@@ -3,7 +3,7 @@
   "original_proof_source_revision": "7be84599097fdff320b196cb4f84a2dfe505bd77",
   "scope": "Source concordance, explicit-reference closure and selected statement/proof bodies matching the current source sections; not an independent proof validation or certificate rerun.",
   "written_proof_update": "Endpoint-one sum bound, small-gap1/2 brackets and largest-root interval hold at real minimum a>=2. General endpoint-one residual-root separation has the sharp real cutoff a>2+sqrt3;the integer divisor corollary retains a>=4. Endpoint-two middle bound has sharp cutoff a>(7+sqrt13)/3,with sole boundary equality b=c=2a-2;its integer bound and maximum bound retain minima4and8. Largest-root upper sign uses a35-coefficient bound on2<=a<=3;small-gap vectors use a=2+m with L2=b explicit.",
-  "generated_body_sha256": "727bea0e34a1a69670dac53af42b9083cc5dcaad37b6d7bb1d67c1c7cc248b47",
+  "generated_body_sha256": "83f81c199cea5cbc42dfb7deeb2e667e7000061a8c426f3406f6bd44edb220df",
   "generated_bibliography_sha256": "a4e88f7600b492ab2443fd7e91c54bd2d6debf2710523d9710c0343dea1e991f",
   "selections": [
     {
@@ -92,10 +92,10 @@
     },
     {
       "source": "paper/sections/mixed-inertia.tex",
-      "source_sha256": "8d2f41da15b1cfcc7213a7d4c1e19cff0d2bdfb9a8f9896d22b392be9bf9a8c2",
+      "source_sha256": "9d745ee75579499c124efaeb4acc3003e4d9bb37afbc92b10a9896c12dfa3a78",
       "start_line": 35,
-      "exclusive_end_line": 74,
-      "selected_sha256": "c816656411545b7e6cdcad799e5d4a4be9aec89d71ea2286ce0d23cbe2b081d8"
+      "exclusive_end_line": 92,
+      "selected_sha256": "1800a656fa4374276ae00e13f85f6db96850a15789f63571c5225fe5603694f6"
     },
     {
       "source": "paper/sections/endpoint-one-spectrum.tex",
@@ -135,6 +135,7 @@
       "09b4740c7dda024d5c04e356ac65d6ed0b19104ac5f32a21dc08b9e4a11542af": 1,
       "183e8d169717401ee854ba5da44ff7f03fe134d12a1be3bc26e3c86fa9622a93": 1,
       "260fccb7de4db89194d830b4398832781b7b8f7d65c3f3d2b64e4d7d3a486659": 1,
+      "27bf917786c3955a9281a1279ae160d0a09be569ac7037690ffd42dbc8a43419": 1,
       "2d97b72c5af2d7dc1f9888ae288c145e9ccaa33676b5eeea6cc198aa39baed02": 1,
       "3e99dd9cfa5c11a005d023a9cadb77a0775d5ebcd27beabbb83335afde6cd6fa": 1,
       "423ba209b1bcf9bd18d8ae1502e67875db0035ef041fe966fa67601adefb9664": 1,
@@ -149,7 +150,6 @@
       "bd37114701fd5d8fd369fffd6dfbe5a79530376421a88f1e38751377dda46648": 1,
       "c07c480f52e3ac8ff3b9cfb4a322a0c8bd9be129cce5d42f7b58f84030461b97": 1,
       "c808009d90b91666c33b044a5801efc4381d49fe4609f1fe9c4f00f4729bed2f": 1,
-      "c8a29afa744c48c4fc9d7cd133ac67844866089f30458a4521d6c1a6176d34f5": 1,
       "ce53be365664f060ecac548297157ee51ebeb50edb580a5994798eb9098c47fe": 1,
       "d7abad8e7fa129e2021956a45ad8ca1579ac9a7d78b43d58bbb6250a2c8415f5": 1,
       "e99242c6866afe7ed232252f48ce5afa0348115371699e10a8653522501b7b71": 1,
@@ -161,13 +161,13 @@
       "2b3d2f962d910972da93e9a0113fc8f033482a02ac11e7947fd89b34f22334c4": 1,
       "3303a876648d8ecc07b2b1914d637570fb795ea8836b74fa3867a4d2e63b79e6": 1,
       "69e5a2c5bd0d0b8bfbb6c654fc72b0dc1a8156bc175924a758fd5bb8e5146675": 1,
+      "6baf2f2a847192d2c551d1ad7d7ee5fd6d6df9070d1b775db087a4891c0ffd03": 1,
       "a1a3d8457fafeb4cf6bb8ec6582b850b9dc3c7d23f5e097f882f1ee0d11879f7": 1,
       "aa6631cea13849e2ce1f54345543bf0323d6c8aad1312372f94e68352d111e45": 1,
       "b4ced0019201c1b97cf9d904b974d1ee8d10bc9efcc369532cb51cc27a49e377": 1,
       "d0e033fee6ba06176269b64ac8256269f20ea1ed20a22845e8edb290a90e6127": 1,
       "d3110886bf2e9a57d5cc4fbfc2859db1122102b293881e9f6905712f18e18ad6": 1,
-      "e3a33edbab030d9714ecd4fa0e0c896bd6ee1b2b3dc3cc8f96f731e91e1ef22c": 1,
-      "ffa535e6e072e111b65c1a9cde78346b589f7b351e1f49be58d31ad162e66c3d": 1
+      "e3a33edbab030d9714ecd4fa0e0c896bd6ee1b2b3dc3cc8f96f731e91e1ef22c": 1
     },
     "lemma": {
       "97bad08971e6a41917fc80fbfe7d3821eb46b56a85fc08606e8cd19e4455858f": 1,
@@ -239,6 +239,7 @@
     "thm:unit"
   ],
   "citations_resolve": true,
+  "uniform_low_root_domain": "All ordered positive real0<a<=b<=c,including singular a=3;comparison at a>3 retained. Constant3optimal by equal-parameter lowest-root limit;finite bases unchanged.",
   "finite_bases_retained": [
     27562,
     8658

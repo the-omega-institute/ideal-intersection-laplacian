@@ -1,6 +1,6 @@
 # Laplacian integrality of ideal intersection graphs
 
-The [26-page three-prime classification manuscript](paper/classification-core.pdf)
+The [27-page three-prime classification manuscript](paper/classification-core.pdf)
 is the selected main-paper direction, following coauthor review of the
 focused candidate. It presents the completed three-prime theorem with its
 full proof chain, historical finite certificates and complete coefficient tables. The
@@ -65,6 +65,11 @@ also holds for every real `2 <= a <= b`, with `c=b(b+2)-a`:
 This strengthens the former minimum-four hypothesis; the general
 endpoint-one residual separation has its separate sharp real cutoff
 `a > 2 + sqrt(3)`.
+
+The [uniform low-root bound](notes/uniform-low-root-positive.md) now holds
+for every positive real parameter triple, replacing the former minimum-four
+assumption. A written inertia proof includes the singular minimum-three
+boundary. The uniform constant three is optimal by the equal-parameter limit.
 
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new
