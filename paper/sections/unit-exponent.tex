@@ -1,0 +1,427 @@
+\section{Small exponents and complement Rayleigh bounds}
+\label{sec:unit}
+
+The complement quotient replaces coordinate symmetry when the other
+two exponents are arbitrary. A root between zero and one then settles the
+entire unit-exponent family after the small exceptions are identified.
+For arbitrary prime-factor count, a rational trial function also gives
+an explicit sufficient condition with a distinguished exponent $m\geq2$.
+
+\begin{theorem}
+\label{thm:unit}
+For distinct primes $p,q,r$ and every $b,c\geq1$, the graph
+$G_{p q^b r^c}$ is not Laplacian integral. The same holds for
+permutations of the exponent vector $(1,b,c)$.
+\end{theorem}
+
+The equal-exponent decomposition is replaced by a complement identity
+on all six support classes. For arbitrary $a,b,c\geq1$, remove the
+$u=abc-1$ universal vertices and denote the remaining graph by $H$.
+In the order $1,2,3,12,13,23$, its class-size vector is
+$w=(a,b,c,ab,ac,bc)^T$ and its vertex count is
+$N=a+b+c+ab+ac+bc$. Disjoint supports are adjacent in the complement
+$\overline H$, whose cell-constant Laplacian quotient is
+\[
+C=\begin{pmatrix}
+b+c+bc&-b&-c&0&0&-bc\\
+-a&a+c+ac&-c&0&-ac&0\\
+-a&-b&a+b+ab&-ab&0&0\\
+0&0&-c&c&0&0\\
+0&-b&0&0&b&0\\
+-a&0&0&0&0&a
+\end{pmatrix}.
+\]
+Multiplication on the left by $\operatorname{diag}(w)$ makes $C$
+symmetric. Moreover $C\mathbf1=0$ and $w^TC=0$.
+If $B$ is the quotient of $H$, the complement relation gives
+\begin{equation}
+\label{eq:complement}
+B+C=NI-\mathbf1w^T.
+\end{equation}
+Thus an eigenvector $Cv=\mu v$ with $\mu\ne0$ satisfies $w^Tv=0$
+and $Bv=(N-\mu)v$. When $N-\mu\ne0$, Lemma~\ref{lem:join}
+lifts it to an eigenvalue $N+u-\mu$ of $G_n$.
+
+\begin{proof}[Proof of Theorem~\ref{thm:unit}]
+Write $\det(xI-C)=x h_{a,b,c}(x)$. Direct determinant expansion yields
+\begin{align*}
+h_{a,b,c}(0)&=-abc(a+b+c)N,\\
+h_{a,b,c}(a)&=-a^2b^2c^2(a^2+2a-b-c).
+\end{align*}
+At $a=1$, the first value is strictly negative and
+\[
+h_{1,b,c}(1)=b^2c^2(b+c-3).
+\]
+When $b+c>3$, a real root $\mu$ lies strictly between $0$ and $1$.
+Equation~\eqref{eq:complement} and the universal-vertex lift produce a
+Laplacian eigenvalue $V-\mu\in(V-1,V)$, where $V=N+u$ is the integer
+vertex count. This eigenvalue is noninteger. When $b+c\leq3$, the
+positive pairs are $(1,1),(1,2),(2,1)$; Theorem~\ref{thm:pqrk}
+settles the corresponding permutations of $(1,1,k)$. Permuting the
+prime factors preserves the graph's isomorphism type.
+\end{proof}
+
+The unit-exponent obstruction extends to any number of prime factors
+by a variational argument on the complement graph.
+
+\begin{theorem}
+\label{thm:unit-any-prime-count}
+Let $n=\prod_{i=1}^t p_i^{k_i}$ with $t\geq3$, distinct primes
+$p_i$ and positive integer exponents $k_i$. If some $k_i=1$, then
+$G_n$ has a Laplacian eigenvalue in $(V-1,V)$, where
+$V=\prod_{i=1}^t(k_i+1)-2$. In particular, $G_n$ is not
+Laplacian integral.
+\end{theorem}
+\begin{proof}
+Permute the factors so that $k_t=1$, and put
+\[
+ A=\prod_{i<t}k_i,\qquad
+ B=\prod_{i<t}(k_i+1)-1-A.
+\]
+The quantity $B$ is the sum of the weights of all nonempty proper
+supports on the first $t-1$ coordinates. Since $t-1\geq2$, it is
+positive. Remove the $A-1$ full-support universal vertices and let
+$F=\overline H$. Then $N=|H|=A+2B+1$ and $V=N+A-1=2A+2B$.
+The graph $F$ is connected: its singleton support classes form a
+connected complete multipartite graph, and every proper support has
+a singleton outside it.
+
+The support $\{t\}$ consists of a single vertex $z$. Each of the
+$A$ vertices supported on $[t-1]$ has $z$ as its sole neighbor in
+$F$. The remaining $2B$ vertices form two collections of weight $B$:
+nonempty proper supports $S\subset[t-1]$, and their counterparts
+$S\cup\{t\}$. The vertex $z$ is adjacent to all vertices of the
+first collection and none of the second.
+
+Give a function $f$ the value $2B$ on the $A$ leaves, zero at $z$,
+and $-A$ on the other $2B$ vertices. It is nonzero and
+orthogonal to the constant vector. Its Laplacian energy and norm are
+\[
+ f^TL(F)f=A(2B)^2+BA^2=AB(4B+A),\qquad
+ f^Tf=A(2B)^2+2BA^2=2AB(2B+A).
+\]
+Indeed, only edges incident to $z$ have unequal endpoint values.
+Connectedness and the variational characterization therefore give
+\[
+ 0<\lambda_2(F)\leq\frac{4B+A}{4B+2A}<1.
+\]
+For a corresponding eigenvector, the complement identity
+$L(H)+L(F)=NI-J$ gives the nonzero eigenvalue $N-\lambda_2(F)$
+of $H$. Lemma~\ref{lem:join} lifts it to
+$V-\lambda_2(F)\in(V-1,V)$, proving the claim.
+\end{proof}
+
+The restriction $t\geq3$ is sharp for this conclusion. If $t=2$
+and $k_2=1$, then $B=0$ and $F=K_{1,A}$, so the complement and
+universal-vertex identities give an integral spectrum for $G_n$.
+Theorem~\ref{thm:unit-any-prime-count} also gives a proof of
+Theorems~\ref{thm:squarefree} for $t\geq3$ and~\ref{thm:unit}
+without their separate spectral decompositions or small exceptions.
+
+The same support partition gives an obstruction when the distinguished
+exponent is larger than one and the other support weights are sufficiently
+concentrated on their full support.
+
+\begin{theorem}
+\label{thm:small-exponent-rayleigh}
+Let $n=(\prod_{i<t}p_i^{k_i})p_t^m$ have $t\geq3$ distinct prime
+factors and positive integer exponents. Put
+\[
+ A=\prod_{i<t}k_i,\qquad B=\prod_{i<t}(k_i+1)-1-A.
+\]
+If $A\geq(m^2-1)B-(m-1)$, then $G_n$ has a Laplacian eigenvalue
+in $(V-1,V)$, where $V=(m+1)\prod_{i<t}(k_i+1)-2$.
+In particular, it is not Laplacian integral. The condition includes
+equality and can be applied after any permutation of the factors.
+\end{theorem}
+\begin{proof}
+Remove the $mA-1$ universal vertices and let $F=\overline H$.
+As in Theorem~\ref{thm:unit-any-prime-count}, $F$ is connected and
+$B>0$. Its vertices split into three collections: $L$ supported on
+$[t-1]$, $Z$ supported on $\{t\}$, and the remaining collection $R$.
+Their sizes are $A,m,(m+1)B$, respectively. There are $mA$ edges
+between $L$ and $Z$, none between $L$ and $R$, and $mB$ between
+$Z$ and $R$. Among the vertices of $R$, those whose support contains
+$t$ have total weight $mB$ and no neighbor in $Z$; the others have
+total weight $B$ and are adjacent to every vertex of $Z$.
+
+Give a trial function $f$ the values
+\[
+ x=m\ \text{on }L,\qquad y=m-1\ \text{on }Z,\qquad
+ z=-\frac{m(A+m-1)}{(m+1)B}\ \text{on }R.
+\]
+It is nonzero and $Ax+my+(m+1)Bz=0$. Its energy $E$ and squared
+norm $D$ are
+\[
+ E=mA(x-y)^2+mB(y-z)^2,\qquad
+ D=Ax^2+my^2+(m+1)Bz^2.
+\]
+Direct expansion gives
+\[
+ E-D=\frac{m\bigl((m^2-1)B-A-(m-1)\bigr)
+                 \bigl(mA+(m^2-1)B+m(m-1)\bigr)}{B(m+1)^2}.
+\]
+The second factor is positive. Thus $E/D<1$ when the hypothesis
+is strict, and the variational principle gives $0<\lambda_2(F)<1$.
+
+At equality, necessarily $m\geq2$, and $z=-m(m-1)$, with $E/D=1$.
+At every vertex of $R$ whose support contains $t$, the full Laplacian
+action on $f$ is zero: its neighbors are in $R$ and have the same
+trial value. But $f=-m(m-1)\ne0$ there, so $f$ is not an eigenvector
+at one. Equality in the Rayleigh minimum would force $f$ to be such
+an eigenvector. Hence $\lambda_2(F)<1$ also at the boundary.
+
+In both cases, the complement identity reflects this positive
+eigenvalue to $N-\lambda_2(F)$, where $N=A+m+(m+1)B$.
+Lemma~\ref{lem:join} then shifts it by $mA-1$, giving
+$V-\lambda_2(F)\in(V-1,V)$.
+\end{proof}
+
+The exact product condition has a convenient reciprocal sufficient
+condition, giving unbounded families with every exponent at least two.
+
+\begin{corollary}
+\label{cor:small-exponent-reciprocal}
+Let $n$ have $t\geq3$ distinct prime factors, one exponent $m\geq2$
+and other positive integer exponents $k_1,\ldots,k_{t-1}$.
+Suppose
+\[
+ \sum_{i<t}\frac1{k_i}\leq\frac1{m^2}.
+\]
+Then $G_n$ is not Laplacian integral. In particular, every
+$k_i\geq m^2(t-1)$ suffices.
+\end{corollary}
+\begin{proof}
+Put $u_i=1/k_i$ and $s=\sum u_i<1$. Induction gives
+$\prod(1-u_i)\geq1-s$, while $1+u_i<(1-u_i)^{-1}$. Therefore
+\[
+ \frac BA=\prod_{i<t}(1+u_i)-1-\frac1A
+ <\frac1{1-s}-1\leq\frac1{m^2-1}.
+\]
+Thus $A>(m^2-1)B$, and Theorem~\ref{thm:small-exponent-rayleigh}
+applies. The stated coordinate bound implies the reciprocal bound.
+\end{proof}
+
+For example, $(10,10,10,2)$ has $A=1000,B=330$ and satisfies
+the strict condition. The boundary vector $(4,19,74,2)$ has
+$A=5624,B=1875$ and $A=3B-1$; the non-eigenvector argument in the
+proof supplies strictness. The criterion does not apply to
+$(2,2,2,2)$, for which $A=8,B=18$. It is a sufficient obstruction,
+and the higher-prime classification outside it remains open.
+
+The general six-support reduction also gives an exact diagnostic for
+fully distinct triples. For $1\leq a<b<c\leq7$, all thirty-five quintics
+have a nonlinear irreducible factor over $\mathbb Q$. The quintics
+at $(1,2,7)$ and $(2,3,5)$ have factor degrees $(1,4)$, and that at
+$(2,4,6)$ has factor degrees $(2,3)$;
+irreducibility of the entire quintic is therefore not a
+uniform obstruction. Theorem~\ref{thm:unit} covers every triple beginning
+with $1$ without a range restriction; the thirty-five-case calculation
+itself remains finite evidence.
+
+\subsection{Four prime factors and two exponents equal to two}
+
+A repeated pair also produces a small invariant subspace in four
+coordinates. This settles a family including balanced vectors outside
+the preceding Rayleigh criterion.
+
+\begin{theorem}
+\label{thm:four-prime-pair-two}
+For distinct primes $p_1,p_2,p_3,p_4$ and every $b,c\geq2$, the graph
+$G_{p_1^2p_2^2p_3^bp_4^c}$ is not Laplacian integral.
+Together with Theorem~\ref{thm:unit-any-prime-count}, this covers every
+positive four-prime exponent vector with at least two entries equal to two.
+\end{theorem}
+\begin{proof}
+Remove the $4bc-1$ universal vertices and let $F=\overline H$.
+For each $T\subseteq\{3,4\}$, assign a function the values $h(T)$
+on support $\{1\}\cup T$, $-h(T)$ on $\{2\}\cup T$, and zero elsewhere.
+The paired classes have equal weight, so the function has weighted sum
+zero. Classes containing neither or both of coordinates $1,2$ see
+equal opposite contributions. At support $\{1\}\cup T$, the complement
+degree is $3\prod_{i\in\{3,4\}\setminus T}(k_i+1)-1$ and its
+nonzero-valued neighbors are precisely the classes $\{2\}\cup T'$
+with $T'\cap T=\varnothing$, of weight $2\prod_{i\in T'}k_i$.
+Thus the four-dimensional space is invariant. In the order
+$T=\varnothing,\{4\},\{3\},\{3,4\}$, its complement action is $K-I$,
+where
+\[
+K=\begin{pmatrix}
+3(b+1)(c+1)+2&2c&2b&2bc\\
+2&3(b+1)&2b&0\\
+2&2c&3(c+1)&0\\
+2&0&0&3
+\end{pmatrix}.
+\]
+The matrix $\operatorname{diag}(1,c,b,bc)K$ is symmetric. If $\kappa$
+is an eigenvalue of $K$, complement reflection and the zero-sum
+lifting calculation in the proof of Lemma~\ref{lem:join}
+give the graph eigenvalue $V+1-\kappa$, with $V=9(b+1)(c+1)-2$.
+
+The leading principal minors of $K-I$ are
+\begin{align*}
+D_1={}&3bc+3b+3c+4,\\
+D_2={}&9b^2c+9b^2+15bc+18b+2c+8,\\
+D_3={}&15b^2c^2+33b^2c+6b^2+33bc^2+84bc\\
+       &{}+28b+6c^2+28c+16,\\
+D_4={}&2\bigl(5b^2c^2+21b^2c+6b^2+21bc^2+76bc\\
+       &\hspace{1.5em}{}+28b+6c^2+28c+16\bigr).
+\end{align*}
+All coefficients are positive. The symmetric similar matrix has the
+same leading minors, so Sylvester's criterion gives $\kappa_{\min}>1$.
+The principal submatrix of $K-3I$ on coordinates $1,4$ has determinant
+$-4bc$, hence a negative Rayleigh quotient in its symmetric similar
+matrix. Thus $\kappa_{\min}<3$. Unless $\det(K-2I)=0$, this smallest
+eigenvalue is noninteger and so is its graph lift.
+
+Direct expansion gives
+\begin{align*}
+P(b,c):=\det(K-2I)={}&-5b^2c^2+12b^2c-3b^2+12bc^2\\
+                    &{}+48bc+8b-3c^2+8c+3.
+\end{align*}
+Order $b\leq c$. For $b=7+u,c=7+v$, with $u,v\geq0$,
+\begin{align*}
+-P(7+u,7+v)={}&5u^2v^2+58u^2v+164u^2+58uv^2+596uv\\
+              &{}+1364u+164v^2+1364v+1600>0.
+\end{align*}
+For the remaining five values of $b$, the polynomial is
+\[
+\begin{array}{c|l}
+b&P(b,c)\\\hline
+2&c^2+152c+7\\
+3&4c(65-3c)\\
+4&-35c^2+392c-13\\
+5&-4(c-8)(17c-1)\\
+6&-111c^2+728c-57
+\end{array}
+\]
+The first two rows have no positive integer zero. The discriminants
+of rows $4,6$ are $151844\in(389^2,390^2)$ and
+$504676\in(710^2,711^2)$, so neither has a rational zero.
+The only positive integer endpoint pair is therefore $(b,c)=(5,8)$,
+up to exchange.
+
+At this pair,
+\[
+\det(xI-K)=(x-2)(x^3-210x^2+7701x-53240).
+\]
+The cubic reduces to $x^3+11x^2+4$ modulo $17$. At the residues
+$0,\ldots,16$ its values, in order, are
+\[
+\begin{gathered}
+4,16,5,11,6,13,4,2,13,\\
+9,13,14,1,14,8,6,14.
+\end{gathered}
+\]
+None vanishes, so the cubic is irreducible over $\mathbb F_{17}$ and
+over $\mathbb Q$. Its roots are real eigenvalues of $K$ and irrational;
+their graph lifts settle the exceptional pair as well. The proof uses
+the five symbolic rows and this $17$-residue certificate, with no
+finite exponent base.
+\end{proof}
+
+In particular, $(2,2,2,2)$ is nonintegral, although it fails
+Theorem~\ref{thm:small-exponent-rayleigh}'s sufficient condition.
+The present argument uses an actual invariant subspace, whereas the
+preceding three-collection compression supplies trial functions.
+
+\subsection{Two exponents equal to three}
+
+Tensor normalization supplies a general lower bound for the
+repeated-pair restriction. At exponent three it leaves an endpoint
+equation with no integer solutions.
+
+\begin{theorem}
+\label{thm:four-prime-pair-three}
+For distinct primes $p_1,p_2,p_3,p_4$ and every $b,c\geq2$, the graph
+$G_{p_1^3p_2^3p_3^bp_4^c}$ has a noninteger Laplacian eigenvalue in
+$(V-2,V)$, different from $V-1$, where $V=16(b+1)(c+1)-2$.
+Together with Theorem~\ref{thm:unit-any-prime-count}, this proves
+nonintegrality for every positive four-prime vector with two entries
+equal to three.
+\end{theorem}
+\begin{proof}
+For the general vector $(a,a,b,c)$, use the paired-support functions
+of Theorem~\ref{thm:four-prime-pair-two}. Their weighted sum is zero.
+The degree on $\{1\}\cup T$ is now
+$(a+1)\prod_{i\in\{3,4\}\setminus T}(k_i+1)-1$, while the opposite
+neighbor classes have weights $a\prod_{i\in T'}k_i$.
+Thus the complement restriction is $K_a-I$, with
+\[
+ K_a=(a+1)E_b\otimes E_c+aF_b\otimes F_c,\qquad
+ E_k=\begin{pmatrix}k+1&0\\0&1\end{pmatrix},\quad
+ F_k=\begin{pmatrix}1&k\\1&0\end{pmatrix}.
+\]
+The symmetrizer is $\operatorname{diag}(1,c,b,bc)$, and an eigenvalue
+$\kappa$ lifts to $V+1-\kappa$, where
+$V=(a+1)^2(b+1)(c+1)-2$, by the zero-sum calculation above.
+
+In the weighted symmetric basis, $F_k$ becomes
+$S_k=\begin{pmatrix}1&\sqrt{k}\\\sqrt{k}&0\end{pmatrix}$.
+Put $T_k=E_k^{-1/2}S_kE_k^{-1/2}$. Its characteristic polynomial
+is $(x-1)(x+k/(k+1))$, so its eigenvalues are $1,-k/(k+1)$.
+Every eigenvalue of $T_b\otimes T_c$ is strictly greater than $-1$.
+With $E=E_b\otimes E_c$, the symmetric similar matrix of $K_a$ is
+\[
+ E^{1/2}\bigl((a+1)I+aT_b\otimes T_c\bigr)E^{1/2}.
+\]
+The bracket is strictly greater than $I$, so this matrix is strictly
+greater than $E\geq I$. Hence $\kappa_{\min}(K_a)>1$ for all
+$a,b,c\geq1$.
+
+Set $a=3$ and write $K=K_3$. Direct expansion gives
+\begin{align*}
+\det(K-3I)={}&-35b^2c^2+8b^2c-20b^2+8bc^2\\
+             &{}+109bc+11b-20c^2+11c+4.
+\end{align*}
+For $b=2+u,c=2+v$, its negative is
+\begin{align*}
+35u^2v^2+132u^2v+144u^2+132uv^2+387uv\\
+{}+315u+144v^2+315v+108>0.
+\end{align*}
+The symmetric similar matrix $K-3I$ therefore has a negative
+eigenvalue, giving $1<\kappa_{\min}(K)<3$. It suffices to exclude two.
+
+Write $P(b,c)=\det(K-2I)$. Its exact polynomial is
+\begin{align*}
+P(b,c)={}&-7b^2c^2+48b^2c-8b^2+48bc^2\\
+         &{}+302bc+76b-8c^2+76c+40.
+\end{align*}
+Order $b\leq c$. For $b=17+u,c=17+v$, with $u,v\geq0$,
+\begin{align*}
+-P(17+u,17+v)={}&7u^2v^2+190u^2v+1215u^2+190uv^2+4526uv\\
+                &{}+22228u+1215v^2+22228v+27721>0.
+\end{align*}
+For $2\leq b\leq16$, write $P=A_bc^2+B_bc+C_b$, where
+\[
+A_b=-7b^2+48b-8,\quad B_b=48b^2+302b+76,\quad C_b=-8b^2+76b+40.
+\]
+For $b=2,\ldots,6$, the $A_b$ values are $(60,73,72,57,28)$
+and the $C_b$ values are $(160,196,216,220,208)$; also $B_b>0$.
+These rows have no positive zero. Two further rows factor as
+\[
+P(10,c)=-12c(19c-658),\qquad P(14,c)=-4(3c-58)(59c-2).
+\]
+Their positive roots $658/19,58/3,2/59$ are not integers.
+For the remaining eight rows, the discriminant $D_b=B_b^2-4A_bC_b$
+lies strictly between the consecutive squares shown below:
+\[
+\begin{array}{r|r|r}
+b&D_b&h_b\text{ with }h_b^2<D_b<(h_b+1)^2\\\hline
+7&20640564&4543\\
+8&30997264&5567\\
+9&44692596&6685\\
+11&84630100&9199\\
+12&112262544&10595\\
+13&146014164&12083\\
+15&235204596&15336\\
+16&292433040&17100
+\end{array}
+\]
+Thus none of these quadratics has a rational zero. The complete
+symbolic reduction proves $P(b,c)\ne0$ for all integers $b,c\geq2$,
+with no exceptional pair. Therefore $\kappa_{\min}$ is noninteger
+in $(1,3)$, and its graph lift $V+1-\kappa_{\min}$ has the stated
+location. The fixed arithmetic consists of the eight discriminants
+and two factorizations; no finite two-parameter exponent base is used.
+\end{proof}

@@ -1,0 +1,201 @@
+\section{Introduction}
+
+The ideal intersection graph associates a graph to the intersection
+structure of the nonzero proper ideals of a ring~\cite{intersection}.
+For $\mathbb Z_n$, its isomorphism type depends on the exponents in the
+prime factorization of $n$. We ask which of these graphs have integer
+Laplacian eigenvalues.
+
+Graphs defined by ring multiplication provide related constructions:
+Beck's coloring graph and the zero-divisor graph~\cite{beck,anderson},
+and the annihilating-ideal graph~\cite{behboodi1,behboodi2,aalipour}.
+Their multiplication-based adjacency differs from the nonzero-intersection
+convention used here.
+
+The Laplacian viewpoint originates in algebraic connectivity~\cite{fiedler}
+and its spectral development~\cite{grone,merris}; general graph-spectral
+background is given in~\cite{cvetkovic,brouwer}. Equitable partitions and
+generalized joins~\cite{godsilroyle,cardoso} reduce the present graphs to
+small invariant matrices.
+
+Nikandish~\cite{nikandish} develops a generalized-join formula for the
+Laplacian spectrum and a Schur--Weyl reduction for equal prime exponents.
+His results include nonintegrality for $(pqr)^k$ for every $k\geq1$.
+His Question~(Q3) asks for the full integrality characterization; the
+present arguments complete its three-prime case: every positive exponent
+triple is nonintegral (Theorem~\ref{thm:three-prime-classification}).
+Theorem~\ref{thm:unit-any-prime-count} also settles every positive
+exponent vector with a unit entry and at least three prime factors.
+An explicit zero-sum function on the connected complement has Rayleigh
+quotient below one; reflection and the universal-vertex shift give
+a graph eigenvalue in $(V-1,V)$, without a finite base.
+Theorem~\ref{thm:small-exponent-rayleigh} extends this obstruction
+to a distinguished exponent $m\geq2$ under the exact support-weight
+condition $A\geq(m^2-1)B-(m-1)$, including equality. A rational
+trial function factors the energy-minus-norm sign; its boundary value
+is not a full eigenvector, giving a strict bound there as well.
+Corollary~\ref{cor:small-exponent-reciprocal} covers every vector whose
+other exponents are at least $m^2(t-1)$.
+Theorem~\ref{thm:four-prime-pair-two} settles the four-prime vectors
+$(2,2,b,c)$ by an antisymmetric invariant subspace. Positive principal
+minors place its smallest eigenvalue between one and three; five
+symbolic endpoint polynomials leave only $\{b,c\}=\{5,8\}$, whose
+residual cubic is irreducible modulo $17$. This includes the balanced
+vector $(2,2,2,2)$ outside the preceding sufficient condition.
+Theorem~\ref{thm:four-prime-pair-three} also settles every
+$(3,3,b,c)$, using tensor normalization for a general repeated-pair
+lower bound. A second positive tail, eight nonsquare discriminants
+and two rational factorizations exclude the integer endpoint without
+an exceptional pair.
+The remaining higher-prime case has every exponent at least two and
+fails the support-weight criterion for each distinguished coordinate;
+for four primes it also has at most one exponent equal to two and
+at most one equal to three.
+
+Two further complete residue classes are excluded by
+Proposition~\ref{prop:mod-five-splitting}: every permutation of $(1,1,2)$
+or $(1,4,4)$ modulo five. An irreducible quadratic or cubic in the
+reduced complement quintic supplies the obstruction. On the equality
+curve, the cubic case has square discriminant modulo five, showing
+why the root equation gives information beyond discriminant congruences.
+Proposition~\ref{prop:equality-local-discriminant} resolves a different
+degeneracy on that curve: the reduction $x(x+1)^2$ has zero discriminant,
+but its normalized discriminant is $13$ times a square modulo every odd
+prime dividing $b$ on the branch $ac\equiv-1$. This excludes integer
+spectra when $13$ is a nonresidue, in particular whenever $7$ or $11$
+divides $b$, and reduces the six compatible modulo-five pairs to four.
+Proposition~\ref{prop:equality-local-splitting} completes the corresponding
+local splitting test, except the negative branch at $13$. In particular,
+the two remaining $b\equiv0\pmod5$ rows split modulo every power of
+five, by simple-root Hensel lifting. The global largest-root obstruction
+proved below excludes integral spectra even in those locally split rows.
+At the exceptional prime $13$, Proposition~\ref{prop:equality-thirteen}
+uses the next discriminant term to exclude the negative branch unless
+$b\equiv104\pmod{169}$. Its further local analysis is independent of the completed global
+three-prime nonintegrality theorem.
+
+We prove a complete classification for squarefree composite integers
+(Theorem~\ref{thm:squarefree}), an explicit quadratic obstruction for
+$(1,1,k)$ (Theorem~\ref{thm:pqrk}), and nonintegrality for every
+repeated-exponent triple $(a,a,b)$, $a,b\geq1$
+(Theorem~\ref{thm:repeated}). The last result combines an arithmetic
+restriction on the antisymmetric block with a consecutive-integer sign
+interval for the symmetric cubic. The boundary family
+$b=(a-1)(2a-1)$ is proved in Theorem~\ref{thm:boundary}.
+An exact divisor criterion isolates every possible square discriminant for
+fixed $a$. A second divisor criterion fixes the smaller-factor index instead,
+giving a finite reduction over all $a$ (Proposition~\ref{prop:index}).
+The first three nonboundary factor levels have complete finite modular
+certificates. Every later level lies strictly below the uniform sign
+threshold, closing the whole repeated-exponent family.
+
+For a unit exponent, the complement of the general six-support quotient
+has a nonzero eigenvalue strictly between $0$ and $1$, except for three
+small pairs already covered by $(1,1,k)$. This proves nonintegrality for
+every $(1,b,c)$ (Theorem~\ref{thm:unit}), including fully unequal triples.
+Positive-coefficient expansions at a minimum exponent of two, together
+with one exceptional rational sign interval, then settle every
+$(2,b,c)$ (Theorem~\ref{thm:minimum-two}). Thus every three-prime exponent
+vector with minimum entry at most two is covered. The same endpoint
+polynomial gives a uniform cutoff $c\geq4a^2-2a$ for ordered
+$2\leq a\leq b\leq c$ (Proposition~\ref{prop:distinct-tail}).
+For a minimum exponent of three, this leaves exactly $325$ pairs.
+An exhaustive integer sign certificate, positive second-endpoint
+expansions and one rational exception settle all of them
+(Theorem~\ref{thm:minimum-three}). Thus every triple with minimum
+entry at most three is nonintegral.
+
+For nearby unequal exponents, low roots can occur in pairs without an
+endpoint sign change. A symmetric Schur complement gives an inertia
+criterion for two roots in a specified interval
+(Proposition~\ref{prop:low-spectrum}). At the upper endpoint three,
+four bounded-gap families satisfy the criterion for every $a\geq4$.
+Positive first-endpoint factors and root-free second-endpoint factors
+exclude both possible integers. This proves
+Theorem~\ref{thm:bounded-gaps}, including the full family
+$(a,a+1,a+2)$ and every triple whose maximum minus minimum is at most three.
+
+The requested diagnostic for minimum entries four through seven exhausts
+the finite region left by the uniform cutoff. All $27\,562$ quintics have
+positive nonsquare discriminants, verified by independent integer
+Sylvester determinants. Together with the written tail and repeated-exponent
+proofs, this yields Corollary~\ref{cor:minimum-seven}: every triple with
+minimum entry at most seven is nonintegral. The dependence on the complete
+finite certificate is explicit.
+
+The Schur complement also admits a uniform comparison that covers mixed
+diagonal signs. For every triple with minimum exponent at least four,
+the complement quotient has a positive eigenvalue below three
+(Theorem~\ref{thm:uniform-low-root}). If
+$(a-2)(a+b+c-2)>2bc$, that eigenvalue lies in $(2,3)$
+(Corollary~\ref{cor:balanced-interval}). This settles the growing
+balanced region where the minimum exponent is at least three times
+the exponent span plus eight (Corollary~\ref{cor:balanced-span}).
+The universal bound also reduces any possible integral triple in this
+range to the endpoint-zero condition $h_C(1)h_C(2)=0$.
+
+An integer-scaling argument then settles every triple with common
+exponent divisor at least three (Theorem~\ref{thm:common-divisor}).
+Finite-field factorization settles every all-odd triple and explicit
+common-residue classes, including residues $1,3,4$ modulo five
+(Theorem~\ref{thm:congruence}). These arithmetic arguments allow
+unbounded exponent differences and do not require excluding all integer
+quotient roots.
+Scaling also settles every common $2$-adic valuation
+(Corollary~\ref{cor:common-valuation}).
+Theorem~\ref{thm:mixed-residue-classes} collects the mixed-parity exclusions
+and necessary conditions: six classes modulo eight, the full $(3,3,2)$
+and $(3,0,0)$ classes modulo four, and the sum, derivative and binary-cubic
+restrictions for the $(1,3,2)$ role. Its low-root consequences confine
+$(1,3,2)$ and $(3,3,0)$ to the endpoint-two surface inside a linear region.
+Theorem~\ref{thm:endpoint-reduction} combines that linear bound, the endpoint
+divisor constraints, the complete middle-exponent-through-fifteen result
+and two further modulo-three exclusions. One worked shifted-root example
+is given in the main text; all case calculations and endpoint details are
+grouped in Appendices~\ref{sec:two-adic-lifting} and~\ref{sec:endpoint-details}.
+
+Theorem~\ref{thm:endpoint-two-completion} then completes the endpoint-two
+alternative. Positive identities give $h_C(4)>0>h_C(5)$ on this surface
+at minimum at least forty. The geometric bounds
+$b<2a-2$ and $c<9a/4-8$ leave exactly $8\,658$ fully distinct integer
+triples at minima eight through thirty-nine; every endpoint value is
+independently checked by integer Horner and Bareiss determinant evaluation.
+The middle bound holds already for real $a>(7+\sqrt{13})/3$,
+with its unique boundary equality given in the rectangle lemma.
+Together with the earlier repeated and small-minimum results, this proves
+nonintegrality for every all-even triple and the full $(1,3,2)$ and
+$(3,3,0)$ classes modulo four
+(Corollary~\ref{cor:endpoint-two-parity-completion}). The complete positive
+identities and finite-base counts are in
+Appendix~\ref{sec:endpoint-two-identities}. The final low-root alternative is endpoint one, completed below.
+
+Theorem~\ref{thm:endpoint-one-spectrum} proves the global gap
+$\lambda_3<a+b<a+b+c\leq\lambda_4$ for real $2\leq a\leq b\leq c$,
+using principal interlacing and a determinant-sign count.
+On endpoint one it also proves a sharp exponent-sum lower bound for $a\geq2$.
+For $a>2+\sqrt3$ it places the smallest residual root in $(a,\min\{c,a+b\})$, with the
+other three above $s=a+b+c$. Equality in the global lower bound occurs
+only at $(2,2,2)$. The resulting constant-term divisor window in
+Corollary~\ref{cor:endpoint-one-divisor-window} focuses the remaining
+integer-splitting question. Its proof uses a quadratic with three positive coefficients
+and a determinant-sign count, with no finite base.
+Proposition~\ref{prop:endpoint-one-equality-spectrum} further identifies
+$b$ as the simple third quotient root on $c=b(b+2)-a$ for all real
+$2\leq a\leq b$, reducing the equality
+splitting problem to a cubic whose roots all exceed $s$. Corollary~\ref{cor:endpoint-one-divisor-window}
+also sharpens the smallest-root window using the exact coefficients and
+a convexity bound for the three larger roots' reciprocal sum.
+
+The graph and lifting arguments are given explicitly, so the proofs do not
+require a complete spectral decomposition. Appendix~\ref{sec:verification}
+describes the exact computations supporting the displayed formulas and
+finite certificates. Theorem~\ref{thm:largest-root-unit-interval} finally places the largest
+quotient root in $(bc+s,bc+s+1)$ for real $a\geq2$ when $b-a\geq3$
+and $c\geq a^2-a$.
+On endpoint one, the exponent-sum bound supplies the latter inequality;
+written unit brackets handle gaps one and two for every real $a\geq2$.
+This proves the complete
+three-prime nonintegrality theorem. The new real interval needs no finite
+base; the combined classification retains the earlier $27\,562$- and
+$8\,658$-triple certificates. The remaining higher-prime
+classification concerns vectors with every exponent at least two.

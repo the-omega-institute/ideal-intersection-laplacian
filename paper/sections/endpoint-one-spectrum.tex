@@ -1,0 +1,266 @@
+\subsection{The spectrum on the endpoint-one surface}
+
+Principal interlacing separates the five positive quotient roots into
+two below $a+b$ and three above $a+b+c$, apart from the boundary
+$(2,2,2)$. On endpoint one, this gap
+isolates the smallest residual root from the other three.
+
+\begin{theorem}
+\label{thm:endpoint-one-spectrum}
+Let $2\leq a\leq b\leq c$ be real and put $s=a+b+c$. The ordered eigenvalues of the
+six-support complement quotient, counted with multiplicity, satisfy
+\[
+ 0=\lambda_1<\lambda_2\leq\lambda_3<a+b<s
+ \leq\lambda_4\leq\lambda_5\leq\lambda_6.
+\]
+Equality $\lambda_4=s$ holds exactly at $(a,b,c)=(2,2,2)$.
+If also $h_C(1)=0$, then
+\[
+ b+c\geq2a^2-2a+1,
+\]
+with equality exactly when $b=a$ and $c=(a-1)(2a-1)$.
+If in addition $a>2+\sqrt3$, root one is
+simple and is the smallest positive quotient root; all four other
+quotient roots are strictly greater than $a$. Their ordered roots satisfy
+\[
+ a<\mu_1<\min\{c,a+b\},\qquad s<\mu_2\leq\mu_3\leq\mu_4.
+\]
+\end{theorem}
+
+\begin{proof}
+Let $S=W^{1/2}CW^{-1/2}$, with $W=\operatorname{diag}(a,b,c,ab,ac,bc)$.
+It is symmetric positive semidefinite with a one-dimensional zero kernel.
+The principal block on supports $3,12,13,23$ is
+\[
+ \begin{pmatrix}ab+a+b&-\sqrt{abc}\\-\sqrt{abc}&c\end{pmatrix}
+ \mathbin{\oplus}(b)\mathbin{\oplus}(a).
+\]
+The two-dimensional block has polynomial
+$Q(x)=x^2-(ab+a+b+c)x+c(a+b)$, with $Q(a+b)=-ab(a+b)<0$.
+Exactly three eigenvalues of this four-dimensional block lie below $a+b$;
+interlacing gives $\lambda_3<a+b$.
+
+The principal block on singleton supports $1,2$, shifted by $s$, is
+\[
+ \begin{pmatrix}bc-a&-\sqrt{ab}\\-\sqrt{ab}&ac-b\end{pmatrix}.
+\]
+Its first leading minor is $bc-a\geq a(a-1)>0$. Its determinant is
+$c(abc-a^2-b^2)$, where
+\[
+ abc-a^2-b^2=ab(c-b)+(a-1)(b-a)(b+a)+(a-2)a^2.
+\]
+This is positive except at $(2,2,2)$. Away from that point,
+interlacing gives $\lambda_5,\lambda_6>s$. Put $p=ab+ac+bc$, $r=abc$.
+Direct expansion gives $h_C(s)=-rsV$, where
+\[
+ V=r(s+3)-sp=a^2(bc-b-c)+b^2(ac-a-c)+c^2(ab-a-b)>0.
+\]
+The three brackets are nonnegative and vanish simultaneously only
+at $(2,2,2)$. Thus no eigenvalue equals $s$. At least three lie below it
+and at most four. The negative determinant $s h_C(s)$ requires
+an odd number below it, counting multiplicity; hence exactly three
+lie below it and $\lambda_4>s$. At the boundary the characteristic
+polynomial is $x(x-6)(x^2-12x+12)^2$, giving $\lambda_4=s=6$.
+
+Now suppose $h_C(1)=0$.
+Put $q=b+c$, $z=bc$ and $K=4a^2-2a+1$. The generic determinant is
+\begin{align*}
+ h_C(1)&=(q-K)z^2-a(a-1)(q+2a-1)z+P_a(q),\\
+ P_a(q)&=(a^2-1)q^3+(a^3-a^2-3a+3)q^2
+          -3(a-1)^2q-(a-1)^3.
+\end{align*}
+Since $(b-a)(c-a)\geq0$, we have $z\geq z_0=a(q-a)$. When
+$q\leq Q:=2a^2-2a+1$, the coefficient $q-K\leq-2a^2$ is negative,
+and the difference between the displayed polynomial at $z$ and at
+$z_0$ is
+\[
+ (z-z_0)\bigl[(q-K)(z+z_0)-a(a-1)(q+2a-1)\bigr]\leq0,
+\]
+strictly unless $z=z_0$. Set $t=q-a\geq a$. At $z_0$ the value factors as
+\[
+ \bigl[(a-1)(2a-1)-t\bigr]B(a,t),
+\]
+where $B=a^3-2a^2t^2+a^2t+a^2+3at-3a+t^2-2t+1$. For
+$t=a+u$, with $u\geq0$, the identity
+\begin{align*}
+ -B(a,a+u)={}&(2a^2-1)u^2\\
+ &+\bigl[(a-2)(4a^2+7a+9)+20\bigr]u\\
+ &+(a-2)\bigl[2a^3+a(2a-1)+3\bigr]+5
+\end{align*}
+has strictly positive coefficients for every $a\geq2$, so $B<0$.
+Thus $q<Q$ gives $h_C(1)<0$. At $q=Q$, equality
+requires $z=z_0$, hence $b=a$ by ordering, and $c=(a-1)(2a-1)$.
+The factorization also verifies this equality case.
+
+Now assume also $a>2+\sqrt3$.
+The pair-support principal block is $\operatorname{diag}(c,b,a)$.
+The sum bound implies
+$b+c-(a^2+2a)\geq a^2-4a+1>0$, so
+\[
+ h_C(a)=-a^2b^2c^2(a^2+2a-b-c)>0.
+\]
+No eigenvalue equals $a$. The positive determinant
+$\det(aI-S)=a h_C(a)$ forces an even number of eigenvalues below
+$a$, counted with multiplicity. There are at least two, zero and one,
+and at most three by interlacing. There are therefore exactly two:
+zero and a simple one. All four remaining roots exceed $a$.
+
+The pair-support block gives $\lambda_3\leq c$. The identity
+$h_C(c)=-a^2b^2c^2(c^2+2c-a-b)<0$ excludes equality.
+Together with the global total-sum gap, this proves the residual bounds.
+
+The real cutoff is sharp. On the ordered endpoint-one family
+$b=a$, $c=(a-1)(2a-1)$, we have
+$h_C(a)=a^4(a-1)^2(2a-1)^2(a^2-4a+1)$.
+At $a=2+\sqrt3$ a residual root equals $a$. For $2\leq a<2+\sqrt3$,
+the determinant at $a$ is negative, so the same interlacing and parity
+argument gives three roots below $a$; a residual root lies below $a$.
+\end{proof}
+
+\begin{corollary}
+\label{cor:endpoint-one-divisor-window}
+For integer exponents $4\leq a\leq b\leq c$ on $h_C(1)=0$, define
+$F(x)=h_C(x)/(x-1)$ and $s=a+b+c$, $p=ab+ac+bc$, $r=abc$.
+Then $F$ is a monic integer quartic with $F(0)=rs(p+s)>0$.
+Its ordered real roots satisfy
+\[
+ a<\mu_1<U:=\min\{c,a+b\},\qquad s<\mu_2\leq\mu_3\leq\mu_4.
+\]
+Writing $F=x^4-Ax^3+Bx^2-Dx+N$, with $N=rs(p+s)$ and
+$A=p+3s-1$, put $R=2/s+1/(A-U-2s)$. Then
+\[
+ \frac ND<\mu_1<\frac{N}{D-NR},\qquad D-NR>0.
+\]
+An integer spectrum therefore requires a positive divisor $d$ of $rs(p+s)$ with
+\[
+ \max\{a,N/D\}<d<\min\{U,N/(D-NR)\},\qquad F(d)=0.
+\]
+The other three integer roots would each be at least $s+1$.
+\end{corollary}
+\begin{proof}
+The determinant gives $h_C(0)=-rs(p+s)$, so division by $x-1$
+retains the stated nonzero constant. Apply the rational-root theorem
+to the smallest quartic root and apply Theorem~\ref{thm:endpoint-one-spectrum}
+to all four roots.
+
+For three numbers $x_i>s$ of sum $T$, convexity of $1/(s+y)$ on
+the simplex $y_i\geq0$, $\sum y_i=T-3s$, gives
+$\sum1/x_i<2/s+1/(T-2s)$: the closed-simplex maximum has two
+$y_i=0$, whereas all three are positive here. For the larger roots,
+$T=A-\mu_1>A-U$, so their reciprocal sum lies in $(0,R)$.
+Vieta gives $D/N=\sum_{i=1}^4 1/\mu_i$, yielding the stated bounds.
+
+To check positivity before inverting, $A-U-2s=p+s-1-U>s$, since
+$p\geq4c+ab>U+1$. Thus $R<3/s$. The determinant coefficients give
+$D=r^2+(s^2-s+1)r+s^2p+p^2+(s-1)^3$ and
+\[
+ D-3N/s=r(r-4s)+r(s^2-3p+1)+s^2p+p^2+(s-1)^3>0.
+\]
+Here $r/s\geq16/3>4$ and
+$s^2-3p=((a-b)^2+(a-c)^2+(b-c)^2)/2\geq0$.
+Hence $D-NR>D-3N/s>0$.
+\end{proof}
+
+All four quartic roots exceed $a$; the upper window in the corollary
+applies to their smallest root. For example, $(8,8,105)$ has the
+quartic factor
+\[
+ (x-968)(x^3-1138x^2+177145x-1566600),
+\]
+so another root can exceed both $c$ and $a+b$. Testing the divisor
+window is finite for each fixed triple. A surviving candidate still
+requires checking the other factors, and the exponent domain is unbounded.
+
+\begin{remark}
+The generic residual $[h_C(x)-xh_C(1)]/(x-1)$ is positive on
+$[0,4]$ for all real $a,b,c\geq8$, including off the endpoint-one
+surface. A separate complete $350$-term positive identity after
+$a=8+m$, $b=a+t$, $c=b+u$, $x=4v/(1+v)$ verifies that statement,
+including $x=4$. The shorter proof above suffices for the endpoint-one
+spectral theorem; the generic residual calculation is retained in the
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/95d8d9a90d4ef0aa06be8ba5ce70d3355838385c/notes/endpoint-one-spectral-gap.md}{verification note}.
+\end{remark}
+
+\begin{remark}[The equality curve]
+\label{rem:endpoint-one-equality-curve}
+On $c=b(b+2)-a$, put $t=b(b+2)$ and $q=a(t-a)=ac$. Then
+$h_C(1)=-(b-1)G(a,b)$, where the plane septic is
+\[
+ G=(3b-1)q^2+b(b^2+4b-1)q
+   -(b^2+2b-1)(b^2+3b-1)(b^3+3b^2+3b-1).
+\]
+Its smooth projective model is geometrically irreducible of genus ten.
+Indeed, the involution $a\mapsto t-a$ has quotient $y^2=D(b)$, where
+$D$ is the squarefree degree-eight discriminant of the displayed quadratic
+in $q$, so the quotient has genus three. Recovering $a$ adjoins
+$\sqrt{t^2-4q}$. The norm of $t^2-4q$ has nine distinct simple zeros
+away from the quotient branch points and one simple pole at $b=1/3$.
+This nonsquare norm makes the cover connected. Above these points the
+cover has ten simple branches; at the two quotient points at infinity,
+$t^2-4q$ has even pole order four. Riemann--Hurwitz gives
+$2g-2=2(2\cdot3-2)+10=18$. The explicit norm and squarefreeness
+identities are retained in the
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/8ed4f9014f6142949e6af40fd16e18ca304f629a/notes/endpoint-one-equality-curve.md}{curve verification note}.
+By Siegel's theorem \cite{hindrysilverman,serre}, this affine equality curve
+has finitely many integer points. Their effective determination and
+the classification of admissible exponent triples remain open.
+\end{remark}
+
+\begin{proposition}
+\label{prop:endpoint-one-equality-spectrum}
+For real $2\leq a\leq b$ and $c=b(b+2)-a$, put $s=a+b+c$. The ordered eigenvalues
+of the six-support complement quotient satisfy
+\[
+ 0=\lambda_1<\lambda_2<\lambda_3=b<a+b<s
+ <\lambda_4\leq\lambda_5\leq\lambda_6,
+\]
+and $b$ is simple. If also $h_C(1)=0$, then $\lambda_2=1$ and
+$F(x)=(x-b)P_3(x)$, where the monic cubic $P_3$ has all three roots
+strictly greater than $s=a+b+c$.
+\end{proposition}
+
+\begin{proof}
+Use the symmetric similarity $S$ from Theorem~\ref{thm:endpoint-one-spectrum}.
+Here $c-b=b^2+(b-a)>0$, so the exponents are ordered and the
+exceptional global-gap boundary $(2,2,2)$ is absent.
+Every proper principal block is positive definite: $S$ is positive
+semidefinite with a one-dimensional zero kernel whose vector has every
+coordinate nonzero. Delete singleton support $2$. The five-support block
+$B$ is the direct sum of the scalar $b$ on support $13$ and the block $T$
+on $1,3,12,23$. Its characteristic polynomial is
+\begin{align*}
+ \det(xI-T)&=(x-b)K(x),\\
+ K(x)&=x^3-b(b^2+4b+5)x^2\\
+ &\quad+\bigl[ac(b^2+1)+b^2(b+2)(b^2+3b+3)\bigr]x-abc(b+3).
+\end{align*}
+The three roots of $K$ are positive and real. Moreover,
+\[
+ K(b)=b(b+1)\bigl[a(b-a)(b-2)+ab(b-2)(b+1)+b^2(b+1)(b+2)\bigr]>0.
+\]
+The first two bracketed terms are nonnegative for $b\geq a\geq2$,
+and the third is strictly positive, including at $a=b=2$.
+The pair-support block on $12,23$ is $\operatorname{diag}(c,a)$, so
+the largest eigenvalue of $T$ is at least $c>b$. A positive monic cubic
+value at $b$ requires one or three roots below $b$; the largest root
+rules out three. Thus $B$ has $\beta_2=\beta_3=b$, and interlacing gives
+$\beta_2\leq\lambda_3\leq\beta_3$, hence $\lambda_3=b$.
+
+The kernel of $B-bI$ has dimension two. Its support-$13$ unit vector
+couples to the deleted singleton by $-\sqrt{abc}\ne0$. Projecting the
+full eigenvector equation onto that vector forces the deleted coordinate
+to vanish. The remaining eigenvectors lie in $\ker(B-bI)$ and satisfy
+one nonzero coupling condition. Their space is one-dimensional, proving
+simplicity and $\lambda_2<b<\lambda_4$.
+
+The global gap in Theorem~\ref{thm:endpoint-one-spectrum} gives
+$\lambda_4>s$. If $h_C(1)=0$, then $1<b=\lambda_3$ and all
+later roots exceed $s$, so the root $1$ must be $\lambda_2$.
+It is simple because $\lambda_1=0<1<b=\lambda_3$.
+Division by the simple roots $1,b$ yields the stated cubic.
+\end{proof}
+
+This proposition narrows the equality splitting problem: for integer
+endpoint-one equality points, all three integer roots of $P_3$ would have
+to exceed $s$. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4a451ac51055c6d04926967749196f12ac8e49c8/notes/total-sum-spectral-gap.md}{global spectral verification note}
+records the determinant identities and exact controls.

@@ -1,0 +1,93 @@
+==============================================================================
+Higher-derivative 2-adic diagnostic for mixed-parity triples
+==============================================================================
+
+Building h_C and derivatives symbolically ...
+  done.
+
+  Sanity: h_C(1) at (9,9,136) = 0
+    (matches endpoint-one zero)
+
+Evaluating canonical mixed-parity representatives mod 8 ...
+  total mixed-parity representatives: 384
+
+2-adic valuation of h_C(1): {3: 96, 4: 84, 5: 63, 6: 45, 7: 18, 8: 12, 9: 12, 10: 6, inf: 48}
+2-adic valuation of h_C'(1): {2: 240, 3: 60, 4: 42, 5: 21, 6: 6, 7: 3, 9: 6, inf: 6}
+2-adic valuation of h_C''(1): {2: 192, 3: 96, 4: 42, 5: 24, 6: 6, 7: 6, 8: 9, inf: 9}
+2-adic valuation of h_C'''(1): {1: 384}
+
+Distinct joint v2-patterns (h_C(1), h_C'(1), h_C''(1), h_C'''(1)):
+  (3, 2, 2, 1): 96 representatives
+  (4, 2, 3, 1): 30 representatives
+  (4, 2, 4, 1): 24 representatives
+  (5, 2, 3, 1): 21 representatives
+  (inf, 3, 2, 1): 18 representatives
+  (inf, 2, 3, 1): 9 representatives
+  (5, 5, 2, 1): 9 representatives
+  (4, 2, 5, 1): 9 representatives
+  (5, 4, 2, 1): 9 representatives
+  (inf, 2, inf, 1): 6 representatives
+  (inf, 5, 3, 1): 6 representatives
+  (4, 2, 7, 1): 6 representatives
+  (7, 3, 2, 1): 6 representatives
+  (7, 4, 4, 1): 6 representatives
+  (6, 3, 2, 1): 6 representatives
+  (6, 4, 2, 1): 6 representatives
+  (6, 2, 3, 1): 6 representatives
+  (5, 3, 2, 1): 6 representatives
+  (6, 9, 2, 1): 6 representatives
+  (7, 2, 8, 1): 6 representatives
+  (9, 3, 2, 1): 6 representatives
+  (4, 4, 5, 1): 6 representatives
+  (5, 6, 2, 1): 6 representatives
+  (6, 2, 6, 1): 6 representatives
+  (5, 2, 4, 1): 6 representatives
+  (8, 3, 2, 1): 6 representatives
+  (6, 2, 5, 1): 6 representatives
+  (4, 4, 3, 1): 6 representatives
+  (inf, inf, inf, 1): 3 representatives
+  (6, 4, 3, 1): 3 representatives
+  (inf, inf, 2, 1): 3 representatives
+  (8, 4, 4, 1): 3 representatives
+  (4, 2, 8, 1): 3 representatives
+  (inf, 5, 2, 1): 3 representatives
+  (8, 2, 3, 1): 3 representatives
+  (6, 3, 3, 1): 3 representatives
+  (5, 3, 3, 1): 3 representatives
+  (5, 3, 5, 1): 3 representatives
+  (10, 7, 3, 1): 3 representatives
+  (9, 4, 2, 1): 3 representatives
+  (9, 2, 3, 1): 3 representatives
+  (10, 5, 2, 1): 3 representatives
+  (6, 3, 4, 1): 3 representatives
+
+==============================================================================
+Representatives with v2(h_C(1)) < 6:
+This is not a list of uniform residue-class exclusions.
+==============================================================================
+  count: 243
+  (0, 0, 3): v2(h_C(1))=3, v2(h_C'(1))=2, v2(h_C''(1))=2, v2(h_C'''(1))=1
+  (0, 0, 7): v2(h_C(1))=3, v2(h_C'(1))=2, v2(h_C''(1))=2, v2(h_C'''(1))=1
+  (0, 2, 3): v2(h_C(1))=4, v2(h_C'(1))=2, v2(h_C''(1))=7, v2(h_C'''(1))=1
+  (0, 2, 7): v2(h_C(1))=5, v2(h_C'(1))=2, v2(h_C''(1))=3, v2(h_C'''(1))=1
+  (0, 3, 0): v2(h_C(1))=3, v2(h_C'(1))=2, v2(h_C''(1))=2, v2(h_C'''(1))=1
+  (0, 3, 2): v2(h_C(1))=4, v2(h_C'(1))=2, v2(h_C''(1))=7, v2(h_C'''(1))=1
+  (0, 3, 3): v2(h_C(1))=3, v2(h_C'(1))=2, v2(h_C''(1))=2, v2(h_C'''(1))=1
+  (0, 3, 4): v2(h_C(1))=3, v2(h_C'(1))=2, v2(h_C''(1))=2, v2(h_C'''(1))=1
+  (0, 3, 5): v2(h_C(1))=4, v2(h_C'(1))=2, v2(h_C''(1))=3, v2(h_C'''(1))=1
+  (0, 3, 6): v2(h_C(1))=5, v2(h_C'(1))=2, v2(h_C''(1))=3, v2(h_C'''(1))=1
+  (0, 3, 7): v2(h_C(1))=3, v2(h_C'(1))=2, v2(h_C''(1))=2, v2(h_C'''(1))=1
+  (0, 4, 3): v2(h_C(1))=3, v2(h_C'(1))=2, v2(h_C''(1))=2, v2(h_C'''(1))=1
+  (0, 4, 7): v2(h_C(1))=3, v2(h_C'(1))=2, v2(h_C''(1))=2, v2(h_C'''(1))=1
+  (0, 5, 3): v2(h_C(1))=4, v2(h_C'(1))=2, v2(h_C''(1))=3, v2(h_C'''(1))=1
+  (0, 5, 5): v2(h_C(1))=5, v2(h_C'(1))=5, v2(h_C''(1))=2, v2(h_C'''(1))=1
+  (0, 5, 7): v2(h_C(1))=4, v2(h_C'(1))=2, v2(h_C''(1))=5, v2(h_C'''(1))=1
+  (0, 6, 3): v2(h_C(1))=5, v2(h_C'(1))=2, v2(h_C''(1))=3, v2(h_C'''(1))=1
+  (0, 6, 7): v2(h_C(1))=4, v2(h_C'(1))=2, v2(h_C''(1))=4, v2(h_C'''(1))=1
+  (0, 7, 0): v2(h_C(1))=3, v2(h_C'(1))=2, v2(h_C''(1))=2, v2(h_C'''(1))=1
+  (0, 7, 2): v2(h_C(1))=5, v2(h_C'(1))=2, v2(h_C''(1))=3, v2(h_C'''(1))=1
+  (0, 7, 3): v2(h_C(1))=3, v2(h_C'(1))=2, v2(h_C''(1))=2, v2(h_C'''(1))=1
+  (0, 7, 4): v2(h_C(1))=3, v2(h_C'(1))=2, v2(h_C''(1))=2, v2(h_C'''(1))=1
+  (0, 7, 5): v2(h_C(1))=4, v2(h_C'(1))=2, v2(h_C''(1))=5, v2(h_C'''(1))=1
+  (0, 7, 6): v2(h_C(1))=4, v2(h_C'(1))=2, v2(h_C''(1))=4, v2(h_C'''(1))=1
+  ... and 219 more

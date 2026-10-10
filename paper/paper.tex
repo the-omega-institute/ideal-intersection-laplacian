@@ -1,0 +1,181 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,microtype}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\title{Nonintegral Laplacian spectra of ideal intersection graphs}
+\author{Working manuscript}
+\date{October 5, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We prove that the ideal intersection graph of
+$\mathbb Z_{p^a q^b r^c}$ is Laplacian nonintegral for any three
+distinct primes and every positive exponent triple. Adjacency means
+nonzero intersection of distinct nonzero proper ideals. For squarefree
+composite integers, the integral case is exactly two prime factors.
+
+A six-support complement quotient reduces the three-prime problem to
+a real symmetric matrix. Its uniform positive root below three forces
+an integer spectrum onto one of two endpoint surfaces. On endpoint two,
+a written large-minimum argument supplies another root in $(4,5)$;
+the remaining geometric domain has a complete $8\,658$-triple certificate.
+On endpoint one, an exponent-sum bound and written small-gap brackets
+reduce the final obstruction to the largest quotient root. For real
+$2\leq a\leq b\leq c$, $b-a\geq3$ and $c\geq a^2-a$, we prove
+\[
+ bc+a+b+c<\lambda_{\max}<bc+a+b+c+1.
+\]
+Positive polynomial identities, a slab lower bound and a Schur complement establish
+this unit interval throughout its unbounded domain. It closes the
+remaining integer spectra without enumerating the endpoint-one exponent
+points or solving the residual quartic's integer-root equation.
+
+The global classification combines these written arguments with the
+established repeated-exponent and small-minimum results, including a
+complete $27\,562$-triple minimum-through-seven certificate. We retain
+further spectral gaps, arithmetic obstructions and local equality-curve
+splitting results. Exact verification uses integer and rational arithmetic;
+no Lean formalization is claimed.
+For any number of prime factors at least three, a unit exponent
+gives a noninteger eigenvalue in $(V-1,V)$ by an explicit complement
+Rayleigh quotient below one, without a finite base.
+For a distinguished exponent $m\geq2$, the same conclusion holds
+whenever $A\geq(m^2-1)B-(m-1)$, including equality, where $A$ is the
+product of the other exponents and $B=\prod_{i<t}(k_i+1)-1-A$.
+In particular, every other exponent at least $m^2(t-1)$ suffices.
+For four prime factors, a four-dimensional antisymmetric subspace
+also settles every positive exponent vector with two entries equal to two.
+Its smallest restricted eigenvalue lies in $(1,3)$; the only possible
+integer endpoint pair has an irreducible residual cubic modulo $17$.
+The analogous family with two exponents equal to three is nonintegral
+as well: tensor positivity and a complete endpoint reduction exclude
+the sole possible integer without an exceptional exponent pair.
+The nonsquarefree higher-prime classification outside these families
+remains open.
+\end{abstract}
+\noindent\textbf{2020 Mathematics Subject Classification.}
+Primary 05C50; Secondary 05C25, 13A15, 11C08, 15A18.
+
+\noindent\textbf{Key words.} Ideal intersection graph, Laplacian integrality,
+equitable partition, universal vertex, factor-pair reduction,
+$2$-adic obstruction, Schur complement.
+
+\input{sections/introduction}
+\input{sections/graph}
+\input{sections/squarefree}
+\input{sections/pqrk}
+\input{sections/aa-family}
+\input{sections/aa-bounds}
+\input{sections/aa-completion}
+\input{sections/unit-exponent}
+\input{sections/minimum-two}
+\input{sections/distinct-tail}
+\input{sections/low-spectrum}
+\input{sections/mixed-inertia}
+\input{sections/arithmetic-obstructions}
+\input{sections/mixed-parity-congruence}
+\input{sections/mod-five-splitting}
+\input{sections/endpoint-reduction}
+\input{sections/aa-small}
+\input{sections/three-prime-classification}
+\input{sections/open}
+\begingroup
+\small
+\begin{thebibliography}{99}
+\bibitem{aalipour}
+G. Aalipour, S. Akbari, R. Nikandish, M. J. Nikmehr and F. Shaveisi,
+On the coloring of the annihilating-ideal graph of a commutative ring,
+\emph{Discrete Mathematics} \textbf{312} (2012), 2620--2626.
+\href{https://doi.org/10.1016/j.disc.2011.10.020}{doi:10.1016/j.disc.2011.10.020}.
+\bibitem{anderson}
+D. F. Anderson and P. S. Livingston,
+The zero-divisor graph of a commutative ring,
+\emph{Journal of Algebra} \textbf{217} (1999), 434--447.
+\href{https://doi.org/10.1006/jabr.1998.7840}{doi:10.1006/jabr.1998.7840}.
+\bibitem{beck}
+I. Beck, Coloring of commutative rings,
+\emph{Journal of Algebra} \textbf{116} (1988), 208--226.
+\href{https://doi.org/10.1016/0021-8693(88)90202-5}{doi:10.1016/0021-8693(88)90202-5}.
+\bibitem{behboodi1}
+M. Behboodi and Z. Rakeei, The annihilating-ideal graph of commutative rings I,
+\emph{Journal of Algebra and Its Applications} \textbf{10} (2011), 727--739.
+\href{https://doi.org/10.1142/S0219498811004896}{doi:10.1142/S0219498811004896}.
+\bibitem{behboodi2}
+M. Behboodi and Z. Rakeei, The annihilating-ideal graph of commutative rings II,
+\emph{Journal of Algebra and Its Applications} \textbf{10} (2011), 741--753.
+\href{https://doi.org/10.1142/S0219498811004902}{doi:10.1142/S0219498811004902}.
+\bibitem{brouwer}
+A. E. Brouwer and W. H. Haemers,
+\emph{Spectra of Graphs}, Universitext, Springer, 2012.
+\href{https://doi.org/10.1007/978-1-4614-1939-6}{doi:10.1007/978-1-4614-1939-6}.
+\bibitem{cardoso}
+D. M. Cardoso, M. A. A. de Freitas, E. A. Martins and M. Robbiano,
+Spectra of graphs obtained by a generalization of the join graph operation,
+\emph{Discrete Mathematics} \textbf{313} (2013), 733--741.
+\href{https://doi.org/10.1016/j.disc.2012.10.016}{doi:10.1016/j.disc.2012.10.016}.
+\bibitem{intersection}
+I. Chakrabarty, S. Ghosh, T. K. Mukherjee and M. K. Sen,
+Intersection graphs of ideals of rings,
+\emph{Discrete Mathematics} \textbf{309} (2009), 5381--5392.
+\href{https://doi.org/10.1016/j.disc.2008.11.034}{doi:10.1016/j.disc.2008.11.034}.
+\bibitem{cvetkovic}
+D. Cvetkovi\'{c}, P. Rowlinson and S. Simi\'{c},
+\emph{An Introduction to the Theory of Graph Spectra},
+London Mathematical Society Student Texts 75, Cambridge University Press, 2009.
+\href{https://doi.org/10.1017/CBO9780511801518}{doi:10.1017/CBO9780511801518}.
+\bibitem{fiedler}
+M. Fiedler, Algebraic connectivity of graphs,
+\emph{Czechoslovak Mathematical Journal} \textbf{23} (1973), 298--305.
+\href{https://doi.org/10.21136/CMJ.1973.101168}{doi:10.21136/CMJ.1973.101168}.
+\bibitem{fultonharris}
+W. Fulton and J. Harris, \emph{Representation Theory: A First Course},
+Graduate Texts in Mathematics 129, Springer, 1991.
+\href{https://doi.org/10.1007/978-1-4612-0979-9}{doi:10.1007/978-1-4612-0979-9}.
+\bibitem{godsilroyle}
+C. Godsil and G. Royle, \emph{Algebraic Graph Theory},
+Graduate Texts in Mathematics 207, Springer, 2001.
+\href{https://doi.org/10.1007/978-1-4613-0163-9}{doi:10.1007/978-1-4613-0163-9}.
+\bibitem{grone}
+R. Grone, R. Merris and V. S. Sunder, The Laplacian spectrum of a graph,
+\emph{SIAM Journal on Matrix Analysis and Applications} \textbf{11} (1990), 218--238.
+\href{https://doi.org/10.1137/0611016}{doi:10.1137/0611016}.
+\bibitem{hindrysilverman}
+M. Hindry and J. H. Silverman, \emph{Diophantine Geometry: An Introduction},
+Graduate Texts in Mathematics 201, Springer, New York, 2000.
+\href{https://doi.org/10.1007/978-1-4612-1210-2}{doi:10.1007/978-1-4612-1210-2}.
+\bibitem{merris}
+R. Merris, Laplacian matrices of graphs: a survey,
+\emph{Linear Algebra and its Applications} \textbf{197--198} (1994), 143--176.
+\href{https://doi.org/10.1016/0024-3795(94)90486-3}{doi:10.1016/0024-3795(94)90486-3}.
+\bibitem{nikandish}
+R. Nikandish,
+\emph{Laplacian Spectrum of the Ideal Intersection Graph of $\mathbb Z_n$:
+Generalized Joins and a Schur--Weyl Reduction}, Zenodo (2026).
+\href{https://doi.org/10.5281/zenodo.23134979}{doi:10.5281/zenodo.23134979}.
+\bibitem{repository}
+Project contributors, \emph{Ideal-intersection-laplacian: proofs and exact certificates},
+GitHub repository (2026).
+\url{https://github.com/the-omega-institute/ideal-intersection-laplacian}.
+\bibitem{serre}
+J.-P. Serre, \emph{Lectures on the Mordell-Weil Theorem},
+Aspects of Mathematics 15, Vieweg+Teubner Verlag, Wiesbaden, 1997.
+\href{https://doi.org/10.1007/978-3-663-10632-6}{doi:10.1007/978-3-663-10632-6}.
+\end{thebibliography}
+\endgroup
+\appendix
+\input{sections/verification}
+\input{sections/two-adic-lifting}
+\input{sections/endpoint-details}
+\clearpage
+\input{sections/endpoint-two-identities}
+\clearpage
+\input{sections/largest-root-identities}
+\end{document}

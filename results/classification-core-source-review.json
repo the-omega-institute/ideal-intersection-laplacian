@@ -1,0 +1,249 @@
+{
+  "source_base_commit": "08065334917ac0bacc965e4c447e2b2aa5c421d1",
+  "original_proof_source_revision": "7be84599097fdff320b196cb4f84a2dfe505bd77",
+  "scope": "Source concordance, explicit-reference closure and selected statement/proof bodies matching the current source sections; not an independent proof validation or certificate rerun.",
+  "written_proof_update": "Endpoint-one sum bound, small-gap1/2 brackets and largest-root interval hold at real minimum a>=2. General endpoint-one residual-root separation has the sharp real cutoff a>2+sqrt3;the integer divisor corollary retains a>=4. Endpoint-two middle bound has sharp cutoff a>(7+sqrt13)/3,with sole boundary equality b=c=2a-2;its integer bound and maximum bound retain minima4and8. Largest-root upper sign uses a35-coefficient bound on2<=a<=3;small-gap vectors use a=2+m with L2=b explicit.",
+  "generated_body_sha256": "727bea0e34a1a69670dac53af42b9083cc5dcaad37b6d7bb1d67c1c7cc248b47",
+  "generated_bibliography_sha256": "a4e88f7600b492ab2443fd7e91c54bd2d6debf2710523d9710c0343dea1e991f",
+  "selections": [
+    {
+      "source": "paper/sections/graph.tex",
+      "source_sha256": "1382d6040f1fdc804642f61a92a2cf5633bd0f4675a1575834a675288ed7da9d",
+      "start_line": 1,
+      "exclusive_end_line": 84,
+      "selected_sha256": "1382d6040f1fdc804642f61a92a2cf5633bd0f4675a1575834a675288ed7da9d"
+    },
+    {
+      "source": "paper/sections/pqrk.tex",
+      "source_sha256": "2533aa057b602430730f68ca8d9f6603712c446d89cf2accebbe98558dc382e7",
+      "start_line": 7,
+      "exclusive_end_line": 38,
+      "selected_sha256": "c5bf34ba3e64090bc0ee2aa2926b356e9c12add1749022265ef594442f7219c1"
+    },
+    {
+      "source": "paper/sections/aa-family.tex",
+      "source_sha256": "489c74d8ea0a65ae7d710de9c0acf1294b68d56bd24ae0e26cd710bddc79f016",
+      "start_line": 7,
+      "exclusive_end_line": 38,
+      "selected_sha256": "14b712c9e9b228b3271e49b8a74f16802814fa2866f27005df14d667147291fb"
+    },
+    {
+      "source": "paper/sections/aa-bounds.tex",
+      "source_sha256": "93e99be4b007bca410cdca6b85dfa6ed030ddb1808984c203e81dc39dc781df8",
+      "start_line": 9,
+      "exclusive_end_line": 87,
+      "selected_sha256": "6e57e51c516975fe39702b6ec6bb063cb8ea690a5096bf8661c338e15e1bc8c2"
+    },
+    {
+      "source": "paper/sections/aa-bounds.tex",
+      "source_sha256": "93e99be4b007bca410cdca6b85dfa6ed030ddb1808984c203e81dc39dc781df8",
+      "start_line": 122,
+      "exclusive_end_line": 148,
+      "selected_sha256": "3bc774a6743389cb4ffafce29eda2fb28696a10cd57d54a9f48021ab7b4fe489"
+    },
+    {
+      "source": "paper/sections/aa-bounds.tex",
+      "source_sha256": "93e99be4b007bca410cdca6b85dfa6ed030ddb1808984c203e81dc39dc781df8",
+      "start_line": 177,
+      "exclusive_end_line": 226,
+      "selected_sha256": "18cdf709a24008a868a0e1d5c1db5234ef74f5de271be90fb9e45ffa444bed94"
+    },
+    {
+      "source": "paper/sections/aa-completion.tex",
+      "source_sha256": "a9555f36f1db4d3602f2354116516ba576161bc696c22702bba0a18281c2f238",
+      "start_line": 8,
+      "exclusive_end_line": 101,
+      "selected_sha256": "dde9a568f0c6ee7776fcf5e2d8b2aa99324cbe2f6bd99440e4d082b213f06f67"
+    },
+    {
+      "source": "paper/sections/unit-exponent.tex",
+      "source_sha256": "d8baef493c96c0b0a338c5e221cfdac125f957a27e9a953049dd1cd7a306d629",
+      "start_line": 10,
+      "exclusive_end_line": 64,
+      "selected_sha256": "3e3df83e8f395a3deb5fd45a609d5781592fcecd77efee522ee5cc6ff4b8443f"
+    },
+    {
+      "source": "paper/sections/minimum-two.tex",
+      "source_sha256": "972b6b723c31ebda44f22e298513332e1a15dc7502703e426d460b2ba018c167",
+      "start_line": 8,
+      "exclusive_end_line": 53,
+      "selected_sha256": "0207bcb851e8cd7d40af681ded29984b725905ce3af9848cbb5d0c758a96cf6d"
+    },
+    {
+      "source": "paper/sections/distinct-tail.tex",
+      "source_sha256": "dd2214c1da300af69d96c95212ffa025261239318f49397cfe0c44688471cb3e",
+      "start_line": 9,
+      "exclusive_end_line": 113,
+      "selected_sha256": "10dde2bfdaac819f1ad7ac4da1c4a9a34eb195be75b2fc79d33ad8fc47cc648e"
+    },
+    {
+      "source": "paper/sections/low-spectrum.tex",
+      "source_sha256": "037883d959e6c6fdd7a436d8ebdd368db955dc231a350e9174fa4fd9347cad2b",
+      "start_line": 172,
+      "exclusive_end_line": 227,
+      "selected_sha256": "3971e2732eef060faef42c7d7a491caa22f9257f3dff4367b7e06e2101cda9d6"
+    },
+    {
+      "source": "paper/sections/low-spectrum.tex",
+      "source_sha256": "037883d959e6c6fdd7a436d8ebdd368db955dc231a350e9174fa4fd9347cad2b",
+      "start_line": 11,
+      "exclusive_end_line": 76,
+      "selected_sha256": "d8ded20cac5a2ddc81f183f2655f321a00afb4f84eff24483a981b0e25b22651"
+    },
+    {
+      "source": "paper/sections/mixed-inertia.tex",
+      "source_sha256": "8d2f41da15b1cfcc7213a7d4c1e19cff0d2bdfb9a8f9896d22b392be9bf9a8c2",
+      "start_line": 35,
+      "exclusive_end_line": 74,
+      "selected_sha256": "c816656411545b7e6cdcad799e5d4a4be9aec89d71ea2286ce0d23cbe2b081d8"
+    },
+    {
+      "source": "paper/sections/endpoint-one-spectrum.tex",
+      "source_sha256": "16c52326f7c88bf538ee2b70bfc4f6c6e4b6901f93d963cd288ab96e4d4c50f5",
+      "start_line": 8,
+      "exclusive_end_line": 120,
+      "selected_sha256": "133bac7d3d7d125ca790a54b18b435e82d099c51cb3a3a6751389331bf7ea9a1"
+    },
+    {
+      "source": "paper/sections/endpoint-two-completion.tex",
+      "source_sha256": "e58bea303f7c29944c9ded5d0c01102f0963b3197e49585985f131f9f44954fc",
+      "start_line": 3,
+      "exclusive_end_line": 116,
+      "selected_sha256": "82e1eeee30187b69fc4205040c80e38c214ca0e9028d767fbdc4e0be988d7aa0"
+    },
+    {
+      "source": "paper/sections/three-prime-classification.tex",
+      "source_sha256": "f51070d109eac96d68df6c800d6be07cca131115c35f5218110e3608a337dddb",
+      "start_line": 1,
+      "exclusive_end_line": 143,
+      "selected_sha256": "f51070d109eac96d68df6c800d6be07cca131115c35f5218110e3608a337dddb"
+    }
+  ],
+  "shared_appendices": {
+    "paper/sections/endpoint-two-identities.tex": "1b615213520e5fa11c6dbeaa66929dd2be3de9e4eab315ada13abec530229de4",
+    "paper/sections/largest-root-identities.tex": "07a53cb81a1ed8ee77dc7c33e0118df215f272018be69240b0df58a4f28c577b"
+  },
+  "environment_counts": {
+    "proof": 23,
+    "theorem": 11,
+    "lemma": 6,
+    "proposition": 4,
+    "corollary": 2
+  },
+  "preserved_body_hashes": {
+    "proof": {
+      "09b4740c7dda024d5c04e356ac65d6ed0b19104ac5f32a21dc08b9e4a11542af": 1,
+      "183e8d169717401ee854ba5da44ff7f03fe134d12a1be3bc26e3c86fa9622a93": 1,
+      "260fccb7de4db89194d830b4398832781b7b8f7d65c3f3d2b64e4d7d3a486659": 1,
+      "2d97b72c5af2d7dc1f9888ae288c145e9ccaa33676b5eeea6cc198aa39baed02": 1,
+      "3e99dd9cfa5c11a005d023a9cadb77a0775d5ebcd27beabbb83335afde6cd6fa": 1,
+      "423ba209b1bcf9bd18d8ae1502e67875db0035ef041fe966fa67601adefb9664": 1,
+      "4b40ab418e50a3292aab5dcd8ddbc3fdda3e323a54971cefac96bed5b4eba41f": 1,
+      "509cd7be759bcc63975602ffb232c1c976a900cd7db90147c98af0b3b3221c12": 1,
+      "56c515c24c979c019eacc02059efd57ebfac9c051dca25d06edd079c16b580b6": 1,
+      "5f47f8e38b6e8d61b52bcf7dbe3e3e9b67fdc90c136a61b5a36c522176f96309": 1,
+      "635ecadbaccd2b1a203ce80ad9b94316dec5044aab9cf27d8d9da48e4e906fc9": 1,
+      "731221a3e22810e5b728b6416bb6883ea97a0b85774ce83e771014d196430865": 1,
+      "79e6c023440af93f339d5124654c8131d479883902fbed54743daf9a232bf688": 1,
+      "864ae263af98db76ff1eddbca04e14abc6bf054ee45d285a871b7fc93d7b1e53": 1,
+      "bd37114701fd5d8fd369fffd6dfbe5a79530376421a88f1e38751377dda46648": 1,
+      "c07c480f52e3ac8ff3b9cfb4a322a0c8bd9be129cce5d42f7b58f84030461b97": 1,
+      "c808009d90b91666c33b044a5801efc4381d49fe4609f1fe9c4f00f4729bed2f": 1,
+      "c8a29afa744c48c4fc9d7cd133ac67844866089f30458a4521d6c1a6176d34f5": 1,
+      "ce53be365664f060ecac548297157ee51ebeb50edb580a5994798eb9098c47fe": 1,
+      "d7abad8e7fa129e2021956a45ad8ca1579ac9a7d78b43d58bbb6250a2c8415f5": 1,
+      "e99242c6866afe7ed232252f48ce5afa0348115371699e10a8653522501b7b71": 1,
+      "f3235a0b601661da2d3ae0bec7e982a9496dac9aca3d3bb5255039098428040e": 1,
+      "fc20cc0f940223d6cb53bc286fb080b30c985ec5aaa61b84bb6c394ef253e72a": 1
+    },
+    "theorem": {
+      "254ccb2ad4e575cf2ba97c462f241561f1dae2131e9a4ebb9aeb9e13d8868511": 1,
+      "2b3d2f962d910972da93e9a0113fc8f033482a02ac11e7947fd89b34f22334c4": 1,
+      "3303a876648d8ecc07b2b1914d637570fb795ea8836b74fa3867a4d2e63b79e6": 1,
+      "69e5a2c5bd0d0b8bfbb6c654fc72b0dc1a8156bc175924a758fd5bb8e5146675": 1,
+      "a1a3d8457fafeb4cf6bb8ec6582b850b9dc3c7d23f5e097f882f1ee0d11879f7": 1,
+      "aa6631cea13849e2ce1f54345543bf0323d6c8aad1312372f94e68352d111e45": 1,
+      "b4ced0019201c1b97cf9d904b974d1ee8d10bc9efcc369532cb51cc27a49e377": 1,
+      "d0e033fee6ba06176269b64ac8256269f20ea1ed20a22845e8edb290a90e6127": 1,
+      "d3110886bf2e9a57d5cc4fbfc2859db1122102b293881e9f6905712f18e18ad6": 1,
+      "e3a33edbab030d9714ecd4fa0e0c896bd6ee1b2b3dc3cc8f96f731e91e1ef22c": 1,
+      "ffa535e6e072e111b65c1a9cde78346b589f7b351e1f49be58d31ad162e66c3d": 1
+    },
+    "lemma": {
+      "97bad08971e6a41917fc80fbfe7d3821eb46b56a85fc08606e8cd19e4455858f": 1,
+      "a588cb5064ddfa3dd9a3a5e3c5680fdd03063c80b5162e6b7e31245cc7824a0b": 1,
+      "a9115a1240dfd96dda54889334eb68932a46551c2f8ad0e5138bdc45ba5fb7ba": 1,
+      "ab8e4fefa3d896d4206651f10fbda285c572ccac953118bba7bcc20f8fff58c1": 1,
+      "b43bb5cdfa95ac875213b3749adc3c94810b50a29e0a84fa52be48922b7d18ee": 1,
+      "d02cf084f1e88c3be9ac292a39b918d83e167aed280889d32f0d5644e390cdec": 1
+    },
+    "proposition": {
+      "452c84684653cb2f2c61c7773e9a9491b8a7ff2a61a8759cbecf62b080d8b6d9": 1,
+      "7265a42cff938cdfc6511e5c70ffd5a56eba2babdc43d7d5d58a3e5b56ec58c9": 1,
+      "95027abb3e20296af14541b452194c230ef9d61dd05257206dd1eea8d1440439": 1,
+      "9867adc49d55f5af5a5b97b1757dd09f2709ac2396fe51a7c0ba358c322086e9": 1
+    },
+    "corollary": {
+      "0e685cf8f84c23db1fb3af582c78ed6457906d4934f5ea8c4b4385259c23c8f3": 1,
+      "67dd0ec72a66eaf66dc578021ab4332475784a339796400566e34e54c4467f26": 1
+    }
+  },
+  "explicit_references_resolve": true,
+  "labels": [
+    "cor:minimum-seven",
+    "cor:quadratic",
+    "eq:antisymmetric",
+    "eq:complement",
+    "eq:cubic",
+    "eq:discriminant",
+    "eq:divisor-conditions",
+    "eq:general-first-endpoint",
+    "eq:lower-inertia",
+    "eq:product",
+    "eq:strong-product",
+    "eq:symmetric",
+    "eq:upper-inertia",
+    "lem:congruence",
+    "lem:endpoint-one-small-gaps",
+    "lem:endpoint-two-rectangle",
+    "lem:join",
+    "lem:sign",
+    "lem:third-index",
+    "prop:distinct-tail",
+    "prop:divisors",
+    "prop:index",
+    "prop:low-spectrum",
+    "sec:bounds",
+    "sec:completion",
+    "sec:distinct-tail",
+    "sec:endpoint-two-identities",
+    "sec:graph",
+    "sec:largest-root-identities",
+    "sec:low-spectrum",
+    "sec:minimum-two",
+    "sec:three-prime-classification",
+    "sec:unit",
+    "sec:verification",
+    "tab:minimum-three-signs",
+    "tab:open-region",
+    "thm:boundary",
+    "thm:endpoint-one-spectrum",
+    "thm:endpoint-two-completion",
+    "thm:largest-root-unit-interval",
+    "thm:minimum-three",
+    "thm:minimum-two",
+    "thm:pqrk",
+    "thm:repeated",
+    "thm:three-prime-classification",
+    "thm:uniform-low-root",
+    "thm:unit"
+  ],
+  "citations_resolve": true,
+  "finite_bases_retained": [
+    27562,
+    8658
+  ],
+  "earlier_minimum_three_base_retained": 325,
+  "new_mathematical_theorem": false,
+  "lean_run": false
+}

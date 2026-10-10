@@ -1,0 +1,63 @@
+{
+  "necessary_condition": "h_C(1)=0 OR h_C(2)=0",
+  "generic_reflection_identity": "passed",
+  "complete_prime_summaries": [
+    {
+      "prime": 2,
+      "surviving_union_count": 8,
+      "excluded_both_nonzero_count": 0,
+      "both_zero_intersection_count": 6
+    },
+    {
+      "prime": 3,
+      "surviving_union_count": 22,
+      "excluded_both_nonzero_count": 5,
+      "both_zero_intersection_count": 15
+    },
+    {
+      "prime": 5,
+      "surviving_union_count": 78,
+      "excluded_both_nonzero_count": 47,
+      "both_zero_intersection_count": 27
+    },
+    {
+      "prime": 7,
+      "surviving_union_count": 142,
+      "excluded_both_nonzero_count": 201,
+      "both_zero_intersection_count": 39
+    },
+    {
+      "prime": 11,
+      "surviving_union_count": 371,
+      "excluded_both_nonzero_count": 960,
+      "both_zero_intersection_count": 37
+    },
+    {
+      "prime": 13,
+      "surviving_union_count": 505,
+      "excluded_both_nonzero_count": 1692,
+      "both_zero_intersection_count": 39
+    }
+  ],
+  "independent_determinant_endpoint_checks": 8062,
+  "modular_gaussian_determinants": 8054,
+  "integer_determinants_for_endpoint_two_mod_two": 8,
+  "intersection_counterexample": {
+    "exponents": [
+      9,
+      9,
+      136
+    ],
+    "endpoint_values": {
+      "1": 0,
+      "2": 3660018448
+    },
+    "scope": "Already settled repeated family; endpoint-one zero does not require endpoint-two zero"
+  },
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "verify_modular_endpoints.py": "b4bbe340fd2a403239bbfcb6710c0641f5537adeb15e0fe027b91871c57a452c",
+    "check_modular_endpoints.py": "95f2cad1eada4d3356945ae3a5b78382d3ada47cc5868b515eb52fe33f589810"
+  },
+  "scope": "Complete8062endpoint checks over all4031residue triples at six fixed coauthor primes;377pair rootsets on both surfaces agree with corrected reflected-H script. No bound on positive exponents or integrality asserted for surviving residues. No exponent scan, numerical spectrum or Lean."
+}

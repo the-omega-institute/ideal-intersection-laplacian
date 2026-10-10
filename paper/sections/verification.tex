@@ -1,0 +1,380 @@
+\section{Exact verification and reproducibility}
+\label{sec:verification}
+
+The infinite conclusions use the written proofs and the finite certificates
+to which those proofs reduce the problem. Computations use integer or
+rational arithmetic; no floating-point spectrum or Lean formalization is
+claimed for these Laplacian results. SymPy~1.14.0 and Python~3.10 or later
+are used, with source hashes in the saved results.
+
+The \href{https://github.com/the-omega-institute/ideal-intersection-laplacian}{project repository}
+contains every checker, exact certificate and reproduction command~\cite{repository}.
+The build guide gives the commands by filename. The complete per-checker
+catalogue is retained in \path{paper/sections/verification-details.tex};
+the optional detailed build includes it without changing the proofs or
+saved certificates. The principal verification scopes are as follows.
+
+\subsection{Graph embeddings and repeated exponents}
+
+Direct ideal adjacency validates $LU=UB$, independently of the support
+construction, on $14$ squarefree and $(1,1,k)$ cases with $44\,294$
+vertex pairs. The full $34$-vertex polynomial at $(2,2,3)$ is checked.
+Three boundary graphs with $34,174,548$ vertices cover $165\,490$ pairs
+and verify both repeated-exponent embeddings and the quotient lifting.
+The $548$-vertex full characteristic polynomial is not computed.
+
+The $90$ cubic diagnostics have exact rational intervals and independent
+Sturm/sign checks. The all-$b$ proofs use the exhaustive divisor reduction,
+not extrapolation from those diagnostics. All divisors of $24,108,320$
+for smaller-factor indices $1,2,3$ are exhausted; eight positive-$b$
+cubics have modular certificates checked by separate integer Horner
+arithmetic. Higher indices use the uniform sign proof.
+The separate ten-vertex graph for $(1,1,2)$ confirms why the symmetric
+cubic alone is not an integrality characterization.
+
+\subsection{Small minima and complete finite domains}
+
+The general six-support quintic agrees with the reflected source quotient
+and weighted symmetry. Thirty-five requested fully distinct triples and
+direct ideal graphs with $22,58$ vertices check the construction. Endpoint
+identities and positive shifted coefficients support the written unit,
+minimum-two and uniform-cutoff proofs.
+
+At minimum three, the proved cutoff leaves precisely $325$ pairs
+$4\leq b<c<30$. All integer quintics, endpoint signs and intervals are
+checked; the first endpoint has $257$ positive and $68$ negative values,
+with no zero. This complete certificate is part of the minimum-three proof.
+At minima four through seven, all $27\,562$ ordered triples in the derived
+region are exhausted. A separate fraction-free Bareiss implementation
+reconstructs every discriminant by a $9\times9$ integer Sylvester
+determinant, checking exact divisions, consecutive-square brackets and
+domain completeness. Together with the written cutoff, this proves
+Corollary~\ref{cor:minimum-seven}; the minimum itself is not extrapolated.
+
+\subsection{Inertia and endpoint surfaces}
+
+Symbolic block, Schur-complement, determinant and positivity identities
+support the uniform low root and balanced region. Six secular/Sturm
+fixtures cover the possible nonsingular sign combinations; nine direct
+quotient/Sturm fixtures include equal exponents and zero-diagonal boundaries.
+The four bounded-gap families also have complete $38$-residue modular
+certificates. These finite fixtures check formulas; the infinite conclusions
+use the written comparison and inertia arguments.
+
+For the middle-exponent bound, all $132$ cubics over $66$ pairs
+$4\leq a<b\leq15$ are independently reconstructed. Integer trial division
+exhausts $8\,527$ positive divisors, and separate Horner evaluation checks
+all $7\,585$ above $b$. No upper bound on $c$ is imposed. This is the
+complete certificate underlying Theorem~\ref{thm:endpoint-reduction}.
+The linear cutoff uses the general endpoint cubic and five positive
+coefficient expressions. Both known repeated-exponent endpoint zeros are
+positive controls. The CRT scope note uses six substitution identities,
+two positive boundary shifts and two integer seed determinants; its
+all-moduli claim is the written polynomial-congruence argument.
+
+\subsection{Endpoint-two completion}
+
+Lemma~\ref{lem:endpoint-two-rectangle} uses a full determinant identity
+for the middle bound and an $84$-term positive residual with two
+nonnegative square expressions for the maximum bound. The real tail in
+Theorem~\ref{thm:endpoint-two-completion} uses complete $44$- and
+$112$-term positive identities. All coefficient vectors are displayed in
+Appendix~\ref{sec:endpoint-two-identities}; these written statements
+require no finite base.
+
+The middle bound has the sharp real cutoff $a>(7+\sqrt{13})/3$;
+at equality, its sole endpoint-zero boundary is $b=c=2a-2$.
+The separate \path{scripts/verify_endpoint_two_middle_cutoff.py} checks
+the generic cubic identity, all $36$ positive coefficients of $B_0,D_0,E_0$
+at $a=3+m$, the exact boundary and three fixed rational controls.
+The integer middle bound still starts at four and the maximum bound at eight.
+
+The global integer conclusion uses exactly $8\,658$ fully distinct
+triples at minima eight through thirty-nine in the necessary geometric
+domain. Every endpoint has independent integer-Horner and $6\times6$
+Bareiss agreement, with no zeros; the CSV and JSON reproduce byte-for-byte.
+This base requires no small-gap or growing-gap exclusions. Repeated
+exponents and minima at most seven retain their earlier proofs, including
+the necessary $27\,562$-triple minimum-through-seven certificate.
+The global conclusion is therefore computer-assisted. Seven selected
+quotient/Horner/Sturm fixtures supplement the identities; the repeated
+zero $(10,10,12)$ is preserved below the tail threshold.
+The pinned
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/scripts/check_endpoint_two_completion.py}{completion checker}
+and its companion middle/maximum checkers reproduce the proof data.
+The separate \path{scripts/verify_endpoint_two_coefficients.py} checks
+the displayed real-tail coefficients and all per-minimum domain counts
+against a direct determinant and an arithmetic count formula; it does not
+reevaluate the finite base's endpoint values.
+
+The equality cubic in the arithmetic discussion has generic determinant and
+independent $5\times5$ Sylvester-discriminant checks in its pinned
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/scripts/check_endpoint_one_equality_cubic.py}{checker}.
+The square-discriminant-plus-integer-root formulation also includes the
+curve equation $G(a,b)=0$. It supplies a finite splitting test at each
+known integer point, without a point enumeration or rank computation.
+
+\subsection{Largest-root completion and classification dependencies}
+
+Theorem~\ref{thm:largest-root-unit-interval} uses the complete $36$- and
+$170$-term positive identities for $a\geq3$ and the $35$-coefficient
+positive lower bound for $2\leq a\leq3$ in
+Appendix~\ref{sec:largest-root-identities}.
+The pinned
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4471a5b4a02d97d3dcf78ea004298d5592924a95/scripts/check_largest_root_unit_interval.py}{checker}
+reconstructs the generic quotient and the independent Schur determinant,
+the lower sign identity, all $34$ coefficient rows, and the six historical
+small-gap sign vectors at $a=8+m$. Seven specified controls, including
+$(3,6,6)$, $(4,7,12)$, $(8,11,56)$, $(9,12,72)$, $(9,12,159)$,
+$(9,30,951)$ and $(9,150,160)$, have $14$ independent $6\times6$
+Bareiss endpoint determinants. Exact Sturm counts, weighted by squarefree
+factor multiplicity, give one root in each open unit interval and none
+above its upper endpoint. The controls supplement written unbounded proofs;
+there is no new exponent scan or Lean run.
+
+The separate \path{scripts/verify_largest_root_coefficients.py} reconstructs
+the determinant directly from the set-disjointness quotient and checks
+every displayed coefficient in both tables and all six small-gap vectors.
+The latter now use $a=2+m$, proving the real minimum-two brackets;
+the boundary $L_2=b$ at $a=2$ is retained explicitly in the proof.
+It shares the support model and SymPy backend, but does not import the
+original characteristic-polynomial helper.
+
+The separate \path{scripts/verify_largest_root_minimum_two.py} checks
+the $143$-term expansion at $a=2+m$, $b=5+m+u$, $c=b+v$.
+On $0\leq m\leq1$, its $39$ negative terms are bounded using $m^k\leq1$;
+discarding the remaining positive terms with $k\geq1$ gives the displayed
+$35$ positive lower-bound coefficients. The lower-sign quadratic and
+Schur diagonal bounds are also checked generically. Two fixed rational
+controls supplement the written real-domain proof; no finite base is added.
+
+Theorem~\ref{thm:three-prime-classification} retains the established
+$27\,562$-triple minimum-through-seven and $8\,658$-triple endpoint-two
+bases, with earlier repeated and small-minimum proof dependencies.
+They were not rerun for this completion. The separate $108$-pair
+minimum-eight certificate is valid but unnecessary for this proof route.
+The certificate records hashes of the prior proof and result inputs.
+The new real unit interval and small-gap exponent brackets require no
+finite exponent base; the combined global theorem is computer-assisted.
+
+\subsection{Arithmetic and shifted-root cases}
+
+Scaling, all parity patterns and common residues for primes $3,5,7$
+are checked coefficientwise, with $70$ quadratic-residue evaluations and
+separate integer Horner arithmetic. The all-even scaling contradiction
+uses the written valuation proof. Complete endpoint tables modulo two
+and three include zero residues and zero polynomials; $70$ independent
+integer determinant evaluations check the endpoint table.
+
+For the cases in Appendix~\ref{sec:two-adic-lifting}, direct and reflected
+quintics and all exponent permutations agree. Every shifted divisibility
+and binary-cubic identity is checked coefficientwise for arbitrary shifts.
+Chosen full quintics and derivatives are independently reconstructed by
+integer determinants and principal cofactors, including compatible controls
+and both known endpoint-zero examples. The finite residue and parity tables
+support the identities; the infinite conclusions use the written root
+factorizations, rather than a scan of exponents.
+
+Reza's higher-modulus script was run unchanged; the independent verifier
+checks all $28\,032$ residue triples with $56\,064$ Bareiss determinants.
+The coefficientwise period-eight proof explains why the fixed divisor-$32$
+tables add no classes at larger exponent moduli. His derivative script's
+$384$ representatives are checked by $16\,380$ principal-minor determinants,
+including the additional controls. Zero has infinite valuation, and full
+valuations need not be constant on an exponent residue class. The complete
+catalogue retains these diagnostic limits, coefficient counts, fixture
+counts and exact source/certificate mappings.
+
+\subsection{Endpoint-one spectral location}
+
+Theorem~\ref{thm:endpoint-one-spectrum} and
+Corollary~\ref{cor:endpoint-one-divisor-window} use written proofs without
+a finite base. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/d09cfdcc08f2a0b6c5b3abbd7d7a30bacc9030b4/scripts/check_endpoint_one_minimum_root.py}{minimum-root checker}
+reconstructs the generic endpoint polynomial, comparison and equality
+factorization, the historical twelve-term expansion and the determinant identities.
+The current sum proof uses three positive quadratic coefficients for $a\geq2$;
+\path{scripts/check_endpoint_one_sum_bound.py} checks its generic identities.
+The residual-spectrum assertions hold for the sharp real cutoff
+$a>2+\sqrt3$; the integer divisor corollary retains $a\geq4$.
+The separate \path{scripts/verify_residual_spectrum_cutoff.py} checks the
+generic anchor identities and the repeated endpoint-one family proving
+sharpness, with two fixed integer controls below the cutoff and one
+rational control in the newly admitted range.
+The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/fd02ed726d3ada4bbd5e401e8818739f3bddc371/scripts/check_endpoint_one_pair_sum_window.py}{pair-sum checker}
+verifies the four-support block, characteristic factor, discriminant and
+strict sign identity. The established controls $(8,8,105)$, $(9,9,136)$
+and $(20,20,741)$ leave $5,5,13$ divisors in the smallest-root windows;
+all $23$ integer Horner evaluations are nonzero. Rational factorization
+agrees, and exact Sturm counts give one quartic root in each window and
+none on $[0,a]$. These controls already follow from the repeated-exponent
+theorem. The source-hashed certificates reproduce byte-for-byte; their
+finite diagnostics supplement the written bounds.
+
+The global gap in Theorem~\ref{thm:endpoint-one-spectrum} has no endpoint
+or equality hypothesis. Its
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4a451ac51055c6d04926967749196f12ac8e49c8/scripts/check_total_sum_spectral_gap.py}{pinned checker}
+verifies the shifted singleton-block determinant, symmetric total-sum
+identity, exact quartic coefficients and denominator-positivity identity.
+Six specified controls $(2,2,2)$, $(2,2,3)$, $(4,4,4)$, $(9,9,136)$,
+$(9,12,159)$ and $(9,30,951)$ give six direct $6\times6$ Bareiss
+checks at the total sum. The first is the sharp boundary where
+$\lambda_4=6$. Exact Sturm counts are summed
+over squarefree factors with their multiplicities. In particular,
+$(4,4,4)$ has characteristic polynomial
+$x(x-20)(x^2-32x+48)^2$: three eigenvalues lie below eight although
+there are only two distinct roots there. The endpoint-one control
+$(9,9,136)$ has one quartic root below $154$ and three above.
+The reciprocal coefficient window filters the same $23$ old divisors
+at the three endpoint-one controls to $10$; $11$; and $25,26$,
+respectively. All four integer Horner values are nonzero, and exact
+Sturm counts put one quartic root in each rational interval.
+These fixed diagnostics supplement the written global and coefficient proofs;
+the controls were already settled by the repeated-exponent theorem.
+
+Proposition~\ref{prop:endpoint-one-equality-spectrum} retains the written
+index and simplicity argument, now for real $2\leq a\leq b$.
+The direct checker \path{scripts/verify_equality_spectrum.py} verifies
+the principal factorization, the positive expression at $b$, ordering
+and nonzero coupling; three fixed controls below the former minimum
+use exact root counts. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/d3fa3478193f34777a88b970da8f0763ce177c38/scripts/check_endpoint_one_equality_root.py}{equality-index checker}
+verifies the principal factors, weighted symmetry and nonzero coupling.
+The earlier
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/9e98266eb279a31b7282cea17fca3f5af6d9410f/scripts/check_endpoint_one_equality_second_root.py}{equality pair-sum checker}
+retains the superseded lower bound $a+b$ and its three off-endpoint
+controls. The present stronger bound $s$ follows from the global theorem.
+
+\subsection{Modulo-five splitting and equality residues}
+
+Proposition~\ref{prop:mod-five-splitting} has a written finite-field proof
+with no exponent base. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/7d917afffd7c2616bc052810718dcc720d916a8b/scripts/check_endpoint_one_equality_mod_five.py}{pinned checker}
+reconstructs the generic six-support determinant, verifies all six exponent
+permutations and the equality identity, and checks all $34$ residue pairs
+at the fixed primes three and five. Separate root-multiset enumeration
+and polynomial factorization agree on every curve row. Independent
+$720$-term integer determinant expansions check the endpoint residues,
+both global residue polynomials at seven interpolation points each,
+and five fixed controls, for $83$ determinants. The two $E=0$ controls
+are off endpoint one; the repeated endpoint-one zero $(9,9,136)$ is
+preserved. The certificate reproduces byte-for-byte. These are finite-field
+tables and fixed controls, with no exponent-range or integer-point search.
+
+\subsection{Normalized equality discriminant}
+
+Proposition~\ref{prop:equality-local-discriminant} has a written
+valuation argument with no finite exponent base. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4878e51211e2694e40a246759111d55dce070309/scripts/check_endpoint_one_equality_local_discriminant.py}{pinned checker}
+verifies both anchor identities, all $14$ coefficients of $R$, the
+curve difference factor and its unit $2$, and the discriminant's generic
+divisibility by $q-v$. It reruns the direct six-support characteristic
+identity and the independent $5\times5$ Sylvester discriminant check.
+The prime examples are exactly $5,7,11$, and the earlier table gives
+the four remaining modulo-five pairs. The certificate reproduces
+byte-for-byte. No exponent scan, integer-point enumeration or larger
+prime search is used.
+
+\subsection{Local equality splitting}
+
+Proposition~\ref{prop:equality-local-splitting} uses simple-root Hensel
+lifting and the quadratic discriminant criterion over $\mathbb Q_p$.
+The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/8b87f9df6d402fafc60ed063ab8b12326707febf/scripts/check_endpoint_one_equality_local_splitting.py}{pinned checker}
+verifies both reduced cubics, the three positive-branch derivative
+identities, the curve reduction $1-a^4$ and derivative $-4a^3$, generic
+polynomial division and the factor discriminant
+identity modulo $P_3(d)=0$. It also reruns the direct quotient,
+independent Sylvester and local anchor identities. The specified
+residue examples at $3,5,7$ illustrate both branches; they are not
+integer equality points. The certificate reproduces byte-for-byte.
+The all-prime-power conclusion is a written Hensel argument, without
+a prime, power or exponent scan or a finite exponent base.
+
+\subsection{The exceptional prime thirteen}
+
+Proposition~\ref{prop:equality-thirteen} is a written valuation proof
+with no finite exponent base. Its
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/eb6b7d378205033154c328cd5c543332f27b6467/scripts/check_endpoint_one_equality_thirteen.py}{pinned checker}
+verifies the refined anchor identities in $\mathbb Z[1/2][b]$, every
+coefficient of the discriminant remainder, the curve difference unit
+and discriminant difference divisibility. It also reconstructs the
+generic cubic from the six-support quotient and independently checks
+its discriminant by a $5\times5$ Sylvester determinant. The unique
+linear residue $u\equiv8\pmod{13}$ is checked exactly; the certificate
+reproduces byte-for-byte. There is no prime, power or exponent scan.
+
+\subsection{A unit exponent with any prime-factor count}
+
+Theorem~\ref{thm:unit-any-prime-count} has a written support-counting
+and variational proof with no finite base. Its
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/16a677c34ffe2d8da84f3c1248b7698a7eadd960/scripts/check_unit_exponent_any_prime_count.py}{exact checker}
+constructs disjoint-support adjacency for nine specified exponent
+vectors with three, four or five prime factors. It checks connectedness,
+the weighted zero sum, both energy identities and the strict rational
+Rayleigh bound. Two small full graphs independently check the trial
+energy and complement identity. These controls verify the implementation;
+the unbounded theorem follows from the written proof, without
+an exponent scan, floating-point eigenvalues or Lean verification.
+
+\subsection{Small-exponent Rayleigh criterion}
+
+Theorem~\ref{thm:small-exponent-rayleigh} and
+Corollary~\ref{cor:small-exponent-reciprocal} have written unbounded
+proofs and require no finite base. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/295fffdd14afb3d5ef54e5fbbf02c31347ecb51d/scripts/check_small_exponent_rayleigh.py}{checker}
+verifies the generic energy-minus-norm factorization, a three-collection
+compression characteristic polynomial and the boundary vector.
+The compression is not equitable; its eigenvectors are trial functions,
+not full eigenvectors. Nine specified support controls check the exact
+aggregated energy matrix, connectedness, zero sums, complement identity
+and universal shift. They include three equality controls and two
+controls outside the sufficient criterion. Two small expanded graphs
+independently verify the trial energies. Boundary residuals confirm
+that the trial function is not a full eigenvector at one. These
+controls validate the implementation, with no exponent scan, numerical
+eigensolver or Lean verification.
+
+\subsection{Four prime factors with two exponents equal to two}
+
+Theorem~\ref{thm:four-prime-pair-two} has a written invariant-subspace
+and positive-minor proof, reducing the endpoint equation to five
+symbolic low-$b$ polynomials and one explicit $17$-residue cubic
+irreducibility certificate. It requires no finite exponent base.
+The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/8684d83aefc0dac63ebab8c078421ab499e19ab9/scripts/check_four_prime_pair_two.py}{checker}
+verifies all four generic principal minors, the endpoint polynomial,
+the complete nine-term positive tail, all five low-$b$ identities,
+the two nonsquare discriminants and the exceptional characteristic
+polynomial and cubic residues. Eight specified support controls
+independently reconstruct every column of the four-dimensional
+invariant subspace, the weighted zero sum and the complement/join
+lift. Two small expanded graphs check the same embedding directly.
+These controls validate the implementation; no exponent-range scan,
+floating-point eigenvalues or Lean verification is used.
+
+\subsection{Four prime factors with two exponents equal to three}
+
+Theorem~\ref{thm:four-prime-pair-three} uses a written invariant-space
+and tensor positivity proof. Two complete nine-term positive expansions
+reduce the endpoint problem to fifteen symbolic low-$b$ polynomials:
+five have positive coefficients, eight have nonsquare discriminants,
+and two have explicit rational noninteger positive roots. This is a
+complete unbounded reduction with fixed arithmetic, not a finite
+two-parameter exponent base. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/04bf9df41dabe94d9736f930e1df7b92fba6dbb2/scripts/check_four_prime_pair_three.py}{checker}
+verifies the generic repeated-pair tensor identity and normalized
+two-dimensional characteristic polynomial, both endpoint polynomials,
+all eighteen positive coefficients and all fifteen low-$b$ rows.
+Ten specified support controls reconstruct all four embedding columns,
+weighted zero sums and complement/join identities, including two
+controls at other repeated exponents. Two small expanded graphs
+independently check the embedding. The certificate reproduces
+byte-for-byte, with no numerical spectra, modular search, exponent
+rectangle scan or Lean verification.
+
+\ifdefined\DetailedVerification
+\subsection{Complete checker catalogue}
+\input{sections/verification-details}
+\fi

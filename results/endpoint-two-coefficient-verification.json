@@ -1,0 +1,74 @@
+{
+  "middle_bound_generic_identity": "passed against direct quotient determinant",
+  "middle_bound_four_positive_factor_term_counts": [
+    6,
+    13,
+    14,
+    9
+  ],
+  "rational_parameter_inverses": "all three passed",
+  "manuscript_coefficient_tables": {
+    "maximum_bound_residual": {
+      "rows": 16,
+      "positive_coefficients": 84,
+      "constant": 3014656,
+      "displayed_table_identity": "passed"
+    },
+    "difference_at_five": {
+      "rows": 16,
+      "positive_coefficients": 44,
+      "constant": 4629843,
+      "displayed_table_identity": "passed"
+    },
+    "difference_at_four": {
+      "rows": 16,
+      "positive_coefficients": 112,
+      "constant": 611305472,
+      "displayed_table_identity": "passed"
+    }
+  },
+  "total_displayed_positive_coefficients": 240,
+  "difference_at_five_absent_component": "the displayed t^3*u^3 row is exactly [0]",
+  "finite_domain_count_formula": "n*c_max-n*(a+1+b_max)/2, c_max=(9a-33)//4, b_max=min(2a-3,c_max-1), n=max(0,b_max-a)",
+  "all_32_displayed_per_minimum_counts": {
+    "8": 0,
+    "9": 3,
+    "10": 6,
+    "11": 10,
+    "12": 15,
+    "13": 28,
+    "14": 36,
+    "15": 45,
+    "16": 55,
+    "17": 78,
+    "18": 91,
+    "19": 105,
+    "20": 120,
+    "21": 153,
+    "22": 171,
+    "23": 190,
+    "24": 210,
+    "25": 253,
+    "26": 276,
+    "27": 300,
+    "28": 325,
+    "29": 377,
+    "30": 405,
+    "31": 434,
+    "32": 464,
+    "33": 525,
+    "34": 558,
+    "35": 592,
+    "36": 627,
+    "37": 697,
+    "38": 735,
+    "39": 774
+  },
+  "finite_domain_total": 8658,
+  "minimum_eight_count": 0,
+  "strict_integer_maximum_boundary": "passed for minima8through39",
+  "main_and_supporting_table_inclusions": "passed",
+  "sympy": "1.14.0",
+  "scope": "Direct determinant reconstruction and literal manuscript-table/count verification; shared set-disjointness model, table parser and SymPy backend, no original characteristic helper. Two square expressions are nonnegative by their displayed form. Written root-location/domain-cover arguments reviewed separately. No endpoint evaluation on the8658triple base, historical finite-base rerun, parameter scan, graph enumeration, floats or Lean.",
+  "status": "passed"
+}

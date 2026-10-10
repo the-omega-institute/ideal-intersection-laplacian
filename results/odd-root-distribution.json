@@ -1,0 +1,247 @@
+{
+  "exponent_family": "All positive permutations of (3,3,2) modulo4",
+  "symbolic_checks": {
+    "integer_shifted_polynomial": {
+      "divisor": 8,
+      "coefficients_checked": 160
+    },
+    "shifted_modulo_two": {
+      "modulus": 2,
+      "expected": "y**3",
+      "coefficient_count": 160,
+      "difference_coefficients_checked": 160,
+      "all_difference_coefficients_divisible": true
+    },
+    "endpoint_modulo_32": {
+      "modulus": 32,
+      "expected": "16*u + 16*v",
+      "coefficient_count": 42,
+      "difference_coefficients_checked": 42,
+      "all_difference_coefficients_divisible": true
+    },
+    "derivative_modulo_16": {
+      "modulus": 16,
+      "expected": "8*u + 8*v + 8",
+      "coefficient_count": 51,
+      "difference_coefficients_checked": 51,
+      "all_difference_coefficients_divisible": true
+    }
+  },
+  "generic_symmetry_checks": 6,
+  "fixtures": [
+    {
+      "odd_odd_even_exponents": [
+        3,
+        3,
+        2
+      ],
+      "shifts_u_v_w": [
+        0,
+        0,
+        0
+      ],
+      "independent_coefficients": [
+        1,
+        -45,
+        693,
+        -4127,
+        7590,
+        -4176
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -64
+        ],
+        [
+          2,
+          -648
+        ],
+        [
+          3,
+          -3240
+        ],
+        [
+          4,
+          -5992
+        ],
+        [
+          5,
+          -7776
+        ],
+        [
+          6,
+          -8064
+        ]
+      ],
+      "h_at_one": -64,
+      "h_prime_at_one": 1240,
+      "determinant_derivative_at_one": 1176,
+      "endpoint_modulo_32": 0,
+      "derivative_modulo_16": 8,
+      "nonlinear_rational_factor": true
+    },
+    {
+      "odd_odd_even_exponents": [
+        7,
+        7,
+        6
+      ],
+      "shifts_u_v_w": [
+        1,
+        1,
+        1
+      ],
+      "independent_coefficients": [
+        1,
+        -193,
+        12533,
+        -288539,
+        980574,
+        -899640
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -195264
+        ],
+        [
+          2,
+          4560
+        ],
+        [
+          3,
+          -231768
+        ],
+        [
+          4,
+          -840240
+        ],
+        [
+          5,
+          -1761120
+        ],
+        [
+          6,
+          -2938824
+        ]
+      ],
+      "h_at_one": -195264,
+      "h_prime_at_one": 440328,
+      "determinant_derivative_at_one": 245064,
+      "endpoint_modulo_32": 0,
+      "derivative_modulo_16": 8,
+      "nonlinear_rational_factor": true
+    },
+    {
+      "odd_odd_even_exponents": [
+        19,
+        27,
+        10
+      ],
+      "shifts_u_v_w": [
+        4,
+        6,
+        2
+      ],
+      "independent_coefficients": [
+        1,
+        -1141,
+        406637,
+        -46692359,
+        262206942,
+        -295611120
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -79691040
+        ],
+        [
+          2,
+          45268200
+        ],
+        [
+          3,
+          81665496
+        ],
+        [
+          4,
+          31872600
+        ],
+        [
+          5,
+          -101765760
+        ],
+        [
+          6,
+          -316931760
+        ]
+      ],
+      "h_at_one": -79691040,
+      "h_prime_at_one": 170037576,
+      "determinant_derivative_at_one": 90346536,
+      "endpoint_modulo_32": 0,
+      "derivative_modulo_16": 8,
+      "nonlinear_rational_factor": true
+    },
+    {
+      "odd_odd_even_exponents": [
+        23,
+        39,
+        14
+      ],
+      "shifts_u_v_w": [
+        5,
+        9,
+        3
+      ],
+      "independent_coefficients": [
+        1,
+        -1993,
+        1241781,
+        -244268051,
+        1482445454,
+        -1757065128
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -517647936
+        ],
+        [
+          2,
+          240655968
+        ],
+        [
+          3,
+          525225672
+        ],
+        [
+          4,
+          343392672
+        ],
+        [
+          5,
+          -297559008
+        ],
+        [
+          6,
+          -1390392696
+        ]
+      ],
+      "h_at_one": -517647936,
+      "h_prime_at_one": 997626728,
+      "determinant_derivative_at_one": 479978792,
+      "endpoint_modulo_32": 0,
+      "derivative_modulo_16": 8,
+      "nonlinear_rational_factor": true
+    }
+  ],
+  "independent_six_by_six_determinants": 28,
+  "independent_five_by_five_principal_cofactors": 24,
+  "written_proof": "Integer roots force two even and three odd roots. h(2y+1)/8 modulo2=y^3 forces all odd roots to be1mod4. Then64|h(1)and16|hprime(1). The endpoint congruence forces u+v even, while the derivative congruence forces u+v odd.",
+  "source_sha256": "125feda21eeeb48d3d4f084e5a7a5143baf2d6786727d4a1d79dc336584f5c03",
+  "sympy": "1.14.0",
+  "scope": "Uniform written root-distribution/divisibility proof. Symbolic coefficient identities and four independent integer polynomial/derivative fixtures. No exponent scan, numerical spectrum or Lean. FullQ3 and nonsquarefree higher-prime vectors remain open."
+}

@@ -1,0 +1,445 @@
+{
+  "base_commit": "51ca2e372ba1d51b30142c388a65920bb5b3d72e",
+  "written_results": [
+    "Every positive permutation of (3,0,0)mod4 is nonintegral, with no size or ratio bound.",
+    "For residue patterns (1,3,2) or (3,3,0)mod4, all permutations, an integral spectrum with minimum m>=4 requires maximum M<7m-16+40/(m+2)."
+  ],
+  "generic_direct_reflected_quintic_and_six_symmetry_checks": "passed",
+  "coefficientwise_identities": [
+    {
+      "residue_roles_modulo_four": [
+        3,
+        0,
+        0
+      ],
+      "binary_quintic_difference_coefficients": 137,
+      "integer_shift_divisibility_coefficients": 154,
+      "shifted_binary_identity": "(y+1)^3",
+      "shifted_binary_difference_coefficients": 153,
+      "endpoint_two_modulo_eight": 4,
+      "endpoint_difference_coefficients": 51
+    },
+    {
+      "residue_roles_modulo_four": [
+        1,
+        3,
+        2
+      ],
+      "binary_quintic_difference_coefficients": 167,
+      "integer_shift_divisibility_coefficients": 160,
+      "shifted_binary_identity": "(y+1)^3",
+      "shifted_binary_difference_coefficients": 160
+    },
+    {
+      "residue_roles_modulo_four": [
+        3,
+        3,
+        0
+      ],
+      "binary_quintic_difference_coefficients": 152,
+      "integer_shift_divisibility_coefficients": 158,
+      "shifted_binary_identity": "(y+1)^3",
+      "shifted_binary_difference_coefficients": 158
+    }
+  ],
+  "fixtures": [
+    {
+      "exponents": [
+        19,
+        36,
+        100
+      ],
+      "kind": "complete_class",
+      "independent_coefficients": [
+        1,
+        -6649,
+        12597299,
+        -6514391771,
+        58047335880,
+        -67206078000
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -15660543240
+        ],
+        [
+          2,
+          22931698716
+        ],
+        [
+          3,
+          48645992448
+        ],
+        [
+          4,
+          61557523200
+        ],
+        [
+          5,
+          61741317000
+        ],
+        [
+          6,
+          49272240780
+        ]
+      ],
+      "h_at_one": -15660543240,
+      "h_at_two": 22931698716,
+      "positive_roots_in_open_interval_zero_three": 1,
+      "ordered_minimum": 19,
+      "ordered_maximum": 100,
+      "linear_cutoff": "2497/21",
+      "nonlinear_rational_factor": true
+    },
+    {
+      "exponents": [
+        35,
+        52,
+        120
+      ],
+      "kind": "complete_class",
+      "independent_coefficients": [
+        1,
+        -12881,
+        50425247,
+        -57746581723,
+        445571211540,
+        -563618109600
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -175743067416
+        ],
+        [
+          2,
+          96941182500
+        ],
+        [
+          3,
+          254736728064
+        ],
+        [
+          4,
+          297945348288
+        ],
+        [
+          5,
+          226868513400
+        ],
+        [
+          6,
+          41807384964
+        ]
+      ],
+      "h_at_one": -175743067416,
+      "h_at_two": 96941182500,
+      "positive_roots_in_open_interval_zero_three": 1,
+      "ordered_minimum": 35,
+      "ordered_maximum": 120,
+      "linear_cutoff": "8513/37",
+      "nonlinear_rational_factor": true
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        8
+      ],
+      "kind": "small_minimum_already_proved",
+      "independent_coefficients": [
+        1,
+        -113,
+        4223,
+        -56251,
+        164340,
+        -119520
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -7320
+        ],
+        [
+          2,
+          16164
+        ],
+        [
+          3,
+          -27648
+        ],
+        [
+          4,
+          -119808
+        ],
+        [
+          5,
+          -243720
+        ],
+        [
+          6,
+          -385020
+        ]
+      ],
+      "h_at_one": -7320,
+      "h_at_two": 16164,
+      "positive_roots_in_open_interval_zero_three": 2,
+      "ordered_minimum": 3,
+      "ordered_maximum": 8,
+      "linear_cutoff": "13",
+      "nonlinear_rational_factor": true
+    },
+    {
+      "exponents": [
+        25,
+        27,
+        758
+      ],
+      "kind": "mixed_linear_tail",
+      "independent_coefficients": [
+        1,
+        -42521,
+        481392311,
+        -625987180951,
+        17179365199860,
+        -16950867286500
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -397007917800
+        ],
+        [
+          2,
+          14907764847600
+        ],
+        [
+          3,
+          28966337832960
+        ],
+        [
+          4,
+          41781596841276
+        ],
+        [
+          5,
+          53356426655400
+        ],
+        [
+          6,
+          63693711038160
+        ]
+      ],
+      "h_at_one": -397007917800,
+      "h_at_two": 14907764847600,
+      "positive_roots_in_open_interval_zero_three": 1,
+      "ordered_minimum": 25,
+      "ordered_maximum": 758,
+      "linear_cutoff": "4333/27",
+      "nonlinear_rational_factor": true,
+      "passes_all_previous_clustered_root_conditions": true
+    },
+    {
+      "exponents": [
+        29,
+        27,
+        882
+      ],
+      "kind": "mixed_linear_tail",
+      "independent_coefficients": [
+        1,
+        -52989,
+        744606435,
+        -1132146008603,
+        33513511065048,
+        -33110409920364
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -728300310472
+        ],
+        [
+          2,
+          29393984179008
+        ],
+        [
+          3,
+          57260909279232
+        ],
+        [
+          4,
+          82876939449860
+        ],
+        [
+          5,
+          106246537879176
+        ],
+        [
+          6,
+          127374166484208
+        ]
+      ],
+      "h_at_one": -728300310472,
+      "h_at_two": 29393984179008,
+      "positive_roots_in_open_interval_zero_three": 1,
+      "ordered_minimum": 27,
+      "ordered_maximum": 882,
+      "linear_cutoff": "5057/29",
+      "nonlinear_rational_factor": true,
+      "passes_all_previous_clustered_root_conditions": true
+    },
+    {
+      "exponents": [
+        19,
+        27,
+        140
+      ],
+      "kind": "mixed_linear_tail",
+      "independent_coefficients": [
+        1,
+        -7511,
+        16055777,
+        -7940780509,
+        87166102722,
+        -95366474280
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -16125103800
+        ],
+        [
+          2,
+          47330935200
+        ],
+        [
+          3,
+          95097707136
+        ],
+        [
+          4,
+          127271096400
+        ],
+        [
+          5,
+          143946807480
+        ],
+        [
+          6,
+          145220365080
+        ]
+      ],
+      "h_at_one": -16125103800,
+      "h_at_two": 47330935200,
+      "positive_roots_in_open_interval_zero_three": 1,
+      "ordered_minimum": 19,
+      "ordered_maximum": 140,
+      "linear_cutoff": "2497/21",
+      "nonlinear_rational_factor": true
+    },
+    {
+      "exponents": [
+        9,
+        9,
+        136
+      ],
+      "kind": "endpoint_one_control",
+      "independent_coefficients": [
+        1,
+        -2991,
+        2549073,
+        -453423529,
+        5002490358,
+        -4551612912
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3660018448
+        ],
+        [
+          3,
+          6443629344
+        ],
+        [
+          4,
+          8365948056
+        ],
+        [
+          5,
+          9442018528
+        ],
+        [
+          6,
+          9686813400
+        ]
+      ],
+      "h_at_one": 0,
+      "h_at_two": 3660018448,
+      "positive_roots_in_open_interval_zero_three": 1,
+      "ordered_minimum": 9,
+      "ordered_maximum": 136,
+      "linear_cutoff": "557/11",
+      "nonlinear_rational_factor": true
+    },
+    {
+      "exponents": [
+        10,
+        10,
+        12
+      ],
+      "kind": "endpoint_two_control",
+      "independent_coefficients": [
+        1,
+        -436,
+        63572,
+        -3188288,
+        13268160,
+        -14284800
+      ],
+      "integer_determinant_interpolation_points": [
+        [
+          1,
+          -4141791
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          -1493541
+        ],
+        [
+          4,
+          -8266752
+        ],
+        [
+          5,
+          -19974075
+        ],
+        [
+          6,
+          -36279936
+        ]
+      ],
+      "h_at_one": -4141791,
+      "h_at_two": 0,
+      "positive_roots_in_open_interval_zero_three": 2,
+      "ordered_minimum": 10,
+      "ordered_maximum": 12,
+      "linear_cutoff": "172/3",
+      "nonlinear_rational_factor": true
+    }
+  ],
+  "independent_six_by_six_integer_determinants": 56,
+  "source_sha256": "fde5542344557f085eb0c905f4dbb21cffe85dd2b7b7f2b21bb7c613a87be441",
+  "sympy": "1.14.0",
+  "scope": "Written infinite-family results combine shifted integer-root distributions with the proved uniform low root and linear endpoint-two bound. Three arbitrary-shift polynomial identities and one endpoint congruence are checked coefficientwise; eight independently reconstructed quintics and exact Sturm counts check selected fixtures. No exponent or modulus range scan, floating spectrum or Lean. Full Q3 and nonsquarefree higher-prime vectors remain open."
+}

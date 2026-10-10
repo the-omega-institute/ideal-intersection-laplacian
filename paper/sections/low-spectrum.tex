@@ -1,0 +1,232 @@
+\section{An inertia criterion and four families with bounded exponent gaps}
+\label{sec:low-spectrum}
+
+An endpoint sign change need not detect two roots in the same interval.
+For example, the complement quintic at equal exponents factors as
+\[
+h_{a,a,a}(x)=(x-a^2-a)\bigl(x^2-(a^2+4a)x+3a^2\bigr)^2.
+\]
+We instead count low eigenvalues by a symmetric Schur complement.
+
+\begin{proposition}
+\label{prop:low-spectrum}
+Order the exponents as $a\leq b\leq c$, and let $m$ be an integer
+with $2\leq m<a$. If
+\begin{equation}
+\label{eq:upper-inertia}
+(c-m)(a+b+c-m)<mab,
+\end{equation}
+then the six-support complement quotient has exactly two nonzero
+eigenvalues in $(0,m)$. If, in addition,
+\begin{equation}
+\label{eq:lower-inertia}
+(a-m+1)(a+b+c-m+1)>(m-1)bc,
+\end{equation}
+both lie in $(m-1,m)$, so $G_{p^a q^b r^c}$ is not Laplacian integral.
+\end{proposition}
+
+\begin{proof}
+Put $s=a+b+c$ and $P=abc$. Symmetrize $C$ by the square roots of its
+cell sizes and reorder the classes as $1,2,3,23,13,12$. The resulting
+real symmetric matrix is
+\[
+\mathcal C=\begin{pmatrix}A&-\sqrt P I\\-\sqrt P I&D\end{pmatrix},
+\quad D=\operatorname{diag}(a,b,c),
+\]
+where $A$ has diagonal $(b+c+bc,a+c+ac,a+b+ab)$ and
+off-diagonal entries $A_{ij}=-\sqrt{a_i a_j}$, with
+$(a_1,a_2,a_3)=(a,b,c)$. For $0<x<a$, the block $D-xI$ is positive
+definite, and Sylvester's law of inertia gives
+\[
+\operatorname{inertia}(\mathcal C-xI)
+=\operatorname{inertia}(D-xI)+\operatorname{inertia}(K(x)),
+\]
+where
+\[
+K(x)=\operatorname{diag}(k_a(x),k_b(x),k_c(x))-vv^T,
+\quad v=(\sqrt a,\sqrt b,\sqrt c)^T,
+\quad k_t(x)=s-x-\frac{xP}{t(t-x)}.
+\]
+For fixed $x>0$, the function $k_t(x)$ increases with $t>x$, since
+\[
+\frac{\partial k_t(x)}{\partial t}
+=\frac{xP(2t-x)}{t^2(t-x)^2}>0.
+\]
+Condition~\eqref{eq:upper-inertia} is exactly $k_c(m)<0$.
+Thus all three diagonal values are negative, so $K(m)$ is negative
+definite. The matrix $\mathcal C-mI$ has three negative and three
+positive eigenvalues. The complement support graph is a triangle with
+one pendant cell at each vertex; it is connected, so $C$ has a simple
+zero eigenvalue and all other eigenvalues are positive. Exactly two
+nonzero eigenvalues therefore lie in $(0,m)$.
+
+For $x=m-1$, condition~\eqref{eq:lower-inertia} says $k_a(x)>0$,
+so all three $k_t(x)$ are positive. Congruence by the inverse square
+roots of these values turns $K(x)$ into $I-zz^T$, where
+\[
+\|z\|^2=\frac{a}{k_a(x)}+\frac{b}{k_b(x)}+\frac{c}{k_c(x)}>1,
+\]
+because each $k_t(x)<s$. Consequently $K(x)$ has one negative and two
+positive eigenvalues, and the only eigenvalue of $C$ below $x$ is zero.
+Both low positive eigenvalues lie in $(m-1,m)$. They are less than
+$a<N$, so the complement identity and universal-vertex lift apply.
+Their graph eigenvalues lie in $(V-m,V-m+1)$, which contains no integer.
+\end{proof}
+
+\begin{theorem}
+\label{thm:bounded-gaps}
+For every $a\geq1$, each of the exponent triples
+\[
+(a,a+1,a+2),\quad(a,a+1,a+3),\quad
+(a,a+2,a+3),\quad(a,a+3,a+4)
+\]
+gives a nonintegral ideal intersection graph on three distinct primes.
+\end{theorem}
+
+\begin{proof}
+For $a\leq3$, use Theorem~\ref{thm:minimum-three}. Assume $a\geq4$
+and write the triple as $(a,a+d,a+e)$, where
+$(d,e)=(1,2),(1,3),(2,3),(3,4)$. The left side minus the right side
+of~\eqref{eq:upper-inertia}, at $m=3$, is respectively
+\[
+-6a,\quad-2a,\quad-4a,\quad4-2a.
+\]
+These values are negative. Proposition~\ref{prop:low-spectrum}
+therefore places exactly two nonzero complement eigenvalues in $(0,3)$.
+It remains to exclude the integers $1$ and $2$.
+
+The first endpoints have the identities
+$h_{a,a+d,a+e}(1)=-4M_{d,e}(a)P_{d,e}(a)$ from
+Table~\ref{tab:gap-first-endpoints}. Every multiplier is positive for
+$a\geq4$, and every coefficient of $P_{d,e}(4+u)$ is positive.
+Thus $h(1)<0$ in each family.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lll}
+\toprule
+$(d,e)$&$M_{d,e}(a)$&Descending coefficients of $P_{d,e}(4+u)$\\
+\midrule
+$(1,2)$&$a(a+1)$&$(1,18,116,314,294)$\\
+$(1,3)$&$a(a+1)(a+3)$&$(1,13,51,57)$\\
+$(2,3)$&$a+2$&$(1,25,242,1126,2484,2022)$\\
+$(3,4)$&$a+3$&$(1,28,302,1550,3699,3126)$\\
+\bottomrule
+\end{tabular}
+\caption{Exact first-endpoint identities and positive shifted factors.}
+\label{tab:gap-first-endpoints}
+\end{table}
+
+The second endpoints factor as
+\begin{align*}
+h_{a,a+1,a+2}(2)&=-aF_{1,2}(a),\\
+h_{a,a+1,a+3}(2)&=-(a-2)(a+1)F_{1,3}(a),\\
+h_{a,a+2,a+3}(2)&=-aF_{2,3}(a),\\
+h_{a,a+3,a+4}(2)&=-F_{3,4}(a),
+\end{align*}
+where
+\begin{align*}
+F_{1,2}(a)&=a^5-9a^4-14a^3+93a^2+67a+6,\\
+F_{1,3}(a)&=a^4-6a^3-42a^2-39a-10,\\
+F_{2,3}(a)&=a^5-5a^4-48a^3-59a^2-39a-54,\\
+F_{3,4}(a)&=a^6-a^5-74a^4-375a^3-967a^2-1220a-340.
+\end{align*}
+Table~\ref{tab:gap-modular} evaluates each factor at every residue of
+one prime. No value is zero, so no factor has an integer root. The
+linear multipliers are nonzero for $a\geq4$, hence $h(2)\ne0$.
+Both positive eigenvalues in $(0,3)$ are therefore noninteger, and
+their graph lifts are noninteger as well.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lll}
+\toprule
+Factor&Prime&Values at residues $0,\ldots,p-1$\\
+\midrule
+$F_{1,2}$&7&$(6,4,1,5,6,5,1)$\\
+$F_{1,3}$&11&$(1,3,9,8,2,6,4,4,5,8,5)$\\
+$F_{2,3}$&7&$(2,6,5,3,5,4,3)$\\
+$F_{3,4}$&13&$(11,1,3,4,3,1,9,9,11,11,6,1,8)$\\
+\bottomrule
+\end{tabular}
+\caption{Complete root-free modular certificates for the second endpoints.}
+\label{tab:gap-modular}
+\end{table}
+\end{proof}
+
+\begin{corollary}
+\label{cor:span-three}
+Every positive three-prime exponent triple with maximum minus minimum
+at most three gives a nonintegral ideal intersection graph.
+\end{corollary}
+
+\begin{proof}
+Repeated entries are covered by Theorem~\ref{thm:repeated}. After
+sorting distinct entries, the only possibilities have gaps
+$(d,e)=(1,2),(1,3),(2,3)$, all covered by
+Theorem~\ref{thm:bounded-gaps}.
+\end{proof}
+
+\subsection{The complete finite region for minimum exponents four through seven}
+
+The uniform cutoff makes the requested diagnostic range complete for each
+of the minimum exponents $4,5,6,7$. Here the relevant quintic is
+$g_B(x)=\det(xI-B)/x$ for $H$, whereas the preceding endpoint arguments
+use the complement quintic $h_C(x)=-g_B(N-x)$.
+
+\begin{corollary}
+\label{cor:minimum-seven}
+Every positive three-prime exponent triple with minimum entry at most
+seven gives a nonintegral ideal intersection graph.
+\end{corollary}
+
+\begin{proof}
+Theorem~\ref{thm:minimum-three} handles minimum entries at most three.
+For a minimum entry $a\in\{4,5,6,7\}$, repeated entries are covered by
+Theorem~\ref{thm:repeated}, and Proposition~\ref{prop:distinct-tail}
+settles $c\geq4a^2-2a$. The remaining ordered triples lie in the exact
+finite domain $a<b<c<4a^2-2a$.
+
+For all $27\,562$ triples in this domain, the integer discriminant
+$\Delta_{a,b,c}$ of $g_B$ is positive and strictly between two
+consecutive integer squares. Table~\ref{tab:open-region} gives the
+complete counts. The certificate
+\path{results/open-region-discriminants.csv} records every triple,
+discriminant and integer $q$ satisfying
+$q^2<\Delta_{a,b,c}<(q+1)^2$. Each discriminant is independently
+recomputed as a $9\times9$ integer Sylvester determinant by
+\path{scripts/check_open_region_certificate.py}, using fraction-free
+elimination and exact divisions. The certificate exhausts the domain
+without omitted or duplicate triples.
+
+If all roots of the monic quintic $g_B$ were integers, its discriminant,
+the product of the squared pairwise root differences, would be an
+integer square. Thus every certified quintic has a noninteger root.
+The quotient is similar to a real symmetric Laplacian, so the root is
+real and nonzero; Lemma~\ref{lem:join} gives a noninteger graph
+eigenvalue. This complete finite certificate and the written cutoff
+exhaust all triples with minimum entry at most seven.
+\end{proof}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrrr}
+\toprule
+Minimum $a$&4&5&6&7&Total\\
+\midrule
+Exclusive cutoff&56&90&132&182&---\\
+Complete pairs&1275&3486&7750&15051&27562\\
+Nonsquare discriminants&1275&3486&7750&15051&27562\\
+\bottomrule
+\end{tabular}
+\caption{Exhaustive discriminant certificates in the region derived from
+the uniform cutoff.}
+\label{tab:open-region}
+\end{table}
+
+The signs of $(g_B(1),g_B(2),g_B(3))$ are $(-,-,-)$ throughout this
+finite range. The complement signs instead have three patterns,
+$(-,+,-),(-,+,+),(+,+,+)$, recorded separately in the diagnostic.
+Different endpoint patterns do not rule out a uniform proof, and equal
+signs can miss two roots in one interval. Proposition~\ref{prop:low-spectrum}
+addresses that issue without extrapolating from these finite counts.

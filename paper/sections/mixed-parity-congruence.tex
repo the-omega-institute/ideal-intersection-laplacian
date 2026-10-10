@@ -1,0 +1,63 @@
+\subsection{Mixed-parity residue classes}
+\label{sec:mixed-parity-congruence}
+
+Shifted reductions of the complement quintic organize the mixed-parity
+restrictions in one statement. The exponent letters in the residue rows
+identify roles, independently of their increasing order.
+
+\begin{theorem}
+\label{thm:mixed-residue-classes}
+For positive three-prime exponents, the following conclusions hold for
+every permutation of the indicated residue roles.
+\begin{enumerate}
+\item Each of the classes
+\[
+ (1,3,2),\ (1,7,2),\ (3,7,2),\ (3,5,6),\ (3,7,6),\ (5,7,6)\pmod8
+\]
+is nonintegral. The classes $(3,3,2)$ and $(3,0,0)$ modulo four are
+also nonintegral. These exclusions have no size or ratio bound.
+\item For roles $a\equiv1$, $b\equiv3$, $c\equiv2\pmod4$, an integral
+graph requires
+\[
+ a+c\equiv b(b+2)\pmod{128},\qquad b\equiv11\text{ or }15\pmod{16}.
+\]
+With $u=(a-1)/4$ and $t=(a+c-b(b+2))/128$, it further requires
+\[
+ \begin{cases}
+ t+u+v\equiv1\pmod2,&b=16v+11,\\
+ t+v\equiv1\pmod2,&b=16v+15.
+ \end{cases}
+\]
+\item For either $(1,3,2)$ or $(3,3,0)$ modulo four, if
+$m=\min\{a,b,c\}\geq4$ and $M=\max\{a,b,c\}$, an integral graph requires
+\[
+ h_C(2)=0,\qquad M<7m-16+\frac{40}{m+2}.
+\]
+\end{enumerate}
+Every violation of a necessary condition proves nonintegrality.
+\end{theorem}
+
+\begin{proof}
+The case table and complete shifted-polynomial arguments are in
+Appendix~\ref{sec:two-adic-lifting}. The common mechanism is that an
+integer-root factorization of $h_C$ forces its shifted binary cubics to
+split into linear factors; their residue and derivative conditions give
+the first two parts. For the last part, the odd roots would be three
+modulo four, excluding one. The positive root below three from
+Theorem~\ref{thm:uniform-low-root} must then equal two, and
+Theorem~\ref{thm:endpoint-reduction} gives the maximum bound.
+\end{proof}
+
+For one worked example, take the residue roles $(a,b,c)=(19,27,10)$,
+so $(a,b,c)=(4u+3,4v+3,4w+2)$ with $(u,v,w)=(4,6,2)$.
+The shifted quintic satisfies
+\[
+ h_C(2y+1)/8\in\mathbb Z[y],\qquad h_C(2y+1)/8\equiv y^3\pmod2.
+\]
+Integer roots would therefore force all three odd roots to be one modulo
+four and $16\mid h_C'(1)$. But
+$h_C'(1)\equiv8(u+v+1)\equiv8\pmod{16}$, a contradiction.
+The same identity proves the whole $(3,3,2)$ class in Appendix B.
+The arithmetic conditions in this theorem do not assert integral examples.
+Corollary~\ref{cor:endpoint-two-parity-completion} below completes the
+remaining $(1,3,2)$ and $(3,3,0)$ classes modulo four.

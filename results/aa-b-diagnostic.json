@@ -1,0 +1,1836 @@
+{
+  "tested_primes": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31
+  ],
+  "scope": "Exact finite cubic diagnostic for a=2,3,4 and b=1..30; no all-parameter theorem or full graph-integrality classification.",
+  "cases": [
+    {
+      "a": 2,
+      "b": 1,
+      "polynomial": "x**3 - 25*x**2 + 190*x - 416",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        3,
+        4
+      ],
+      "exact_isolating_interval": [
+        "270/71",
+        "251/66"
+      ],
+      "smallest_tested_irreducible_prime": 3
+    },
+    {
+      "a": 2,
+      "b": 2,
+      "polynomial": "x**3 - 36*x**2 + 408*x - 1440",
+      "integer_roots": [
+        12
+      ],
+      "factor_degrees": [
+        1,
+        2
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        7,
+        8
+      ],
+      "exact_isolating_interval": [
+        "703/99",
+        "632/89"
+      ],
+      "smallest_tested_irreducible_prime": null
+    },
+    {
+      "a": 2,
+      "b": 3,
+      "polynomial": "x**3 - 47*x**2 + 702*x - 3312",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        9,
+        10
+      ],
+      "exact_isolating_interval": [
+        "79/8",
+        "1511/153"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 2,
+      "b": 4,
+      "polynomial": "x**3 - 58*x**2 + 1072*x - 6272",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        12,
+        13
+      ],
+      "exact_isolating_interval": [
+        "406/33",
+        "689/56"
+      ],
+      "smallest_tested_irreducible_prime": 3
+    },
+    {
+      "a": 2,
+      "b": 5,
+      "polynomial": "x**3 - 69*x**2 + 1518*x - 10560",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        14,
+        15
+      ],
+      "exact_isolating_interval": [
+        "422/29",
+        "553/38"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 2,
+      "b": 6,
+      "polynomial": "x**3 - 80*x**2 + 2040*x - 16416",
+      "integer_roots": [
+        36
+      ],
+      "factor_degrees": [
+        1,
+        2
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        16,
+        17
+      ],
+      "exact_isolating_interval": [
+        "401/24",
+        "1721/103"
+      ],
+      "smallest_tested_irreducible_prime": null
+    },
+    {
+      "a": 2,
+      "b": 7,
+      "polynomial": "x**3 - 91*x**2 + 2638*x - 24080",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        18,
+        19
+      ],
+      "exact_isolating_interval": [
+        "809/43",
+        "508/27"
+      ],
+      "smallest_tested_irreducible_prime": 3
+    },
+    {
+      "a": 2,
+      "b": 8,
+      "polynomial": "x**3 - 102*x**2 + 3312*x - 33792",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        20,
+        21
+      ],
+      "exact_isolating_interval": [
+        "1901/91",
+        "1713/82"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 2,
+      "b": 9,
+      "polynomial": "x**3 - 113*x**2 + 4062*x - 45792",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        22,
+        23
+      ],
+      "exact_isolating_interval": [
+        "2157/94",
+        "436/19"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 2,
+      "b": 10,
+      "polynomial": "x**3 - 124*x**2 + 4888*x - 60320",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        24,
+        25
+      ],
+      "exact_isolating_interval": [
+        "2799/112",
+        "2824/113"
+      ],
+      "smallest_tested_irreducible_prime": 3
+    },
+    {
+      "a": 2,
+      "b": 11,
+      "polynomial": "x**3 - 135*x**2 + 5790*x - 77616",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        27,
+        28
+      ],
+      "exact_isolating_interval": [
+        "1054/39",
+        "1027/38"
+      ],
+      "smallest_tested_irreducible_prime": 13
+    },
+    {
+      "a": 2,
+      "b": 12,
+      "polynomial": "x**3 - 146*x**2 + 6768*x - 97920",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        29,
+        30
+      ],
+      "exact_isolating_interval": [
+        "2121/73",
+        "523/18"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 2,
+      "b": 13,
+      "polynomial": "x**3 - 157*x**2 + 7822*x - 121472",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        31,
+        32
+      ],
+      "exact_isolating_interval": [
+        "1585/51",
+        "1181/38"
+      ],
+      "smallest_tested_irreducible_prime": 3
+    },
+    {
+      "a": 2,
+      "b": 14,
+      "polynomial": "x**3 - 168*x**2 + 8952*x - 148512",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        33,
+        34
+      ],
+      "exact_isolating_interval": [
+        "2350/71",
+        "2681/81"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 2,
+      "b": 15,
+      "polynomial": "x**3 - 179*x**2 + 10158*x - 179280",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        35,
+        36
+      ],
+      "exact_isolating_interval": [
+        "913/26",
+        "1510/43"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 2,
+      "b": 16,
+      "polynomial": "x**3 - 190*x**2 + 11440*x - 214016",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        37,
+        38
+      ],
+      "exact_isolating_interval": [
+        "854/23",
+        "3973/107"
+      ],
+      "smallest_tested_irreducible_prime": 3
+    },
+    {
+      "a": 2,
+      "b": 17,
+      "polynomial": "x**3 - 201*x**2 + 12798*x - 252960",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        39,
+        40
+      ],
+      "exact_isolating_interval": [
+        "274/7",
+        "6263/160"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 2,
+      "b": 18,
+      "polynomial": "x**3 - 212*x**2 + 14232*x - 296352",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        41,
+        42
+      ],
+      "exact_isolating_interval": [
+        "2922/71",
+        "2387/58"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 2,
+      "b": 19,
+      "polynomial": "x**3 - 223*x**2 + 15742*x - 344432",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        43,
+        44
+      ],
+      "exact_isolating_interval": [
+        "4446/103",
+        "4705/109"
+      ],
+      "smallest_tested_irreducible_prime": 3
+    },
+    {
+      "a": 2,
+      "b": 20,
+      "polynomial": "x**3 - 234*x**2 + 17328*x - 397440",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        45,
+        46
+      ],
+      "exact_isolating_interval": [
+        "1039/23",
+        "4924/109"
+      ],
+      "smallest_tested_irreducible_prime": 13
+    },
+    {
+      "a": 2,
+      "b": 21,
+      "polynomial": "x**3 - 245*x**2 + 18990*x - 455616",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        47,
+        48
+      ],
+      "exact_isolating_interval": [
+        "519/11",
+        "5945/126"
+      ],
+      "smallest_tested_irreducible_prime": 11
+    },
+    {
+      "a": 2,
+      "b": 22,
+      "polynomial": "x**3 - 256*x**2 + 20728*x - 519200",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        49,
+        50
+      ],
+      "exact_isolating_interval": [
+        "1820/37",
+        "2853/58"
+      ],
+      "smallest_tested_irreducible_prime": 3
+    },
+    {
+      "a": 2,
+      "b": 23,
+      "polynomial": "x**3 - 267*x**2 + 22542*x - 588432",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        51,
+        52
+      ],
+      "exact_isolating_interval": [
+        "2611/51",
+        "2867/56"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 2,
+      "b": 24,
+      "polynomial": "x**3 - 278*x**2 + 24432*x - 663552",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        53,
+        54
+      ],
+      "exact_isolating_interval": [
+        "4735/89",
+        "4469/84"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 2,
+      "b": 25,
+      "polynomial": "x**3 - 289*x**2 + 26398*x - 744800",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        55,
+        56
+      ],
+      "exact_isolating_interval": [
+        "4251/77",
+        "1325/24"
+      ],
+      "smallest_tested_irreducible_prime": 3
+    },
+    {
+      "a": 2,
+      "b": 26,
+      "polynomial": "x**3 - 300*x**2 + 28440*x - 832416",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        57,
+        58
+      ],
+      "exact_isolating_interval": [
+        "2689/47",
+        "3490/61"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 2,
+      "b": 27,
+      "polynomial": "x**3 - 311*x**2 + 30558*x - 926640",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        59,
+        60
+      ],
+      "exact_isolating_interval": [
+        "1362/23",
+        "5981/101"
+      ],
+      "smallest_tested_irreducible_prime": 17
+    },
+    {
+      "a": 2,
+      "b": 28,
+      "polynomial": "x**3 - 322*x**2 + 32752*x - 1027712",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        61,
+        62
+      ],
+      "exact_isolating_interval": [
+        "10224/167",
+        "551/9"
+      ],
+      "smallest_tested_irreducible_prime": 3
+    },
+    {
+      "a": 2,
+      "b": 29,
+      "polynomial": "x**3 - 333*x**2 + 35022*x - 1135872",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        63,
+        64
+      ],
+      "exact_isolating_interval": [
+        "1960/31",
+        "3351/53"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 2,
+      "b": 30,
+      "polynomial": "x**3 - 344*x**2 + 37368*x - 1251360",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        65,
+        66
+      ],
+      "exact_isolating_interval": [
+        "4827/74",
+        "5675/87"
+      ],
+      "smallest_tested_irreducible_prime": 13
+    },
+    {
+      "a": 3,
+      "b": 1,
+      "polynomial": "x**3 - 43*x**2 + 555*x - 1980",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        5,
+        6
+      ],
+      "exact_isolating_interval": [
+        "147/25",
+        "247/42"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 2,
+      "polynomial": "x**3 - 59*x**2 + 1092*x - 6264",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        11,
+        12
+      ],
+      "exact_isolating_interval": [
+        "251/22",
+        "947/83"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 3,
+      "polynomial": "x**3 - 75*x**2 + 1791*x - 13608",
+      "integer_roots": [
+        24
+      ],
+      "factor_degrees": [
+        1,
+        2
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        16,
+        17
+      ],
+      "exact_isolating_interval": [
+        "131/8",
+        "2178/133"
+      ],
+      "smallest_tested_irreducible_prime": null
+    },
+    {
+      "a": 3,
+      "b": 4,
+      "polynomial": "x**3 - 91*x**2 + 2652*x - 24768",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        20,
+        21
+      ],
+      "exact_isolating_interval": [
+        "62/3",
+        "7027/340"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 5,
+      "polynomial": "x**3 - 107*x**2 + 3675*x - 40500",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        24,
+        25
+      ],
+      "exact_isolating_interval": [
+        "6107/250",
+        "171/7"
+      ],
+      "smallest_tested_irreducible_prime": 11
+    },
+    {
+      "a": 3,
+      "b": 6,
+      "polynomial": "x**3 - 123*x**2 + 4860*x - 61560",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        27,
+        28
+      ],
+      "exact_isolating_interval": [
+        "1143/41",
+        "920/33"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 7,
+      "polynomial": "x**3 - 139*x**2 + 6207*x - 88704",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        31,
+        32
+      ],
+      "exact_isolating_interval": [
+        "966/31",
+        "1153/37"
+      ],
+      "smallest_tested_irreducible_prime": 13
+    },
+    {
+      "a": 3,
+      "b": 8,
+      "polynomial": "x**3 - 155*x**2 + 7716*x - 122688",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        34,
+        35
+      ],
+      "exact_isolating_interval": [
+        "1271/37",
+        "1855/54"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 9,
+      "polynomial": "x**3 - 171*x**2 + 9387*x - 164268",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        37,
+        38
+      ],
+      "exact_isolating_interval": [
+        "1387/37",
+        "1462/39"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 10,
+      "polynomial": "x**3 - 187*x**2 + 11220*x - 214200",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        40,
+        41
+      ],
+      "exact_isolating_interval": [
+        "3247/80",
+        "690/17"
+      ],
+      "smallest_tested_irreducible_prime": 13
+    },
+    {
+      "a": 3,
+      "b": 11,
+      "polynomial": "x**3 - 203*x**2 + 13215*x - 273240",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        43,
+        44
+      ],
+      "exact_isolating_interval": [
+        "10043/230",
+        "10174/233"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 12,
+      "polynomial": "x**3 - 219*x**2 + 15372*x - 342144",
+      "integer_roots": [
+        96
+      ],
+      "factor_degrees": [
+        1,
+        2
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        46,
+        47
+      ],
+      "exact_isolating_interval": [
+        "4953/106",
+        "514/11"
+      ],
+      "smallest_tested_irreducible_prime": null
+    },
+    {
+      "a": 3,
+      "b": 13,
+      "polynomial": "x**3 - 235*x**2 + 17691*x - 421668",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        49,
+        50
+      ],
+      "exact_isolating_interval": [
+        "4679/94",
+        "5127/103"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 14,
+      "polynomial": "x**3 - 251*x**2 + 20172*x - 512568",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        52,
+        53
+      ],
+      "exact_isolating_interval": [
+        "6074/115",
+        "581/11"
+      ],
+      "smallest_tested_irreducible_prime": 13
+    },
+    {
+      "a": 3,
+      "b": 15,
+      "polynomial": "x**3 - 267*x**2 + 22815*x - 615600",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        55,
+        56
+      ],
+      "exact_isolating_interval": [
+        "3407/61",
+        "1899/34"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 16,
+      "polynomial": "x**3 - 283*x**2 + 25620*x - 731520",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        58,
+        59
+      ],
+      "exact_isolating_interval": [
+        "6477/110",
+        "1001/17"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 17,
+      "polynomial": "x**3 - 299*x**2 + 28587*x - 861084",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        61,
+        62
+      ],
+      "exact_isolating_interval": [
+        "3343/54",
+        "4024/65"
+      ],
+      "smallest_tested_irreducible_prime": 11
+    },
+    {
+      "a": 3,
+      "b": 18,
+      "polynomial": "x**3 - 315*x**2 + 31716*x - 1005048",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        64,
+        65
+      ],
+      "exact_isolating_interval": [
+        "3701/57",
+        "2792/43"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 19,
+      "polynomial": "x**3 - 331*x**2 + 35007*x - 1164168",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        67,
+        68
+      ],
+      "exact_isolating_interval": [
+        "4009/59",
+        "5368/79"
+      ],
+      "smallest_tested_irreducible_prime": 13
+    },
+    {
+      "a": 3,
+      "b": 20,
+      "polynomial": "x**3 - 347*x**2 + 38460*x - 1339200",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        70,
+        71
+      ],
+      "exact_isolating_interval": [
+        "4187/59",
+        "2129/30"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 21,
+      "polynomial": "x**3 - 363*x**2 + 42075*x - 1530900",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        73,
+        74
+      ],
+      "exact_isolating_interval": [
+        "4069/55",
+        "4143/56"
+      ],
+      "smallest_tested_irreducible_prime": 13
+    },
+    {
+      "a": 3,
+      "b": 22,
+      "polynomial": "x**3 - 379*x**2 + 45852*x - 1740024",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        76,
+        77
+      ],
+      "exact_isolating_interval": [
+        "18402/239",
+        "18479/240"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 23,
+      "polynomial": "x**3 - 395*x**2 + 49791*x - 1967328",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        80,
+        81
+      ],
+      "exact_isolating_interval": [
+        "9681/121",
+        "9601/120"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 24,
+      "polynomial": "x**3 - 411*x**2 + 53892*x - 2213568",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        83,
+        84
+      ],
+      "exact_isolating_interval": [
+        "4317/52",
+        "4234/51"
+      ],
+      "smallest_tested_irreducible_prime": 13
+    },
+    {
+      "a": 3,
+      "b": 25,
+      "polynomial": "x**3 - 427*x**2 + 58155*x - 2479500",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        86,
+        87
+      ],
+      "exact_isolating_interval": [
+        "2925/34",
+        "2839/33"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 26,
+      "polynomial": "x**3 - 443*x**2 + 62580*x - 2765880",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        89,
+        90
+      ],
+      "exact_isolating_interval": [
+        "4541/51",
+        "2226/25"
+      ],
+      "smallest_tested_irreducible_prime": 11
+    },
+    {
+      "a": 3,
+      "b": 27,
+      "polynomial": "x**3 - 459*x**2 + 67167*x - 3073464",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        92,
+        93
+      ],
+      "exact_isolating_interval": [
+        "1933/21",
+        "9573/104"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 28,
+      "polynomial": "x**3 - 475*x**2 + 71916*x - 3403008",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        95,
+        96
+      ],
+      "exact_isolating_interval": [
+        "1711/18",
+        "8460/89"
+      ],
+      "smallest_tested_irreducible_prime": 11
+    },
+    {
+      "a": 3,
+      "b": 29,
+      "polynomial": "x**3 - 491*x**2 + 76827*x - 3755268",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        98,
+        99
+      ],
+      "exact_isolating_interval": [
+        "1569/16",
+        "6178/63"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 3,
+      "b": 30,
+      "polynomial": "x**3 - 507*x**2 + 81900*x - 4131000",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        101,
+        102
+      ],
+      "exact_isolating_interval": [
+        "4346/43",
+        "5761/57"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 4,
+      "b": 1,
+      "polynomial": "x**3 - 65*x**2 + 1252*x - 6336",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        7,
+        8
+      ],
+      "exact_isolating_interval": [
+        "301/38",
+        "404/51"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 2,
+      "polynomial": "x**3 - 86*x**2 + 2304*x - 18816",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        15,
+        16
+      ],
+      "exact_isolating_interval": [
+        "734/47",
+        "531/34"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 3,
+      "polynomial": "x**3 - 107*x**2 + 3636*x - 39168",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        22,
+        23
+      ],
+      "exact_isolating_interval": [
+        "871/38",
+        "1169/51"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 4,
+      "polynomial": "x**3 - 128*x**2 + 5248*x - 69120",
+      "integer_roots": [
+        40
+      ],
+      "factor_degrees": [
+        1,
+        2
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        29,
+        30
+      ],
+      "exact_isolating_interval": [
+        "1331/45",
+        "1893/64"
+      ],
+      "smallest_tested_irreducible_prime": null
+    },
+    {
+      "a": 4,
+      "b": 5,
+      "polynomial": "x**3 - 149*x**2 + 7140*x - 110400",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        35,
+        36
+      ],
+      "exact_isolating_interval": [
+        "2514/71",
+        "779/22"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 4,
+      "b": 6,
+      "polynomial": "x**3 - 170*x**2 + 9312*x - 164736",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        40,
+        41
+      ],
+      "exact_isolating_interval": [
+        "770/19",
+        "2999/74"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 7,
+      "polynomial": "x**3 - 191*x**2 + 11764*x - 233856",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        45,
+        46
+      ],
+      "exact_isolating_interval": [
+        "3435/76",
+        "3661/81"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 8,
+      "polynomial": "x**3 - 212*x**2 + 14496*x - 319488",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        49,
+        50
+      ],
+      "exact_isolating_interval": [
+        "1042/21",
+        "4565/92"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 9,
+      "polynomial": "x**3 - 233*x**2 + 17508*x - 423360",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        53,
+        54
+      ],
+      "exact_isolating_interval": [
+        "3288/61",
+        "2749/51"
+      ],
+      "smallest_tested_irreducible_prime": 17
+    },
+    {
+      "a": 4,
+      "b": 10,
+      "polynomial": "x**3 - 254*x**2 + 20800*x - 547200",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        58,
+        59
+      ],
+      "exact_isolating_interval": [
+        "4590/79",
+        "4009/69"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 4,
+      "b": 11,
+      "polynomial": "x**3 - 275*x**2 + 24372*x - 692736",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        62,
+        63
+      ],
+      "exact_isolating_interval": [
+        "15998/257",
+        "249/4"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 12,
+      "polynomial": "x**3 - 296*x**2 + 28224*x - 861696",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        66,
+        67
+      ],
+      "exact_isolating_interval": [
+        "5309/80",
+        "6039/91"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 13,
+      "polynomial": "x**3 - 317*x**2 + 32356*x - 1055808",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        70,
+        71
+      ],
+      "exact_isolating_interval": [
+        "2184/31",
+        "2959/42"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 14,
+      "polynomial": "x**3 - 338*x**2 + 36768*x - 1276800",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        74,
+        75
+      ],
+      "exact_isolating_interval": [
+        "1565/21",
+        "4546/61"
+      ],
+      "smallest_tested_irreducible_prime": 23
+    },
+    {
+      "a": 4,
+      "b": 15,
+      "polynomial": "x**3 - 359*x**2 + 41460*x - 1526400",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        78,
+        79
+      ],
+      "exact_isolating_interval": [
+        "6994/89",
+        "6051/77"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 4,
+      "b": 16,
+      "polynomial": "x**3 - 380*x**2 + 46432*x - 1806336",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        82,
+        83
+      ],
+      "exact_isolating_interval": [
+        "3388/41",
+        "4297/52"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 17,
+      "polynomial": "x**3 - 401*x**2 + 51684*x - 2118336",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        86,
+        87
+      ],
+      "exact_isolating_interval": [
+        "2947/34",
+        "2687/31"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 18,
+      "polynomial": "x**3 - 422*x**2 + 57216*x - 2464128",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        90,
+        91
+      ],
+      "exact_isolating_interval": [
+        "15512/171",
+        "635/7"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 19,
+      "polynomial": "x**3 - 443*x**2 + 63028*x - 2845440",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        94,
+        95
+      ],
+      "exact_isolating_interval": [
+        "5211/55",
+        "5590/59"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 4,
+      "b": 20,
+      "polynomial": "x**3 - 464*x**2 + 69120*x - 3264000",
+      "integer_roots": [
+        200
+      ],
+      "factor_degrees": [
+        1,
+        2
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        98,
+        99
+      ],
+      "exact_isolating_interval": [
+        "2173/22",
+        "5235/53"
+      ],
+      "smallest_tested_irreducible_prime": null
+    },
+    {
+      "a": 4,
+      "b": 21,
+      "polynomial": "x**3 - 485*x**2 + 75492*x - 3721536",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        102,
+        103
+      ],
+      "exact_isolating_interval": [
+        "11205/109",
+        "11719/114"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 22,
+      "polynomial": "x**3 - 506*x**2 + 82144*x - 4219776",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        106,
+        107
+      ],
+      "exact_isolating_interval": [
+        "5341/50",
+        "4166/39"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 23,
+      "polynomial": "x**3 - 527*x**2 + 89076*x - 4760448",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        110,
+        111
+      ],
+      "exact_isolating_interval": [
+        "2771/25",
+        "4877/44"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 24,
+      "polynomial": "x**3 - 548*x**2 + 96288*x - 5345280",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        114,
+        115
+      ],
+      "exact_isolating_interval": [
+        "804/7",
+        "20215/176"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 4,
+      "b": 25,
+      "polynomial": "x**3 - 569*x**2 + 103780*x - 5976000",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        118,
+        119
+      ],
+      "exact_isolating_interval": [
+        "13195/111",
+        "14146/119"
+      ],
+      "smallest_tested_irreducible_prime": 13
+    },
+    {
+      "a": 4,
+      "b": 26,
+      "polynomial": "x**3 - 590*x**2 + 111552*x - 6654336",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        122,
+        123
+      ],
+      "exact_isolating_interval": [
+        "21997/179",
+        "1106/9"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 27,
+      "polynomial": "x**3 - 611*x**2 + 119604*x - 7382016",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        126,
+        127
+      ],
+      "exact_isolating_interval": [
+        "6472/51",
+        "5203/41"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 28,
+      "polynomial": "x**3 - 632*x**2 + 127936*x - 8160768",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        130,
+        131
+      ],
+      "exact_isolating_interval": [
+        "4582/35",
+        "6153/47"
+      ],
+      "smallest_tested_irreducible_prime": 5
+    },
+    {
+      "a": 4,
+      "b": 29,
+      "polynomial": "x**3 - 653*x**2 + 136548*x - 8992320",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        134,
+        135
+      ],
+      "exact_isolating_interval": [
+        "5397/40",
+        "3643/27"
+      ],
+      "smallest_tested_irreducible_prime": 7
+    },
+    {
+      "a": 4,
+      "b": 30,
+      "polynomial": "x**3 - 674*x**2 + 145440*x - 9878400",
+      "integer_roots": [],
+      "factor_degrees": [
+        3
+      ],
+      "has_noninteger_root": true,
+      "has_trapped_root": true,
+      "consecutive_integer_interval": [
+        138,
+        139
+      ],
+      "exact_isolating_interval": [
+        "4307/31",
+        "6530/47"
+      ],
+      "smallest_tested_irreducible_prime": 11
+    }
+  ]
+}

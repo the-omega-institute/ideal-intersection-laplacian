@@ -1,0 +1,53 @@
+{
+  "statement": "On real2<=a<=b<=c,h_C(1)=0,a>2+sqrt3: root1simple and smallest positive;residual roots satisfy a<mu1<min(c,a+b),s<mu2<=mu3<=mu4",
+  "threshold": "sqrt(3) + 2",
+  "generic_minimum_and_maximum_anchor_identities": "passed against direct quotient determinant",
+  "sum_bound_threshold_factorization": "passed",
+  "sharpness_family": "b=a,c=(a-1)(2a-1),a>=2",
+  "sharpness_endpoint_ordering_sum_and_anchor_identities": "passed generically",
+  "threshold_residual_root_equals_minimum": "passed exactly over Q(sqrt3)",
+  "maximum_anchor_sign": "positive shifted coefficients passed for2<=a<=b<=c",
+  "current_statement_and_integer_corollary_scope": "passed",
+  "fixed_exact_controls": [
+    {
+      "exponents": [
+        "2",
+        "2",
+        "3"
+      ],
+      "minimum_anchor_value": "-432",
+      "root_one_simple": true,
+      "residual_roots_below_minimum": 1,
+      "residual_roots_in_minimum_upper_window": 0,
+      "residual_roots_above_total_sum": 3
+    },
+    {
+      "exponents": [
+        "3",
+        "3",
+        "10"
+      ],
+      "minimum_anchor_value": "-16200",
+      "root_one_simple": true,
+      "residual_roots_below_minimum": 1,
+      "residual_roots_in_minimum_upper_window": 0,
+      "residual_roots_above_total_sum": 3
+    },
+    {
+      "exponents": [
+        "15/4",
+        "15/4",
+        "143/8"
+      ],
+      "minimum_anchor_value": "1035230625/262144",
+      "root_one_simple": true,
+      "residual_roots_below_minimum": 0,
+      "residual_roots_in_minimum_upper_window": 1,
+      "residual_roots_above_total_sum": 3
+    }
+  ],
+  "integer_divisor_corollary_minimum": 4,
+  "sympy": "1.14.0",
+  "scope": "Written sharp real-cutoff proof by the established sum bound,principal interlacing and determinant parity. Direct set-disjointness quotient identities and three fixed exact controls:two below the cutoff and one in the newly admitted real range. Shared support constructor/SymPy,no original characteristic-polynomial helper. No parameter scan,new finite base,historical finite-base rerun,graph enumeration,floats or Lean. Existing integer classification/corollary retain their scopes.",
+  "status": "passed"
+}

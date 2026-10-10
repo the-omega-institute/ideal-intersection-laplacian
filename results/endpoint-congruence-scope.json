@@ -1,0 +1,59 @@
+{
+  "step_hypothesis": "d>=32 and divisible by lcm(8, selected moduli)",
+  "families": [
+    {
+      "family": [
+        "d + 9",
+        "2*d + 9",
+        "4*d + 136"
+      ],
+      "endpoint": 1,
+      "seed": [
+        9,
+        9,
+        136
+      ],
+      "seed_integer_characteristic_determinant": 0,
+      "inertia_difference": "-9*d**2 - 415*d - 1384",
+      "quadratic_tail_slack": "4*d**2 + 66*d + 170",
+      "linear_bound_slack_times_minimum_plus_two": "3*d**2 - 56*d - 939",
+      "linear_slack_at_d_equals_32_plus_e": "3*e**2 + 136*e + 341",
+      "gcd_bound_from_integer_linear_combinations": 1,
+      "exponent_residues_modulo_eight": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "family": [
+        "d + 10",
+        "2*d + 10",
+        "4*d + 12"
+      ],
+      "endpoint": 2,
+      "seed": [
+        10,
+        10,
+        12
+      ],
+      "seed_integer_characteristic_determinant": 0,
+      "inertia_difference": "-9*d**2 - 42*d",
+      "quadratic_tail_slack": "4*d**2 + 74*d + 368",
+      "linear_bound_slack_times_minimum_plus_two": "3*d**2 + 78*d + 544",
+      "linear_slack_at_d_equals_32_plus_e": "3*e**2 + 270*e + 6112",
+      "gcd_bound_from_integer_linear_combinations": 2,
+      "exponent_residues_modulo_eight": [
+        2,
+        2,
+        4
+      ]
+    }
+  ],
+  "scope": "Written finite-endpoint-congruence limitation with selected geometric, gcd and valuation filters. Six exact polynomial identities, two positive boundary shifts and two integer6x6determinants. No assertion of actual endpoint zeros, complete arithmetic survival or integral spectra. No exponent scan, floating-point spectrum or Lean.",
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_congruence_scope.py": "36262a54652b856e3cc2c2043d82454d0a9de7851d88f802e1282868baf00c83",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  }
+}

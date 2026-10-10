@@ -1,0 +1,122 @@
+\section{A uniform low eigenvalue and a balanced region}
+\label{sec:mixed-inertia}
+
+The Schur complement of Proposition~\ref{prop:low-spectrum} also
+counts roots when its diagonal has mixed signs. A comparison at three
+gives a low eigenvalue for every triple with minimum exponent at least four.
+
+\begin{lemma}
+\label{lem:mixed-inertia}
+For $0<x<a$, suppose all three $k_t(x)$ are nonzero. Let $q$ be the
+number of negative diagonal values and put
+\[
+F(x)=1-\frac{a}{k_a(x)}-\frac{b}{k_b(x)}-\frac{c}{k_c(x)}.
+\]
+Then $n_-(K(x))=q+\mathbf1_{\{F(x)<0\}}$ and
+$\operatorname{nullity}K(x)=\mathbf1_{\{F(x)=0\}}$.
+The number of positive complement quotient eigenvalues strictly below
+$x$ is $n_-(K(x))-1$.
+\end{lemma}
+
+\begin{proof}
+The bordered matrix
+\[
+\begin{pmatrix}\operatorname{diag}(k_t(x))&v\\v^T&1\end{pmatrix}
+\]
+is congruent both to $K(x)\oplus[1]$ and to
+$\operatorname{diag}(k_t(x))\oplus[F(x)]$. Sylvester's law of inertia
+gives the formulas. The block $D-xI$ is positive definite, and $C$ has
+a simple zero eigenvalue; subtracting this eigenvalue gives the stated count.
+\end{proof}
+
+A direct comparison at three avoids the reciprocal formula at zero
+diagonal entries and supplies a uniform low positive root.
+
+\begin{theorem}
+\label{thm:uniform-low-root}
+For every ordered triple $4\leq a\leq b\leq c$, the six-support
+complement quotient has a nonzero eigenvalue in $(0,3)$.
+\end{theorem}
+
+\begin{proof}
+Use $s=a+b+c$, $P=abc$ and $v=(\sqrt a,\sqrt b,\sqrt c)^T$ from
+Proposition~\ref{prop:low-spectrum}, and define
+\[
+L=\operatorname{diag}\left(s-\frac{3P}{a^2},
+s-\frac{3P}{b^2},s-\frac{3P}{c^2}\right)-vv^T.
+\]
+Expansion of this diagonal-minus-rank-one determinant gives
+\begin{align*}
+\det L&=6\bigl(c(a-b)^2+b(a-c)^2+a(b-c)^2\bigr),\\
+v^TLv&=-3P\left(\frac1a+\frac1b+\frac1c\right)<0.
+\end{align*}
+If the exponents are not all equal, the determinant is positive.
+The negative Rayleigh value supplies a negative eigenvalue, so the
+positive determinant forces exactly two negative eigenvalues.
+If all exponents are equal, $L=-vv^T$, with one negative and two zero
+eigenvalues. In both cases there is a two-dimensional subspace on
+which $L$ is nonpositive.
+
+Since $a>3$, the identity
+\[
+K(3)=L-\operatorname{diag}_{t\in\{a,b,c\}}
+\left(3+\frac{9P}{t^2(t-3)}\right)
+\]
+subtracts a positive definite matrix. Thus $K(3)$ is strictly negative
+on that subspace and has at least two negative eigenvalues. As $D-3I$
+is positive definite, $\mathcal C-3I$ also has at least two negative
+eigenvalues. The connected complement quotient has a simple zero
+eigenvalue and all other eigenvalues are positive. At least one of
+them therefore lies strictly between zero and three. This argument
+also covers zero values among the $k_t(3)$.
+\end{proof}
+
+\begin{corollary}
+\label{cor:balanced-interval}
+For $4\leq a\leq b\leq c$, if
+\begin{equation}
+\label{eq:balanced-interval}
+(a-2)(a+b+c-2)>2bc,
+\end{equation}
+then $C$ has an eigenvalue in $(2,3)$, and $G_{p^a q^b r^c}$ is not
+Laplacian integral. Nonzero values of both $h_C(1)$ and $h_C(2)$ also
+imply nonintegrality. Hence $h_C(1)h_C(2)=0$ is necessary for an integral graph.
+\end{corollary}
+
+\begin{proof}
+Condition~\eqref{eq:balanced-interval} is exactly $k_a(2)>0$, so all
+three diagonal values are positive. As in
+Proposition~\ref{prop:low-spectrum}, congruence turns $K(2)$ into
+$I-zz^T$, with $\|z\|^2=\sum_t t/k_t(2)>1$, since every $k_t(2)<s$.
+It has one negative and two positive eigenvalues and no zero eigenvalue.
+Consequently the only quotient eigenvalue at or below two is zero.
+The positive root below three from Theorem~\ref{thm:uniform-low-root}
+lies in $(2,3)$ and lifts to $(V-3,V-2)$.
+For the endpoint assertion, a positive root in $(0,3)$ can be an integer
+only if it equals one or two, giving the necessary condition.
+\end{proof}
+
+\begin{corollary}
+\label{cor:balanced-span}
+Let $a$ be the minimum exponent and $\rho$ the maximum minus minimum.
+Every positive three-prime exponent triple with $a\geq3\rho+8$ gives
+a nonintegral ideal intersection graph.
+\end{corollary}
+
+\begin{proof}
+Write the ordered triple as $(a,a+d,a+\rho)$ with $0\leq d\leq\rho$.
+The left side minus the right side of~\eqref{eq:balanced-interval} is
+\[
+a^2-2a\rho-8a-2\rho^2-4\rho+4+(\rho-d)(a+2\rho+2).
+\]
+The last term is nonnegative. At $a=3\rho+8+u$, $u\geq0$, the
+first part is $(\rho+2)^2+(4\rho+8)u+u^2>0$.
+Corollary~\ref{cor:balanced-interval} applies.
+\end{proof}
+
+For example, $(20,21,24)$, $(38,43,48)$ and $(308,350,408)$ satisfy
+the span criterion and lie outside the four fixed-gap families of
+Theorem~\ref{thm:bounded-gaps}. The argument allows an unbounded span
+and uses no exponent scan or modular endpoint certificate. The necessary
+endpoint-zero condition is not sufficient for integrality: those
+triples may still have other noninteger quotient eigenvalues.
