@@ -33,6 +33,11 @@ An independent [direct determinant and manuscript-table check](notes/largest-roo
 confirms all 247 displayed coefficients in the largest-root and small-gap
 proofs, together with their Schur identities and anchor bounds.
 
+The [endpoint-two direct check](notes/endpoint-two-coefficient-verification.md)
+also confirms all 240 nonzero coefficients in its three tables, the middle
+bound and parameter inverses, and all 32 necessary finite-domain counts.
+The historical endpoint-value certificate retains its separate scope.
+
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new
 largest-root interval (bc+a+b+c,bc+a+b+c+1), the endpoint-one sum bound,

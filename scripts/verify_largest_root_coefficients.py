@@ -10,7 +10,7 @@ from verify_minimum_three import complement_quotient
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def coefficient_table(content, minimum_shift, middle_shift, maximum_shift):
+def coefficient_table(content, minimum_shift, middle_shift, maximum_shift, allow_zero_rows=False):
     rows = re.findall(r"^([0-9]+) & ([0-9]+) & \$\[([^\]]+)\]\$", content, re.MULTILINE)
     polynomial = 0
     indices = set()
@@ -20,8 +20,8 @@ def coefficient_table(content, minimum_shift, middle_shift, maximum_shift):
         assert powers not in indices
         indices.add(powers)
         coefficients = [int(value.strip()) for value in vector.replace(r"\allowbreak", "").split(",")]
-        assert all(coefficient > 0 for coefficient in coefficients)
-        coefficient_count += len(coefficients)
+        assert all(coefficient > 0 for coefficient in coefficients) or (allow_zero_rows and coefficients == [0])
+        coefficient_count += sum(coefficient > 0 for coefficient in coefficients)
         polynomial += middle_shift ** powers[0] * maximum_shift ** powers[1] * sum(
             coefficient * minimum_shift ** degree for degree, coefficient in enumerate(coefficients))
     assert rows

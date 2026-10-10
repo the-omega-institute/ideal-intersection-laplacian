@@ -65,6 +65,18 @@ per-minimum counts. A repeated control such as `(10,10,12)` is assigned to
 the repeated theorem, not to the fully distinct finite base or the
 minimum-forty real tail.
 
+In the current manuscript checkout, the
+[direct endpoint-two input check](endpoint-two-coefficient-verification.md) reads
+all 84/44/112 coefficient tables and all 32 domain counts from the actual appendix:
+
+```sh
+python3 scripts/verify_endpoint_two_coefficients.py
+```
+
+This checks the generic middle bound, real-tail identities, parameter inverses
+and arithmetic count formula. It does not reevaluate the finite base's endpoints;
+the historical Horner/Bareiss data above remain necessary.
+
 In the largest-root checkout, run:
 
 ```sh

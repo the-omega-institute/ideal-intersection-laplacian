@@ -95,6 +95,10 @@ zero $(10,10,12)$ is preserved below the tail threshold.
 The pinned
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/scripts/check_endpoint_two_completion.py}{completion checker}
 and its companion middle/maximum checkers reproduce the proof data.
+The separate \path{scripts/verify_endpoint_two_coefficients.py} checks
+the displayed real-tail coefficients and all per-minimum domain counts
+against a direct determinant and an arithmetic count formula; it does not
+reevaluate the finite base's endpoint values.
 
 The equality cubic in the arithmetic discussion has generic determinant and
 independent $5\times5$ Sylvester-discriminant checks in its pinned
