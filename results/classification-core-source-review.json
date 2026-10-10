@@ -2,8 +2,8 @@
   "source_base_commit": "08065334917ac0bacc965e4c447e2b2aa5c421d1",
   "original_proof_source_revision": "7be84599097fdff320b196cb4f84a2dfe505bd77",
   "scope": "Source concordance, explicit-reference closure and selected statement/proof bodies matching the current source sections; not an independent proof validation or certificate rerun.",
-  "written_proof_update": "Endpoint-one sum bound, small-gap1/2 brackets and largest-root interval hold at real minimum a>=2. General endpoint-one residual-root separation has the sharp real cutoff a>2+sqrt3;the integer divisor corollary retains a>=4. Largest-root upper sign uses a35-coefficient bound on2<=a<=3;small-gap vectors use a=2+m with L2=b explicit.",
-  "generated_body_sha256": "de7fdba8ffb1182340e089ff7672001fe82f99579e3f82efc6c934e17143c325",
+  "written_proof_update": "Endpoint-one sum bound, small-gap1/2 brackets and largest-root interval hold at real minimum a>=2. General endpoint-one residual-root separation has the sharp real cutoff a>2+sqrt3;the integer divisor corollary retains a>=4. Endpoint-two middle bound has sharp cutoff a>(7+sqrt13)/3,with sole boundary equality b=c=2a-2;its integer bound and maximum bound retain minima4and8. Largest-root upper sign uses a35-coefficient bound on2<=a<=3;small-gap vectors use a=2+m with L2=b explicit.",
+  "generated_body_sha256": "727bea0e34a1a69670dac53af42b9083cc5dcaad37b6d7bb1d67c1c7cc248b47",
   "generated_bibliography_sha256": "a4e88f7600b492ab2443fd7e91c54bd2d6debf2710523d9710c0343dea1e991f",
   "selections": [
     {
@@ -106,10 +106,10 @@
     },
     {
       "source": "paper/sections/endpoint-two-completion.tex",
-      "source_sha256": "2c15f7a51953f0d06beb730bd32be8edbe7cd0210af72e3c5b4143657571f5e4",
+      "source_sha256": "e58bea303f7c29944c9ded5d0c01102f0963b3197e49585985f131f9f44954fc",
       "start_line": 3,
-      "exclusive_end_line": 111,
-      "selected_sha256": "85d63728596d37d5922ff8c413ea84a6c791da6d21538382b3f11945069041cd"
+      "exclusive_end_line": 116,
+      "selected_sha256": "82e1eeee30187b69fc4205040c80e38c214ca0e9028d767fbdc4e0be988d7aa0"
     },
     {
       "source": "paper/sections/three-prime-classification.tex",
@@ -142,10 +142,10 @@
       "509cd7be759bcc63975602ffb232c1c976a900cd7db90147c98af0b3b3221c12": 1,
       "56c515c24c979c019eacc02059efd57ebfac9c051dca25d06edd079c16b580b6": 1,
       "5f47f8e38b6e8d61b52bcf7dbe3e3e9b67fdc90c136a61b5a36c522176f96309": 1,
+      "635ecadbaccd2b1a203ce80ad9b94316dec5044aab9cf27d8d9da48e4e906fc9": 1,
       "731221a3e22810e5b728b6416bb6883ea97a0b85774ce83e771014d196430865": 1,
       "79e6c023440af93f339d5124654c8131d479883902fbed54743daf9a232bf688": 1,
       "864ae263af98db76ff1eddbca04e14abc6bf054ee45d285a871b7fc93d7b1e53": 1,
-      "878054892f13f8a600572cd17b18b1d33e8ad2f5fcf0e43dc056b31ed138f320": 1,
       "bd37114701fd5d8fd369fffd6dfbe5a79530376421a88f1e38751377dda46648": 1,
       "c07c480f52e3ac8ff3b9cfb4a322a0c8bd9be129cce5d42f7b58f84030461b97": 1,
       "c808009d90b91666c33b044a5801efc4381d49fe4609f1fe9c4f00f4729bed2f": 1,
@@ -170,12 +170,12 @@
       "ffa535e6e072e111b65c1a9cde78346b589f7b351e1f49be58d31ad162e66c3d": 1
     },
     "lemma": {
-      "1266bf34d5137ee09b115261fd34bbff33c3b048e0f2871bc2a8979d1798949e": 1,
       "97bad08971e6a41917fc80fbfe7d3821eb46b56a85fc08606e8cd19e4455858f": 1,
       "a588cb5064ddfa3dd9a3a5e3c5680fdd03063c80b5162e6b7e31245cc7824a0b": 1,
       "a9115a1240dfd96dda54889334eb68932a46551c2f8ad0e5138bdc45ba5fb7ba": 1,
       "ab8e4fefa3d896d4206651f10fbda285c572ccac953118bba7bcc20f8fff58c1": 1,
-      "b43bb5cdfa95ac875213b3749adc3c94810b50a29e0a84fa52be48922b7d18ee": 1
+      "b43bb5cdfa95ac875213b3749adc3c94810b50a29e0a84fa52be48922b7d18ee": 1,
+      "d02cf084f1e88c3be9ac292a39b918d83e167aed280889d32f0d5644e390cdec": 1
     },
     "proposition": {
       "452c84684653cb2f2c61c7773e9a9491b8a7ff2a61a8759cbecf62b080d8b6d9": 1,

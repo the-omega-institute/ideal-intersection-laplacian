@@ -45,6 +45,12 @@ also confirms all 240 nonzero coefficients in its three tables, the middle
 bound and parameter inverses, and all 32 necessary finite-domain counts.
 The historical endpoint-value certificate retains its separate scope.
 
+The endpoint-two [middle bound](notes/endpoint-two-middle-sharp-cutoff.md)
+has the sharp real cutoff `a > (7 + sqrt(13))/3`, replacing `a >= 4`.
+At the cutoff, the sole equality case is `b=c=2a-2`.
+The written proof uses 36 positive coefficients at `a=3+m` and the
+exact first-factor quadratic; the integer bound still starts at four.
+
 The [small-gap endpoint-one brackets](notes/endpoint-one-small-gap-strengthening.md)
 now hold for every real minimum `a >= 2`, strengthening the former
 `a >= 8` lemma. For gaps one and two the unique endpoint-zero root above

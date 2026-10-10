@@ -158,20 +158,19 @@ absence of duplicate triples are checked by
 These finite inputs remain part of Corollary~\ref{cor:minimum-seven}.
 
 \subsection{Endpoint-two completion}
-The rectangle lemma uses a full determinant identity and an $84$-term
-positive residual plus two nonnegative square expressions. The real
-tail uses $44$- and $112$-term positive identities. Every coefficient
-and every per-minimum count is in
-Appendix~\ref{sec:endpoint-two-identities}.
-The necessary fully distinct base at minima eight through thirty-nine
-has exactly $8\,658$ triples, independently evaluated by integer Horner
-arithmetic and $6\times6$ Bareiss determinants. All endpoint values are
-nonzero. The
+Appendix~\ref{sec:endpoint-two-identities} displays the complete
+$84$-, $44$- and $112$-term positive identities, the two nonnegative
+square expressions and every per-minimum count.
+\path{scripts/verify_endpoint_two_middle_cutoff.py} checks the cubic identity,
+the $36$ positive coefficients at $a=3+m$ and the sharp boundary.
+The necessary base at minima eight through thirty-nine contains exactly
+$8\,658$ fully distinct triples. Integer Horner and $6\times6$ Bareiss
+evaluations agree and give no endpoint zeros; the
 \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/scripts/check_endpoint_two_completion.py}{revision-pinned checker}
 and its complete CSV and JSON preserve this evidence.
-The separate \path{scripts/verify_endpoint_two_coefficients.py} checks
-the displayed real-tail coefficients and all per-minimum domain counts
-against a direct determinant and an arithmetic count formula.
+\path{scripts/verify_endpoint_two_coefficients.py} checks all $240$
+displayed coefficients and $32$ domain counts by direct determinant
+and an arithmetic formula.
 
 \subsection{Written endpoint-one and largest-root steps}
 The sum comparison uses the displayed quadratic with three positive coefficients.

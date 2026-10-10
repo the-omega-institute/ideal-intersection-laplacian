@@ -19,6 +19,9 @@ and written gap1/2 brackets complete the last alternative. The combined
 classification retains historical27562/8658finite bases. The interval
 itself has a written real proof at minimum two, with the original36/170
 positive identities and a35-coefficient slab bound.
+The endpoint-two middle bound now has the sharp real cutoff
+a>(7+sqrt13)/3, with sole boundary equality b=c=2a-2;
+the integer minimum-four and maximum-bound minimum-eight scopes are retained.
 Higher-prime nonsquarefree Q3 remains open; effective integer exponent-point
 enumeration is separate. Submission and freeze remain pending.
 Earlier research status paragraphs below describe

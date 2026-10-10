@@ -112,15 +112,12 @@ the sum bound and the symmetric quotient are the inputs used in the
 largest-root completion.""")
     fragment("endpoint-one-spectrum.tex", r"\begin{theorem}", r"\begin{corollary}")
     heading(r"""\section{The endpoint-two alternative}
-For integer exponents, every noninteger quotient root $\mu$ transfers to
-the graph eigenvalue $N+abc-1-\mu$: the exception $N-\mu=0$ in
-Lemma~\ref{lem:join} is impossible because $N$ is an integer. Conversely,
-the earlier repeated-entry and small-minimum proofs exhibit noninteger
-roots in the six-support space itself. The repeated-entry invariant blocks
-lie in that space, and~\eqref{eq:complement} reflects their roots from $B$
-to $C$. These are the quotient obstructions used for the smaller cases
-in the endpoint-two theorem.""")
-    fragment("endpoint-two-completion.tex", "The endpoint-two surface admits", r"\begin{corollary}")
+For integer exponents, a noninteger quotient root $\mu$ gives the graph
+eigenvalue $N+abc-1-\mu$ by Lemma~\ref{lem:join}, since $N-\mu\ne0$.
+The earlier small-minimum obstructions already lie in the six-support
+space; the repeated-entry invariant blocks also lie there, with their
+roots reflected from $B$ to $C$ by~\eqref{eq:complement}.""")
+    fragment("endpoint-two-completion.tex", "Two geometric bounds confine", r"\begin{corollary}")
     fragment("three-prime-classification.tex")
     return "".join(pieces), selections
 
@@ -161,7 +158,7 @@ def audit(body, selections, bibliography):
         "source_base_commit": "08065334917ac0bacc965e4c447e2b2aa5c421d1",
         "original_proof_source_revision": "7be84599097fdff320b196cb4f84a2dfe505bd77",
         "scope": "Source concordance, explicit-reference closure and selected statement/proof bodies matching the current source sections; not an independent proof validation or certificate rerun.",
-        "written_proof_update": "Endpoint-one sum bound, small-gap1/2 brackets and largest-root interval hold at real minimum a>=2. General endpoint-one residual-root separation has the sharp real cutoff a>2+sqrt3;the integer divisor corollary retains a>=4. Largest-root upper sign uses a35-coefficient bound on2<=a<=3;small-gap vectors use a=2+m with L2=b explicit.",
+        "written_proof_update": "Endpoint-one sum bound, small-gap1/2 brackets and largest-root interval hold at real minimum a>=2. General endpoint-one residual-root separation has the sharp real cutoff a>2+sqrt3;the integer divisor corollary retains a>=4. Endpoint-two middle bound has sharp cutoff a>(7+sqrt13)/3,with sole boundary equality b=c=2a-2;its integer bound and maximum bound retain minima4and8. Largest-root upper sign uses a35-coefficient bound on2<=a<=3;small-gap vectors use a=2+m with L2=b explicit.",
         "generated_body_sha256": digest(body),
         "generated_bibliography_sha256": digest(bibliography),
         "selections": selections,
