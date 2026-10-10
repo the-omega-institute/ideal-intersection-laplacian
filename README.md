@@ -6,7 +6,7 @@ focused candidate. It presents the completed three-prime theorem with its
 full proof chain, historical finite certificates and complete coefficient tables. The
 [material-placement map](notes/classification-core-placement.md) distinguishes
 the retained core from auxiliary arithmetic and higher-prime results.
-The 62-page manuscript remains the supporting research collection;
+The 63-page manuscript remains the supporting research collection;
 the earlier detailed build is 67 pages. This placement does not designate the collection
 as a separate submission. The alphabetical author order and Reza Nikandish
 as corresponding author are agreed. The revised manuscript includes the
@@ -75,6 +75,11 @@ The supporting [balanced-span bound](notes/balanced-span-threshold.md)
 is sharpened to `a > r + 4 + sqrt(3)(r+2)`, where `r=c-a`,
 from `a >= 3r+8`. This is the exact span-only threshold for the
 strict Schur diagonal criterion; it is a sufficient spectral bound.
+
+The supporting [inertia formula](notes/singular-schur-inertia.md) now
+includes zero Schur diagonal entries. If `q` entries are negative and
+`z>0` are zero, there are exactly `q` positive quotient roots strictly
+below the endpoint, with multiplicity `z-1` at the endpoint itself.
 
 The three-prime classification is now complete: every positive exponent
 vector (a,b,c) gives a nonintegral ideal intersection graph. The new

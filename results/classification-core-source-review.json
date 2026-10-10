@@ -92,9 +92,9 @@
     },
     {
       "source": "paper/sections/mixed-inertia.tex",
-      "source_sha256": "63e39f2e575e65cae87b504a7c1ba8421ec7806205fc5997120075521bedee88",
-      "start_line": 35,
-      "exclusive_end_line": 92,
+      "source_sha256": "d492bbd34a5b2604ea92372b7017504b46ed37b91757e942d8209b53b7a1fad4",
+      "start_line": 49,
+      "exclusive_end_line": 106,
       "selected_sha256": "1800a656fa4374276ae00e13f85f6db96850a15789f63571c5225fe5603694f6"
     },
     {

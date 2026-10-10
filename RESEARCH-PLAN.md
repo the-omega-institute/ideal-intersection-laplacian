@@ -4,7 +4,7 @@ The selected main-paper direction is the [three-prime classification
 manuscript](paper/classification-core.pdf), now 27 pages after including
 the all-positive-real low-root proof, following coauthor review of
 the 25-page candidate. Its full proof chain, finite bases and coefficient
-appendices remain together. The 62-page collection, earlier 67-page detailed build and the
+appendices remain together. The 63-page collection, earlier 67-page detailed build and the
 higher-prime research branch supply supporting material, without a separate
 submission being inferred. See the [placement decision](notes/classification-core-placement.md).
 Prioritize independent review of this focused proof and concrete corrections
@@ -32,6 +32,10 @@ The supporting balanced-span criterion now uses the exact threshold
 This threshold is sharp for the strict Schur diagonal criterion,
 not necessary for a root in `(2,3)`. The main classification retains
 its finite inputs. See [the proof](notes/balanced-span-threshold.md).
+The supporting inertia lemma also covers zero Schur diagonal entries:
+for `0<x<a`, `q` negative entries and `z>0` zeros give exactly `q`
+positive quotient roots below `x` and multiplicity `z-1` at `x`.
+See [the singular-boundary proof](notes/singular-schur-inertia.md).
 Submission and freeze remain pending.
 Earlier research status paragraphs below describe
 prior stages and are superseded by this classification.

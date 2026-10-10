@@ -7,6 +7,9 @@ The supporting [span corollary](balanced-span-threshold.md) now uses
 diagonal criterion. The earlier statements and checker below record
 their original, narrower scopes.
 
+The [current inertia lemma](singular-schur-inertia.md) also treats zero
+Schur diagonal entries directly, with exact endpoint multiplicity.
+
 For **every ordered exponent triple `4<=a<=b<=c`**, the six-support
 complement quotient has a nonzero eigenvalue in **`(0,3)`**. The diagonal
 of its Schur complement may have any sign pattern. This gives a uniform

@@ -1,0 +1,110 @@
+{
+  "statement": "For0<x<a and z>0 zero Schur diagonals,q negative diagonals,the complement quotient has q positive roots strictly below x and multiplicity z-1 at x",
+  "generic_zero_diagonal_congruence": "passed;K congruent to diag(-1,k2,k3) after choosing one zero diagonal",
+  "direct_weighted_symmetry_and_schur_blocks": "passed for all six controls",
+  "fixed_rational_endpoint_controls": [
+    {
+      "parameters": [
+        "10",
+        "76/7",
+        "11"
+      ],
+      "endpoint": 2,
+      "schur_diagonal": [
+        "0",
+        "1089/217",
+        "361/63"
+      ],
+      "negative_diagonal_count": 0,
+      "zero_diagonal_count": 1,
+      "positive_roots_strictly_below_endpoint": 0,
+      "endpoint_multiplicity": 0
+    },
+    {
+      "parameters": [
+        "8",
+        "15",
+        "20"
+      ],
+      "endpoint": 3,
+      "schur_diagonal": [
+        "-140",
+        "0",
+        "320/17"
+      ],
+      "negative_diagonal_count": 1,
+      "zero_diagonal_count": 1,
+      "positive_roots_strictly_below_endpoint": 1,
+      "endpoint_multiplicity": 0
+    },
+    {
+      "parameters": [
+        "8",
+        "8",
+        "11"
+      ],
+      "endpoint": 3,
+      "schur_diagonal": [
+        "-144/5",
+        "-144/5",
+        "0"
+      ],
+      "negative_diagonal_count": 2,
+      "zero_diagonal_count": 1,
+      "positive_roots_strictly_below_endpoint": 2,
+      "endpoint_multiplicity": 0
+    },
+    {
+      "parameters": [
+        "8",
+        "8",
+        "42/5"
+      ],
+      "endpoint": 2,
+      "schur_diagonal": [
+        "0",
+        "0",
+        "12/5"
+      ],
+      "negative_diagonal_count": 0,
+      "zero_diagonal_count": 2,
+      "positive_roots_strictly_below_endpoint": 0,
+      "endpoint_multiplicity": 1
+    },
+    {
+      "parameters": [
+        "5",
+        "6",
+        "6"
+      ],
+      "endpoint": 2,
+      "schur_diagonal": [
+        "-9",
+        "0",
+        "0"
+      ],
+      "negative_diagonal_count": 1,
+      "zero_diagonal_count": 2,
+      "positive_roots_strictly_below_endpoint": 1,
+      "endpoint_multiplicity": 1
+    }
+  ],
+  "fixed_algebraic_endpoint_control": {
+    "parameters": [
+      8,
+      8,
+      8
+    ],
+    "endpoint": "48 - 8*sqrt(33)",
+    "zero_diagonal_count": 3,
+    "negative_diagonal_count": 0,
+    "positive_roots_strictly_below_endpoint": 0,
+    "endpoint_multiplicity": 2,
+    "quintic_factorization": "(u - 72)*(u**2 - 96*u + 192)**2",
+    "exact_factorization_and_root_ordering": "passed"
+  },
+  "supporting_manuscript_statement": "passed",
+  "sympy": "1.14.0",
+  "scope": "Written zero-diagonal coordinate congruence completes supporting inertia lemma,retaining0<x<a and original nonsingular formula. Shared set-disjointness support constructor/SymPy,no original characteristic helper. Five fixed rational endpoint controls remove endpoint factors before strict root counts with multiplicities; one algebraic endpoint uses exact factorization/ordering. No scan,new finite base,historical finite-base rerun,floats or Lean. Selected main classification retained.",
+  "status": "passed"
+}

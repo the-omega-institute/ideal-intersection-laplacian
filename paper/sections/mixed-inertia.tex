@@ -5,32 +5,46 @@ The Schur complement of Proposition~\ref{prop:low-spectrum} also
 counts roots when its diagonal has mixed signs. A comparison at three
 gives a low eigenvalue for every positive real parameter triple.
 
+\begin{samepage}
 \begin{lemma}
 \label{lem:mixed-inertia}
-For $0<x<a$, suppose all three $k_t(x)$ are nonzero. Let $q$ be the
-number of negative diagonal values and put
+For $0<x<a$, let $q$ and $z$ count the negative and zero values among
+the three $k_t(x)$. If $z=0$, put
 \[
 F(x)=1-\frac{a}{k_a(x)}-\frac{b}{k_b(x)}-\frac{c}{k_c(x)}.
 \]
 Then $n_-(K(x))=q+\mathbf1_{\{F(x)<0\}}$ and
 $\operatorname{nullity}K(x)=\mathbf1_{\{F(x)=0\}}$.
+If $z>0$, then
+\[
+n_-(K(x))=q+1,\qquad \operatorname{nullity}K(x)=z-1.
+\]
 The number of positive complement quotient eigenvalues strictly below
-$x$ is $n_-(K(x))-1$.
+$x$ is $n_-(K(x))-1$, and the multiplicity at $x$ is
+$\operatorname{nullity}K(x)$.
 \end{lemma}
+\end{samepage}
 
 \begin{proof}
-The bordered matrix
+For $z=0$, the bordered matrix
 \[
 \begin{pmatrix}\operatorname{diag}(k_t(x))&v\\v^T&1\end{pmatrix}
 \]
 is congruent both to $K(x)\oplus[1]$ and to
 $\operatorname{diag}(k_t(x))\oplus[F(x)]$. Sylvester's law of inertia
-gives the formulas. The block $D-xI$ is positive definite, and $C$ has
-a simple zero eigenvalue; subtracting this eigenvalue gives the stated count.
+gives the formulas. If $k_j(x)=0$, change coordinates to
+$w_j=v^Ty$ and $w_i=y_i$ for $i\ne j$. Since $v_j>0$, this is
+invertible, and
+\[
+y^TK(x)y=-w_j^2+\sum_{i\ne j}k_i(x)w_i^2.
+\]
+The singular formulas follow without reciprocals. The block $D-xI$
+is positive definite, and $C$ has a simple zero; congruence and
+subtracting this eigenvalue give the quotient counts and multiplicity.
 \end{proof}
 
-A direct comparison at three avoids the reciprocal formula at zero
-diagonal entries and supplies a uniform low positive root.
+A direct comparison at three supplies a uniform low positive root
+without choosing a diagonal sign pattern.
 
 \begin{theorem}
 \label{thm:uniform-low-root}
