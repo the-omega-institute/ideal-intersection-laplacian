@@ -3,7 +3,7 @@
   "original_proof_source_revision": "7be84599097fdff320b196cb4f84a2dfe505bd77",
   "scope": "Source concordance, explicit-reference closure and selected statement/proof bodies matching the current source sections; not an independent proof validation or certificate rerun.",
   "written_proof_update": "Endpoint-one sum bound, small-gap1/2 brackets and largest-root interval hold at real minimum a>=2. General endpoint-one residual-root separation has the sharp real cutoff a>2+sqrt3;the integer divisor corollary retains a>=4. Endpoint-two middle bound has sharp cutoff a>(7+sqrt13)/3,with sole boundary equality b=c=2a-2;its integer bound and maximum bound retain minima4and8. Largest-root upper sign uses a35-coefficient bound on2<=a<=3;small-gap vectors use a=2+m with L2=b explicit.",
-  "generated_body_sha256": "0c8d0515515ef9e255f4707abb9c2c3b37a3e72d7879423167a6bbc4e26fbdbb",
+  "generated_body_sha256": "8553e367c53f71840404e13967395791748a57f1ced4bacf105f36e5fcb477c8",
   "generated_bibliography_sha256": "a4e88f7600b492ab2443fd7e91c54bd2d6debf2710523d9710c0343dea1e991f",
   "selections": [
     {
@@ -29,9 +29,9 @@
     },
     {
       "source": "paper/sections/aa-family.tex",
-      "source_sha256": "489c74d8ea0a65ae7d710de9c0acf1294b68d56bd24ae0e26cd710bddc79f016",
-      "start_line": 7,
-      "exclusive_end_line": 38,
+      "source_sha256": "6de74c0983bdad813f554753f7814cf5178869fd26d3eef667b9b6127c665242",
+      "start_line": 6,
+      "exclusive_end_line": 37,
       "selected_sha256": "14b712c9e9b228b3271e49b8a74f16802814fa2866f27005df14d667147291fb"
     },
     {

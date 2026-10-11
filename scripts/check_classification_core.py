@@ -61,8 +61,7 @@ and the symmetric cubic settle every square-discriminant exception.
 \subsection{Two unit exponents}""")
     fragment("pqrk.tex", r"\begin{theorem}")
     heading(r"""\subsection{The boundary family}
-The following argument was supplied by Reza Nikandish in the public
-collaboration discussion. It is the index-zero case in the factor
+This is the index-zero case in the factor
 reduction below.""")
     fragment("aa-family.tex", r"\begin{theorem}")
     heading(r"\subsection{Exact factor pairs and the first indices}")
