@@ -1,0 +1,133 @@
+\section{Arithmetic obstructions from the complement quotient}
+\label{sec:arithmetic}
+
+The uniform low-root bound rules out common exponent divisors greater
+than two. Reduction of the characteristic polynomial gives further
+infinite congruence classes, even when another quotient root is an integer.
+
+\begin{theorem}
+\label{thm:common-divisor}
+Every positive three-prime exponent triple with $\gcd(a,b,c)\geq3$
+gives a nonintegral ideal intersection graph.
+\end{theorem}
+
+\begin{proof}
+Put $d=\gcd(a,b,c)$. All entries of the six-support complement quotient
+$C$ are integer combinations of the exponents and their pairwise
+products, so $C/d$ is an integer matrix. Every rational eigenvalue of
+an integer matrix is an integer, by the rational-root theorem for its
+monic characteristic polynomial. Therefore every integer eigenvalue
+of $C$ is a multiple of $d$.
+
+Order $a\leq b\leq c$. If $a=3$, Theorem~\ref{thm:minimum-three}
+applies. Otherwise $a\geq4$, and Theorem~\ref{thm:uniform-low-root}
+supplies an eigenvalue $0<\mu<3$. No positive multiple of $d\geq3$
+lies in this interval. Hence $\mu$ and its graph lift $V-\mu$ are
+noninteger.
+\end{proof}
+
+In particular, if $m$ has exactly three distinct prime factors, then
+$G_{m^d}$ is not Laplacian integral for every $d\geq3$.
+
+\begin{theorem}
+\label{thm:congruence}
+A positive three-prime exponent triple gives a nonintegral ideal
+intersection graph under either of the following conditions:
+\begin{enumerate}
+\item all three exponents are odd;
+\item there is an odd prime $\ell$ and a nonzero residue $t$ such that
+$a\equiv b\equiv c\equiv t\pmod\ell$ and $t^2+8t+4$ is a quadratic
+nonresidue modulo $\ell$.
+\end{enumerate}
+In particular, common residues $1,3,4$ modulo $5$, or $1,2,4,5$ modulo
+$7$, imply nonintegrality.
+\end{theorem}
+
+\begin{proof}
+The monic integer quintic $h_C(x)=\det(xI-C)/x$ would split into
+linear factors modulo every prime if all its roots were integers.
+A nonlinear irreducible factor in one reduction therefore supplies a
+noninteger real complement root and a noninteger graph lift.
+
+If the exponents are odd, reduce the general quotient modulo two:
+\[
+h_C(x)\equiv x(x^2+x+1)^2\pmod2.
+\]
+The quadratic has no root in $\mathbb F_2$, proving the first assertion.
+For a common residue $t$, the equal-exponent identity gives
+\[
+h_C(x)\equiv(x-t^2-t)
+\bigl(x^2-(t^2+4t)x+3t^2\bigr)^2\pmod\ell.
+\]
+The quadratic discriminant is $t^2(t^2+8t+4)$. For odd $\ell$ and
+nonzero $t$, the assumed nonresidue makes the quadratic irreducible.
+Modulo five the discriminant factors for $t=1,3,4$ are $3,2,2$,
+respectively; the squares are $0,1,4$. Modulo seven the corresponding
+values for $t=1,2,4,5$ are $6,3,3,6$, outside the square residues.
+\end{proof}
+
+These conditions allow unequal exponents with arbitrarily large ratios
+or differences. For example, $(11,16,21)$, $(13,18,23)$ and $(14,19,24)$
+have gcd one and mixed parity, but meet the modulo-five criterion.
+The other parity reductions are $x^5$ for three even exponents and
+$x^2(x+1)^3$ for one or two odd exponents. Their complete splitting
+does not establish integrality.
+
+The arithmetic arguments do not assume that the smallest positive
+quotient root is noninteger. Scaling also yields an obstruction for even
+exponents whose binary reductions split completely.
+
+\begin{theorem}
+\label{thm:even-congruence}
+Every positive three-prime exponent triple with
+$a\equiv b\equiv c\equiv2\pmod4$ gives a nonintegral ideal intersection
+graph.
+\end{theorem}
+
+\begin{proof}
+Write $(a,b,c)=(4u+2,4v+2,4w+2)$, set $Q=C/2$, and put
+$f(x)=\det(xI-Q)/x$. The matrix $Q$ is integral. If all eigenvalues
+of $C$ were integers, those of $Q$ would be rational and hence integers
+by the rational-root theorem.
+
+Modulo two, $Q$ is block lower triangular. Its upper block has zero
+diagonal and all off-diagonal entries one, and its lower block is $I_3$.
+Consequently
+\[
+\det(xI-Q)\equiv x(x+1)^5\pmod2,
+\qquad f(x)\equiv(x+1)^5\pmod2.
+\]
+Thus all five hypothetical integer roots of $f$ are odd. For every odd
+integer $t$, their five factors $t-\lambda_i$ would give $32\mid f(t)$.
+On the other hand, expansion of the general scaled quotient gives the
+coefficientwise polynomial congruence
+\[
+f(2y+1)\equiv8(u+v+w+y-1)\pmod{32}.
+\]
+In particular $f(3)-f(1)\equiv8\pmod{32}$, contradicting the required
+divisibility of both values. A noninteger complement eigenvalue and its
+noninteger graph lift follow.
+\end{proof}
+
+\begin{corollary}
+\label{cor:common-valuation}
+If the three positive exponents have the same $2$-adic valuation, their
+ideal intersection graph is not Laplacian integral.
+\end{corollary}
+
+\begin{proof}
+At valuation zero, Theorem~\ref{thm:congruence} applies. At valuation
+one, Theorem~\ref{thm:even-congruence} applies. At valuation at least
+two, their common divisor is at least four, so
+Theorem~\ref{thm:common-divisor} applies.
+\end{proof}
+
+For example, $(10,14,18)$, $(14,22,34)$ and $(18,26,42)$ have gcd two
+and lie below the linear even-tail cutoff of the following section.
+The new obstruction applies regardless of the minimum exponent or ratios.
+The necessary endpoint-zero condition of
+Corollary~\ref{cor:balanced-interval} remains insufficient: the already
+settled boundary triple $(9,9,136)$ has $h_C(1)=0$ and other noninteger
+quotient roots. The remaining three-prime problem has gcd at most two,
+at least one even exponent, and lies outside the congruence classes
+above as well as the earlier proved regions.

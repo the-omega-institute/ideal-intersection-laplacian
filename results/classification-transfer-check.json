@@ -1,0 +1,36 @@
+{
+  "sympy": "1.14.0",
+  "scope": "Fresh coefficientwise symbolic checks for added explanatory transfer and positive-real-weight paragraphs; no finite-domain rerun.",
+  "weighted_symmetry_and_zero_sums": true,
+  "complement_identity": true,
+  "positive_energy_identity": true,
+  "support_disjointness_edges": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "repeated_symmetric_embedding": true,
+  "repeated_antisymmetric_embedding": true,
+  "lean_run": false
+}

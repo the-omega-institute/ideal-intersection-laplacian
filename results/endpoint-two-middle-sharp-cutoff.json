@@ -1,0 +1,60 @@
+{
+  "statement": "On real alpha<=a<=b<=c,h_C(2)=0: b<=2a-2; equality exactly a=alpha,b=c=2alpha-2. For a>alpha the bound is strict.",
+  "sharp_cutoff": "sqrt(13)/3 + 7/3",
+  "generic_middle_tail_identity": "passed against direct quotient determinant",
+  "A0_constant_factorization": "6(a-alpha)(a-(7-sqrt13)/3), passed",
+  "A0_derivative": "4u+7(a-2)>0 for a>=alpha,u>=0",
+  "positive_shift_three_coefficients": {
+    "B0": {
+      "positive_coefficients": 13,
+      "constant": 262,
+      "shifted_identity": "4*m**3*u + 26*m**3 + 4*m**2*u**2 + 61*m**2*u + 178*m**2 + m*u**3 + 34*m*u**2 + 210*m*u + 382*m + 5*u**3 + 54*u**2 + 201*u + 262"
+    },
+    "D0": {
+      "positive_coefficients": 14,
+      "constant": 614,
+      "shifted_identity": "18*m**4 + 33*m**3*u + 228*m**3 + 20*m**2*u**2 + 317*m**2*u + 872*m**2 + 4*m*u**3 + 143*m*u**2 + 803*m*u + 1276*m + 20*u**3 + 187*u**2 + 583*u + 614"
+    },
+    "E0": {
+      "positive_coefficients": 9,
+      "constant": 104,
+      "shifted_identity": "6*m**3 + 5*m**2*u + 52*m**2 + m*u**2 + 33*m*u + 134*m + 5*u**2 + 44*u + 104"
+    }
+  },
+  "exact_ordered_endpoint_boundary": "passed over Q(sqrt13)",
+  "fixed_rational_controls": [
+    {
+      "exponents": [
+        "7/2",
+        "5",
+        "5"
+      ],
+      "endpoint_two": "-2003/8",
+      "sign": -1
+    },
+    {
+      "exponents": [
+        "15/4",
+        "11/2",
+        "11/2"
+      ],
+      "endpoint_two": "569889/256",
+      "sign": 1
+    },
+    {
+      "exponents": [
+        "15/4",
+        "6",
+        "7"
+      ],
+      "endpoint_two": "330295/16",
+      "sign": 1
+    }
+  ],
+  "current_manuscript_statement": "passed",
+  "integer_middle_bound_minimum": 4,
+  "maximum_bound_minimum": 8,
+  "sympy": "1.14.0",
+  "scope": "Written real-domain strengthening and sharp boundary by the existing cubic-in-tail identity. Generic direct determinant, positive shift-three coefficients, exact algebraic boundary and three fixed rational controls. Shared set-disjointness model and SymPy; no original characteristic helper. No parameter scan,new finite base,historical finite-base rerun,floats or Lean. The integer proof and maximum bound retain their scopes.",
+  "status": "passed"
+}

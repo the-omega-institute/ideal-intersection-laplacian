@@ -1,0 +1,1916 @@
+{
+  "requested_domain": "4<=a<b<=15, integer c>b with no upper bound on c",
+  "pair_count": 66,
+  "endpoint_cubic_count": 132,
+  "positive_divisors_considered": 8527,
+  "integer_horner_divisors_above_b_evaluated": 7585,
+  "candidate_triples": [],
+  "pairs_with_minimum_at_least_eight": 28,
+  "independent_method": "Direct disjoint-support complement matrix, generic endpoint cubics and positive-divisor exhaustion of their nonzero constant terms; independent integer Horner evaluation. Cross-checks corrected reflected-H script and exact rational linear-factor extraction for every pair.",
+  "pairs": [
+    {
+      "a": 4,
+      "b": 5,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        40,
+        -1096,
+        768,
+        2688
+      ],
+      "positive_divisors_of_constant": 32,
+      "divisors_above_b_evaluated": 28,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 5,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        220,
+        -1702,
+        2190,
+        2268
+      ],
+      "positive_divisors_of_constant": 30,
+      "divisors_above_b_evaluated": 26,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 6,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        51,
+        -1599,
+        1125,
+        4455
+      ],
+      "positive_divisors_of_constant": 20,
+      "divisors_above_b_evaluated": 17,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 6,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        296,
+        -2320,
+        3712,
+        4096
+      ],
+      "positive_divisors_of_constant": 13,
+      "divisors_above_b_evaluated": 10,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 7,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        64,
+        -2180,
+        1548,
+        6840
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 42,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 7,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        384,
+        -2946,
+        5730,
+        6660
+      ],
+      "positive_divisors_of_constant": 36,
+      "divisors_above_b_evaluated": 30,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 8,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        79,
+        -2833,
+        2037,
+        9933
+      ],
+      "positive_divisors_of_constant": 16,
+      "divisors_above_b_evaluated": 13,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 8,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        484,
+        -3544,
+        8304,
+        10080
+      ],
+      "positive_divisors_of_constant": 72,
+      "divisors_above_b_evaluated": 64,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 9,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        96,
+        -3552,
+        2592,
+        13824
+      ],
+      "positive_divisors_of_constant": 40,
+      "divisors_above_b_evaluated": 33,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 9,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        596,
+        -4078,
+        11494,
+        14476
+      ],
+      "positive_divisors_of_constant": 24,
+      "divisors_above_b_evaluated": 20,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 10,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        115,
+        -4331,
+        3213,
+        18603
+      ],
+      "positive_divisors_of_constant": 16,
+      "divisors_above_b_evaluated": 13,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 10,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        720,
+        -4512,
+        15360,
+        19968
+      ],
+      "positive_divisors_of_constant": 40,
+      "divisors_above_b_evaluated": 34,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 11,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        136,
+        -5164,
+        3900,
+        24360
+      ],
+      "positive_divisors_of_constant": 64,
+      "divisors_above_b_evaluated": 55,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 11,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        856,
+        -4810,
+        19962,
+        26676
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 42,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 12,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        159,
+        -6045,
+        4653,
+        31185
+      ],
+      "positive_divisors_of_constant": 40,
+      "divisors_above_b_evaluated": 34,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 12,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1004,
+        -4936,
+        25360,
+        34720
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 41,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 13,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        184,
+        -6968,
+        5472,
+        39168
+      ],
+      "positive_divisors_of_constant": 54,
+      "divisors_above_b_evaluated": 46,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 13,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1164,
+        -4854,
+        31614,
+        44220
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 39,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 14,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        211,
+        -7927,
+        6357,
+        48399
+      ],
+      "positive_divisors_of_constant": 16,
+      "divisors_above_b_evaluated": 13,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 14,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1336,
+        -4528,
+        38784,
+        55296
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 40,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 15,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        240,
+        -8916,
+        7308,
+        58968
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 69,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 4,
+      "b": 15,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1520,
+        -3922,
+        46930,
+        68068
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 41,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 6,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        60,
+        -2660,
+        1800,
+        8000
+      ],
+      "positive_divisors_of_constant": 28,
+      "divisors_above_b_evaluated": 24,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 6,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        396,
+        -3816,
+        7236,
+        8424
+      ],
+      "positive_divisors_of_constant": 40,
+      "divisors_above_b_evaluated": 35,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 7,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        73,
+        -3664,
+        2472,
+        12144
+      ],
+      "positive_divisors_of_constant": 40,
+      "divisors_above_b_evaluated": 35,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 7,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        505,
+        -5035,
+        11100,
+        13500
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 42,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 8,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        88,
+        -4808,
+        3248,
+        17472
+      ],
+      "positive_divisors_of_constant": 56,
+      "divisors_above_b_evaluated": 49,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 8,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        628,
+        -6306,
+        16002,
+        20196
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 43,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 9,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        105,
+        -6086,
+        4128,
+        24128
+      ],
+      "positive_divisors_of_constant": 28,
+      "divisors_above_b_evaluated": 24,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 9,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        765,
+        -7587,
+        22050,
+        28728
+      ],
+      "positive_divisors_of_constant": 64,
+      "divisors_above_b_evaluated": 56,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 10,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        124,
+        -7492,
+        5112,
+        32256
+      ],
+      "positive_divisors_of_constant": 60,
+      "divisors_above_b_evaluated": 52,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 10,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        916,
+        -8836,
+        29352,
+        39312
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 72,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 11,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        145,
+        -9020,
+        6200,
+        42000
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 71,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 11,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1081,
+        -10011,
+        38016,
+        52164
+      ],
+      "positive_divisors_of_constant": 60,
+      "divisors_above_b_evaluated": 53,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 12,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        168,
+        -10664,
+        7392,
+        53504
+      ],
+      "positive_divisors_of_constant": 36,
+      "divisors_above_b_evaluated": 31,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 12,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1260,
+        -11070,
+        48150,
+        67500
+      ],
+      "positive_divisors_of_constant": 60,
+      "divisors_above_b_evaluated": 51,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 13,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        193,
+        -12418,
+        8688,
+        66912
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 41,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 13,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1453,
+        -11971,
+        59862,
+        85536
+      ],
+      "positive_divisors_of_constant": 72,
+      "divisors_above_b_evaluated": 63,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 14,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        220,
+        -14276,
+        10088,
+        82368
+      ],
+      "positive_divisors_of_constant": 84,
+      "divisors_above_b_evaluated": 74,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 14,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1660,
+        -12672,
+        73260,
+        106488
+      ],
+      "positive_divisors_of_constant": 64,
+      "divisors_above_b_evaluated": 56,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 15,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        249,
+        -16232,
+        11592,
+        100016
+      ],
+      "positive_divisors_of_constant": 40,
+      "divisors_above_b_evaluated": 34,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 5,
+      "b": 15,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1881,
+        -13131,
+        88452,
+        130572
+      ],
+      "positive_divisors_of_constant": 60,
+      "divisors_above_b_evaluated": 52,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 7,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        84,
+        -5484,
+        3600,
+        19440
+      ],
+      "positive_divisors_of_constant": 60,
+      "divisors_above_b_evaluated": 54,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 7,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        644,
+        -7528,
+        18460,
+        23320
+      ],
+      "positive_divisors_of_constant": 32,
+      "divisors_above_b_evaluated": 28,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 8,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        99,
+        -7235,
+        4725,
+        27755
+      ],
+      "positive_divisors_of_constant": 16,
+      "divisors_above_b_evaluated": 13,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 8,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        792,
+        -9648,
+        26496,
+        34560
+      ],
+      "positive_divisors_of_constant": 72,
+      "divisors_above_b_evaluated": 65,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 9,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        116,
+        -9204,
+        6000,
+        38080
+      ],
+      "positive_divisors_of_constant": 56,
+      "divisors_above_b_evaluated": 50,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 9,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        956,
+        -11880,
+        36372,
+        48776
+      ],
+      "positive_divisors_of_constant": 32,
+      "divisors_above_b_evaluated": 27,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 10,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        135,
+        -11385,
+        7425,
+        50625
+      ],
+      "positive_divisors_of_constant": 25,
+      "divisors_above_b_evaluated": 21,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 10,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1136,
+        -14176,
+        48256,
+        66304
+      ],
+      "positive_divisors_of_constant": 36,
+      "divisors_above_b_evaluated": 31,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 11,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        156,
+        -13772,
+        9000,
+        65600
+      ],
+      "positive_divisors_of_constant": 42,
+      "divisors_above_b_evaluated": 36,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 11,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1332,
+        -16488,
+        62316,
+        87480
+      ],
+      "positive_divisors_of_constant": 64,
+      "divisors_above_b_evaluated": 55,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 12,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        179,
+        -16359,
+        10725,
+        83215
+      ],
+      "positive_divisors_of_constant": 16,
+      "divisors_above_b_evaluated": 13,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 12,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1544,
+        -18768,
+        78720,
+        112640
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 41,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 13,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        204,
+        -19140,
+        12600,
+        103680
+      ],
+      "positive_divisors_of_constant": 90,
+      "divisors_above_b_evaluated": 80,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 13,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1772,
+        -20968,
+        97636,
+        142120
+      ],
+      "positive_divisors_of_constant": 64,
+      "divisors_above_b_evaluated": 57,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 14,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        231,
+        -22109,
+        14625,
+        127205
+      ],
+      "positive_divisors_of_constant": 16,
+      "divisors_above_b_evaluated": 13,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 14,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        2016,
+        -23040,
+        119232,
+        176256
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 72,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 15,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        260,
+        -25260,
+        16800,
+        154000
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 71,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 6,
+      "b": 15,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        2276,
+        -24936,
+        143676,
+        215384
+      ],
+      "positive_divisors_of_constant": 32,
+      "divisors_above_b_evaluated": 27,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 8,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        112,
+        -10108,
+        6468,
+        41160
+      ],
+      "positive_divisors_of_constant": 64,
+      "divisors_above_b_evaluated": 56,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 8,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        976,
+        -13510,
+        40110,
+        53820
+      ],
+      "positive_divisors_of_constant": 72,
+      "divisors_above_b_evaluated": 66,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 9,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        129,
+        -12900,
+        8208,
+        56160
+      ],
+      "positive_divisors_of_constant": 96,
+      "divisors_above_b_evaluated": 88,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 9,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1169,
+        -16891,
+        54880,
+        75460
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 43,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 10,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        148,
+        -16004,
+        10152,
+        74304
+      ],
+      "positive_divisors_of_constant": 56,
+      "divisors_above_b_evaluated": 49,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 10,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1380,
+        -20460,
+        72600,
+        102000
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 72,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 11,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        169,
+        -19414,
+        12300,
+        95880
+      ],
+      "positive_divisors_of_constant": 64,
+      "divisors_above_b_evaluated": 56,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 11,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1609,
+        -24163,
+        93510,
+        133920
+      ],
+      "positive_divisors_of_constant": 96,
+      "divisors_above_b_evaluated": 87,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 12,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        192,
+        -23124,
+        14652,
+        121176
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 71,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 12,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1856,
+        -27946,
+        117850,
+        171700
+      ],
+      "positive_divisors_of_constant": 36,
+      "divisors_above_b_evaluated": 31,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 13,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        217,
+        -27128,
+        17208,
+        150480
+      ],
+      "positive_divisors_of_constant": 120,
+      "divisors_above_b_evaluated": 109,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 13,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        2121,
+        -31755,
+        145860,
+        215820
+      ],
+      "positive_divisors_of_constant": 72,
+      "divisors_above_b_evaluated": 62,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 14,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        244,
+        -31420,
+        19968,
+        184080
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 70,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 14,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        2404,
+        -35536,
+        177780,
+        266760
+      ],
+      "positive_divisors_of_constant": 128,
+      "divisors_above_b_evaluated": 117,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 15,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        273,
+        -35994,
+        22932,
+        222264
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 70,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 7,
+      "b": 15,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        2705,
+        -39235,
+        213850,
+        325000
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 41,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 8,
+      "b": 9,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        144,
+        -17168,
+        10752,
+        78848
+      ],
+      "positive_divisors_of_constant": 44,
+      "divisors_above_b_evaluated": 39,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 8,
+      "b": 9,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1404,
+        -22554,
+        77994,
+        109620
+      ],
+      "positive_divisors_of_constant": 96,
+      "divisors_above_b_evaluated": 88,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 8,
+      "b": 10,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        163,
+        -21343,
+        13293,
+        103887
+      ],
+      "positive_divisors_of_constant": 24,
+      "divisors_above_b_evaluated": 20,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 8,
+      "b": 10,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1648,
+        -27616,
+        102912,
+        147456
+      ],
+      "positive_divisors_of_constant": 45,
+      "divisors_above_b_evaluated": 38,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 8,
+      "b": 11,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        184,
+        -25940,
+        16100,
+        133560
+      ],
+      "positive_divisors_of_constant": 96,
+      "divisors_above_b_evaluated": 86,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 8,
+      "b": 11,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1912,
+        -32958,
+        132246,
+        192780
+      ],
+      "positive_divisors_of_constant": 120,
+      "divisors_above_b_evaluated": 111,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 8,
+      "b": 12,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        207,
+        -30953,
+        19173,
+        168245
+      ],
+      "positive_divisors_of_constant": 32,
+      "divisors_above_b_evaluated": 28,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 8,
+      "b": 12,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        2196,
+        -38520,
+        166320,
+        246240
+      ],
+      "positive_divisors_of_constant": 120,
+      "divisors_above_b_evaluated": 110,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 8,
+      "b": 13,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        232,
+        -36376,
+        22512,
+        208320
+      ],
+      "positive_divisors_of_constant": 112,
+      "divisors_above_b_evaluated": 102,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 8,
+      "b": 13,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        2500,
+        -44242,
+        205458,
+        308484
+      ],
+      "positive_divisors_of_constant": 72,
+      "divisors_above_b_evaluated": 64,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 8,
+      "b": 14,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        259,
+        -42203,
+        26117,
+        254163
+      ],
+      "positive_divisors_of_constant": 32,
+      "divisors_above_b_evaluated": 28,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 8,
+      "b": 14,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        2824,
+        -50064,
+        249984,
+        380160
+      ],
+      "positive_divisors_of_constant": 144,
+      "divisors_above_b_evaluated": 133,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 8,
+      "b": 15,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        288,
+        -48428,
+        29988,
+        306152
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 41,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 8,
+      "b": 15,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        3168,
+        -55926,
+        300222,
+        461916
+      ],
+      "positive_divisors_of_constant": 96,
+      "divisors_above_b_evaluated": 86,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 9,
+      "b": 10,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        180,
+        -27396,
+        16848,
+        139968
+      ],
+      "positive_divisors_of_constant": 56,
+      "divisors_above_b_evaluated": 49,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 9,
+      "b": 10,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        1940,
+        -35572,
+        139720,
+        203728
+      ],
+      "positive_divisors_of_constant": 40,
+      "divisors_above_b_evaluated": 35,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 9,
+      "b": 11,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        201,
+        -33344,
+        20400,
+        179360
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 42,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 9,
+      "b": 11,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        2241,
+        -42795,
+        179172,
+        265356
+      ],
+      "positive_divisors_of_constant": 84,
+      "divisors_above_b_evaluated": 77,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 9,
+      "b": 12,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        224,
+        -39840,
+        24288,
+        225280
+      ],
+      "positive_divisors_of_constant": 52,
+      "divisors_above_b_evaluated": 45,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 9,
+      "b": 12,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        2564,
+        -50406,
+        224910,
+        337820
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 42,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 9,
+      "b": 13,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        249,
+        -46878,
+        28512,
+        278208
+      ],
+      "positive_divisors_of_constant": 112,
+      "divisors_above_b_evaluated": 103,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 9,
+      "b": 13,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        2909,
+        -58339,
+        277354,
+        421960
+      ],
+      "positive_divisors_of_constant": 64,
+      "divisors_above_b_evaluated": 56,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 9,
+      "b": 14,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        276,
+        -54452,
+        33072,
+        338624
+      ],
+      "positive_divisors_of_constant": 56,
+      "divisors_above_b_evaluated": 50,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 9,
+      "b": 14,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        3276,
+        -66528,
+        336924,
+        518616
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 70,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 9,
+      "b": 15,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        305,
+        -62556,
+        37968,
+        407008
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 42,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 9,
+      "b": 15,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        3665,
+        -74907,
+        404040,
+        628628
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 41,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 10,
+      "b": 11,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        220,
+        -41620,
+        25200,
+        234000
+      ],
+      "positive_divisors_of_constant": 120,
+      "divisors_above_b_evaluated": 111,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 10,
+      "b": 11,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        2596,
+        -53596,
+        234936,
+        352944
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 73,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 10,
+      "b": 12,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        243,
+        -49779,
+        29997,
+        293139
+      ],
+      "positive_divisors_of_constant": 40,
+      "divisors_above_b_evaluated": 35,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 10,
+      "b": 12,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        2960,
+        -63520,
+        294400,
+        448000
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 73,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 10,
+      "b": 13,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        268,
+        -58628,
+        35208,
+        361152
+      ],
+      "positive_divisors_of_constant": 112,
+      "divisors_above_b_evaluated": 103,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 10,
+      "b": 13,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        3348,
+        -73956,
+        362472,
+        558096
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 71,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 10,
+      "b": 14,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        295,
+        -68161,
+        40833,
+        438633
+      ],
+      "positive_divisors_of_constant": 24,
+      "divisors_above_b_evaluated": 20,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 10,
+      "b": 14,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        3760,
+        -84832,
+        439680,
+        684288
+      ],
+      "positive_divisors_of_constant": 108,
+      "divisors_above_b_evaluated": 99,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 10,
+      "b": 15,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        324,
+        -78372,
+        46872,
+        526176
+      ],
+      "positive_divisors_of_constant": 120,
+      "divisors_above_b_evaluated": 110,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 10,
+      "b": 15,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        4196,
+        -96076,
+        526552,
+        827632
+      ],
+      "positive_divisors_of_constant": 40,
+      "divisors_above_b_evaluated": 35,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 11,
+      "b": 12,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        264,
+        -60764,
+        36300,
+        372680
+      ],
+      "positive_divisors_of_constant": 64,
+      "divisors_above_b_evaluated": 56,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 11,
+      "b": 12,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        3384,
+        -77778,
+        375570,
+        578340
+      ],
+      "positive_divisors_of_constant": 144,
+      "divisors_above_b_evaluated": 134,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 11,
+      "b": 13,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        289,
+        -71620,
+        42600,
+        458160
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 71,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 11,
+      "b": 13,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        3817,
+        -91003,
+        461736,
+        718740
+      ],
+      "positive_divisors_of_constant": 96,
+      "divisors_above_b_evaluated": 86,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 11,
+      "b": 14,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        316,
+        -83324,
+        49400,
+        555360
+      ],
+      "positive_divisors_of_constant": 96,
+      "divisors_above_b_evaluated": 86,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 11,
+      "b": 14,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        4276,
+        -104880,
+        559332,
+        879336
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 72,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 11,
+      "b": 15,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        345,
+        -95870,
+        56700,
+        665000
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 72,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 11,
+      "b": 15,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        4761,
+        -119331,
+        669006,
+        1061424
+      ],
+      "positive_divisors_of_constant": 140,
+      "divisors_above_b_evaluated": 129,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 12,
+      "b": 13,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        312,
+        -85848,
+        50688,
+        570240
+      ],
+      "positive_divisors_of_constant": 160,
+      "divisors_above_b_evaluated": 149,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 12,
+      "b": 13,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        4316,
+        -109390,
+        576070,
+        905740
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 42,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 12,
+      "b": 14,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        339,
+        -99935,
+        58773,
+        689975
+      ],
+      "positive_divisors_of_constant": 24,
+      "divisors_above_b_evaluated": 20,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 12,
+      "b": 14,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        4824,
+        -126576,
+        696960,
+        1105920
+      ],
+      "positive_divisors_of_constant": 112,
+      "divisors_above_b_evaluated": 102,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 12,
+      "b": 15,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        368,
+        -115044,
+        67452,
+        824824
+      ],
+      "positive_divisors_of_constant": 64,
+      "divisors_above_b_evaluated": 56,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 12,
+      "b": 15,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        5360,
+        -144570,
+        832650,
+        1332500
+      ],
+      "positive_divisors_of_constant": 60,
+      "divisors_above_b_evaluated": 54,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 13,
+      "b": 14,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        364,
+        -117988,
+        68952,
+        843648
+      ],
+      "positive_divisors_of_constant": 64,
+      "divisors_above_b_evaluated": 56,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 13,
+      "b": 14,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        5404,
+        -149824,
+        853644,
+        1366200
+      ],
+      "positive_divisors_of_constant": 192,
+      "divisors_above_b_evaluated": 181,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 13,
+      "b": 15,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        393,
+        -135888,
+        79128,
+        1006992
+      ],
+      "positive_divisors_of_constant": 120,
+      "divisors_above_b_evaluated": 110,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 13,
+      "b": 15,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        5993,
+        -171691,
+        1018732,
+        1643356
+      ],
+      "positive_divisors_of_constant": 48,
+      "divisors_above_b_evaluated": 43,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 14,
+      "b": 15,
+      "endpoint": 1,
+      "cubic_coefficients_descending": [
+        420,
+        -158396,
+        91728,
+        1212848
+      ],
+      "positive_divisors_of_constant": 80,
+      "divisors_above_b_evaluated": 73,
+      "integer_roots_above_b": []
+    },
+    {
+      "a": 14,
+      "b": 15,
+      "endpoint": 2,
+      "cubic_coefficients_descending": [
+        6660,
+        -200592,
+        1228500,
+        1996488
+      ],
+      "positive_divisors_of_constant": 96,
+      "divisors_above_b_evaluated": 87,
+      "integer_roots_above_b": []
+    }
+  ],
+  "positive_controls": [
+    {
+      "exponents": [
+        9,
+        9,
+        136
+      ],
+      "endpoint": 1,
+      "integer_roots_above_b": [
+        136
+      ],
+      "all_roots_integer": false,
+      "scope": "Previously settled repeated-exponent family; outside the fully distinct requested domain"
+    },
+    {
+      "exponents": [
+        10,
+        10,
+        12
+      ],
+      "endpoint": 2,
+      "integer_roots_above_b": [
+        12
+      ],
+      "all_roots_integer": false,
+      "scope": "Previously settled repeated-exponent family; outside the fully distinct requested domain"
+    }
+  ],
+  "reflection_regression": [
+    {
+      "exponents": [
+        4,
+        5,
+        6
+      ],
+      "endpoint": 1,
+      "original_value_using_full_vertex_count": -54772674264,
+      "corrected_complement_value": -23520
+    },
+    {
+      "exponents": [
+        4,
+        5,
+        6
+      ],
+      "endpoint": 2,
+      "original_value_using_full_vertex_count": -52833379392,
+      "corrected_complement_value": 1656
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "verify_endpoint_surfaces.py": "a777721fa8761d7746ffcb436b4852c71512d893668b7c47462e9a8c36feccd2",
+    "check_endpoint_surfaces.py": "3bf73d78fa0ba328b01a325861240bf87284b2321ddab1fa7423ac66d9b00071"
+  },
+  "scope": "Complete finite certificate over66pairs and132cubics, with unbounded integer c handled by exact divisor reduction. With the previously proved uniform low root in(0,3), proves nonintegrality for every fully distinct4<=a<b<=15,c>b. Does not prove the endpoint surfaces globally empty or fullQ3. No floating-point spectrum, no Lean; no unrelated exponent range."
+}

@@ -1,0 +1,2271 @@
+{
+  "mixed_parity_quintic_modulo_two": "x^2*(x+1)^3",
+  "written_necessary_condition": "An integral mixed-parity quotient has three odd roots; two share a residue modulo4. Therefore32divides h_C(1) or32divides h_C(3).",
+  "first_coefficient_divisibility_checks": [
+    {
+      "exponent_parity": [
+        1,
+        0,
+        0
+      ],
+      "argument_parity": 0,
+      "required_divisor": 4,
+      "coefficient_count": 138,
+      "result": "All coefficients divisible; this first necessary condition gives no obstruction"
+    },
+    {
+      "exponent_parity": [
+        1,
+        0,
+        0
+      ],
+      "argument_parity": 1,
+      "required_divisor": 8,
+      "coefficient_count": 134,
+      "result": "All coefficients divisible; this first necessary condition gives no obstruction"
+    },
+    {
+      "exponent_parity": [
+        1,
+        1,
+        0
+      ],
+      "argument_parity": 0,
+      "required_divisor": 4,
+      "coefficient_count": 153,
+      "result": "All coefficients divisible; this first necessary condition gives no obstruction"
+    },
+    {
+      "exponent_parity": [
+        1,
+        1,
+        0
+      ],
+      "argument_parity": 1,
+      "required_divisor": 8,
+      "coefficient_count": 139,
+      "result": "All coefficients divisible; this first necessary condition gives no obstruction"
+    }
+  ],
+  "complete_lower_modulus_splitting_checks": [
+    {
+      "modulus": 4,
+      "root_multisets": 56,
+      "mixed_parity_unordered_classes": 12,
+      "excluded_classes": [],
+      "compatible_factorizations": [
+        {
+          "exponent_residues": [
+            0,
+            0,
+            1
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            3,
+            3,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            1,
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            0,
+            3
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            3,
+            1,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            1,
+            1
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            1,
+            3,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            0,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            1,
+            2
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            1,
+            3,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            0,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            1,
+            3
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            3,
+            3,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            1,
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            2,
+            3
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            1,
+            1,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            0,
+            1,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            3,
+            3
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            1,
+            3,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            0,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            1,
+            2
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            1,
+            1,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            0,
+            1,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            2,
+            2
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            3,
+            3,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            1,
+            2,
+            2,
+            3,
+            3
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            2,
+            3
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            3,
+            1,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            2,
+            3
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            3,
+            1,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            3,
+            3
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            1,
+            1,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            0,
+            1,
+            2,
+            3,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "modulus": 8,
+      "root_multisets": 792,
+      "mixed_parity_unordered_classes": 80,
+      "excluded_classes": [],
+      "compatible_factorizations": [
+        {
+          "exponent_residues": [
+            0,
+            0,
+            1
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            3,
+            7,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            1,
+            4,
+            4,
+            5,
+            5
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            0,
+            3
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            3,
+            5,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            3,
+            4,
+            4,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            0,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            3,
+            3,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            4,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            0,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            3,
+            1,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            4,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            1,
+            1
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            1,
+            7,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            3,
+            4,
+            5,
+            5,
+            6
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            1,
+            2
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            1,
+            3,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            5,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            1,
+            3
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            3,
+            7,
+            4,
+            0
+          ],
+          "linear_root_residues": [
+            0,
+            4,
+            5,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            1,
+            4
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            7,
+            7,
+            4,
+            0
+          ],
+          "linear_root_residues": [
+            0,
+            4,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            1,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            5,
+            7,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            4,
+            5,
+            5,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            1,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            5,
+            3,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            3,
+            4,
+            5,
+            5
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            1,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            7,
+            7,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            3,
+            4,
+            4,
+            5,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            2,
+            3
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            5,
+            5,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            5,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            2,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            1,
+            7,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            3,
+            4,
+            5,
+            5,
+            6
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            2,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            5,
+            1,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            3,
+            3
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            1,
+            7,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            4,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            3,
+            4
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            7,
+            5,
+            4,
+            0
+          ],
+          "linear_root_residues": [
+            0,
+            4,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            3,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            7,
+            7,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            3,
+            4,
+            4,
+            5,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            3,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            1,
+            5,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            3,
+            4,
+            5,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            3,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            5,
+            7,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            3,
+            4,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            4,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            7,
+            3,
+            4,
+            0
+          ],
+          "linear_root_residues": [
+            0,
+            1,
+            4,
+            5,
+            5
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            4,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            7,
+            1,
+            4,
+            0
+          ],
+          "linear_root_residues": [
+            0,
+            3,
+            4,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            5,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            1,
+            7,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            3,
+            4,
+            5,
+            5,
+            6
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            5,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            5,
+            7,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            4,
+            5,
+            5,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            5,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            3,
+            7,
+            4,
+            0
+          ],
+          "linear_root_residues": [
+            0,
+            4,
+            5,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            6,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            1,
+            1,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            4,
+            5,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            0,
+            7,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            1,
+            7,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            4,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            1,
+            2
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            5,
+            1,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            1,
+            4
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            1,
+            3,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            5,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            1,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            5,
+            5,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            5,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            2,
+            2
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            7,
+            3,
+            0,
+            4
+          ],
+          "linear_root_residues": [
+            5,
+            6,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            2,
+            3
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            7,
+            5,
+            4,
+            4
+          ],
+          "linear_root_residues": [
+            2,
+            6,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            2,
+            4
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            5,
+            3,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            3,
+            4,
+            5,
+            5
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            2,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            1,
+            1,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            4,
+            5,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            2,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            3,
+            3,
+            4,
+            4
+          ],
+          "linear_root_residues": [
+            2,
+            3,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            2,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            3,
+            5,
+            0,
+            4
+          ],
+          "linear_root_residues": [
+            3,
+            6,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            3,
+            4
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            3,
+            3,
+            4,
+            0
+          ],
+          "linear_root_residues": [
+            0,
+            3,
+            4,
+            5,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            3,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            7,
+            1,
+            4,
+            4
+          ],
+          "linear_root_residues": [
+            2,
+            3,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            4,
+            4
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            3,
+            7,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            1,
+            4,
+            4,
+            5,
+            5
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            4,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            5,
+            3,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            3,
+            4,
+            5,
+            5
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            4,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            1,
+            3,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            5,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            4,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            7,
+            3,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            4,
+            5,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            5,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            1,
+            5,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            3,
+            4,
+            5,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            6,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            7,
+            3,
+            0,
+            4
+          ],
+          "linear_root_residues": [
+            5,
+            6,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            1,
+            6,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            3,
+            1,
+            0,
+            4
+          ],
+          "linear_root_residues": [
+            6,
+            6,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            2,
+            3
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            7,
+            1,
+            0,
+            4
+          ],
+          "linear_root_residues": [
+            5,
+            5,
+            6,
+            6,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            2,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            7,
+            7,
+            0,
+            4
+          ],
+          "linear_root_residues": [
+            3,
+            5,
+            6,
+            6,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            2,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            7,
+            5,
+            0,
+            4
+          ],
+          "linear_root_residues": [
+            3,
+            5,
+            5,
+            6,
+            6
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            3,
+            3
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            5,
+            1,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            4,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            3,
+            4
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            1,
+            5,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            3,
+            4,
+            5,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            3,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            3,
+            5,
+            0,
+            4
+          ],
+          "linear_root_residues": [
+            3,
+            6,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            3,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            3,
+            1,
+            4,
+            4
+          ],
+          "linear_root_residues": [
+            2,
+            3,
+            5,
+            5,
+            6
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            3,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            1,
+            1,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            1,
+            4,
+            5,
+            5,
+            6
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            4,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            5,
+            7,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            4,
+            5,
+            5,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            4,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            1,
+            1,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            4,
+            5,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            5,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            5,
+            1,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            5,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            3,
+            7,
+            4,
+            4
+          ],
+          "linear_root_residues": [
+            2,
+            5,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            5,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            7,
+            5,
+            4,
+            4
+          ],
+          "linear_root_residues": [
+            2,
+            6,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            6,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            3,
+            5,
+            4,
+            4
+          ],
+          "linear_root_residues": [
+            2,
+            5,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            2,
+            7,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            5,
+            1,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            4,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "exponent_residues": [
+            3,
+            3,
+            4
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            1,
+            3,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            3,
+            4,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            3,
+            3,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            5,
+            5,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            1,
+            2,
+            4,
+            5,
+            5
+          ]
+        },
+        {
+          "exponent_residues": [
+            3,
+            4,
+            4
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            3,
+            5,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            3,
+            4,
+            4,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            3,
+            4,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            7,
+            3,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            4,
+            5,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            3,
+            4,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            5,
+            5,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            5,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            3,
+            4,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            5,
+            3,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            6,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            3,
+            5,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            3,
+            1,
+            0,
+            4
+          ],
+          "linear_root_residues": [
+            6,
+            6,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            3,
+            6,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            7,
+            1,
+            0,
+            4
+          ],
+          "linear_root_residues": [
+            5,
+            5,
+            6,
+            6,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            3,
+            6,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            1,
+            5,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            5,
+            5,
+            5,
+            6
+          ]
+        },
+        {
+          "exponent_residues": [
+            4,
+            4,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            3,
+            3,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            4,
+            5,
+            5,
+            5
+          ]
+        },
+        {
+          "exponent_residues": [
+            4,
+            4,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            3,
+            1,
+            0,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            4,
+            7,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            4,
+            5,
+            5
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            1,
+            3,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            5,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            4,
+            5,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            1,
+            7,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            3,
+            4,
+            5,
+            5,
+            6
+          ]
+        },
+        {
+          "exponent_residues": [
+            4,
+            5,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            3,
+            3,
+            4,
+            0
+          ],
+          "linear_root_residues": [
+            0,
+            3,
+            4,
+            5,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            4,
+            6,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            5,
+            1,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            4,
+            7,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            1,
+            1,
+            3,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            2,
+            3,
+            4,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            5,
+            5,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            3,
+            5,
+            5,
+            2,
+            0
+          ],
+          "linear_root_residues": [
+            4,
+            5,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            5,
+            6,
+            6
+          ],
+          "coefficient_signature": [
+            1,
+            5,
+            7,
+            7,
+            0,
+            4
+          ],
+          "linear_root_residues": [
+            3,
+            5,
+            6,
+            6,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            5,
+            6,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            7,
+            1,
+            4,
+            4
+          ],
+          "linear_root_residues": [
+            2,
+            3,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "exponent_residues": [
+            6,
+            6,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            7,
+            5,
+            0,
+            4
+          ],
+          "linear_root_residues": [
+            3,
+            5,
+            5,
+            6,
+            6
+          ]
+        },
+        {
+          "exponent_residues": [
+            6,
+            7,
+            7
+          ],
+          "coefficient_signature": [
+            1,
+            7,
+            5,
+            5,
+            6,
+            0
+          ],
+          "linear_root_residues": [
+            1,
+            2,
+            4,
+            5,
+            5
+          ]
+        }
+      ]
+    }
+  ],
+  "infinite_congruence_classes": [
+    {
+      "odd_odd_even_residues_modulo_8": [
+        1,
+        3,
+        2
+      ],
+      "checks": [
+        {
+          "argument": 1,
+          "residue_modulo_32": 8,
+          "symbolic_coefficient_count": 42,
+          "all_nonconstant_coefficients_divisible_by_32": true,
+          "independent_integer_determinant": 72
+        },
+        {
+          "argument": 3,
+          "residue_modulo_32": 16,
+          "symbolic_coefficient_count": 51,
+          "all_nonconstant_coefficients_divisible_by_32": true,
+          "independent_integer_determinant": -432
+        }
+      ]
+    },
+    {
+      "odd_odd_even_residues_modulo_8": [
+        1,
+        7,
+        2
+      ],
+      "checks": [
+        {
+          "argument": 1,
+          "residue_modulo_32": 24,
+          "symbolic_coefficient_count": 42,
+          "all_nonconstant_coefficients_divisible_by_32": true,
+          "independent_integer_determinant": 1176
+        },
+        {
+          "argument": 3,
+          "residue_modulo_32": 16,
+          "symbolic_coefficient_count": 51,
+          "all_nonconstant_coefficients_divisible_by_32": true,
+          "independent_integer_determinant": -4368
+        }
+      ]
+    },
+    {
+      "odd_odd_even_residues_modulo_8": [
+        3,
+        7,
+        2
+      ],
+      "checks": [
+        {
+          "argument": 1,
+          "residue_modulo_32": 16,
+          "symbolic_coefficient_count": 42,
+          "all_nonconstant_coefficients_divisible_by_32": true,
+          "independent_integer_determinant": 1200
+        },
+        {
+          "argument": 3,
+          "residue_modulo_32": 8,
+          "symbolic_coefficient_count": 51,
+          "all_nonconstant_coefficients_divisible_by_32": true,
+          "independent_integer_determinant": -10584
+        }
+      ]
+    },
+    {
+      "odd_odd_even_residues_modulo_8": [
+        3,
+        5,
+        6
+      ],
+      "checks": [
+        {
+          "argument": 1,
+          "residue_modulo_32": 8,
+          "symbolic_coefficient_count": 42,
+          "all_nonconstant_coefficients_divisible_by_32": true,
+          "independent_integer_determinant": -8920
+        },
+        {
+          "argument": 3,
+          "residue_modulo_32": 16,
+          "symbolic_coefficient_count": 51,
+          "all_nonconstant_coefficients_divisible_by_32": true,
+          "independent_integer_determinant": -32400
+        }
+      ]
+    },
+    {
+      "odd_odd_even_residues_modulo_8": [
+        3,
+        7,
+        6
+      ],
+      "checks": [
+        {
+          "argument": 1,
+          "residue_modulo_32": 16,
+          "symbolic_coefficient_count": 42,
+          "all_nonconstant_coefficients_divisible_by_32": true,
+          "independent_integer_determinant": -16848
+        },
+        {
+          "argument": 3,
+          "residue_modulo_32": 24,
+          "symbolic_coefficient_count": 51,
+          "all_nonconstant_coefficients_divisible_by_32": true,
+          "independent_integer_determinant": -31752
+        }
+      ]
+    },
+    {
+      "odd_odd_even_residues_modulo_8": [
+        5,
+        7,
+        6
+      ],
+      "checks": [
+        {
+          "argument": 1,
+          "residue_modulo_32": 24,
+          "symbolic_coefficient_count": 42,
+          "all_nonconstant_coefficients_divisible_by_32": true,
+          "independent_integer_determinant": -89160
+        },
+        {
+          "argument": 3,
+          "residue_modulo_32": 16,
+          "symbolic_coefficient_count": 51,
+          "all_nonconstant_coefficients_divisible_by_32": true,
+          "independent_integer_determinant": -134640
+        }
+      ]
+    }
+  ],
+  "symbolic_coefficient_checks": 558,
+  "independent_integer_determinants": 16,
+  "direct_integer_fixtures": [
+    {
+      "exponents": [
+        10,
+        17,
+        19
+      ],
+      "h_C_at_one_and_three": [
+        -31851480,
+        10197936
+      ],
+      "values_modulo_32": [
+        8,
+        16
+      ],
+      "nonlinear_rational_factor": true
+    },
+    {
+      "exponents": [
+        14,
+        19,
+        21
+      ],
+      "h_C_at_one_and_three": [
+        -102540600,
+        4530384
+      ],
+      "values_modulo_32": [
+        8,
+        16
+      ],
+      "nonlinear_rational_factor": true
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": "4dcfe39d095d16828558b5314226cb3052f412cf8d8a705ac1e0015041091c64",
+  "scope": "Written pigeonhole/divisibility proof for six residue patterns and all permutations, without exponent-size bounds. Twelve symbolic substitutions verify558coefficients;16independent720term integer determinant expansions agree with Horner. Lower-modulus finite checks record only splitting compatibility, not integrality. No exponent scan, numerical spectrum or Lean. FullQ3 remains open."
+}

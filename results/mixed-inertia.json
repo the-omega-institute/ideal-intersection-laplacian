@@ -1,0 +1,234 @@
+{
+  "comparison_determinant": "6*(c*(a-b)^2+b*(a-c)^2+a*(b-c)^2)",
+  "comparison_negative_rayleigh": "-3abc*(1/a+1/b+1/c)",
+  "schur_comparison_gap": "diag(3+9abc/[t^2*(t-3)]) is positive definite for a>3",
+  "general_symbolic_identities": "passed",
+  "general_low_root_bound": "Every ordered4<=a<=b<=c has a nonzero complement quotient root in(0,3)",
+  "mixed_inertia_formula": "For0<x<a and all k_t(x) nonzero: n_minus(K)=number_of_negative_k_t+indicator(1-sum(t/k_t)<0)",
+  "interval_criterion": "(a-2)(a+b+c-2)>2bc implies a complement root in(2,3)",
+  "span_threshold": "minimum a>=3r+8, r=maximum-minus-minimum, implies nonintegrality",
+  "threshold_positive_expansion": "r**2 + 4*r*u + 4*r + u**2 + 8*u + 4",
+  "secular_formula_sturm_representatives": [
+    {
+      "exponents": [
+        20,
+        21,
+        24
+      ],
+      "endpoint": 2,
+      "schur_diagonal": [
+        "7",
+        "237/19",
+        "273/11"
+      ],
+      "negative_diagonal_entries": 0,
+      "secular_factor": "-32406/7189",
+      "positive_root_count_below_endpoint": 0
+    },
+    {
+      "exponents": [
+        20,
+        21,
+        30
+      ],
+      "endpoint": 2,
+      "schur_diagonal": [
+        "-1",
+        "111/19",
+        "39"
+      ],
+      "negative_diagonal_entries": 1,
+      "secular_factor": "8002/481",
+      "positive_root_count_below_endpoint": 0
+    },
+    {
+      "exponents": [
+        8,
+        100,
+        10000
+      ],
+      "endpoint": 3,
+      "schur_diagonal": [
+        "-589895",
+        "740185/97",
+        "101017285/9997"
+      ],
+      "negative_diagonal_entries": 1,
+      "secular_factor": "-4805732653908273/1764292866494099555",
+      "positive_root_count_below_endpoint": 1
+    },
+    {
+      "exponents": [
+        20,
+        21,
+        30
+      ],
+      "endpoint": 3,
+      "schur_diagonal": [
+        "-734/17",
+        "-32",
+        "64/3"
+      ],
+      "negative_diagonal_entries": 2,
+      "secular_factor": "1047/1468",
+      "positive_root_count_below_endpoint": 1
+    },
+    {
+      "exponents": [
+        100,
+        102,
+        104
+      ],
+      "endpoint": 3,
+      "schur_diagonal": [
+        "-2433/97",
+        "-401/33",
+        "3/101"
+      ],
+      "negative_diagonal_entries": 2,
+      "secular_factor": "-1134320511/325211",
+      "positive_root_count_below_endpoint": 2
+    },
+    {
+      "exponents": [
+        4,
+        5,
+        6
+      ],
+      "endpoint": 3,
+      "schur_diagonal": [
+        "-78",
+        "-24",
+        "-8"
+      ],
+      "negative_diagonal_entries": 3,
+      "secular_factor": "209/104",
+      "positive_root_count_below_endpoint": 2
+    }
+  ],
+  "independent_quotient_sturm_representatives": [
+    {
+      "exponents": [
+        4,
+        5,
+        6
+      ],
+      "quintic": "x**5 - 119*x**4 + 4769*x**3 - 69241*x**2 + 201270*x - 160200",
+      "positive_roots_below_three": 2,
+      "lower_condition": -34,
+      "positive_roots_below_two": null,
+      "roots_between_two_and_three": null,
+      "zero_schur_diagonal_entries_at_three": 0
+    },
+    {
+      "exponents": [
+        8,
+        8,
+        8
+      ],
+      "quintic": "x**5 - 264*x**4 + 23424*x**3 - 728064*x**2 + 2691072*x - 2654208",
+      "positive_roots_below_three": 1,
+      "lower_condition": 4,
+      "positive_roots_below_two": 0,
+      "roots_between_two_and_three": 1,
+      "zero_schur_diagonal_entries_at_three": 0
+    },
+    {
+      "exponents": [
+        8,
+        8,
+        11
+      ],
+      "quintic": "x**5 - 321*x**4 + 34395*x**3 - 1274739*x**2 + 5012208*x - 5075136",
+      "positive_roots_below_three": 2,
+      "lower_condition": -26,
+      "positive_roots_below_two": null,
+      "roots_between_two_and_three": null,
+      "zero_schur_diagonal_entries_at_three": 1
+    },
+    {
+      "exponents": [
+        8,
+        15,
+        20
+      ],
+      "quintic": "x**5 - 709*x**4 + 159207*x**3 - 11738207*x**2 + 59712020*x - 64293600",
+      "positive_roots_below_three": 1,
+      "lower_condition": -354,
+      "positive_roots_below_two": null,
+      "roots_between_two_and_three": null,
+      "zero_schur_diagonal_entries_at_three": 1
+    },
+    {
+      "exponents": [
+        8,
+        100,
+        10000
+      ],
+      "quintic": "x**5 - 1111124*x**4 + 103021048592*x**3 - 994023183723712*x**2 + 99132490755571200*x - 88215184512000000",
+      "positive_roots_below_three": 1,
+      "lower_condition": -1939364,
+      "positive_roots_below_two": null,
+      "roots_between_two_and_three": null,
+      "zero_schur_diagonal_entries_at_three": 0
+    },
+    {
+      "exponents": [
+        20,
+        21,
+        24
+      ],
+      "quintic": "x**5 - 1599*x**4 + 851799*x**3 - 152564741*x**2 + 764605260*x - 962488800",
+      "positive_roots_below_three": 2,
+      "lower_condition": 126,
+      "positive_roots_below_two": 0,
+      "roots_between_two_and_three": 2,
+      "zero_schur_diagonal_entries_at_three": 0
+    },
+    {
+      "exponents": [
+        38,
+        43,
+        48
+      ],
+      "quintic": "x**5 - 5909*x**4 + 11597849*x**3 - 7582799419*x**2 + 41894117142*x - 57175280928",
+      "positive_roots_below_three": 1,
+      "lower_condition": 444,
+      "positive_roots_below_two": 0,
+      "roots_between_two_and_three": 1,
+      "zero_schur_diagonal_entries_at_three": 0
+    },
+    {
+      "exponents": [
+        308,
+        350,
+        408
+      ],
+      "quintic": "x**5 - 379462*x**4 + 47691218580*x**3 - 1985002375878824*x**2 + 12005861667285920*x - 17691207005472000",
+      "positive_roots_below_three": 1,
+      "lower_condition": 39984,
+      "positive_roots_below_two": 0,
+      "roots_between_two_and_three": 1,
+      "zero_schur_diagonal_entries_at_three": 0
+    },
+    {
+      "exponents": [
+        3008,
+        3600,
+        4008
+      ],
+      "quintic": "x**5 - 37345512*x**4 + 461546450652480*x**3 - 1888615844317066663424*x**2 + 11557662376007481630720*x - 17197305018964180992000",
+      "positive_roots_below_three": 1,
+      "lower_condition": 3048084,
+      "positive_roots_below_two": 0,
+      "roots_between_two_and_three": 1,
+      "zero_schur_diagonal_entries_at_three": 0
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_mixed_inertia.py": "fcf4f3f9a5893febc868f5b85a0fee4537a5eb1edeaa88015180be11b24582c2",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Written general comparison/inertia proof and balanced-region theorem. Exact symbolic3x3determinant, negative Rayleigh, comparison-gap and span identities; six secular/Sturm fixtures and nine direct quotient/Sturm fixtures, including equal exponents, two zero-diagonal boundaries and arbitrarily large selected spans. Fixtures validate formulas, not infinite quantifiers. No scan, numerical eigenvalues or Lean. FullQ3 remains open."
+}

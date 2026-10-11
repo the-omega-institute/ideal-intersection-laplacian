@@ -1,0 +1,197 @@
+
+==========================================================================================
+Family (a,a,b): diagnostic for Laplacian non-integrality
+==========================================================================================
+Cubic: f(x) = x^3 - E1 x^2 + E2 x - E3, with
+  E1 = 2a^2 + 5ab + 3a + b
+  E2 = a^4 + 7a^3 b + 3a^3 + 8a^2 b^2 + 11a^2 b + 2a^2
+       + 3a b^2 + 2ab
+  E3 = 2a^2 b (a+b+1)(a^2 + 2ab + 2a + b)
+
+Columns:
+  int roots    : integer roots of f_{a,b}
+  irrational?  : True iff f_{a,b} has an irreducible factor
+                 of degree >= 2 over Q
+  factor deg   : degrees of the irreducible factors
+  trapped?     : True iff some real root lies strictly
+                 between two consecutive integers
+  trap value   : consecutive integer endpoints, certified by exact root isolation
+  p_irr        : smallest tested prime (among 2..31) with f mod p irreducible
+
+==========================================================================================
+Part 1: a = 2, b = 1..30
+==========================================================================================
+  a |    b |       int roots | irrational? |   factor deg |  trapped? |    trap value |  p_irr
+------------------------------------------------------------------------------------------
+  2 |    1 |               - |        True |            3 |      True |         (3,4) |      3
+  2 |    2 |              12 |        True |          1,2 |      True |         (7,8) |      -
+  2 |    3 |               - |        True |            3 |      True |        (9,10) |      5
+  2 |    4 |               - |        True |            3 |      True |       (12,13) |      3
+  2 |    5 |               - |        True |            3 |      True |       (14,15) |      7
+  2 |    6 |              36 |        True |          1,2 |      True |       (16,17) |      -
+  2 |    7 |               - |        True |            3 |      True |       (18,19) |      3
+  2 |    8 |               - |        True |            3 |      True |       (20,21) |      5
+  2 |    9 |               - |        True |            3 |      True |       (22,23) |      5
+  2 |   10 |               - |        True |            3 |      True |       (24,25) |      3
+  2 |   11 |               - |        True |            3 |      True |       (27,28) |     13
+  2 |   12 |               - |        True |            3 |      True |       (29,30) |      7
+  2 |   13 |               - |        True |            3 |      True |       (31,32) |      3
+  2 |   14 |               - |        True |            3 |      True |       (33,34) |      5
+  2 |   15 |               - |        True |            3 |      True |       (35,36) |      7
+  2 |   16 |               - |        True |            3 |      True |       (37,38) |      3
+  2 |   17 |               - |        True |            3 |      True |       (39,40) |      7
+  2 |   18 |               - |        True |            3 |      True |       (41,42) |      5
+  2 |   19 |               - |        True |            3 |      True |       (43,44) |      3
+  2 |   20 |               - |        True |            3 |      True |       (45,46) |     13
+  2 |   21 |               - |        True |            3 |      True |       (47,48) |     11
+  2 |   22 |               - |        True |            3 |      True |       (49,50) |      3
+  2 |   23 |               - |        True |            3 |      True |       (51,52) |      5
+  2 |   24 |               - |        True |            3 |      True |       (53,54) |      5
+  2 |   25 |               - |        True |            3 |      True |       (55,56) |      3
+  2 |   26 |               - |        True |            3 |      True |       (57,58) |      7
+  2 |   27 |               - |        True |            3 |      True |       (59,60) |     17
+  2 |   28 |               - |        True |            3 |      True |       (61,62) |      3
+  2 |   29 |               - |        True |            3 |      True |       (63,64) |      5
+  2 |   30 |               - |        True |            3 |      True |       (65,66) |     13
+
+==========================================================================================
+Part 2: a = 3, b = 1..30
+==========================================================================================
+  a |    b |       int roots | irrational? |   factor deg |  trapped? |    trap value |  p_irr
+------------------------------------------------------------------------------------------
+  3 |    1 |               - |        True |            3 |      True |         (5,6) |      7
+  3 |    2 |               - |        True |            3 |      True |       (11,12) |      7
+  3 |    3 |              24 |        True |          1,2 |      True |       (16,17) |      -
+  3 |    4 |               - |        True |            3 |      True |       (20,21) |      7
+  3 |    5 |               - |        True |            3 |      True |       (24,25) |     11
+  3 |    6 |               - |        True |            3 |      True |       (27,28) |      7
+  3 |    7 |               - |        True |            3 |      True |       (31,32) |     13
+  3 |    8 |               - |        True |            3 |      True |       (34,35) |      7
+  3 |    9 |               - |        True |            3 |      True |       (37,38) |      7
+  3 |   10 |               - |        True |            3 |      True |       (40,41) |     13
+  3 |   11 |               - |        True |            3 |      True |       (43,44) |      7
+  3 |   12 |              96 |        True |          1,2 |      True |       (46,47) |      -
+  3 |   13 |               - |        True |            3 |      True |       (49,50) |      7
+  3 |   14 |               - |        True |            3 |      True |       (52,53) |     13
+  3 |   15 |               - |        True |            3 |      True |       (55,56) |      7
+  3 |   16 |               - |        True |            3 |      True |       (58,59) |      7
+  3 |   17 |               - |        True |            3 |      True |       (61,62) |     11
+  3 |   18 |               - |        True |            3 |      True |       (64,65) |      7
+  3 |   19 |               - |        True |            3 |      True |       (67,68) |     13
+  3 |   20 |               - |        True |            3 |      True |       (70,71) |      7
+  3 |   21 |               - |        True |            3 |      True |       (73,74) |     13
+  3 |   22 |               - |        True |            3 |      True |       (76,77) |      7
+  3 |   23 |               - |        True |            3 |      True |       (80,81) |      7
+  3 |   24 |               - |        True |            3 |      True |       (83,84) |     13
+  3 |   25 |               - |        True |            3 |      True |       (86,87) |      7
+  3 |   26 |               - |        True |            3 |      True |       (89,90) |     11
+  3 |   27 |               - |        True |            3 |      True |       (92,93) |      7
+  3 |   28 |               - |        True |            3 |      True |       (95,96) |     11
+  3 |   29 |               - |        True |            3 |      True |       (98,99) |      7
+  3 |   30 |               - |        True |            3 |      True |     (101,102) |      7
+
+==========================================================================================
+Part 3: a = 4, b = 1..30
+==========================================================================================
+  a |    b |       int roots | irrational? |   factor deg |  trapped? |    trap value |  p_irr
+------------------------------------------------------------------------------------------
+  4 |    1 |               - |        True |            3 |      True |         (7,8) |      5
+  4 |    2 |               - |        True |            3 |      True |       (15,16) |      5
+  4 |    3 |               - |        True |            3 |      True |       (22,23) |      5
+  4 |    4 |              40 |        True |          1,2 |      True |       (29,30) |      -
+  4 |    5 |               - |        True |            3 |      True |       (35,36) |      7
+  4 |    6 |               - |        True |            3 |      True |       (40,41) |      5
+  4 |    7 |               - |        True |            3 |      True |       (45,46) |      5
+  4 |    8 |               - |        True |            3 |      True |       (49,50) |      5
+  4 |    9 |               - |        True |            3 |      True |       (53,54) |     17
+  4 |   10 |               - |        True |            3 |      True |       (58,59) |      7
+  4 |   11 |               - |        True |            3 |      True |       (62,63) |      5
+  4 |   12 |               - |        True |            3 |      True |       (66,67) |      5
+  4 |   13 |               - |        True |            3 |      True |       (70,71) |      5
+  4 |   14 |               - |        True |            3 |      True |       (74,75) |     23
+  4 |   15 |               - |        True |            3 |      True |       (78,79) |      7
+  4 |   16 |               - |        True |            3 |      True |       (82,83) |      5
+  4 |   17 |               - |        True |            3 |      True |       (86,87) |      5
+  4 |   18 |               - |        True |            3 |      True |       (90,91) |      5
+  4 |   19 |               - |        True |            3 |      True |       (94,95) |      7
+  4 |   20 |             200 |        True |          1,2 |      True |       (98,99) |      -
+  4 |   21 |               - |        True |            3 |      True |     (102,103) |      5
+  4 |   22 |               - |        True |            3 |      True |     (106,107) |      5
+  4 |   23 |               - |        True |            3 |      True |     (110,111) |      5
+  4 |   24 |               - |        True |            3 |      True |     (114,115) |      7
+  4 |   25 |               - |        True |            3 |      True |     (118,119) |     13
+  4 |   26 |               - |        True |            3 |      True |     (122,123) |      5
+  4 |   27 |               - |        True |            3 |      True |     (126,127) |      5
+  4 |   28 |               - |        True |            3 |      True |     (130,131) |      5
+  4 |   29 |               - |        True |            3 |      True |     (134,135) |      7
+  4 |   30 |               - |        True |            3 |      True |     (138,139) |     11
+
+==========================================================================================
+Part 4: special parametric sub-families
+==========================================================================================
+
+--- Family b = a + 1, a = 2..15 ---
+  a |    b |       int roots | irrational? |   factor deg |  trapped? |    trap value |  p_irr
+------------------------------------------------------------------------------------------
+  2 |    3 |               - |        True |            3 |      True |        (9,10) |      5
+  3 |    4 |               - |        True |            3 |      True |       (20,21) |      7
+  4 |    5 |               - |        True |            3 |      True |       (35,36) |      7
+  5 |    6 |               - |        True |            3 |      True |       (54,55) |     11
+  6 |    7 |               - |        True |            3 |      True |       (76,77) |     11
+  7 |    8 |               - |        True |            3 |      True |     (103,104) |      5
+  8 |    9 |               - |        True |            3 |      True |     (134,135) |     13
+  9 |   10 |               - |        True |            3 |      True |     (168,169) |      7
+ 10 |   11 |               - |        True |            3 |      True |     (207,208) |      7
+ 11 |   12 |               - |        True |            3 |      True |     (250,251) |      7
+ 12 |   13 |               - |        True |            3 |      True |     (296,297) |      5
+ 13 |   14 |               - |        True |            3 |      True |     (347,348) |     11
+ 14 |   15 |               - |        True |            3 |      True |     (401,402) |     11
+ 15 |   16 |               - |        True |            3 |      True |     (460,461) |     13
+
+--- Family b = (a-1)(2a-1), a = 2..12 ---
+  a |    b |       int roots | irrational? |   factor deg |  trapped? |    trap value |  p_irr
+------------------------------------------------------------------------------------------
+  2 |    3 |               - |        True |            3 |      True |        (9,10) |      5
+  3 |   10 |               - |        True |            3 |      True |       (40,41) |     13
+  4 |   21 |               - |        True |            3 |      True |     (102,103) |      5
+  5 |   36 |               - |        True |            3 |      True |     (208,209) |     11
+  6 |   55 |               - |        True |            3 |      True |     (370,371) |     19
+  7 |   78 |               - |        True |            3 |      True |     (600,601) |      5
+  8 |  105 |               - |        True |            3 |      True |     (910,911) |     13
+  9 |  136 |               - |        True |            3 |      True |   (1312,1313) |      5
+ 10 |  171 |               - |        True |            3 |      True |   (1818,1819) |     17
+ 11 |  210 |               - |        True |            3 |      True |   (2440,2441) |     19
+ 12 |  253 |               - |        True |            3 |      True |   (3190,3191) |      5
+
+--- Family b = 2a - 1, a = 2..15 ---
+  a |    b |       int roots | irrational? |   factor deg |  trapped? |    trap value |  p_irr
+------------------------------------------------------------------------------------------
+  2 |    3 |               - |        True |            3 |      True |        (9,10) |      5
+  3 |    5 |               - |        True |            3 |      True |       (24,25) |     11
+  4 |    7 |               - |        True |            3 |      True |       (45,46) |      5
+  5 |    9 |               - |        True |            3 |      True |       (72,73) |     11
+  6 |   11 |               - |        True |            3 |      True |     (105,106) |     13
+  7 |   13 |               - |        True |            3 |      True |     (143,144) |      5
+  8 |   15 |               - |        True |            3 |      True |     (188,189) |     11
+  9 |   17 |               - |        True |            3 |      True |     (239,240) |      5
+ 10 |   19 |               - |        True |            3 |      True |     (296,297) |     11
+ 11 |   21 |               - |        True |            3 |      True |     (359,360) |     23
+ 12 |   23 |               - |        True |            3 |      True |     (428,429) |      5
+ 13 |   25 |               - |        True |            3 |      True |     (503,504) |     11
+ 14 |   27 |               - |        True |            3 |      True |     (584,585) |      5
+ 15 |   29 |               - |        True |            3 |      True |     (671,672) |     11
+
+==========================================================================================
+Summary
+==========================================================================================
+a = 2, b = 1..30: irrational in 30/30, trapped in 30/30
+a = 3, b = 1..30: irrational in 30/30, trapped in 30/30
+a = 4, b = 1..30: irrational in 30/30, trapped in 30/30
+
+Interpretation:
+  - If 'irrational?' is True for all (a,b), the cubic always
+    has a non-integer root, so the graph is not integral.
+  - If 'trapped?' is True for all (a,b), the non-integer root
+    is always located between two consecutive integers.
+  - If 'p_irr' is a small prime for all (a,b), a modular
+    irreducibility argument may close the family.

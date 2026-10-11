@@ -1,0 +1,78 @@
+{
+  "statement": "For every ordered positive real triple0<a<=b<=c, the complement quotient has a positive root strictly below3",
+  "direct_weighted_symmetry_and_block_identity": "passed",
+  "two_small_parameters_negative_trial_subspace": "passed generically",
+  "one_small_parameter_compression_rayleigh_and_determinant": "passed generically,including a=3 without division by a-3",
+  "retained_a_greater_than_three_comparison_identities": "passed",
+  "fixed_exact_root_counts": [
+    {
+      "parameters": [
+        "1/2",
+        "1",
+        "2"
+      ],
+      "positive_roots_strictly_below_three": 3,
+      "root_three_multiplicity_excluded": 0
+    },
+    {
+      "parameters": [
+        "1",
+        "3",
+        "4"
+      ],
+      "positive_roots_strictly_below_three": 2,
+      "root_three_multiplicity_excluded": 0
+    },
+    {
+      "parameters": [
+        "2",
+        "4",
+        "5"
+      ],
+      "positive_roots_strictly_below_three": 2,
+      "root_three_multiplicity_excluded": 0
+    },
+    {
+      "parameters": [
+        "3",
+        "4",
+        "5"
+      ],
+      "positive_roots_strictly_below_three": 2,
+      "root_three_multiplicity_excluded": 0
+    },
+    {
+      "parameters": [
+        "3",
+        "6",
+        "9"
+      ],
+      "positive_roots_strictly_below_three": 1,
+      "root_three_multiplicity_excluded": 1
+    },
+    {
+      "parameters": [
+        "7/2",
+        "4",
+        "5"
+      ],
+      "positive_roots_strictly_below_three": 2,
+      "root_three_multiplicity_excluded": 0
+    },
+    {
+      "parameters": [
+        "4",
+        "4",
+        "4"
+      ],
+      "positive_roots_strictly_below_three": 2,
+      "root_three_multiplicity_excluded": 0
+    }
+  ],
+  "sharp_uniform_constant": 3,
+  "equal_parameter_factorization_and_lowest_root_limit": "passed generically and exactly",
+  "current_manuscript_statement": "passed",
+  "sympy": "1.14.0",
+  "scope": "Written three-case inertia proof covers all positive reals; principal trial and compressed determinant identities include singular a=3. Seven fixed exact rational/integer controls count multiplicities and exclude roots exactly3. Equal-parameter family proves constant3optimal by its lowest-root limit. Shared set-disjointness support constructor and SymPy,no original characteristic helper. No parameter scan,new finite base,historical finite-base rerun,floats or Lean. Classification finite inputs and balanced-interval corollary retain their scopes.",
+  "status": "passed"
+}

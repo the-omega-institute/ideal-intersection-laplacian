@@ -1,0 +1,175 @@
+\section{Complete endpoint-two positive identities and finite base}
+\label{sec:endpoint-two-identities}
+
+This appendix supplies all coefficients used in
+Lemma~\ref{lem:endpoint-two-rectangle} and
+Theorem~\ref{thm:endpoint-two-completion}. A vector
+$[v_0,\ldots,v_k]$ represents $\sum_{\ell=0}^k v_\ell m^\ell$.
+The identities are coefficient identities for the generic quotient,
+rather than values sampled at exponent triples.
+
+\subsection{Maximum-bound residual}
+
+For $a=8+m$, $b=[a+(2a-2)t]/(1+t)$ and $c=9a/4-8+v$,
+define $P$ by
+\begin{align*}
+64(1+t)^3h_C(2)
+ &=9m^6(1+2t)\bigl[14(1-t)^2+5t+t^2\bigr]\\
+ &\quad+308m^5t(t-1)^2+P(m,t,v).
+\end{align*}
+The complete expansion $P=\sum_{i,j=0}^3 P_{ij}(m)t^iv^j$ is:
+\begin{center}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{rrp{0.86\linewidth}}
+\toprule
+$i$ & $j$ & Coefficients in ascending powers of $m$ \\
+\midrule
+0 & 0 & $[3014656,\allowbreak 4968448,\allowbreak 2878080,\allowbreak 766780,\allowbreak 100060,\allowbreak 6027]$ \\
+0 & 1 & $[3489792,\allowbreak 4092928,\allowbreak 1603664,\allowbreak 277392,\allowbreak 21796,\allowbreak 632]$ \\
+0 & 2 & $[1124352,\allowbreak 751424,\allowbreak 170816,\allowbreak 16144,\allowbreak 544]$ \\
+0 & 3 & $[75520,\allowbreak 27392,\allowbreak 3264,\allowbreak 128]$ \\
+1 & 0 & $[393216,\allowbreak 3104768,\allowbreak 2984064,\allowbreak 974712,\allowbreak 131516,\allowbreak 6322]$ \\
+1 & 1 & $[7569408,\allowbreak 11273216,\allowbreak 4914464,\allowbreak 907536,\allowbreak 74792,\allowbreak 2252]$ \\
+1 & 2 & $[4098048,\allowbreak 2845312,\allowbreak 670016,\allowbreak 65568,\allowbreak 2288]$ \\
+1 & 3 & $[308736,\allowbreak 115456,\allowbreak 14208,\allowbreak 576]$ \\
+2 & 0 & $[19243008,\allowbreak 14490880,\allowbreak 5200064,\allowbreak 995716,\allowbreak 79824,\allowbreak 1]$ \\
+2 & 1 & $[6706176,\allowbreak 11799040,\allowbreak 5473584,\allowbreak 1047616,\allowbreak 88300,\allowbreak 2684]$ \\
+2 & 2 & $[5053440,\allowbreak 3608768,\allowbreak 872192,\allowbreak 87472,\allowbreak 3120]$ \\
+2 & 3 & $[413952,\allowbreak 158720,\allowbreak 20032,\allowbreak 832]$ \\
+3 & 0 & $[44646400,\allowbreak 39516672,\allowbreak 14832512,\allowbreak 2952456,\allowbreak 316272,\allowbreak 15946]$ \\
+3 & 1 & $[6137856,\allowbreak 7480320,\allowbreak 3084384,\allowbreak 563904,\allowbreak 46760,\allowbreak 1416]$ \\
+3 & 2 & $[2217984,\allowbreak 1597824,\allowbreak 391424,\allowbreak 39840,\allowbreak 1440]$ \\
+3 & 3 & $[180736,\allowbreak 70656,\allowbreak 9088,\allowbreak 384]$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+There are $84$ nonzero coefficients, all strictly positive, and the
+constant is $3\,014\,656$.
+
+\clearpage
+\subsection{The sign difference at five}
+
+With $s=a+b+c$, $p=ab+ac+bc$ and $r=abc$, direct expansion gives
+\begin{align*}
+D_5=4h_C(2)-h_C(5)
+ &=9s^3+12s^2p+6s^2r+3sp^2+9p^2+3pr\\
+ &\quad-279s^2-168sp-87sr+1683s+468p+9r-2997.
+\end{align*}
+For $a=8+m,b=8+t,c=8+u$, write
+$D_5=\sum_{i,j=0}^3 V_{ij}(m)t^iu^j$. Its full coefficient vectors are:
+\begin{center}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{rrp{0.86\linewidth}}
+\toprule
+$i$ & $j$ & Coefficients in ascending powers of $m$ \\
+\midrule
+0 & 0 & $[4629843,\allowbreak 996483,\allowbreak 67377,\allowbreak 1353]$ \\
+0 & 1 & $[996483,\allowbreak 186366,\allowbreak 10395,\allowbreak 156]$ \\
+0 & 2 & $[67377,\allowbreak 10395,\allowbreak 417,\allowbreak 3]$ \\
+0 & 3 & $[1353,\allowbreak 156,\allowbreak 3]$ \\
+1 & 0 & $[996483,\allowbreak 186366,\allowbreak 10395,\allowbreak 156]$ \\
+1 & 1 & $[186366,\allowbreak 29079,\allowbreak 1239,\allowbreak 12]$ \\
+1 & 2 & $[10395,\allowbreak 1239,\allowbreak 30]$ \\
+1 & 3 & $[156,\allowbreak 12]$ \\
+2 & 0 & $[67377,\allowbreak 10395,\allowbreak 417,\allowbreak 3]$ \\
+2 & 1 & $[10395,\allowbreak 1239,\allowbreak 30]$ \\
+2 & 2 & $[417,\allowbreak 30]$ \\
+2 & 3 & $[3]$ \\
+3 & 0 & $[1353,\allowbreak 156,\allowbreak 3]$ \\
+3 & 1 & $[156,\allowbreak 12]$ \\
+3 & 2 & $[3]$ \\
+3 & 3 & $[0]$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+The zero vector is an absent component. All $44$ nonzero coefficients
+are strictly positive, including constant $4\,629\,843$. This establishes
+$h_C(5)<0$ on endpoint two for all exponents at least eight.
+
+\clearpage
+\subsection{The sign difference at four}
+
+The corresponding generic identity is
+\begin{align*}
+D_4=h_C(4)-3h_C(2)
+ &=2r^2-2s^2r-2sp^2-2pr-6s^2p-4s^3\\
+ &\quad+120s^2+72sp+36sr-624s-4p^2-168p-4r+928.
+\end{align*}
+For $a=40+m$, $b=a(1+2t)/(1+t)$ and $c=a(4+9u)/(4(1+u))$,
+the polynomial $64(1+t)^3(1+u)^3D_4=\sum_{i,j=0}^3 U_{ij}(m)t^iu^j$
+has the following complete coefficient vectors:
+\begin{center}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{rrp{0.86\linewidth}}
+\toprule
+$i$ & $j$ & Coefficients in ascending powers of $m$ \\
+\midrule
+0 & 0 & $[611305472,\allowbreak 13438528512,\allowbreak 1669177344,\allowbreak 83080704,\allowbreak 2067840,\allowbreak 25728,\allowbreak 128]$ \\
+0 & 1 & $[225809391616,\allowbreak 101554217216,\allowbreak 10552548352,\allowbreak 490948992,\allowbreak 11793920,\allowbreak 143584,\allowbreak 704]$ \\
+0 & 2 & $[575935266816,\allowbreak 199453648896,\allowbreak 19487672672,\allowbreak 881946672,\allowbreak 20857320,\allowbreak 251384,\allowbreak 1224]$ \\
+0 & 3 & $[218865180672,\allowbreak 94951560192,\allowbreak 9789841664,\allowbreak 453837884,\allowbreak 10879740,\allowbreak 132278,\allowbreak 648]$ \\
+1 & 0 & $[181014296576,\allowbreak 89306490880,\allowbreak 9443545088,\allowbreak 442607616,\allowbreak 10675840,\allowbreak 130304,\allowbreak 640]$ \\
+1 & 1 & $[2226833891328,\allowbreak 644107380480,\allowbreak 59528518784,\allowbreak 2622449728,\allowbreak 61045920,\allowbreak 728192,\allowbreak 3520]$ \\
+1 & 2 & $[5054388092928,\allowbreak 1267215288320,\allowbreak 110831526304,\allowbreak 4741723008,\allowbreak 108398120,\allowbreak 1277272,\allowbreak 6120]$ \\
+1 & 3 & $[2483032498176,\allowbreak 647063198720,\allowbreak 57495972608,\allowbreak 2481039396,\allowbreak 57022790,\allowbreak 674384,\allowbreak 3240]$ \\
+2 & 0 & $[440930932736,\allowbreak 161760308224,\allowbreak 16049227264,\allowbreak 731519232,\allowbreak 17370880,\allowbreak 209920,\allowbreak 1024]$ \\
+2 & 1 & $[4630697975808,\allowbreak 1163490925312,\allowbreak 101856239872,\allowbreak 4360110016,\allowbreak 99710080,\allowbreak 1175200,\allowbreak 5632]$ \\
+2 & 2 & $[10376062353408,\allowbreak 2312188925952,\allowbreak 191477361952,\allowbreak 7938026736,\allowbreak 177794520,\allowbreak 2065240,\allowbreak 9792]$ \\
+2 & 3 & $[5505239310336,\allowbreak 1225715108864,\allowbreak 101452569344,\allowbreak 4204474452,\allowbreak 94149320,\allowbreak 1093460,\allowbreak 5184]$ \\
+3 & 0 & $[193009477632,\allowbreak 77502509056,\allowbreak 7857856000,\allowbreak 361629184,\allowbreak 8634112,\allowbreak 104704,\allowbreak 512]$ \\
+3 & 1 & $[2343969284096,\allowbreak 585405371648,\allowbreak 51112650880,\allowbreak 2184643072,\allowbreak 49911296,\allowbreak 587872,\allowbreak 2816]$ \\
+3 & 2 & $[5508276535296,\allowbreak 1195972016128,\allowbreak 97721281760,\allowbreak 4018207392,\allowbreak 89506456,\allowbreak 1035632,\allowbreak 4896]$ \\
+3 & 3 & $[3069924728832,\allowbreak 652290753536,\allowbreak 52684826880,\allowbreak 2150833004,\allowbreak 47677022,\allowbreak 549714,\allowbreak 2592]$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+All $112$ nonzero coefficients are strictly positive, including constant
+$611\,305\,472$. On the rectangle furnished by
+Lemma~\ref{lem:endpoint-two-rectangle}, this establishes $h_C(4)>0$
+on endpoint two at minimum at least forty.
+
+\clearpage
+\subsection{Complete necessary integer base}
+
+The base is exactly $8\leq a\leq39$, $a<b<2a-2$,
+$b<c<9a/4-8$. Its per-minimum counts are given below; every row has
+zero endpoint-two zeros. The largest integer $c$ is
+$\lfloor(9a-33)/4\rfloor$.
+\begin{center}
+\begin{tabular}{rrrr}
+\toprule
+$a$ & Triples & $a$ & Triples \\
+\midrule
+8 & 0 & 24 & 210 \\
+9 & 3 & 25 & 253 \\
+10 & 6 & 26 & 276 \\
+11 & 10 & 27 & 300 \\
+12 & 15 & 28 & 325 \\
+13 & 28 & 29 & 377 \\
+14 & 36 & 30 & 405 \\
+15 & 45 & 31 & 434 \\
+16 & 55 & 32 & 464 \\
+17 & 78 & 33 & 525 \\
+18 & 91 & 34 & 558 \\
+19 & 105 & 35 & 592 \\
+20 & 120 & 36 & 627 \\
+21 & 153 & 37 & 697 \\
+22 & 171 & 38 & 735 \\
+23 & 190 & 39 & 774 \\
+\bottomrule
+\end{tabular}
+\end{center}
+The total is $8\,658$, and the smallest absolute endpoint value is
+$8\,208$. Every row of the
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/results/endpoint-two-completion-base.csv}{complete CSV}
+records both integer-Horner $h_C(2)$ and independent
+$6\times6$ Bareiss $\det(2I-C)=2h_C(2)$. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/results/endpoint-two-completion.json}{certificate}
+records the CSV hash, source hashes, per-minimum counts and direct checks.
+The repeated control $(10,10,12)$ has $h_C(2)=0$ and $h_C(4)<0$;
+it is outside this fully distinct base and below the real-tail threshold.
+Its nonintegrality follows from the earlier repeated-exponent theorem.
+No $(4,5)$ root bracket is asserted for all smaller minima.

@@ -1,0 +1,173 @@
+\section{A uniform low eigenvalue and a balanced region}
+\label{sec:mixed-inertia}
+
+The Schur complement of Proposition~\ref{prop:low-spectrum} also
+counts roots when its diagonal has mixed signs. A comparison at three
+gives a low eigenvalue for every positive real parameter triple.
+
+\begin{samepage}
+\begin{lemma}
+\label{lem:mixed-inertia}
+For $0<x<a$, let $q$ and $z$ count the negative and zero values among
+the three $k_t(x)$. If $z=0$, put
+\[
+F(x)=1-\frac{a}{k_a(x)}-\frac{b}{k_b(x)}-\frac{c}{k_c(x)}.
+\]
+Then $n_-(K(x))=q+\mathbf1_{\{F(x)<0\}}$ and
+$\operatorname{nullity}K(x)=\mathbf1_{\{F(x)=0\}}$.
+If $z>0$, then
+\[
+n_-(K(x))=q+1,\qquad \operatorname{nullity}K(x)=z-1.
+\]
+The number of positive complement quotient eigenvalues strictly below
+$x$ is $n_-(K(x))-1$, and the multiplicity at $x$ is
+$\operatorname{nullity}K(x)$.
+\end{lemma}
+\end{samepage}
+
+\begin{proof}
+For $z=0$, the bordered matrix
+\[
+\begin{pmatrix}\operatorname{diag}(k_t(x))&v\\v^T&1\end{pmatrix}
+\]
+is congruent both to $K(x)\oplus[1]$ and to
+$\operatorname{diag}(k_t(x))\oplus[F(x)]$. Sylvester's law of inertia
+gives the formulas. If $k_j(x)=0$, change coordinates to
+$w_j=v^Ty$ and $w_i=y_i$ for $i\ne j$. Since $v_j>0$, this is
+invertible, and
+\[
+y^TK(x)y=-w_j^2+\sum_{i\ne j}k_i(x)w_i^2.
+\]
+The singular formulas follow without reciprocals. The block $D-xI$
+is positive definite, and $C$ has a simple zero; congruence and
+subtracting this eigenvalue give the quotient counts and multiplicity.
+\end{proof}
+
+A direct comparison at three supplies a uniform low positive root
+without choosing a diagonal sign pattern.
+
+\begin{theorem}
+\label{thm:uniform-low-root}
+For every ordered real triple $0<a\leq b\leq c$, the six-support
+complement quotient has a nonzero eigenvalue in $(0,3)$.
+\end{theorem}
+
+\begin{proof}
+Use $s=a+b+c$, $P=abc$ and $v=(\sqrt a,\sqrt b,\sqrt c)^T$ from
+Proposition~\ref{prop:low-spectrum}, and define
+\[
+L=\operatorname{diag}\left(s-\frac{3P}{a^2},
+s-\frac{3P}{b^2},s-\frac{3P}{c^2}\right)-vv^T.
+\]
+Expansion of this diagonal-minus-rank-one determinant gives
+\begin{align*}
+\det L&=6\bigl(c(a-b)^2+b(a-c)^2+a(b-c)^2\bigr),\\
+v^TLv&=-3P\left(\frac1a+\frac1b+\frac1c\right)<0.
+\end{align*}
+The determinant and Rayleigh value give exactly two negative eigenvalues
+at unequal parameters. At equal parameters $L=-vv^T$; thus $L$ is
+nonpositive on a two-dimensional subspace in both cases.
+
+For $a>3$, the identity
+\[
+K(3)=L-\operatorname{diag}_{t\in\{a,b,c\}}
+\left(3+\frac{9P}{t^2(t-3)}\right)
+\]
+subtracts a positive definite matrix. Since $D-3I>0$, this gives
+at least two negative eigenvalues of $\mathcal C-3I$.
+
+If $b\leq3$, restrict $\mathcal C-3I$ to the first two singleton
+supports and their paired supports. Its blocks are
+$\bigl[\begin{smallmatrix}A_0&-\sqrt P I_2\\-\sqrt P I_2&D_0\end{smallmatrix}\bigr]$
+with $D_0\leq0$. On vectors $(z,tz)$, the quadratic form is at most
+$z^T(A_0-2t\sqrt P I_2)z$, which is negative definite for large $t$.
+
+It remains to consider $a\leq3<b$. Eliminate the positive paired
+diagonals $b-3,c-3$. On singleton supports $2,3$, the vector
+$(\sqrt b,\sqrt c)$ has quadratic value
+\[
+ q=(a-3)(b+c)-3P\left(\frac1{b-3}+\frac1{c-3}\right)<0.
+\]
+Compress the remaining matrix to singleton $1$, its paired support,
+and this vector. The resulting matrix is
+\[
+ \begin{pmatrix}M&-\sqrt P&r\\-\sqrt P&a-3&0\\r&0&q\end{pmatrix},
+ \quad M=bc+b+c-3>0,\quad r=-\sqrt a(b+c).
+\]
+Its determinant $M(a-3)q-Pq-(a-3)r^2$ is positive.
+Its positive and negative diagonal entries therefore force exactly
+two negative eigenvalues. This includes the singular boundary $a=3$.
+
+In every case $\mathcal C-3I$ has at least two negative eigenvalues.
+Since $\mathcal C$ is positive semidefinite with a simple zero,
+at least one positive eigenvalue lies strictly below three.
+\end{proof}
+
+\begin{corollary}
+\label{cor:balanced-interval}
+For $4\leq a\leq b\leq c$, if
+\begin{equation}
+\label{eq:balanced-interval}
+(a-2)(a+b+c-2)>2bc,
+\end{equation}
+then $C$ has an eigenvalue in $(2,3)$, and $G_{p^a q^b r^c}$ is not
+Laplacian integral. Nonzero values of both $h_C(1)$ and $h_C(2)$ also
+imply nonintegrality. Hence $h_C(1)h_C(2)=0$ is necessary for an integral graph.
+\end{corollary}
+
+\begin{proof}
+Condition~\eqref{eq:balanced-interval} is exactly $k_a(2)>0$, so all
+three diagonal values are positive. As in
+Proposition~\ref{prop:low-spectrum}, congruence turns $K(2)$ into
+$I-zz^T$, with $\|z\|^2=\sum_t t/k_t(2)>1$, since every $k_t(2)<s$.
+It has one negative and two positive eigenvalues and no zero eigenvalue.
+Consequently the only quotient eigenvalue at or below two is zero.
+The positive root below three from Theorem~\ref{thm:uniform-low-root}
+lies in $(2,3)$ and lifts to $(V-3,V-2)$.
+For the endpoint assertion, a positive root in $(0,3)$ can be an integer
+only if it equals one or two, giving the necessary condition.
+\end{proof}
+
+\begin{corollary}
+\label{cor:balanced-span}
+Let $a$ be the minimum exponent and $\rho$ the maximum minus minimum.
+Every positive three-prime exponent triple with
+\[
+a>\rho+4+\sqrt3(\rho+2)
+\]
+gives a nonintegral ideal intersection graph. In particular,
+$a\geq3\rho+8$ still suffices.
+\end{corollary}
+
+\begin{proof}
+Write the ordered triple as $(a,a+d,a+\rho)$ with $0\leq d\leq\rho$.
+The left side minus the right side of~\eqref{eq:balanced-interval} is
+\[
+a^2-2a\rho-8a-2\rho^2-4\rho+4+(\rho-d)(a+2\rho+2).
+\]
+The last term is nonnegative, while the first part factors as
+\[
+\bigl(a-\rho-4-\sqrt3(\rho+2)\bigr)
+\bigl(a-\rho-4+\sqrt3(\rho+2)\bigr).
+\]
+Both factors are positive under the stated bound, which also gives
+$a>4+2\sqrt3>4$. Corollary~\ref{cor:balanced-interval} applies.
+The old linear bound is larger, since
+$3\rho+8-[\rho+4+\sqrt3(\rho+2)]=(2-\sqrt3)(\rho+2)>0$.
+\end{proof}
+
+The new threshold is exact for guaranteeing the strict diagonal
+criterion~\eqref{eq:balanced-interval} from the minimum and span alone:
+at fixed $a,\rho$ its left side minus right side is minimized by
+$b=c=a+\rho$, and it vanishes at the displayed threshold.
+This optimality concerns that sufficient criterion, not the entire
+spectral region where a root lies in $(2,3)$. For example,
+$(35,45,45)$ and $(281,381,381)$ satisfy the new bound but not
+$a\geq3\rho+8$.
+
+For example, $(20,21,24)$, $(38,43,48)$ and $(308,350,408)$ satisfy
+the span criterion and lie outside the four fixed-gap families of
+Theorem~\ref{thm:bounded-gaps}. The argument allows an unbounded span
+and uses no exponent scan or modular endpoint certificate. The necessary
+endpoint-zero condition is not sufficient for integrality: those
+triples may still have other noninteger quotient eigenvalues.

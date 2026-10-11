@@ -1,0 +1,121 @@
+{
+  "endpoint_two_coefficients_in_middle_exponent": [
+    "a*c*(a + c - 1) + 2*a*(a - 1) + 2*c*(c - 1) - 4",
+    "c**2*(-7*a**2 + 2*a + c*(a + 2) - 8) + c*(a**3 + 2*a**2 - 6*a - 4) + (2*a - 4)*(a**2 - 2*a - 6)",
+    "(a - 2)*(c - 2)*(a**2*c + a**2 + a*c**2 + 6*a*c + 4*a + c**2 + 4*c - 12)",
+    "(2*a - 4)*(c - 2)*(a + c - 2)*(a*c + a + c - 2)"
+  ],
+  "strict_cutoff": "h_C(2)=0 implies c<7a-16+40/(a+2), for4<=a<=b<=c",
+  "all_even_tail": "c>=7a-16+40/(a+2) is nonintegral for all-even triples with minimum>=4; c>=7a-12 suffices at minimum>=8",
+  "positive_shift_certificates": [
+    {
+      "expression": "leading",
+      "shifted_polynomial": "a**2*c + 6*a**2 + a*c**2 + 15*a*c + 58*a + 6*c**2 + 58*c + 156",
+      "strictly_positive_coefficients": 8
+    },
+    {
+      "expression": "linear",
+      "shifted_polynomial": "a**3*c**2 + 7*a**3*c + 10*a**3 + a**2*c**3 + 26*a**2*c**2 + 142*a**2*c + 188*a**2 + 7*a*c**3 + 142*a*c**2 + 700*a*c + 888*a + 10*c**3 + 188*c**2 + 888*c + 1104",
+      "strictly_positive_coefficients": 15
+    },
+    {
+      "expression": "constant",
+      "shifted_polynomial": "2*a**3*c**2 + 14*a**3*c + 20*a**3 + 2*a**2*c**3 + 40*a**2*c**2 + 196*a**2*c + 248*a**2 + 14*a*c**3 + 196*a*c**2 + 808*a*c + 944*a + 20*c**3 + 248*c**2 + 944*c + 1056",
+      "strictly_positive_coefficients": 15
+    },
+    {
+      "expression": "quadratic_remainder_linear",
+      "shifted_polynomial": "a**3 + 14*a**2 + 58*a + 68",
+      "strictly_positive_coefficients": 4
+    },
+    {
+      "expression": "quadratic_remainder_constant",
+      "shifted_polynomial": "2*a**3 + 16*a**2 + 28*a + 8",
+      "strictly_positive_coefficients": 4
+    }
+  ],
+  "endpoint_constant_terms_in_largest_exponent": {
+    "1": "(a - 1)*(b - 1)*(a + b - 1)*(a*b + a + b - 1)",
+    "2": "(2*a - 4)*(b - 2)*(a + b - 2)*(a*b + a + b - 2)"
+  },
+  "direct_quotient_fixtures": [
+    {
+      "exponents": [
+        8,
+        10,
+        44
+      ],
+      "cutoff": "44",
+      "endpoint_values_at_0_1_2": [
+        -203836160,
+        -26746277,
+        91594240
+      ],
+      "exact_roots_in_open_interval_0_2": 1,
+      "even_integer_quotient_entries": true,
+      "outside_prior_quadratic_tail_and_balanced_region": true
+    },
+    {
+      "exponents": [
+        10,
+        14,
+        58
+      ],
+      "cutoff": "172/3",
+      "endpoint_values_at_0_1_2": [
+        -1074665760,
+        -168928617,
+        474432000
+      ],
+      "exact_roots_in_open_interval_0_2": 1,
+      "even_integer_quotient_entries": true,
+      "outside_prior_quadratic_tail_and_balanced_region": true
+    },
+    {
+      "exponents": [
+        40,
+        42,
+        266
+      ],
+      "cutoff": "5564/21",
+      "endpoint_values_at_0_1_2": [
+        -3707459481600,
+        -704622129555,
+        1784695426560
+      ],
+      "exact_roots_in_open_interval_0_2": 1,
+      "even_integer_quotient_entries": true,
+      "outside_prior_quadratic_tail_and_balanced_region": true
+    }
+  ],
+  "existing_endpoint_zero_fixtures": [
+    {
+      "exponents": [
+        9,
+        9,
+        136
+      ],
+      "endpoint": 1,
+      "divisor_constant": 106624,
+      "nonlinear_rational_factor": true,
+      "scope": "Existing repeated-exponent case, not a new family"
+    },
+    {
+      "exponents": [
+        10,
+        10,
+        12
+      ],
+      "endpoint": 2,
+      "divisor_constant": 271872,
+      "nonlinear_rational_factor": true,
+      "scope": "Existing repeated-exponent case, not a new family"
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_endpoint_reduction.py": "9fdabbcf28e6fc372af2a6175f2b6337717518da3603895ed74f9642df1c5d05",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Written positivity and divisibility proofs; exact general endpoint-cubic, cutoff and constant-term identities, five positive shifted-coefficient checks, three selected integer quotient/Horner/Sturm fixtures and two existing endpoint-zero cases. No new exponent range or divisor-set enumeration, no floating-point spectrum, no Lean. FullQ3 remains open."
+}

@@ -1,0 +1,15 @@
+{
+  "complete_requested_domain": "4<=a<=7, a<b<c<4a^2-2a",
+  "counts_by_minimum": {
+    "4": 1275,
+    "5": 3486,
+    "6": 7750,
+    "7": 15051
+  },
+  "total_checked": 27562,
+  "strict_integer_square_brackets": "passed for all27562discriminants",
+  "independent_discriminant_reconstruction": "Integer9x9Sylvester determinants with fraction-free Bareiss elimination; every exact division checked; all match the SymPy-generated CSV.",
+  "certificate_sha256": "64b2173e944761a31ff8e51cbdb9634a3c545d5cf189f153c3c97580c5af9ecb",
+  "checker_sha256": "99c01c2f29564bc3b5a15fe8e7fc797f04d5004f11720079564a517e2b75275d",
+  "scope": "Complete finite certificate within the uniform cutoff for minimum4,5,6,7. Combined with the written tail and prior repeated/minimum-three theorems, this certifies every minimum-entry<=7 triple. Does not bound the minimum exponent in general; fullQ3open. No Lean."
+}

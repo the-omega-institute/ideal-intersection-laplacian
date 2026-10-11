@@ -1,0 +1,173 @@
+{
+  "symbolic_identities": "passed",
+  "all_divisors_of_24": [
+    {
+      "divisor_of_24": 1,
+      "repeated_exponent": -1,
+      "admissible": false
+    },
+    {
+      "divisor_of_24": 2,
+      "repeated_exponent": 0,
+      "admissible": false
+    },
+    {
+      "divisor_of_24": 3,
+      "repeated_exponent": 1,
+      "admissible": false
+    },
+    {
+      "divisor_of_24": 4,
+      "repeated_exponent": 2,
+      "third_exponent": 0,
+      "admissible": false
+    },
+    {
+      "divisor_of_24": 6,
+      "repeated_exponent": 4,
+      "third_exponent": 2,
+      "admissible": true
+    },
+    {
+      "divisor_of_24": 8,
+      "repeated_exponent": 6,
+      "third_exponent": 5,
+      "admissible": true
+    },
+    {
+      "divisor_of_24": 12,
+      "repeated_exponent": 10,
+      "third_exponent": 12,
+      "admissible": true
+    },
+    {
+      "divisor_of_24": 24,
+      "repeated_exponent": 22,
+      "third_exponent": 35,
+      "admissible": true
+    }
+  ],
+  "first_nonboundary_factor_certificates": [
+    {
+      "repeated_exponent": 4,
+      "third_exponent": 2,
+      "factor_pair": [
+        6,
+        96
+      ],
+      "square_root_discriminant": 18,
+      "polynomial": "x**3 - 86*x**2 + 2304*x - 18816",
+      "prime": 5,
+      "values_modulo_prime": [
+        4,
+        3,
+        1,
+        4,
+        3
+      ]
+    },
+    {
+      "repeated_exponent": 6,
+      "third_exponent": 5,
+      "factor_pair": [
+        8,
+        351
+      ],
+      "square_root_discriminant": 49,
+      "polynomial": "x**3 - 245*x**2 + 19266*x - 488160",
+      "prime": 7,
+      "values_modulo_prime": [
+        6,
+        2,
+        4,
+        4,
+        1,
+        1,
+        3
+      ]
+    },
+    {
+      "repeated_exponent": 10,
+      "third_exponent": 12,
+      "factor_pair": [
+        12,
+        1750
+      ],
+      "square_root_discriminant": 158,
+      "polynomial": "x**3 - 842*x**2 + 230160*x - 20534400",
+      "prime": 13,
+      "values_modulo_prime": [
+        10,
+        9,
+        7,
+        10,
+        11,
+        3,
+        5,
+        10,
+        11,
+        1,
+        12,
+        11,
+        4
+      ]
+    },
+    {
+      "repeated_exponent": 22,
+      "third_exponent": 35,
+      "factor_pair": [
+        24,
+        19965
+      ],
+      "square_root_discriminant": 867,
+      "polynomial": "x**3 - 4919*x**2 + 7887858*x - 4132479120",
+      "prime": 17,
+      "values_modulo_prime": [
+        16,
+        5,
+        5,
+        5,
+        11,
+        12,
+        14,
+        6,
+        11,
+        1,
+        16,
+        11,
+        9,
+        16,
+        4,
+        13,
+        15
+      ]
+    }
+  ],
+  "additional_complete_fixed_exponents": [
+    {
+      "repeated_exponent": 5,
+      "second_bound": "14/13",
+      "remaining_third_exponent": 1,
+      "discriminant": 221,
+      "consecutive_square_roots": [
+        14,
+        15
+      ]
+    },
+    {
+      "repeated_exponent": 6,
+      "second_bound": "9/5",
+      "remaining_third_exponent": 1,
+      "discriminant": 313,
+      "consecutive_square_roots": [
+        17,
+        18
+      ]
+    }
+  ],
+  "second_cutoff": "(a - 3)*(2*a - 3)/(2*a + 3)",
+  "sympy": "1.14.0",
+  "script_sha256": "d5207f1e7a44f37882dba698ce25ac77521127d752f7b4ae6236138bbbcfdf0e",
+  "cubic_source_sha256": "0877fc7fb32b0ffb696ea62fb86022d7090b71bd0f507c5b5ed9e66edfb39452",
+  "scope": "Complete d=a+2 cases via divisors of24; four exact modular witnesses; written all-a second cutoff; two remaining b=1 discriminants for a5,6. No parameter-range scan or Lean; fullQ3open."
+}

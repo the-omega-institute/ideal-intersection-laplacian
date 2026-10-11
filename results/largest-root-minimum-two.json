@@ -1,0 +1,419 @@
+{
+  "real_domain": "2<=a<=b<=c, b-a>=3, c>=a^2-a",
+  "lower_identity_and_quadratic_bounds": "passed generically",
+  "upper_slab_domain": "a=2+m,b=5+m+u,c=b+v,0<=m<=1,u>=0,v>=0",
+  "upper_slab_terms": 143,
+  "upper_slab_negative_terms": [
+    {
+      "powers": [
+        7,
+        1,
+        0
+      ],
+      "coefficient": -2
+    },
+    {
+      "powers": [
+        7,
+        0,
+        1
+      ],
+      "coefficient": -1
+    },
+    {
+      "powers": [
+        7,
+        0,
+        0
+      ],
+      "coefficient": -4
+    },
+    {
+      "powers": [
+        6,
+        2,
+        0
+      ],
+      "coefficient": -9
+    },
+    {
+      "powers": [
+        6,
+        1,
+        1
+      ],
+      "coefficient": -9
+    },
+    {
+      "powers": [
+        6,
+        1,
+        0
+      ],
+      "coefficient": -78
+    },
+    {
+      "powers": [
+        6,
+        0,
+        2
+      ],
+      "coefficient": -2
+    },
+    {
+      "powers": [
+        6,
+        0,
+        1
+      ],
+      "coefficient": -39
+    },
+    {
+      "powers": [
+        6,
+        0,
+        0
+      ],
+      "coefficient": -128
+    },
+    {
+      "powers": [
+        5,
+        3,
+        0
+      ],
+      "coefficient": -14
+    },
+    {
+      "powers": [
+        5,
+        2,
+        1
+      ],
+      "coefficient": -21
+    },
+    {
+      "powers": [
+        5,
+        2,
+        0
+      ],
+      "coefficient": -230
+    },
+    {
+      "powers": [
+        5,
+        1,
+        2
+      ],
+      "coefficient": -9
+    },
+    {
+      "powers": [
+        5,
+        1,
+        1
+      ],
+      "coefficient": -230
+    },
+    {
+      "powers": [
+        5,
+        1,
+        0
+      ],
+      "coefficient": -1132
+    },
+    {
+      "powers": [
+        5,
+        0,
+        3
+      ],
+      "coefficient": -1
+    },
+    {
+      "powers": [
+        5,
+        0,
+        2
+      ],
+      "coefficient": -51
+    },
+    {
+      "powers": [
+        5,
+        0,
+        1
+      ],
+      "coefficient": -566
+    },
+    {
+      "powers": [
+        5,
+        0,
+        0
+      ],
+      "coefficient": -1580
+    },
+    {
+      "powers": [
+        4,
+        4,
+        0
+      ],
+      "coefficient": -5
+    },
+    {
+      "powers": [
+        4,
+        3,
+        1
+      ],
+      "coefficient": -10
+    },
+    {
+      "powers": [
+        4,
+        3,
+        0
+      ],
+      "coefficient": -182
+    },
+    {
+      "powers": [
+        4,
+        2,
+        2
+      ],
+      "coefficient": -6
+    },
+    {
+      "powers": [
+        4,
+        2,
+        1
+      ],
+      "coefficient": -273
+    },
+    {
+      "powers": [
+        4,
+        2,
+        0
+      ],
+      "coefficient": -1862
+    },
+    {
+      "powers": [
+        4,
+        1,
+        3
+      ],
+      "coefficient": -1
+    },
+    {
+      "powers": [
+        4,
+        1,
+        2
+      ],
+      "coefficient": -117
+    },
+    {
+      "powers": [
+        4,
+        1,
+        1
+      ],
+      "coefficient": -1862
+    },
+    {
+      "powers": [
+        4,
+        1,
+        0
+      ],
+      "coefficient": -7222
+    },
+    {
+      "powers": [
+        4,
+        0,
+        3
+      ],
+      "coefficient": -13
+    },
+    {
+      "powers": [
+        4,
+        0,
+        2
+      ],
+      "coefficient": -418
+    },
+    {
+      "powers": [
+        4,
+        0,
+        1
+      ],
+      "coefficient": -3611
+    },
+    {
+      "powers": [
+        4,
+        0,
+        0
+      ],
+      "coefficient": -9116
+    },
+    {
+      "powers": [
+        3,
+        2,
+        0
+      ],
+      "coefficient": -1508
+    },
+    {
+      "powers": [
+        3,
+        1,
+        1
+      ],
+      "coefficient": -1508
+    },
+    {
+      "powers": [
+        3,
+        1,
+        0
+      ],
+      "coefficient": -13222
+    },
+    {
+      "powers": [
+        3,
+        0,
+        2
+      ],
+      "coefficient": -457
+    },
+    {
+      "powers": [
+        3,
+        0,
+        1
+      ],
+      "coefficient": -6611
+    },
+    {
+      "powers": [
+        3,
+        0,
+        0
+      ],
+      "coefficient": -19920
+    }
+  ],
+  "exact_nonnegative_difference_identity": "passed",
+  "literal_lower_bound_vectors": [
+    {
+      "maximum_power": 0,
+      "coefficients": [
+        259876,
+        480352,
+        371193,
+        157834,
+        41170,
+        6792,
+        693,
+        40,
+        1
+      ]
+    },
+    {
+      "maximum_power": 1,
+      "coefficients": [
+        240176,
+        371193,
+        236751,
+        82340,
+        16980,
+        2079,
+        140,
+        4
+      ]
+    },
+    {
+      "maximum_power": 2,
+      "coefficients": [
+        77666,
+        100317,
+        52638,
+        14520,
+        2226,
+        180,
+        6
+      ]
+    },
+    {
+      "maximum_power": 3,
+      "coefficients": [
+        10700,
+        11468,
+        4800,
+        987,
+        100,
+        4
+      ]
+    },
+    {
+      "maximum_power": 4,
+      "coefficients": [
+        540,
+        468,
+        147,
+        20,
+        1
+      ]
+    }
+  ],
+  "lower_bound_positive_coefficients": 35,
+  "lower_bound_constant": 259876,
+  "slab_quadratic_hypothesis_and_schur_diagonal_bounds": "passed",
+  "fixed_rational_controls": [
+    {
+      "exponents": [
+        "2",
+        "5",
+        "5"
+      ],
+      "anchor": "37",
+      "endpoint_values": [
+        "-86000",
+        "290624"
+      ],
+      "roots_in_open_unit_interval": 1,
+      "roots_above_upper_endpoint": 0
+    },
+    {
+      "exponents": [
+        "5/2",
+        "11/2",
+        "6"
+      ],
+      "anchor": "47",
+      "endpoint_values": [
+        "-4525125/16",
+        "2444355/4"
+      ],
+      "roots_in_open_unit_interval": 1,
+      "roots_above_upper_endpoint": 0
+    }
+  ],
+  "sympy": "1.14.0",
+  "scope": "Direct set-disjointness quotient determinant, exact coefficient lower bound and two fixed rational Sturm controls. Shared quotient constructor and SymPy backend; original characteristic-polynomial helper not imported. Written root-location proof covers the stated real domain. The existing a>=3 coefficient tables retain their separate literal checker. No parameter scan, new finite base, historical finite-base rerun, graph enumeration, floats or Lean.",
+  "status": "passed"
+}

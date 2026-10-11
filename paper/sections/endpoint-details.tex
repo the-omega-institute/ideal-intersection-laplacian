@@ -1,0 +1,199 @@
+\section{Endpoint polynomial proofs, certificates and covering scope}
+\label{sec:endpoint-details}
+
+The two possible low integer roots have different arithmetic constraints.
+The endpoint two is confined to a linear region in the minimum exponent;
+this gives a new nonintegral tail for even exponent triples.
+The shifted odd-root distributions extend the same tail to two mixed-parity
+patterns below.
+
+\begin{proposition}
+\label{thm:endpoint-two-bound}
+Let $4\leq a\leq b\leq c$, and put
+\[
+R(a)=\frac{7a^2-2a+8}{a+2}=7a-16+\frac{40}{a+2}.
+\]
+If $h_C(2)=0$, then $c<R(a)$. In fact, $c\geq R(a)$ implies
+$h_C(2)>0$.
+\end{proposition}
+
+\begin{proof}
+Fix $a,c$ and expand the symmetric endpoint polynomial in $b$:
+\[
+h_C(2)=A(a,c)b^3+B(a,c)b^2+D(a,c)b+E(a,c),
+\]
+where
+\begin{align*}
+A(a,c)&=ac(a+c-1)+2a(a-1)+2c(c-1)-4,\\
+B(a,c)&=c^2\bigl((a+2)c-(7a^2-2a+8)\bigr)\\
+&\quad +(a^3+2a^2-6a-4)c+2(a-2)(a^2-2a-6),\\
+D(a,c)&=(a-2)(c-2)\bigl(a^2c+a^2+ac^2+6ac+4a+c^2+4c-12\bigr),\\
+E(a,c)&=2(a-2)(c-2)(a+c-2)(ac+a+c-2).
+\end{align*}
+For $a,c\geq4$, the coefficients $A,D,E$ are strictly positive.
+Both $a^3+2a^2-6a-4$ and $a^2-2a-6$ are positive at $a=4$
+and increasing on $[4,\infty)$. Thus $c\geq R(a)$ also gives $B>0$,
+which proves the strict endpoint sign. Conversely, an endpoint zero
+requires $B<0$, so $(a+2)c<7a^2-2a+8$.
+\end{proof}
+
+\begin{proposition}
+\label{cor:even-linear-tail}
+If $4\leq a\leq b\leq c$ are all even and $c\geq R(a)$,
+then $G_{p^a q^b r^c}$ is not Laplacian integral.
+For minimum exponent at least eight, $c\geq7a-12$ suffices.
+\end{proposition}
+
+\begin{proof}
+Every entry of $C$ is even, so every integer eigenvalue of $C$ is even
+by the rational-root theorem applied to $C/2$. In particular, one is
+not an eigenvalue. Proposition~\ref{thm:endpoint-two-bound} excludes two,
+and Theorem~\ref{thm:uniform-low-root} provides a noninteger root in
+$(0,3)$. Equivalently, $h_C(0)<0<h_C(2)$ directly yields a root in
+$(0,2)$, which cannot equal one. Its graph lift is noninteger.
+For $a\geq8$, $40/(a+2)\leq4$ gives $R(a)\leq7a-12$.
+\end{proof}
+
+The triples $(8,10,44)$, $(10,14,58)$ and $(40,42,266)$ meet this
+criterion with gcd two. Their largest exponents are below the earlier
+quadratic cutoff and their spans are outside the earlier balanced region.
+The already settled repeated triple $(10,10,12)$ has $h_C(2)=0$ and
+obeys the strict bound; an integer endpoint does not establish integrality.
+
+\begin{proposition}
+\label{cor:mixed-linear-tail}
+Let $4\leq m\leq d\leq M$ be the ordered exponents of a triple that is
+a permutation of $(1,3,2)$ or $(3,3,0)$ modulo four.
+If $M\geq R(m)$, the ideal intersection graph is nonintegral.
+For $m\geq8$, the simpler bound $M\geq7m-12$ suffices.
+\end{proposition}
+
+\begin{proof}
+Under the integer-spectrum assumption,
+Lemma~\ref{lem:mixed-endpoint-one} excludes one as a quotient root.
+Theorem~\ref{thm:uniform-low-root} then forces two to be a root.
+But Proposition~\ref{thm:endpoint-two-bound} gives $h_C(2)>0$ for
+$M\geq R(m)$, a contradiction. The simpler bound follows from
+$R(m)\leq7m-12$ for $m\geq8$.
+\end{proof}
+
+Thus the linear upper bound also restricts these two mixed-parity patterns.
+For example, the residue-role triples $(25,27,758)$ and $(29,27,882)$
+satisfy the arithmetic conditions of Proposition~\ref{thm:clustered-odd-roots},
+but their largest exponents exceed this linear bound. The root-distribution
+argument therefore settles these compatible controls without a further
+congruence lift. The triple $(19,27,140)$ illustrates the other pattern.
+The variables $m,d,M$ identify size order, independently of residue roles.
+
+The size bound confines one surface geometrically. The following
+constant-term conditions give finite candidate sets for either surface
+when two exponents are fixed.
+
+\begin{proposition}
+\label{prop:endpoint-divisors}
+For fixed $a,b\geq4$, any positive integer $c$ on an endpoint-zero
+surface satisfies
+\begin{align*}
+h_C(1)=0&\ \Longrightarrow\ c\mid(a-1)(b-1)(a+b-1)(ab+a+b-1),\\
+h_C(2)=0&\ \Longrightarrow\ c\mid2(a-2)(b-2)(a+b-2)(ab+a+b-2).
+\end{align*}
+\end{proposition}
+
+\begin{proof}
+Both endpoints are integer cubics in $c$. Their constant terms are
+the displayed nonzero products. Reduce each endpoint equation modulo $c$.
+\end{proof}
+
+For a fixed pair this gives finite divisor candidates, which must still
+satisfy the endpoint equation. Reza's requested diagnostic for middle
+exponents through fifteen now has a complete independent certificate.
+
+\begin{proposition}
+\label{cor:middle-fifteen}
+Every positive ordered three-prime exponent triple $a\leq b\leq c$
+with $b\leq15$ gives a nonintegral ideal intersection graph.
+This conclusion uses the complete finite endpoint certificate below.
+\end{proposition}
+
+\begin{proof}
+Repeated exponents are covered by Theorem~\ref{thm:repeated}, and
+minimum exponents one, two and three by Theorems~\ref{thm:unit},
+\ref{thm:minimum-two} and~\ref{thm:minimum-three}, respectively.
+It remains to consider $4\leq a<b\leq15$ and $c>b$.
+
+For each of these $66$ pairs, both endpoint polynomials are integer
+cubics in $c$ with the positive constant terms in
+Proposition~\ref{prop:endpoint-divisors}. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/10ff01f0625c7264b8bc5bb33b1a9d7dcb88a93c/results/endpoint-surfaces-verification.json}{complete endpoint certificate}
+records all $132$
+coefficient lists and exhausts their $8\,527$ positive divisors using
+integer trial division. Independent integer Horner evaluation at every
+one of the $7\,585$ divisors above $b$ gives no zero. Thus neither
+endpoint vanishes for any integer $c>b$, with no imposed upper bound
+on $c$. Theorem~\ref{thm:uniform-low-root} supplies a positive root
+in $(0,3)$; it can equal neither one nor two, proving nonintegrality.
+\end{proof}
+
+The reflected quotient in this diagnostic uses
+$N=|V(H)|=a+b+c+ab+ac+bc$, not the full graph vertex count.
+The inclusive requested bound $b\leq15$ and exact rational linear-factor
+extraction are cross-checked against the independent divisor certificate.
+The empty lists settle this pair range; they do not prove either
+endpoint surface globally empty.
+
+\begin{proposition}
+\label{thm:modulo-three-endpoints}
+Every positive three-prime exponent triple congruent to $(2,2,2)$,
+or to a permutation of $(1,2,2)$, modulo three gives a nonintegral
+ideal intersection graph.
+\end{proposition}
+
+\begin{proof}
+For these two residue patterns, reduction of the general complement
+quintic gives, respectively,
+\[
+h_C(x)\equiv x^5,\qquad
+h_C(x)\equiv(x^2+1)(x^3+x^2-x+1)\pmod3.
+\]
+The corresponding pairs $(h_C(1),h_C(2))$ are $(1,2)$ and $(1,1)$
+modulo three, so neither integer endpoint is a root. Minimum exponents
+at most three are already covered. Otherwise
+Theorem~\ref{thm:uniform-low-root} supplies a positive root in $(0,3)$,
+which cannot be an integer. Its graph lift is noninteger as well.
+For the second pattern, the irreducible factor $x^2+1$ also directly
+rules out a completely integral quotient spectrum.
+\end{proof}
+
+For example, $(8,17,22)$ and $(8,17,23)$ satisfy the new conditions
+with gcd one and unequal $2$-adic valuations. Complete endpoint tables
+modulo two and three, checked against independent integer determinants,
+are given in the \href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/2df3cffd062ce0b28fc2040a6203fd4e7282a725/results/endpoint-residues.json}{residue certificate}.
+Every pair $(a,b)$ modulo either prime has at least one $c$ root on
+each surface; retaining the full root sets, rather than only root-free
+pairs, is necessary to detect these exclusions.
+
+\begin{remark}
+Endpoint tests at a fixed finite set of moduli cannot by themselves
+prove either surface empty on all fully distinct positive triples.
+Let $M$ be their least common multiple. Since $(9,9,136)$ has
+$h_C(1)=0$, the strictly ordered triples
+$(9+kM,9+(k+1)M,136+(k+2)M)$ pass every selected endpoint-one test.
+The known endpoint-two zero $(10,10,12)$ similarly gives survivors
+$(10+kM,10+(k+1)M,12+(k+2)M)$. For large $k$ their middle exponents
+exceed fifteen. These are congruence survivors, not asserted integer
+zeros. These fixed-span tails are excluded by
+Corollary~\ref{cor:balanced-span}. To retain the geometric restrictions,
+take $L$ divisible by $M$ and eight and any $d\geq32$ divisible by $L$.
+The triples $(9+d,9+2d,136+4d)$ and $(10+d,10+2d,12+4d)$ pass the
+respective endpoint tests, have gcd one and two, and satisfy both upper
+bounds on the maximum while failing the sufficient inertia inequality.
+The substitution identities are given in the accompanying
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/nikandish-math-patch-1/notes/endpoint-congruence-scope.md}{scope note}.
+This concerns endpoint-value tests alone; another-root obstruction or
+further arithmetic information can still exclude these candidates.
+\end{remark}
+
+Theorem~\ref{thm:endpoint-two-completion} completes the endpoint-two
+alternative, including the all-even triples formerly left inside this
+linear region. The remaining mixed-parity surface $h_C(1)=0$ still
+needs another obstruction.

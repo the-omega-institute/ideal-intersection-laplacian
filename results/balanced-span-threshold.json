@@ -1,0 +1,49 @@
+{
+  "statement": "a>r+4+sqrt(3)(r+2),r=c-a, guarantees a complement quotient root in(2,3) and integer-exponent graph nonintegrality",
+  "generic_worst_middle_identity": "passed",
+  "generic_factorization": "passed",
+  "exact_boundary": "Delta=0 at a=r+4+sqrt(3)(r+2),b=c=a+r",
+  "strict_criterion_span_threshold": "exact for a>=4; not claimed necessary for a root in(2,3)",
+  "old_bound_comparison": "(3r+8)-[r+4+sqrt(3)(r+2)]=(2-sqrt(3))(r+2)>0",
+  "fixed_direct_quotient_controls": [
+    {
+      "exponents": [
+        35,
+        45,
+        45
+      ],
+      "span": 10,
+      "criterion_value": 9,
+      "former_minimum_bound": 38,
+      "positive_roots_below_two": 0,
+      "positive_roots_between_two_and_three": 1,
+      "quintic": "(x**2 - 1745*x + 5625)*(x**3 - 3805*x**2 + 3559825*x - 8347500)"
+    },
+    {
+      "exponents": [
+        281,
+        381,
+        381
+      ],
+      "span": 100,
+      "criterion_value": 117,
+      "former_minimum_bound": 308,
+      "positive_roots_below_two": 0,
+      "positive_roots_between_two_and_three": 1,
+      "quintic": "(x**2 - 108485*x + 397383)*(x**3 - 253927*x**2 + 15749640553*x - 38576861886)"
+    }
+  ],
+  "below_threshold_criterion_control": {
+    "exponents": [
+      34,
+      44,
+      44
+    ],
+    "criterion_value": -32,
+    "scope": "criterion sign only; no spectral failure or integrality claim"
+  },
+  "supporting_manuscript_statement": "passed",
+  "sympy": "1.14.0",
+  "scope": "Written exact worst-middle/factorization proof strengthens supporting span corollary. Shared set-disjointness support constructor/SymPy, no original characteristic helper. Two fixed direct quotient controls count exact roots with multiplicities; endpoints2/3 absent. No parameter scan,new finite base,historical finite-base rerun,floats or Lean. Selected main classification manuscript and historical integer classification inputs retained.",
+  "status": "passed"
+}

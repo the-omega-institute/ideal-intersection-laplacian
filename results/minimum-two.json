@@ -1,0 +1,66 @@
+{
+  "symbolic_identities": "passed",
+  "complement_endpoint_at_0": "-2*b*c*(b + c + 2)*(b*c + 3*b + 3*c + 2)",
+  "complement_endpoint_at_1": "b**3*c**2 + 3*b**3 + b**2*c**3 - 13*b**2*c**2 + 7*b**2*c + b**2 + 7*b*c**2 - 4*b*c - 3*b + 3*c**3 + c**2 - 3*c - 1",
+  "positive_region_b3_c_at_least5": "12*v**3 + 112*v**2 + 268*v + 120",
+  "positive_region_b_at_least4_c_above_b": "2*u**5 + 32*u**4 + 190*u**3 + 504*u**2 + 552*u + v**3*(u**2 + 8*u + 19) + v**2*(4*u**3 + 38*u**2 + 128*u + 170) + v*(5*u**4 + 62*u**3 + 271*u**2 + 502*u + 368) + 160",
+  "all_nonzero_coefficients_positive": true,
+  "region_one_coefficients": [
+    12,
+    112,
+    268,
+    120
+  ],
+  "region_two_coefficients": [
+    2,
+    5,
+    32,
+    4,
+    62,
+    190,
+    1,
+    38,
+    271,
+    504,
+    8,
+    128,
+    502,
+    552,
+    19,
+    170,
+    368,
+    160
+  ],
+  "exception": {
+    "exponents": [
+      2,
+      3,
+      4
+    ],
+    "quintic": "x**5 - 53*x**4 + 953*x**3 - 6523*x**2 + 13134*x - 7560",
+    "endpoints": [
+      {
+        "argument": "1",
+        "value": "-48",
+        "independent_horner": "passed"
+      },
+      {
+        "argument": "3/2",
+        "value": "13437/32",
+        "independent_horner": "passed"
+      }
+    ],
+    "sturm_count_between_endpoints": 1,
+    "graph_vertex_count": 58,
+    "graph_eigenvalue_interval": [
+      "113/2",
+      "57"
+    ]
+  },
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_minimum_two.py": "2d8e719e0b7112e3099304bf4eca47164ec8ab8e4fa7836834c3aa28d0ca194e",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "General a2 complement endpoint identities and two positive-coefficient infinite-region expansions; one (2,3,4) quintic/rational-endpoint/Horner/Sturm certificate. No parameter scan or Lean. Together with prior repeated/unit proofs, every triple with minimum exponent<=2 is settled. Fullydistinct all>=3 and fullQ3 remain open."
+}

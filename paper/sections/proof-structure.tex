@@ -1,0 +1,150 @@
+\section{Structure of the proof}
+\label{sec:proof-structure}
+
+The complement quotient explains the endpoint alternatives in the
+three-prime classification. Its low-root bound localizes a possible
+integer spectrum to two endpoint surfaces, whose geometric bounds lead
+to different spectral obstructions. We summarize this mechanism before
+giving the component proofs.
+
+\subsection{Localization and the sharp threshold}
+
+Let $C$ be the complement Laplacian quotient on the six proper nonempty
+supports, of weights $a,b,c,ab,ac,bc$, and put $h_C(x)=\det(xI-C)/x$.
+The off-diagonal entry from $S$ to $T$ is $-w_T$ when $S\cap T$ is empty,
+and zero otherwise; the diagonal is the sum of these neighbor weights.
+The weighted symmetric quotient is positive semidefinite with a simple
+zero eigenvalue, since the disjointness graph on these supports is connected.
+
+For positive integer exponents, every nonzero complement quotient root
+must be an integer if $G_n$ is Laplacian integral: reflection across the
+complement and the universal-vertex lift transfer every noninteger root
+to a noninteger graph eigenvalue. Theorem~\ref{thm:uniform-low-root}
+gives a positive quotient root below three for every ordered positive
+real triple. Hence the smallest positive root also lies in $(0,3)$,
+and an integral graph spectrum requires
+\[
+ h_C(1)=0\qquad\hbox{or}\qquad h_C(2)=0.
+\]
+These are necessary conditions; the following arguments exclude integer
+spectra on each surface by a further root or an exponent-root bracket.
+
+\begin{proposition}
+\label{prop:localization-sharpness}
+The uniform threshold three is optimal even for integer exponents.
+For $a=b=c=m\geq1$, the smallest positive quotient root satisfies
+\[
+ \mu_-=
+ \frac{m^2+4m-m\sqrt{(m+4)^2-12}}{2}
+ \in\left(\frac{3m}{m+4},3\right),
+ \qquad \lim_{m\to\infty}\mu_-=3.
+\]
+\end{proposition}
+\begin{proof}
+Direct substitution in the quotient gives
+\[
+ h_{m,m,m}(x)=(x-m^2-m)
+ \bigl[x^2-(m^2+4m)x+3m^2\bigr]^2.
+\]
+For the quadratic $q_m$, we have $q_m(0)>0$ and $q_m(m)=-m^3<0$.
+Its smaller root therefore lies in $(0,m)$ and is below the other
+three positive roots, counted with multiplicity. Also
+$q_m(3)=9-12m<0$, so $\mu_-<3$. Rationalization gives
+\[
+ \mu_-=
+ \frac{6m}{m+4+\sqrt{(m+4)^2-12}}
+ >\frac{3m}{m+4}.
+\]
+Dividing the denominator by $m$ proves the limit, including along
+positive integers. Thus no smaller constant is a uniform upper bound.
+\end{proof}
+
+\subsection{The endpoint surfaces and their scales}
+
+After repeated exponents and minima at most seven have been settled,
+the remaining classification domain is $8\leq a<b<c$. In this domain,
+Lemma~\ref{lem:endpoint-two-rectangle} shows that
+\[
+ h_C(2)=0\quad\Longrightarrow\quad
+ b<2a-2,\qquad c<\frac{9a}{4}-8.
+\]
+Both larger exponents are bounded multiples of the minimum. The
+rectangle is finite at each fixed integer $a$, but $a$ is unbounded.
+Theorem~\ref{thm:endpoint-two-completion} supplies a root in $(4,5)$
+for $a\geq40$; the complete $8\,658$-triple certificate handles
+$8\leq a\leq39$. The real tail argument and the finite base together
+close this alternative.
+
+Endpoint one has a different necessary scale. For real
+$2\leq a\leq b\leq c$, Theorem~\ref{thm:endpoint-one-spectrum} gives
+\[
+ h_C(1)=0\quad\Longrightarrow\quad
+ b+c\geq2a^2-2a+1,\qquad c\geq a^2-a+\tfrac12.
+\]
+The second inequality follows from $b\leq c$. This quadratic lower
+bound supplies the hypothesis of the largest-root interval in
+Theorem~\ref{thm:largest-root-unit-interval} whenever $b-a\geq3$.
+For gaps one and two, Lemma~\ref{lem:endpoint-one-small-gaps} instead
+places the only possible exponent-root above $b$ between consecutive
+integers. This route settles the spectrum without enumerating integer
+points on the endpoint-one surface.
+
+\subsection{The fixed-gap endpoint-one expansion}
+
+The small-gap anchors also have an asymptotic interpretation. The
+following result concerns the exponent-root $c$, with the gap fixed;
+it is supplementary to the exact brackets used in the classification.
+
+\begin{proposition}
+\label{prop:fixed-gap-expansion}
+Fix a real $d\geq1$ and put $b=a+d$. For all sufficiently large real
+$a$, the equation $h_C(1)=0$, regarded as a cubic in $c$, has exactly
+one root $c^*$ above $b$. As $a\to\infty$ with $d$ fixed,
+\begin{align}
+ c^*={}&2a^2+(2d-3)a-\frac{(d+2)(2d-1)}2
+ \notag\\
+ &+\frac{d^2}{2a}
+ +\frac{d^2(d+1)(2d-3)}{4a^2}+O_d(a^{-3}).
+ \label{eq:fixed-gap-expansion}
+\end{align}
+The remainder constant and the required minimum may depend on $d$.
+\end{proposition}
+\begin{proof}
+Write $Q_{a,d}(c)=h_C(1)$ at $b=a+d$. The cubic coefficients are
+displayed in Lemma~\ref{lem:endpoint-one-small-gaps}; their identity
+holds for arbitrary $d$. Set $t=1/a$, $y=t^2c$ and
+\[
+ F_d(t,y)=t^8Q_{1/t,d}(y/t^2).
+\]
+This is a polynomial in $t,y$, with
+\[
+ F_d(0,y)=2y^2(y-2),\qquad
+ \partial_yF_d(0,2)=8.
+\]
+The analytic implicit-function theorem gives a unique real analytic
+branch $y_d(t)$ near $t=0$ with $y_d(0)=2$. Substitution and comparison
+of successive powers of $t$ give
+\begin{align*}
+ y_d(t)={}&2+(2d-3)t-\frac{(d+2)(2d-1)}2t^2
+ +\frac{d^2}{2}t^3\\
+ &+\frac{d^2(d+1)(2d-3)}4t^4+O_d(t^5).
+\end{align*}
+Multiplication by $t^{-2}$ proves~\eqref{eq:fixed-gap-expansion}.
+For fixed $d$ and sufficiently large $a$, the cubic has positive
+leading coefficient and $Q_{a,d}(0)>0$, whereas
+\[
+ Q_{a,d}(a+d)=-4a^6+O_d(a^5)<0.
+\]
+It therefore has a root in each of $(-\infty,0)$ and $(0,b)$.
+The analytic branch has $c^*\sim2a^2>b$ and supplies the third root.
+These distinct roots exhaust the cubic degree, proving uniqueness
+above $b$.
+\end{proof}
+
+For $d=1,2$, the polynomial parts of this expansion are respectively
+$2a^2-a-2$ and $2a^2+a-6$, followed by a positive term of order
+$a^{-1}$. The exact unit brackets in
+Lemma~\ref{lem:endpoint-one-small-gaps} hold for all real $a\geq2$.
+The expansion here is for fixed $d$; it supplies no uniform error bound
+when $d$ grows with $a$. The largest-root argument handles every
+$d\geq3$ in the classification using the quadratic lower bound on $c$.

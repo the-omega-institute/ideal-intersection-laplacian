@@ -1,0 +1,191 @@
+\subsection{Two further congruence classes modulo five}
+
+\begin{proposition}
+\label{prop:mod-five-splitting}
+Every positive exponent triple that is a permutation of $(1,1,2)$ or
+$(1,4,4)$ modulo five gives a nonintegral ideal intersection graph.
+\end{proposition}
+
+\begin{proof}
+The monic integer quintic $h_C(x)=\det(xI-C)/x$ is symmetric in the
+exponents. Reducing the six-support quotient gives the complete identities
+\begin{align*}
+ (1,1,2):\quad h_C(x)&\equiv(x-1)^2(x-3)(x^2+3x+4),\\
+ (1,4,4):\quad h_C(x)&\equiv(x-1)^2(x^3+x^2+4x+3)
+ \pmod5.
+\end{align*}
+The quadratic discriminant is $3$, a nonsquare modulo five. The cubic
+takes the values $3,4,3,1,4$ at $0,1,2,3,4$, respectively, and hence
+is irreducible over $\mathbb F_5$. An integer quotient spectrum would
+make $h_C$ split into linear factors modulo every prime, contradicting
+either reduction. The complement and universal-class lifts give the
+graph conclusion. No size, parity or endpoint-zero hypothesis is needed.
+\end{proof}
+
+On the equality subfamily $c=b(b+2)-a$, this gives a splitting obstruction
+that a square-discriminant congruence can miss. If $b\equiv1\pmod5$, put
+$q=ac\equiv a(3-a)$. The curve equation in
+Remark~\ref{rem:endpoint-one-equality-curve} becomes
+$G\equiv2(q-1)(q-2)\pmod5$. Thus $G=0$ permits precisely
+$a\equiv1,2,4\pmod5$, giving one of the two excluded exponent classes.
+For $q\equiv1$, the irreducible cubic has discriminant $1$ modulo five.
+Consequently an integral equality spectrum requires $b\not\equiv1\pmod5$,
+even though the discriminant-square test alone permits one excluded row.
+
+\subsection{A local discriminant obstruction on the equality curve}
+
+\begin{proposition}
+\label{prop:equality-local-discriminant}
+Let $a\leq b\leq c$ be positive integers with $c=b(b+2)-a$ and
+$G(a,b)=0$, where $G$ is the equality equation in
+Remark~\ref{rem:endpoint-one-equality-curve}. If an odd prime $p$ divides
+$b$, $a^2\equiv1\pmod p$, and $13$ is a quadratic nonresidue modulo $p$,
+then the ideal intersection graph is Laplacian nonintegral.
+In particular, an integral equality spectrum requires $7\nmid b$ and
+$11\nmid b$.
+\end{proposition}
+
+\begin{proof}
+Put $q=ac$ and let $\Delta(q,b)$ be the discriminant of the explicit
+cubic $P_3$ in Section~\ref{sec:open}. On $G=0$,
+$h_C=(x-1)(x-b)P_3$, so an integer quotient spectrum would make
+$\Delta$ an integer square. For $v=-1+2b+3b^2$, expansion of the
+displayed coefficient formulas gives identities in $\mathbb Z[b,q]$:
+\begin{align*}
+ G(v,b)&=b^3(-b^4-8b^3+8b^2+20b-7),\\
+ \Delta(v,b)&=13b^2+b^3R(b),\qquad R\in\mathbb Z[b],\\
+ G(q,b)-G(v,b)&=(q-v)\bigl[(3b-1)(q+v)+b(b^2+4b-1)\bigr].
+\end{align*}
+The assumption $a^2\equiv1$ gives $q\equiv-1\pmod p$. Write
+$e=v_p(b)\geq1$. The bracket in the third identity is $2$ modulo $p$,
+so it is a unit. Since $G(q,b)=0$, the first and third identities imply
+$q\equiv v\pmod{p^{3e}}$. The discriminant is an integer polynomial,
+and therefore
+\[
+ \Delta(q,b)\equiv13b^2\pmod{p^{3e}}.
+\]
+Because $13$ is a nonresidue, $p\ne13$. Hence $v_p(\Delta)=2e$,
+and the unit $\Delta/p^{2e}$ is congruent to
+$13(b/p^e)^2$ modulo $p$. This is a nonresidue, contradicting square
+discriminant. The complement and universal-class lifts give the graph
+conclusion.
+
+For $p=7$ or $11$, reducing the curve at $p\mid b$ gives
+$q^2\equiv1$ and hence $a^4\equiv1$. Since $-1$ is a nonresidue at
+both primes, $a^2\equiv1$ follows. Moreover $13$ reduces to the
+nonresidues $6$ and $2$, respectively, so the first assertion applies.
+\end{proof}
+
+The obstruction resolves a repeated-root reduction: on the branch
+$q\equiv-1$, one has $P_3\equiv x(x+1)^2\pmod p$ and
+$\Delta\equiv0\pmod p$. Normalizing by $p^{2v_p(b)}$ reveals the
+nonsquare unit that the reduction modulo $p$ misses. At $p=5$, this
+excludes $(a,b)\equiv(1,0),(4,0)$ among the previously compatible
+equality rows. The argument is uniform in $p$ and its valuation and
+requires no finite exponent base.
+
+\begin{proposition}
+\label{prop:equality-local-splitting}
+At an integer equality point $c=b(b+2)-a$, $q=ac$, $G=0$, let $p$ be
+an odd prime dividing $b$. If $q\equiv1\pmod p$, then $P_3$ has three
+distinct roots in $\mathbb Z_p$. If $q\equiv-1\pmod p$ and $p\ne13$,
+then $P_3$ splits into three distinct $\mathbb Z_p$ roots exactly when
+$13$ is a quadratic residue modulo $p$. If $13$ is a nonresidue in this
+negative branch, it has exactly one $\mathbb Q_p$ root.
+In the split negative branch, the two roots reducing
+to $-1$ differ by valuation $v_p(b)$.
+Moreover, for every fixed $b\in p\mathbb Z_p$, each residue $a_0$ with
+$a_0^4\equiv1\pmod p$ lifts uniquely to a curve point
+$a\in a_0+p\mathbb Z_p$ on $G=0$.
+\end{proposition}
+
+\begin{proof}
+At $p\mid b$, the curve gives $q^2\equiv1$ and $q\equiv-a^2$.
+For fixed $b\in p\mathbb Z_p$, the polynomial
+$G(a[b(b+2)-a],b)$ reduces to $1-a^4$ and has derivative $-4a^3$
+modulo $p$. At $a_0^4\equiv1$, this derivative is a unit; Hensel's
+lemma gives the asserted unique local curve point.
+On the positive branch, $a^2\equiv-1$ and
+$P_3\equiv x(x^2+1)$. Its roots $0,a,-a$ have derivatives $1,-2,-2$
+modulo $p$, respectively. They are distinct simple roots, so Hensel's
+lemma lifts all three to $\mathbb Z_p$.
+
+On the negative branch, $P_3\equiv x(x+1)^2$, and the simple root $0$
+lifts uniquely to $d_0\in p\mathbb Z_p$. Polynomial division gives
+\begin{align*}
+ P_3(x)&=(x-d_0)Q(x),\\
+ Q(x)&=x^2+(d_0-A_3)x+d_0^2-A_3d_0+B_3,\\
+ \delta_Q&=A_3^2+2A_3d_0-3d_0^2-4B_3.
+\end{align*}
+Here $P_3'(d_0)\equiv1\pmod p$, $Q\equiv(x+1)^2$, and
+$\Delta=P_3'(d_0)^2\delta_Q$. Proposition~\ref{prop:equality-local-discriminant}
+and its anchor identities give $v_p(\Delta)=2e$ and normalized unit
+$13(b/p^e)^2\pmod p$, where $e=v_p(b)$ and $p\ne13$.
+An odd-prime-adic unit is a square if and only if its reduction is a
+nonzero square, by Hensel's lemma for $z^2-u$. Thus $\delta_Q$ is a
+square in $\mathbb Q_p$ if and only if $13$ is a residue modulo $p$.
+Since $2$ is a unit, the quadratic formula then supplies two integral
+roots; otherwise $Q$ is irreducible over $\mathbb Q_p$.
+In the split case the roots reduce to $-1$, and their difference is a
+square root of $\delta_Q$, of valuation $e$. Their differences from
+$d_0$ are units. All three roots are distinct because $\Delta\ne0$.
+\end{proof}
+
+The surviving $(a,b)\equiv(2,0),(3,0)\pmod5$ rows lie on the positive
+branch. At every actual equality point in either row, the cubic splits
+over $\mathbb Z_5$ and modulo every power of five. Higher five-power
+splitting tables cannot exclude these rows.
+For every fixed $b\in5\mathbb Z_5$, both residues $a_0=2,3$ also lift
+to local equality points with split cubics. Thus simultaneous curve
+and splitting solutions exist in both rows modulo every power of five.
+These local points leave integer equality and global integer splitting as separate
+questions. Only the negative branch at $p=13$ is left outside the
+odd-prime-divisor classification.
+
+\begin{proposition}
+\label{prop:equality-thirteen}
+At an integer equality point $c=b(b+2)-a$, $q=ac$, $G=0$, suppose
+$13\mid b$ and $q\equiv-1\pmod{13}$, equivalently $a^2\equiv1\pmod{13}$.
+If $b\not\equiv104\pmod{169}$, then $P_3$ does not split over
+$\mathbb Q_{13}$ and the ideal intersection graph is Laplacian
+nonintegral. Thus an integral equality spectrum on this negative branch
+requires $b\equiv104\pmod{169}$, in particular $13^2\nmid b$.
+\end{proposition}
+
+\begin{proof}
+Let $e=v_{13}(b)\geq1$ and refine the previous anchor to
+$w=-1+2b+3b^2+\frac72b^3$. Substitution into the explicit curve and
+cubic-discriminant formulas gives identities in $\mathbb Z[1/2][b]$:
+\begin{align*}
+ G(w,b)&=b^4\left(\frac{143}{4}b^3+\frac{185}{4}b^2+43b-\frac{37}{2}\right),\\
+ \Delta(w,b)&=13b^2-18b^3+b^4T(b),\qquad T\in\mathbb Z[1/2][b].
+\end{align*}
+The curve difference identity of
+Proposition~\ref{prop:equality-local-discriminant} holds with $w$ in
+place of $v$. Since $q\equiv w\equiv-1\pmod{13}$, its bracket is
+$2$ modulo $13$. The coefficients are integral at $13$ and $G(q,b)=0$,
+so $q\equiv w\pmod{13^{4e}}$. Polynomial divisibility of the
+discriminant difference then gives
+\[
+ \Delta(q,b)\equiv13b^2-18b^3\pmod{13^{4e}}.
+\]
+If $e\geq2$, the displayed terms have valuations $2e+1$ and $3e$,
+and the remainder has valuation at least $4e$. Hence
+$v_{13}(\Delta)=2e+1$, which is odd, and $\Delta$ is nonsquare.
+
+If $e=1$, write $b=13u$ with $u$ a unit. The congruence becomes
+\[
+ \Delta\equiv13^3u^2(1-18u)\pmod{13^4}.
+\]
+Unless $u\equiv8\pmod{13}$, the factor $1-18u$ is a unit and
+$v_{13}(\Delta)=3$, again odd. The remaining residue is precisely
+$b\equiv104\pmod{169}$. A split cubic has square discriminant,
+so the nonsquare cases exclude splitting over $\mathbb Q_{13}$ and
+over the integers. The equality factorization and complement and
+universal-class lifts give the graph conclusion.
+\end{proof}
+
+On the remaining negative-branch class $b\equiv104\pmod{169}$,
+the discriminant has valuation at least four; its square status remains
+undecided by this congruence. The positive branch at $13$ retains the
+three simple local roots of Proposition~\ref{prop:equality-local-splitting}.

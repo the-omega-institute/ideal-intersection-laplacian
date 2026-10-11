@@ -1,0 +1,160 @@
+\section{Remaining questions}
+\label{sec:open}
+
+Theorem~\ref{thm:three-prime-classification} proves nonintegrality for
+every positive three-prime exponent vector.
+Theorem~\ref{thm:unit-any-prime-count} settles any higher-prime vector
+with a unit entry. Thus the remaining part of Q3 has at least four
+prime factors and every exponent at least two.
+By Theorem~\ref{thm:small-exponent-rayleigh}, it also fails
+$A\geq(m^2-1)B-(m-1)$ for every choice of distinguished coordinate
+$m$, with $A,B$ computed from the other exponents.
+Corollary~\ref{cor:small-exponent-reciprocal} excludes, in particular,
+every fixed $m\geq2$ with all other exponents at least $m^2(t-1)$.
+Theorem~\ref{thm:four-prime-pair-two} further excludes every four-prime
+vector with at least two exponents equal to two. Thus a remaining
+four-prime vector has at most one such entry.
+Theorem~\ref{thm:four-prime-pair-three} likewise excludes two entries
+equal to three. The general repeated-pair tensor lower bound does
+not settle the remaining repeated exponents $a\geq4$.
+The endpoint-one equations retain separate arithmetic questions about
+exponent points, even though none of their integer quotient spectra split.
+
+\subsection{Arithmetic of endpoint-one exponent points}
+
+The spectral and coefficient reductions below remain useful descriptions
+of the endpoint-one surface. The new largest-root argument settles
+integral splitting uniformly; determining all integer exponent points
+on that surface is a different question and is not required by the
+classification.
+
+\paragraph{Spectral and divisor windows.}
+Write $h_C(x)=(x-1)F(x)$, $s=a+b+c$, $p=ab+ac+bc$ and $r=abc$.
+Theorem~\ref{thm:endpoint-one-spectrum} gives four real roots of $F$
+strictly above $a$, and Corollary~\ref{cor:endpoint-one-divisor-window}
+places their smallest in $(a,\min\{c,a+b\})$. Its integer value must
+divide $N_4=rs(p+s)$, while all three larger roots exceed $s=a+b+c$,
+without an equality or sign condition. The sign parameter
+$E=c+a-b(b+2)$ refines only the smallest-root window:
+\[
+ E>0:\quad b<d<\min\{c,a+b\},\qquad
+ E<0:\quad a<d<b.
+\]
+Since the three larger roots exceed $s>b$, the sign of
+$F(b)=r^2E/(b-1)$ determines the side of $b$ on which the smallest
+root lies. This gives the displayed refinements and, when $E=0$,
+the simple smallest residual root $b$. The earlier
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/notes/endpoint-one-middle-root.md}{regime proof}
+retains the original interlacing argument. Proposition~\ref{prop:endpoint-one-equality-spectrum}
+also identifies $b$ off endpoint one on the equality surface.
+The coefficient interval in Corollary~\ref{cor:endpoint-one-divisor-window}
+further requires $N_4/D<d<N_4/(D-N_4R)$, where $D$ is minus the
+linear coefficient of $F$, $U=\min\{c,a+b\}$ and
+$R=2/s+1/(p+s-1-U)$. Both denominator and endpoints are positive.
+
+\paragraph{Coefficient and exponent tests.}
+Write $F(x)=x^4-\alpha x^3+\beta x^2-\delta x+N_4$. Every integer
+root $d$ satisfies
+\begin{align*}
+ d&\mid N_4, & d^2&\mid N_4-\delta d,\\
+ d^3&\mid N_4-\delta d+\beta d^2,
+ & d^4&\mid N_4-\delta d+\beta d^2-\alpha d^3.
+\end{align*}
+For $e\in\{a,b,c\}$, the determinant identity
+$F(e)=-r^2(e^2+3e-s)/(e-1)$ also gives $d-e\mid F(e)$ when $d\ne e$;
+if $d=e$, the condition is $F(e)=0$. These are necessary tests, obtained
+by reducing $F(d)=0$, rather than sufficient splitting criteria. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/notes/endpoint-one-root-hierarchy.md}{coefficient proof}
+and
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/notes/endpoint-one-root-congruences.md}{exponent tests}
+retain the exact formulas and diagnostics. Each candidate still requires
+the actual root equation and the remaining factors.
+
+\paragraph{An elementary equality problem.}
+For $E=0$, put $c=b(b+2)-a$ and $q=ac$. Let $G(a,b)$ be the plane
+septic in Remark~\ref{rem:endpoint-one-equality-curve}, and define
+\begin{align*}
+ A_3&=q+b^3+5b^2+8b-1,\\
+ B_3&=qb(b^2+5b+5)+2b^5+12b^4+25b^3+16b^2-8b+1,\\
+ N_3&=qb(b+3)\bigl[q+b(b^2+3b+3)\bigr],\\
+ P_3(x)&=x^3-A_3x^2+B_3x-N_3,\\
+ \Delta&=A_3^2B_3^2-4B_3^3-4A_3^3N_3-27N_3^2+18A_3B_3N_3.
+\end{align*}
+The generic identity is
+$h_C(x)=(x-1)(x-b)P_3(x)+x(x-b)G(a,b)$, so this is precisely the
+spectral cubic when $G(a,b)=0$. The equality splitting system would require integers $4\leq a<b$, $d>s=b(b+3)$ and $u\geq0$ such that
+\[
+ G(a,b)=0,\qquad P_3(d)=0,\qquad \Delta(a,b)=u^2.
+\]
+Theorem~\ref{thm:three-prime-classification} proves that this system
+has no admissible solutions. The following algebraic equivalence still
+explains the earlier diagnostic tests. The curve equation is essential
+to the formulation. A square
+discriminant alone does not imply integral splitting: $x^3-3x+1$ has
+discriminant $81$ and no rational root. With an integer root $d$, however,
+$P_3=(x-d)[x^2+(d-A_3)x+N_3/d]$. If $P_3'(d)\ne0$, then
+\[
+ \Delta=P_3'(d)^2\bigl[(A_3-d)^2-4N_3/d\bigr].
+\]
+A square $\Delta$ makes the integer quadratic discriminant a rational
+square and hence an integer square; its parity gives integer roots.
+If $P_3'(d)=0$, the repeated root is $d$ and the third root is
+$A_3-2d$, also an integer. Thus the displayed system is equivalent
+to integral splitting on the equality curve. At each known point,
+only divisors $d\mid N_3$ above $s$ need testing. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/4afe151e1dc7193e6776cc1b08d3606aa804238e/notes/endpoint-one-equality-cubic.md}{explicit cubic note}
+and its certificate retain the full $61$-term discriminant.
+
+Propositions~\ref{prop:mod-five-splitting}
+and~\ref{prop:equality-local-discriminant} supply further necessary
+restrictions. The finite-field table first leaves six compatible rows;
+the normalized discriminant excludes $(1,0)$ and $(4,0)$, leaving
+\[
+ (a,b)\bmod5\in\{(2,0),(3,0),(0,2),(3,2)\}.
+\]
+In addition, $7\nmid b$ and $11\nmid b$. These four rows permit cubic
+splitting over $\mathbb F_5$; they assert neither integer equality points
+nor an integral spectrum. The
+\href{https://github.com/the-omega-institute/ideal-intersection-laplacian/blob/7d917afffd7c2616bc052810718dcc720d916a8b/notes/endpoint-one-equality-mod-five.md}{complete residue table}
+records all nine curve rows and the three excluded cubic reductions.
+The two further exclusions use $G=0$ and the normalized discriminant,
+rather than a nonsplitting reduction over $\mathbb F_5$.
+At modulo three all six curve rows split, giving no further obstruction.
+Proposition~\ref{prop:equality-local-splitting} proves that at every
+actual equality point in the two $b\equiv0\pmod5$ rows, $P_3$ splits
+modulo every power of five. The simple positive-branch roots lift by
+Hensel's lemma, so increasing that modulus cannot exclude those rows.
+For every fixed $b\in5\mathbb Z_5$, the curve itself has a unique point
+in each of the residues $a\equiv2,3$, with split cubics. Thus neither
+row can be excluded by a finite five-power curve-and-splitting test.
+At odd prime divisors of $b$ on the negative branch, the residue test
+for $13$ is also sufficient for local splitting, except at $p=13$.
+At $p=13$, Proposition~\ref{prop:equality-thirteen} requires
+$b\equiv104\pmod{169}$ on the negative branch for integer splitting;
+every other $13$-divisibility class has odd discriminant valuation.
+These local compatibility classes no longer leave an open global
+integral-spectrum case: the largest-root interval excludes all of them
+at admissible integer exponent points. Further local analysis remains
+a separate arithmetic question.
+
+\paragraph{Finiteness and effective classification.}
+Remark~\ref{rem:endpoint-one-equality-curve} and Siegel's theorem show
+that the equality curve has finitely many integer points. They provide
+neither a height bound nor an exhaustive list here. Riemann--Roch spaces
+for specified divisors do not by themselves enumerate those points.
+Effective enumeration of equality exponent points remains open.
+Their integral cubic spectra, and integral quartic spectra away from
+equality, are now excluded by the global three-prime theorem.
+The endpoint-one surface itself is not claimed to have no integer points.
+The genus consequence remains a structural remark; no Jacobian rank
+bound or covering computation is assumed in the spectral results.
+
+\subsection{More prime factors}
+
+Which nonsquarefree exponent vectors with more than three prime factors
+give integral ideal intersection graphs? The present arguments do not
+supply the full general-exponent Q3 characterization. The distinction
+between the repeated-exponent blocks remains useful: the boundary family
+has an integral antisymmetric block, whereas $(1,1,2)$ has an integral
+symmetric cubic and a nonintegral full spectrum. A general reduction must
+control all remaining blocks.

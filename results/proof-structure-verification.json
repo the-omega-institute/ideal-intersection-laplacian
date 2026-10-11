@@ -1,0 +1,18 @@
+{
+  "balanced_direct_determinant_factorization": "passed",
+  "smallest_root_anchor_signs_and_limit": "passed exactly; written ordering for m>=1",
+  "endpoint_one_direct_determinant_cubic": "passed",
+  "rescaled_polynomial_at_zero": "2*y**2*(y - 2)",
+  "implicit_function_derivative_at_zero_two": 8,
+  "fixed_gap_coefficients_constant_inverse_inverse_squared": [
+    "(-d - 2)*(2*d - 1)/2",
+    "d**2/2",
+    "d**2*(d + 1)*(2*d - 3)/4"
+  ],
+  "rescaled_residual_coefficients_zero_through_degree_four": true,
+  "rescaled_degree_five_residual": "d**2*(4*d**3 - 6*d + 7)",
+  "middle_anchor_leading_coefficient": -4,
+  "scope": "Generic exact determinant and coefficient identities supporting the written fixed-d analytic implicit-function proof. O_d(a^-3) has no effective constant, minimum or uniform growing-gap bound. Shared set-disjointness constructor and SymPy; no exponent scan, numerical experiments, historical finite-base rerun or Lean.",
+  "sympy": "1.14.0",
+  "status": "passed"
+}

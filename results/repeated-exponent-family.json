@@ -1,0 +1,65 @@
+{
+  "symbolic_identities": "passed",
+  "base_cubic_modulo_5": [
+    3,
+    4,
+    2,
+    3,
+    3
+  ],
+  "lower_factor_at_a_equals_b_plus_3": "2*b**4 + 17*b**3 + 52*b**2 + 68*b + 30",
+  "cases": [
+    {
+      "exponents": [
+        2,
+        2,
+        3
+      ],
+      "vertices": 34,
+      "vertex_pairs_checked": 561,
+      "universal_vertices": 11,
+      "equitable_partition": "passed",
+      "symmetric_and_antisymmetric_embeddings": "passed",
+      "nonconstant_join_lift": "passed",
+      "full_support_quotient_characteristic_polynomial": "x*(x - 34)*(x - 33)*(x - 20)*(x**3 - 80*x**2 + 2099*x - 18052)",
+      "lower_sign_value": 8,
+      "upper_sign_value": 54
+    },
+    {
+      "exponents": [
+        3,
+        3,
+        10
+      ],
+      "vertices": 174,
+      "vertex_pairs_checked": 15051,
+      "universal_vertices": 89,
+      "equitable_partition": "passed",
+      "symmetric_and_antisymmetric_embeddings": "passed",
+      "nonconstant_join_lift": "passed",
+      "full_support_quotient_characteristic_polynomial": "x*(x - 174)*(x - 173)*(x - 126)*(x**3 - 454*x**2 + 68269*x - 3398976)",
+      "lower_sign_value": -600,
+      "upper_sign_value": 394
+    },
+    {
+      "exponents": [
+        4,
+        4,
+        21
+      ],
+      "vertices": 548,
+      "vertex_pairs_checked": 149878,
+      "universal_vertices": 335,
+      "equitable_partition": "passed",
+      "symmetric_and_antisymmetric_embeddings": "passed",
+      "nonconstant_join_lift": "passed",
+      "full_support_quotient_characteristic_polynomial": "x*(x - 548)*(x - 547)*(x - 432)*(x**3 - 1490*x**2 + 737117*x - 121035856)",
+      "lower_sign_value": -6084,
+      "upper_sign_value": 1502
+    }
+  ],
+  "total_vertex_pairs_checked": 165490,
+  "sympy": "1.14.0",
+  "script_sha256": "693db7d9e81ba07ec61cb3f6051e2b578a8ca0c142e71ba2dca9387822365dea",
+  "scope": "Polynomial identities plus direct-graph checks for a=2,3,4. For a=2 the sign interval is not used: irreducibility modulo5 supplies the obstruction. No full548vertex characteristic polynomial, numerical eigensolver or Lean verification."
+}

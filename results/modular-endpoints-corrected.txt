@@ -1,0 +1,54 @@
+==============================================================================
+Modular endpoint surface analysis (fully-distinct region)
+==============================================================================
+
+Building B, N, h_C(1), h_C(2) symbolically ...
+  N = a*b + a*c + a + b*c + b + c
+  done.
+
+--- p = 2 ---
+  |S_p| = 8 residue triples survive (union)
+  excluded with both endpoints nonzero: 0
+  both endpoints zero: 6 (separate diagnostic)
+  sample: [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)]
+
+--- p = 3 ---
+  |S_p| = 22 residue triples survive (union)
+  excluded with both endpoints nonzero: 5
+  both endpoints zero: 15 (separate diagnostic)
+  sample: [(0, 0, 1), (0, 0, 2), (0, 1, 0), (0, 1, 1), (0, 1, 2), (0, 2, 0), (0, 2, 1), (0, 2, 2)] ...
+
+--- p = 5 ---
+  |S_p| = 78 residue triples survive (union)
+  excluded with both endpoints nonzero: 47
+  both endpoints zero: 27 (separate diagnostic)
+  sample: [(0, 0, 1), (0, 0, 2), (0, 1, 0), (0, 1, 1), (0, 1, 2), (0, 1, 3), (0, 1, 4), (0, 2, 0)] ...
+
+--- p = 7 ---
+  |S_p| = 142 residue triples survive (union)
+  excluded with both endpoints nonzero: 201
+  both endpoints zero: 39 (separate diagnostic)
+  sample: [(0, 0, 1), (0, 0, 2), (0, 1, 0), (0, 1, 1), (0, 1, 2), (0, 1, 3), (0, 1, 4), (0, 1, 5)] ...
+
+--- p = 11 ---
+  |S_p| = 371 residue triples survive (union)
+  excluded with both endpoints nonzero: 960
+  both endpoints zero: 37 (separate diagnostic)
+  sample: [(0, 0, 1), (0, 0, 2), (0, 1, 0), (0, 1, 1), (0, 1, 2), (0, 1, 3), (0, 1, 4), (0, 1, 5)] ...
+
+--- p = 13 ---
+  |S_p| = 505 residue triples survive (union)
+  excluded with both endpoints nonzero: 1692
+  both endpoints zero: 39 (separate diagnostic)
+  sample: [(0, 0, 1), (0, 0, 2), (0, 1, 0), (0, 1, 1), (0, 1, 2), (0, 1, 3), (0, 1, 4), (0, 1, 5)] ...
+
+==============================================================================
+Limitation
+==============================================================================
+
+Any finite set of moduli admits survivor classes congruent to the
+known zeros (9,9,136) on endpoint 1 and (10,10,12) on endpoint 2.
+Those survivors are not claimed to be actual integer zeros. A
+combination with interval restrictions or another-root obstruction
+is still required for full closure.
+

@@ -1,0 +1,405 @@
+{
+  "status": "passed",
+  "method": "Integer invariant-block checks against direct coordinatewise ideal intersections",
+  "squarefree": [
+    {
+      "exponents": [
+        1,
+        1,
+        1
+      ],
+      "vertices": 6,
+      "pairs_checked": 15,
+      "edges_checked": 9,
+      "block": [
+        [
+          2,
+          -1
+        ],
+        [
+          -1,
+          5
+        ]
+      ],
+      "witness": {
+        "discriminant": 13,
+        "between_squares": [
+          9,
+          16
+        ]
+      },
+      "invariance": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "vertices": 14,
+      "pairs_checked": 91,
+      "edges_checked": 66,
+      "block": [
+        [
+          6,
+          -2,
+          -1
+        ],
+        [
+          -1,
+          10,
+          0
+        ],
+        [
+          -1,
+          0,
+          13
+        ]
+      ],
+      "witness": {
+        "positive_leading_minors_of_K_minus_scale_minus_one_I": [
+          8,
+          30,
+          26
+        ],
+        "negative_principal_minor_of_K_minus_scale_I": -1,
+        "noninteger_eigenvalue_interval": [
+          13,
+          14
+        ]
+      },
+      "invariance": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "vertices": 30,
+      "pairs_checked": 435,
+      "edges_checked": 345,
+      "block": [
+        [
+          24,
+          1
+        ],
+        [
+          1,
+          27
+        ]
+      ],
+      "witness": {
+        "discriminant": 13,
+        "between_squares": [
+          9,
+          16
+        ]
+      },
+      "invariance": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "vertices": 62,
+      "pairs_checked": 1891,
+      "edges_checked": 1590,
+      "block": [
+        [
+          48,
+          2,
+          1
+        ],
+        [
+          1,
+          56,
+          0
+        ],
+        [
+          1,
+          0,
+          59
+        ]
+      ],
+      "witness": {
+        "positive_leading_minors_of_K_minus_scale_minus_one_I": [
+          12,
+          46,
+          42
+        ],
+        "negative_principal_minor_of_K_minus_scale_I": -1,
+        "noninteger_eigenvalue_interval": [
+          59,
+          60
+        ]
+      },
+      "invariance": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "vertices": 126,
+      "pairs_checked": 7875,
+      "edges_checked": 6909,
+      "block": [
+        [
+          110,
+          -1
+        ],
+        [
+          -1,
+          119
+        ]
+      ],
+      "witness": {
+        "discriminant": 85,
+        "between_squares": [
+          81,
+          100
+        ]
+      },
+      "invariance": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "vertices": 254,
+      "pairs_checked": 32131,
+      "edges_checked": 29106,
+      "block": [
+        [
+          222,
+          -2,
+          -1
+        ],
+        [
+          -1,
+          238,
+          0
+        ],
+        [
+          -1,
+          0,
+          247
+        ]
+      ],
+      "witness": {
+        "positive_leading_minors_of_K_minus_scale_minus_one_I": [
+          26,
+          258,
+          248
+        ],
+        "negative_principal_minor_of_K_minus_scale_I": -1,
+        "noninteger_eigenvalue_interval": [
+          247,
+          248
+        ]
+      },
+      "invariance": "passed"
+    }
+  ],
+  "two_unit_exponents": [
+    {
+      "exponents": [
+        1,
+        1,
+        1
+      ],
+      "vertices": 6,
+      "pairs_checked": 15,
+      "edges_checked": 9,
+      "block": [
+        [
+          2,
+          -1
+        ],
+        [
+          -1,
+          5
+        ]
+      ],
+      "discriminant": 13,
+      "invariance": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        2
+      ],
+      "vertices": 10,
+      "pairs_checked": 45,
+      "edges_checked": 34,
+      "block": [
+        [
+          4,
+          -2
+        ],
+        [
+          -1,
+          9
+        ]
+      ],
+      "discriminant": 33,
+      "invariance": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        3
+      ],
+      "vertices": 14,
+      "pairs_checked": 91,
+      "edges_checked": 75,
+      "block": [
+        [
+          6,
+          -3
+        ],
+        [
+          -1,
+          13
+        ]
+      ],
+      "discriminant": 61,
+      "invariance": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        4
+      ],
+      "vertices": 18,
+      "pairs_checked": 153,
+      "edges_checked": 132,
+      "block": [
+        [
+          8,
+          -4
+        ],
+        [
+          -1,
+          17
+        ]
+      ],
+      "discriminant": 97,
+      "invariance": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        5
+      ],
+      "vertices": 22,
+      "pairs_checked": 231,
+      "edges_checked": 205,
+      "block": [
+        [
+          10,
+          -5
+        ],
+        [
+          -1,
+          21
+        ]
+      ],
+      "discriminant": 141,
+      "invariance": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        6
+      ],
+      "vertices": 26,
+      "pairs_checked": 325,
+      "edges_checked": 294,
+      "block": [
+        [
+          12,
+          -6
+        ],
+        [
+          -1,
+          25
+        ]
+      ],
+      "discriminant": 193,
+      "invariance": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        7
+      ],
+      "vertices": 30,
+      "pairs_checked": 435,
+      "edges_checked": 399,
+      "block": [
+        [
+          14,
+          -7
+        ],
+        [
+          -1,
+          29
+        ]
+      ],
+      "discriminant": 253,
+      "invariance": "passed"
+    },
+    {
+      "exponents": [
+        1,
+        1,
+        8
+      ],
+      "vertices": 34,
+      "pairs_checked": 561,
+      "edges_checked": 520,
+      "block": [
+        [
+          16,
+          -8
+        ],
+        [
+          -1,
+          33
+        ]
+      ],
+      "discriminant": 321,
+      "invariance": "passed"
+    }
+  ],
+  "script_sha256": "806b17acac77031ff07fc47b83047513e93562462ec78903c29824037f8a8092",
+  "scope": "Finite independent checks of the embeddings and obstruction inequalities; the infinite-family conclusions use the written proofs. No floating-point spectrum or Lean run."
+}

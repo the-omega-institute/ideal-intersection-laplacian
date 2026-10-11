@@ -1,0 +1,10159 @@
+{
+  "symbolic_identities": "passed",
+  "general_h1_cubic_coefficients": [
+    "a**2 + b**2 - 1",
+    "a**3 - 4*a**2*b**2 + 2*a**2*b - a**2 + 2*a*b**2 + a*b - 3*a + b**3 - b**2 - 3*b + 3",
+    "(a - 1)*(b - 1)*(2*a*b + 3*a + 3*b - 3)",
+    "(a - 1)*(b - 1)*(a + b - 1)*(a*b + a + b - 1)"
+  ],
+  "uniform_cutoff": "4*a**2 - 2*a",
+  "cutoff_positive_remainder_at_a2_plus_u": "4*u**4 + 31*u**3 + 85*u**2 + 95*u + 37",
+  "minimum_three_h1": "c**3*(b**2 + 8) + c**2*(b - 1)*(b**2 - 30*b - 12) + c*(3*b + 2)*(6*b - 6) + (b + 2)*(2*b + 1)*(4*b - 4)",
+  "minimum_three_h2_positive_regions": [
+    "104*v**3 + 1238*v**2 + 4018*v + 2344",
+    "10*u**5 + 218*u**4 + 1828*u**3 + 7200*u**2 + 12600*u + v**3*(5*u**2 + 54*u + 153) + v**2*(20*u**3 + 262*u**2 + 1179*u + 1863) + v*(25*u**4 + 426*u**3 + 2642*u**2 + 7011*u + 6624) + 6480"
+  ],
+  "finite_domain_derived_from_cutoff": "a=3, 4<=b<c<4*a^2-2*a=30",
+  "counts": {
+    "total": 325,
+    "h1_positive": 257,
+    "h1_negative": 68,
+    "h1_zero": 0
+  },
+  "negative_h1_ranges": [
+    {
+      "b": 4,
+      "c_min": 5,
+      "c_max": 13
+    },
+    {
+      "b": 5,
+      "c_min": 6,
+      "c_max": 15
+    },
+    {
+      "b": 6,
+      "c_min": 7,
+      "c_max": 16
+    },
+    {
+      "b": 7,
+      "c_min": 8,
+      "c_max": 17
+    },
+    {
+      "b": 8,
+      "c_min": 9,
+      "c_max": 17
+    },
+    {
+      "b": 9,
+      "c_min": 10,
+      "c_max": 16
+    },
+    {
+      "b": 10,
+      "c_min": 11,
+      "c_max": 16
+    },
+    {
+      "b": 11,
+      "c_min": 12,
+      "c_max": 15
+    },
+    {
+      "b": 12,
+      "c_min": 13,
+      "c_max": 14
+    },
+    {
+      "b": 13,
+      "c_min": 14,
+      "c_max": 14
+    }
+  ],
+  "exception_sturm_count_between_1_and_3_over_2": 1,
+  "cases": [
+    {
+      "exponents": [
+        3,
+        4,
+        5
+      ],
+      "quintic_coefficients": [
+        1,
+        -83,
+        2327,
+        -24133,
+        60576,
+        -42480
+      ],
+      "h1": -3792,
+      "h2": -540,
+      "complement_interval": [
+        "1",
+        "3/2"
+      ],
+      "endpoint_values": [
+        "-3792",
+        "48825/32"
+      ],
+      "graph_vertex_count": 118,
+      "graph_eigenvalue_interval": [
+        "233/2",
+        "117"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        6
+      ],
+      "quintic_coefficients": [
+        1,
+        -93,
+        2901,
+        -33067,
+        87786,
+        -62712
+      ],
+      "h1": -5184,
+      "h2": 2344,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-5184",
+        "2344"
+      ],
+      "graph_vertex_count": 138,
+      "graph_eigenvalue_interval": [
+        "136",
+        "137"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        7
+      ],
+      "quintic_coefficients": [
+        1,
+        -103,
+        3533,
+        -43733,
+        122094,
+        -88200
+      ],
+      "h1": -6408,
+      "h2": 7704,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-6408",
+        "7704"
+      ],
+      "graph_vertex_count": 158,
+      "graph_eigenvalue_interval": [
+        "156",
+        "157"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        8
+      ],
+      "quintic_coefficients": [
+        1,
+        -113,
+        4223,
+        -56251,
+        164340,
+        -119520
+      ],
+      "h1": -7320,
+      "h2": 16164,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-7320",
+        "16164"
+      ],
+      "graph_vertex_count": 178,
+      "graph_eigenvalue_interval": [
+        "176",
+        "177"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        9
+      ],
+      "quintic_coefficients": [
+        1,
+        -123,
+        4971,
+        -70741,
+        215364,
+        -157248
+      ],
+      "h1": -7776,
+      "h2": 28348,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-7776",
+        "28348"
+      ],
+      "graph_vertex_count": 198,
+      "graph_eigenvalue_interval": [
+        "196",
+        "197"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        10
+      ],
+      "quintic_coefficients": [
+        1,
+        -133,
+        5777,
+        -87323,
+        276006,
+        -201960
+      ],
+      "h1": -7632,
+      "h2": 44880,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-7632",
+        "44880"
+      ],
+      "graph_vertex_count": 218,
+      "graph_eigenvalue_interval": [
+        "216",
+        "217"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        11
+      ],
+      "quintic_coefficients": [
+        1,
+        -143,
+        6641,
+        -106117,
+        347106,
+        -254232
+      ],
+      "h1": -6744,
+      "h2": 66384,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-6744",
+        "66384"
+      ],
+      "graph_vertex_count": 238,
+      "graph_eigenvalue_interval": [
+        "236",
+        "237"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        12
+      ],
+      "quintic_coefficients": [
+        1,
+        -153,
+        7563,
+        -127243,
+        429504,
+        -314640
+      ],
+      "h1": -4968,
+      "h2": 93484,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-4968",
+        "93484"
+      ],
+      "graph_vertex_count": 258,
+      "graph_eigenvalue_interval": [
+        "256",
+        "257"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        13
+      ],
+      "quintic_coefficients": [
+        1,
+        -163,
+        8543,
+        -150821,
+        524040,
+        -383760
+      ],
+      "h1": -2160,
+      "h2": 126804,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-2160",
+        "126804"
+      ],
+      "graph_vertex_count": 278,
+      "graph_eigenvalue_interval": [
+        "276",
+        "277"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        14
+      ],
+      "quintic_coefficients": [
+        1,
+        -173,
+        9581,
+        -176971,
+        631554,
+        -462168
+      ],
+      "h1": 1824,
+      "h2": 166968,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-462168",
+        "1824"
+      ],
+      "graph_vertex_count": 298,
+      "graph_eigenvalue_interval": [
+        "297",
+        "298"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        15
+      ],
+      "quintic_coefficients": [
+        1,
+        -183,
+        10677,
+        -205813,
+        752886,
+        -550440
+      ],
+      "h1": 7128,
+      "h2": 214600,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-550440",
+        "7128"
+      ],
+      "graph_vertex_count": 318,
+      "graph_eigenvalue_interval": [
+        "317",
+        "318"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        16
+      ],
+      "quintic_coefficients": [
+        1,
+        -193,
+        11831,
+        -237467,
+        888876,
+        -649152
+      ],
+      "h1": 13896,
+      "h2": 270324,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-649152",
+        "13896"
+      ],
+      "graph_vertex_count": 338,
+      "graph_eigenvalue_interval": [
+        "337",
+        "338"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        17
+      ],
+      "quintic_coefficients": [
+        1,
+        -203,
+        13043,
+        -272053,
+        1040364,
+        -758880
+      ],
+      "h1": 22272,
+      "h2": 334764,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-758880",
+        "22272"
+      ],
+      "graph_vertex_count": 358,
+      "graph_eigenvalue_interval": [
+        "357",
+        "358"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        18
+      ],
+      "quintic_coefficients": [
+        1,
+        -213,
+        14313,
+        -309691,
+        1208190,
+        -880200
+      ],
+      "h1": 32400,
+      "h2": 408544,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-880200",
+        "32400"
+      ],
+      "graph_vertex_count": 378,
+      "graph_eigenvalue_interval": [
+        "377",
+        "378"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -223,
+        15641,
+        -350501,
+        1393194,
+        -1013688
+      ],
+      "h1": 44424,
+      "h2": 492288,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-1013688",
+        "44424"
+      ],
+      "graph_vertex_count": 398,
+      "graph_eigenvalue_interval": [
+        "397",
+        "398"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -233,
+        17027,
+        -394603,
+        1596216,
+        -1159920
+      ],
+      "h1": 58488,
+      "h2": 586620,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-1159920",
+        "58488"
+      ],
+      "graph_vertex_count": 418,
+      "graph_eigenvalue_interval": [
+        "417",
+        "418"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -243,
+        18471,
+        -442117,
+        1818096,
+        -1319472
+      ],
+      "h1": 74736,
+      "h2": 692164,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-1319472",
+        "74736"
+      ],
+      "graph_vertex_count": 438,
+      "graph_eigenvalue_interval": [
+        "437",
+        "438"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -253,
+        19973,
+        -493163,
+        2059674,
+        -1492920
+      ],
+      "h1": 93312,
+      "h2": 809544,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-1492920",
+        "93312"
+      ],
+      "graph_vertex_count": 458,
+      "graph_eigenvalue_interval": [
+        "457",
+        "458"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -263,
+        21533,
+        -547861,
+        2321790,
+        -1680840
+      ],
+      "h1": 114360,
+      "h2": 939384,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-1680840",
+        "114360"
+      ],
+      "graph_vertex_count": 478,
+      "graph_eigenvalue_interval": [
+        "477",
+        "478"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -273,
+        23151,
+        -606331,
+        2605284,
+        -1883808
+      ],
+      "h1": 138024,
+      "h2": 1082308,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-1883808",
+        "138024"
+      ],
+      "graph_vertex_count": 498,
+      "graph_eigenvalue_interval": [
+        "497",
+        "498"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -283,
+        24827,
+        -668693,
+        2910996,
+        -2102400
+      ],
+      "h1": 164448,
+      "h2": 1238940,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-2102400",
+        "164448"
+      ],
+      "graph_vertex_count": 518,
+      "graph_eigenvalue_interval": [
+        "517",
+        "518"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -293,
+        26561,
+        -735067,
+        3239766,
+        -2337192
+      ],
+      "h1": 193776,
+      "h2": 1409904,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-2337192",
+        "193776"
+      ],
+      "graph_vertex_count": 538,
+      "graph_eigenvalue_interval": [
+        "537",
+        "538"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -303,
+        28353,
+        -805573,
+        3592434,
+        -2588760
+      ],
+      "h1": 226152,
+      "h2": 1595824,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-2588760",
+        "226152"
+      ],
+      "graph_vertex_count": 558,
+      "graph_eigenvalue_interval": [
+        "557",
+        "558"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -313,
+        30203,
+        -880331,
+        3969840,
+        -2857680
+      ],
+      "h1": 261720,
+      "h2": 1797324,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-2857680",
+        "261720"
+      ],
+      "graph_vertex_count": 578,
+      "graph_eigenvalue_interval": [
+        "577",
+        "578"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -323,
+        32111,
+        -959461,
+        4372824,
+        -3144528
+      ],
+      "h1": 300624,
+      "h2": 2015028,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-3144528",
+        "300624"
+      ],
+      "graph_vertex_count": 598,
+      "graph_eigenvalue_interval": [
+        "597",
+        "598"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        6
+      ],
+      "quintic_coefficients": [
+        1,
+        -105,
+        3675,
+        -46655,
+        131184,
+        -97020
+      ],
+      "h1": -8920,
+      "h2": 6480,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-8920",
+        "6480"
+      ],
+      "graph_vertex_count": 166,
+      "graph_eigenvalue_interval": [
+        "164",
+        "165"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        7
+      ],
+      "quintic_coefficients": [
+        1,
+        -116,
+        4451,
+        -61276,
+        180945,
+        -135450
+      ],
+      "h1": -11445,
+      "h2": 15120,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-11445",
+        "15120"
+      ],
+      "graph_vertex_count": 190,
+      "graph_eigenvalue_interval": [
+        "188",
+        "189"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        8
+      ],
+      "quintic_coefficients": [
+        1,
+        -127,
+        5295,
+        -78329,
+        241880,
+        -182400
+      ],
+      "h1": -13680,
+      "h2": 28404,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-13680",
+        "28404"
+      ],
+      "graph_vertex_count": 214,
+      "graph_eigenvalue_interval": [
+        "212",
+        "213"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        9
+      ],
+      "quintic_coefficients": [
+        1,
+        -138,
+        6207,
+        -97958,
+        315141,
+        -238680
+      ],
+      "h1": -15427,
+      "h2": 47250,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-15427",
+        "47250"
+      ],
+      "graph_vertex_count": 238,
+      "graph_eigenvalue_interval": [
+        "236",
+        "237"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        10
+      ],
+      "quintic_coefficients": [
+        1,
+        -149,
+        7187,
+        -120307,
+        401880,
+        -305100
+      ],
+      "h1": -16488,
+      "h2": 72576,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-16488",
+        "72576"
+      ],
+      "graph_vertex_count": 262,
+      "graph_eigenvalue_interval": [
+        "260",
+        "261"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        11
+      ],
+      "quintic_coefficients": [
+        1,
+        -160,
+        8235,
+        -145520,
+        503249,
+        -382470
+      ],
+      "h1": -16665,
+      "h2": 105300,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-16665",
+        "105300"
+      ],
+      "graph_vertex_count": 286,
+      "graph_eigenvalue_interval": [
+        "284",
+        "285"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        12
+      ],
+      "quintic_coefficients": [
+        1,
+        -171,
+        9351,
+        -173741,
+        620400,
+        -471600
+      ],
+      "h1": -15760,
+      "h2": 146340,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-15760",
+        "146340"
+      ],
+      "graph_vertex_count": 310,
+      "graph_eigenvalue_interval": [
+        "308",
+        "309"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        13
+      ],
+      "quintic_coefficients": [
+        1,
+        -182,
+        10535,
+        -205114,
+        754485,
+        -573300
+      ],
+      "h1": -13575,
+      "h2": 196614,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-13575",
+        "196614"
+      ],
+      "graph_vertex_count": 334,
+      "graph_eigenvalue_interval": [
+        "332",
+        "333"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        14
+      ],
+      "quintic_coefficients": [
+        1,
+        -193,
+        11787,
+        -239783,
+        906656,
+        -688380
+      ],
+      "h1": -9912,
+      "h2": 257040,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-9912",
+        "257040"
+      ],
+      "graph_vertex_count": 358,
+      "graph_eigenvalue_interval": [
+        "356",
+        "357"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        15
+      ],
+      "quintic_coefficients": [
+        1,
+        -204,
+        13107,
+        -277892,
+        1078065,
+        -817650
+      ],
+      "h1": -4573,
+      "h2": 328536,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-4573",
+        "328536"
+      ],
+      "graph_vertex_count": 382,
+      "graph_eigenvalue_interval": [
+        "380",
+        "381"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        16
+      ],
+      "quintic_coefficients": [
+        1,
+        -215,
+        14495,
+        -319585,
+        1269864,
+        -961920
+      ],
+      "h1": 2640,
+      "h2": 412020,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-961920",
+        "2640"
+      ],
+      "graph_vertex_count": 406,
+      "graph_eigenvalue_interval": [
+        "405",
+        "406"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        17
+      ],
+      "quintic_coefficients": [
+        1,
+        -226,
+        15951,
+        -365006,
+        1483205,
+        -1122000
+      ],
+      "h1": 11925,
+      "h2": 508410,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-1122000",
+        "11925"
+      ],
+      "graph_vertex_count": 430,
+      "graph_eigenvalue_interval": [
+        "429",
+        "430"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        18
+      ],
+      "quintic_coefficients": [
+        1,
+        -237,
+        17475,
+        -414299,
+        1719240,
+        -1298700
+      ],
+      "h1": 23480,
+      "h2": 618624,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-1298700",
+        "23480"
+      ],
+      "graph_vertex_count": 454,
+      "graph_eigenvalue_interval": [
+        "453",
+        "454"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -248,
+        19067,
+        -467608,
+        1979121,
+        -1492830
+      ],
+      "h1": 37503,
+      "h2": 743580,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-1492830",
+        "37503"
+      ],
+      "graph_vertex_count": 478,
+      "graph_eigenvalue_interval": [
+        "477",
+        "478"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -259,
+        20727,
+        -525077,
+        2264000,
+        -1705200
+      ],
+      "h1": 54192,
+      "h2": 884196,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-1705200",
+        "54192"
+      ],
+      "graph_vertex_count": 502,
+      "graph_eigenvalue_interval": [
+        "501",
+        "502"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -270,
+        22455,
+        -586850,
+        2575029,
+        -1936620
+      ],
+      "h1": 73745,
+      "h2": 1041390,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-1936620",
+        "73745"
+      ],
+      "graph_vertex_count": 526,
+      "graph_eigenvalue_interval": [
+        "525",
+        "526"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -281,
+        24251,
+        -653071,
+        2913360,
+        -2187900
+      ],
+      "h1": 96360,
+      "h2": 1216080,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-2187900",
+        "96360"
+      ],
+      "graph_vertex_count": 550,
+      "graph_eigenvalue_interval": [
+        "549",
+        "550"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -292,
+        26115,
+        -723884,
+        3280145,
+        -2459850
+      ],
+      "h1": 122235,
+      "h2": 1409184,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-2459850",
+        "122235"
+      ],
+      "graph_vertex_count": 574,
+      "graph_eigenvalue_interval": [
+        "573",
+        "574"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -303,
+        28047,
+        -799433,
+        3676536,
+        -2753280
+      ],
+      "h1": 151568,
+      "h2": 1621620,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-2753280",
+        "151568"
+      ],
+      "graph_vertex_count": 598,
+      "graph_eigenvalue_interval": [
+        "597",
+        "598"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -314,
+        30047,
+        -879862,
+        4103685,
+        -3069000
+      ],
+      "h1": 184557,
+      "h2": 1854306,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-3069000",
+        "184557"
+      ],
+      "graph_vertex_count": 622,
+      "graph_eigenvalue_interval": [
+        "621",
+        "622"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -325,
+        32115,
+        -965315,
+        4562744,
+        -3407820
+      ],
+      "h1": 221400,
+      "h2": 2108160,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-3407820",
+        "221400"
+      ],
+      "graph_vertex_count": 646,
+      "graph_eigenvalue_interval": [
+        "645",
+        "646"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -336,
+        34251,
+        -1055936,
+        5054865,
+        -3770550
+      ],
+      "h1": 262295,
+      "h2": 2384100,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-3770550",
+        "262295"
+      ],
+      "graph_vertex_count": 670,
+      "graph_eigenvalue_interval": [
+        "669",
+        "670"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -347,
+        36455,
+        -1151869,
+        5581200,
+        -4158000
+      ],
+      "h1": 307440,
+      "h2": 2683044,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-4158000",
+        "307440"
+      ],
+      "graph_vertex_count": 694,
+      "graph_eigenvalue_interval": [
+        "693",
+        "694"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -358,
+        38727,
+        -1253258,
+        6142901,
+        -4570980
+      ],
+      "h1": 357033,
+      "h2": 3005910,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-4570980",
+        "357033"
+      ],
+      "graph_vertex_count": 718,
+      "graph_eigenvalue_interval": [
+        "717",
+        "718"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        7
+      ],
+      "quintic_coefficients": [
+        1,
+        -129,
+        5457,
+        -82243,
+        255618,
+        -195552
+      ],
+      "h1": -16848,
+      "h2": 28336,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-16848",
+        "28336"
+      ],
+      "graph_vertex_count": 222,
+      "graph_eigenvalue_interval": [
+        "220",
+        "221"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        8
+      ],
+      "quintic_coefficients": [
+        1,
+        -141,
+        6465,
+        -104579,
+        339678,
+        -261936
+      ],
+      "h1": -20512,
+      "h2": 48600,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-20512",
+        "48600"
+      ],
+      "graph_vertex_count": 250,
+      "graph_eigenvalue_interval": [
+        "248",
+        "249"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        9
+      ],
+      "quintic_coefficients": [
+        1,
+        -153,
+        7551,
+        -130167,
+        440316,
+        -341172
+      ],
+      "h1": -23624,
+      "h2": 76784,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-23624",
+        "76784"
+      ],
+      "graph_vertex_count": 278,
+      "graph_eigenvalue_interval": [
+        "276",
+        "277"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        10
+      ],
+      "quintic_coefficients": [
+        1,
+        -165,
+        8715,
+        -159175,
+        559044,
+        -434340
+      ],
+      "h1": -25920,
+      "h2": 114160,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-25920",
+        "114160"
+      ],
+      "graph_vertex_count": 306,
+      "graph_eigenvalue_interval": [
+        "304",
+        "305"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        11
+      ],
+      "quintic_coefficients": [
+        1,
+        -177,
+        9957,
+        -191771,
+        697374,
+        -542520
+      ],
+      "h1": -27136,
+      "h2": 162000,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-27136",
+        "162000"
+      ],
+      "graph_vertex_count": 334,
+      "graph_eigenvalue_interval": [
+        "332",
+        "333"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        12
+      ],
+      "quintic_coefficients": [
+        1,
+        -189,
+        11277,
+        -228123,
+        856818,
+        -666792
+      ],
+      "h1": -27008,
+      "h2": 221576,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-27008",
+        "221576"
+      ],
+      "graph_vertex_count": 362,
+      "graph_eigenvalue_interval": [
+        "360",
+        "361"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        13
+      ],
+      "quintic_coefficients": [
+        1,
+        -201,
+        12675,
+        -268399,
+        1038888,
+        -808236
+      ],
+      "h1": -25272,
+      "h2": 294160,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-25272",
+        "294160"
+      ],
+      "graph_vertex_count": 390,
+      "graph_eigenvalue_interval": [
+        "388",
+        "389"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        14
+      ],
+      "quintic_coefficients": [
+        1,
+        -213,
+        14151,
+        -312767,
+        1245096,
+        -967932
+      ],
+      "h1": -21664,
+      "h2": 381024,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-21664",
+        "381024"
+      ],
+      "graph_vertex_count": 418,
+      "graph_eigenvalue_interval": [
+        "416",
+        "417"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        15
+      ],
+      "quintic_coefficients": [
+        1,
+        -225,
+        15705,
+        -361395,
+        1476954,
+        -1146960
+      ],
+      "h1": -15920,
+      "h2": 483440,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-15920",
+        "483440"
+      ],
+      "graph_vertex_count": 446,
+      "graph_eigenvalue_interval": [
+        "444",
+        "445"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        16
+      ],
+      "quintic_coefficients": [
+        1,
+        -237,
+        17337,
+        -414451,
+        1735974,
+        -1346400
+      ],
+      "h1": -7776,
+      "h2": 602680,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-7776",
+        "602680"
+      ],
+      "graph_vertex_count": 474,
+      "graph_eigenvalue_interval": [
+        "472",
+        "473"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        17
+      ],
+      "quintic_coefficients": [
+        1,
+        -249,
+        19047,
+        -472103,
+        2023668,
+        -1567332
+      ],
+      "h1": 3032,
+      "h2": 740016,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-1567332",
+        "3032"
+      ],
+      "graph_vertex_count": 502,
+      "graph_eigenvalue_interval": [
+        "501",
+        "502"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        18
+      ],
+      "quintic_coefficients": [
+        1,
+        -261,
+        20835,
+        -534519,
+        2341548,
+        -1810836
+      ],
+      "h1": 16768,
+      "h2": 896720,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-1810836",
+        "16768"
+      ],
+      "graph_vertex_count": 530,
+      "graph_eigenvalue_interval": [
+        "529",
+        "530"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -273,
+        22701,
+        -601867,
+        2691126,
+        -2077992
+      ],
+      "h1": 33696,
+      "h2": 1074064,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-2077992",
+        "33696"
+      ],
+      "graph_vertex_count": 558,
+      "graph_eigenvalue_interval": [
+        "557",
+        "558"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -285,
+        24645,
+        -674315,
+        3073914,
+        -2369880
+      ],
+      "h1": 54080,
+      "h2": 1273320,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-2369880",
+        "54080"
+      ],
+      "graph_vertex_count": 586,
+      "graph_eigenvalue_interval": [
+        "585",
+        "586"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -297,
+        26667,
+        -752031,
+        3491424,
+        -2687580
+      ],
+      "h1": 78184,
+      "h2": 1495760,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-2687580",
+        "78184"
+      ],
+      "graph_vertex_count": 614,
+      "graph_eigenvalue_interval": [
+        "613",
+        "614"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -309,
+        28767,
+        -835183,
+        3945168,
+        -3032172
+      ],
+      "h1": 106272,
+      "h2": 1742656,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-3032172",
+        "106272"
+      ],
+      "graph_vertex_count": 642,
+      "graph_eigenvalue_interval": [
+        "641",
+        "642"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -321,
+        30945,
+        -923939,
+        4436658,
+        -3404736
+      ],
+      "h1": 138608,
+      "h2": 2015280,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-3404736",
+        "138608"
+      ],
+      "graph_vertex_count": 670,
+      "graph_eigenvalue_interval": [
+        "669",
+        "670"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -333,
+        33201,
+        -1018467,
+        4967406,
+        -3806352
+      ],
+      "h1": 175456,
+      "h2": 2314904,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-3806352",
+        "175456"
+      ],
+      "graph_vertex_count": 698,
+      "graph_eigenvalue_interval": [
+        "697",
+        "698"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -345,
+        35535,
+        -1118935,
+        5538924,
+        -4238100
+      ],
+      "h1": 217080,
+      "h2": 2642800,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-4238100",
+        "217080"
+      ],
+      "graph_vertex_count": 726,
+      "graph_eigenvalue_interval": [
+        "725",
+        "726"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -357,
+        37947,
+        -1225511,
+        6152724,
+        -4701060
+      ],
+      "h1": 263744,
+      "h2": 3000240,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-4701060",
+        "263744"
+      ],
+      "graph_vertex_count": 754,
+      "graph_eigenvalue_interval": [
+        "753",
+        "754"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -369,
+        40437,
+        -1338363,
+        6810318,
+        -5196312
+      ],
+      "h1": 315712,
+      "h2": 3388496,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-5196312",
+        "315712"
+      ],
+      "graph_vertex_count": 782,
+      "graph_eigenvalue_interval": [
+        "781",
+        "782"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -381,
+        43005,
+        -1457659,
+        7513218,
+        -5724936
+      ],
+      "h1": 373248,
+      "h2": 3808840,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-5724936",
+        "373248"
+      ],
+      "graph_vertex_count": 810,
+      "graph_eigenvalue_interval": [
+        "809",
+        "810"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -393,
+        45651,
+        -1583567,
+        8262936,
+        -6288012
+      ],
+      "h1": 436616,
+      "h2": 4262544,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-6288012",
+        "436616"
+      ],
+      "graph_vertex_count": 838,
+      "graph_eigenvalue_interval": [
+        "837",
+        "838"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        8
+      ],
+      "quintic_coefficients": [
+        1,
+        -155,
+        7733,
+        -135217,
+        460110,
+        -359856
+      ],
+      "h1": -27384,
+      "h2": 78912,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-27384",
+        "78912"
+      ],
+      "graph_vertex_count": 286,
+      "graph_eigenvalue_interval": [
+        "284",
+        "285"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        9
+      ],
+      "quintic_coefficients": [
+        1,
+        -168,
+        9003,
+        -167608,
+        593769,
+        -466830
+      ],
+      "h1": -31833,
+      "h2": 119644,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-31833",
+        "119644"
+      ],
+      "graph_vertex_count": 318,
+      "graph_eigenvalue_interval": [
+        "316",
+        "317"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        10
+      ],
+      "quintic_coefficients": [
+        1,
+        -181,
+        10361,
+        -204191,
+        750930,
+        -592200
+      ],
+      "h1": -35280,
+      "h2": 172920,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-35280",
+        "172920"
+      ],
+      "graph_vertex_count": 350,
+      "graph_eigenvalue_interval": [
+        "348",
+        "349"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        11
+      ],
+      "quintic_coefficients": [
+        1,
+        -194,
+        11807,
+        -245158,
+        933513,
+        -737352
+      ],
+      "h1": -37383,
+      "h2": 240426,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-37383",
+        "240426"
+      ],
+      "graph_vertex_count": 382,
+      "graph_eigenvalue_interval": [
+        "380",
+        "381"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        12
+      ],
+      "quintic_coefficients": [
+        1,
+        -207,
+        13341,
+        -290701,
+        1143438,
+        -903672
+      ],
+      "h1": -37800,
+      "h2": 323848,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-37800",
+        "323848"
+      ],
+      "graph_vertex_count": 414,
+      "graph_eigenvalue_interval": [
+        "412",
+        "413"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        13
+      ],
+      "quintic_coefficients": [
+        1,
+        -220,
+        14963,
+        -341012,
+        1382625,
+        -1092546
+      ],
+      "h1": -36189,
+      "h2": 424872,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-36189",
+        "424872"
+      ],
+      "graph_vertex_count": 446,
+      "graph_eigenvalue_interval": [
+        "444",
+        "445"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        14
+      ],
+      "quintic_coefficients": [
+        1,
+        -233,
+        16673,
+        -396283,
+        1652994,
+        -1305360
+      ],
+      "h1": -32208,
+      "h2": 545184,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-32208",
+        "545184"
+      ],
+      "graph_vertex_count": 478,
+      "graph_eigenvalue_interval": [
+        "476",
+        "477"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        15
+      ],
+      "quintic_coefficients": [
+        1,
+        -246,
+        18471,
+        -456706,
+        1956465,
+        -1543500
+      ],
+      "h1": -25515,
+      "h2": 686470,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-25515",
+        "686470"
+      ],
+      "graph_vertex_count": 510,
+      "graph_eigenvalue_interval": [
+        "508",
+        "509"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        16
+      ],
+      "quintic_coefficients": [
+        1,
+        -259,
+        20357,
+        -522473,
+        2294958,
+        -1808352
+      ],
+      "h1": -15768,
+      "h2": 850416,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-15768",
+        "850416"
+      ],
+      "graph_vertex_count": 542,
+      "graph_eigenvalue_interval": [
+        "540",
+        "541"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        17
+      ],
+      "quintic_coefficients": [
+        1,
+        -272,
+        22331,
+        -593776,
+        2670393,
+        -2101302
+      ],
+      "h1": -2625,
+      "h2": 1038708,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-2625",
+        "1038708"
+      ],
+      "graph_vertex_count": 574,
+      "graph_eigenvalue_interval": [
+        "572",
+        "573"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        18
+      ],
+      "quintic_coefficients": [
+        1,
+        -285,
+        24393,
+        -670807,
+        3084690,
+        -2423736
+      ],
+      "h1": 14256,
+      "h2": 1253032,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-2423736",
+        "14256"
+      ],
+      "graph_vertex_count": 606,
+      "graph_eigenvalue_interval": [
+        "605",
+        "606"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -298,
+        26543,
+        -753758,
+        3539769,
+        -2777040
+      ],
+      "h1": 35217,
+      "h2": 1495074,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-2777040",
+        "35217"
+      ],
+      "graph_vertex_count": 638,
+      "graph_eigenvalue_interval": [
+        "637",
+        "638"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -311,
+        28781,
+        -842821,
+        4037550,
+        -3162600
+      ],
+      "h1": 60600,
+      "h2": 1766520,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-3162600",
+        "60600"
+      ],
+      "graph_vertex_count": 670,
+      "graph_eigenvalue_interval": [
+        "669",
+        "670"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -324,
+        31107,
+        -938188,
+        4579953,
+        -3581802
+      ],
+      "h1": 90747,
+      "h2": 2069056,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-3581802",
+        "90747"
+      ],
+      "graph_vertex_count": 702,
+      "graph_eigenvalue_interval": [
+        "701",
+        "702"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -337,
+        33521,
+        -1040051,
+        5168898,
+        -4036032
+      ],
+      "h1": 126000,
+      "h2": 2404368,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-4036032",
+        "126000"
+      ],
+      "graph_vertex_count": 734,
+      "graph_eigenvalue_interval": [
+        "733",
+        "734"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -350,
+        36023,
+        -1148602,
+        5806305,
+        -4526676
+      ],
+      "h1": 166701,
+      "h2": 2774142,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-4526676",
+        "166701"
+      ],
+      "graph_vertex_count": 766,
+      "graph_eigenvalue_interval": [
+        "765",
+        "766"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -363,
+        38613,
+        -1264033,
+        6494094,
+        -5055120
+      ],
+      "h1": 213192,
+      "h2": 3180064,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-5055120",
+        "213192"
+      ],
+      "graph_vertex_count": 798,
+      "graph_eigenvalue_interval": [
+        "797",
+        "798"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -376,
+        41291,
+        -1386536,
+        7234185,
+        -5622750
+      ],
+      "h1": 265815,
+      "h2": 3623820,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-5622750",
+        "265815"
+      ],
+      "graph_vertex_count": 830,
+      "graph_eigenvalue_interval": [
+        "829",
+        "830"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -389,
+        44057,
+        -1516303,
+        8028498,
+        -6230952
+      ],
+      "h1": 324912,
+      "h2": 4107096,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-6230952",
+        "324912"
+      ],
+      "graph_vertex_count": 862,
+      "graph_eigenvalue_interval": [
+        "861",
+        "862"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -402,
+        46911,
+        -1653526,
+        8878953,
+        -6881112
+      ],
+      "h1": 390825,
+      "h2": 4631578,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-6881112",
+        "390825"
+      ],
+      "graph_vertex_count": 894,
+      "graph_eigenvalue_interval": [
+        "893",
+        "894"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -415,
+        49853,
+        -1798397,
+        9787470,
+        -7574616
+      ],
+      "h1": 463896,
+      "h2": 5198952,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-7574616",
+        "463896"
+      ],
+      "graph_vertex_count": 926,
+      "graph_eigenvalue_interval": [
+        "925",
+        "926"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        7,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -428,
+        52883,
+        -1951108,
+        10755969,
+        -8312850
+      ],
+      "h1": 544467,
+      "h2": 5810904,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-8312850",
+        "544467"
+      ],
+      "graph_vertex_count": 958,
+      "graph_eigenvalue_interval": [
+        "957",
+        "958"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        9
+      ],
+      "quintic_coefficients": [
+        1,
+        -183,
+        10563,
+        -210521,
+        778380,
+        -617760
+      ],
+      "h1": -39520,
+      "h2": 178524,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-39520",
+        "178524"
+      ],
+      "graph_vertex_count": 358,
+      "graph_eigenvalue_interval": [
+        "356",
+        "357"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        10
+      ],
+      "quintic_coefficients": [
+        1,
+        -197,
+        12125,
+        -255619,
+        980970,
+        -781200
+      ],
+      "h1": -43920,
+      "h2": 252144,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-43920",
+        "252144"
+      ],
+      "graph_vertex_count": 394,
+      "graph_eigenvalue_interval": [
+        "392",
+        "393"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        11
+      ],
+      "quintic_coefficients": [
+        1,
+        -211,
+        13785,
+        -305969,
+        1215698,
+        -969936
+      ],
+      "h1": -46632,
+      "h2": 344520,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-46632",
+        "344520"
+      ],
+      "graph_vertex_count": 430,
+      "graph_eigenvalue_interval": [
+        "428",
+        "429"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        12
+      ],
+      "quintic_coefficients": [
+        1,
+        -225,
+        15543,
+        -361787,
+        1484940,
+        -1185696
+      ],
+      "h1": -47224,
+      "h2": 457812,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-47224",
+        "457812"
+      ],
+      "graph_vertex_count": 466,
+      "graph_eigenvalue_interval": [
+        "464",
+        "465"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        13
+      ],
+      "quintic_coefficients": [
+        1,
+        -239,
+        17399,
+        -423289,
+        1791072,
+        -1430208
+      ],
+      "h1": -45264,
+      "h2": 594180,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-45264",
+        "594180"
+      ],
+      "graph_vertex_count": 502,
+      "graph_eigenvalue_interval": [
+        "500",
+        "501"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        14
+      ],
+      "quintic_coefficients": [
+        1,
+        -253,
+        19353,
+        -490691,
+        2136470,
+        -1705200
+      ],
+      "h1": -40320,
+      "h2": 755784,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-40320",
+        "755784"
+      ],
+      "graph_vertex_count": 538,
+      "graph_eigenvalue_interval": [
+        "536",
+        "537"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        15
+      ],
+      "quintic_coefficients": [
+        1,
+        -267,
+        21405,
+        -564209,
+        2523510,
+        -2012400
+      ],
+      "h1": -31960,
+      "h2": 944784,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-31960",
+        "944784"
+      ],
+      "graph_vertex_count": 574,
+      "graph_eigenvalue_interval": [
+        "572",
+        "573"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        16
+      ],
+      "quintic_coefficients": [
+        1,
+        -281,
+        23555,
+        -644059,
+        2954568,
+        -2353536
+      ],
+      "h1": -19752,
+      "h2": 1163340,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-19752",
+        "1163340"
+      ],
+      "graph_vertex_count": 610,
+      "graph_eigenvalue_interval": [
+        "608",
+        "609"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        17
+      ],
+      "quintic_coefficients": [
+        1,
+        -295,
+        25803,
+        -730457,
+        3432020,
+        -2730336
+      ],
+      "h1": -3264,
+      "h2": 1413612,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-3264",
+        "1413612"
+      ],
+      "graph_vertex_count": 646,
+      "graph_eigenvalue_interval": [
+        "644",
+        "645"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        18
+      ],
+      "quintic_coefficients": [
+        1,
+        -309,
+        28149,
+        -823619,
+        3958242,
+        -3144528
+      ],
+      "h1": 17936,
+      "h2": 1697760,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-3144528",
+        "17936"
+      ],
+      "graph_vertex_count": 682,
+      "graph_eigenvalue_interval": [
+        "681",
+        "682"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -323,
+        30593,
+        -923761,
+        4535610,
+        -3597840
+      ],
+      "h1": 44280,
+      "h2": 2017944,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-3597840",
+        "44280"
+      ],
+      "graph_vertex_count": 718,
+      "graph_eigenvalue_interval": [
+        "717",
+        "718"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -337,
+        33135,
+        -1031099,
+        5166500,
+        -4092000
+      ],
+      "h1": 76200,
+      "h2": 2376324,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-4092000",
+        "76200"
+      ],
+      "graph_vertex_count": 754,
+      "graph_eigenvalue_interval": [
+        "753",
+        "754"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -351,
+        35775,
+        -1145849,
+        5853288,
+        -4628736
+      ],
+      "h1": 114128,
+      "h2": 2775060,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-4628736",
+        "114128"
+      ],
+      "graph_vertex_count": 790,
+      "graph_eigenvalue_interval": [
+        "789",
+        "790"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -365,
+        38513,
+        -1268227,
+        6598350,
+        -5209776
+      ],
+      "h1": 158496,
+      "h2": 3216312,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-5209776",
+        "158496"
+      ],
+      "graph_vertex_count": 826,
+      "graph_eigenvalue_interval": [
+        "825",
+        "826"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -379,
+        41349,
+        -1398449,
+        7404062,
+        -5836848
+      ],
+      "h1": 209736,
+      "h2": 3702240,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-5836848",
+        "209736"
+      ],
+      "graph_vertex_count": 862,
+      "graph_eigenvalue_interval": [
+        "861",
+        "862"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -393,
+        44283,
+        -1536731,
+        8272800,
+        -6511680
+      ],
+      "h1": 268280,
+      "h2": 4235004,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-6511680",
+        "268280"
+      ],
+      "graph_vertex_count": 898,
+      "graph_eigenvalue_interval": [
+        "897",
+        "898"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -407,
+        47315,
+        -1683289,
+        9206940,
+        -7236000
+      ],
+      "h1": 334560,
+      "h2": 4816764,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-7236000",
+        "334560"
+      ],
+      "graph_vertex_count": 934,
+      "graph_eigenvalue_interval": [
+        "933",
+        "934"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -421,
+        50445,
+        -1838339,
+        10208858,
+        -8011536
+      ],
+      "h1": 409008,
+      "h2": 5449680,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-8011536",
+        "409008"
+      ],
+      "graph_vertex_count": 970,
+      "graph_eigenvalue_interval": [
+        "969",
+        "970"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -435,
+        53673,
+        -2002097,
+        11280930,
+        -8840016
+      ],
+      "h1": 492056,
+      "h2": 6135912,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-8840016",
+        "492056"
+      ],
+      "graph_vertex_count": 1006,
+      "graph_eigenvalue_interval": [
+        "1005",
+        "1006"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -449,
+        56999,
+        -2174779,
+        12425532,
+        -9723168
+      ],
+      "h1": 584136,
+      "h2": 6877620,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-9723168",
+        "584136"
+      ],
+      "graph_vertex_count": 1042,
+      "graph_eigenvalue_interval": [
+        "1041",
+        "1042"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        8,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -463,
+        60423,
+        -2356601,
+        13645040,
+        -10662720
+      ],
+      "h1": 685680,
+      "h2": 7676964,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-10662720",
+        "685680"
+      ],
+      "graph_vertex_count": 1078,
+      "graph_eigenvalue_interval": [
+        "1077",
+        "1078"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        10
+      ],
+      "quintic_coefficients": [
+        1,
+        -213,
+        14007,
+        -313723,
+        1252596,
+        -1003860
+      ],
+      "h1": -51192,
+      "h2": 355120,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-51192",
+        "355120"
+      ],
+      "graph_vertex_count": 438,
+      "graph_eigenvalue_interval": [
+        "436",
+        "437"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        11
+      ],
+      "quintic_coefficients": [
+        1,
+        -228,
+        15891,
+        -374492,
+        1547961,
+        -1243242
+      ],
+      "h1": -54109,
+      "h2": 478224,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-54109",
+        "478224"
+      ],
+      "graph_vertex_count": 478,
+      "graph_eigenvalue_interval": [
+        "476",
+        "477"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        12
+      ],
+      "quintic_coefficients": [
+        1,
+        -243,
+        17883,
+        -441693,
+        1886004,
+        -1516320
+      ],
+      "h1": -54368,
+      "h2": 628124,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-54368",
+        "628124"
+      ],
+      "graph_vertex_count": 518,
+      "graph_eigenvalue_interval": [
+        "516",
+        "517"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        13
+      ],
+      "quintic_coefficients": [
+        1,
+        -258,
+        19983,
+        -515566,
+        2269605,
+        -1825200
+      ],
+      "h1": -51435,
+      "h2": 807514,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-51435",
+        "807514"
+      ],
+      "graph_vertex_count": 558,
+      "graph_eigenvalue_interval": [
+        "556",
+        "557"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        14
+      ],
+      "quintic_coefficients": [
+        1,
+        -273,
+        22191,
+        -596351,
+        2701644,
+        -2171988
+      ],
+      "h1": -44776,
+      "h2": 1019088,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-44776",
+        "1019088"
+      ],
+      "graph_vertex_count": 598,
+      "graph_eigenvalue_interval": [
+        "596",
+        "597"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        15
+      ],
+      "quintic_coefficients": [
+        1,
+        -288,
+        24507,
+        -684288,
+        3185001,
+        -2558790
+      ],
+      "h1": -33857,
+      "h2": 1265540,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-33857",
+        "1265540"
+      ],
+      "graph_vertex_count": 638,
+      "graph_eigenvalue_interval": [
+        "636",
+        "637"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        16
+      ],
+      "quintic_coefficients": [
+        1,
+        -303,
+        26931,
+        -779617,
+        3722556,
+        -2987712
+      ],
+      "h1": -18144,
+      "h2": 1549564,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-18144",
+        "1549564"
+      ],
+      "graph_vertex_count": 678,
+      "graph_eigenvalue_interval": [
+        "676",
+        "677"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        17
+      ],
+      "quintic_coefficients": [
+        1,
+        -318,
+        29463,
+        -882578,
+        4317189,
+        -3460860
+      ],
+      "h1": 2897,
+      "h2": 1873854,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-3460860",
+        "2897"
+      ],
+      "graph_vertex_count": 718,
+      "graph_eigenvalue_interval": [
+        "717",
+        "718"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        18
+      ],
+      "quintic_coefficients": [
+        1,
+        -333,
+        32103,
+        -993411,
+        4971780,
+        -3980340
+      ],
+      "h1": 29800,
+      "h2": 2241104,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-3980340",
+        "29800"
+      ],
+      "graph_vertex_count": 758,
+      "graph_eigenvalue_interval": [
+        "757",
+        "758"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -348,
+        34851,
+        -1112356,
+        5689209,
+        -4548258
+      ],
+      "h1": 63099,
+      "h2": 2654008,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-4548258",
+        "63099"
+      ],
+      "graph_vertex_count": 798,
+      "graph_eigenvalue_interval": [
+        "797",
+        "798"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -363,
+        37707,
+        -1239653,
+        6472356,
+        -5166720
+      ],
+      "h1": 103328,
+      "h2": 3115260,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-5166720",
+        "103328"
+      ],
+      "graph_vertex_count": 838,
+      "graph_eigenvalue_interval": [
+        "837",
+        "838"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -378,
+        40671,
+        -1375542,
+        7324101,
+        -5837832
+      ],
+      "h1": 151021,
+      "h2": 3627554,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-5837832",
+        "151021"
+      ],
+      "graph_vertex_count": 878,
+      "graph_eigenvalue_interval": [
+        "877",
+        "878"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -393,
+        43743,
+        -1520263,
+        8247324,
+        -6563700
+      ],
+      "h1": 206712,
+      "h2": 4193584,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-6563700",
+        "206712"
+      ],
+      "graph_vertex_count": 918,
+      "graph_eigenvalue_interval": [
+        "917",
+        "918"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -408,
+        46923,
+        -1674056,
+        9244905,
+        -7346430
+      ],
+      "h1": 270935,
+      "h2": 4816044,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-7346430",
+        "270935"
+      ],
+      "graph_vertex_count": 958,
+      "graph_eigenvalue_interval": [
+        "957",
+        "958"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -423,
+        50211,
+        -1837161,
+        10319724,
+        -8188128
+      ],
+      "h1": 344224,
+      "h2": 5497628,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-8188128",
+        "344224"
+      ],
+      "graph_vertex_count": 998,
+      "graph_eigenvalue_interval": [
+        "997",
+        "998"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -438,
+        53607,
+        -2009818,
+        11474661,
+        -9090900
+      ],
+      "h1": 427113,
+      "h2": 6241030,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-9090900",
+        "427113"
+      ],
+      "graph_vertex_count": 1038,
+      "graph_eigenvalue_interval": [
+        "1037",
+        "1038"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -453,
+        57111,
+        -2192267,
+        12712596,
+        -10056852
+      ],
+      "h1": 520136,
+      "h2": 7048944,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-10056852",
+        "520136"
+      ],
+      "graph_vertex_count": 1078,
+      "graph_eigenvalue_interval": [
+        "1077",
+        "1078"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -468,
+        60723,
+        -2384748,
+        14036409,
+        -11088090
+      ],
+      "h1": 623827,
+      "h2": 7924064,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-11088090",
+        "623827"
+      ],
+      "graph_vertex_count": 1118,
+      "graph_eigenvalue_interval": [
+        "1117",
+        "1118"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -483,
+        64443,
+        -2587501,
+        15448980,
+        -12186720
+      ],
+      "h1": 738720,
+      "h2": 8869084,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-12186720",
+        "738720"
+      ],
+      "graph_vertex_count": 1158,
+      "graph_eigenvalue_interval": [
+        "1157",
+        "1158"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        9,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -498,
+        68271,
+        -2800766,
+        16953189,
+        -13354848
+      ],
+      "h1": 865349,
+      "h2": 9886698,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-13354848",
+        "865349"
+      ],
+      "graph_vertex_count": 1198,
+      "graph_eigenvalue_interval": [
+        "1197",
+        "1198"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        11
+      ],
+      "quintic_coefficients": [
+        1,
+        -245,
+        18125,
+        -451015,
+        1934334,
+        -1560240
+      ],
+      "h1": -59040,
+      "h2": 645480,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-59040",
+        "645480"
+      ],
+      "graph_vertex_count": 526,
+      "graph_eigenvalue_interval": [
+        "524",
+        "525"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        12
+      ],
+      "quintic_coefficients": [
+        1,
+        -261,
+        20361,
+        -530731,
+        2351310,
+        -1899000
+      ],
+      "h1": -58320,
+      "h2": 839440,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-58320",
+        "839440"
+      ],
+      "graph_vertex_count": 570,
+      "graph_eigenvalue_interval": [
+        "568",
+        "569"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        13
+      ],
+      "quintic_coefficients": [
+        1,
+        -277,
+        22715,
+        -618179,
+        2823600,
+        -2281500
+      ],
+      "h1": -53640,
+      "h2": 1070304,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-53640",
+        "1070304"
+      ],
+      "graph_vertex_count": 614,
+      "graph_eigenvalue_interval": [
+        "612",
+        "613"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        14
+      ],
+      "quintic_coefficients": [
+        1,
+        -293,
+        25187,
+        -713623,
+        3354636,
+        -2710260
+      ],
+      "h1": -44352,
+      "h2": 1341360,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-44352",
+        "1341360"
+      ],
+      "graph_vertex_count": 658,
+      "graph_eigenvalue_interval": [
+        "656",
+        "657"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        15
+      ],
+      "quintic_coefficients": [
+        1,
+        -309,
+        27777,
+        -817327,
+        3947850,
+        -3187800
+      ],
+      "h1": -29808,
+      "h2": 1655896,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-29808",
+        "1655896"
+      ],
+      "graph_vertex_count": 702,
+      "graph_eigenvalue_interval": [
+        "700",
+        "701"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        16
+      ],
+      "quintic_coefficients": [
+        1,
+        -325,
+        30485,
+        -929555,
+        4606674,
+        -3716640
+      ],
+      "h1": -9360,
+      "h2": 2017200,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-9360",
+        "2017200"
+      ],
+      "graph_vertex_count": 746,
+      "graph_eigenvalue_interval": [
+        "744",
+        "745"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        17
+      ],
+      "quintic_coefficients": [
+        1,
+        -341,
+        33311,
+        -1050571,
+        5334540,
+        -4299300
+      ],
+      "h1": 17640,
+      "h2": 2428560,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-4299300",
+        "17640"
+      ],
+      "graph_vertex_count": 790,
+      "graph_eigenvalue_interval": [
+        "789",
+        "790"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        18
+      ],
+      "quintic_coefficients": [
+        1,
+        -357,
+        36255,
+        -1180639,
+        6134880,
+        -4938300
+      ],
+      "h1": 51840,
+      "h2": 2893264,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-4938300",
+        "51840"
+      ],
+      "graph_vertex_count": 834,
+      "graph_eigenvalue_interval": [
+        "833",
+        "834"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -373,
+        39317,
+        -1320023,
+        7011126,
+        -5636160
+      ],
+      "h1": 93888,
+      "h2": 3414600,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-5636160",
+        "93888"
+      ],
+      "graph_vertex_count": 878,
+      "graph_eigenvalue_interval": [
+        "877",
+        "878"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -389,
+        42497,
+        -1468987,
+        7966710,
+        -6395400
+      ],
+      "h1": 144432,
+      "h2": 3995856,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-6395400",
+        "144432"
+      ],
+      "graph_vertex_count": 922,
+      "graph_eigenvalue_interval": [
+        "921",
+        "922"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -405,
+        45795,
+        -1627795,
+        9005064,
+        -7218540
+      ],
+      "h1": 204120,
+      "h2": 4640320,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-7218540",
+        "204120"
+      ],
+      "graph_vertex_count": 966,
+      "graph_eigenvalue_interval": [
+        "965",
+        "966"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -421,
+        49211,
+        -1796711,
+        10129620,
+        -8108100
+      ],
+      "h1": 273600,
+      "h2": 5351280,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-8108100",
+        "273600"
+      ],
+      "graph_vertex_count": 1010,
+      "graph_eigenvalue_interval": [
+        "1009",
+        "1010"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -437,
+        52745,
+        -1975999,
+        11343810,
+        -9066600
+      ],
+      "h1": 353520,
+      "h2": 6132024,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-9066600",
+        "353520"
+      ],
+      "graph_vertex_count": 1054,
+      "graph_eigenvalue_interval": [
+        "1053",
+        "1054"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -453,
+        56397,
+        -2165923,
+        12651066,
+        -10096560
+      ],
+      "h1": 444528,
+      "h2": 6985840,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-10096560",
+        "444528"
+      ],
+      "graph_vertex_count": 1098,
+      "graph_eigenvalue_interval": [
+        "1097",
+        "1098"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -469,
+        60167,
+        -2366747,
+        14054820,
+        -11200500
+      ],
+      "h1": 547272,
+      "h2": 7916016,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-11200500",
+        "547272"
+      ],
+      "graph_vertex_count": 1142,
+      "graph_eigenvalue_interval": [
+        "1141",
+        "1142"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -485,
+        64055,
+        -2578735,
+        15558504,
+        -12380940
+      ],
+      "h1": 662400,
+      "h2": 8925840,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-12380940",
+        "662400"
+      ],
+      "graph_vertex_count": 1186,
+      "graph_eigenvalue_interval": [
+        "1185",
+        "1186"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -501,
+        68061,
+        -2802151,
+        17165550,
+        -13640400
+      ],
+      "h1": 790560,
+      "h2": 10018600,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-13640400",
+        "790560"
+      ],
+      "graph_vertex_count": 1230,
+      "graph_eigenvalue_interval": [
+        "1229",
+        "1230"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -517,
+        72185,
+        -3037259,
+        18879390,
+        -14981400
+      ],
+      "h1": 932400,
+      "h2": 11197584,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-14981400",
+        "932400"
+      ],
+      "graph_vertex_count": 1274,
+      "graph_eigenvalue_interval": [
+        "1273",
+        "1274"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        10,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -533,
+        76427,
+        -3284323,
+        20703456,
+        -16406460
+      ],
+      "h1": 1088568,
+      "h2": 12466080,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-16406460",
+        "1088568"
+      ],
+      "graph_vertex_count": 1318,
+      "graph_eigenvalue_interval": [
+        "1317",
+        "1318"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        12
+      ],
+      "quintic_coefficients": [
+        1,
+        -279,
+        22977,
+        -629213,
+        2885538,
+        -2337192
+      ],
+      "h1": -58168,
+      "h2": 1096416,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-58168",
+        "1096416"
+      ],
+      "graph_vertex_count": 622,
+      "graph_eigenvalue_interval": [
+        "620",
+        "621"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        13
+      ],
+      "quintic_coefficients": [
+        1,
+        -296,
+        25595,
+        -731464,
+        3458433,
+        -2803086
+      ],
+      "h1": -50817,
+      "h2": 1387980,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-50817",
+        "1387980"
+      ],
+      "graph_vertex_count": 670,
+      "graph_eigenvalue_interval": [
+        "668",
+        "669"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        14
+      ],
+      "quintic_coefficients": [
+        1,
+        -313,
+        28341,
+        -842867,
+        4101566,
+        -3324552
+      ],
+      "h1": -37824,
+      "h2": 1728864,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-37824",
+        "1728864"
+      ],
+      "graph_vertex_count": 718,
+      "graph_eigenvalue_interval": [
+        "716",
+        "717"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        15
+      ],
+      "quintic_coefficients": [
+        1,
+        -330,
+        31215,
+        -963710,
+        4818969,
+        -3904560
+      ],
+      "h1": -18415,
+      "h2": 2123010,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-18415",
+        "2123010"
+      ],
+      "graph_vertex_count": 766,
+      "graph_eigenvalue_interval": [
+        "764",
+        "765"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        16
+      ],
+      "quintic_coefficients": [
+        1,
+        -347,
+        34217,
+        -1094281,
+        5614674,
+        -4546080
+      ],
+      "h1": 8184,
+      "h2": 2574360,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-4546080",
+        "8184"
+      ],
+      "graph_vertex_count": 814,
+      "graph_eigenvalue_interval": [
+        "813",
+        "814"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        17
+      ],
+      "quintic_coefficients": [
+        1,
+        -364,
+        37347,
+        -1234868,
+        6492713,
+        -5252082
+      ],
+      "h1": 42747,
+      "h2": 3086856,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-5252082",
+        "42747"
+      ],
+      "graph_vertex_count": 862,
+      "graph_eigenvalue_interval": [
+        "861",
+        "862"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        18
+      ],
+      "quintic_coefficients": [
+        1,
+        -381,
+        40605,
+        -1385759,
+        7457118,
+        -6025536
+      ],
+      "h1": 86048,
+      "h2": 3664440,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-6025536",
+        "86048"
+      ],
+      "graph_vertex_count": 910,
+      "graph_eigenvalue_interval": [
+        "909",
+        "910"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -398,
+        43991,
+        -1547242,
+        8511921,
+        -6869412
+      ],
+      "h1": 138861,
+      "h2": 4311054,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-6869412",
+        "138861"
+      ],
+      "graph_vertex_count": 958,
+      "graph_eigenvalue_interval": [
+        "957",
+        "958"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -415,
+        47505,
+        -1719605,
+        9661154,
+        -7786680
+      ],
+      "h1": 201960,
+      "h2": 5030640,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-7786680",
+        "201960"
+      ],
+      "graph_vertex_count": 1006,
+      "graph_eigenvalue_interval": [
+        "1005",
+        "1006"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -432,
+        51147,
+        -1903136,
+        10908849,
+        -8780310
+      ],
+      "h1": 276119,
+      "h2": 5827140,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-8780310",
+        "276119"
+      ],
+      "graph_vertex_count": 1054,
+      "graph_eigenvalue_interval": [
+        "1053",
+        "1054"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -449,
+        54917,
+        -2098123,
+        12259038,
+        -9853272
+      ],
+      "h1": 362112,
+      "h2": 6704496,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-9853272",
+        "362112"
+      ],
+      "graph_vertex_count": 1102,
+      "graph_eigenvalue_interval": [
+        "1101",
+        "1102"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -466,
+        58815,
+        -2304854,
+        13715753,
+        -11008536
+      ],
+      "h1": 460713,
+      "h2": 7666650,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-11008536",
+        "460713"
+      ],
+      "graph_vertex_count": 1150,
+      "graph_eigenvalue_interval": [
+        "1149",
+        "1150"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -483,
+        62841,
+        -2523617,
+        15283026,
+        -12249072
+      ],
+      "h1": 572696,
+      "h2": 8717544,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-12249072",
+        "572696"
+      ],
+      "graph_vertex_count": 1198,
+      "graph_eigenvalue_interval": [
+        "1197",
+        "1198"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -500,
+        66995,
+        -2754700,
+        16964889,
+        -13577850
+      ],
+      "h1": 698835,
+      "h2": 9861120,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-13577850",
+        "698835"
+      ],
+      "graph_vertex_count": 1246,
+      "graph_eigenvalue_interval": [
+        "1245",
+        "1246"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -517,
+        71277,
+        -2998391,
+        18765374,
+        -14997840
+      ],
+      "h1": 839904,
+      "h2": 11101320,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-14997840",
+        "839904"
+      ],
+      "graph_vertex_count": 1294,
+      "graph_eigenvalue_interval": [
+        "1293",
+        "1294"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -534,
+        75687,
+        -3254978,
+        20688513,
+        -16512012
+      ],
+      "h1": 996677,
+      "h2": 12442086,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-16512012",
+        "996677"
+      ],
+      "graph_vertex_count": 1342,
+      "graph_eigenvalue_interval": [
+        "1341",
+        "1342"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -551,
+        80225,
+        -3524749,
+        22738338,
+        -18123336
+      ],
+      "h1": 1169928,
+      "h2": 13887360,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-18123336",
+        "1169928"
+      ],
+      "graph_vertex_count": 1390,
+      "graph_eigenvalue_interval": [
+        "1389",
+        "1390"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        11,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -568,
+        84891,
+        -3807992,
+        24918881,
+        -19834782
+      ],
+      "h1": 1360431,
+      "h2": 15441084,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-19834782",
+        "1360431"
+      ],
+      "graph_vertex_count": 1438,
+      "graph_eigenvalue_interval": [
+        "1437",
+        "1438"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        13
+      ],
+      "quintic_coefficients": [
+        1,
+        -315,
+        28623,
+        -855757,
+        4179480,
+        -3393936
+      ],
+      "h1": -41904,
+      "h2": 1765972,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-41904",
+        "1765972"
+      ],
+      "graph_vertex_count": 726,
+      "graph_eigenvalue_interval": [
+        "724",
+        "725"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        14
+      ],
+      "quintic_coefficients": [
+        1,
+        -333,
+        31653,
+        -984443,
+        4948554,
+        -4019400
+      ],
+      "h1": -23968,
+      "h2": 2187864,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-23968",
+        "2187864"
+      ],
+      "graph_vertex_count": 778,
+      "graph_eigenvalue_interval": [
+        "776",
+        "777"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        15
+      ],
+      "quintic_coefficients": [
+        1,
+        -351,
+        34821,
+        -1123821,
+        5805270,
+        -4714200
+      ],
+      "h1": 1720,
+      "h2": 2674040,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-4714200",
+        "1720"
+      ],
+      "graph_vertex_count": 830,
+      "graph_eigenvalue_interval": [
+        "829",
+        "830"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        16
+      ],
+      "quintic_coefficients": [
+        1,
+        -369,
+        38127,
+        -1274203,
+        6754308,
+        -5481792
+      ],
+      "h1": 36072,
+      "h2": 3229156,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-5481792",
+        "36072"
+      ],
+      "graph_vertex_count": 882,
+      "graph_eigenvalue_interval": [
+        "881",
+        "882"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        17
+      ],
+      "quintic_coefficients": [
+        1,
+        -387,
+        41571,
+        -1435901,
+        7800348,
+        -6325632
+      ],
+      "h1": 80000,
+      "h2": 3857868,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-6325632",
+        "80000"
+      ],
+      "graph_vertex_count": 934,
+      "graph_eigenvalue_interval": [
+        "933",
+        "934"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        18
+      ],
+      "quintic_coefficients": [
+        1,
+        -405,
+        45153,
+        -1609227,
+        8948070,
+        -7249176
+      ],
+      "h1": 134416,
+      "h2": 4564832,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-7249176",
+        "134416"
+      ],
+      "graph_vertex_count": 986,
+      "graph_eigenvalue_interval": [
+        "985",
+        "986"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -423,
+        48873,
+        -1794493,
+        10202154,
+        -8255880
+      ],
+      "h1": 200232,
+      "h2": 5354704,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-8255880",
+        "200232"
+      ],
+      "graph_vertex_count": 1038,
+      "graph_eigenvalue_interval": [
+        "1037",
+        "1038"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -441,
+        52731,
+        -1992011,
+        11567280,
+        -9349200
+      ],
+      "h1": 278360,
+      "h2": 6232140,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-9349200",
+        "278360"
+      ],
+      "graph_vertex_count": 1090,
+      "graph_eigenvalue_interval": [
+        "1089",
+        "1090"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -459,
+        56727,
+        -2202093,
+        13048128,
+        -10532592
+      ],
+      "h1": 369712,
+      "h2": 7201796,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-10532592",
+        "369712"
+      ],
+      "graph_vertex_count": 1142,
+      "graph_eigenvalue_interval": [
+        "1141",
+        "1142"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -477,
+        60861,
+        -2425051,
+        14649378,
+        -11809512
+      ],
+      "h1": 475200,
+      "h2": 8268328,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-11809512",
+        "475200"
+      ],
+      "graph_vertex_count": 1194,
+      "graph_eigenvalue_interval": [
+        "1193",
+        "1194"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -495,
+        65133,
+        -2661197,
+        16375710,
+        -13183416
+      ],
+      "h1": 595736,
+      "h2": 9436392,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-13183416",
+        "595736"
+      ],
+      "graph_vertex_count": 1246,
+      "graph_eigenvalue_interval": [
+        "1245",
+        "1246"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -513,
+        69543,
+        -2910843,
+        18231804,
+        -14657760
+      ],
+      "h1": 732232,
+      "h2": 10710644,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-14657760",
+        "732232"
+      ],
+      "graph_vertex_count": 1298,
+      "graph_eigenvalue_interval": [
+        "1297",
+        "1298"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -531,
+        74091,
+        -3174301,
+        20222340,
+        -16236000
+      ],
+      "h1": 885600,
+      "h2": 12095740,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-16236000",
+        "885600"
+      ],
+      "graph_vertex_count": 1350,
+      "graph_eigenvalue_interval": [
+        "1349",
+        "1350"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -549,
+        78777,
+        -3451883,
+        22351998,
+        -17921592
+      ],
+      "h1": 1056752,
+      "h2": 13596336,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-17921592",
+        "1056752"
+      ],
+      "graph_vertex_count": 1402,
+      "graph_eigenvalue_interval": [
+        "1401",
+        "1402"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -567,
+        83601,
+        -3743901,
+        24625458,
+        -19717992
+      ],
+      "h1": 1246600,
+      "h2": 15217088,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-19717992",
+        "1246600"
+      ],
+      "graph_vertex_count": 1454,
+      "graph_eigenvalue_interval": [
+        "1453",
+        "1454"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -585,
+        88563,
+        -4050667,
+        27047400,
+        -21628656
+      ],
+      "h1": 1456056,
+      "h2": 16962652,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-21628656",
+        "1456056"
+      ],
+      "graph_vertex_count": 1506,
+      "graph_eigenvalue_interval": [
+        "1505",
+        "1506"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        12,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -603,
+        93663,
+        -4372493,
+        29622504,
+        -23657040
+      ],
+      "h1": 1686032,
+      "h2": 18837684,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-23657040",
+        "1686032"
+      ],
+      "graph_vertex_count": 1558,
+      "graph_eigenvalue_interval": [
+        "1557",
+        "1558"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        14
+      ],
+      "quintic_coefficients": [
+        1,
+        -353,
+        35123,
+        -1138711,
+        5901720,
+        -4799340
+      ],
+      "h1": -1560,
+      "h2": 2724624,
+      "complement_interval": [
+        "1",
+        "2"
+      ],
+      "endpoint_values": [
+        "-1560",
+        "2724624"
+      ],
+      "graph_vertex_count": 838,
+      "graph_eigenvalue_interval": [
+        "836",
+        "837"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        15
+      ],
+      "quintic_coefficients": [
+        1,
+        -372,
+        38595,
+        -1298044,
+        6913665,
+        -5621850
+      ],
+      "h1": 31995,
+      "h2": 3316144,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-5621850",
+        "31995"
+      ],
+      "graph_vertex_count": 894,
+      "graph_eigenvalue_interval": [
+        "893",
+        "894"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        16
+      ],
+      "quintic_coefficients": [
+        1,
+        -391,
+        42215,
+        -1469729,
+        8033328,
+        -6529536
+      ],
+      "h1": 75888,
+      "h2": 3989700,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-6529536",
+        "75888"
+      ],
+      "graph_vertex_count": 950,
+      "graph_eigenvalue_interval": [
+        "949",
+        "950"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        17
+      ],
+      "quintic_coefficients": [
+        1,
+        -410,
+        45983,
+        -1654102,
+        9266085,
+        -7526376
+      ],
+      "h1": 131181,
+      "h2": 4750722,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-7526376",
+        "131181"
+      ],
+      "graph_vertex_count": 1006,
+      "graph_eigenvalue_interval": [
+        "1005",
+        "1006"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        18
+      ],
+      "quintic_coefficients": [
+        1,
+        -429,
+        49899,
+        -1851499,
+        10617312,
+        -8616348
+      ],
+      "h1": 198936,
+      "h2": 5604640,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-8616348",
+        "198936"
+      ],
+      "graph_vertex_count": 1062,
+      "graph_eigenvalue_interval": [
+        "1061",
+        "1062"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -448,
+        53963,
+        -2062256,
+        12092385,
+        -9803430
+      ],
+      "h1": 280215,
+      "h2": 6556884,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-9803430",
+        "280215"
+      ],
+      "graph_vertex_count": 1118,
+      "graph_eigenvalue_interval": [
+        "1117",
+        "1118"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -467,
+        58175,
+        -2286709,
+        13696680,
+        -11091600
+      ],
+      "h1": 376080,
+      "h2": 7612884,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-11091600",
+        "376080"
+      ],
+      "graph_vertex_count": 1174,
+      "graph_eigenvalue_interval": [
+        "1173",
+        "1174"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -486,
+        62535,
+        -2525194,
+        15435573,
+        -12484836
+      ],
+      "h1": 487593,
+      "h2": 8778070,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-12484836",
+        "487593"
+      ],
+      "graph_vertex_count": 1230,
+      "graph_eigenvalue_interval": [
+        "1229",
+        "1230"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -505,
+        67043,
+        -2778047,
+        17314440,
+        -13987116
+      ],
+      "h1": 615816,
+      "h2": 10057872,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-13987116",
+        "615816"
+      ],
+      "graph_vertex_count": 1286,
+      "graph_eigenvalue_interval": [
+        "1285",
+        "1286"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -524,
+        71699,
+        -3045604,
+        19338657,
+        -15602418
+      ],
+      "h1": 761811,
+      "h2": 11457720,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-15602418",
+        "761811"
+      ],
+      "graph_vertex_count": 1342,
+      "graph_eigenvalue_interval": [
+        "1341",
+        "1342"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -543,
+        76503,
+        -3328201,
+        21513600,
+        -17334720
+      ],
+      "h1": 926640,
+      "h2": 12983044,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-17334720",
+        "926640"
+      ],
+      "graph_vertex_count": 1398,
+      "graph_eigenvalue_interval": [
+        "1397",
+        "1398"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -562,
+        81455,
+        -3626174,
+        23844645,
+        -19188000
+      ],
+      "h1": 1111365,
+      "h2": 14639274,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-19188000",
+        "1111365"
+      ],
+      "graph_vertex_count": 1454,
+      "graph_eigenvalue_interval": [
+        "1453",
+        "1454"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -581,
+        86555,
+        -3939859,
+        26337168,
+        -21166236
+      ],
+      "h1": 1317048,
+      "h2": 16431840,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-21166236",
+        "1317048"
+      ],
+      "graph_vertex_count": 1510,
+      "graph_eigenvalue_interval": [
+        "1509",
+        "1510"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -600,
+        91803,
+        -4269592,
+        28996545,
+        -23273406
+      ],
+      "h1": 1544751,
+      "h2": 18366172,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-23273406",
+        "1544751"
+      ],
+      "graph_vertex_count": 1566,
+      "graph_eigenvalue_interval": [
+        "1565",
+        "1566"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -619,
+        97199,
+        -4615709,
+        31828152,
+        -25513488
+      ],
+      "h1": 1795536,
+      "h2": 20447700,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-25513488",
+        "1795536"
+      ],
+      "graph_vertex_count": 1622,
+      "graph_eigenvalue_interval": [
+        "1621",
+        "1622"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        13,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -638,
+        102743,
+        -4978546,
+        34837365,
+        -27890460
+      ],
+      "h1": 2070465,
+      "h2": 22681854,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-27890460",
+        "2070465"
+      ],
+      "graph_vertex_count": 1678,
+      "graph_eigenvalue_interval": [
+        "1677",
+        "1678"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        15
+      ],
+      "quintic_coefficients": [
+        1,
+        -393,
+        42537,
+        -1486763,
+        8151066,
+        -6632640
+      ],
+      "h1": 73808,
+      "h2": 4056480,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-6632640",
+        "73808"
+      ],
+      "graph_vertex_count": 958,
+      "graph_eigenvalue_interval": [
+        "957",
+        "958"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        16
+      ],
+      "quintic_coefficients": [
+        1,
+        -413,
+        46481,
+        -1681267,
+        9459486,
+        -7695072
+      ],
+      "h1": 129216,
+      "h2": 4864104,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-7695072",
+        "129216"
+      ],
+      "graph_vertex_count": 1018,
+      "graph_eigenvalue_interval": [
+        "1017",
+        "1018"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        17
+      ],
+      "quintic_coefficients": [
+        1,
+        -433,
+        50583,
+        -1889903,
+        10898564,
+        -8860740
+      ],
+      "h1": 198072,
+      "h2": 5774544,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-8860740",
+        "198072"
+      ],
+      "graph_vertex_count": 1078,
+      "graph_eigenvalue_interval": [
+        "1077",
+        "1078"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        18
+      ],
+      "quintic_coefficients": [
+        1,
+        -453,
+        54843,
+        -2113031,
+        12474420,
+        -10134180
+      ],
+      "h1": 281600,
+      "h2": 6794064,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-10134180",
+        "281600"
+      ],
+      "graph_vertex_count": 1138,
+      "graph_eigenvalue_interval": [
+        "1137",
+        "1138"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -473,
+        59261,
+        -2351011,
+        14193174,
+        -11519928
+      ],
+      "h1": 381024,
+      "h2": 7928928,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-11519928",
+        "381024"
+      ],
+      "graph_vertex_count": 1198,
+      "graph_eigenvalue_interval": [
+        "1197",
+        "1198"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -493,
+        63837,
+        -2604203,
+        16060946,
+        -13022520
+      ],
+      "h1": 497568,
+      "h2": 9185400,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-13022520",
+        "497568"
+      ],
+      "graph_vertex_count": 1258,
+      "graph_eigenvalue_interval": [
+        "1257",
+        "1258"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -513,
+        68571,
+        -2872967,
+        18083856,
+        -14646492
+      ],
+      "h1": 632456,
+      "h2": 10569744,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-14646492",
+        "632456"
+      ],
+      "graph_vertex_count": 1318,
+      "graph_eigenvalue_interval": [
+        "1317",
+        "1318"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -533,
+        73463,
+        -3157663,
+        20268024,
+        -16396380
+      ],
+      "h1": 786912,
+      "h2": 12088224,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-16396380",
+        "786912"
+      ],
+      "graph_vertex_count": 1378,
+      "graph_eigenvalue_interval": [
+        "1377",
+        "1378"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -553,
+        78513,
+        -3458651,
+        22619570,
+        -18276720
+      ],
+      "h1": 962160,
+      "h2": 13747104,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-18276720",
+        "962160"
+      ],
+      "graph_vertex_count": 1438,
+      "graph_eigenvalue_interval": [
+        "1437",
+        "1438"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -573,
+        83721,
+        -3776291,
+        25144614,
+        -20292048
+      ],
+      "h1": 1159424,
+      "h2": 15552648,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-20292048",
+        "1159424"
+      ],
+      "graph_vertex_count": 1498,
+      "graph_eigenvalue_interval": [
+        "1497",
+        "1498"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -593,
+        89087,
+        -4110943,
+        27849276,
+        -22446900
+      ],
+      "h1": 1379928,
+      "h2": 17511120,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-22446900",
+        "1379928"
+      ],
+      "graph_vertex_count": 1558,
+      "graph_eigenvalue_interval": [
+        "1557",
+        "1558"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -613,
+        94611,
+        -4462967,
+        30739676,
+        -24745812
+      ],
+      "h1": 1624896,
+      "h2": 19628784,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-24745812",
+        "1624896"
+      ],
+      "graph_vertex_count": 1618,
+      "graph_eigenvalue_interval": [
+        "1617",
+        "1618"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -633,
+        100293,
+        -4832723,
+        33821934,
+        -27193320
+      ],
+      "h1": 1895552,
+      "h2": 21911904,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-27193320",
+        "1895552"
+      ],
+      "graph_vertex_count": 1678,
+      "graph_eigenvalue_interval": [
+        "1677",
+        "1678"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -653,
+        106133,
+        -5220571,
+        37102170,
+        -29793960
+      ],
+      "h1": 2193120,
+      "h2": 24366744,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-29793960",
+        "2193120"
+      ],
+      "graph_vertex_count": 1738,
+      "graph_eigenvalue_interval": [
+        "1737",
+        "1738"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        14,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -673,
+        112131,
+        -5626871,
+        40586504,
+        -32552268
+      ],
+      "h1": 2518824,
+      "h2": 26999568,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-32552268",
+        "2518824"
+      ],
+      "graph_vertex_count": 1798,
+      "graph_eigenvalue_interval": [
+        "1797",
+        "1798"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        15,
+        16
+      ],
+      "quintic_coefficients": [
+        1,
+        -435,
+        50925,
+        -1909225,
+        11040534,
+        -8984160
+      ],
+      "h1": 197640,
+      "h2": 5860480,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-8984160",
+        "197640"
+      ],
+      "graph_vertex_count": 1086,
+      "graph_eigenvalue_interval": [
+        "1085",
+        "1086"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        15,
+        17
+      ],
+      "quintic_coefficients": [
+        1,
+        -456,
+        55371,
+        -2143736,
+        12706425,
+        -10335150
+      ],
+      "h1": 282455,
+      "h2": 6938460,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-10335150",
+        "282455"
+      ],
+      "graph_vertex_count": 1150,
+      "graph_eigenvalue_interval": [
+        "1149",
+        "1150"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        15,
+        18
+      ],
+      "quintic_coefficients": [
+        1,
+        -477,
+        59985,
+        -2394279,
+        14528970,
+        -11809800
+      ],
+      "h1": 384400,
+      "h2": 8143304,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-11809800",
+        "384400"
+      ],
+      "graph_vertex_count": 1214,
+      "graph_eigenvalue_interval": [
+        "1213",
+        "1214"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        15,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -498,
+        64767,
+        -2661238,
+        16515081,
+        -13413240
+      ],
+      "h1": 504873,
+      "h2": 9482170,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-13413240",
+        "504873"
+      ],
+      "graph_vertex_count": 1278,
+      "graph_eigenvalue_interval": [
+        "1277",
+        "1278"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        15,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -519,
+        69717,
+        -2944997,
+        18671670,
+        -15150600
+      ],
+      "h1": 645272,
+      "h2": 10962216,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-15150600",
+        "645272"
+      ],
+      "graph_vertex_count": 1342,
+      "graph_eigenvalue_interval": [
+        "1341",
+        "1342"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        15,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -540,
+        74835,
+        -3245940,
+        21005649,
+        -17027010
+      ],
+      "h1": 806995,
+      "h2": 12590600,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-17027010",
+        "806995"
+      ],
+      "graph_vertex_count": 1406,
+      "graph_eigenvalue_interval": [
+        "1405",
+        "1406"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        15,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -561,
+        80121,
+        -3564451,
+        23523930,
+        -19047600
+      ],
+      "h1": 991440,
+      "h2": 14374480,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-19047600",
+        "991440"
+      ],
+      "graph_vertex_count": 1470,
+      "graph_eigenvalue_interval": [
+        "1469",
+        "1470"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        15,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -582,
+        85575,
+        -3900914,
+        26233425,
+        -21217500
+      ],
+      "h1": 1200005,
+      "h2": 16321014,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-21217500",
+        "1200005"
+      ],
+      "graph_vertex_count": 1534,
+      "graph_eigenvalue_interval": [
+        "1533",
+        "1534"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        15,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -603,
+        91197,
+        -4255713,
+        29141046,
+        -23541840
+      ],
+      "h1": 1434088,
+      "h2": 18437360,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-23541840",
+        "1434088"
+      ],
+      "graph_vertex_count": 1598,
+      "graph_eigenvalue_interval": [
+        "1597",
+        "1598"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        15,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -624,
+        96987,
+        -4629232,
+        32253705,
+        -26025750
+      ],
+      "h1": 1695087,
+      "h2": 20730676,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-26025750",
+        "1695087"
+      ],
+      "graph_vertex_count": 1662,
+      "graph_eigenvalue_interval": [
+        "1661",
+        "1662"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        15,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -645,
+        102945,
+        -5021855,
+        35578314,
+        -28674360
+      ],
+      "h1": 1984400,
+      "h2": 23208120,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-28674360",
+        "1984400"
+      ],
+      "graph_vertex_count": 1726,
+      "graph_eigenvalue_interval": [
+        "1725",
+        "1726"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        15,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -666,
+        109071,
+        -5433966,
+        39121785,
+        -31492800
+      ],
+      "h1": 2303425,
+      "h2": 25876850,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-31492800",
+        "2303425"
+      ],
+      "graph_vertex_count": 1790,
+      "graph_eigenvalue_interval": [
+        "1789",
+        "1790"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        15,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -687,
+        115365,
+        -5865949,
+        42891030,
+        -34486200
+      ],
+      "h1": 2653560,
+      "h2": 28744024,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-34486200",
+        "2653560"
+      ],
+      "graph_vertex_count": 1854,
+      "graph_eigenvalue_interval": [
+        "1853",
+        "1854"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        15,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -708,
+        121827,
+        -6318188,
+        46892961,
+        -37659690
+      ],
+      "h1": 3036203,
+      "h2": 31816800,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-37659690",
+        "3036203"
+      ],
+      "graph_vertex_count": 1918,
+      "graph_eigenvalue_interval": [
+        "1917",
+        "1918"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        16,
+        17
+      ],
+      "quintic_coefficients": [
+        1,
+        -479,
+        60347,
+        -2416033,
+        14698308,
+        -11956032
+      ],
+      "h1": 386112,
+      "h2": 8251596,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-11956032",
+        "386112"
+      ],
+      "graph_vertex_count": 1222,
+      "graph_eigenvalue_interval": [
+        "1221",
+        "1222"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        16,
+        18
+      ],
+      "quintic_coefficients": [
+        1,
+        -501,
+        65325,
+        -2695699,
+        16790538,
+        -13650336
+      ],
+      "h1": 509328,
+      "h2": 9662560,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-13650336",
+        "509328"
+      ],
+      "graph_vertex_count": 1290,
+      "graph_eigenvalue_interval": [
+        "1289",
+        "1290"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        16,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -523,
+        70481,
+        -2993417,
+        19068666,
+        -15491232
+      ],
+      "h1": 653976,
+      "h2": 11227944,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-15491232",
+        "653976"
+      ],
+      "graph_vertex_count": 1358,
+      "graph_eigenvalue_interval": [
+        "1357",
+        "1358"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        16,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -545,
+        75815,
+        -3309595,
+        21540444,
+        -17484480
+      ],
+      "h1": 821640,
+      "h2": 12955860,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-17484480",
+        "821640"
+      ],
+      "graph_vertex_count": 1426,
+      "graph_eigenvalue_interval": [
+        "1425",
+        "1426"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        16,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -567,
+        81327,
+        -3644641,
+        24213624,
+        -19635840
+      ],
+      "h1": 1013904,
+      "h2": 14854420,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-19635840",
+        "1013904"
+      ],
+      "graph_vertex_count": 1494,
+      "graph_eigenvalue_interval": [
+        "1493",
+        "1494"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        16,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -589,
+        87017,
+        -3998963,
+        27095958,
+        -21951072
+      ],
+      "h1": 1232352,
+      "h2": 16931736,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-21951072",
+        "1232352"
+      ],
+      "graph_vertex_count": 1562,
+      "graph_eigenvalue_interval": [
+        "1561",
+        "1562"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        16,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -611,
+        92885,
+        -4372969,
+        30195198,
+        -24435936
+      ],
+      "h1": 1478568,
+      "h2": 19195920,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-24435936",
+        "1478568"
+      ],
+      "graph_vertex_count": 1630,
+      "graph_eigenvalue_interval": [
+        "1629",
+        "1630"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        16,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -633,
+        98931,
+        -4767067,
+        33519096,
+        -27096192
+      ],
+      "h1": 1754136,
+      "h2": 21655084,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-27096192",
+        "1754136"
+      ],
+      "graph_vertex_count": 1698,
+      "graph_eigenvalue_interval": [
+        "1697",
+        "1698"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        16,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -655,
+        105155,
+        -5181665,
+        37075404,
+        -29937600
+      ],
+      "h1": 2060640,
+      "h2": 24317340,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-29937600",
+        "2060640"
+      ],
+      "graph_vertex_count": 1766,
+      "graph_eigenvalue_interval": [
+        "1765",
+        "1766"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        16,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -677,
+        111557,
+        -5617171,
+        40871874,
+        -32965920
+      ],
+      "h1": 2399664,
+      "h2": 27190800,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-32965920",
+        "2399664"
+      ],
+      "graph_vertex_count": 1834,
+      "graph_eigenvalue_interval": [
+        "1833",
+        "1834"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        16,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -699,
+        118137,
+        -6073993,
+        44916258,
+        -36186912
+      ],
+      "h1": 2772792,
+      "h2": 30283576,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-36186912",
+        "2772792"
+      ],
+      "graph_vertex_count": 1902,
+      "graph_eigenvalue_interval": [
+        "1901",
+        "1902"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        16,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -721,
+        124895,
+        -6552539,
+        49216308,
+        -39606336
+      ],
+      "h1": 3181608,
+      "h2": 33603780,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-39606336",
+        "3181608"
+      ],
+      "graph_vertex_count": 1970,
+      "graph_eigenvalue_interval": [
+        "1969",
+        "1970"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        16,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -743,
+        131831,
+        -7053217,
+        53779776,
+        -43229952
+      ],
+      "h1": 3627696,
+      "h2": 37159524,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-43229952",
+        "3627696"
+      ],
+      "graph_vertex_count": 2038,
+      "graph_eigenvalue_interval": [
+        "2037",
+        "2038"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        17,
+        18
+      ],
+      "quintic_coefficients": [
+        1,
+        -525,
+        70863,
+        -3017747,
+        19268700,
+        -15662916
+      ],
+      "h1": 658376,
+      "h2": 11362032,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-15662916",
+        "658376"
+      ],
+      "graph_vertex_count": 1366,
+      "graph_eigenvalue_interval": [
+        "1365",
+        "1366"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        17,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -548,
+        76403,
+        -3348028,
+        21864489,
+        -17761770
+      ],
+      "h1": 830547,
+      "h2": 13177584,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-17761770",
+        "830547"
+      ],
+      "graph_vertex_count": 1438,
+      "graph_eigenvalue_interval": [
+        "1437",
+        "1438"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        17,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -571,
+        82131,
+        -3698501,
+        24678860,
+        -20032800
+      ],
+      "h1": 1029120,
+      "h2": 15178860,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-20032800",
+        "1029120"
+      ],
+      "graph_vertex_count": 1510,
+      "graph_eigenvalue_interval": [
+        "1509",
+        "1510"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        17,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -594,
+        88047,
+        -4069598,
+        27720453,
+        -22482432
+      ],
+      "h1": 1255877,
+      "h2": 17374986,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-22482432",
+        "1255877"
+      ],
+      "graph_vertex_count": 1582,
+      "graph_eigenvalue_interval": [
+        "1581",
+        "1582"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        17,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -617,
+        94151,
+        -4461751,
+        30997908,
+        -25117092
+      ],
+      "h1": 1512600,
+      "h2": 19775088,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-25117092",
+        "1512600"
+      ],
+      "graph_vertex_count": 1654,
+      "graph_eigenvalue_interval": [
+        "1653",
+        "1654"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        17,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -640,
+        100443,
+        -4875392,
+        34519865,
+        -27943206
+      ],
+      "h1": 1801071,
+      "h2": 22388292,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-27943206",
+        "1801071"
+      ],
+      "graph_vertex_count": 1726,
+      "graph_eigenvalue_interval": [
+        "1725",
+        "1726"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        17,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -663,
+        106923,
+        -5310953,
+        38294964,
+        -30967200
+      ],
+      "h1": 2123072,
+      "h2": 25223724,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-30967200",
+        "2123072"
+      ],
+      "graph_vertex_count": 1798,
+      "graph_eigenvalue_interval": [
+        "1797",
+        "1798"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        17,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -686,
+        113591,
+        -5768866,
+        42331845,
+        -34195500
+      ],
+      "h1": 2480385,
+      "h2": 28290510,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-34195500",
+        "2480385"
+      ],
+      "graph_vertex_count": 1870,
+      "graph_eigenvalue_interval": [
+        "1869",
+        "1870"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        17,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -709,
+        120447,
+        -6249563,
+        46639148,
+        -37634532
+      ],
+      "h1": 2874792,
+      "h2": 31597776,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-37634532",
+        "2874792"
+      ],
+      "graph_vertex_count": 1942,
+      "graph_eigenvalue_interval": [
+        "1941",
+        "1942"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        17,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -732,
+        127491,
+        -6753476,
+        51225513,
+        -41290722
+      ],
+      "h1": 3308075,
+      "h2": 35154648,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-41290722",
+        "3308075"
+      ],
+      "graph_vertex_count": 2014,
+      "graph_eigenvalue_interval": [
+        "2013",
+        "2014"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        17,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -755,
+        134723,
+        -7281037,
+        56099580,
+        -45170496
+      ],
+      "h1": 3782016,
+      "h2": 38970252,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-45170496",
+        "3782016"
+      ],
+      "graph_vertex_count": 2086,
+      "graph_eigenvalue_interval": [
+        "2085",
+        "2086"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        17,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -778,
+        142143,
+        -7832678,
+        61269989,
+        -49280280
+      ],
+      "h1": 4298397,
+      "h2": 43053714,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-49280280",
+        "4298397"
+      ],
+      "graph_vertex_count": 2158,
+      "graph_eigenvalue_interval": [
+        "2157",
+        "2158"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        18,
+        19
+      ],
+      "quintic_coefficients": [
+        1,
+        -573,
+        82533,
+        -3725551,
+        24913110,
+        -20232720
+      ],
+      "h1": 1036800,
+      "h2": 15342424,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-20232720",
+        "1036800"
+      ],
+      "graph_vertex_count": 1518,
+      "graph_eigenvalue_interval": [
+        "1517",
+        "1518"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        18,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -597,
+        88665,
+        -4112219,
+        28098510,
+        -22804200
+      ],
+      "h1": 1270160,
+      "h2": 17643744,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-22804200",
+        "1270160"
+      ],
+      "graph_vertex_count": 1594,
+      "graph_eigenvalue_interval": [
+        "1593",
+        "1594"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        18,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -621,
+        94995,
+        -4521339,
+        31538808,
+        -25576236
+      ],
+      "h1": 1535608,
+      "h2": 20166080,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-25576236",
+        "1535608"
+      ],
+      "graph_vertex_count": 1670,
+      "graph_eigenvalue_interval": [
+        "1669",
+        "1670"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        18,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -645,
+        101523,
+        -4953367,
+        35243580,
+        -28555956
+      ],
+      "h1": 1835136,
+      "h2": 22919632,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-28555956",
+        "1835136"
+      ],
+      "graph_vertex_count": 1746,
+      "graph_eigenvalue_interval": [
+        "1745",
+        "1746"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        18,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -669,
+        108249,
+        -5408759,
+        39222402,
+        -31750488
+      ],
+      "h1": 2170736,
+      "h2": 25914600,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-31750488",
+        "2170736"
+      ],
+      "graph_vertex_count": 1822,
+      "graph_eigenvalue_interval": [
+        "1821",
+        "1822"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        18,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -693,
+        115173,
+        -5887971,
+        43484850,
+        -35166960
+      ],
+      "h1": 2544400,
+      "h2": 29161184,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-35166960",
+        "2544400"
+      ],
+      "graph_vertex_count": 1898,
+      "graph_eigenvalue_interval": [
+        "1897",
+        "1898"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        18,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -717,
+        122295,
+        -6391459,
+        48040500,
+        -38812500
+      ],
+      "h1": 2958120,
+      "h2": 32669584,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-38812500",
+        "2958120"
+      ],
+      "graph_vertex_count": 1974,
+      "graph_eigenvalue_interval": [
+        "1973",
+        "1974"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        18,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -741,
+        129615,
+        -6919679,
+        52898928,
+        -42694236
+      ],
+      "h1": 3413888,
+      "h2": 36450000,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-42694236",
+        "3413888"
+      ],
+      "graph_vertex_count": 2050,
+      "graph_eigenvalue_interval": [
+        "2049",
+        "2050"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        18,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -765,
+        137133,
+        -7473087,
+        58069710,
+        -46819296
+      ],
+      "h1": 3913696,
+      "h2": 40512632,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-46819296",
+        "3913696"
+      ],
+      "graph_vertex_count": 2126,
+      "graph_eigenvalue_interval": [
+        "2125",
+        "2126"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        18,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -789,
+        144849,
+        -8052139,
+        63562422,
+        -51194808
+      ],
+      "h1": 4459536,
+      "h2": 44867680,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-51194808",
+        "4459536"
+      ],
+      "graph_vertex_count": 2202,
+      "graph_eigenvalue_interval": [
+        "2201",
+        "2202"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        18,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -813,
+        152763,
+        -8657291,
+        69386640,
+        -55827900
+      ],
+      "h1": 5053400,
+      "h2": 49525344,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-55827900",
+        "5053400"
+      ],
+      "graph_vertex_count": 2278,
+      "graph_eigenvalue_interval": [
+        "2277",
+        "2278"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        19,
+        20
+      ],
+      "quintic_coefficients": [
+        1,
+        -623,
+        95417,
+        -4551253,
+        31810986,
+        -25807320
+      ],
+      "h1": 1547208,
+      "h2": 20363040,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-25807320",
+        "1547208"
+      ],
+      "graph_vertex_count": 1678,
+      "graph_eigenvalue_interval": [
+        "1677",
+        "1678"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        19,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -648,
+        102171,
+        -5000392,
+        35681361,
+        -28926702
+      ],
+      "h1": 1855791,
+      "h2": 23241484,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-28926702",
+        "1855791"
+      ],
+      "graph_vertex_count": 1758,
+      "graph_eigenvalue_interval": [
+        "1757",
+        "1758"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        19,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -673,
+        109133,
+        -5474363,
+        39846774,
+        -32277960
+      ],
+      "h1": 2202912,
+      "h2": 26380464,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-32277960",
+        "2202912"
+      ],
+      "graph_vertex_count": 1838,
+      "graph_eigenvalue_interval": [
+        "1837",
+        "1838"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        19,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -698,
+        116303,
+        -5973646,
+        44317785,
+        -35868960
+      ],
+      "h1": 2590785,
+      "h2": 29791314,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-35868960",
+        "2590785"
+      ],
+      "graph_vertex_count": 1918,
+      "graph_eigenvalue_interval": [
+        "1917",
+        "1918"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        19,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -723,
+        123681,
+        -6498721,
+        49104954,
+        -39707568
+      ],
+      "h1": 3021624,
+      "h2": 33485368,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-39707568",
+        "3021624"
+      ],
+      "graph_vertex_count": 1998,
+      "graph_eigenvalue_interval": [
+        "1997",
+        "1998"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        19,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -748,
+        131267,
+        -7050068,
+        54218841,
+        -43801650
+      ],
+      "h1": 3497643,
+      "h2": 37473960,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-43801650",
+        "3497643"
+      ],
+      "graph_vertex_count": 2078,
+      "graph_eigenvalue_interval": [
+        "2077",
+        "2078"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        19,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -773,
+        139061,
+        -7628167,
+        59670006,
+        -48159072
+      ],
+      "h1": 4021056,
+      "h2": 41768424,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-48159072",
+        "4021056"
+      ],
+      "graph_vertex_count": 2158,
+      "graph_eigenvalue_interval": [
+        "2157",
+        "2158"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        19,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -798,
+        147063,
+        -8233498,
+        65469009,
+        -52787700
+      ],
+      "h1": 4594077,
+      "h2": 46380094,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-52787700",
+        "4594077"
+      ],
+      "graph_vertex_count": 2238,
+      "graph_eigenvalue_interval": [
+        "2237",
+        "2238"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        19,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -823,
+        155273,
+        -8866541,
+        71626410,
+        -57695400
+      ],
+      "h1": 5218920,
+      "h2": 51320304,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-57695400",
+        "5218920"
+      ],
+      "graph_vertex_count": 2318,
+      "graph_eigenvalue_interval": [
+        "2317",
+        "2318"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        19,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -848,
+        163691,
+        -9527776,
+        78152769,
+        -62890038
+      ],
+      "h1": 5897799,
+      "h2": 56600388,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-62890038",
+        "5897799"
+      ],
+      "graph_vertex_count": 2398,
+      "graph_eigenvalue_interval": [
+        "2397",
+        "2398"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        20,
+        21
+      ],
+      "quintic_coefficients": [
+        1,
+        -675,
+        109575,
+        -5507285,
+        40160784,
+        -32543280
+      ],
+      "h1": 2219120,
+      "h2": 26614980,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-32543280",
+        "2219120"
+      ],
+      "graph_vertex_count": 1846,
+      "graph_eigenvalue_interval": [
+        "1845",
+        "1846"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        20,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -701,
+        116981,
+        -6025291,
+        44821290,
+        -36293400
+      ],
+      "h1": 2618880,
+      "h2": 30172680,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-36293400",
+        "2618880"
+      ],
+      "graph_vertex_count": 1930,
+      "graph_eigenvalue_interval": [
+        "1929",
+        "1930"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        20,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -727,
+        124605,
+        -6570629,
+        49820990,
+        -40309800
+      ],
+      "h1": 3064440,
+      "h2": 34034904,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-40309800",
+        "3064440"
+      ],
+      "graph_vertex_count": 2014,
+      "graph_eigenvalue_interval": [
+        "2013",
+        "2014"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        20,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -753,
+        132447,
+        -7143803,
+        55171476,
+        -44601120
+      ],
+      "h1": 3558248,
+      "h2": 38214180,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-44601120",
+        "3558248"
+      ],
+      "graph_vertex_count": 2098,
+      "graph_eigenvalue_interval": [
+        "2097",
+        "2098"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        20,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -779,
+        140507,
+        -7745317,
+        60884340,
+        -49176000
+      ],
+      "h1": 4102752,
+      "h2": 42723036,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-49176000",
+        "4102752"
+      ],
+      "graph_vertex_count": 2182,
+      "graph_eigenvalue_interval": [
+        "2181",
+        "2182"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        20,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -805,
+        148785,
+        -8375675,
+        66971174,
+        -54043080
+      ],
+      "h1": 4700400,
+      "h2": 47574000,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-54043080",
+        "4700400"
+      ],
+      "graph_vertex_count": 2266,
+      "graph_eigenvalue_interval": [
+        "2265",
+        "2266"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        20,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -831,
+        157281,
+        -9035381,
+        73443570,
+        -59211000
+      ],
+      "h1": 5353640,
+      "h2": 52779600,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-59211000",
+        "5353640"
+      ],
+      "graph_vertex_count": 2350,
+      "graph_eigenvalue_interval": [
+        "2349",
+        "2350"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        20,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -857,
+        165995,
+        -9724939,
+        80313120,
+        -64688400
+      ],
+      "h1": 6064920,
+      "h2": 58352364,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-64688400",
+        "6064920"
+      ],
+      "graph_vertex_count": 2434,
+      "graph_eigenvalue_interval": [
+        "2433",
+        "2434"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        20,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -883,
+        174927,
+        -10444853,
+        87591416,
+        -70483920
+      ],
+      "h1": 6836688,
+      "h2": 64304820,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-70483920",
+        "6836688"
+      ],
+      "graph_vertex_count": 2518,
+      "graph_eigenvalue_interval": [
+        "2517",
+        "2518"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        21,
+        22
+      ],
+      "quintic_coefficients": [
+        1,
+        -729,
+        125067,
+        -6606703,
+        50180928,
+        -40612572
+      ],
+      "h1": 3085992,
+      "h2": 34311376,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-40612572",
+        "3085992"
+      ],
+      "graph_vertex_count": 2022,
+      "graph_eigenvalue_interval": [
+        "2021",
+        "2022"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        21,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -756,
+        133155,
+        -7200284,
+        55746993,
+        -45084186
+      ],
+      "h1": 3594923,
+      "h2": 38661840,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-45084186",
+        "3594923"
+      ],
+      "graph_vertex_count": 2110,
+      "graph_eigenvalue_interval": [
+        "2109",
+        "2110"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        21,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -783,
+        141471,
+        -7823817,
+        61700616,
+        -49859712
+      ],
+      "h1": 4157776,
+      "h2": 43365524,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-49859712",
+        "4157776"
+      ],
+      "graph_vertex_count": 2198,
+      "graph_eigenvalue_interval": [
+        "2197",
+        "2198"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        21,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -810,
+        150015,
+        -8477830,
+        68054469,
+        -54948600
+      ],
+      "h1": 4777245,
+      "h2": 48436210,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-54948600",
+        "4777245"
+      ],
+      "graph_vertex_count": 2286,
+      "graph_eigenvalue_interval": [
+        "2285",
+        "2286"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        21,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -837,
+        158787,
+        -9162851,
+        74821224,
+        -60360300
+      ],
+      "h1": 5456024,
+      "h2": 53887680,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-60360300",
+        "5456024"
+      ],
+      "graph_vertex_count": 2374,
+      "graph_eigenvalue_interval": [
+        "2373",
+        "2374"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        21,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -864,
+        167787,
+        -9879408,
+        82013553,
+        -66104262
+      ],
+      "h1": 6196807,
+      "h2": 59733716,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-66104262",
+        "6196807"
+      ],
+      "graph_vertex_count": 2462,
+      "graph_eigenvalue_interval": [
+        "2461",
+        "2462"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        21,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -891,
+        177015,
+        -10628029,
+        89644128,
+        -72189936
+      ],
+      "h1": 7002288,
+      "h2": 65988100,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-72189936",
+        "7002288"
+      ],
+      "graph_vertex_count": 2550,
+      "graph_eigenvalue_interval": [
+        "2549",
+        "2550"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        21,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -918,
+        186471,
+        -11409242,
+        97725621,
+        -78626772
+      ],
+      "h1": 7875161,
+      "h2": 72664614,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-78626772",
+        "7875161"
+      ],
+      "graph_vertex_count": 2638,
+      "graph_eigenvalue_interval": [
+        "2637",
+        "2638"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        22,
+        23
+      ],
+      "quintic_coefficients": [
+        1,
+        -785,
+        141953,
+        -7863187,
+        62110770,
+        -50203296
+      ],
+      "h1": 4185456,
+      "h2": 43688592,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-50203296",
+        "4185456"
+      ],
+      "graph_vertex_count": 2206,
+      "graph_eigenvalue_interval": [
+        "2205",
+        "2206"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        22,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -813,
+        150753,
+        -8539363,
+        68708574,
+        -55495440
+      ],
+      "h1": 4823712,
+      "h2": 48957304,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-55495440",
+        "4823712"
+      ],
+      "graph_vertex_count": 2298,
+      "graph_eigenvalue_interval": [
+        "2297",
+        "2298"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        22,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -841,
+        159791,
+        -9248231,
+        75746700,
+        -61132500
+      ],
+      "h1": 5524920,
+      "h2": 54632880,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-61132500",
+        "5524920"
+      ],
+      "graph_vertex_count": 2390,
+      "graph_eigenvalue_interval": [
+        "2389",
+        "2390"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        22,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -869,
+        169067,
+        -9990343,
+        83238948,
+        -67124772
+      ],
+      "h1": 6292032,
+      "h2": 60730416,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-67124772",
+        "6292032"
+      ],
+      "graph_vertex_count": 2482,
+      "graph_eigenvalue_interval": [
+        "2481",
+        "2482"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        22,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -897,
+        178581,
+        -10766251,
+        91199118,
+        -73482552
+      ],
+      "h1": 7128000,
+      "h2": 67265008,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-73482552",
+        "7128000"
+      ],
+      "graph_vertex_count": 2574,
+      "graph_eigenvalue_interval": [
+        "2573",
+        "2574"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        22,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -925,
+        188333,
+        -11576507,
+        99641010,
+        -80216136
+      ],
+      "h1": 8035776,
+      "h2": 74251752,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-80216136",
+        "8035776"
+      ],
+      "graph_vertex_count": 2666,
+      "graph_eigenvalue_interval": [
+        "2665",
+        "2666"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        22,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -953,
+        198323,
+        -12421663,
+        108578424,
+        -87335820
+      ],
+      "h1": 9018312,
+      "h2": 81705744,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-87335820",
+        "9018312"
+      ],
+      "graph_vertex_count": 2758,
+      "graph_eigenvalue_interval": [
+        "2757",
+        "2758"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        23,
+        24
+      ],
+      "quintic_coefficients": [
+        1,
+        -843,
+        160293,
+        -9291041,
+        76211550,
+        -61520400
+      ],
+      "h1": 5559560,
+      "h2": 55007424,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-61520400",
+        "5559560"
+      ],
+      "graph_vertex_count": 2398,
+      "graph_eigenvalue_interval": [
+        "2397",
+        "2398"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        23,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -872,
+        169835,
+        -10057144,
+        83978505,
+        -67740750
+      ],
+      "h1": 6349575,
+      "h2": 61332444,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-67740750",
+        "6349575"
+      ],
+      "graph_vertex_count": 2494,
+      "graph_eigenvalue_interval": [
+        "2493",
+        "2494"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        23,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -901,
+        179625,
+        -10858799,
+        92243138,
+        -74350536
+      ],
+      "h1": 7212528,
+      "h2": 68123160,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-74350536",
+        "7212528"
+      ],
+      "graph_vertex_count": 2590,
+      "graph_eigenvalue_interval": [
+        "2589",
+        "2590"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        23,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -930,
+        189663,
+        -11696582,
+        101020425,
+        -81360936
+      ],
+      "h1": 8151641,
+      "h2": 75396042,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-81360936",
+        "8151641"
+      ],
+      "graph_vertex_count": 2686,
+      "graph_eigenvalue_interval": [
+        "2685",
+        "2686"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        23,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -959,
+        199949,
+        -12571069,
+        110325342,
+        -88783128
+      ],
+      "h1": 9170136,
+      "h2": 83167560,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-88783128",
+        "9170136"
+      ],
+      "graph_vertex_count": 2782,
+      "graph_eigenvalue_interval": [
+        "2781",
+        "2782"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        23,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -988,
+        210483,
+        -13482836,
+        120172865,
+        -96628290
+      ],
+      "h1": 10271235,
+      "h2": 91454184,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-96628290",
+        "10271235"
+      ],
+      "graph_vertex_count": 2878,
+      "graph_eigenvalue_interval": [
+        "2877",
+        "2878"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        24,
+        25
+      ],
+      "quintic_coefficients": [
+        1,
+        -903,
+        180147,
+        -10905193,
+        92767356,
+        -74786400
+      ],
+      "h1": 7255008,
+      "h2": 68554300,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-74786400",
+        "7255008"
+      ],
+      "graph_vertex_count": 2598,
+      "graph_eigenvalue_interval": [
+        "2597",
+        "2598"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        24,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -933,
+        190461,
+        -11768867,
+        101852586,
+        -82051632
+      ],
+      "h1": 8221616,
+      "h2": 76086864,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-82051632",
+        "8221616"
+      ],
+      "graph_vertex_count": 2698,
+      "graph_eigenvalue_interval": [
+        "2697",
+        "2698"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        24,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -963,
+        201033,
+        -12671073,
+        111497634,
+        -89754480
+      ],
+      "h1": 9272152,
+      "h2": 84149384,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-89754480",
+        "9272152"
+      ],
+      "graph_vertex_count": 2798,
+      "graph_eigenvalue_interval": [
+        "2797",
+        "2798"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        24,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -993,
+        211863,
+        -13612411,
+        121718700,
+        -97907040
+      ],
+      "h1": 10410120,
+      "h2": 92759764,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-97907040",
+        "10410120"
+      ],
+      "graph_vertex_count": 2898,
+      "graph_eigenvalue_interval": [
+        "2897",
+        "2898"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        24,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -1023,
+        222951,
+        -14593481,
+        132531984,
+        -106521408
+      ],
+      "h1": 11639024,
+      "h2": 101935908,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-106521408",
+        "11639024"
+      ],
+      "graph_vertex_count": 2998,
+      "graph_eigenvalue_interval": [
+        "2997",
+        "2998"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        25,
+        26
+      ],
+      "quintic_coefficients": [
+        1,
+        -965,
+        201575,
+        -12721195,
+        112086084,
+        -90242100
+      ],
+      "h1": 9323400,
+      "h2": 84642480,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-90242100",
+        "9323400"
+      ],
+      "graph_vertex_count": 2806,
+      "graph_eigenvalue_interval": [
+        "2805",
+        "2806"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        25,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -996,
+        212691,
+        -13690396,
+        122650905,
+        -98678250
+      ],
+      "h1": 10493955,
+      "h2": 93547600,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-98678250",
+        "10493955"
+      ],
+      "graph_vertex_count": 2910,
+      "graph_eigenvalue_interval": [
+        "2909",
+        "2910"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        25,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -1027,
+        224075,
+        -14701229,
+        133842660,
+        -107604000
+      ],
+      "h1": 11760480,
+      "h2": 103052604,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-107604000",
+        "11760480"
+      ],
+      "graph_vertex_count": 3014,
+      "graph_eigenvalue_interval": [
+        "3013",
+        "3014"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        25,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -1058,
+        235727,
+        -15754318,
+        145678821,
+        -117032400
+      ],
+      "h1": 13126773,
+      "h2": 113176890,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-117032400",
+        "13126773"
+      ],
+      "graph_vertex_count": 3118,
+      "graph_eigenvalue_interval": [
+        "3117",
+        "3118"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        26,
+        27
+      ],
+      "quintic_coefficients": [
+        1,
+        -1029,
+        224637,
+        -14755223,
+        134500398,
+        -108147312
+      ],
+      "h1": 11821472,
+      "h2": 103613256,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-108147312",
+        "11821472"
+      ],
+      "graph_vertex_count": 3022,
+      "graph_eigenvalue_interval": [
+        "3021",
+        "3022"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        26,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -1061,
+        236585,
+        -15838219,
+        146718798,
+        -117890136
+      ],
+      "h1": 13225968,
+      "h2": 114070320,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-117890136",
+        "13225968"
+      ],
+      "graph_vertex_count": 3130,
+      "graph_eigenvalue_interval": [
+        "3129",
+        "3130"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        26,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -1093,
+        248811,
+        -16966067,
+        159636416,
+        -128178492
+      ],
+      "h1": 14739576,
+      "h2": 125203104,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-128178492",
+        "14739576"
+      ],
+      "graph_vertex_count": 3238,
+      "graph_eigenvalue_interval": [
+        "3237",
+        "3238"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        27,
+        28
+      ],
+      "quintic_coefficients": [
+        1,
+        -1095,
+        249393,
+        -17024077,
+        160368690,
+        -128781576
+      ],
+      "h1": 14811336,
+      "h2": 125837152,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-128781576",
+        "14811336"
+      ],
+      "graph_vertex_count": 3246,
+      "graph_eigenvalue_interval": [
+        "3245",
+        "3246"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        27,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -1128,
+        262203,
+        -18229448,
+        174427809,
+        -139976910
+      ],
+      "h1": 16482527,
+      "h2": 138040524,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-139976910",
+        "16482527"
+      ],
+      "graph_vertex_count": 3358,
+      "graph_eigenvalue_interval": [
+        "3357",
+        "3358"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    },
+    {
+      "exponents": [
+        3,
+        28,
+        29
+      ],
+      "quintic_coefficients": [
+        1,
+        -1163,
+        275903,
+        -19545181,
+        190076040,
+        -152444880
+      ],
+      "h1": 18360720,
+      "h2": 151715124,
+      "complement_interval": [
+        "0",
+        "1"
+      ],
+      "endpoint_values": [
+        "-152444880",
+        "18360720"
+      ],
+      "graph_vertex_count": 3478,
+      "graph_eigenvalue_interval": [
+        "3477",
+        "3478"
+      ],
+      "independent_quotient_and_horner_checks": "passed"
+    }
+  ],
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "check_distinct_tail.py": "69625bd41521c58d8180783f1596b6381b67b36a77554cd14a461d11b999e324",
+    "check_six_support_quotient.py": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c"
+  },
+  "scope": "Written general endpoint cutoff for all a,b>=2, c>=4a^2-2a; positive expansions for minimum-three h2; exact quotient/Horner sign certificates for every one of the 325 pairs in the theorem-derived minimum-three finite domain, with one rational-endpoint/Sturm exception. Combined with prior proofs, every triple with minimum exponent<=3 is settled. Pairwise distinct a>=4 with c<4a^2-2a and nonsquarefree higher-prime vectors remain open. No Lean or floating-point spectra."
+}

@@ -1,0 +1,2336 @@
+{
+  "origin": "Independent support-derived checker cross-validates the corrected coauthor check_fully_distinct.py from origin/main09be7fe.",
+  "support_order": [
+    "1",
+    "2",
+    "3",
+    "12",
+    "13",
+    "23"
+  ],
+  "general_complement_quotient": "Matrix([[b*c + b + c, -b, -c, 0, 0, -b*c], [-a, a*c + a + c, -c, 0, -a*c, 0], [-a, -b, a*b + a + b, -a*b, 0, 0], [0, 0, -c, c, 0, 0], [0, -b, 0, 0, b, 0], [-a, 0, 0, 0, 0, a]])",
+  "symbolic_identities": "passed",
+  "complement_quintic_at_0": "-a*b*c*(a + b + c)*(a*b + a*c + a + b*c + b + c)",
+  "complement_quintic_at_a": "-a**2*b**2*c**2*(a**2 + 2*a - b - c)",
+  "complement_quintic_at_1_when_a_is_1": "b**2*c**2*(b + c - 3)",
+  "complete_requested_range": "1 <= a < b < c <= 7; exactly35triples, matching the coauthor script",
+  "cases": [
+    {
+      "exponents": [
+        1,
+        2,
+        3
+      ],
+      "quintic": "x**5 - 56*x**4 + 1205*x**3 - 12358*x**2 + 59892*x - 108936",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 56*x**4 + 1205*x**3 - 12358*x**2 + 59892*x - 108936",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "397/82",
+            "92/19"
+          ],
+          "consecutive_integers": [
+            4,
+            5
+          ]
+        },
+        {
+          "bounds": [
+            "489/65",
+            "158/21"
+          ],
+          "consecutive_integers": [
+            7,
+            8
+          ]
+        },
+        {
+          "bounds": [
+            "1576/133",
+            "237/20"
+          ],
+          "consecutive_integers": [
+            11,
+            12
+          ]
+        },
+        {
+          "bounds": [
+            "788/51",
+            "479/31"
+          ],
+          "consecutive_integers": [
+            15,
+            16
+          ]
+        },
+        {
+          "bounds": [
+            "49/3",
+            "5619/344"
+          ],
+          "consecutive_integers": [
+            16,
+            17
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 13
+    },
+    {
+      "exponents": [
+        1,
+        2,
+        4
+      ],
+      "quintic": "x**5 - 70*x**4 + 1883*x**3 - 24134*x**2 + 145968*x - 329952",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 70*x**4 + 1883*x**3 - 24134*x**2 + 145968*x - 329952",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "88/15",
+            "399/68"
+          ],
+          "consecutive_integers": [
+            5,
+            6
+          ]
+        },
+        {
+          "bounds": [
+            "608/63",
+            "415/43"
+          ],
+          "consecutive_integers": [
+            9,
+            10
+          ]
+        },
+        {
+          "bounds": [
+            "1975/133",
+            "297/20"
+          ],
+          "consecutive_integers": [
+            14,
+            15
+          ]
+        },
+        {
+          "bounds": [
+            "347/18",
+            "1176/61"
+          ],
+          "consecutive_integers": [
+            19,
+            20
+          ]
+        },
+        {
+          "bounds": [
+            "346/17",
+            "2361/116"
+          ],
+          "consecutive_integers": [
+            20,
+            21
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": null
+    },
+    {
+      "exponents": [
+        1,
+        2,
+        5
+      ],
+      "quintic": "x**5 - 84*x**4 + 2711*x**3 - 41664*x**2 + 301740*x - 814000",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 84*x**4 + 2711*x**3 - 41664*x**2 + 301740*x - 814000",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "241/35",
+            "303/44"
+          ],
+          "consecutive_integers": [
+            6,
+            7
+          ]
+        },
+        {
+          "bounds": [
+            "692/59",
+            "563/48"
+          ],
+          "consecutive_integers": [
+            11,
+            12
+          ]
+        },
+        {
+          "bounds": [
+            "893/50",
+            "768/43"
+          ],
+          "consecutive_integers": [
+            17,
+            18
+          ]
+        },
+        {
+          "bounds": [
+            "741/32",
+            "1181/51"
+          ],
+          "consecutive_integers": [
+            23,
+            24
+          ]
+        },
+        {
+          "bounds": [
+            "1657/68",
+            "463/19"
+          ],
+          "consecutive_integers": [
+            24,
+            25
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 17
+    },
+    {
+      "exponents": [
+        1,
+        2,
+        6
+      ],
+      "quintic": "x**5 - 98*x**4 + 3689*x**3 - 66088*x**2 + 557244*x - 1745568",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 98*x**4 + 3689*x**3 - 66088*x**2 + 557244*x - 1745568",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "79/10",
+            "1193/151"
+          ],
+          "consecutive_integers": [
+            7,
+            8
+          ]
+        },
+        {
+          "bounds": [
+            "565/41",
+            "441/32"
+          ],
+          "consecutive_integers": [
+            13,
+            14
+          ]
+        },
+        {
+          "bounds": [
+            "981/47",
+            "1148/55"
+          ],
+          "consecutive_integers": [
+            20,
+            21
+          ]
+        },
+        {
+          "bounds": [
+            "406/15",
+            "2003/74"
+          ],
+          "consecutive_integers": [
+            27,
+            28
+          ]
+        },
+        {
+          "bounds": [
+            "1050/37",
+            "823/29"
+          ],
+          "consecutive_integers": [
+            28,
+            29
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 7
+    },
+    {
+      "exponents": [
+        1,
+        2,
+        7
+      ],
+      "quintic": "x**5 - 112*x**4 + 4817*x**3 - 98546*x**2 + 947892*x - 3379992",
+      "factor_degrees": [
+        1,
+        4
+      ],
+      "factorization": "(x - 31)*(x**4 - 81*x**3 + 2306*x**2 - 27060*x + 109032)",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "401/45",
+            "303/34"
+          ],
+          "consecutive_integers": [
+            8,
+            9
+          ]
+        },
+        {
+          "bounds": [
+            "775/49",
+            "949/60"
+          ],
+          "consecutive_integers": [
+            15,
+            16
+          ]
+        },
+        {
+          "bounds": [
+            "1027/43",
+            "621/26"
+          ],
+          "consecutive_integers": [
+            23,
+            24
+          ]
+        },
+        {
+          "bounds": [
+            "1587/49",
+            "2170/67"
+          ],
+          "consecutive_integers": [
+            32,
+            33
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": null
+    },
+    {
+      "exponents": [
+        1,
+        3,
+        4
+      ],
+      "quintic": "x**5 - 92*x**4 + 3257*x**3 - 54922*x**2 + 434784*x - 1262304",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 92*x**4 + 3257*x**3 - 54922*x**2 + 434784*x - 1262304",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "352/51",
+            "283/41"
+          ],
+          "consecutive_integers": [
+            6,
+            7
+          ]
+        },
+        {
+          "bounds": [
+            "862/61",
+            "537/38"
+          ],
+          "consecutive_integers": [
+            14,
+            15
+          ]
+        },
+        {
+          "bounds": [
+            "731/37",
+            "652/33"
+          ],
+          "consecutive_integers": [
+            19,
+            20
+          ]
+        },
+        {
+          "bounds": [
+            "1019/41",
+            "1193/48"
+          ],
+          "consecutive_integers": [
+            24,
+            25
+          ]
+        },
+        {
+          "bounds": [
+            "817/31",
+            "1186/45"
+          ],
+          "consecutive_integers": [
+            26,
+            27
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 7
+    },
+    {
+      "exponents": [
+        1,
+        3,
+        5
+      ],
+      "quintic": "x**5 - 110*x**4 + 4655*x**3 - 93730*x**2 + 883269*x - 3026880",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 110*x**4 + 4655*x**3 - 93730*x**2 + 883269*x - 3026880",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "95/12",
+            "673/85"
+          ],
+          "consecutive_integers": [
+            7,
+            8
+          ]
+        },
+        {
+          "bounds": [
+            "294/17",
+            "19577/1132"
+          ],
+          "consecutive_integers": [
+            17,
+            18
+          ]
+        },
+        {
+          "bounds": [
+            "3659/154",
+            "594/25"
+          ],
+          "consecutive_integers": [
+            23,
+            24
+          ]
+        },
+        {
+          "bounds": [
+            "1928/65",
+            "2017/68"
+          ],
+          "consecutive_integers": [
+            29,
+            30
+          ]
+        },
+        {
+          "bounds": [
+            "941/30",
+            "1537/49"
+          ],
+          "consecutive_integers": [
+            31,
+            32
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 13
+    },
+    {
+      "exponents": [
+        1,
+        3,
+        6
+      ],
+      "quintic": "x**5 - 128*x**4 + 6301*x**3 - 147438*x**2 + 1610460*x - 6353640",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 128*x**4 + 6301*x**3 - 147438*x**2 + 1610460*x - 6353640",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "4366/489",
+            "125/14"
+          ],
+          "consecutive_integers": [
+            8,
+            9
+          ]
+        },
+        {
+          "bounds": [
+            "1898/93",
+            "449/22"
+          ],
+          "consecutive_integers": [
+            20,
+            21
+          ]
+        },
+        {
+          "bounds": [
+            "1583/57",
+            "2194/79"
+          ],
+          "consecutive_integers": [
+            27,
+            28
+          ]
+        },
+        {
+          "bounds": [
+            "1277/37",
+            "1208/35"
+          ],
+          "consecutive_integers": [
+            34,
+            35
+          ]
+        },
+        {
+          "bounds": [
+            "2801/77",
+            "2510/69"
+          ],
+          "consecutive_integers": [
+            36,
+            37
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 7
+    },
+    {
+      "exponents": [
+        1,
+        3,
+        7
+      ],
+      "quintic": "x**5 - 146*x**4 + 8195*x**3 - 218458*x**2 + 2712717*x - 12099276",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 146*x**4 + 8195*x**3 - 218458*x**2 + 2712717*x - 12099276",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "785/79",
+            "159/16"
+          ],
+          "consecutive_integers": [
+            9,
+            10
+          ]
+        },
+        {
+          "bounds": [
+            "1621/69",
+            "1668/71"
+          ],
+          "consecutive_integers": [
+            23,
+            24
+          ]
+        },
+        {
+          "bounds": [
+            "1494/47",
+            "1049/33"
+          ],
+          "consecutive_integers": [
+            31,
+            32
+          ]
+        },
+        {
+          "bounds": [
+            "4452/113",
+            "4649/118"
+          ],
+          "consecutive_integers": [
+            39,
+            40
+          ]
+        },
+        {
+          "bounds": [
+            "538/13",
+            "18499/447"
+          ],
+          "consecutive_integers": [
+            41,
+            42
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": null
+    },
+    {
+      "exponents": [
+        1,
+        4,
+        5
+      ],
+      "quintic": "x**5 - 136*x**4 + 7115*x**3 - 176768*x**2 + 2041380*x - 8392800",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 136*x**4 + 7115*x**3 - 176768*x**2 + 2041380*x - 8392800",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "134/15",
+            "679/76"
+          ],
+          "consecutive_integers": [
+            8,
+            9
+          ]
+        },
+        {
+          "bounds": [
+            "591/26",
+            "932/41"
+          ],
+          "consecutive_integers": [
+            22,
+            23
+          ]
+        },
+        {
+          "bounds": [
+            "3178/107",
+            "2881/97"
+          ],
+          "consecutive_integers": [
+            29,
+            30
+          ]
+        },
+        {
+          "bounds": [
+            "6019/166",
+            "979/27"
+          ],
+          "consecutive_integers": [
+            36,
+            37
+          ]
+        },
+        {
+          "bounds": [
+            "6255/163",
+            "307/8"
+          ],
+          "consecutive_integers": [
+            38,
+            39
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 11
+    },
+    {
+      "exponents": [
+        1,
+        4,
+        6
+      ],
+      "quintic": "x**5 - 158*x**4 + 9599*x**3 - 276562*x**2 + 3689952*x - 17336160",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 158*x**4 + 9599*x**3 - 276562*x**2 + 3689952*x - 17336160",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "348/35",
+            "527/53"
+          ],
+          "consecutive_integers": [
+            9,
+            10
+          ]
+        },
+        {
+          "bounds": [
+            "1642/61",
+            "1319/49"
+          ],
+          "consecutive_integers": [
+            26,
+            27
+          ]
+        },
+        {
+          "bounds": [
+            "937/27",
+            "1527/44"
+          ],
+          "consecutive_integers": [
+            34,
+            35
+          ]
+        },
+        {
+          "bounds": [
+            "1640/39",
+            "2439/58"
+          ],
+          "consecutive_integers": [
+            42,
+            43
+          ]
+        },
+        {
+          "bounds": [
+            "1509/34",
+            "2086/47"
+          ],
+          "consecutive_integers": [
+            44,
+            45
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 29
+    },
+    {
+      "exponents": [
+        1,
+        4,
+        7
+      ],
+      "quintic": "x**5 - 180*x**4 + 12453*x**3 - 408094*x**2 + 6173928*x - 32592672",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 180*x**4 + 12453*x**3 - 408094*x**2 + 6173928*x - 32592672",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "219/20",
+            "2201/201"
+          ],
+          "consecutive_integers": [
+            10,
+            11
+          ]
+        },
+        {
+          "bounds": [
+            "1553/50",
+            "1025/33"
+          ],
+          "consecutive_integers": [
+            31,
+            32
+          ]
+        },
+        {
+          "bounds": [
+            "4051/102",
+            "3773/95"
+          ],
+          "consecutive_integers": [
+            39,
+            40
+          ]
+        },
+        {
+          "bounds": [
+            "2059/43",
+            "1245/26"
+          ],
+          "consecutive_integers": [
+            47,
+            48
+          ]
+        },
+        {
+          "bounds": [
+            "907/18",
+            "2973/59"
+          ],
+          "consecutive_integers": [
+            50,
+            51
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 23
+    },
+    {
+      "exponents": [
+        1,
+        5,
+        6
+      ],
+      "quintic": "x**5 - 188*x**4 + 13583*x**3 - 464368*x**2 + 7302252*x - 39571920",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 188*x**4 + 13583*x**3 - 464368*x**2 + 7302252*x - 39571920",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "230/21",
+            "931/85"
+          ],
+          "consecutive_integers": [
+            10,
+            11
+          ]
+        },
+        {
+          "bounds": [
+            "1633/49",
+            "1733/52"
+          ],
+          "consecutive_integers": [
+            33,
+            34
+          ]
+        },
+        {
+          "bounds": [
+            "5958/143",
+            "6083/146"
+          ],
+          "consecutive_integers": [
+            41,
+            42
+          ]
+        },
+        {
+          "bounds": [
+            "149/3",
+            "19420/391"
+          ],
+          "consecutive_integers": [
+            49,
+            50
+          ]
+        },
+        {
+          "bounds": [
+            "943/18",
+            "3091/59"
+          ],
+          "consecutive_integers": [
+            52,
+            53
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 11
+    },
+    {
+      "exponents": [
+        1,
+        5,
+        7
+      ],
+      "quintic": "x**5 - 214*x**4 + 17591*x**3 - 683234*x**2 + 12158205*x - 73638600",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 214*x**4 + 17591*x**3 - 683234*x**2 + 12158205*x - 73638600",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "287/24",
+            "1160/97"
+          ],
+          "consecutive_integers": [
+            11,
+            12
+          ]
+        },
+        {
+          "bounds": [
+            "2543/66",
+            "1888/49"
+          ],
+          "consecutive_integers": [
+            38,
+            39
+          ]
+        },
+        {
+          "bounds": [
+            "143/3",
+            "15921/334"
+          ],
+          "consecutive_integers": [
+            47,
+            48
+          ]
+        },
+        {
+          "bounds": [
+            "2145/38",
+            "1637/29"
+          ],
+          "consecutive_integers": [
+            56,
+            57
+          ]
+        },
+        {
+          "bounds": [
+            "2851/48",
+            "3148/53"
+          ],
+          "consecutive_integers": [
+            59,
+            60
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 11
+    },
+    {
+      "exponents": [
+        1,
+        6,
+        7
+      ],
+      "quintic": "x**5 - 248*x**4 + 23609*x**3 - 1059658*x**2 + 21654444*x - 147438648",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 248*x**4 + 23609*x**3 - 1059658*x**2 + 21654444*x - 147438648",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "363/28",
+            "1465/113"
+          ],
+          "consecutive_integers": [
+            12,
+            13
+          ]
+        },
+        {
+          "bounds": [
+            "2250/49",
+            "1699/37"
+          ],
+          "consecutive_integers": [
+            45,
+            46
+          ]
+        },
+        {
+          "bounds": [
+            "2615/47",
+            "2003/36"
+          ],
+          "consecutive_integers": [
+            55,
+            56
+          ]
+        },
+        {
+          "bounds": [
+            "5987/92",
+            "846/13"
+          ],
+          "consecutive_integers": [
+            65,
+            66
+          ]
+        },
+        {
+          "bounds": [
+            "8345/122",
+            "8003/117"
+          ],
+          "consecutive_integers": [
+            68,
+            69
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 13
+    },
+    {
+      "exponents": [
+        2,
+        3,
+        4
+      ],
+      "quintic": "x**5 - 122*x**4 + 5783*x**3 - 132742*x**2 + 1472424*x - 6310080",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 122*x**4 + 5783*x**3 - 132742*x**2 + 1472424*x - 6310080",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "1499/111",
+            "1472/109"
+          ],
+          "consecutive_integers": [
+            13,
+            14
+          ]
+        },
+        {
+          "bounds": [
+            "137/8",
+            "4778/279"
+          ],
+          "consecutive_integers": [
+            17,
+            18
+          ]
+        },
+        {
+          "bounds": [
+            "2369/98",
+            "556/23"
+          ],
+          "consecutive_integers": [
+            24,
+            25
+          ]
+        },
+        {
+          "bounds": [
+            "465/14",
+            "3089/93"
+          ],
+          "consecutive_integers": [
+            33,
+            34
+          ]
+        },
+        {
+          "bounds": [
+            "1869/55",
+            "1903/56"
+          ],
+          "consecutive_integers": [
+            33,
+            34
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": null
+    },
+    {
+      "exponents": [
+        2,
+        3,
+        5
+      ],
+      "quintic": "x**5 - 144*x**4 + 8057*x**3 - 218226*x**2 + 2853612*x - 14391000",
+      "factor_degrees": [
+        1,
+        4
+      ],
+      "factorization": "(x - 39)*(x**4 - 105*x**3 + 3962*x**2 - 63708*x + 369000)",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "467/30",
+            "576/37"
+          ],
+          "consecutive_integers": [
+            15,
+            16
+          ]
+        },
+        {
+          "bounds": [
+            "859/42",
+            "1084/53"
+          ],
+          "consecutive_integers": [
+            20,
+            21
+          ]
+        },
+        {
+          "bounds": [
+            "666/23",
+            "1361/47"
+          ],
+          "consecutive_integers": [
+            28,
+            29
+          ]
+        },
+        {
+          "bounds": [
+            "1761/44",
+            "1721/43"
+          ],
+          "consecutive_integers": [
+            40,
+            41
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 7
+    },
+    {
+      "exponents": [
+        2,
+        3,
+        6
+      ],
+      "quintic": "x**5 - 166*x**4 + 10705*x**3 - 334008*x**2 + 5025852*x - 29115936",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 166*x**4 + 10705*x**3 - 334008*x**2 + 5025852*x - 29115936",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "4210/239",
+            "229/13"
+          ],
+          "consecutive_integers": [
+            17,
+            18
+          ]
+        },
+        {
+          "bounds": [
+            "1253/53",
+            "1584/67"
+          ],
+          "consecutive_integers": [
+            23,
+            24
+          ]
+        },
+        {
+          "bounds": [
+            "271/8",
+            "5183/153"
+          ],
+          "consecutive_integers": [
+            33,
+            34
+          ]
+        },
+        {
+          "bounds": [
+            "2375/53",
+            "3092/69"
+          ],
+          "consecutive_integers": [
+            44,
+            45
+          ]
+        },
+        {
+          "bounds": [
+            "829/18",
+            "4099/89"
+          ],
+          "consecutive_integers": [
+            46,
+            47
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 19
+    },
+    {
+      "exponents": [
+        2,
+        3,
+        7
+      ],
+      "quintic": "x**5 - 188*x**4 + 13727*x**3 - 484660*x**2 + 8243808*x - 53904816",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 188*x**4 + 13727*x**3 - 484660*x**2 + 8243808*x - 53904816",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "511/26",
+            "2103/107"
+          ],
+          "consecutive_integers": [
+            19,
+            20
+          ]
+        },
+        {
+          "bounds": [
+            "1097/41",
+            "990/37"
+          ],
+          "consecutive_integers": [
+            26,
+            27
+          ]
+        },
+        {
+          "bounds": [
+            "1943/50",
+            "1671/43"
+          ],
+          "consecutive_integers": [
+            38,
+            39
+          ]
+        },
+        {
+          "bounds": [
+            "5875/116",
+            "861/17"
+          ],
+          "consecutive_integers": [
+            50,
+            51
+          ]
+        },
+        {
+          "bounds": [
+            "4427/85",
+            "625/12"
+          ],
+          "consecutive_integers": [
+            52,
+            53
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 13
+    },
+    {
+      "exponents": [
+        2,
+        4,
+        5
+      ],
+      "quintic": "x**5 - 174*x**4 + 11771*x**3 - 385494*x**2 + 6086400*x - 36887200",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 174*x**4 + 11771*x**3 - 385494*x**2 + 6086400*x - 36887200",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "442/25",
+            "831/47"
+          ],
+          "consecutive_integers": [
+            17,
+            18
+          ]
+        },
+        {
+          "bounds": [
+            "1409/53",
+            "1090/41"
+          ],
+          "consecutive_integers": [
+            26,
+            27
+          ]
+        },
+        {
+          "bounds": [
+            "6114/175",
+            "559/16"
+          ],
+          "consecutive_integers": [
+            34,
+            35
+          ]
+        },
+        {
+          "bounds": [
+            "1497/32",
+            "2573/55"
+          ],
+          "consecutive_integers": [
+            46,
+            47
+          ]
+        },
+        {
+          "bounds": [
+            "3121/65",
+            "3073/64"
+          ],
+          "consecutive_integers": [
+            48,
+            49
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": null
+    },
+    {
+      "exponents": [
+        2,
+        4,
+        6
+      ],
+      "quintic": "x**5 - 200*x**4 + 15548*x**3 - 584704*x**2 + 10582848*x - 73285632",
+      "factor_degrees": [
+        2,
+        3
+      ],
+      "factorization": "(x**2 - 86*x + 1704)*(x**3 - 114*x**2 + 4040*x - 43008)",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "927/47",
+            "572/29"
+          ],
+          "consecutive_integers": [
+            19,
+            20
+          ]
+        },
+        {
+          "bounds": [
+            "743/24",
+            "4489/145"
+          ],
+          "consecutive_integers": [
+            30,
+            31
+          ]
+        },
+        {
+          "bounds": [
+            "1343/33",
+            "1750/43"
+          ],
+          "consecutive_integers": [
+            40,
+            41
+          ]
+        },
+        {
+          "bounds": [
+            "18699/349",
+            "1018/19"
+          ],
+          "consecutive_integers": [
+            53,
+            54
+          ]
+        },
+        {
+          "bounds": [
+            "7981/145",
+            "1321/24"
+          ],
+          "consecutive_integers": [
+            55,
+            56
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 5
+    },
+    {
+      "exponents": [
+        2,
+        4,
+        7
+      ],
+      "quintic": "x**5 - 226*x**4 + 19847*x**3 - 842486*x**2 + 17184888*x - 133725312",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 226*x**4 + 19847*x**3 - 842486*x**2 + 17184888*x - 133725312",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "892/41",
+            "805/37"
+          ],
+          "consecutive_integers": [
+            21,
+            22
+          ]
+        },
+        {
+          "bounds": [
+            "176/5",
+            "7181/204"
+          ],
+          "consecutive_integers": [
+            35,
+            36
+          ]
+        },
+        {
+          "bounds": [
+            "559/12",
+            "5823/125"
+          ],
+          "consecutive_integers": [
+            46,
+            47
+          ]
+        },
+        {
+          "bounds": [
+            "1993/33",
+            "2295/38"
+          ],
+          "consecutive_integers": [
+            60,
+            61
+          ]
+        },
+        {
+          "bounds": [
+            "1924/31",
+            "2855/46"
+          ],
+          "consecutive_integers": [
+            62,
+            63
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 17
+    },
+    {
+      "exponents": [
+        2,
+        5,
+        6
+      ],
+      "quintic": "x**5 - 234*x**4 + 21281*x**3 - 935304*x**2 + 19727100*x - 158090400",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 234*x**4 + 21281*x**3 - 935304*x**2 + 19727100*x - 158090400",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "2831/130",
+            "196/9"
+          ],
+          "consecutive_integers": [
+            21,
+            22
+          ]
+        },
+        {
+          "bounds": [
+            "799/21",
+            "8751/230"
+          ],
+          "consecutive_integers": [
+            38,
+            39
+          ]
+        },
+        {
+          "bounds": [
+            "1768/37",
+            "2437/51"
+          ],
+          "consecutive_integers": [
+            47,
+            48
+          ]
+        },
+        {
+          "bounds": [
+            "2369/38",
+            "2182/35"
+          ],
+          "consecutive_integers": [
+            62,
+            63
+          ]
+        },
+        {
+          "bounds": [
+            "2626/41",
+            "3907/61"
+          ],
+          "consecutive_integers": [
+            64,
+            65
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 19
+    },
+    {
+      "exponents": [
+        2,
+        5,
+        7
+      ],
+      "quintic": "x**5 - 264*x**4 + 27077*x**3 - 1340766*x**2 + 31792092*x - 285158440",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 264*x**4 + 27077*x**3 - 1340766*x**2 + 31792092*x - 285158440",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "976/41",
+            "857/36"
+          ],
+          "consecutive_integers": [
+            23,
+            24
+          ]
+        },
+        {
+          "bounds": [
+            "1869/43",
+            "2521/58"
+          ],
+          "consecutive_integers": [
+            43,
+            44
+          ]
+        },
+        {
+          "bounds": [
+            "1472/27",
+            "2835/52"
+          ],
+          "consecutive_integers": [
+            54,
+            55
+          ]
+        },
+        {
+          "bounds": [
+            "16764/239",
+            "491/7"
+          ],
+          "consecutive_integers": [
+            70,
+            71
+          ]
+        },
+        {
+          "bounds": [
+            "1081/15",
+            "5333/74"
+          ],
+          "consecutive_integers": [
+            72,
+            73
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 17
+    },
+    {
+      "exponents": [
+        2,
+        6,
+        7
+      ],
+      "quintic": "x**5 - 302*x**4 + 35417*x**3 - 2002456*x**2 + 54029052*x - 546995232",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 302*x**4 + 35417*x**3 - 2002456*x**2 + 54029052*x - 546995232",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "1731/67",
+            "1576/61"
+          ],
+          "consecutive_integers": [
+            25,
+            26
+          ]
+        },
+        {
+          "bounds": [
+            "4996/97",
+            "4893/95"
+          ],
+          "consecutive_integers": [
+            51,
+            52
+          ]
+        },
+        {
+          "bounds": [
+            "6456/103",
+            "1567/25"
+          ],
+          "consecutive_integers": [
+            62,
+            63
+          ]
+        },
+        {
+          "bounds": [
+            "5673/71",
+            "4874/61"
+          ],
+          "consecutive_integers": [
+            79,
+            80
+          ]
+        },
+        {
+          "bounds": [
+            "1067/13",
+            "7387/90"
+          ],
+          "consecutive_integers": [
+            82,
+            83
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 31
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        5
+      ],
+      "quintic": "x**5 - 212*x**4 + 17549*x**3 - 707998*x**2 + 13914720*x - 106624800",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 212*x**4 + 17549*x**3 - 707998*x**2 + 13914720*x - 106624800",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "1043/40",
+            "1382/53"
+          ],
+          "consecutive_integers": [
+            26,
+            27
+          ]
+        },
+        {
+          "bounds": [
+            "1965/64",
+            "829/27"
+          ],
+          "consecutive_integers": [
+            30,
+            31
+          ]
+        },
+        {
+          "bounds": [
+            "283/7",
+            "7722/191"
+          ],
+          "consecutive_integers": [
+            40,
+            41
+          ]
+        },
+        {
+          "bounds": [
+            "2111/37",
+            "3138/55"
+          ],
+          "consecutive_integers": [
+            57,
+            58
+          ]
+        },
+        {
+          "bounds": [
+            "2425/42",
+            "3753/65"
+          ],
+          "consecutive_integers": [
+            57,
+            58
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 19
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        6
+      ],
+      "quintic": "x**5 - 242*x**4 + 22867*x**3 - 1052802*x**2 + 23596344*x - 205965504",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 242*x**4 + 22867*x**3 - 1052802*x**2 + 23596344*x - 205965504",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "846/29",
+            "1517/52"
+          ],
+          "consecutive_integers": [
+            29,
+            30
+          ]
+        },
+        {
+          "bounds": [
+            "2857/81",
+            "3245/92"
+          ],
+          "consecutive_integers": [
+            35,
+            36
+          ]
+        },
+        {
+          "bounds": [
+            "563/12",
+            "3988/85"
+          ],
+          "consecutive_integers": [
+            46,
+            47
+          ]
+        },
+        {
+          "bounds": [
+            "843/13",
+            "5512/85"
+          ],
+          "consecutive_integers": [
+            64,
+            65
+          ]
+        },
+        {
+          "bounds": [
+            "1579/24",
+            "6645/101"
+          ],
+          "consecutive_integers": [
+            65,
+            66
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 7
+    },
+    {
+      "exponents": [
+        3,
+        4,
+        7
+      ],
+      "quintic": "x**5 - 272*x**4 + 28883*x**3 - 1493692*x**2 + 37572144*x - 367617600",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 272*x**4 + 28883*x**3 - 1493692*x**2 + 37572144*x - 367617600",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "7643/237",
+            "7772/241"
+          ],
+          "consecutive_integers": [
+            32,
+            33
+          ]
+        },
+        {
+          "bounds": [
+            "3841/97",
+            "4039/102"
+          ],
+          "consecutive_integers": [
+            39,
+            40
+          ]
+        },
+        {
+          "bounds": [
+            "11699/218",
+            "11860/221"
+          ],
+          "consecutive_integers": [
+            53,
+            54
+          ]
+        },
+        {
+          "bounds": [
+            "1453/20",
+            "6030/83"
+          ],
+          "consecutive_integers": [
+            72,
+            73
+          ]
+        },
+        {
+          "bounds": [
+            "3175/43",
+            "2732/37"
+          ],
+          "consecutive_integers": [
+            73,
+            74
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 31
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        6
+      ],
+      "quintic": "x**5 - 280*x**4 + 30625*x**3 - 1632330*x**2 + 42334884*x - 426860280",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 280*x**4 + 30625*x**3 - 1632330*x**2 + 42334884*x - 426860280",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "1004/31",
+            "1587/49"
+          ],
+          "consecutive_integers": [
+            32,
+            33
+          ]
+        },
+        {
+          "bounds": [
+            "4177/97",
+            "689/16"
+          ],
+          "consecutive_integers": [
+            43,
+            44
+          ]
+        },
+        {
+          "bounds": [
+            "1784/33",
+            "2649/49"
+          ],
+          "consecutive_integers": [
+            54,
+            55
+          ]
+        },
+        {
+          "bounds": [
+            "1793/24",
+            "5902/79"
+          ],
+          "consecutive_integers": [
+            74,
+            75
+          ]
+        },
+        {
+          "bounds": [
+            "3107/41",
+            "2425/32"
+          ],
+          "consecutive_integers": [
+            75,
+            76
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 17
+    },
+    {
+      "exponents": [
+        3,
+        5,
+        7
+      ],
+      "quintic": "x**5 - 314*x**4 + 38507*x**3 - 2300026*x**2 + 66774357*x - 752289300",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 314*x**4 + 38507*x**3 - 2300026*x**2 + 66774357*x - 752289300",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "2837/80",
+            "2376/67"
+          ],
+          "consecutive_integers": [
+            35,
+            36
+          ]
+        },
+        {
+          "bounds": [
+            "6521/134",
+            "6667/137"
+          ],
+          "consecutive_integers": [
+            48,
+            49
+          ]
+        },
+        {
+          "bounds": [
+            "2523/41",
+            "3323/54"
+          ],
+          "consecutive_integers": [
+            61,
+            62
+          ]
+        },
+        {
+          "bounds": [
+            "6431/77",
+            "2088/25"
+          ],
+          "consecutive_integers": [
+            83,
+            84
+          ]
+        },
+        {
+          "bounds": [
+            "6022/71",
+            "6955/82"
+          ],
+          "consecutive_integers": [
+            84,
+            85
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": null
+    },
+    {
+      "exponents": [
+        3,
+        6,
+        7
+      ],
+      "quintic": "x**5 - 356*x**4 + 49495*x**3 - 3349908*x**2 + 110042352*x - 1398294576",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 356*x**4 + 49495*x**3 - 3349908*x**2 + 110042352*x - 1398294576",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "2738/71",
+            "2121/55"
+          ],
+          "consecutive_integers": [
+            38,
+            39
+          ]
+        },
+        {
+          "bounds": [
+            "2987/52",
+            "3504/61"
+          ],
+          "consecutive_integers": [
+            57,
+            58
+          ]
+        },
+        {
+          "bounds": [
+            "1885/27",
+            "2653/38"
+          ],
+          "consecutive_integers": [
+            69,
+            70
+          ]
+        },
+        {
+          "bounds": [
+            "2925/31",
+            "4246/45"
+          ],
+          "consecutive_integers": [
+            94,
+            95
+          ]
+        },
+        {
+          "bounds": [
+            "10828/113",
+            "1629/17"
+          ],
+          "consecutive_integers": [
+            95,
+            96
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 17
+    },
+    {
+      "exponents": [
+        4,
+        5,
+        6
+      ],
+      "quintic": "x**5 - 326*x**4 + 41615*x**3 - 2598178*x**2 + 79348080*x - 949024800",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 326*x**4 + 41615*x**3 - 2598178*x**2 + 79348080*x - 949024800",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "2385/56",
+            "1661/39"
+          ],
+          "consecutive_integers": [
+            42,
+            43
+          ]
+        },
+        {
+          "bounds": [
+            "1303/27",
+            "2413/50"
+          ],
+          "consecutive_integers": [
+            48,
+            49
+          ]
+        },
+        {
+          "bounds": [
+            "9221/152",
+            "9403/155"
+          ],
+          "consecutive_integers": [
+            60,
+            61
+          ]
+        },
+        {
+          "bounds": [
+            "1304/15",
+            "9215/106"
+          ],
+          "consecutive_integers": [
+            86,
+            87
+          ]
+        },
+        {
+          "bounds": [
+            "3327/38",
+            "4115/47"
+          ],
+          "consecutive_integers": [
+            87,
+            88
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 17
+    },
+    {
+      "exponents": [
+        4,
+        5,
+        7
+      ],
+      "quintic": "x**5 - 364*x**4 + 51881*x**3 - 3615794*x**2 + 123202200*x - 1642687200",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 364*x**4 + 51881*x**3 - 3615794*x**2 + 123202200*x - 1642687200",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "1495/32",
+            "2663/57"
+          ],
+          "consecutive_integers": [
+            46,
+            47
+          ]
+        },
+        {
+          "bounds": [
+            "2921/54",
+            "2326/43"
+          ],
+          "consecutive_integers": [
+            54,
+            55
+          ]
+        },
+        {
+          "bounds": [
+            "11495/167",
+            "413/6"
+          ],
+          "consecutive_integers": [
+            68,
+            69
+          ]
+        },
+        {
+          "bounds": [
+            "2612/27",
+            "8223/85"
+          ],
+          "consecutive_integers": [
+            96,
+            97
+          ]
+        },
+        {
+          "bounds": [
+            "4295/44",
+            "5564/57"
+          ],
+          "consecutive_integers": [
+            97,
+            98
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 29
+    },
+    {
+      "exponents": [
+        4,
+        6,
+        7
+      ],
+      "quintic": "x**5 - 410*x**4 + 65843*x**3 - 5171314*x**2 + 198539208*x - 2980397952",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 410*x**4 + 65843*x**3 - 5171314*x**2 + 198539208*x - 2980397952",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "4237/83",
+            "3165/62"
+          ],
+          "consecutive_integers": [
+            51,
+            52
+          ]
+        },
+        {
+          "bounds": [
+            "826/13",
+            "5655/89"
+          ],
+          "consecutive_integers": [
+            63,
+            64
+          ]
+        },
+        {
+          "bounds": [
+            "15819/205",
+            "463/6"
+          ],
+          "consecutive_integers": [
+            77,
+            78
+          ]
+        },
+        {
+          "bounds": [
+            "4889/45",
+            "3368/31"
+          ],
+          "consecutive_integers": [
+            108,
+            109
+          ]
+        },
+        {
+          "bounds": [
+            "12385/113",
+            "11837/108"
+          ],
+          "consecutive_integers": [
+            109,
+            110
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 31
+    },
+    {
+      "exponents": [
+        5,
+        6,
+        7
+      ],
+      "quintic": "x**5 - 464*x**4 + 84461*x**3 - 7535974*x**2 + 329723940*x - 5664645000",
+      "factor_degrees": [
+        5
+      ],
+      "factorization": "x**5 - 464*x**4 + 84461*x**3 - 7535974*x**2 + 329723940*x - 5664645000",
+      "has_noninteger_root": true,
+      "exact_root_intervals": [
+        {
+          "bounds": [
+            "3847/61",
+            "4793/76"
+          ],
+          "consecutive_integers": [
+            63,
+            64
+          ]
+        },
+        {
+          "bounds": [
+            "7608/109",
+            "7957/114"
+          ],
+          "consecutive_integers": [
+            69,
+            70
+          ]
+        },
+        {
+          "bounds": [
+            "3905/46",
+            "3141/37"
+          ],
+          "consecutive_integers": [
+            84,
+            85
+          ]
+        },
+        {
+          "bounds": [
+            "3808/31",
+            "6879/56"
+          ],
+          "consecutive_integers": [
+            122,
+            123
+          ]
+        },
+        {
+          "bounds": [
+            "5183/42",
+            "4566/37"
+          ],
+          "consecutive_integers": [
+            123,
+            124
+          ]
+        }
+      ],
+      "smallest_tested_prime_for_nonlinear_factor": 29
+    }
+  ],
+  "direct_ideal_embedding_checks": [
+    {
+      "exponents": [
+        1,
+        2,
+        3
+      ],
+      "vertices": 22,
+      "representative_vertex_pairs_checked": 102
+    },
+    {
+      "exponents": [
+        2,
+        3,
+        4
+      ],
+      "vertices": 58,
+      "representative_vertex_pairs_checked": 210
+    }
+  ],
+  "sympy": "1.14.0",
+  "script_sha256": "11e6c9880ab6581a7bc4c756130c6efe42e1ff3b2cd00448c15fe129035fe58c",
+  "coauthor_script_sha256": "f2dd1b9985c0223d2adb71b450e786e625aace09571c308c70fe4f49f8b38880",
+  "scope": "General exact six-support and complement identities; two finite direct ideal-graph embedding checks; rational factorization and independent matrix/polynomial/Sturm/sign validation of exact intervals for all35requested fullydistinct triples. Infinite (1,b,c) theorem uses written endpoint proof and earlier repeated-exponent exceptions. No claim of fullQ3/fullydistinct closure; no Lean or floating-point spectra."
+}

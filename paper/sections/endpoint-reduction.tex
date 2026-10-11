@@ -1,0 +1,47 @@
+\section{Endpoint surfaces and their reductions}
+\label{sec:endpoint-reduction}
+
+The positive quotient root in $(0,3)$ reduces possible integer spectra
+to the two surfaces $h_C(1)=0$ and $h_C(2)=0$. Their size, divisor and
+finite-certificate restrictions are collected together.
+
+\begin{theorem}
+\label{thm:endpoint-reduction}
+For positive ordered exponents $a\leq b\leq c$, put
+$R(a)=7a-16+40/(a+2)$. Then:
+\begin{enumerate}
+\item If $a\geq4$, then $c\geq R(a)$ gives $h_C(2)>0$, so
+$h_C(2)=0$ requires $c<R(a)$. In this range, all-even triples and
+permutations of $(1,3,2)$ or $(3,3,0)$ modulo four are nonintegral
+when $c\geq R(a)$. For $a\geq8$, $c\geq7a-12$ suffices.
+\item For $a,b\geq4$, an endpoint zero requires, respectively,
+\begin{align*}
+ h_C(1)=0&\ \Longrightarrow\ c\mid(a-1)(b-1)(a+b-1)(ab+a+b-1),\\
+ h_C(2)=0&\ \Longrightarrow\ c\mid2(a-2)(b-2)(a+b-2)(ab+a+b-2).
+\end{align*}
+\item Every triple with $b\leq15$ is nonintegral. Every permutation
+of $(2,2,2)$ or $(1,2,2)$ modulo three is also nonintegral.
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+The full endpoint polynomial and positivity proof are in
+Appendix~\ref{sec:endpoint-details}. Its constant terms give the divisor
+conditions. For the remaining ordered pairs $4\leq a<b\leq15$, the
+complete certificate checks all $132$ endpoint cubics over $66$ pairs:
+$8\,527$ positive constant-term divisors, including every one of the
+$7\,585$ divisors above $b$, give no endpoint zero. Repeated exponents
+and minima at most three were already settled. Theorem~\ref{thm:uniform-low-root}
+then proves the middle-exponent claim. The two modulo-three classes have
+both endpoint values nonzero, as shown by the reductions in Appendix C.
+\end{proof}
+
+Finitely many endpoint-value congruences alone do not eliminate every
+candidate, even with the listed gcd, valuation and geometric restrictions:
+Appendix~\ref{sec:endpoint-details} gives explicit CRT constructions
+below both maximum bounds and outside the sufficient inertia exclusion.
+This limits these endpoint tests; another-root obstruction or further
+arithmetic information can still exclude the candidates. The following
+arguments sharpen endpoint one and complete the endpoint-two alternative.
+\input{sections/endpoint-one-spectrum}
+\input{sections/endpoint-two-completion}
