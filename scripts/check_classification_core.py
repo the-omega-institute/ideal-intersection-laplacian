@@ -50,6 +50,7 @@ def assemble():
         selections.append(record)
 
     fragment("graph.tex")
+    fragment("proof-structure.tex")
     heading(r"""\section{Repeated exponents}
 \label{sec:bounds}
 \label{sec:completion}
@@ -174,7 +175,9 @@ def audit(body, selections, bibliography):
         "uniform_low_root_domain": "All ordered positive real0<a<=b<=c,including singular a=3;comparison at a>3 retained. Constant3optimal by equal-parameter lowest-root limit;finite bases unchanged.",
         "finite_bases_retained": [27562, 8658],
         "earlier_minimum_three_base_retained": 325,
-        "new_mathematical_theorem": False,
+        "new_mathematical_theorem": True,
+        "classification_proof_and_finite_bases_changed": False,
+        "supplementary_written_result": "Fixed-gap endpoint-one expansion with O_d(a^-3), justified by the analytic implicit-function theorem; no uniform growing-gap remainder or integer-point enumeration.",
         "lean_run": False,
     }
 

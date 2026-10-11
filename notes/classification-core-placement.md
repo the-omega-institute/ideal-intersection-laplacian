@@ -1,6 +1,6 @@
 # Three-prime classification manuscript and supporting material
 
-The [27-page main manuscript](../paper/classification-core.pdf) makes
+The [29-page main manuscript](../paper/classification-core.pdf) makes
 the completed three-prime classification the central result. It preserves
 the proof chain and its finite dependencies while setting aside the
 auxiliary arithmetic and higher-prime results. Reza Nikandish's
@@ -15,14 +15,17 @@ freeze and submission arrangements still require the coauthors' confirmation.
 
 The supporting `paper/paper.tex` and section sources retain the full research
 collection and incorporate the subsequent proof refinements. Its current
-PDF is 63 pages; the previous optional detailed build remains a historical
+PDF is 65 pages; the previous optional detailed build remains a historical
 67-page artifact and has not been rebuilt. The focused manuscript is
 36 pages shorter than the current supporting collection, with the same
 11pt font, one-inch margins and article layout. It revises the earlier
 25-page candidate with the confirmed author arrangement, tool-use declaration,
 proof roadmap, real-weight interpretation and quotient-transfer explanation.
 The later all-positive-real low-root proof increases the main build from
-26 to 27 pages. The [current coverage review](classification-final-coverage-review.md)
+26 to 27 pages. The later [proof-structure insertion](proof-structure-review.md)
+adds Section 3 and its supplementary fixed-gap expansion, producing the
+current 29/65-page builds and shifting all later section numbers by one.
+The [coverage review](classification-final-coverage-review.md)
 records the exact assumptions used by the final assembly and the archived
 finite domains after these refinements.
 The essential evidence remains summarized in Appendix A, with complete
@@ -32,22 +35,23 @@ page limit or a substitute for mathematical review.
 
 ## The retained route
 
-The following main theorem numbers retain the compiled classification
-ordering. The original numbers are locators in the supporting section
-structure, also used at historical revision `7be8459`. Subsequent proof
+The following main theorem numbers use the current compiled classification
+ordering. The original numbers are historical locators in the supporting section
+structure before the Section 3 insertion, also used at revision `7be8459`.
+Current supporting numbers are recorded in the proof-structure review. Subsequent proof
 strengthenings are reflected in the current selected source spans.
 
 | Input | Original | Candidate | Role |
 | --- | --- | --- | --- |
 | Universal-vertex lift | Lemma 2.1 | Lemma 2.1 | Transfers every nonzero support eigenvalue |
-| Repeated entries | Theorem 7.1 | Theorem 3.7 | Settles every `(a,a,b)` |
-| Minimum through seven | Corollary 11.4 | Corollary 5.1 | Retains the complete 27,562-triple base |
-| Uniform positive root below three | Theorem 12.2 | Theorem 5.3 | Forces an integer root to be one or two |
-| Endpoint-one sum bound | Part of Theorem 14.2 | Part of Theorem 6.1 | Gives `b+c>=2a^2-2a+1` |
-| Endpoint-two completion | Theorem 14.8 | Theorem 7.2 | Retains the complete 8,658-triple base |
-| Largest-root unit interval | Theorem 16.1 | Theorem 8.1 | Supplies a noninteger root when `b-a>=3` |
-| Endpoint-one gaps one and two | Lemma 16.2 | Lemma 8.2 | Excludes integer `c>b` in the two remaining gaps |
-| Global classification | Theorem 16.3 | Theorem 8.3 | Assembles all positive exponent triples |
+| Repeated entries | Theorem 7.1 | Theorem 4.7 | Settles every `(a,a,b)` |
+| Minimum through seven | Corollary 11.4 | Corollary 6.1 | Retains the complete 27,562-triple base |
+| Uniform positive root below three | Theorem 12.2 | Theorem 6.3 | Forces an integer root to be one or two |
+| Endpoint-one sum bound | Part of Theorem 14.2 | Part of Theorem 7.1 | Gives `b+c>=2a^2-2a+1` |
+| Endpoint-two completion | Theorem 14.8 | Theorem 8.2 | Retains the complete 8,658-triple base |
+| Largest-root unit interval | Theorem 16.1 | Theorem 9.1 | Supplies a noninteger root when `b-a>=3` |
+| Endpoint-one gaps one and two | Lemma 16.2 | Lemma 9.2 | Excludes integer `c>b` in the two remaining gaps |
+| Global classification | Theorem 16.3 | Theorem 9.3 | Assembles all positive exponent triples |
 
 The repeated-entry section retains the full boundary proof supplied by
 Reza Nikandish, the factor-pair and factor-index reductions, all first
@@ -67,9 +71,9 @@ remain in Appendix B. Appendix C retains all 36/170 largest-root terms
 and the six small-gap sign vectors.
 
 For `8<=a<b<c`, a hypothetical integral spectrum therefore forces a
-positive low quotient root to be one or two. Theorem 7.2 excludes two.
-At one, gaps one and two are excluded by Lemma 8.2. Every larger middle
-gap has `c>a^2-a` by Theorem 6.1; Theorem 8.1 then puts the largest root
+positive low quotient root to be one or two. Theorem 8.2 excludes two.
+At one, gaps one and two are excluded by Lemma 9.2. Every larger middle
+gap has `c>a^2-a` by Theorem 7.1; Theorem 9.1 then puts the largest root
 between the consecutive integers `bc+a+b+c` and `bc+a+b+c+1`.
 This is the same mathematical assembly as the original classification.
 
@@ -136,17 +140,17 @@ The selected dependencies were also read in their new order: the factor
 indices, small-minimum reduction, Schur construction, both endpoint
 arguments and final classification have their required definitions,
 hypotheses, finite inputs and coefficient vectors present. No new
-mathematical theorem or certificate-free replacement is claimed.
+classification theorem or certificate-free replacement is claimed. The
+supplementary fixed-gap asymptotic has its separate analytic proof.
 
-The current 27-page main PDF was built at `36e6de0` with pdfTeX/TeX Live 2026
-and no final LaTeX warnings or overfull/underfull boxes. The preceding
-26-page version received a full visual review; the later proof additions
-received targeted visual review. The current 63-page supporting PDF was
-built at `1c467a5`, also with no final warnings, and its changed pages were
-visually inspected. This documentation update rebuilds neither artifact.
-Historical finite-domain determinant computations were not rerun for this
-update; the coverage review distinguishes archived-row checks from fresh
-polynomial or determinant reconstruction. No Lean validation is claimed.
+The current 29/65-page main/supporting PDFs include the proof-structure
+section and have been rebuilt with pdfTeX/TeX Live 2026. Their references
+resolve without final LaTeX warnings or overfull/underfull boxes. Changed
+pages received targeted visual review. The preceding 27/63-page builds
+were at `36e6de0` and `1c467a5`; the earlier 26-page main version had a full
+visual review. Historical finite-domain determinant computations were not
+rerun for this update; the coverage review distinguishes archived-row checks
+from fresh polynomial or determinant reconstruction. No Lean validation is claimed.
 
 From the repository root, check the committed fragments and receipt:
 

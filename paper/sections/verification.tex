@@ -73,6 +73,13 @@ minimum-three boundary, and seven fixed exact root counts.
 The equal-parameter quadratic also shows that the uniform constant three
 is optimal as its minimum root approaches three from below.
 
+\path{scripts/verify_proof_structure.py} checks the balanced factorization
+and the fixed-gap endpoint-one expansion by a direct quotient determinant.
+It verifies the polynomial rescaling, nonzero implicit-function derivative
+and successive coefficient equations. The analytic proof in
+Section~\ref{sec:proof-structure} gives $O_d(a^{-3})$ for fixed $d$;
+the classification retains its exact small-gap and largest-root arguments.
+
 The exact factorization and worst-middle identity are checked by
 \path{scripts/verify_balanced_span_threshold.py} for the span bound
 $a>\rho+4+\sqrt3(\rho+2)$, and two fixed newly covered triples.

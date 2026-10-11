@@ -1,5 +1,10 @@
 # Final case coverage of the three-prime manuscript
 
+The revision and theorem numbers below refer to the reviewed October 10
+version. The later [proof-structure insertion](proof-structure-review.md)
+shifts later sections by one and rebuilds the main/supporting PDFs to 29/65
+pages; it preserves the classification proof and all finite domains here.
+
 This review reads the focused manuscript at `1c467a59457c0384f4903e4225e8d5070c68631e`
 after the October 10 proof strengthenings. The main PDF is 27 pages and the
 supporting PDF is 63 pages. It checks the final case assembly, eigenvalue

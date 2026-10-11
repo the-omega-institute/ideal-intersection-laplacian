@@ -3,7 +3,7 @@
   "original_proof_source_revision": "7be84599097fdff320b196cb4f84a2dfe505bd77",
   "scope": "Source concordance, explicit-reference closure and selected statement/proof bodies matching the current source sections; not an independent proof validation or certificate rerun.",
   "written_proof_update": "Endpoint-one sum bound, small-gap1/2 brackets and largest-root interval hold at real minimum a>=2. General endpoint-one residual-root separation has the sharp real cutoff a>2+sqrt3;the integer divisor corollary retains a>=4. Endpoint-two middle bound has sharp cutoff a>(7+sqrt13)/3,with sole boundary equality b=c=2a-2;its integer bound and maximum bound retain minima4and8. Largest-root upper sign uses a35-coefficient bound on2<=a<=3;small-gap vectors use a=2+m with L2=b explicit.",
-  "generated_body_sha256": "83f81c199cea5cbc42dfb7deeb2e667e7000061a8c426f3406f6bd44edb220df",
+  "generated_body_sha256": "0c8d0515515ef9e255f4707abb9c2c3b37a3e72d7879423167a6bbc4e26fbdbb",
   "generated_bibliography_sha256": "a4e88f7600b492ab2443fd7e91c54bd2d6debf2710523d9710c0343dea1e991f",
   "selections": [
     {
@@ -12,6 +12,13 @@
       "start_line": 1,
       "exclusive_end_line": 84,
       "selected_sha256": "1382d6040f1fdc804642f61a92a2cf5633bd0f4675a1575834a675288ed7da9d"
+    },
+    {
+      "source": "paper/sections/proof-structure.tex",
+      "source_sha256": "cd0e2aa448d2a547315ee2b6ebc5f4457919d780af559f5439714d532c50ba5c",
+      "start_line": 1,
+      "exclusive_end_line": 151,
+      "selected_sha256": "cd0e2aa448d2a547315ee2b6ebc5f4457919d780af559f5439714d532c50ba5c"
     },
     {
       "source": "paper/sections/pqrk.tex",
@@ -124,16 +131,17 @@
     "paper/sections/largest-root-identities.tex": "07a53cb81a1ed8ee77dc7c33e0118df215f272018be69240b0df58a4f28c577b"
   },
   "environment_counts": {
-    "proof": 23,
+    "proof": 25,
     "theorem": 11,
     "lemma": 6,
-    "proposition": 4,
+    "proposition": 6,
     "corollary": 2
   },
   "preserved_body_hashes": {
     "proof": {
       "09b4740c7dda024d5c04e356ac65d6ed0b19104ac5f32a21dc08b9e4a11542af": 1,
       "183e8d169717401ee854ba5da44ff7f03fe134d12a1be3bc26e3c86fa9622a93": 1,
+      "1a447903d4707e851d3719cd5b67da8fda00892481144d95ce3168f535182245": 1,
       "260fccb7de4db89194d830b4398832781b7b8f7d65c3f3d2b64e4d7d3a486659": 1,
       "27bf917786c3955a9281a1279ae160d0a09be569ac7037690ffd42dbc8a43419": 1,
       "2d97b72c5af2d7dc1f9888ae288c145e9ccaa33676b5eeea6cc198aa39baed02": 1,
@@ -150,6 +158,7 @@
       "bd37114701fd5d8fd369fffd6dfbe5a79530376421a88f1e38751377dda46648": 1,
       "c07c480f52e3ac8ff3b9cfb4a322a0c8bd9be129cce5d42f7b58f84030461b97": 1,
       "c808009d90b91666c33b044a5801efc4381d49fe4609f1fe9c4f00f4729bed2f": 1,
+      "cafc7211bc69ad867f9c33e48518ff11153dc3b06745b5917688207c9d3337b2": 1,
       "ce53be365664f060ecac548297157ee51ebeb50edb580a5994798eb9098c47fe": 1,
       "d7abad8e7fa129e2021956a45ad8ca1579ac9a7d78b43d58bbb6250a2c8415f5": 1,
       "e99242c6866afe7ed232252f48ce5afa0348115371699e10a8653522501b7b71": 1,
@@ -179,9 +188,11 @@
     },
     "proposition": {
       "452c84684653cb2f2c61c7773e9a9491b8a7ff2a61a8759cbecf62b080d8b6d9": 1,
+      "5114baa5d0418536670a624079262422a41236bd0a07057fe3e7aa6e350c4cb1": 1,
       "7265a42cff938cdfc6511e5c70ffd5a56eba2babdc43d7d5d58a3e5b56ec58c9": 1,
       "95027abb3e20296af14541b452194c230ef9d61dd05257206dd1eea8d1440439": 1,
-      "9867adc49d55f5af5a5b97b1757dd09f2709ac2396fe51a7c0ba358c322086e9": 1
+      "9867adc49d55f5af5a5b97b1757dd09f2709ac2396fe51a7c0ba358c322086e9": 1,
+      "9eeb8aaa7068462a963f4965fce1ba7c1fc31ffdfea57d8dd4179774d137f175": 1
     },
     "corollary": {
       "0e685cf8f84c23db1fb3af582c78ed6457906d4934f5ea8c4b4385259c23c8f3": 1,
@@ -197,6 +208,7 @@
     "eq:cubic",
     "eq:discriminant",
     "eq:divisor-conditions",
+    "eq:fixed-gap-expansion",
     "eq:general-first-endpoint",
     "eq:lower-inertia",
     "eq:product",
@@ -211,7 +223,9 @@
     "lem:third-index",
     "prop:distinct-tail",
     "prop:divisors",
+    "prop:fixed-gap-expansion",
     "prop:index",
+    "prop:localization-sharpness",
     "prop:low-spectrum",
     "sec:bounds",
     "sec:completion",
@@ -221,6 +235,7 @@
     "sec:largest-root-identities",
     "sec:low-spectrum",
     "sec:minimum-two",
+    "sec:proof-structure",
     "sec:three-prime-classification",
     "sec:unit",
     "sec:verification",
@@ -245,6 +260,8 @@
     8658
   ],
   "earlier_minimum_three_base_retained": 325,
-  "new_mathematical_theorem": false,
+  "new_mathematical_theorem": true,
+  "classification_proof_and_finite_bases_changed": false,
+  "supplementary_written_result": "Fixed-gap endpoint-one expansion with O_d(a^-3), justified by the analytic implicit-function theorem; no uniform growing-gap remainder or integer-point enumeration.",
   "lean_run": false
 }

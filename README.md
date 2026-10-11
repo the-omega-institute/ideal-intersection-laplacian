@@ -1,12 +1,12 @@
 # Laplacian integrality of ideal intersection graphs
 
-The [27-page three-prime classification manuscript](paper/classification-core.pdf)
+The [29-page three-prime classification manuscript](paper/classification-core.pdf)
 is the selected main-paper direction, following coauthor review of the
 focused candidate. It presents the completed three-prime theorem with its
 full proof chain, historical finite certificates and complete coefficient tables. The
 [material-placement map](notes/classification-core-placement.md) distinguishes
 the retained core from auxiliary arithmetic and higher-prime results.
-The 63-page manuscript remains the supporting research collection;
+The 65-page manuscript remains the supporting research collection;
 the earlier detailed build is 67 pages. This placement does not designate the collection
 as a separate submission. The alphabetical author order and Reza Nikandish
 as corresponding author are agreed. The revised manuscript includes the
@@ -14,6 +14,14 @@ confirmed tool uses; exact disclosure wording, final title, journal and
 submission arrangements remain for coauthor review. The
 [certificate manifest](notes/classification-certificate-manifest.md) supplies
 fixed revisions and reproduction commands for the core evidence.
+
+Reza Nikandish's proposed [proof-structure section](notes/proof-structure-review.md)
+is integrated after the graph section in both manuscripts. It explains the
+endpoint localization and its sharp threshold, the bounded-ratio endpoint-two
+tail and finite base, and the quadratic lower scale on endpoint one. The
+supplied expansion now has a written analytic proof with `O_d(a^-3)` for
+fixed gap `d`; it is supplementary to the exact classification arguments.
+All later manuscript references use the shifted label-based numbering.
 
 The minimum-three input has a fresh
 [independent standard-library verification](notes/minimum-three-independent-verification.md).
